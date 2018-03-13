@@ -7,7 +7,7 @@ Topics discussed this week:
 • Callbacks
 ```
 
->[Here](/Week6/README.md) you find the readings you have to complete before the seventh lecture.
+>[Here](/Week3/README.md) you find the readings you have to complete before the seventh lecture.
 
 ## Step 1: Feedback
 
@@ -154,7 +154,7 @@ __Bonus__: Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f'
 
 _Deadline Sunday morning_
 
-Go trough the reading material in the [README.md](/Week6/README.md) to prepare for your next class
+Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
 
 
 ```
