@@ -20,7 +20,7 @@ Give yourself (or your neighbor) a little tap on the shoulder, you've made it to
 
 Week 2
 
-- [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/fundamentals/variables.md)
+- [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/variables.md)
 - [Basic Data types (Strings, Numbers, Arrays, Booleans)](./../../../../fundamentals/blob/master/fundamentals/values.md)
 - [Operators](./../../../../fundamentals/blob/master/fundamentals/operators.md)
 - [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
