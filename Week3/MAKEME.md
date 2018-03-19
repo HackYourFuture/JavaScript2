@@ -1,4 +1,4 @@
-# Homework Week 6
+# Homework Week 3
 
 ```
 Topics discussed this week:
@@ -7,7 +7,7 @@ Topics discussed this week:
 • Callbacks
 ```
 
->[Here](/Week3/README.md) you find the readings you have to complete before the seventh lecture.
+>[Here](https://github.com/HackYourFuture/JavaScript3/tree/master/Week1) you find the readings you have to complete before the first JavaScript3 lecture.
 
 ## Step 1: Feedback
 
@@ -154,7 +154,7 @@ __Bonus__: Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f'
 
 _Deadline Sunday morning_
 
-Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
+Go trough the reading material in the [README.md](https://github.com/HackYourFuture/JavaScript3/tree/master/Week1) to prepare for your next class
 
 
 ```

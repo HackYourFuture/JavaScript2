@@ -1,4 +1,4 @@
-# Homework Week 4
+# Homework Week 1
 
 ```
 Topics discussed in class this week:
@@ -11,7 +11,7 @@ Topics discussed in class this week:
 • State
 ```
 
->[Here](/Week1/README.md) you find the readings you have to complete before the fourth lecture.
+>[Here](/Week2/README.md) you find the readings you have to complete before the second lecture.
 
 ## Step 0: Make a small dance
 Give yourself (or your neighbor) a little tap on the shoulder, you've made it to JS2! :muscle:
@@ -102,7 +102,7 @@ And just for fun ... https://www.freecodecamp.com/challenges/sum-all-numbers-in-
 
 _Deadline Sunday morning_
 
-Go trough the reading material in the [README.md](/Week1/README.md) to prepare for your next class
+Go trough the reading material in the [README.md](/Week2/README.md) to prepare for your next class
 
 ## :boom: Bonus homework :boom:
 the Bonus homework for this week (for those of you want an extra challenge) do the following:
