@@ -11,7 +11,7 @@ Topics discussed in class this week:
 • State
 ```
 
->[Here](/Week3/README.md) you find the readings you have to complete before the fourth lecture.
+>[Here](/Week1/README.md) you find the readings you have to complete before the fourth lecture.
 
 ## Step 0: Make a small dance
 Give yourself (or your neighbor) a little tap on the shoulder, you've made it to JS2! :muscle:
@@ -20,29 +20,29 @@ Give yourself (or your neighbor) a little tap on the shoulder, you've made it to
 
 Week 2
 
-- [Variables (var, let, const)](../fundamentals/variables.md)
-- [Basic Data types (Strings, Numbers, Arrays, Booleans)](../fundamentals/values.md)
-- [Operators](../fundamentals/operators.md)
-- [Naming conventions](../fundamentals/naming_conventions.md)
+- [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/variables.md)
+- [Basic Data types (Strings, Numbers, Arrays, Booleans)](./../../../../fundamentals/blob/master/fundamentals/values.md)
+- [Operators](./../../../../fundamentals/blob/master/fundamentals/operators.md)
+- [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
 
 Week 3
 
-- [Advanced data types (objects)](../fundamentals/objects.md)
-- [Conditional execution](../fundamentals/conditional_execution.md) <br>
-- [Statements vs Expressions](../fundamentals/statements_expressions.md)<br>
-- [Loops (for/while)](../fundamentals/loops.md)
-- [Functions](../fundamentals/functions.md)
-- [Scope](../fundamentals/scope.md)
+- [Advanced data types (objects)](./../../../../fundamentals/blob/master/fundamentals/objects.md)
+- [Conditional execution](./../../../../fundamentals/blob/master/fundamentals/conditional_execution.md) <br>
+- [Statements vs Expressions](./../../../../fundamentals/blob/master/fundamentals/statements_expressions.md)<br>
+- [Loops (for/while)](./../../../../fundamentals/blob/master/fundamentals/loops.md)
+- [Functions](./../../../../fundamentals/blob/master/fundamentals/functions.md)
+- [Scope](./../../../../fundamentals/blob/master/fundamentals/scope.md)
 
 Week 4
 
 - Capturing user input
 - Events
-- [Basic DOM manipulations (img src, innerHTML)](../fundamentals/DOM_manipulation.md)
+- [Basic DOM manipulations (img src, innerHTML)](./../../../../fundamentals/blob/master/fundamentals/DOM_manipulation.md)
 - Code debugging using the browser
-- [Code commenting](../fundamentals/code_commenting.md)
+- [Code commenting](./../../../../fundamentals/blob/master/fundamentals/code_commenting.md)
 - Structuring code files
-- [Code formatting](../fundamentals/code_formatting.md)
+- [Code formatting](./../../../../fundamentals/blob/master/fundamentals/code_formatting.md)
 
 
 ## Step 1: Implement feedback
@@ -102,7 +102,7 @@ And just for fun ... https://www.freecodecamp.com/challenges/sum-all-numbers-in-
 
 _Deadline Sunday morning_
 
-Go trough the reading material in the [README.md](/Week4/README.md) to prepare for your next class
+Go trough the reading material in the [README.md](/Week1/README.md) to prepare for your next class
 
 ## :boom: Bonus homework :boom:
 the Bonus homework for this week (for those of you want an extra challenge) do the following:
@@ -126,5 +126,3 @@ How to hand in your homework:
 • Your hyf-javascript2/week1 should now contain the files of your homework.
 • Place the link to your repository folder in Trello.
 ```
-
-:star: Additional resources and review: [here](/Week3/REVIEW.md):star:

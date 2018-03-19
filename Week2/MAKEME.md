@@ -9,7 +9,7 @@ Topics discussed this week:
 • Arrow functions
 ```
 
->[Here](/Week5/README.md) you find the readings you have to complete before the sixth lecture.
+>[Here](/Week2/README.md) you find the readings you have to complete before the sixth lecture.
 
 ## Step 1: Feedback
 
@@ -118,7 +118,7 @@ _Deadline Saturday_
 
 _Deadline Sunday morning_
 
-Go trough the reading material in the [README.md](/Week5/README.md) to prepare for your next class
+Go trough the reading material in the [README.md](/Week2/README.md) to prepare for your next class
 
 
 ```
