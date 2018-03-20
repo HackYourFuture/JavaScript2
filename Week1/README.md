@@ -1,49 +1,52 @@
-### Reading Week 4
-
-# Reading material for the fifth lecture:
+# Reading material for the first lecture:
 
 ```
-In week five we will discuss the following topics:
-• Functions + JSON/Arrays
-• Array Manipulations
-• JSON
-• Map and filter
-• Arrow functions
+In week one we will discuss the following topics:
+• Capturing user input
+• Basic DOM manipulations[img src, innerHTML]
+• Code debugging using the browser
+• Events
+• Code commenting
+• Structuring code files
 ```
 
-### Here are resources that we like you to read as a preparation for the coming lecture. 
+- Chrome DevTools [Debugging](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3) 
 
-#### JSON
-- [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) (MDN)
+### A Refresher from some previous covered topics:
 
-#### Map and Filter
-- :dizzy: [Fun fun functional](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) :dizzy: Check the first 3-4 videos.
+Links to MDN (Mozilla Developer Network) topics:
 
-#### Code conventions
-- Code conventions: http://javascript.crockford.com/code.html
+- [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
-#### Array cardio
-- Wes Bos' awesome free tutorials. Just make a free account and do Array Cardio #1 [here](https://javascript30.com/)
+## Review
 
-#### More objects
-- Objects continued: http://eloquentjavascript.net/06_object.html
+Go through the topics of week 2-4.
 
+### Week 2
 
-### Refresher:
-Read your book ('A Smarter Way To Learn JavaScript')! If you don't do it on yourself, here's the chapters to read next for next week:
-*Note: If you already know the material you are reading just take a glance over it and don't use too much time. Just be sure that you get everything! You may have already read about it, or used it  in the previous classes. Note that this also has 'catch up' material in it, about functions and objects. If you did not take the time to read your book yet about these things please do so!*
+- [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/variables.md)
+- [Basic Data types (Strings, Numbers, Arrays, Booleans)](./../../../../fundamentals/blob/master/fundamentals/values.md)
+- [Operators](./../../../../fundamentals/blob/master/fundamentals/operators.md)
+- [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
 
-* DOM (*may have known material, know how to select/search/append elements etc.!*):</br>
-Chapters 58 - 68
+### Week 3
 
-* Reading/setting input fields:</br>
-Chapters 49 - 50
+- [Advanced data types (objects)](./../../../../fundamentals/blob/master/fundamentals/objects.md)
+- [Conditional execution](./../../../../fundamentals/blob/master/fundamentals/conditional_execution.md) <br>
+- [Statements vs Expressions](./../../../../fundamentals/blob/master/fundamentals/statements_expressions.md)<br>
+- [Loops (for/while)](./../../../../fundamentals/blob/master/fundamentals/loops.md)
+- [Functions](./../../../../fundamentals/blob/master/fundamentals/functions.md)
+- [Scope](./../../../../fundamentals/blob/master/fundamentals/scope.md)
 
-* Functions (*if you think you need a bit more understanding of them read this*):</br>
-Chapters 35 - 38
+### Week 4
 
-* Objects (*important to really understand them, read this if you are unsure! You may also read chapters 72, 73 and 74 if you have time and want to learn more*):</br>
-Chapters 70-71, 75
+- Capturing user input
+- Events
+- [Basic DOM manipulations (img src, innerHTML)](./../../../../fundamentals/blob/master/fundamentals/DOM_manipulation.md)
+- Code debugging using the browser
+- [Code commenting](./../../../../fundamentals/blob/master/fundamentals/code_commenting.md)
+- Structuring code files
+- [Code formatting](./../../../../fundamentals/blob/master/fundamentals/code_formatting.md)
+
 
 _Please go through the material and come to class prepared!_
-
