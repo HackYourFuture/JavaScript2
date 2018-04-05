@@ -15,13 +15,7 @@ _Deadline Monday_
 
 Give feedback on `step 2` of `week 5` to one of your fellow students (do this by creating issues in Github). 
 
-## ~~Step 2: Git Homework~~
-
-~~_Deadline Saturday_~~
-
-~~[Make these assignments](https://github.com/HackYourFuture/Git/blob/master/Lecture-3.md). For handing in homework follow the Forking workflow that is described  in our lecture-3.md  file of HackYourFuture’s Git repository (there is also a video that explains this).~~
-
-## Step 3: Read
+## Step 2: Read
 
 >Read:
 - JavaScript : [Closures](http://conceptf1.blogspot.nl/2013/11/javascript-closures.html)
@@ -32,7 +26,7 @@ Give feedback on `step 2` of `week 5` to one of your fellow students (do this by
 - More about [closures](https://www.reddit.com/r/learnjavascript/comments/1v6n8p/closure_explain_likei_am_in_high_school/?st=ixsp0mbe&sh=5526d150)
 - A VERY popular [StackOverflow article](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work)
 
-## Step 4: JavaScript
+## Step 3: JavaScript
 
 _Deadline Wednesday_
 
@@ -45,7 +39,7 @@ function doIt() {
 setTimeout(doIt, 5000)
 ```
 
->f you run the above code it will wait 5 seconds and print `I am done`. Please read something about setTimeout on MDN. The first argument to the `setTimeout` call is the callback (`doIt`)
+>if you run the above code it will wait 5 seconds and print `I am done`. Please read something about setTimeout on MDN. The first argument to the `setTimeout` call is the callback (`doIt`)
 
 1\.We saw that we can pass functions as arguments to other functions. Your task is to write a function that takes another function as an argument and runs it.
 
@@ -133,7 +127,7 @@ console.log(y);
 If you are confused please run the code and then consult the Google for "javaScript pass by value pass by reference"
 
 
-## Step 5: Scope and Closures
+## Step 4: Scope and Closures
 
 _Deadline Saturday_
 
@@ -150,7 +144,7 @@ addSix(21); // returns 27
 __Bonus__: Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c']` and returns an array which only has unique values in it (so it removes the duplicate ones). Make it a 'smart' algorithm that could do it for every array (only strings/number). Try to make it as fast as possible!
 
 
-## Step 6: Read before next lecture
+## Step 5: Read before next lecture
 
 _Deadline Sunday morning_
 
