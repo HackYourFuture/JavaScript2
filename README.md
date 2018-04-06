@@ -1,6 +1,7 @@
->Please help us improve and share your feedback! If you find better tutorials or links, please share them by opening a Pull Request.
+> Please help us improve and share your feedback! If you find better tutorials
+or links, please share them by [opening a pull request](https://github.com/HackYourFuture/JavaScript2/pulls).
 
-# HackYourFuture JavaScript 2
+# HackYourFuture - JavaScript 2
 
 Here you can find course content and homework for the JavaScript2 module
 
