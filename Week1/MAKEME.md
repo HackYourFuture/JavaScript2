@@ -54,29 +54,35 @@ Your fellow students have provided you with feedback in Trello.
 - Implement both feedback from Trello and Github.
 - Check on one of your fellow students code and issues and see if her or she implemented their feedback correctly. If there are some things that can be improved make an issue suggesting further improvements. If you think that the feedback has been implemented correctly create a issue saying something like: "nice work you can clear your issues".
 
-## Step 2: Reorganize your Github 
+## Step 2: Reorganize your GitHub 
 
 _Deadline Monday_
 
-Your Github should contain two repositories called `hyf-javascript1` and `hyf-javascript2`. Inside the JavaScript repositories you should have three folders, called week1, week2, and week3 (or something similar). Inside these folders you should have the different assignments (a file per exercises). Try and find proper names for the exercises that reflect somehow what is going on in the code. Avoid using spaces in your file names, this makes it harder to "run" you files. Also make sure that all your JavaScript files have a `.js` extension.
+Your Github should contain a repository called `hyf-javascript1`. Inside this JavaScript repository you should have three folders, called week1, week2, and week3 (or something similar). Inside these folders you should have the different assignments (a file per exercises). Try and find proper names for the exercises that reflect somehow what is going on in the code. Avoid using spaces in your file names, this makes it harder to "run" you files. Also make sure that all your JavaScript files have a `.js` extension.
 
 ## Step 3: Custom DOM manipulation challenge :mortar_board:
 
 _Deadline Saturday_
 
-1. Open a new js file and start by declaring an array that contains 10 strings. These strings should be of book titles you have read (or made up) and be lowercase without spaces or special characters so that you can use these later as Id's. (Example: Harry Potter's - The Chamber of Secrets -> `harry_potter_chamber_secrets`). 
+> **Preparation**: Fork this repository and use the [Homework Pull Request Workflow](../../../../fundamentals/blob/master/fundamentals/homework_pr.md) to hand in your homework.
 
-2. Create a basic html file called index.html and use it to load the js file, confirm the console.log show the array. (This is for debugging and making sure everything is in order. Delete it later when you're done :))
+Modify the (mostly empty) files in the `Week1/homework` folder for this step.
 
-3. Make a function (or functions) that generate a `ul` with `li` elements for each book ID in the array using a for loop. 
+**3.1** Open the `apps.js` and start by declaring an array that contains 10 strings. These strings should be of book titles you have read (or made up) and be lowercase without spaces so that you can use these later as HTML `id` attributes. (Example: _Harry Potter's - The Chamber of Secrets_ -> `harry_potter_chamber_secrets`). Add a console.log statement to output this array to console. (This is for debugging and making sure everything is in order. Delete it later when you're done :))
 
-4. Make an object containing information for each book. Each item (object) in this object should have the book ID you thought up in point 1 as a key, and it should have at least the following fields: title, language and author. 
+**3.2** Open the empty `index.html` and add the required HTML to load the `app.js` file. Open `index.html` in the browser and confirm that the `console.log` statement shows the array. (Open the Chrome Developer Tools and inspect the console.) 
 
-5. Now change the function you used to display the book ID's in a list to take the actual information about the book from the object and display that. Make sure you choose the right html elements for each piece of info, for instance, a heading for the title.
+**3.3** Remove the temporary `console.log` from step 3.1. Make a function (or functions) that generate a `ul` with `li` elements for each book ID in the array using a `for` loop. Make sure that the function names you choose are an accurate reflection of what they do. As a reminder, here are the recommended [Naming Conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md).
 
-6. Beautify your html page with css, add sources and alts to each of the images.
+**3.4** Make an object (_not an array!_) containing information for each book. Each property of this object should be another (i.e., nested) object with the book ID you thought up in step 3.1 as a key, and at least the following properties: `title`, `language` and `author`. 
+
+**3.5** Now change the function from step 3.3 that you used to display the book ID's in a list to take the actual information about the book from the object and display that. Make sure you choose the correct HTML elements for each piece of info, for instance, a heading for the title.
+
+**3.6** Beautify your html page with css (use the `style.css` file for that), add sources and alts to each of the images.
  
-7. Download book covers for each book, construct a new Object which has as keys the bookId's again, and as value the path to the image source (e.g. `{"harry_potter_blabla": "./img/harry_potter_blabla.jpg", ...}`). Now loop over these entries (_hint: `Object.keys(objectName)` gives you an array containing the keys_). Then write a function which places an image at the corresponding `li` element. Remember that Objects are not ordered, so you cannot guarantee that the first key is the first `li` element. (_Hint: you could give each `li` item an `id` tag by modifying the function you made before_)
+**3.7** Find and download book covers for each book and construct a new object which has as keys the book IDs again, and as value the path to the image source (e.g. `{ harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }`). 
+
+Loop over these entries (_hint: `Object.keys(objectName)` gives you an array containing the keys_). Then write a function which places an image at the corresponding `li` element. Remember that objects are not ordered, so you cannot guarantee that the first key is the first `li` element. (_Hint: you could give each `li` item an `id` tag by modifying the function you made before._)
 
 ```
 How to hand in your homework:
@@ -116,13 +122,4 @@ it’s a great way to really practice JavaScript a lot in various problems.
 
 Please note, there are various challenges all sorted on difficultly called KIU. Kiu 8 is the easiest, Kiu 1 is the hardest, we expect you to do challenges around level 8, 7 maybe.
 
-enjoy!
-
-:octocat: 
-```
-How to hand in your homework:
-• Create a new repository "hyf-javascript2". Also create a new folder "week1" inside this repository. 
-• Upload your homework files inside the week1 folder and write a description for this “commit”.
-• Your hyf-javascript2/week1 should now contain the files of your homework.
-• Place the link to your repository folder in Trello.
-```
+Enjoy!

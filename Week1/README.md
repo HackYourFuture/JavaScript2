@@ -10,7 +10,7 @@ In week one we will discuss the following topics:
 • Structuring code files
 ```
 
-- Chrome DevTools [Debugging](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3) 
+- Chrome DevTools [Debugging](https://developers.google.com/web/tools/chrome-devtools/) 
 
 ### A Refresher from some previous covered topics:
 
