@@ -21,8 +21,5 @@ f2(y);
 
 console.log(y);
 
-/*
-Add your explanation as a comment here:
+// Add your explanation as a comment here
 
-
-*/

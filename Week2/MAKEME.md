@@ -104,8 +104,6 @@ Follow these steps. Each step should build on the result of the previous step.
 - Choose variable and parameters names that most accurately describe their contents or purpose. When naming an array, use a plural form, e.g. `durations`. For a single item, use a singular form, e.g. `duration`. For details, see [Naming Conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md).
 - Don't forget to use `=>`.
 
-
-
 ## Step 3: ROVER
 
 Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)!
