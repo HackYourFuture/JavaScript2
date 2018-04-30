@@ -84,13 +84,20 @@ Modify the (mostly empty) files in the `Week1/homework` folder for this step.
 
 Loop over these entries (_hint: `Object.keys(objectName)` gives you an array containing the keys_). Then write a function which places an image at the corresponding `li` element. Remember that objects are not ordered, so you cannot guarantee that the first key is the first `li` element. (_Hint: you could give each `li` item an `id` tag by modifying the function you made before._)
 
-```
-How to hand in your homework:
-• Upload your homework in your "hyf-javascript2" Github repository. Make sure to create a new folder "week1" first. 
-• Upload your homework files inside the week1 folder and write a description for this “commit”.
-• Your hyf-javascript2/week1 should now contain an index.html, main.css and a script.js file (and the images folder)
-• Place the link to your repository folder in Trello.
-```
+
+### How to hand in your homework:
+
+Go over your homework one last time:
+
+- Does every file run without errors and with the correct results when you run them with Node?
+- Does every file start with `'use strict';`?
+- Have you used `const` and `let` and avoided `var`?
+- Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
+- Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
+
+If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
+
+- [Handing in homework](../../../../fundamentals/blob/master/fundamentals/homework_pr.md)
 
 ## Step 4: **FreeCodeCamp challenges:**
 

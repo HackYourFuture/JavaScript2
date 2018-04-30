@@ -166,10 +166,16 @@ _Deadline Sunday morning_
 Go trough the reading material in the [README.md](https://github.com/HackYourFuture/JavaScript3/tree/master/Week1) to prepare for your next class
 
 
-```
-How to hand in your homework:
-• Upload your homework in your "hyf-javascript2" Github repository. Make sure to create a new folder "week3" first. 
-• Upload your homework files inside the week3 folder and write a description for this “commit”.
-• Your hyf-javascript2/week3 should now contain an index.html, main.css and a script.js file (and the images folder)
-• Place the link to your repository folder in Trello.
-```
+### How to hand in your homework:
+
+Go over your homework one last time:
+
+- Does every file run without errors and with the correct results when you run them with Node?
+- Does every file start with `'use strict';`?
+- Have you used `const` and `let` and avoided `var`?
+- Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
+- Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
+
+If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
+
+- [Handing in homework](../../../../fundamentals/blob/master/fundamentals/homework_pr.md)

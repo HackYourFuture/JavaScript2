@@ -126,13 +126,16 @@ _Deadline Sunday morning_
 Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
 
 
-```
-How to hand in your homework:
-• Clone your existing "hyf-javascript2" Github repository.
-• Create a new folder "week2" USING THE COMMAND LINE
-• Save your homework files inside this folder.
-• When you are done with your homework use add/commit and push to upload your homework.
-• Write a description for your “commit”.
-• Your hyf-javascript2/week2 should now contain all your homework files.
-Place the link to your repository folder in Trello.
-```
+### How to hand in your homework:
+
+Go over your homework one last time:
+
+- Does every file run without errors and with the correct results when you run them with Node?
+- Does every file start with `'use strict';`?
+- Have you used `const` and `let` and avoided `var`?
+- Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
+- Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
+
+If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
+
+- [Handing in homework](../../../../fundamentals/blob/master/fundamentals/homework_pr.md)
