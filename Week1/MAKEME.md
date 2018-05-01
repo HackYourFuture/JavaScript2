@@ -17,41 +17,12 @@ Topics discussed in class this week:
 ## Step 0: Make a small dance
 Give yourself (or your neighbor) a little tap on the shoulder, you've made it to JS2! :muscle:
 
-## Step 0: review
-
-Week 2
-
-- [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/variables.md)
-- [Basic Data types (Strings, Numbers, Arrays, Booleans)](./../../../../fundamentals/blob/master/fundamentals/values.md)
-- [Operators](./../../../../fundamentals/blob/master/fundamentals/operators.md)
-- [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
-
-Week 3
-
-- [Advanced data types (objects)](./../../../../fundamentals/blob/master/fundamentals/objects.md)
-- [Conditional execution](./../../../../fundamentals/blob/master/fundamentals/conditional_execution.md) <br>
-- [Statements vs Expressions](./../../../../fundamentals/blob/master/fundamentals/statements_expressions.md)<br>
-- [Loops (for/while)](./../../../../fundamentals/blob/master/fundamentals/loops.md)
-- [Functions](./../../../../fundamentals/blob/master/fundamentals/functions.md)
-- [Scope](./../../../../fundamentals/blob/master/fundamentals/scope.md)
-
-Week 4
-
-- Capturing user input
-- Events
-- [Basic DOM manipulations (img src, innerHTML)](./../../../../fundamentals/blob/master/fundamentals/DOM_manipulation.md)
-- Code debugging using the browser
-- [Code commenting](./../../../../fundamentals/blob/master/fundamentals/code_commenting.md)
-- Structuring code files
-- [Code formatting](./../../../../fundamentals/blob/master/fundamentals/code_formatting.md)
-- [Handing in homework via PR](../../..//fundamentals/blob/master/fundamentals/homework_pr.md)
-
 
 ## Step 1: Implement feedback
 
 _Deadline Monday_
 
-Your fellow students have provided you with feedback in Trello. 
+Your fellow students and teachers have provided you with feedback on your last JavaScript1 homework in Trello. 
 
 - Implement both feedback from Trello and Github.
 - Check on one of your fellow students code and issues and see if her or she implemented their feedback correctly. If there are some things that can be improved make an issue suggesting further improvements. If you think that the feedback has been implemented correctly create a issue saying something like: "nice work you can clear your issues".
