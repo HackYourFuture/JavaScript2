@@ -106,7 +106,7 @@ Follow these steps. Each step should build on the result of the previous step.
 
 ## Step 3: ROVER
 
-Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)!
+Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)! (Alternative site: [roverjs.taalmap.nl](http://roverjs.taalmap.nl/))
 
 ## Step 4: **Some freeCodeCamp challenges:**
 
@@ -135,6 +135,8 @@ Go over your homework one last time:
 - Have you used `const` and `let` and avoided `var`?
 - Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
 - Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
+- Have you resolved all issues flagged by ESLint and the spell checker (no wavy red and green underlines in VSCode)?
+
 
 If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
 

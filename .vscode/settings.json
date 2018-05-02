@@ -1,9 +1,18 @@
 {
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
   "cSpell.words": [
-    "Codewars",
+    "Debouncing",
     "Maartje",
-    "Maartje's",
     "blabla",
-    "roverjs"
+    "codewars",
+    "keyup",
+    "maartje's",
+    "roverjs",
+    "taalmap",
+    "trollface"
   ]
 }
