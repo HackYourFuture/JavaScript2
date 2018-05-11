@@ -1,1 +1,33 @@
-/* add your styling here */
+img {
+    width: 125px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+h2 {
+    clear: both;
+    line-height: 30px;
+    padding: 6px;
+    background-color: rgb(77, 179, 77);
+    border-radius: 6px; 
+}
+ul {
+    list-style-type: none;
+    
+}
+
+li ul{
+    margin-top: 25px;
+    line-height: 25px;
+    font-size: 110%;
+}
+
+body{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li p, img{
+    margin-left: 20px;
+}
