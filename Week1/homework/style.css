@@ -1,1 +1,20 @@
-/* add your styling here */
+body,
+html {
+    margin: 25px;
+    padding: 25px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-image: url(https://images.pexels.com/photos/295771/pexels-photo-295771.jpeg?auto=compress&cs=tinysrgb&h=350)
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: fantasy;
+    font-size: 25px;
+}
