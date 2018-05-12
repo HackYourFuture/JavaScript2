@@ -46,7 +46,7 @@
     },
     book8: {
       key: 'manuscript_found_in_accra',
-      bookTitle: 'Manuscript found in accra',
+      bookTitle: 'Manuscript found in Accra',
       language: 'Portuguese',
       author: 'Paulo Coelho'
     },
