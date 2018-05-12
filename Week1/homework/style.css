@@ -1,1 +1,72 @@
-/* add your styling here */
+@import url("https://fonts.googleapis.com/css?family=Cairo");
+
+*,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  background: url("./img/library.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h2,
+p {
+  font-family: "Cairo", sans-serif;
+  text-shadow: 0px 2px 2px #000, 0px -2px 2px #000;
+  letter-spacing: 2px;
+}
+h2 {
+  margin-top: 50px;
+}
+
+p {
+  display: inline-flex;
+  margin-left: 50px;
+  transform: translateX(-30px);
+  font-style: italic;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(187, 187, 187, 0.521);
+}
+
+/* li tag */
+li {
+  text-align: center;
+  line-height: 5em;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0 auto;
+  width: 80vw;
+  border-radius: 10px;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.295);
+  box-shadow: 5px 2px 5px rgb(7, 2, 0);
+}
+
+li:nth-child(1)::before {
+  content: "Books Assignment";
+  display: block;
+  padding-bottom: 50px;
+  font-family: "Cairo", sans-serif;
+  font-size: 2.3em;
+  font-weight: 700;
+  padding-top: 75px;
+  text-shadow: 7px 25px 10px #000;
+}
+/* book covers */
+#container {
+  padding: 1em;
+}
+
+.images {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 70px;
+  box-shadow: 0 0 15px 2px #000;
+  border: 10px solid rgba(187, 187, 187, 0.121);
+  border-radius: 5px;
+}
