@@ -1,1 +1,59 @@
-/* add your styling here */
+
+body{
+  background:#b8b9ba;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 70%;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  background: blue;
+  padding: 50px;
+  font-size: 36px;
+  color: white;
+  border-radius: 20px;
+}
+
+#books li{
+  list-style: none;
+  background:#0296d1; 
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#books li:hover{
+  background-color:#2da9da;
+}
+
+/*book title styling*/
+#geo, #cind, #bean, #mpho, #eloquent, #kudzikotsira1, #rainn, #farming, #agriculture, #umenzi{
+  padding:10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background: rgb(43, 160, 82);
+  text-align: center;
+  border-radius: 10px;
+}
+
+#geo:hover, #cind:hover, #bean:hover, #mpho:hover, #eloquent:hover, #kudzikotsira1:hover, 
+#rainn:hover, #farming:hover, #agriculture:hover, #umenzi:hover{
+  background: blue;
+  color: white;
+}
+
+/*Images styling*/
+#geography_integrated_approach, #cinderella, #mr_bean, #mpho_search, 
+#eloquent_javascript, #kudzikotsira, #rain1, #mini_farming, 
+#restoration_agriculture, #umenzi_kakhalelwa{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
