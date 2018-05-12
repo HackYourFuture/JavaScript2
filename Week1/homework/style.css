@@ -13,6 +13,13 @@ body {
   z-index: 0;
   color: #ffff;
 }
+
+h1 {
+  position: fixed;
+  width: 100%;
+  padding: 2vh 0;
+}
+
 h2, h1 {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1vh;
@@ -25,4 +32,37 @@ h2:hover, img:hover {
 
 ul, img{
   margin: 4vh auto;
+}
+
+#forty_rules_of_love {
+  margin-top: 19vh;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin: 4vh 4vw;
+}
+
+#div-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+@media (min-width: 469px) {
+  .wrapper {
+    width: calc(50% - 8vw);
+  }
+  #azazel {
+    margin-top: 19vh;
+  }
+}
+@media (min-width: 769px) {
+  .wrapper {
+    width: calc((100% / 3) - 8vw);
+  }
+  #alchemist {
+    margin-top: 19vh;
+
+  }
 }

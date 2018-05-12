@@ -72,14 +72,15 @@
     const content = document.getElementById('book-list');
     content.appendChild(pageHeader);
 
+    const divWrapper = document.createElement('div');
+    divWrapper.setAttribute('id', 'div-wrapper');
+    content.appendChild(divWrapper);
+
     for (const childObject in parentObject) {
       const wrapper = document.createElement('div');
       wrapper.setAttribute('id', parentObject[childObject].key);
-      wrapper.style.padding = '1vh 4vw';
-      wrapper.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
-      wrapper.style.margin = '4vh 4vw';
-      wrapper.style.textAlign = 'center';
-      content.appendChild(wrapper);
+      wrapper.setAttribute('class', 'wrapper');
+      divWrapper.appendChild(wrapper);
 
       const header = document.createElement('h2');
       header.innerHTML = parentObject[childObject]['bookTitle'];
