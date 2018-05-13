@@ -61,12 +61,10 @@ body{
 .image-list li{
   margin:10px;
   list-style:none;
-  
 }
 
 .image-list img{
-  
-  width:30%;
+   width:30%;
 }
 
 @media (max-width:480px){
