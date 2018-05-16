@@ -43,10 +43,7 @@ const tuesday = [
 ];
 
 const tasks = monday.concat(tuesday);
-
 // Add your code here
-
-
 const totalSalary = tasks.map(minutesToHours => minutesToHours.duration / 60)
   .filter(twoAndMore => twoAndMore >= 2)
   .map(perHourSalary => (perHourSalary * 20))
