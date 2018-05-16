@@ -46,6 +46,6 @@ const tasks = monday.concat(tuesday);
 
 const earned = tasks.map(task => task.duration / 60)
   .filter(task => task >= 2)
-  .reduce(((sum, task) => sum += task * 16), 0);
+  .reduce((sum, task) => sum += task * 16, 0);
 
 console.log('Maartje has earned €' + Math.round(earned * 100) / 100);
