@@ -45,7 +45,6 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 // console.log(tasks);
 
-
 // Add your code here
 
 const perHour = 20;
