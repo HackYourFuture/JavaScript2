@@ -1,1 +1,44 @@
-/* add your styling here */
+/* styling
+div.style.width='100%';
+div.style.backgroundColor='gray';
+div.style.display='block';
+div.style.position='center';
+div.style.textAlign='center';
+outerList.style.listStyle='none';
+outerList.style.marginTop='20px';
+outerList.style.border='solid';
+innerList.style.listStyle='none';
+innerList.style.border='solid';
+innerList.style.marginTop='50px';
+image.style.width = '200px';*/
+
+div {
+  width: 100%;
+  background-color: lightgray;
+  display: block;
+  position: center;
+  text-align: center;
+}
+
+img {
+  width: 25%;
+}
+
+ul {
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: dashed antiquewhite;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  color: blue;
+}
+
+li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: darkcyan;
+}
