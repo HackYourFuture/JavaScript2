@@ -3,19 +3,6 @@
 {
   function main() {
 
-    /*const bookTitles = [
-      'glass_bead_game',
-      'brief_history_time',
-      'in_search_beauty',
-      'war_peace',
-      'siddhartha',
-      'the_man_sea',
-      'hitchhiker_guide_galaxy',
-      'alchemist',
-      'zorba_greek',
-      'samarkand',
-    ];*/
-
     const books = {
       glass_bead_game: {
         title: 'The Glass Bead Game',
@@ -73,10 +60,10 @@
     };
 
     const div = document.getElementById('booksList');
-    const outerList = createLists(books);
+    const outerList = createLists(books, images);
     div.appendChild(outerList);
 
-    function createLists(books) {
+    function createLists(books, bookImages) {
 
       const outerList = document.createElement('ul');
 
@@ -91,7 +78,7 @@
         author.innerHTML = book.author;
 
         const image = document.createElement('img');
-        image.src = images[i];
+        image.src = bookImages[i];
 
         outerList.appendChild(innerList);
 
