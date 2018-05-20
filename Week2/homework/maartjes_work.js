@@ -44,4 +44,21 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
-// Add your code here
+//Map the tasks to durations in hours----
+const minutesToHours = tasks.map(tasks => tasks.duration / 60);
+console.log(minutesToHours);
+
+//Filter out everything that took less than two hours---
+const tasksOverTwoHours = tasks.filter(tasks => (tasks.duration >= 120));
+
+//Calculate total hours worked after filtering work which is less than 2 hours---  
+let totalWorkedHours = 0;
+
+for (let i = 0; i < tasksOverTwoHours.length; i++) {
+  totalWorkedHours += tasksOverTwoHours[i].duration / 60;
+}
+
+const hourlyRate = 36;
+
+const totalEarnings = totalWorkedHours * hourlyRate;
+console.log('Maartje has earned ' + '€' + totalEarnings.toFixed(2));
