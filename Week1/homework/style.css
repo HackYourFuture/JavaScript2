@@ -18,6 +18,7 @@ h1 {
   position: fixed;
   width: 100%;
   padding: 2vh 0;
+  text-align: center;
 }
 
 h2, h1 {
@@ -36,9 +37,17 @@ h2:hover, img:hover {
   -ms-transform: scale(1.1);
 }
 
-ul, img{
+ul, img {
   margin: 4vh auto;
 }
+
+ul {
+  list-style: none;
+}
+img {
+  width: 175px;
+}
+
 
 #forty_rules_of_love {
   margin-top: 19vh;
@@ -50,7 +59,7 @@ ul, img{
   margin: 4vh 4vw;
 }
 
-#div-wrapper {
+.div-wrapper {
   display: flex;
   flex-flow: row wrap;
   text-align: center;
