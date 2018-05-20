@@ -1,4 +1,222 @@
-"use strict";
+'use strict';
+
+function main() {
+
+  const bookInfo = {
+    geography_integrated: {
+      title: 'Geography An Integrated Approach',
+      author: 'David Waugh',
+      language: 'English'
+    },
+    cinderella: {
+      title: 'Cinderella',
+      author: 'Wilhelm Grimm',
+      language: 'English'
+    },
+    mr_bean: {
+      title: 'Mr Bean',
+      author: 'Johnny English',
+      language: 'English'
+    },
+    mpho_search: {
+      title: 'Mpho Search',
+      author: 'Sandra Braude',
+      language: 'Zulu'
+    },
+    eloquent_javascript: {
+      title: 'Eloquent Javascript',
+      author: 'Marijn Haverbeke',
+      language: 'English'
+    },
+    kudzikotsira: {
+      title: 'Kudzikotsira',
+      author: 'Never Chimeno',
+      language: 'Shona'
+    },
+    rain: {
+      title: 'Rain',
+      author: 'Marion Dane',
+      language: 'English'
+    },
+    mini_farming: {
+      title: 'Mini Farming',
+      author: 'Brett Markham',
+      language: 'English'
+    },
+    restoration_agriculture: {
+      title: 'Restoration Agriculture',
+      author: 'Mark Shepard',
+      language: 'English'
+    },
+    umenzi_kakhalelwa: {
+      title: 'Umenzi Kakhalelwa',
+      author: 'Noel Mathema',
+      language: 'Ndebele'
+    }
+  };
+
+  let bookImages = {
+    the_alchemist: 'geography.jpeg',
+    war_and_peace: '1931_Jane_Eyre.jpg',
+    jayne_ayre: '1931_Jane_Eyre.jpg',
+    harry_potter_and_the_prisoner_of_azkaban: '1931_Jane_Eyre.jpg'
+  };
+
+  const ul = createUl(bookInfo, bookImages);
+
+  document.body.appendChild(ul);
+
+  console.log(JSON.stringify(bookInfo, null, 2));
+}
+
+function createUl(bookTitles, bookImages) {
+  const ul = document.createElement('ul');
+
+  for (let i in bookTitles) {
+
+    let book = bookTitles[i];
+
+    let li = document.createElement('li');
+
+    let header = document.createElement('h2');
+    header.innerHTML = book.title;
+
+    let authorP = document.createElement('p');
+    authorP.innerHTML = book.author;
+
+    let languageP = document.createElement('p');
+    languageP.innerHTML = book.language;
+
+    let image = document.createElement('img');
+    image.src = getSource(i, bookImages);
+    image.style.width = '200px';
+    li.appendChild(header);
+    li.appendChild(authorP);
+    li.appendChild(languageP);
+    li.appendChild(image);
+
+    ul.appendChild(li);
+  }
+  return ul;
+}
+
+function getSource(bookId, bookImages) {
+  return bookImages[bookId];
+}
+
+window.addEventListener('load', main);
+
+
+/*'use strict';
+
+function main() {
+
+  //let bookTitles = ['geography_integrated', 'cinderella', 'mr_bean', 'eloquent_javascript', 'mpho_search', 'kudzikotsira', 'rain', 'mini_farming', 'restoration_agriculture', 'umenzi_kakhalelwa'];
+  let bookInfo = {
+    geography_integrated: {
+      title: 'Geography An Integrated Approach',
+      author: 'David Waugh',
+      language: 'English'
+    },
+    cinderella: {
+      title: 'Cinderella',
+      author: 'Wilhelm Grimm',
+      language: 'English'
+    },
+    mr_bean: {
+      title: 'Mr Bean',
+      author: 'Johnny English',
+      language: 'English'
+    },
+    eloquent_javascript: {
+      title: 'Eloquent Javascript',
+      author: 'Marijn Haverbeke',
+      language: 'English'
+    },
+    mpho_search: {
+      title: 'Mpho Search',
+      author: 'Sandra Braude',
+      language: 'Zulu'
+    },
+    kudzikotsira: {
+      title: 'Kudzikotsira',
+      author: 'Never Chimeno',
+      language: 'Shona'
+    },
+    rain: {
+      title: 'Rain',
+      author: 'Marion Dane',
+      language: 'English'
+    },
+    mini_farming: {
+      title: 'Mini Farming',
+      author: 'Brett Markham',
+      language: 'English'
+    },
+    restoration_agriculture: {
+      title: 'Restoration Agriculture',
+      author: 'Mark Shepard',
+      language: 'English'
+    },
+    umenzi_kakhalelwa: {
+      title: 'Umenzi Kakhalelwa',
+      author: 'Noel Mathema',
+      language: 'Ndebele'
+    }
+  }
+  //console.log(books.join(','));  (delete me plz)
+
+  const ul = createUl(bookInfo);
+
+  document.body.appendChild(ul);
+
+  
+
+  function createUl(bookTitles) {
+    const ul = document.createElement('ul');
+
+    for (let i in bookTitles) {
+      let book = bookTitles[i];
+
+      let li = document.createElement(li);
+      //let li = createListItem(bookTitles[i]); delete after
+
+      let header = document.createElement('h2');
+      header.innerHTML = book.title;
+
+      let authorP = document.createElement('p')
+      authorP.innerHTML = book.author;
+
+      let languageP = document.createElement('p')
+      languageP.innerHTML = book.language;
+
+      li.appendChild(header);
+      li.appendChild(authorP);
+      li.appendChild(languageP);
+      ul.appendChild(li);
+    }
+    return ul;
+  }
+}
+/*
+function createListItem(bookTitle) {
+  let li = document.createElement('li');
+  li.innerHTML = bookTitle[i];
+  return li;
+}*/
+/*
+window.addEventListener('load', main);
+*/
+
+
+
+
+
+
+
+
+
+/*"use strict";
 {
   const bookTitles = [
     "Geography An Integrated Approach",
@@ -88,3 +306,9 @@ function main() {
   image10.src = "https://www.njabulondebele.co.za/wp-content/uploads/1993/01/SarahRingsAndI.jpg";
 }
 window.addEventListener("load", main);
+
+
+
+//https://github.com/HackYourFuture/JavaScript2/pull/
+//pull requests checks
+*/

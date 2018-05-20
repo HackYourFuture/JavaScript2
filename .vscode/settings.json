@@ -14,5 +14,6 @@
     "roverjs",
     "taalmap",
     "trollface"
-  ]
+  ],
+  "git.ignoreLimitWarning": true
 }
