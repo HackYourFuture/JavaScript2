@@ -1,1 +1,83 @@
 /* add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive, sans-serif;
+}
+
+body {
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: -8vw;
+  z-index: 0;
+  color: #ffff;
+}
+
+h1 {
+  position: fixed;
+  width: 100%;
+  padding: 2vh 0;
+  text-align: center;
+}
+
+h2, h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1vh;
+}
+
+h2 {
+  height: 8vh;
+  overflow: scroll;
+  padding: 1vh 0;
+}
+h2:hover, img:hover {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+ul, img {
+  margin: 4vh auto;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  width: 175px;
+}
+
+
+#forty_rules_of_love {
+  margin-top: 19vh;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin: 4vh 4vw;
+}
+
+.div-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+@media (min-width: 469px) {
+  .wrapper {
+    width: calc(50% - 8vw);
+  }
+  #azazel {
+    margin-top: 19vh;
+  }
+}
+@media (min-width: 769px) {
+  .wrapper {
+    width: calc((100% / 3) - 8vw);
+  }
+  #alchemist {
+    margin-top: 19vh;
+
+  }
+}
