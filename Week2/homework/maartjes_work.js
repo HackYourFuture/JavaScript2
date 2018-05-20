@@ -43,5 +43,11 @@ const tuesday = [
 ];
 
 const tasks = monday.concat(tuesday);
+const salaryPerHour = 10;
 
-// Add your code here
+const maartjesEarnings = tasks
+  .map((tasks) => tasks.duration / 60)
+  .filter((paidHours) => paidHours >= 2)
+  .reduce((totalEarnings, paidHour) => totalEarnings + paidHour * salaryPerHour, 0);
+
+console.log('Maartje has earned €' + Math.round(maartjesEarnings, 2) + ' by completing her tasks.');
