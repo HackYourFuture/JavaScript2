@@ -45,3 +45,10 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const salary = tasks
+  .map((task) => (task.duration / 60))
+  .filter((duration) => duration >= 2)
+  .map((duration) => duration * 23)
+  .reduce((acc, current) => acc + current);
+
+console.log('Maartje has earned €' + salary.toFixed(2));
