@@ -15,7 +15,7 @@ const bookTitles = [
 ];
 
 // Step: 2.3
-/* function createMyList() {
+function createMyList() {
   for (let i = 0; i < bookTitles.length; i++) {
 
     const container = document.getElementById("myUl");
@@ -28,10 +28,20 @@ const bookTitles = [
     container.appendChild(myList);
   }
 }
-createMyList(bookTitles); */
+// createMyList(bookTitles);
 
 // Step: 2.4
-let myBooks = {
+
+const myImages = {
+  haverbeke_eloquent_js: 'book0.jpg', crockford_js_good_parts: 'book1.jpg',
+  myers_smarter_way_js: 'book2.jpg', flanagan_js_definitive_guide: 'book3.jpg',
+  mcconnell_code_complete: 'book4.jpg', bronte_jane_eyre: 'book5.jpg',
+  saleh_migration_north: 'book6.jpg', kazantzakis_zorba: 'book7.jpg',
+  marquez_hundred_years_solitude: 'book8.jpg', hemmingway_old_man_sea: 'book9.jpg',
+};
+
+
+const myBooks = {
   haverbeke_eloquent_js: {
     title: 'Eloquent JavaScript', category: 'Computer Programming',
     author: 'Marijn Haverbeke', language: 'English'
@@ -57,40 +67,85 @@ let myBooks = {
     author: 'Charlotte Bronte', language: 'English'
   },
   saleh_migration_north: {
-    title: 'Wuthering Heights', category: 'Fiction',
-    author: 'Emily Bronte', language: 'English'
+    title: 'Season of Migration to the North', category: 'Fiction',
+    author: 'Tayeb Saleh', language: 'Arabic'
   },
   kazantzakis_zorba: {
     title: 'Zorba the Greek', category: 'Fiction',
-    author: '', language: 'English'
+    author: 'Nikos Kazantzakis', language: 'Greek'
   },
   marquez_hundred_years_solitude: {
-    category: 'Fiction', title: 'One Hundred Years of Solitude',
-    author: 'Gabriel Garcia Marquez', language: 'English'
+    title: 'One Hundred Years of Solitude', category: 'Fiction',
+    author: 'Gabriel Garcia Marquez', language: 'Spanish'
   },
   hemmingway_old_man_sea: {
     title: 'The Old Man and the Sea', category: 'Fiction',
     author: 'Ernest Hemmingway', language: 'English'
   }
 };
-
 //Step 2.5
-// The way (direction of mind) I was trying to show the book title with the other info below was to create a sublist.
-// However, unfortunately, after tens of trials I was not able to make it.
-// I'm still very curuos to learn how to generate a sublist, please let me know.
+function createAndAppend(name, parent, text) {
+  const elem = document.createElement(name);
+  parent.appendChild(elem);
+  if (text !== undefined) {
+    elem.innerHTML = text;
+  }
+  return elem;
+}
 
-function myListProperties() {
-  for (const key of Object.keys(myBooks)) {
+function createAndAppend2(name, parent, options) {
+  if (options === undefined) {
+    options = {};
+  }
+  const elem = document.createElement(name);
+  parent.appendChild(elem);
+  const keys = Object.keys(options);
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    const value = options[key];
+    if (key === 'text') {
+      elem.innerHTML = value;
+    } else {
+      elem.setAttribute(key, value);
+    }
+  }
+  return elem;
+}
 
-    const myUl = document.getElementById("myUl");
-    const ul = document.createElement("ul");
-    const li = document.createElement("li");
-    const listValue = document.createTextNode(myBooks[key].title);
+function myListProperties(books, keys) {
+  // const keys = Object.keys(books);
+  const myUl = document.getElementById("myUl");
 
-    li.appendChild(listValue);
-    ul.appendChild(li);
-    myUl.appendChild(ul);
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    const book = books[key];
 
+    const myLi = createAndAppend2("li", myUl, { class: "book-item" });
+
+    createAndAppend2("h2", myLi, { text: book.title });
+
+    const ul = createAndAppend2("ul", myLi, { id: key });
+    createAndAppend2("li", ul, { text: "Category: " + book.category });
+    createAndAppend2("li", ul, { text: "Author: " + book.author });
+    createAndAppend2("li", ul, { text: "Language: " + book.language });
   }
 }
-myListProperties(myBooks);
+
+function addImages(images, keys) {
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    if (images[key] !== undefined) {
+      const ul = document.getElementById(key);
+      const liImage = createAndAppend2("li", ul);
+      createAndAppend2("img", liImage, {
+        src: images[key],
+        alt: key,
+        class: "book-image"
+      });
+    }
+  }
+}
+
+
+myListProperties(myBooks, bookTitles);
+addImages(myImages, bookTitles);
