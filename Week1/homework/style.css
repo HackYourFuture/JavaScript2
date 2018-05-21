@@ -1,1 +1,16 @@
-/* add your styling here */
+*{
+  list-style-type: none;
+}
+
+img{
+  width: 200px;
+  border: 2px solid black
+}
+
+h1, h2, p{
+  font-family: "tahoma";
+}
+
+#myBooks {
+  text-align: center;
+}
