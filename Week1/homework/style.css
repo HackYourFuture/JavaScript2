@@ -1,1 +1,37 @@
 /* add your styling here */
+
+*{
+    padding :0;
+    margin : 0;
+}
+
+body{
+    background-color : #eee;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style : none;
+}
+
+li{
+    flex-basis: calc(100%/3 - 50px);
+    padding: 25px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 14px;
+    color: #109;
+    padding : 5px;
+}
+
+img{
+    width : 250px;
+    height: 350px;
+    margin : 10px;
+    border-radius: 20px;
+    border : 2px solid #109;
+}
