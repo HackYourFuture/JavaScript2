@@ -43,5 +43,18 @@ const tuesday = [
 ];
 
 const tasks = monday.concat(tuesday);
+console.log(tasks);
 
-// Add your code here
+const fromMinToHours = tasks.map(tasks => tasks.duration / 60);
+console.log(fromMinToHours);
+
+const underTwoHours = tasks.filter(tasks => tasks.duration > 120);
+console.log(underTwoHours);
+
+const maartjeSalary = tasks.map((tasks) => tasks.duration * 20);
+console.log(maartjeSalary);
+
+const amount = tasks.reduce((maartjeSalary, tasks) => maartjeSalary + tasks.duration, 0);
+console.log("Maartje earns a total of " + "€" + amount);
+
+
