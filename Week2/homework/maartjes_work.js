@@ -44,4 +44,11 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
-// Add your code here
+const euroPerHour = 16.00;
+
+const earned = tasks.map(taskInHour => taskInHour.duration / 60)
+  .filter(taskOver2Hours => taskOver2Hours >= 2)
+  .reduce((sum, task) => sum += task * euroPerHour, 0)
+  .toFixed(2);
+
+console.log('Maartje has earned €' + earned);
