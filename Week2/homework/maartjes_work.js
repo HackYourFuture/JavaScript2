@@ -41,7 +41,7 @@ const tuesday = [
     duration: 40
   }
 ];
-
+/*
 const tasks = monday.concat(tuesday);
 
 //Map the tasks to durations in hours----
@@ -62,3 +62,15 @@ const hourlyRate = 36;
 
 const totalEarnings = totalWorkedHours * hourlyRate;
 console.log('Maartje has earned ' + '€' + totalEarnings.toFixed(2));
+*/
+//---MY CORRECTIONS BELOW---
+
+
+const tasks = monday.concat(tuesday);
+
+const totalSalary = tasks.map(minutesToHours => minutesToHours.duration / 60)
+  .filter(twoAndMore => twoAndMore >= 2)
+  .map(perHourSalary => (perHourSalary * 36))
+  .reduce((sum, eachSalary) => sum += eachSalary, 0)
+  .toFixed(2);
+console.log('Maartje has earned ' + '€' + totalSalary);
