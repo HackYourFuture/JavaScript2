@@ -44,4 +44,12 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
+const timeInHours = tasks.map((minutes) => minutes.duration / 60);
+
+const maartjeWorkTime = timeInHours.filter((duration) => duration >= 2);
+const rate = 15;
+const maartjeEarnPerHour = maartjeWorkTime.map((duration) => duration * rate);
+const totalEarn = maartjeEarnPerHour.reduce((acc, current) => acc + current);
+console.log('€' + totalEarn.toFixed(2));
+
 // Add your code here
