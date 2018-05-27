@@ -1,1 +1,34 @@
-/* add your styling here */
+html {
+    font-family: sans-serif;
+    margin: 2%;
+    border-left-style:solid;
+}
+
+h1 {
+    display: block;
+    background-color: yellow;
+    width:50%;
+    color: brown;
+}
+
+h2 {
+    color: darkslateblue;
+}
+
+li {
+    list-style-type:none;
+    font-weight: bold;
+}
+
+li.book-item {
+    list-style-type: upper-roman;
+    
+}
+
+.book-image {
+    width: 150px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: brown;
+    margin-top: 10px;
+}
