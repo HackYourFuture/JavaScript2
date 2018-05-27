@@ -45,3 +45,9 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const totalEarnings = tasks
+  .filter((hour) => hour.duration >= 120)
+  .map((earning) => (earning.duration / 60) * 50)
+  .reduce((total, earning) => total + earning, 0)
+  .toFixed(2);
+console.log(totalEarnings);
