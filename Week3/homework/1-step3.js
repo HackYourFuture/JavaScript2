@@ -1,7 +1,10 @@
 'use strict';
 
 function foo(func) {
-  // What to do here? 
+
+  console.log('Hello, I am foo! I can call another function:');
+  func();
+
 }
 
 function bar() {
