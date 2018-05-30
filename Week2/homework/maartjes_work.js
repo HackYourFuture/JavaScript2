@@ -47,8 +47,8 @@ const tasks = monday.concat(tuesday);
 // Add your code here
 let hourSalary = 25;
 const earnings = tasks
-  .map(x => x.duration / 60) // transforming all task durations to hours
-  .filter(y => y >= 2) // filtering and keeping only the tasks that take more than two hours
+  .map(minutesToHours => minutesToHours.duration / 60) // transforming all task durations to hours
+  .filter(atLeastTwoHours => atLeastTwoHours >= 2) // filtering and keeping only the tasks that take more than two hours
   .reduce((sum, task) => (sum += task * hourSalary), 0); // sum is the accumulator initialized with 0, and task is the index
 
 console.log("Maartje has earned " + earnings.toFixed(2) + " euros.");
