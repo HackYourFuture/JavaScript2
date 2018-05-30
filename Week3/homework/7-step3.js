@@ -21,5 +21,6 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
-
+/*
+f1() is a pointer and f2() is a reference
+*/

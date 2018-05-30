@@ -1,10 +1,22 @@
 'use strict';
 
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
+// const values = [2, 3, 4, 1, 3, 5, 6, 7];
+// const values = [1, 2, 3, 4, 5, 3, 7, 8, 9];
 
-// Add your function here. Try and come up with a good name for this function
+function linearSearch(array) { // O(n) = (2n-1) ???
+  let result = 0;
+  for (let searchedIndex = 0; searchedIndex < array.length; searchedIndex++) {
+    for (let index = searchedIndex + 1; index < array.length; index++) {
+      if (array[index] === array[searchedIndex]) {
+        result = array[index];
+        return result; // this function stops searching after finding the first match
+      }
+    }
+  }
+  return -1;
+}
 
-// Replace `yourFunction` with the name of the function you just created
-const uniqueValues = yourFunction(values);
+const uniqueValues1 = linearSearch(values);
 
-console.log(uniqueValues);
+console.log(uniqueValues1);
