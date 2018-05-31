@@ -21,5 +21,7 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// In the first function we have "pass by value" where the variable value does not change,
+// while in the second it is "pass by reference" where the function is modifying the property value.
+
 
