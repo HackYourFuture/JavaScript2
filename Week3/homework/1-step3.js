@@ -1,11 +1,12 @@
 'use strict';
 
-function foo(func) {
-  // What to do here? 
+function powerMyNumbers(call, a, b) {
+  const result = call(a, b);
+  console.log(result);
 }
 
-function bar() {
-  console.log('Hello, I am bar!');
+function power(x, y) {
+  return Math.pow(x, y);
 }
 
-foo(bar);
+powerMyNumbers(power, 5, 3);
