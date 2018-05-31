@@ -2,9 +2,19 @@
 
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
-// Add your function here. Try and come up with a good name for this function
+function removeRepetition(arr) {
 
-// Replace `yourFunction` with the name of the function you just created
-const uniqueValues = yourFunction(values);
+  const uniqueArr = [];
 
+  for (let i = 0; i < arr.length; i++) {
+
+    if (!uniqueArr.includes(arr[i])) {
+      uniqueArr.push(arr[i]);
+    }
+
+  }
+  return uniqueArr;
+}
+
+const uniqueValues = removeRepetition(values);
 console.log(uniqueValues);
