@@ -5,18 +5,14 @@ function threeFive(startIndex, stopIndex, sayThree, sayFive) {
   const values = [];
 
   for (let i = startIndex; i <= stopIndex; i++) {
-
     values.push(i);
-
   }
 
   console.log('Our values array is ' + values);
 
   for (const num of values) {
-
     if (num % 3 === 0) sayThree(num);
     if (num % 5 === 0) sayFive(num);
-
   }
 
 }

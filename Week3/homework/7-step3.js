@@ -24,3 +24,4 @@ console.log(y);
 // numbers and strings passed to functions by value 
 // so changing the argument inside the function doesn’t affect the variable passed from outside the function
 // objects passed by reference and changing the argument inside the function affect the variable passed from outside the function.
+
