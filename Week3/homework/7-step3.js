@@ -26,7 +26,7 @@ console.log(y);
 In Javascript all types of data except objects define immutable values (values which are incapable of being changed).
 We refer to values of these types as "primitive values".
 In our first case, the type of data that is assigned to x is a number, which is a primitive value.
-In case we want to console.log the output of the first function, we must console.log(fi(x)) instead. 
+In case we want to console.log the output of the first function, we must console.log(f1(x)) instead. 
 In our second case, the type of data that is assigned to x is an object (not a primitive value).  
 */
 
