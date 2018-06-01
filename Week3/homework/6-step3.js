@@ -22,5 +22,6 @@ for (let i = 0; i < arr3d.length; i++) {
   arrText3 = '';
 }
 
+/* There are many ways to print out a multiple dimension arrays depending on the purpose of this procedure */
 console.log(arr2d);
 console.log(arr3d);
