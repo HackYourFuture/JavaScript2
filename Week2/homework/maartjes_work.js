@@ -43,11 +43,12 @@ const tuesday = [
 ];
 
 const tasks = monday.concat(tuesday);
+const hourlyRate = 50;
 
 // Add your code here
 const totalEarnings = tasks
   .filter((hour) => hour.duration >= 120)
-  .map((earning) => (earning.duration / 60) * 50)
+  .map((earning) => (earning.duration / 60) * hourlyRate)
   .reduce((total, earning) => total + earning, 0)
   .toFixed(2);
 console.log(totalEarnings);
