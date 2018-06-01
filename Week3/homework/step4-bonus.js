@@ -1,10 +1,16 @@
 'use strict';
 
-const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
+const names = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
-// Add your function here. Try and come up with a good name for this function
+const uniq = names
+  .map((name) => {
+    return { count: 1, name: name }
+  })
+  .reduce((a, b) => {
+    a[b.name] = (a[b.name] || 0) + b.count
+    return a;
+  }, {});
 
-// Replace `yourFunction` with the name of the function you just created
-const uniqueValues = yourFunction(values);
+const sorted = Object.keys(uniq).sort((a, b) => uniq[a] < uniq[b])
 
-console.log(uniqueValues);
+console.log(sorted);

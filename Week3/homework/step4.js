@@ -1,8 +1,13 @@
 'use strict';
 
-// Add your code here
+const addSix = function (x) {
+  return function createBase() {
+    return x + 6;
+  };
+};
 
-const addSix = createBase(6);
+const add10 = addSix(10);
+const add21 = addSix(21);
 
-addSix(10); // returns 16
-addSix(21); // returns 27
+console.log(add10());
+console.log(add21()); 
