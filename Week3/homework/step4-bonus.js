@@ -3,7 +3,7 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeItUnique(arr) {
-  return Array.from(new Set(arr));
+  return new Set(arr);
 }
 
 
