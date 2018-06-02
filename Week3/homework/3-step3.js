@@ -2,24 +2,51 @@
 
 // use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
-  // add your code here
-  return str;
-}
+  let times = 0;
+  let text = "";
 
-console.log('for', repeatStringNumTimesWithFor('abc', 3));
+  for (times = 0; times < num; times++) {
+    text = text + str;
+  }
+  return text;
+}
+console.log(repeatStringNumTimesWithFor("abc", 3));
+console.log(repeatStringNumTimesWithFor("abc", -4));
+
+repeatStringNumTimesWithFor("abc", 3);
+
 
 // use a 'while' loop
 function repeatStringNumTimesWithWhile(str, num) {
-  // add your code here
-  return str;
-}
+  let times = 0;
+  let text = "";
 
-console.log('while', repeatStringNumTimesWithWhile('abc', 3));
+  while (times < num) {
+    times += 1;
+    text = text + str;
+  }
+  return text;
+}
+console.log(repeatStringNumTimesWithWhile("abc", 3));
+console.log(repeatStringNumTimesWithWhile("abc", -1));
+
+console.log("while", repeatStringNumTimesWithWhile('abc', 3));
 
 // use a 'do...while' loop
 function repeatStringNumTimesWithDoWhile(str, num) {
-  // add your code here
-  return str;
+  let times = 0;
+  let text = "";
+  if (num <= 0) {
+    return "";
+  }
+  do {
+    text = text + str;
+    times += 1;
+  }
+  while (times < num);
+  return text;
 }
+console.log(repeatStringNumTimesWithDoWhile("abc", 3));
+console.log(repeatStringNumTimesWithDoWhile("abc", -1));
 
 console.log('while', repeatStringNumTimesWithDoWhile('abc', 3));

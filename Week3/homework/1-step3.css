@@ -1,0 +1,10 @@
+body,
+html {
+    margin: 25px;
+    padding: 25px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-color: rgb(181, 181, 197);
+}
