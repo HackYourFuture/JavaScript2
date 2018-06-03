@@ -6,7 +6,7 @@ const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 function printArray(arr) {
 
   // if arr is an array call printArray for each element else print it.
-  if (arr.length > 0) {
+  if (Array.isArray(arr)) {
     for (let i = 0; i < arr.length; i++) {
       printArray(arr[i]);
     }
@@ -22,7 +22,7 @@ printArray(arr3d);
 function multiplyAll(arr) {
   let product = 1;
 
-  if (arr.length > 0) {
+  if (Array.isArray(arr)) {
     for (let i = 0; i < arr.length; i++) {
       product *= multiplyAll(arr[i]);
     }
