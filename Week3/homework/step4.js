@@ -1,8 +1,17 @@
 'use strict';
 
-// Add your code here
+function createBase(base) {
+
+  return function (num) {
+    return num + base;
+  };
+
+}
 
 const addSix = createBase(6);
+console.log(addSix(10));
+console.log(addSix(21));
 
-addSix(10); // returns 16
-addSix(21); // returns 27
+const addFive = createBase(5);
+console.log(addFive(5));
+console.log(addFive(10));
