@@ -1,11 +1,12 @@
-'use strict';
+"use strict";
 
 function foo(func) {
-  // What to do here? 
+  func();
+  console.log("This line will appear second");
 }
 
 function bar() {
-  console.log('Hello, I am bar!');
+  console.log("Hello, I am bar!");
 }
 
 foo(bar);
