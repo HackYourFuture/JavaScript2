@@ -6,7 +6,7 @@ function multiplyAll(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr[i].length; j++) {
-            product = product * arr[i][j];
+            product *= arr[i][j];
         }
     }
 

@@ -12,5 +12,3 @@ const printAllItems = (arr) =>
 
 console.log(printAllItems(arr2d));
 console.log(printAllItems(arr3d));
-
-
