@@ -1,1 +1,32 @@
-/* add your styling here */
+body{
+    box-sizing: border-box;    
+    width: 95%;
+    margin: 0 auto;
+}
+#books{
+    background-color: #f5f5f5;
+    margin: 0 auto;
+}
+#books ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+#books ul li{
+    padding: 10px;
+    width: calc(100%/2 - 20px);
+    text-align: center;
+}
+#books img{
+    width: 100%;
+}
+#books > h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
+h1{font-size: 25px;}
+h2{font-size: 20px;}
+h3{font-size: 18px;}
