@@ -13,5 +13,19 @@
     "the_alchemist"
   ];
 
-  console.log(bookTitles)
+  function printBookTitles(placeId, myArr) {
+    var div = document.getElementById(placeId);
+
+    var ul = document.createElement('ul');
+
+    div.appendChild(ul);
+
+    for (let k = 0; k < myArr.length; k++) {
+      let li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML = myArr[k];
+    }
+  }
+
+  printBookTitles("div1", bookTitles);
 }
