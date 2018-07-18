@@ -30,15 +30,17 @@
   printBookTitles("div1", bookTitles);
 
   const bookShelf = {
-    "crime_and_punisment": { author: "dostoyevski", language: "russian" },
-    "zorba": { author: "nikos kazancakis", language: "greek" },
-    "siddhartha": { author: "hermann hesse", language: "german" },
-    "white_fang": { author: "jack london", language: "english" },
-    "poor_folk": { author: "dostoyevski", language: "russian" },
-    "white_nights": { author: "dostoyevski", language: "russian" },
-    "sorrows_yougn_werther": { author: "goethe", language: "german" },
-    "sweet_orange_tree": { author: "vasconcelos", language: "portuguese" },
-    "what_men_live_by": { author: "tolstoy", language: "russian" },
-    "the_alchemist": { author: "paulo coelho", language: "portuguese" }
+    "crime_and_punisment": { title: "Crime and Punisment", author: "Dostoyevski", language: "Russian" },
+    "zorba": { title: "Zorba", author: "Nikos Kazancakis", language: "Greek" },
+    "siddhartha": { title: "Siddhartha", author: "Hermann Hesse", language: "German" },
+    "white_fang": { title: "White Fang", author: "Jack London", language: "English" },
+    "poor_folk": { title: "Poor Folk", author: "Dostoyevski", language: "Russian" },
+    "white_nights": { title: "White Nights", author: "Dostoyevski", language: "Russian" },
+    "sorrows_yougn_werther": { title: "The Sorrows of Young Werther", author: "Goethe", language: "German" },
+    "sweet_orange_tree": { title: "My Sweet Orange Tree", author: "Vasconcelos", language: "Portuguese" },
+    "what_men_live_by": { title: "What Men Live By?", author: "Tolstoy", language: "Russian" },
+    "the_alchemist": { title: "The Alchemist", author: "Paulo Coelho", language: "Portuguese" }
   };
+
+
 }
