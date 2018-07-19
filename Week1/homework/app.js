@@ -14,9 +14,9 @@
   ];
 
   function printBookTitles(placeId, myArr) {
-    var div = document.getElementById(placeId);
+    let div = document.getElementById(placeId);
 
-    var ul = document.createElement('ul');
+    let ul = document.createElement('ul');
 
     div.appendChild(ul);
 
@@ -42,5 +42,40 @@
     "the_alchemist": { title: "The Alchemist", author: "Paulo Coelho", language: "Portuguese" }
   };
 
+
+
+  function printBookDetails(placeId, myObj) {
+    let div = document.getElementById(placeId);
+
+    function size(obj) {
+      let size = 0, key;
+      for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+      }
+      return size;
+    };
+
+    for (let a = 0; a < size(myObj); a++) {
+      let h2 = document.createElement("h2");
+
+      div.appendChild(h2);
+
+      h2.innerHTML = myObj[Object.keys(myObj)[a]].title;
+
+      h2.setAttribute('id', Object.keys(myObj)[a]);
+
+      let ul = document.createElement('ul');
+
+      div.appendChild(ul);
+
+      for (let k = 1; k < 3; k++) {
+        let li = document.createElement('li');
+        ul.appendChild(li);
+        li.innerHTML = (Object.keys(myObj[Object.keys(myObj)[a]])[k] + ": " + Object.values(myObj[Object.keys(myObj)[a]])[k]);
+      }
+    }
+  }
+
+  printBookDetails("div2", bookShelf);
 
 }
