@@ -1,5 +1,6 @@
 'use strict';
 {
+  /*
   const bookTitles = [
     "crime_and_punisment",
     "zorba",
@@ -28,6 +29,7 @@
   }
 
   printBookTitles("div1", bookTitles);
+  */
 
   const bookShelf = {
     "crime_and_punisment": { title: "Crime and Punisment", author: "Dostoyevski", language: "Russian" },
