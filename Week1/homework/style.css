@@ -1,1 +1,129 @@
 /* add your styling here */
+
+body {
+    font-family: "Courier New", Courier, Georgia, 'Times New Roman', Times, serif;
+    position:relative;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px 5% 0px 5%;
+}
+
+.myDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+h2{
+    background-color: goldenrod;
+    margin-top: 7.5%;
+    height: calc(30px + 5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    width: calc(80% + 30px);
+    align-self: center;
+}
+
+li {
+    border: 4px rgb(36, 35, 35) inset;
+    border-radius: 15px;
+    list-style: none;
+    position: relative;
+    font-size: 1em;
+    padding: 5px;
+    margin: 15px;
+}
+
+li:hover {
+    box-shadow: 5px 5px 2px rgb(148, 148, 148);
+}
+
+img {
+    width: 80%;
+    margin: 15px;
+    transition: all .2s ease-in-out;
+    align-self: center;
+
+}
+
+img:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+
+/* for desktop size screens */
+@media only screen and (min-width:1025px) {
+    #div2 { 
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .myDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+        width: calc(50% - 20px);
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    ul {
+    padding: 0px;
+    margin: 0px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    }
+
+    img {
+    width: 40%;
+    margin: 15px;
+    transition: all .2s ease-in-out;
+    }
+}
+
+/* for tablet size screens */
+@media only screen and (min-width:650px) and (max-width:1024px) {
+    /* #div2 { 
+    display: flex;
+    flex-wrap: wrap;
+    } */
+
+    .myDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    ul {
+    padding: 0px;
+    margin: 0px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    }
+
+    img {
+    width: 40%;
+    margin: 15px;
+    transition: all .2s ease-in-out;
+    }
+}
