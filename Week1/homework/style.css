@@ -1,1 +1,40 @@
-/* add your styling here */
+body {background-color: aliceblue;}
+
+h1 {text-align : center;}
+
+#div1 {
+    margin :auto;
+    width: 50%;
+    min-width: 200px;
+    padding-right:40px;
+    border: 5px groove green;
+}
+
+.bookLi {
+    text-align: center;
+    font-weight: bolder;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 2em;
+    font-style: italic;
+    border : 2px solid gray;
+    margin:10px;
+}
+
+.infoSubLi {
+    font-weight: bold;
+    list-style-type: square;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-style: normal;
+    background-color: bisque;
+    margin : 10px;
+    list-style-type: none;
+}
+
+.bookImages {
+    width :30%;
+    border: 5px solid red;
+}
