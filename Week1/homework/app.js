@@ -77,19 +77,21 @@
 
       myDiv.setAttribute("class", "myDiv");
 
+      myDiv.setAttribute("id", Object.keys(myObj)[a]);
+
       let h2 = document.createElement("h2");
 
       myDiv.appendChild(h2);
 
       h2.innerHTML = myObj[Object.keys(myObj)[a]].title
 
-      h2.setAttribute('id', Object.keys(myObj)[a]);
+      //h2.setAttribute('id', Object.keys(myObj)[a]);
 
       let ul = document.createElement('ul');
 
       myDiv.appendChild(ul);
 
-      ul.setAttribute("id", Object.keys(myObj)[a]);
+      //ul.setAttribute("id", Object.keys(myObj)[a]);
 
       let img = document.createElement("img");
 
