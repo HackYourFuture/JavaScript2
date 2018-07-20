@@ -1,1 +1,41 @@
-/* add your styling here */
+body {
+    background-image: url('https://cdn.instructables.com/F3T/2Z7L/G6MPQFON/F3T2Z7LG6MPQFON.LARGE.jpg');
+    /* background-image: url('https://5ms.ro/wp-content/uploads/2018/01/best-books-2015_wide-18ea71bcef7792d9fd6ea5183846999a06b17eee.jpg'); */
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    margin: 30px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    color: #446CB3;
+}
+
+h4 {
+    height: 30px;
+}
+
+#book-list {
+    /* width: 40%; */
+    padding: 5px;
+    font-family: 'Patrick Hand SC', cursive;
+    /* font-size: 17px; */
+    background: rgba(218, 223, 225, .6);
+    color: #2C3E50;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+li {
+    width: 20%;
+}
+
+.book-img {
+    width: 150px;
+    height: 200px;
+}
