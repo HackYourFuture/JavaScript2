@@ -112,16 +112,17 @@ function createBookList() {
     let bookAuthor = document.createTextNode("The book is written by " + Object.values(booksInformation)[i].author);
     let booklanguage = document.createTextNode("The book is written in " + Object.values(booksInformation)[i].language);
     let myH2 = document.createElement("h2");
-    let myH4 = document.createElement("h4");
-    let myH5 = document.createElement("h5");
+    let myPtag1 = document.createElement("p");
+    let myPtag2 = document.createElement("p");
     myH2.appendChild(bookName);
-    myH4.appendChild(bookAuthor);
-    myH5.appendChild(booklanguage);
-    myLi.innerHTML += myH2.outerHTML + myH4.outerHTML + myH5.outerHTML;
+    myPtag1.appendChild(bookAuthor);
+    myPtag2.appendChild(booklanguage);
+    myLi.innerHTML += myH2.outerHTML + myPtag1.outerHTML + myPtag2.outerHTML;
     let bookImage = document.createElement("img");
     myLi.appendChild(bookImage);
     myLi.setAttribute("id", Object.keys(setImages)[i]);
     bookImage.setAttribute("src", Object.values(setImages)[i]);
+    bookImage.setAttribute("alt", Object.values(booksInformation)[i].title);
   }
 }
 
