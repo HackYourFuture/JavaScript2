@@ -67,16 +67,16 @@ const booksInfo = {
 }
 
 const booksImagesInfo = {
-  "book0": "images/0.jpg",
-  "book1": "images/1.jpg",
-  "book2": "images/2.jpg",
-  "book3": "images/3.jpg",
-  "book4": "images/4.jpg",
-  "book5": "images/5.jpg",
-  "book6": "images/6.jpg",
-  "book7": "images/7.jpg",
-  "book8": "images/8.jpg",
-  "book9": "images/9.jpg"
+  "book0" : {adress: "images/0.png"},
+  "book1" : {adress: "images/1.png"},
+  "book2" : {adress: "images/2.png"},
+  "book3" : {adress: "images/3.png"},
+  "book4" : {adress: "images/4.png"},
+  "book5" : {adress: "images/5.png"},
+  "book6" : {adress: "images/6.png"},
+  "book7" : {adress: "images/7.png"},
+  "book8" : {adress: "images/8.png"},
+  "book9" : {adress: "images/9.png"},
 }
 
 function bookShow() {
@@ -103,7 +103,7 @@ function bookShow() {
     cLi.appendChild(cSubLi2);
     cLi.appendChild(cSubLi3);
     cLi.appendChild(cImg);
-    cImg.src = `images/${i}.PNG`;
+    cImg.src = Object.values(booksImagesInfo)[i].adress;
     cLi.setAttribute("class", "bookLi");
     cImg.setAttribute("class", "bookImages");
     cSubLi1.setAttribute("class", "infoSubLi");
