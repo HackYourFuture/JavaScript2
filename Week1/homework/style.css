@@ -1,1 +1,61 @@
-/* add your styling here */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+    padding: 0 auto;
+    background-color: orange;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: white;
+    background-color: gray;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.languages, .authors {
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+img {
+    max-width: 100%;
+    max-height: 600px;
+    width: inherit;
+    border: 5px solid silver;
+  }
+
+.languages:hover ~ .authors {
+    color:red;
+}
+
+li {
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 5px;
+    align-items: center;
+}
+
+li:nth-child(n) {
+    width: calc(100% / 2 - 10px);
+  }
+
+  
