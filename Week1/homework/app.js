@@ -1,7 +1,8 @@
 "use strict";
 
 //This is my super simplified solution for js-hw in hyf. ;)
-//Sorry guys! :P
+//Just 2 declarations and 1 function.
+//Code smarter - not harder!
 
 const bookInfo = [
   { title:'Heir Of Dread',language:"english",author:"Phillip Trescothik",image:"img/1.png"},
@@ -16,5 +17,5 @@ const bookInfo = [
   { title:'Creator Of The Land',language:"hindi",author:"Morwenna Barlow",image:"img/10.png"},
   ]
 const templateStrings = `
-<ul class="books">${bookInfo.map(books =>`<li><h1>${books.title}</h1><p>Language: ${books.language}</p><p>Author: ${books.author}</p><div style="background-image:url(${books.image})"></div></li>`).join('')}</ul>`;
+<ul>${bookInfo.map(books =>`<li><h1>${books.title}</h1><p>Language: ${books.language}</p><p>Author: ${books.author}</p><div style="background-image:url(${books.image})"></div></li>`).join('')}</ul>`;
 document.body.innerHTML = templateStrings
