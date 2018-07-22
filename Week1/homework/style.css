@@ -1,1 +1,43 @@
-/* add your styling here */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-size: 1vw
+}
+
+div,ul {
+    width: 50%;
+    height: 100%
+}
+
+li,ul {
+    display: flex
+}
+
+ul {
+    margin: 0;
+    padding-left: 1vw;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+
+li {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    position: relative;
+    font-size: 1vw
+}
+
+div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: flex-start;
+    border-style: inset
+}
