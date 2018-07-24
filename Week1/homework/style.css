@@ -1,0 +1,33 @@
+/* add your styling here */
+body {
+    background-color: plum
+}
+
+h1 {
+    font-style: italic;
+    color: rgb(3, 22, 63);
+    font-family: Cambria;
+    text-align: center;
+}
+
+#mybooks {
+margin: auto;
+padding: 50px; 
+}
+
+.bookImage {
+    width :25%;
+    border : 3px solid black;
+    margin: 20px;
+    align-self: center;
+
+}
+
+.bookList {
+    font-size : 20px;
+    font-style: oblique;
+    text-align: center;
+    list-style-type: none;
+    color: slategrey;
+}
+
