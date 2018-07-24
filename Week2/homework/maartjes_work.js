@@ -44,4 +44,40 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
-// Add your code here
+//Map the tasks to durations in hours.
+let Maartje = tasks.map(element => element.duration / 60);
+console.log(Maartje);
+//(9) [3, 2, 0.3333333333333333, 3.3333333333333335, 4, 3,
+// 0.16666666666666666, 3.3333333333333335, 0.6666666666666666]
+
+
+//Filter out everything that took less than two hours 
+let Maartje1 = Maartje.filter(element => element > 2);
+console.log(Maartje1);
+//(5) [3, 3.3333333333333335, 4, 3, 3.3333333333333335]
+
+
+//Multiply the each duration by a per-hour rate for billing and sum it all up.
+let maartje2 = Maartje.map(element => element * 13);
+let Maartje3 = maartje2.reduce((total, element) => total + element, 0);
+console.log(Maartje3);
+//257.8333333333333
+
+
+//Output a formatted Euro amount, rounded to Euro cents
+//ther is two ways how i made this 
+
+// first and hard way 
+let Maartje5 = Maartje3 - 7.8333333333333;
+console.log(Maartje5);
+//250
+
+let finalsalary = "€ " + Maartje5;
+console.log(finalsalary);
+//€ 250
+
+
+//second and easy way 
+let finalsalary1 = "€ " + Maartje3.toFixed(2);
+console.log(finalsalary1);
+//€ 257.83
