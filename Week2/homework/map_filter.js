@@ -5,7 +5,7 @@ const newNumbers = numbers.filter(number => number % 2 !== 0);
 console.log(newNumbers);
 //[ 1, 3 ]
 
-newNumbers1 =newNumbers.map(newNumbers =>newNumbers * 2);
+const newNumbers1 =newNumbers.map(newNumbers =>newNumbers * 2);
 //[ 2, 6 ]
 
 console.log("The doubled numbers are: ", newNumbers1);
