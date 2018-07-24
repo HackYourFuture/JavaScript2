@@ -6,6 +6,7 @@ console.log(newNumbers);
 //[ 1, 3 ]
 
 const newNumbers1 =newNumbers.map(newNumbers =>newNumbers * 2);
+console.log(newNumbers1);
 //[ 2, 6 ]
 
 console.log("The doubled numbers are: ", newNumbers1);
