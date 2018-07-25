@@ -68,13 +68,13 @@ console.log(Maartje3);
 //ther is two ways how i made this 
 
 // first and hard way 
-let Maartje5 = Maartje3 - 7.8333333333333;
+let Maartje5 = Maartje3 - 0.0033333333333;
 console.log(Maartje5);
-//250
+//257.83
 
 let finalsalary = "€ " + Maartje5;
 console.log(finalsalary);
-//€ 250
+//€ 257.83
 
 
 //second and easy way 
