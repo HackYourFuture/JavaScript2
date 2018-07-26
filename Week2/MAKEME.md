@@ -116,7 +116,7 @@ _Deadline Saturday_
 
 2. [Record Collection](https://www.freecodecamp.com/challenges/record-collection)
 
-3. [Iterate over Arrays with map](https://www.freecodecamp.com/challenges/iterate-over-arrays-with-map)
+3. [Use the map Method to Extract Data from an Array](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
 
 
 ## Step 5: Read before next lecture
