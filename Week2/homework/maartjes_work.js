@@ -45,3 +45,13 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+let twoHoursTasks = tasks.filter(x => x.duration >=120);
+//console.log(twoHoursTasks);
+
+let totalWorkingTime = twoHoursTasks.map(x => x.duration);
+//console.log(totalWorkingTime);
+
+const salaryPerHour = 25.5;
+
+let totalSalary = totalWorkingTime.reduce((acc,val) => (acc + val)/60 * salaryPerHour,0)
+console.log( "The salary of Maartje is "+"€ " +totalSalary.toFixed(2))
