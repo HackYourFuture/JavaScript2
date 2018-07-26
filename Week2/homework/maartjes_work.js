@@ -45,3 +45,14 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+console.log(tasks);
+const tasksHours = tasks.map(task => {
+  let temp = (task.duration / 60).toFixed(2);
+  return Number(temp);
+});
+console.log('Time in hour', tasksHours);
+const validDurations = tasksHours.filter(taskHour => taskHour >= 2);
+console.log('Elements who larger than 2 hours', validDurations);
+const totalHours = validDurations.reduce((currentNum, duration) => currentNum + duration);
+const earnedMoney = '€ ' + totalHours * 20;
+console.log('The total amount of earned money is :', earnedMoney + ' ,(Note : € 20 per hour!)');
