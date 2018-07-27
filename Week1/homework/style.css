@@ -4,7 +4,6 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    object-fit: contain;
 }
 
 .imglist {
@@ -31,7 +30,6 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    object-fit: contain;
 }
 
 li {
@@ -44,7 +42,6 @@ li {
     border-right: 15px dashed rgb(0, 0, 0);
     padding: 20px;
     box-sizing: border-box;
-    object-fit: contain;
 }
 
 .heading {
