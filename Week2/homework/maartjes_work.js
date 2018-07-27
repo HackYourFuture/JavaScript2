@@ -45,3 +45,8 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+
+const maartjeEarns = tasks.map(element => element.duration / 60).filter(element => element >= 2).map(element => element * 17.50).reduce((total, element) => total + element, 0);
+
+const maartjeIncome = "€ " + maartjeEarns.toFixed(2);
+console.log(maartjeIncome);
