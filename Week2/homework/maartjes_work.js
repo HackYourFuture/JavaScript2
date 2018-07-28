@@ -45,3 +45,7 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const salary = tasks.map(x => x.duration / 60).filter(x => x >= 2)
+.map(x => x * 10).reduce((acc, cur) => acc + cur);
+
+console.log("$" + salary);
