@@ -47,8 +47,6 @@ const durations = tasks
   .map((task) => task.duration / 60)
   .filter((task) => task >= 2);
 
-const numberOfHours = durations.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue;
-}, 0);
+const numberOfHours = durations.reduce((accumulator, currentValue) => { accumulator + currentValue; }, 0);
 const salary = (numberOfHours * 40).toFixed(2);
 console.log(`Maartje's Salary is € ${salary}`);
