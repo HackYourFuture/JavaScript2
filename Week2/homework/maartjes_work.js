@@ -1,7 +1,6 @@
 'use strict';
 
-const monday = [
-  {
+const monday = [{
     name: 'Write a summary HTML/CSS',
     duration: 180
   },
@@ -19,8 +18,7 @@ const monday = [
   }
 ];
 
-const tuesday = [
-  {
+const tuesday = [{
     name: 'Keep writing summary',
     duration: 240
   },
@@ -45,3 +43,10 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const durations = tasks
+  .map((task) => task.duration / 60)
+  .filter((task) => task >= 2);
+
+const numberOfHours = durations.reduce((accumulator, currentValue) => { accumulator + currentValue; }, 0);
+const salary = (numberOfHours * 40).toFixed(2);
+console.log(`Maartje's Salary is € ${salary}`);
