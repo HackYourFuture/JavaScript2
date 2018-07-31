@@ -45,3 +45,17 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const tasksInHours = tasks.map(function(x){
+  let y = x;
+  y.duration /= 60;
+  y.duration = Math.round(y.duration * 100)/100;
+  return y;
+});
+
+const longerTasks = tasksInHours.filter(x => x.duration >= 2);
+const hourRate = 20;
+const maartjesSalary = longerTasks.map(x => x.duration).reduce((a, b) => (a + b)) * hourRate;
+
+console.log(`€ ${Math.round(maartjesSalary * 100) / 100}`);
+
+console.log(longerTasks);
