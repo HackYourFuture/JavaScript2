@@ -21,5 +21,10 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
-
+//In Pass by Reference, Function is called by directly passing 
+//the reference/address of the variable as the argument.
+//Changing the argument inside the function affect the variable
+//passed from outside the function. In Javascript objects and 
+//arrays follows pass by reference.
+//so if we are passing object or array as an argument to the method,
+//then there is a possibility that value of the object can change.

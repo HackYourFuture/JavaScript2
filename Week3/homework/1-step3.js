@@ -2,6 +2,7 @@
 
 function foo(func) {
   // What to do here? 
+  return func();
 }
 
 function bar() {
