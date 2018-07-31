@@ -1,25 +1,61 @@
 'use strict';
 
 // use a 'for' loop
-function repeatStringNumTimesWithFor(str, num) {
-  // add your code here
-  return str;
+'use strict'
+
+function repeatStringNumTimes(str, num) {
+    var repeat = "";
+
+    for (var i = 0; i < num; i++) {
+
+        var x = repeat += str;
+        console.log(x)
+    }
+    if (num < 0) {
+        return "";
+
+    }
+    return x;
 }
 
-console.log('for', repeatStringNumTimesWithFor('abc', 3));
+repeatStringNumTimes("abc", -2);
+repeatStringNumTimes("*", 8)
+repeatStringNumTimes("abc", 3);
+
+
 
 // use a 'while' loop
-function repeatStringNumTimesWithWhile(str, num) {
-  // add your code here
-  return str;
-}
+'use strict'
 
-console.log('while', repeatStringNumTimesWithWhile('abc', 3));
+function repeatStringNumTimes(str, num) {
+    var repeat = "";
+    while (num > 0) {
+        repeat += str;
+        num--;
+    }
+    console.log(repeat);
+    return repeat;
+
+}
+repeatStringNumTimes("abc", 3);
+
+
 
 // use a 'do...while' loop
-function repeatStringNumTimesWithDoWhile(str, num) {
-  // add your code here
-  return str;
-}
+'use strict'
 
-console.log('while', repeatStringNumTimesWithDoWhile('abc', 3));
+function repeatStringNumTimes(str, num) {
+    var repeat = "";
+    if (num > 0) {
+        do {
+            console.log(repeat += str);
+            num--;
+        }
+        while (num > 0);
+    } else {
+        return "";
+    }
+    return repeat;
+
+}
+repeatStringNumTimes("abc", -2)
