@@ -1,6 +1,6 @@
 'use strict';
 
-const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', []];
+const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 // Add your function here. Try and come up with a good name 
 //for this function
@@ -11,11 +11,6 @@ function listUniqueOnes(arr) {
     let myUniques = [];
 
     for (let i = 0; i < arr.length; i++) {
-
-        //this part can be removed.
-        if (typeof arr[i] != "string" || "number") {
-            return "This array contains non-string or non-number element!"
-        };
 
         //main part of function
         if (arr[i] !== arr[i + 1]) {
