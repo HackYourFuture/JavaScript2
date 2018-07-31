@@ -71,7 +71,8 @@ If the answer is 'yes' to all preceding questions you are ready to follow these 
 
 _Deadline Sunday morning_
 
-- https://www.freecodecamp.com/challenges/declare-javascript-objects-as-variables
+-[Build JavaScript Objects](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/build-javascript-objects)
+- Use a Constructor to Create Objects
 - https://www.freecodecamp.com/challenges/make-instances-of-objects-with-a-constructor-function
 - https://www.freecodecamp.com/challenges/make-unique-objects-by-passing-parameters-to-our-constructor
 - https://www.freecodecamp.com/challenges/make-object-properties-private

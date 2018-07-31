@@ -96,7 +96,8 @@ _3.3.3_: with a `do...while` loop.
 
 **3.4** Some practice with objects:
 
-> https://www.freecodecamp.com/challenges/construct-javascript-objects-with-functions
+>https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function
+>https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/use-a-constructor-to-create-objects
 
 **3.5** Nested loops
 
