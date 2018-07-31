@@ -11,10 +11,13 @@ function listUniqueOnes(arr) {
     let myUniques = [];
 
     for (let i = 0; i < arr.length; i++) {
+
+        //this part can be removed.
         if (typeof arr[i] != "string" || "number") {
             return "This array contains non-string or non-number element!"
         };
 
+        //main part of function
         if (arr[i] !== arr[i + 1]) {
             myUniques.push(arr[i]);
         }
