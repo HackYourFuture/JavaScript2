@@ -1,1 +1,79 @@
-/* add your styling here */
+body{
+
+    
+    background-color: gray;
+    box-sizing: border-box;
+    
+}
+
+
+
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: auto;
+    list-style-type: none;
+    border: 1cm double gray;
+    align-items: center;
+    
+    
+}
+
+li{
+    margin: 10px ;
+    padding: 10px;
+    width: 20%;
+    background-color:gainsboro;
+    overflow: fixed;
+    height: 450px;
+    text-align: center;
+      
+}
+
+li:hover {
+    box-shadow: 8px 8px 5px rgb(0, 55, 173);
+}
+
+img{
+    overflow: hidden;
+
+    width: 15pc;
+    height:18pc ;
+}
+
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px white;
+    
+}
+
+h1:hover {
+    transform: scale(1.1);
+    
+}
+
+h2{
+
+    font-size: 24px;
+    color: rgb(0, 55, 173);
+}
+
+
+p{
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+h2:hover {
+
+    color:red;
+}
+
