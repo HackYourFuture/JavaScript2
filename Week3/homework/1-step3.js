@@ -1,11 +1,12 @@
-'use strict';
+'use strict'
 
 function foo(func) {
-  // What to do here? 
+    return setTimeout(func, 2000);
 }
 
 function bar() {
-  console.log('Hello, I am bar!');
+    console.log('Hello, I am bar!');
 }
+
 
 foo(bar);
