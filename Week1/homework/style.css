@@ -1,1 +1,60 @@
-/* add your styling here */
+ div {
+
+  background-image: url("https://thumbs.dreamstime.com/b/natural-white-wood-texture-table-your-great-designs-46732954.jpg") ;
+
+   
+ }
+
+
+  h2{
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: dodgerblue;
+    font-size:1em;
+
+    }
+
+
+
+li {
+  margin:20px;
+  border-radius: 10px;
+  border:2px solid #349bff;
+  padding: 20px; 
+  box-shadow:20px 20px 50px 1px grey;
+ font-size:2em;
+    word-spacing: 30px;
+}
+
+
+
+
+button {
+
+    border: none;
+    border-radius:25%;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width:20%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+
+button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
