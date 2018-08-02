@@ -1,1 +1,59 @@
-/* add your styling here */
+body {
+    background-color: beige;
+    margin: 0 auto
+
+}
+#main {
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+    font-size: 33px;
+    font-weight: bold;
+}
+p {
+    color: goldenrod;
+
+}
+img {
+    width: 50%;
+}
+
+#show_more {
+background-color: #1594e5;
+color: #fff;
+display: block;
+width: 200px;
+font-size: 24px;
+text-transform: uppercase;
+padding: 10px;
+margin: 20px auto;
+text-align: center;
+cursor: pointer;
+border-radius: 5%;
+}
+#main {
+    max-height: 90px;
+    overflow: hidden;
+    transition: max-height 0.7s;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    margin: 0 auto;
+    text-align: center;
+}
+#main.open {
+    max-height: 100%;
+    transition: max-height 0.7s;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
