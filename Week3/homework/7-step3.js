@@ -22,4 +22,7 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+/* for primitives values any changes inside a function do not affect the initial values
+for object, arrays it works differently, it changes the original object or array
 
+*/
