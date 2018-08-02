@@ -1,1 +1,43 @@
 /* add your styling here */
+body {
+      -webkit-transition: all 0.9;
+    -moz-transition: all 0.9s;
+    -ms-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    transition: all 0.9s;
+    background-color: rgb(113, 124, 108);
+    text-align: center;
+    margin: 0 auto;
+}
+#listContainer {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+ul {margin: 0;}
+ul li {
+    list-style: none;
+    border-bottom: black dotted 1.5px;
+}
+ol {
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.imgContainer {
+    width: 45%;
+    margin: 0 auto;
+}
+h2 {
+    color: rgb(27, 51, 51);
+    font-weight: bold;
+}
+h3 {
+    color: red;
+}
+h4 {
+    color: black;
+}
+h5 {color: rgb(59, 59, 59);}
