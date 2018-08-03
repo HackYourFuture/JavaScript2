@@ -30,3 +30,24 @@ for (let i = 0; i < arr3d.length; i++) {
 //concatenated into it recursively up to the specified depth.But it is still an experimental technology.
 
 //as for k dimensions array, if you have an answer I really would like to hear it :)
+
+
+//I tried this way for k dimensions(with some help) array and it works! 
+const kArr = [
+    [12, 2],
+    [4, 5, [70, 6], 9],
+    [1, [20, 44, [3, [898, 0]]]]
+];
+
+function nestedArr(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (Array.isArray(arr[i])) {
+            nestedArr(arr[i]);
+        } else {
+            console.log(arr[i]);
+        }
+    }
+
+}
+
+nestedArr(kArr);
