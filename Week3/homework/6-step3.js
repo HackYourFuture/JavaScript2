@@ -32,7 +32,7 @@ for (let i = 0; i < arr3d.length; i++) {
 //as for k dimensions array, if you have an answer I really would like to hear it :)
 
 
-//I tried this way for k dimensions(with some help) array and it works! 
+//I tried this way for k dimensions array (with some help) and it works! 
 const kArr = [
     [12, 2],
     [4, 5, [70, 6], 9],
