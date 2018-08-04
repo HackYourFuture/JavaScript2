@@ -1,1 +1,21 @@
 /* add your styling here */
+body {
+    background-color: rgb(79, 145, 158);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    }
+div {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(149, 222, 231);
+}
+  img {
+      width: 200px;
+      height: 150px;
+      border-radius: 12px;
+      transition-duration: 2ms;
+  }
+  ui li { list-style: none;}
+  
