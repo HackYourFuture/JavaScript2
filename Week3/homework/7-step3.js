@@ -22,4 +22,8 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+/*
+In the f1 function we use x which is assigned before as immutable. 
+But in f2, we see that object assigned to a variable can be mutabled.
+*/
 
