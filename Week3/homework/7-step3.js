@@ -23,3 +23,5 @@ console.log(y);
 
 // Add your explanation as a comment here
 
+//x is passed by value. Value of variable x doesn't change.
+//y is passed by reference. It is an object and it is changeble.
