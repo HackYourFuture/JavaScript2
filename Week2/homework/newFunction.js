@@ -1,4 +1,4 @@
-'use strict';
+//*'use strict';
 newFunction(); //[2, 6]
 
 function newFunction() {
@@ -10,4 +10,4 @@ function newFunction() {
         return numbers * 2;
     });
     console.log(newNumbers);
-}
+}*//
