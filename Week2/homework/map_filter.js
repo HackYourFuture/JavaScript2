@@ -14,6 +14,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log('The doubled numbers are', newNumbers); // ==> [2, 6]
+
 Rewrite the above program using map and filter don't forget to use =>.
 
 // My codes
