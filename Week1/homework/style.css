@@ -1,1 +1,66 @@
 /* add your styling here */
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+.imglist {
+    display: block;
+    width: 100%;
+    height: 800px;
+    object-fit: contain;
+}
+
+.imglist:hover {
+    filter: opacity(0.3);
+    transition-duration: 2s;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    background-color: darkgrey;
+    background: linear-gradient(rgb(112, 177, 202) 20%, rgb(112, 15, 68) 60%), linear-gradient(to right, rgba(33, 35, 173, 0.767) 620%, rgb(217, 255, 4) 60%), 50px;
+    background-blend-mode: screen, difference, lighten;
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    object-fit: contain;
+}
+
+li {
+    width: calc(100% / 2 - 4em);
+    display: block;
+    background-color: darkslategrey;
+    margin: 2%;
+    font-size: 1.8vw;
+    border-left: 15px dashed rgb(0, 0, 0);
+    border-right: 15px dashed rgb(0, 0, 0);
+    padding: 20px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+.heading {
+    background-color: lightslategrey;
+    text-align: center;
+}
+
+.heading:hover {
+    background-color: aquamarine;
+}
+
+p {
+    background-color: skyblue;
+    text-align: center;
+}
+
+p:hover {
+    background-color: aqua;
+}
