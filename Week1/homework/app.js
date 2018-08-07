@@ -1,71 +1,80 @@
-"use strict";
-
 const bookTitles2 = [
     // Replace with your own book titles
     "Court of the Stone Children",
     "Alice's Adventures in Wonderland",
     "Through the Looking Glass",
-    "What Am I?",
-    "The City of Gold & Lead",
-    "The Pool of Fire",
-    "The White Mountains",
-    "The Dark is Rising",
-    "Charlie and the Chocolate Factory",
-    "James and the Giant Peach"
+    'What Am I?',
+    'The City of Gold & Lead',
+    'The Pool of Fire',
+    'The White Mountains',
+    'The Dark is Rising',
+    'Charlie and the Chocolate Factory',
+    'James and the Giant Peach'
 ];
 
 const bookTitles = {
-    0: {
+    Court_of_the_Stone_Children: {
         title: "Court of the Stone Children",
         language: "English",
-        author: "Cameron, Eleanor"
+        author: "Cameron, Eleanor",
+
     },
-    1: {
+    Alices_Adventures_in_Wonderland: {
         title: "Alice's Adventures in Wonderland",
         language: "English",
-        author: "Carroll, Lewis"
+        author: "Carroll, Lewis",
+
     },
-    2: {
+    Through_the_Looking_Glass: {
         title: "Through the Looking Glass",
         language: "English",
-        author: "Carroll, Lewis"
+        author: "Carroll, Lewis",
+
     },
-    3: {
+    What_Am_I: {
         title: "What Am I?",
         language: "English",
-        author: "Charles, N. N."
+        author: "Charles, N. N.",
+
     },
-    4: {
+    The_City_of_Gold_and_Lead: {
         title: "The City of Gold & Lead",
         language: "English",
-        author: "Christopher, John"
+        author: "Christopher, John",
+
     },
-    5: {
+    The_Pool_of_Fire: {
         title: "The Pool of Fire",
         language: "English",
-        author: "Christopher, John"
+        author: "Christopher, John",
+
     },
-    6: {
+    The_White_Mountains: {
         title: "The White Mountains",
         language: "English",
-        author: "Christopher, John"
+        author: "Christopher, John",
+
     },
-    7: {
+    The_Dark_is_Rising: {
         title: "The Dark is Rising",
         language: "English",
-        author: "Cooper, Susan"
+        author: "Cooper, Susan",
+
     },
-    8: {
+    Charlie_and_the_Chocolate_Factory: {
         title: "Charlie and the Chocolate Factory",
         language: "English",
-        author: "Dahl, Roald"
+        author: "Dahl, Roald",
+
     },
-    9: {
+    James_and_the_Giant_Peach: {
         title: "James and the Giant Peach",
         language: "English",
-        author: "Dahl, Roald"
+        author: "Dahl, Roald",
+
     }
 };
+
 
 // Replace with your own code
 function bookInfo() {
@@ -75,6 +84,10 @@ function bookInfo() {
     document.body.appendChild(list);
     list.appendChild(ul);
     for (let i = 0; i < Object.keys(bookTitles).length; i++) {
+        const myObj = Object.keys(bookTitles);
+        const bookName = myObj[i];
+        const bookDetails = bookTitles[bookName];
+
         const li = document.createElement("li");
         const h1 = document.createElement("h1");
         h1.setAttribute("class", "heading");
@@ -87,17 +100,22 @@ function bookInfo() {
         const img = document.createElement("img");
         img.setAttribute("class", "imglist");
 
+
         ul.appendChild(li);
         li.appendChild(h1);
         li.appendChild(img);
-        img.setAttribute("src", `booksimg/${[i]}.jpg`);
+        img.setAttribute("src", "booksimg/" + [i] + ".jpg");
         li.appendChild(p);
         li.appendChild(p2);
 
-        h1.innerHTML += bookTitles[i].title;
 
-        p.innerHTML += bookTitles[i].language;
-        p2.innerHTML += bookTitles[i].author;
+        // const img = "|images: " + bookTitles[i];
+
+        h1.innerHTML += bookDetails['title'];
+        p.innerHTML += bookDetails['language'];
+        p2.innerHTML += bookDetails['author'];
+
     }
+
 }
 bookInfo();
