@@ -122,5 +122,5 @@
   }
   listGenerator();
 
-  console.log(Object.keys(books))
+
 }
