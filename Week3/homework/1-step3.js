@@ -9,3 +9,6 @@ function bar() {
 }
 
 foo(bar);
+
+
+
