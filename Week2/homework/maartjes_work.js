@@ -43,7 +43,6 @@ const tuesday = [{
 const tasks = monday.concat(tuesday);
 
 // Add your code here
-const salaryPerHour = tasks.map(element => element.duration / 60).filter(element => element >= 2).map(element => element * 18.70).reduce((total, element) => total + element, 0);
+const salaryPerHour = tasks.map(element => element.duration / 60).filter(element => element >= 2).reduce((total, element) => total + (element * 18.70), 0);
 const resultOutput = "€ " + salaryPerHour.toFixed(2);
-
 console.log(resultOutput);
