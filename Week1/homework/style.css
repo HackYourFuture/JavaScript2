@@ -1,1 +1,40 @@
-/* add your styling here */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: white;
+    background-color: gray
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 250px;
+  }
+
+  #bookTitles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .bookTitles-items {
+      margin: 5px;
+  }
+
+  
+  .bookTitles-items:nth-child(n) {
+    width: calc(100% / 2 - 10px);
+  }
+ 
+  
+  
