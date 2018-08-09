@@ -22,4 +22,5 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
-
+// in f1 x is a variable (there is no change of the function) 9.
+// in f2 x is an object inside the variable y (there is a change of the function) Object { x: 10 }.  

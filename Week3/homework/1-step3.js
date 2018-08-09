@@ -1,7 +1,7 @@
 'use strict';
 
 function foo(func) {
-  // What to do here? 
+  setTimeout(function () { bar() }, 5000);
 }
 
 function bar() {
@@ -9,3 +9,4 @@ function bar() {
 }
 
 foo(bar);
+
