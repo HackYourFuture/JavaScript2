@@ -6,7 +6,7 @@ function foo(func) {
 }
 
 function bar() {
-    console.log('hello i am karam');
+    console.log('hello i am foo');
 }
 
 foo(bar);

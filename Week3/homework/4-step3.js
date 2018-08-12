@@ -5,4 +5,4 @@ function relative() {
     this.lastName = "Luis";
     this.age = 33;
 }
-let details = new Mario();
+let details = new relative();

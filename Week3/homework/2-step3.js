@@ -2,29 +2,26 @@
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     const values = [];
-    // Add your code here
-    let myArr = stopIndex - startIndex;
-    for (let i = 0; i <= myArr; i++) {
-        values[i] = startIndex;
-        startIndex++;
+
+    for (startIndex; startIndex <= stopIndex; startIndex++) {
+        values.push(startIndex);
     }
-    values.forEach((value) => {
-        if (value % 3 === 0 && value % 5 === 0) {
-            threeCallback();
-            fiveCallback();
-        } else if (value % 3 === 0) {
-            threeCallback();
-        } else if (value % 5 === 0) {
-            fiveCallback();
+    for (let i = 0; i < values.length; i++) {
+        if (values[i] % 3 === 0) {
+            threeCallback(values[i]);
+        } else values[i] % 5 === 0; {
+            fiveCallback(values[i]);
         }
-    });
+    }
 }
 
-function sayThree() {
-    console.log("3");
+function sayThree(values) {
+    console.log(values + 'divisible by 3');
 }
 
-function sayFive() {
-    console.log("5");
+function sayFive(values) {
+    console.log(values + 'divisible by 5');
 }
+
+
 threeFive(10, 15, sayThree, sayFive);
