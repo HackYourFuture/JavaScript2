@@ -47,7 +47,7 @@ Review through the topics of JavaScript1:
 - ~~Capturing user input~~
 - [Events](http://javascript.info/introduction-browser-events)
 - [Basic DOM manipulations (img src, innerHTML)](./../../../../fundamentals/blob/master/fundamentals/DOM_manipulation.md)
-- ~~Code debugging using the browser~~
+- [Code Degugging Using the Browser](http://javascript.info/debugging-chrome)
 - [Code commenting](./../../../../fundamentals/blob/master/fundamentals/code_commenting.md)
 - ~~Structuring code~~
 - [Code formatting](./../../../../fundamentals/blob/master/fundamentals/code_formatting.md)
