@@ -45,7 +45,7 @@ Review through the topics of JavaScript1:
 (No reading material available at this time for the crossed-out topics)
 
 - ~~Capturing user input~~
-- ~~Events~~
+- [Events](http://javascript.info/introduction-browser-events)
 - [Basic DOM manipulations (img src, innerHTML)](./../../../../fundamentals/blob/master/fundamentals/DOM_manipulation.md)
 - ~~Code debugging using the browser~~
 - [Code commenting](./../../../../fundamentals/blob/master/fundamentals/code_commenting.md)
