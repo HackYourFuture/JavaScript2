@@ -51,7 +51,7 @@ Review through the topics of JavaScript1:
 - [Code commenting](./../../../../fundamentals/blob/master/fundamentals/code_commenting.md)
 - ~~Structuring code~~
 - [Code formatting](./../../../../fundamentals/blob/master/fundamentals/code_formatting.md)
-- [Handing in homework via PR](../../..//fundamentals/blob/master/fundamentals/homework_pr.md)
+- [Handing in homework via PR](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/homework_pr.md)
 
 ### Recommended readings
 
