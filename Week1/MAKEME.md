@@ -60,7 +60,7 @@ Go over your homework one last time:
 - Does every file start with `'use strict';`?
 - Have you used `const` and `let` and avoided `var`?
 - Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
-- Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
+- Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/code_formatting.md))?
 - Have you resolved all issues flagged by ESLint and the spell checker (no wavy red and green underlines in VSCode)?
 
 If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
