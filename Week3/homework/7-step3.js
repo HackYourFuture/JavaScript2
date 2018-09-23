@@ -22,4 +22,8 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+/*
+The first one passing a normal expression referred to a data type of number which is x.
 
+The second one passing an object which has a x property and it's value 9.
+*/
