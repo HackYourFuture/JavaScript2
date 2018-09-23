@@ -5,7 +5,7 @@
   ];
 
 
-  // Replace with your own code
+
   console.log("This is te book titles" + bookTitles);
 
 }
