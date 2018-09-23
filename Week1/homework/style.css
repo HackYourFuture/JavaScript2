@@ -1,1 +1,18 @@
 /* add your styling here */
+
+#books {
+   margin: 0;
+   padding: 0 0 20px 0 ;
+   background-color: rgb(54, 56, 54);
+   color:rgb(191, 192, 192);
+   font-family: Arial;
+}
+#books h1 {
+   color:rgb(54, 56, 54);
+   background-color: rgb(114, 211, 114);
+   padding: 20px 40px;
+}
+.imgs {
+   width: 300px;
+   height: 300px;
+}
