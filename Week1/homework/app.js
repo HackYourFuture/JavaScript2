@@ -1,11 +1,11 @@
-'use strict';
-{
+'use strict'; {
   const bookTitles = [
     // Replace with your own book titles
-    'harry_potter_chamber_secrets'
+    'How to make a life'
   ];
 
 
   // Replace with your own code
-  console.log(bookTitles);
+  console.log("This is te book titles" + bookTitles);
+
 }
