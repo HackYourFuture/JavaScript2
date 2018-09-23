@@ -45,3 +45,30 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+
+const taskDurationsToHours = tasks.map(convert => {
+  return {
+      name: convert.name,
+      duration: convert.duration / 60
+  }
+});
+
+console.log(taskDurationsToHours);
+/*
+const lessThenTwoHours = taskDurationsToHours.filter(compare => {
+  return (compare.duration < 2) ? true : false
+});
+console.log(lessThenTwoHours);
+*/
+
+let hourRate = 12;
+const perHour = taskDurationsToHours.reduce((total, hour) => total + hour.duration * hourRate, 0);
+
+console.log(perHour);
+/*
+let MaartjeBill = 0;
+let MaartjeTakePerHour = 12;
+taskDurationsToHours.forEach(bill => MaartjeBill += MaartjeTakePerHour * bill.duration)
+
+console.log("€", MaartjeBill);
+*/
