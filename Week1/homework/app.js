@@ -8,4 +8,8 @@
 
   // Replace with your own code
   console.log(bookTitles);
+
+  console.log('hello world');
+  console.log('hello class 17 smile for javaScript :-)');
 }
+
