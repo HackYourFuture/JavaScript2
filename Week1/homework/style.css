@@ -1,1 +1,55 @@
 /* add your styling here */
+body {
+    background-color: plum
+}
+
+h1 {
+    font-style: italic;
+    color: rgb(3, 22, 63);
+    font-family: Cambria;
+    text-align: center;
+    border-bottom : 3px solid bisque;
+    
+    
+}
+
+#mybooks {
+margin: auto;
+padding: 30px; 
+position: relative;
+bottom: 175px;
+}
+
+.bookImage {
+    width :25%;
+    border : 3px groove black;
+    border-radius: 15px;
+   position: relative;
+   right: 300px;
+  
+
+}
+
+.bookList {
+    font-size : 20px;
+    font-style: oblique;
+    text-align: center;
+    list-style-type: none;
+    color: slategrey;
+}
+
+.detailsLi {
+    border-left: 2px hidden;
+    position: absolute;
+    left: 10%;
+    font-size : 30px;
+    font-style: italic;
+    color: rgb(3, 22, 63);
+    font-family: Cambria;
+    position: relative;
+    top: 250px;
+    margin: 10px;
+    padding: 5px
+    
+}
+
