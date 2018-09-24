@@ -1,10 +1,25 @@
-'use strict';
+"use strict";
 
-const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
+let mainArr = ["a", "b", "c", "d", "a", "e", "f", "c"];
 
-// Add your function here. Try and come up with a good name for this function
+mainArr.getUnique = function() {
+  let j = {},
+    uniqArr = [],
+    mainArrItem;
+  for (let i = 0; (mainArrItem = this[i]); i++) {
+    j[mainArrItem] = 1;
+  }
 
-// Replace `yourFunction` with the name of the function you just created
-const uniqueValues = yourFunction(values);
+  for (mainArrItem in j) {
+    uniqArr.push(mainArrItem);
+  }
+  return uniqArr;
+};
+console.log(mainArr.getUnique());
 
-console.log(uniqueValues);
+//simplest way
+
+const mainArr = ["a", "b", "c", "d", "a", "e", "f", "c"];
+let uniqueArray = Array.from(new Set(mainArr));
+
+console.log(uniqueArray);
