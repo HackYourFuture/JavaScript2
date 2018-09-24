@@ -43,5 +43,35 @@ const tuesday = [
 ];
 
 const tasks = monday.concat(tuesday);
-
 // Add your code here
+// Map the tasks to durations in hours
+
+const durationInMinute = [];
+for (let k in tasks) {
+  durationInMinute[k] = tasks[k].duration;
+}
+
+let durationInHours = durationInMinute.map(i => (Number((i / 60).toFixed(2))));
+console.log(durationInHours);
+
+[3, 2, 0.33, 3.33, 4, 3, 0.17, 3.33, 0.67]
+
+// Filter out everything that took less than two hours 
+// (i.e., remove from the collection)
+
+let lessThanTowHours = durationInHours
+  .filter(n => n >= 2);
+console.log(lessThanTowHours);
+Array[3, 2, 3.33, 4, 3, 3.33]
+
+// Multiply the each duration by a per-hour rate for billing
+// (you can decide yourself what Maartje should earn per hour) 
+// and sum it all up.
+
+let earnMoney = durationInHours.map(oneHour => (oneHour * 125).toFixed(2) + " €");
+console.log("maartje should earn " + earnMoney);
+
+// let earnMoney = durationInHours.map(oneHour => (oneHour * 125));
+// console.log(earnMoney);
+
+
