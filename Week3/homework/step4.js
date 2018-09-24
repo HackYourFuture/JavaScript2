@@ -1,6 +1,11 @@
 'use strict';
 
 // Add your code here
+function createBase(a) {
+    return function(b) {
+        return a + b;
+    }
+}
 
 const addSix = createBase(6);
 
