@@ -106,7 +106,7 @@ Follow these steps. Each step should build on the result of the previous step.
 
 ## Step 3: ROVER
 
-Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)! (Alternative site: [roverjs.taalmap.nl](http://roverjs.taalmap.nl/))
+Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)!
 
 ## Step 4: **Some freeCodeCamp challenges:**
 
