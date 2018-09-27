@@ -1,1 +1,12 @@
 /* add your styling here */
+body {
+  background-image: url("images/background.jpg ");
+  background-size: cover;
+  background-repeat: no-repeat
+}
+h1{
+  color: brown;
+}
+img{
+  margin: 15px;
+}
