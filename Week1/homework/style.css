@@ -1,1 +1,24 @@
-/* add your styling here */
+#main_list{
+  background-color: #ffe6ff;
+  margin: 0;
+   padding: 10px ;
+   color:#1a1aff;
+   font-family: sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+  
+  }
+  ul{
+    list-style-type: none;
+  }
+h1{
+  color: #001433;
+  
+}
+h3{
+  color: #3399ff;
+}
+img {
+  width: 200px;
+   height: 200px;
+}
