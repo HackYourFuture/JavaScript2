@@ -1,1 +1,66 @@
-/* add your styling here */
+
+body {
+    background-color: rgb(131, 145, 131);
+
+}
+
+h1 {
+    font-family: cursive;
+    color: rgb(61, 7, 7);
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 7%;
+    background-color: aqua;
+    height: 100px;
+    -webkit-border-radius: 7%;
+    -moz-border-radius: 7%;
+    -ms-border-radius: 7%;
+    -o-border-radius: 7%;
+}
+
+h2 {
+    font-family: cursive;
+    color: white;
+    border-top: dotted 5px red;
+    border-bottom: dotted 5px red;
+    font-size: 1.8em;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#booktitle li {
+
+    text-align: left;
+    color: white;
+}
+
+#booktitle {
+    background-image: url('image/book_cover_background1.jpg')
+}
+
+li {
+
+    font-size: 2.4em;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+
+}
+
+ol {
+    border: solid 4px red;
+    background-image: url('image/book_cover_background.jpg')
+}
+
+
+img {
+    border: solid 5px red;
+    margin-right: 100px;
+    margin-left: 100px;
+}
