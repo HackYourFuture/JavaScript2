@@ -1,1 +1,36 @@
-/* add your styling here */
+body {
+  background-color: rgb(79, 145, 158);
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+div {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(149, 222, 231);
+}
+
+h2{
+  background-color: rgb(175, 172, 168);
+  border-radius: 10px;
+  
+  
+}
+img {
+  width:350px;
+  height:320px;
+  border-radius: 12px;
+  transition-duration: 3ms;
+}
+ul li  {
+  list-style: none;
+}
+
+p {
+  color: rgb(252, 252, 252);
+  font-size: 1.2em;
+}
