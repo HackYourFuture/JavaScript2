@@ -1,1 +1,51 @@
-/* add your styling here */
+body {
+  margin: 0;
+  padding: 0;
+  background: #249292;
+  border: 20px groove white;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: 500;
+  color: #082020;
+}
+
+ul li:first-child {
+  flex-basis: 100%;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+li {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 1%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 31px;
+}
+
+
+img {
+  height: 450px;
+  width: 350px;
+  margin: 10px;
+}
+
+#angels_and_demons{ 
+  width: 900px;
+}
+
+.title0{
+  color: rgb(243, 211, 211);
+  background: #2b4242;
+  padding: 7px;
+}
