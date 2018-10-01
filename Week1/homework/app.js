@@ -1,6 +1,6 @@
 'use strict';
 
-const bookTitles2 = {
+const bookTitles = {
   court_of_the_stone_children: {
     title: "Court of the Stone Children",
     language: "English",
@@ -75,17 +75,17 @@ function booksInformation() {
   list.setAttribute("id", "bookList");
   const ul = createAndAppend("ul", list);
   document.body.appendChild(list);
-  for (let i = 0; i < Object.keys(bookTitles2).length; i++) {
-    const myObject = Object.keys(bookTitles2);
+  for (let i = 0; i < Object.keys(bookTitles).length; i++) {
+    const myObject = Object.keys(bookTitles);
     const bookName = myObject[i];
-    const bookDetails = bookTitles2[bookName];
+    const bookDetails = bookTitles[bookName];
 
     const li = createAndAppend("li", ul);
     const h1 = createAndAppend("h1", li);
     h1.setAttribute("class", "heading");
 
     const img = createAndAppend("img", li);
-    img.setAttribute("class", "imglist");
+    img.setAttribute("class", "allImg");
     img.setAttribute("src", "booksimg/" + [i] + ".jpg");
 
     const p = createAndAppend("p", li);
@@ -100,9 +100,10 @@ function booksInformation() {
     // li.appendChild(p);
     // li.appendChild(p2);
 
-    h1.innerHTML += bookDetails['title'];
-    p.innerHTML += bookDetails['language'];
-    p2.innerHTML += bookDetails['author'];
+    h1.innerHTML += bookDetails.title;
+    p.innerHTML += bookDetails.language;
+    p2.innerHTML += bookDetails.author;
 
   }
 }
+booksInformation();

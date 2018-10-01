@@ -8,14 +8,14 @@ body {
     object-fit: contain;
 }
 
-.imgList {
+.allImg {
     display: block;
     width: 100%;
     height: 800px;
     object-fit: contain;
 }
 
-.imgList:hover {
+.allImg:hover {
     filter: opacity(0.3);
     transition-duration: 2s;
 }
