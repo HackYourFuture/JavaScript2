@@ -5,7 +5,6 @@
     'dont_tell_me_your_afraid', 'dont_tell_mummy', 'positive_thinking', 'time_management', 'The alchemist', 'the_power_of_now', 'ekadoli', 'Before_we_were_yours', 'hebrew_female_in_my_heart', 'amareeta'
   ];
 
-
   // Replace with your own code
   //  2.3
   function makeBooksTitlesList() {
@@ -16,7 +15,6 @@
       const li = document.createElement('li');
       li.innerHTML = bookTitles[i];
       ul.appendChild(li);
-
     }
 
   }
