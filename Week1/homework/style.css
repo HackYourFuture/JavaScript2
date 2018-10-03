@@ -1,1 +1,36 @@
 /* add your styling here */
+div{
+    margin: 20px;
+    padding: 20px;
+  background-color: rgb(221, 255, 244);
+  border: 2px solid rgb(45, 190, 142);
+}
+div::first-line{
+font-weight: bold;
+font-size: 32px;
+}
+
+ul{
+  margin: 20px;
+  background-color: rgb(255, 222, 217);
+  border: 2px solid rgb(230, 119, 100);
+}
+ul::first-line{
+font-weight: bold;
+font-size: 32px;
+}
+
+img{
+  height: 40%;
+  border: 1px solid black;
+  margin-left:2%;
+}
+
+h1{
+  margin-top: 5%;
+  text-decoration: underline;
+}
+
+li{
+  line-height: 200%;
+}
