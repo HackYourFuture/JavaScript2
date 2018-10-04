@@ -45,3 +45,11 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+
+const maartjeHours = tasks.map(duration => duration.duration / 60).filter(durations => durations >= 2);
+
+console.log('maartje got ' + maartjeHours.reduce((accumulator, currentValue) => accumulator + (currentValue * 17),
+  0
+).toFixed(2) + ' $ in total for completing the tasks.');
+
+
