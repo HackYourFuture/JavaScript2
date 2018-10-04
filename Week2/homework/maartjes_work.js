@@ -45,3 +45,16 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const hours = tasks.map(hour => hour['duration'] / 60);
+const moreThanTwoHours = workHours.filter(moreThanTwoHour => moreThanTwoHour > 2);
+
+
+let sum;
+function add(sum, order) {
+  return sum + order;
+}
+let totalAmount = moreThanTwoHours.map(hour => hour * 12).reduce(add, 0);
+console.log(totalAmount);
+
+let roundMoney = totalAmount.toFixed(2);
+console.log(roundMoney);
