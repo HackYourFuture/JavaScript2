@@ -1,0 +1,38 @@
+/* add your styling here */
+
+body{
+    display:block;
+    width:100%;
+    margin-left:0px;
+
+
+    
+}
+ul {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    
+
+    
+
+}
+h1{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+}
+li{
+    width: 30%;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(152, 230, 28);
+
+}
+img{
+    width:100%;
+    
+}
