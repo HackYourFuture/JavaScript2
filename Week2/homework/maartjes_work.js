@@ -45,3 +45,14 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const inHours = tasks.map(hour => hour['duration']/60);
+console.log(inHours);
+
+const moreThanTwo = inHours.filter(hour => hour > 2);
+console.log(moreThanTwo);
+
+const amountPerHour = moreThanTwo.map(hour => hour * 15);
+console.log(amountPerHour);
+
+const  roundedToEuro = amountPerHour.toLocaleString('it-IT', {style: 'currency', currency: 'EUR'});
+console.log(roundedToEuro);
