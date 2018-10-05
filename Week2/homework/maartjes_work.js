@@ -43,5 +43,19 @@ const tuesday = [
 ];
 
 const tasks = monday.concat(tuesday);
+console.log(tasks);
 
 // Add your code here
+
+const durationArr = tasks.map(collectTime => collectTime.duration / 60);
+console.log(durationArr);
+
+const durationArrCheck = durationArr.filter(check => check >= 2);
+console.log(durationArrCheck);
+
+
+const durationCost = durationArrCheck.reduce((acc, num) => { return acc + (num * 10); }, 0);
+console.log(durationCost);
+
+console.log("€ " + durationCost.toFixed(2));
+
