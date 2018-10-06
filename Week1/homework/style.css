@@ -1,36 +1,81 @@
 body {
   background-color: rgb(79, 145, 158);
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  position: relative;
   text-align: center;
   box-sizing: border-box;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  
 }
 div {
   display: flex;
-  flex-wrap: wrap;
-  border: 2px solid rgb(149, 222, 231);
+  flex-direction: column;
+  width: 100%;
 }
 
-h2{
+ul {
+  padding: 0px;
+  margin: 0px;
+  width: calc(80% +20px);
+  align-content: center;
+}
+h2 {
   background-color: rgb(175, 172, 168);
   border-radius: 10px;
-  
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 img {
-  width:350px;
-  height:320px;
-  border-radius: 12px;
+  width: 50%;
+  border-radius: 5%;
   transition-duration: 3ms;
 }
-ul li  {
+img:hover {
+  border: 3px solid #192a56;
+  border-radius: 20%;
+}
+ul li {
   list-style: none;
 }
 
 p {
   color: rgb(252, 252, 252);
   font-size: 1.2em;
+}
+
+/* for Desktop screen size */
+@media only screen and (min-width: 1026px) {
+  .div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* for Tablet screen size */
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+li {
+  position: relative;
+  font-size: 1em;
+  padding: 15px;
+  margin: 40px;
+}
+h2 {
+  width: 100%;
+}
+img {
+  width: 50%;
+  margin: 20px;
+}
+p {
+  font-size: 1.5rem;
 }
