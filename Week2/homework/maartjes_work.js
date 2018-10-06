@@ -44,4 +44,23 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
+
 // Add your code here
+//shortened code
+let paidPerHour = tasks.map(time => time.duration / 60).filter(filteredTime => filteredTime > 2).reduce((accumulator, elm) => accumulator + (elm * 16.50));
+let totalSalary = "€" + paidPerHour.toFixed(2);
+console.log(totalSalary);
+
+//readable code
+//mapped the time per hour 60min
+let salaryPerHour = tasks.map(time => time.duration / 60);
+
+//filtered all durations from 2 hours and above
+let filtered = salaryPerHour.filter(filteredTime => filteredTime > 2);
+
+//reduced the working hours to 16.50 euro per hour
+let reduced = filtered.reduce((accumulator, elm) => accumulator + (elm * 16.50));
+//result
+let totalResult = "€" + reduced.toFixed(2);
+console.log(totalResult);
+
