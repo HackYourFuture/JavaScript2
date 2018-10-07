@@ -59,7 +59,7 @@ const bookInfo = {
     "language":"Arabic",
     "auther":"Ahlam"
   },
-  "Nsian":{
+  "ghoyom":{
     "title":"ghoyom",
     "language":"Arabic",
     "auther":"Ahlam Mostaghanmi"
