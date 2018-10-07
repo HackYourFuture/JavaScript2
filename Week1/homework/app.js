@@ -1,6 +1,6 @@
 'use strict';
 
-const bookTitles = {
+const bookDitails = {
   court_of_the_stone_children: {
     title: "Court of the Stone Children",
     language: "English",
@@ -72,13 +72,12 @@ function createAndAppend(name, parent) {
 }
 function booksInformation() {
   const list = document.createElement("section");
-  list.setAttribute("id", "bookList");
   const ul = createAndAppend("ul", list);
   document.body.appendChild(list);
-  for (let i = 0; i < Object.keys(bookTitles).length; i++) {
-    const myObject = Object.keys(bookTitles);
+  for (let i = 0; i < Object.keys(bookDitails).length; i++) {
+    const myObject = Object.keys(bookDitails);
     const bookName = myObject[i];
-    const bookDetails = bookTitles[bookName];
+    const bookDetails = bookDitails[bookName];
 
     const li = createAndAppend("li", ul);
     const h1 = createAndAppend("h1", li);
@@ -86,7 +85,7 @@ function booksInformation() {
 
     const img = createAndAppend("img", li);
     img.setAttribute("class", "allImg");
-    img.setAttribute("src", "booksimg/" + [i] + ".jpg");
+    img.setAttribute("src", "booksimg/" + i + ".jpg");
 
     const p = createAndAppend("p", li);
     p.setAttribute("class", "language");
