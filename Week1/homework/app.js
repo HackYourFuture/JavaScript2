@@ -1,31 +1,3 @@
-// "use strict";
-
-// const bookTitles = [
-//   "long_walk_to_freedom",
-//   "pride_and_prejudice",
-//   "adventures_of_huckleberry_finn",
-//   "lolita",
-//   "the_reader",
-//   "robinson_crusoe",
-//   "gullivers_travels",
-//   "david_copperfield",
-//   "the_scarlet_letter",
-//   "the_picture_of_dorian_gray"
-// ];
-//   function renderMyBooks(bookList, bookTitles) {
-
-//     let div = document.getElementById(bookList);
-//     let ul = document.createElement("ul");
-//     div.appendChild(ul);
-
-//     for (let i = 0; i < bookTitles.length; i++) {
-//       let li = document.createElement("li");
-//       ul.appendChild(li);
-//       li.innerHTML = bookTitles[i];
-//       // li.innerHTML = booksInfo[bookTitles[i]];
-//     }
-//   }
-//   console.log(renderMyBooks("bookList", bookTitles));
 "use strict";
 
 function main() {
