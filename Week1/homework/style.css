@@ -1,10 +1,10 @@
 /* add your styling here */
 body{
   width: 100%;
-  text-align: center;
+  /*text-align: center;*/
   background-color: bisque;
 }
-ul{
+/*ul{
   list-style: none;
    display: flex;
     flex-direction: row;
@@ -15,6 +15,11 @@ ul{
 li{
     display: inline-block;
     width: calc(100% / 4);
-    height: 300px;/*???*/
+    height: 300px;
     text-align: center;
+}*/
+ul ul{
+  /*list-style-position:inside;*/
+  list-style-type: circle;
+  /*margin-left: 2em;*/
 }
