@@ -1,6 +1,16 @@
 'use strict';
 {
-  const bookTitles = ["zakerat_jasad","alasoad_yaliq_beke","kabo_alabaseen","hokol_aldam","yakfik_khalb_wahed","ant_li","shifret_divinchi","ontha_abria","alf_lila_wlila","ghoyom"
+  const bookTitles = [
+    "zakerat_jasad",
+    "alasoad_yaliq_beke",
+    "kabo_alabaseen",
+    "hokol_aldam",
+    "yakfik_khalb_wahed",
+    "ant_li",
+    "shifret_divinchi",
+    "ontha_abria",
+    "alf_lila_wlila",
+    "ghoyom"
   ];
 
 const bookInfo = {
@@ -50,7 +60,7 @@ const bookInfo = {
     "auther":"Ahlam"
   },
   "Nsian":{
-    "title":"Ghoyom",
+    "title":"ghoyom",
     "language":"Arabic",
     "auther":"Ahlam Mostaghanmi"
   }  
@@ -65,26 +75,10 @@ let bookCovers = {"zakerat_jasad":"./img/IMG_2596.JPG",
 "shifret_divinchi":"./img/IMG_2597.JPG",
 "ontha_abria":"./img/IMG_2598.JPG",
 "alf_lila_wlila":"./img/IMG_2599.JPG",
-"Nsian":"./img/gh.jpg"
+"ghoyom":"./img/gh.jpg"
 }
 
 
-
-  // Replace with you own code
-  // function createBookList(books){
-
-  //   let list = document.createElement("UL");
-  //   document.body.appendChild(list) ; 
-  //   list.setAttribute("id","book_list");
-  //   for(let i = 0; i < books.length; i++){
-  //     let li = document.createElement("LI");
-  //     let title = document.createTextNode(books[i]);
-  //     li.appendChild(title);
-  //     list.appendChild(li);
-    
-  //   }
-    
-  // }
 
   function createBookList(books){
 
@@ -136,5 +130,5 @@ let bookCovers = {"zakerat_jasad":"./img/IMG_2596.JPG",
    
 
 covering(bookCovers);
-console.log(bookCovers);
+
   }
