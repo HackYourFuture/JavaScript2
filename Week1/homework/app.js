@@ -78,8 +78,8 @@ function createBookList(bookTitles, bookCovers) {
   const ul = document.createElement("ul");
   div.appendChild(ul);
 
-  for (let key in bookTitles) {
-    let books = bookTitles[key];
+  for (let title in bookTitles) {
+    let books = bookTitles[title];
     let li = document.createElement("li");
     ul.appendChild(li);
     let header = document.createElement("h2");
@@ -96,7 +96,7 @@ function createBookList(bookTitles, bookCovers) {
 
     let image = document.createElement("img");
     li.appendChild(image);
-    image.src = getBookDetails(key, bookCovers);
+    image.src = getBookDetails(title, bookCovers);
     image.setAttribute("width", 50);
   }
   return ul;
