@@ -61,14 +61,14 @@ const moreThenTwoHours = taskDurationsToHours.filter(compare => {
 console.log(moreThenTwoHours);
 
 
-let hourRate = 12;
+const hourRate = 12;
 const perHour = taskDurationsToHours.reduce((total, hour) => total + hour.duration * hourRate, 0);
 
-console.log(perHour);
-/*
+console.log("€", perHour);
+
+// Here is the solution with forEach()
 let MaartjeBill = 0;
-let MaartjeTakePerHour = 12;
+const MaartjeTakePerHour = 12;
 taskDurationsToHours.forEach(bill => MaartjeBill += MaartjeTakePerHour * bill.duration)
 
 console.log("€", MaartjeBill);
-*/
