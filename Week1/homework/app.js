@@ -82,13 +82,13 @@ let bookCovers = {"zakerat_jasad":"./img/IMG_2596.JPG",
 
   function createBookList(books){
 
-    let list = document.createElement("UL");
+    let list = document.createElement("ul");
     document.body.appendChild(list) ; 
     list.setAttribute("id","book_list");
     for(let i in books){
-      let li = document.createElement("LI");
-      li.setAttribute("ID",i);
-      let header = document.createElement("H1");
+      let li = document.createElement("li");
+      li.setAttribute("id",i);
+      let header = document.createElement("h1");
       let headerText = document.createTextNode(books[i].title)
       header.appendChild(headerText);
 
