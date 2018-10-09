@@ -1,6 +1,9 @@
 'use strict';
 
 // Add your code here
+function addSix(num) {
+  return num + 6;
+}
 
 const addSix = createBase(6);
 

@@ -7,10 +7,10 @@ function f1(val) {
 }
 
 f1(x);
-
+//code below prints value of x. x is number
 console.log(x);
 
-
+//code below prints value of y. 'val' is referenced to actual object so y is changed.
 const y = { x: 9 };
 function f2(val) {
   val.x = val.x + 1;
