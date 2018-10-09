@@ -7,19 +7,19 @@ const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 // arr2d
 for (let i = 0; i < arr2d.length; i++) {
-   console.log(i, arr2d[i].length);
-   for (let j = 0; j < arr2d[i].length; j++) {
-      console.log(arr2d[i][j]);
-   }
+  console.log(i, arr2d[i].length);
+  for (let j = 0; j < arr2d[i].length; j++) {
+    console.log(arr2d[i][j]);
+  }
 }
 
 // arr3d
-for (let i=0; i < arr3d.length; i++) {
-   console.log(i, arr2d[i].length);
-   for (let j=0; j < arr2d[i].length; j++) {
-      console.log(arr2d[i][j]);
-      for (let n=0; n < arr3d[i][j].length; n++) {
-         console.log(j, arr3d[i][j][n]);
-      }
-   }
+for (let i = 0; i < arr3d.length; i++) {
+  console.log(i, arr3d[i].length);
+  for (let j = 0; j < arr3d[i].length; j++) {
+    console.log(j, arr3d[i][j].length);
+    for (let n = 0; n < arr3d[i][j].length; n++) {
+      console.log(arr3d[i][j][n]);
+    }
+  }
 }

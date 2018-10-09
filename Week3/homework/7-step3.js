@@ -6,9 +6,9 @@ function f1(val) {
   return val;
 }
 
-f1(x);
+f1(x); // Here output is 10
 
-console.log(x);
+console.log(x); // Here the output 9
 
 
 const y = { x: 9 };
@@ -23,7 +23,7 @@ console.log(y);
 
 // Add your explanation as a comment here
 /*
-The first one passing a normal expression referred to a data type of number which is x.
+an array or object passes by value, the value is a reference to it, so you can change the contents.
 
-The second one passing an object which has a x property and it's value 9.
+but Primitive type variable like string,number etc, are always pass as pass by value. Array and Object is passed as pass by reference.
 */
