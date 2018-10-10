@@ -21,5 +21,6 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
 
+/* Javascript always passes by value. if you pass an object to a function, the "value" is really a reference to that object, 
+so the function can modify that object's properties, but variable is primitive type  like number passed by its value, so it is not changing */
