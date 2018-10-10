@@ -1,25 +1,42 @@
 'use strict';
+{
+  // use a 'for' loop
+  function repeatStringNumTimesWithFor(str, num) {
+    let newStr = '';
+    for (let i = 0; i < num; i++) {
+      newStr += str;
+    }
+    return newStr;
+  }
 
-// use a 'for' loop
-function repeatStringNumTimesWithFor(str, num) {
-  // add your code here
-  return str;
+  console.log(repeatStringNumTimesWithFor('abc\n', 3));
 }
 
-console.log('for', repeatStringNumTimesWithFor('abc', 3));
+{
+  // use a 'while' loop
+  function repeatStringNumTimesWithWhile(str, num) {
+    let newStr = '';
+    while (num > 0) {
+      newStr += str;
+      num--;
+    }
+    return newStr;
+  }
 
-// use a 'while' loop
-function repeatStringNumTimesWithWhile(str, num) {
-  // add your code here
-  return str;
+  console.log(repeatStringNumTimesWithWhile('abc\n', 3));
 }
 
-console.log('while', repeatStringNumTimesWithWhile('abc', 3));
+{
+  // use a 'do...while' loop
+  function repeatStringNumTimesWithDoWhile(str, num) {
+    let newStr = '';
+    do {
+      newStr += str;
+      num--;
+    }
+    while (num > 0);
+    return newStr;
+  }
 
-// use a 'do...while' loop
-function repeatStringNumTimesWithDoWhile(str, num) {
-  // add your code here
-  return str;
+  console.log(repeatStringNumTimesWithDoWhile('abc\n', 3));
 }
-
-console.log('while', repeatStringNumTimesWithDoWhile('abc', 3));
