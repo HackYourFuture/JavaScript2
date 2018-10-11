@@ -22,4 +22,8 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+//my answer is copied from : https://snook.ca/archives/javascript/javascript_pass
+/*When passing in a primitive type variable like a string or a number,
+the value is passed in by value. This means that any changes to that variable
+while in the function are completely separate from anything that happens outside the function.*/
 
