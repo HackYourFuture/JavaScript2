@@ -53,3 +53,13 @@ const total = tasks
   .reduce((total, hour) => total + hour * hourRate, 0);
 
 console.log("She earned: € " + total.toFixed(2));
+
+// Another version
+let total = 0;
+tasks
+  .map(task => task.duration / 60)
+  .filter(duration => duration >= 2)
+  .map(duration => duration * hourlyRate)
+  .forEach(amount => total += amount);
+
+console.log(`Maartje has earned €${total.toFixed(2)}`);
