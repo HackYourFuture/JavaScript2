@@ -45,30 +45,11 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const hourRate = 20;
 
-const taskDurationsToHours = tasks.map(convert => {
-  return {
-    name: convert.name,
-    duration: convert.duration / 60
-  }
-});
+const total = tasks
+  .map(convert => convert.duration / 60)
+  .filter(duration => duration >= 2)
+  .reduce((total, hour) => total + hour * hourRate, 0);
 
-console.log(taskDurationsToHours);
-
-const moreThenTwoHours = taskDurationsToHours.filter(compare => {
-  return (compare.duration >= 2) ? true : false
-});
-console.log(moreThenTwoHours);
-
-
-const hourRate = 12;
-const perHour = taskDurationsToHours.reduce((total, hour) => total + hour.duration * hourRate, 0);
-
-console.log("€", perHour);
-
-// Here is the solution with forEach()
-let MaartjeBill = 0;
-const MaartjeTakePerHour = 12;
-taskDurationsToHours.forEach(bill => MaartjeBill += MaartjeTakePerHour * bill.duration)
-
-console.log("€", MaartjeBill);
+console.log("She earned: € " + total.toFixed(2));
