@@ -1,43 +1,5 @@
 'use strict';
 {
-  //2.1
-  const bookTitles = [
-    'brain_camp ',
-    'sophie_washington_secret_santa',
-    'el_deafo',
-    'american_born_chinese',
-    'queen_of_the_world!',
-    'land_of_sad_oranges',
-    'return-to-haifa',
-    'in-the-presence-of-absence',
-    'black-great-on-you',
-    'do-not-be-sad',
-  ];
-  //2.3
-  function bodyFunction() {
-    const main_list = document.getElementById('main_list');
-    const h1 = document.createElement('h1');
-    h1.innerText = 'My Books:';
-    main_list.appendChild(h1);
-    const ul = document.createElement('ul');
-    main_list.appendChild(ul);
-    for (let bookTitlesIndex = 0; bookTitlesIndex < bookTitles.length; bookTitlesIndex++) {
-      const li = document.createElement("li");
-      ul.appendChild(li);
-      li.innerText = bookTitles[bookTitlesIndex];
-    }
-  }
-  window.addEventListener('load', bodyFunction);
-
-  function bookTitlesList(ul) {
-    for (let bookTitlesIndex = 0; bookTitlesIndex < bookTitles.length; bookTitlesIndex++) {
-      const li = document.createElement("li");
-      ul.appendChild(li);
-      li.innerText = bookTitles[bookTitlesIndex];
-    }
-  }
-
-  //2.4
   const bookDetails = {
     'brain_camp': { title: 'Brain Camp', language: 'English', author: 'Susan Kim' },
     'sophie_washington_secret_santa': { title: 'Sophie Washington Secret Santa', language: 'English', author: 'Tonya Duncan Ellis ' },
@@ -51,36 +13,6 @@
     'do_not_be_sad': { title: 'Don\'t Be Sad', language: 'Arabic', author: 'Alqarny' },
   };
 
-
-  //2.5
-  function bookDetailsFunction() {
-    const main_list = document.getElementById('main_list');
-    const h1 = document.createElement('h1');
-    h1.innerText = 'My Books:';
-    main_list.appendChild(h1);
-    const ul = document.createElement('ul');
-    main_list.appendChild(ul);
-    const bookDetailsKeys = Object.keys(bookDetails);
-    for (let bookDetailsIndex = 0; bookDetailsIndex < bookDetailsKeys.length; bookDetailsIndex++) {
-      const currentKeys = bookDetailsKeys[bookDetailsIndex];
-      const li = document.createElement("li");
-      ul.appendChild(li);
-      const h3 = document.createElement("h3");
-      li.appendChild(h3);
-      h3.innerText = bookDetails[currentKeys].title;
-      const languageP = document.createElement("p");
-      languageP.innerText = 'Language: ' + bookDetails[currentKeys].language;
-      li.appendChild(languageP);
-      const authorP = document.createElement('p');
-      authorP.innerText = 'Author: ' + bookDetails[currentKeys].author;
-      li.appendChild(authorP);
-
-    }
-  }
-  bookDetailsFunction();
-
-
-  //2.7
   const booksImg =
   {
     brain_camp: './images/brain_camp.jpg',
@@ -104,6 +36,7 @@
     const ul = document.createElement('ul');
     main_list.appendChild(ul);
     const bookDetailsKeys = Object.keys(bookDetails);
+
     for (let bookDetailsIndex = 0; bookDetailsIndex < bookDetailsKeys.length; bookDetailsIndex++) {
       const currentKeys = bookDetailsKeys[bookDetailsIndex];
       const li = document.createElement("li");
@@ -118,23 +51,16 @@
       authorP.innerText = 'Author: ' + bookDetails[currentKeys].author;
       li.appendChild(authorP);
       const booksId = Object.keys(booksImg);
+
       if (bookDetailsKeys[bookDetailsIndex] === booksId[bookDetailsIndex]) {
         let mySrc = Object.values(booksImg);
         let images = document.createElement('img');
         images.setAttribute("src", mySrc[bookDetailsIndex]);
-        ul.appendChild(images);
+        li.appendChild(images);
       }
-
-
     }
-
   }
-
-
   bookWithImg();
 
 
 }
-
-
-
