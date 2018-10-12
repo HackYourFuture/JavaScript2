@@ -42,13 +42,14 @@ const tuesday = [
   }
 ];
 
+const hourlyRate = 20;
 const tasks = monday.concat(tuesday);
-const Maartje = tasks.map(obj => obj.duration / 60).filter(el => el >= 2)
+const Maartje = tasks.map(task => task.duration / 60).filter(duration => duration >= 2)
   .reduce(
     (sum, hours) => hours + sum
-  ) * 30.34
+  ) * hourlyRate
 
-console.log(Maartje.toFixed(2) + ' €')
+console.log('€'+ Maartje.toFixed(2) )
 
 
 
