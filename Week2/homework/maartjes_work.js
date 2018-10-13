@@ -45,40 +45,24 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
-let durationOfTasks = tasks.map(Element => Element.duration);
-
- console.log(durationOfTasks);
+const durations = tasks.map(task => task.duration);
 
 // Map the tasks to durations in hours.
-let durationInHours = durationOfTasks
-  .map(element => element / 60)
-
- console.log(durationInHours);
+const durationInHours = durations.map(task => task / 60)
 
 // Filter out everything that took less than two hours
-  
-let lessThanTwoHours = durationInHours
-    
-.filter(element => element >= 2)
-console.log(lessThanTwoHours);
+const durationsOTwoHoursOfMore = durationInHours.filter(task => task >= 2)
 
 // Multiply the each duration by a per-hour rate for billing and sum it all up.
+const hourlyRate = 50;
 
-let paymentPerHour = durationOfTasks
-  .map(element => (element / 60) * 100)
+const paymentPerHour = durations.filter(task => (task / 60) * hourlyRate)
 
-console.log(paymentPerHour);
+const totalEarnings = paymentPerHour.reduce(function (a, b) {
+  return a + b;
 
-let totalPayment = paymentPerHour
-  .reduce(function (a, b) {
-    return a + b;
-    
-  });
-console.log(`Total hours payment is: ${totalPayment}`);
+});
 
 // Output a formatted Euro amount, rounded to Euro cents, e.g: € 12.34.
 
-let amountEUR = totalPayment.toFixed(2);
-console.log(`The total amount to Euro is: ${amountEUR} EUR.`);
-
-
+const amountEUR = totalEarnings.toFixed(2);
