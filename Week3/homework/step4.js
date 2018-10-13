@@ -2,7 +2,10 @@
 
 // Add your code here
 
-const addSix = createBase(6);
+const addSix = function createBase(num) {
+  const baseNum = 6;
+  return num + baseNum;
+}
 
 addSix(10); // returns 16
-addSix(21); // returns 27
+console.log(addSix(21)); // returns 27
