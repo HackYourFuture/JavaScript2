@@ -23,3 +23,9 @@ console.log(y);
 
 // Add your explanation as a comment here
 
+/*
+
+I think f1 can't change the value of x because its a constant , but 
+in the second example f2 can change the value of the property x because its in an object.
+
+*/
