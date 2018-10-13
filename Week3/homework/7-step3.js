@@ -23,3 +23,6 @@ console.log(y);
 
 // Add your explanation as a comment here
 
+// the first one we are just reassigned the variable x in scope of function so it will not change the value
+
+// the second one we mutated the value of the prob of the object so it will change .
