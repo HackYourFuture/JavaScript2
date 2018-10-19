@@ -1,24 +1,24 @@
 'use strict';
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const values = [];
+  const testNumbers = [];
   for (let i = startIndex; i <= stopIndex; i++) {
-    values.push(i);
+    testNumbers.push(i);
   }
-  values.forEach(element => {
-    if (element % 3 === 0)
+  testNumbers.forEach(element => {
+    if (element % 3 === 0) {
       threeCallback(element);
-    if (element % 5 === 0)
+    } if (element % 5 === 0) {
       fiveCallback(element);
+    }
   });
   //instead of foreach....
-  /*for (let arrVal of values) {
+  /*for (let arrVal of testNumbers) {
     if (arrVal % 3 === 0)
       threeCallback(arrVal);
     if (arrVal % 5 === 0)
       fiveCallback(arrVal);
   }*/
-  console.log(values);
 }
 function sayThree(threeValue) {
   console.log('Divisible by 3 : ' + threeValue);

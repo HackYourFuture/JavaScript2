@@ -1,5 +1,6 @@
 'use strict';
 // paste your freeCodeCamp solutions in here
+
 function Dog() {
   this.name = "Pretty";
   this.color = "white";
@@ -7,3 +8,4 @@ function Dog() {
 }
 
 let hound = new Dog();
+console.log(hound);
