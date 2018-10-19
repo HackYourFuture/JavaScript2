@@ -46,10 +46,10 @@ const tasks = monday.concat(tuesday);
 
 // Add your code here
 const workHours = tasks.map(workHour => workHour['duration'] / 60);
-const workHoursMoreThan2 = workHours.filter(workHoursMoreT2 => workHoursMoreT2 > 2);
+const workHoursMoreThan2 = workHours.filter(workHoursMoreT2 => workHoursMoreT2 >= 2);
 let sum;
 function add(sum, elem) {
   return sum + elem;
 }
-let totalIncome = workHoursMoreThan2.map(hour => hour * 10).reduce(add, 0);
+let totalIncome = workHoursMoreThan2.map(hour => hour * 20).reduce(add, 0);
 console.log(totalIncome.toFixed(2));
