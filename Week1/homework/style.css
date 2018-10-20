@@ -1,1 +1,27 @@
 /* add your styling here */
+ul.books {
+    /* border: 2px cyan dashed; */
+}
+
+li.book {
+    display: inline-block;
+    max-width: 33%;
+    /* border: 1px darkcyan dotted; */
+    padding: 2px;
+}
+
+
+li.book > img {
+    max-height: 256px;
+    max-width: 256px;
+}
+
+/* 
+li.book > h2.bookTitle {
+    text-align: center;
+    text-overflow: ellipsis; 
+} */
+/* 
+li.book > .bookAuthor {
+    text-align: center;
+} */
