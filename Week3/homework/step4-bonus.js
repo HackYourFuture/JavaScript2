@@ -2,15 +2,23 @@
 
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
+function makeUnique(arr) {
+  return arr.filter((elem, index) => arr.indexOf(elem) === index);
+}
+
+const uniqueValues = makeUnique(values);
+console.log(uniqueValues);
+
+// Another way
 function arrFilter(arr) {
   let uniq = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (uniq.indexOf(arr[i]) === -1) {
-      uniq.push(arr[i]);
+  arr.forEach((el, i) => {
+    if (arr.indexOf(el) === i) {
+      uniq.push(el);
     }
-  }
+  });
   return uniq;
 }
-const uniqueValues = arrFilter(values);
 
-console.log(uniqueValues);
+const uniqueValues1 = arrFilter(values);
+console.log(uniqueValues1);
