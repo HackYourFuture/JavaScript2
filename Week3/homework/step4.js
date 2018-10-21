@@ -12,8 +12,8 @@ console.log(addSix(10));
 console.log(addSix(21));
 
 //Solution with arrow function
-const createBase = base => num => base + num;
+const createBase1 = base => num => base + num;
 
-const addSix = createBase(6);
-console.log(addSix(10)); // returns 16
-console.log(addSix(21)); // returns 27
+const addSix1 = createBase1(6);
+console.log(addSix1(10)); // returns 16
+console.log(addSix1(21)); // returns 27
