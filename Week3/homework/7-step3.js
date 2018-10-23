@@ -27,3 +27,5 @@ console.log(y);
 the value is passed in by value. This means that any changes to that variable
 while in the function are completely separate from anything that happens outside the function.*/
 
+// i understand that the variable value inside the function is completely separated from it's value in the global scope.
+// in the second case we are changing the value as a key of an object which makes it accessible from inside and outside the function. 

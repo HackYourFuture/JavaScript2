@@ -3,8 +3,8 @@
 // use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
   // add your code here
-  var string = '';
-  for (var i = 0; i < num; i++) {
+  let string = '';
+  for (let i = 0; i < num; i++) {
 
     string += ' ' + str;
   }
@@ -16,8 +16,8 @@ console.log('for', repeatStringNumTimesWithFor('abc', 3));
 // use a 'while' loop
 function repeatStringNumTimesWithWhile(str, num) {
   // add your code here
-  var index = 0;
-  var string = '';
+  let index = 0;
+  let string = '';
   while (index < num) {
     string += ' ' + str;
     index++;
@@ -30,8 +30,8 @@ console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 // use a 'do...while' loop
 function repeatStringNumTimesWithDoWhile(str, num) {
   // add your code here
-  var index = 0;
-  var string = '';
+  let index = 0;
+  let string = '';
   do {
     string += ' ' + str;
     index++;

@@ -10,20 +10,18 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   console.log(values);
   for (let index = 0; index <= values.length; index++) {
     const value = values[index];
-    if (value % 3 === 0 && value % 5 === 0) { threeCallback(value), fiveCallback(value); }
-    else if (value % 3 === 0) { threeCallback(value); }
+    if (value % 3 === 0) { threeCallback(value); }
     else if (value % 5 === 0) { fiveCallback(value); }
 
   }
-
 }
 
 function sayThree(value) {
-  console.log(value + 'is divisible by three');
+  console.log(value + ' is divisible by three');
   return value;
 }
 function sayFive(value) {
-  console.log(value + 'is divisible by five');
+  console.log(value + ' is divisible by five');
   return value;
 }
 

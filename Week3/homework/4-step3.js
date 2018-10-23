@@ -6,6 +6,6 @@ function Dog() {
     this.color = 'brown',
     this.numLegs = 4;
 }
-let hound = new Dog();
+const hound = new Dog();
 
 console.log(hound);
