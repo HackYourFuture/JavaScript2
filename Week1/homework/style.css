@@ -1,1 +1,32 @@
-/* add your styling here */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 1em;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+    margin: 1em; 
+    border-bottom: 3px solid lightgray;
+
+}
+
+h2,h3,h4{
+    padding: 2px;
+    margin: 0.5em; 
+   
+}
+
+
+#myUlDiv{
+    width: 50%;
+    text-align: center; 
+    margin: 10px auto;
+}
