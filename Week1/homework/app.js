@@ -29,62 +29,62 @@ window.onload = function() {
 //2.4
  let books = {
      id1: {
-         "title": "harry_potter_chamber_secrets",
-         "language": "english",
+         "title": "Harry Potter Chamber Secrets",
+         "language": "English",
          "author": "Joanne Rowling"
      },
 
      id2: {
-         "title": "the_da_vinci_code",
-         "language": "english",
+         "title": "The Da Vinci Code",
+         "language": "English",
          "author": "Daniel Brown"
      },
 
      id3: {
-         "title": "the_world_order",
-         "language": "english",
+         "title": "The World Order",
+         "language": "English",
          "author": "Henry Kissinger"
      },
 
      id4: {
-         "title": "the_white_house_years",
-         "language": "english",
+         "title": "The White House Years",
+         "language": "English",
          "author": "Henry Kissinger"
      },
 
      id5: {
-         "title": "the_so-called_republic",
-         "language": "arabic",
+         "title": "The So-Called Republic",
+         "language": "Erabic",
          "author": "Alaa Alaswani"
      },
 
      id6: {
-         "title": "the_alchemist",
-         "language": "english",
+         "title": "The Alchamist",
+         "language": "English",
          "author": "Paulo Coelho"
      },
 
      id7: {
-         "title": "love_in_the_time_of_cholira",
-         "language": "english",
+         "title": "Love In The Time Of Cholira",
+         "language": "English",
          "author": "Gabriel Marquez"
      },
 
      id8: {
-         "title": "the_prophet",
-         "language": "arabic",
+         "title": "The Prophet",
+         "language": "Arabic",
          "author": "Kahlil Gibran"
      },
 
      id9: {
-         "title": "herodotus_history",
-         "language": "english",
+         "title": "Herodotus History",
+         "language": "English",
          "author": "Herodotus"
      },
 
      id10: {
-         "title": "the_yacoubian_building",
-         "language": "arabic",
+         "title": "The Yacoubian Building",
+         "language": "Arabic",
          "author": "Alaa Alaswani"
      }
 
