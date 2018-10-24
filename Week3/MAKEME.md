@@ -72,7 +72,7 @@ Both functions should be called if the array value is divisible by both 3 and 5.
 
 ```js
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-    const values = [];
+    const numbers = [];
   // make array
   // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next  
 }
@@ -84,11 +84,11 @@ threeFive(10, 15, sayThree, sayFive);
 // please make sure you see why these calls are made before you start coding
 ```
 
-> Note: The following assignments include some problems from _freeCodeCamp_. While we normally ask you to use more modern `const` and `let` keywords to declare variables, currently _freeCodeCamp_ does not give you that option and expects you to use the older `var` keyword.
+> Note: The following assignments include some problems from _freeCodeCamp_. Note that some _freeCodeCamp_ examples still mention `var`. However you can safely replace them with `let` and `const` as appropriate.
 
 **3.3** Please solve this problem:
 
-> https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string  
+>[Basic Algorithm Scripting: Repeat a String Repeat a String](https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string)
 
 _3.3.1_: with a `for` loop.  
 _3.3.2_: with a `while` loop.  
@@ -96,12 +96,13 @@ _3.3.3_: with a `do...while` loop.
 
 **3.4** Some practice with objects:
 
->https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function
->https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/use-a-constructor-to-create-objects
+>[Object Oriented Programming: Define a Constructor Function](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function)<br>
+[Object Oriented Programming: Use a Constructor to Create Objects](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/use-a-constructor-to-create-objects)
 
 **3.5** Nested loops
 
-> https://www.freecodecamp.com/challenges/nesting-for-loops
+>[Basic JavaScript: Nesting For Loops
+](https://www.freecodecamp.com/challenges/nesting-for-loops)
 
 **3.6** We did some work with arrays:
 
@@ -160,7 +161,21 @@ addSix(21); // returns 27
 __Bonus__: Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c']` and returns an array which only has unique values in it (so it removes the duplicate ones). Make it a 'smart' algorithm that could do it for every array (only strings/number). Try to make it as fast as possible!
 
 
-## Step 5: Read before next lecture
+## Step 5: Run the unit tests
+
+(See the week 2 MAKEME for detailed instructions.)
+
+To run the unit test for the week 3 homework, open a terminal window in the `JavaScript2` folder and type
+
+```
+npm run test3
+```
+
+In case of errors, try and fix them. When done, run the tests again: `npm run test3`
+
+Repeat the previous step until all tests pass.
+
+## Step 6: Read before next lecture
 
 _Deadline Sunday morning_
 
@@ -171,7 +186,7 @@ Go trough the reading material in the [README.md](https://github.com/HackYourFut
 
 Go over your homework one last time:
 
-- Does every file run without errors and with the correct results when you run them with Node?
+- Does your homework pass all the unit tests?
 - Does every file start with `'use strict';`?
 - Have you used `const` and `let` and avoided `var`?
 - Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?

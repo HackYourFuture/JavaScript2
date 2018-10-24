@@ -3,7 +3,8 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "parserOptions": {
     "ecmaVersion": 2017,
@@ -12,6 +13,9 @@
     },
     "sourceType": "module"
   },
+  "plugins": [
+    "jest"
+  ],
   "extends": [
     "eslint:recommended"
   ],

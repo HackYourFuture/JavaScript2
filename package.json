@@ -1,0 +1,25 @@
+{
+  "name": "javascript2",
+  "version": "1.0.0",
+  "description": "HYF JavaScript2 module",
+  "main": "index.js",
+  "scripts": {
+    "test2": "jest Week2/",
+    "test3": "jest Week3/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackYourFuture/JavaScript2.git"
+  },
+  "author": "HackYourFuture",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackYourFuture/JavaScript2/issues"
+  },
+  "homepage": "https://github.com/HackYourFuture/JavaScript2#readme",
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-plugin-jest": "^21.26.0",
+    "jest": "^23.6.0"
+  }
+}

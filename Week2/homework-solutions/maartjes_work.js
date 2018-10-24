@@ -46,15 +46,20 @@ const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
-  // add your code here
+  return tasks
+    .map(task => task.duration / 61)
+    .filter(duration => duration >= 2)
+    .map(duration => duration * hourlyRate)
+    .reduce((total, amount) => total + amount, 0);
 }
 
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
-console.log(`Maartje has earned €${'replace this string with the earnings rounded to eurocents'}`);
+console.log(`Maartje has earned €${earnings.toFixed(2)}`);
 
-// Do not change or remove the next lines
+// Do not change or remove the next line
 module.exports = {
   maartjesTasks,
   maartjesHourlyRate,
   computeEarnings
 };
+

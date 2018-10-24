@@ -2,7 +2,9 @@
 // paste your freeCodeCamp solutions in here
 
 function Dog() {
-  // add your code here
+  this.name = 'Tarzan';
+  this.color = 'brown';
+  this.numLegs = 4;
 }
 
 const hound = new Dog();

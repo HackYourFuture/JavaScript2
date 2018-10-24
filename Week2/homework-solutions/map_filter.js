@@ -1,13 +1,15 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  // add your code here
+  return numbers
+    .filter(number => number % 2 !== 0)
+    .map(number => number * 2);
 }
 
 const myNumbers = [1, 2, 3, 4];
 console.log(doubleOddNumbers(myNumbers));
 
-// Do not change or remove the next lines
+// Do not change or remove the next line
 module.exports = {
   myNumbers,
   doubleOddNumbers

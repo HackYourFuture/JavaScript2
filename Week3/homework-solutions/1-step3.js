@@ -1,6 +1,7 @@
 'use strict';
 
 function foo(func) {
+  func();
   // What to do here? 
 }
 
