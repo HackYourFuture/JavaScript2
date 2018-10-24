@@ -1,11 +1,11 @@
 'use strict';
 
-// note: prefer const and let over var
+// note: prefer const and let over let
 function multiplyAll(arr) {
-  var product = 1;
-  for (var i = 0; i < arr.length; i++) {
-    var innerArray = arr[i];
-    for (var j = 0; j < innerArray.length; j++) {
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+    const innerArray = arr[i];
+    for (let j = 0; j < innerArray.length; j++) {
       product *= innerArray[j];
     }
   }

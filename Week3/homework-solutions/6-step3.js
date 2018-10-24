@@ -17,7 +17,6 @@ const printArray2d = printArray;
 const printArray3d = printArray;
 
 printArray2d(arr2d);
-
 printArray3d(arr3d);
 
 // Do not change or remove the next lines
