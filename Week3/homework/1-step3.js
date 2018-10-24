@@ -9,4 +9,4 @@ function bar() {
   console.log('Hello, I am bar!');
 }
 
-funct(bar);
+foo(bar);
