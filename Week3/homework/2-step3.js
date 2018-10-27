@@ -1,28 +1,27 @@
-"use strict";
-function sayThree(x) {
-  console.log(x + " is divisible by 3 ");
-}
-function sayFive(x) {
-  console.log(x + " is divisible by 5 ");
-}
+'use strict';
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const values = [];
+  const numbers = [];
   for (let i = startIndex; i <= stopIndex; i++) {
-    values.push(i);
+    numbers.push(i);
   }
-  console.log(values);
-  for (let i = 0; i < values.length; i++) {
-    if (values[i] % 3 === 0 && values[i] % 5=== 0 ) {
-      threeCallback(values[i]);
-      fiveCallback(values[i]);
+
+  numbers.forEach(num => {
+    if (num % 3 === 0) {
+      threeCallback(num);
     }
-    else if (values[i] % 3 === 0) {
-      threeCallback(values[i]);
+    if (num % 5 === 0) {
+      fiveCallback(num);
     }
-    else if (values[i] % 5 === 0) {
-      fiveCallback(values[i]);
-    }
-  }
+  });
 }
-threeFive(10, 15, sayThree, sayFive);
+
+// uses a closure
+function sayDivisibleBy(divisor) {
+  return function (num) {
+    console.log(`${num} is divisible by ${divisor}`);
+  };
+}
+
+threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
+

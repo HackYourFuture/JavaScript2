@@ -1,14 +1,16 @@
 'use strict';
-function Dog() {
-  this.name = "Rupert";
-  this.color = "brown";
-  this.numLegs = 4;
-}
 
-let hound = new Dog();
-////////////////
-function Dog() {
-  this.name = "Jackie";
-  this.color = "White";
-  this.numLegs = 4;
-}
+var Car = function () {
+  this.wheels = 4;
+  this.engines = 1;
+  this.seats = 5;
+};
+
+var MotorBike = function () {
+  this.wheels = 2;
+  this.engines = 1;
+  this.seats = 2;
+};
+
+console.log(new Car());
+console.log(new MotorBike());
