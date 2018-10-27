@@ -14,5 +14,5 @@ addSix(21); // returns 27
 createBase = base => console.log(base + num);
 const addSix = createBase(6);
 
-addSix(10); // returns 16
-addSix(21); // returns 27
+
+
