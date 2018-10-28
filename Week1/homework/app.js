@@ -15,7 +15,6 @@
     'the_adventures_of_pinocchio'
   ];
 
-let array = ('first', 32);
   // Replace with your own code
 
   function makeList(arr) {
@@ -33,7 +32,7 @@ let array = ('first', 32);
     }
   };
 
-  makeList(bookTitles);
+  //makeList(bookTitles);
 
   let bookInformation = {
     'a_tale_of_two_cities' : {
@@ -116,25 +115,28 @@ let array = ('first', 32);
   showBooksInfo(bookInformation);
 
   let coverPic = {
-    a_tale_of_two_cities : , 
-    the_lord_of_the_rings :, 
-    the_little_prince :, 
-    the_da_vinci_code :,
-    the_hobbit :,
-    alice_adventures_in_wonderland :,
-    dream_of_the_redchamber :, 
-    and_then_there_were_none :, 
-    the_lion_the_witch_and_the_wardrobe :, 
-    the_adventures_of_pinocchio :
+    a_tale_of_two_cities : "./img/two_cities.png", 
+    the_lord_of_the_rings : "./img/The_Lord.png", 
+    the_little_prince : "./img/Litte_Prince.png", 
+    the_da_vinci_code : "./img/DaVinciCode.jpg",
+    the_hobbit : "./img/Thehobbit.png",
+    alice_adventures_in_wonderland : "./img/Alice_Adventures.jpg",
+    dream_of_the_redchamber : "./img/Dream_Chamber.jpg", 
+    and_then_there_were_none : "./img/There_were_None.jpg", 
+    the_lion_the_witch_and_the_wardrobe : "./img/Lion_Witch_Wardobe.jpg", 
+    the_adventures_of_pinocchio : "./img/Pinocchio.jpg",
   }
 
 
 
-  /*
+  let test = Object.keys(obj)
+
+  console.log(test);
+
+  
   function viewImages(obj){
-//   console.log("calling viewImages function ");
 //   console.log(obj);
-  for (let i=0; i<Object.keys(obj).length; i++){
+  for (let i = 0; i < Object.keys(obj).length; i++){
     let li = document.getElementById(Object.keys(obj)[i]);
     let img = document.createElement('img');
     let key = Object.keys(obj)[i];
@@ -143,6 +145,5 @@ let array = ('first', 32);
     li.appendChild(img);
     }
   }
-  */
-
+viewImages(coverPic);
 }
