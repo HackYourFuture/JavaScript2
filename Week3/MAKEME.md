@@ -7,8 +7,6 @@ Topics discussed this week:
 • Callbacks
 ```
 
->[Here](https://github.com/HackYourFuture/JavaScript3/tree/master/Week1) you find the readings you have to complete before the first JavaScript3 lecture.
-
 ## Step 1: Feedback
 
 _Deadline Monday_
