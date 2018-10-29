@@ -1,1 +1,73 @@
-/* add your styling here */
+body{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:17px;
+        line-height:1.6;
+        background-color: darkgreen;
+}
+.pagecontainer {
+    width:70%;
+    margin:0 auto;
+}
+ul {
+    list-style:none;
+}
+h1{
+    color: blue;
+}
+#bookcontainer {
+    margin-bottom:30px;
+}
+#pagecontent {
+    margin-top:10px;
+}
+.card {
+    width:200px;
+    height:250px;
+    background:silver;
+    text-align:center;
+    display:inline-block;
+    cursor:pointer;
+    margin:10px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    -ms-transform: scale(2.0); /* IE 9 */
+    -webkit-transform: scale(2.0); /* Safari 3-8 */
+    transform: scale(2.0); 
+    transition: all 1.2s ease-in-out;
+    
+}
+.card > img {
+    width:100px;
+    height:120px;
+    margin:0 auto;
+}
+.card > p:nth-child(1) {
+    font-weight:bold;
+    margin-bottom:5px;
+    color:red;
+    font-size:14px;
+}
+
+/*add the style for image, title, author, language */
+.book {
+    color : red;
+    cursor:pointer;
+}
+.book:hover {
+    color:green;
+}
+p {
+    margin:0;
+}
+.card_t {
+    width:500px;
+    height:270px;
+    background:silver;
+    text-align:center;
+    display:inline-block;
+    cursor:pointer;
+    margin:10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
