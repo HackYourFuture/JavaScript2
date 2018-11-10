@@ -1,1 +1,36 @@
-/* add your styling here */
+body {
+    background-color: rgb(4, 37, 65);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0 15px; 
+  }
+
+  img {
+    width:200px;
+    height:300px;
+    border-radius: 12px;
+    transition-duration: 3ms;
+  }
+
+  ul li  {
+    list-style: none;
+  }
+
+  p {
+    color: rgb(252, 252, 252);
+    font-size: 1.2em;
+  }
