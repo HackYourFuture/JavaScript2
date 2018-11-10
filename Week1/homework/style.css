@@ -17,6 +17,11 @@ body {
     background-color: #fff;
     border-radius: 15px;
     padding: 0 15px; 
+    cursor: pointer;
+  }
+
+  h2:hover {
+    transform: translateX(2px);
   }
 
   img {
@@ -26,6 +31,10 @@ body {
     transition-duration: 3ms;
   }
 
+  img:hover {
+    transform: translateX(3px);
+  }
+
   ul li  {
     list-style: none;
   }
@@ -33,4 +42,8 @@ body {
   p {
     color: rgb(252, 252, 252);
     font-size: 1.2em;
+  }
+
+  :hover {
+      transition: all 0.3s;
   }
