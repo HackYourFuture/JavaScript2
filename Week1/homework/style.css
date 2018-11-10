@@ -1,1 +1,90 @@
 /* add your styling here */
+#harry_potter_chamber_secrets h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://www.gmkfreelogos.com/logos/H/img/Harry_Potter_And_The_Chamber_Of_Secrets.gif");
+    background-size: 200px 200px;
+}
+
+#the_wind_in_the_willows h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://s.s-bol.com/imgbase0/imagebase3/large/FC/3/2/3/6/1001004010956323.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#lord_of_the_files h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://prodimage.images-bn.com/pimages/9780399501487_p0_v3_s550x406.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#the_old_man_and_the_sea h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://images-na.ssl-images-amazon.com/images/I/91oNxcEYXFL.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#anilmal_farm h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://images-na.ssl-images-amazon.com/images/I/51jsLlXx4uL._SX309_BO1,204,203,200_.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#tuesdays_with_morrie h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://media.sandiegoreader.com/img/events/2017/Tuesdays_with_Morrie.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#high_fidelity h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://dynamic.indigoimages.ca/books/1573228214.jpg?altimages=false&scaleup=true&maxheight=515&width=380&quality=85&sale=8&lang=en") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#the_giver h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/The_Giver_first_edition_1993.jpg/220px-The_Giver_first_edition_1993.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#fantastic_mr_fox h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://images-na.ssl-images-amazon.com/images/I/91Ru-t6pmdL.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
+
+#the_secret_history h1:after{
+    display:block;
+    height:200px;
+    width:200px;
+    content: "";
+    background:url("https://s.s-bol.com/imgbase0/imagebase3/large/FC/4/9/1/8/1001004000968194.jpg") no-repeat 0 0;
+    background-size: 200px 200px;
+}
