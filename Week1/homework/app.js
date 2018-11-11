@@ -19,6 +19,7 @@
  
   function addId() {
     const addUl = document.createElement("ul");
+    document.body.appendChild("ul");
     for (let i = 0; i < bookTitles.length; i++) {
       let items = document.createElement("li");
     }
