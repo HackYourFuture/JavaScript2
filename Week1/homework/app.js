@@ -1,7 +1,6 @@
 'use strict';
 
 /*   const bookTitles = [
-    // Replace with your own book titles
     'i_am_number_four',
     'the_power_of_six',
     'the_rise_of_nine',
