@@ -45,3 +45,8 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+const minArr = tasks.map((x) => x.duration);
+const hoursArr = minArr.map((y) => y / 60).filter((y) => y >= 2);
+const perHour = hoursArr.map((x) => x * 10);
+const sum = perHour.reduce((x) => x + x);
+console.log(sum);
