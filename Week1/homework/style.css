@@ -1,1 +1,71 @@
-/* add your styling here */
+body{
+    background-color: black;    
+    }
+
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: auto;
+    list-style-type: none;
+    align-items: center;  
+  }
+
+li{
+    margin: 10px ;
+    padding: 10px;
+    width: 30%;
+    background-color:gainsboro;
+    overflow: fixed;
+    height: 600px;
+    text-align: center;
+      
+}
+
+li:hover {
+    box-shadow: 5px 5px 5px red(0, 55, 173);
+}
+ 
+img{
+    overflow: hidden;
+
+    width: 300px;
+    height:400px;
+   } 
+
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    font-style:inherit;
+    color: whitesmoke;
+    text-shadow: 2px 2px red;
+    
+}
+
+
+h2{
+
+    font-size: 30px;
+    color: gray;
+}
+
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+h2:hover {
+
+    color:red;
+}
+
+h3:hover {
+color:gray;
+
+}
