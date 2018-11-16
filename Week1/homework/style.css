@@ -1,1 +1,52 @@
-/* add your styling here */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html{
+  background-color: rgb(171, 171, 171);
+  padding: 50px;
+  align-content: center;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  width: 300px;
+}
+
+p{
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 50px;
+}
+
+.images {
+  background-repeat: no-repeat;
+  background-size: auto 350px;
+}
+
+#book0{ background-image: url(./jpgs/1541608660-41LnqY1YxZL.jpg); }
+#book1{ background-image: url(./jpgs/1541608682-512BckCqz3IL.jpg); }
+#book2{ background-image: url(./jpgs/1541609052-51pcuHX6U8L.jpg); }
+#book3{ background-image: url(./jpgs/1541609078-51MWjqhKmVL.jpg); }
+#book4{ background-image: url(./jpgs/1541609218-51swDdo9gfL.jpg); }
+#book5{ background-image: url(./jpgs/1541609252-41NCloKktXL.jpg); }
+#book6{ background-image: url(./jpgs/1541609295-41QjLVNLYhL.jpg); }
+#book7{ background-image: url(./jpgs/1541609326-41M-tfRkU5L.jpg); }
+#book8{ background-image: url(./jpgs/1541609884-51kVJ27KveL.jpg); }
+#book9{ background-image: url(./jpgs/1541609982-51jxyYL8lQL.jpg); }
