@@ -1,1 +1,58 @@
 /* add your styling here */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
+
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(185, 180, 107);
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 8rem;
+  text-align: center;
+  margin: 4rem;
+  font-weight: normal;
+  color: rgb(92, 81, 38);
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 1.5rem;
+  font-weight: normal;
+  color: rgb(99, 78, 9);
+  font-family: 'Great Vibes', cursive;
+}
+
+ul:first-letter {text-transform: uppercase;}
+
+ul {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 4rem;
+  color: rgb(75, 66, 31);
+}
+
+img {
+  height: 30rem;
+  display:block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto; 
+  border: 0.05rem solid rgb(108, 96, 48);
+  border-radius: 0.3rem;
+}
+
+.book_sections::after {
+  content: "";
+  display: block;
+  height: 6rem;
+}
