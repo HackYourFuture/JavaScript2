@@ -1,1 +1,12 @@
 /* add your styling here */
+body{
+    background:lightblue;
+}
+img{
+    width:40%;
+    box-shadow:10px 10px 10px gray;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
