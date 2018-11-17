@@ -1,1 +1,59 @@
 /* add your styling here */
+body {
+    background-color: #c59083;
+}
+
+h1 {
+    color: rgb(52, 19, 107);
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+}
+
+.bookImage {
+    width: 20%;
+    border : 8px solid  #99422d;;
+    border-radius: 15px;
+    position: relative;
+    right: 300px;
+}
+
+.bookList {
+    font-size : 15px;
+    font-style: oblique;
+    text-align: center;
+    list-style-type: none;
+    color: slategrey;
+}
+
+.liDetails {
+    border: 2px black;
+    position: absolute;
+    left: 10%;
+    font-size: 25px;
+    color: black;
+    position: relative;
+    top: 250px;
+    margin: 10px;
+    padding: 5px ;  
+}
+
+#titleDetails {
+    font-size: 30px;
+    color: rgb(52, 19, 107);
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#deGeur {
+    width: 10%;
+    border : 8px solid  #99422d;;
+    border-radius: 15px;
+    position: relative;
+    right: 300px;
+}
+
+
+
+
