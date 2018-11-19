@@ -45,3 +45,23 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+
+// part 1 mapping to hours
+
+const hours = tasks.map(tasks => tasks.duration / 60);
+
+console.log(hours);
+
+// part 2 putting everything out lower than 2 hours
+
+const moreThan2 = hours.filter(hours => hours >= 2);
+console.log(moreThan2); 
+
+// part 3 Multiply the each duration by a per-hour rate for billing (* 20)
+
+const earning = moreThan2.map(hours => hours *20).reduce((total, amount) => total + amount);
+console.log(earning);
+
+// rounding to two decimals
+
+console.log(earning.toFixed(2));
