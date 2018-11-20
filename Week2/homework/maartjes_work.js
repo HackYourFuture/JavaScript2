@@ -45,3 +45,14 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+//console.log(tasks);
+let tasksHours = tasks.map((task)  => task.duration/60);
+//console.log(tasksHours);
+let tasksHoursfiltered = tasksHours.filter((taskhour) => taskhour >= 2 );
+//console.log(tasksHoursfiltered);
+let tasksPrice =tasksHoursfiltered.map((taskfiltered)  => taskfiltered*10);
+//console.log(tasksPrice);
+let salary = tasksPrice.reduce((x, taskPrice) => x + taskPrice, 0);
+//console.log(salary);
+let totalSalary = salary.toFixed(2);
+console.log('According to 10 Euro per hour the total salary for Maartje is € ' +totalSalary);
