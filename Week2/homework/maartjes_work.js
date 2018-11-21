@@ -44,4 +44,21 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
-// Add your code here
+const durationsHours = tasks.map(hour => (hour.duration/60));
+//console.log(durationsHours);
+
+const moreThanTwoHours = durationsHours.filter(hour => hour>=2);
+//console.log(moreThanTwoHours);
+
+const sumHours = moreThanTwoHours.reduce((total, hour) => total+hour, 0);
+//line 53 is for line 62
+
+const earnings = moreThanTwoHours.map(earn => earn*10);
+//console.log(earnings);
+
+const totalEarning = earnings.reduce((total, earn) => total+earn, 0);
+//console.log(totalEarning);
+
+console.log('Maartje has worked '+(sumHours.toFixed(2))+' hours.');
+console.log('The rate is '+ "\u20ac" + '10.');
+console.log('The total earning is '+ "\u20ac" + (totalEarning.toFixed(2)) + '.');
