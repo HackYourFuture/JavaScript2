@@ -77,11 +77,11 @@ bookInfoList();
 
 //Q2.7 
 const bookCover = {
-  fundamentals_islam: 'images/fundamental_islam.jpg', women_quran: 'images/women_quran.jpg',
-  pillars_islam: 'images/pillar_islam.jpg', science_islam: 'images/science_islam.jpg',
-  garbage_king: 'images/garbage_king.jpg', storytellers_beads: 'images/storytellers_beads.jpg',
-  saba: 'images/saba.jpg', faraway_home: 'images/faraway_home.jpg', cutting_stone: 'images/cutting_stone.jpg',
-  cry_giraffe: 'images/cry_giraffe.jpg'
+  fundamentals_islam: 'fundamental_islam.jpg', women_quran: 'women_quran.jpg',
+  pillars_islam: 'pillar_islam.jpg', science_islam: 'science_islam.jpg',
+  garbage_king: 'garbage_king.jpg', storytellers_beads: 'storytellers_beads.jpg',
+  saba: 'saba.jpg', faraway_home: 'faraway_home.jpg', cutting_stone: 'cutting_stone.jpg',
+  cry_giraffe: 'cry_giraffe.jpg'
 }
 
 
