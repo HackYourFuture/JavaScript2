@@ -1,1 +1,21 @@
 /* add your styling here */
+body {
+  background-color: rgb(169, 169, 218);
+}
+h1 {
+    font-family: monospace;
+    font-style: oblique;
+    color: brown;
+    margin-left: 45px;
+}
+
+#imgUl {
+  list-style-type: none; 
+  display: grid;
+  grid-template-rows: 250px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-gap: 10px; 
+}
+#imgUl li:hover {
+  transform: scale(1.25);
+}
