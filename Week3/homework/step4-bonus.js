@@ -1,10 +1,18 @@
 'use strict';
 
+
+
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
-// Add your function here. Try and come up with a good name for this function
 
-// Replace `yourFunction` with the name of the function you just created
-const uniqueValues = yourFunction(values);
-
-console.log(uniqueValues);
+ let uniqueValues = function(array) {
+        let uniquearray =[]
+        for (let i =0; i < array.length; i++)
+        {
+            if (uniquearray.indexOf(array[i]) === -1 && array[i] !== ''){
+            uniquearray.push(array[i]);
+            }
+        }
+ return uniquearray;
+}
+console.log(uniqueValues(values));
