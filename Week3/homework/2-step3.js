@@ -10,23 +10,22 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
   values.forEach(value => {
 
-    
+
     if (value % 5 === 0 && value % 3 === 0) {
       fiveCallback(value);
-       threeCallback(value);
-     }
-    else if (value % 5 === 0) {
+      threeCallback(value);
+    } else if (value % 5 === 0) {
       fiveCallback(value);
     } else if (value % 3 === 0) {
       threeCallback(value);
 
-     } 
+    }
   });
 }
 
 
 function sayFive(number) {
-  console.log('the number ' + number +' is divisible by 5')
+  console.log('the number ' + number + ' is divisible by 5')
 
 }
 
