@@ -2,9 +2,8 @@
 
 
 
-const addSix =function (number){
+const addSix = function (number) {
     return number + 6;
-
 }
 
 

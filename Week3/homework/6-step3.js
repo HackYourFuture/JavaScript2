@@ -35,9 +35,9 @@ console.log(print2DArray(arr2d))
 function print3DArray(array) {
     for (let i in array) {
         for (let j in array[i]) {
-            console.log('row:' + i +"."+ j)
+            console.log('row:' + i + "." + j)
             for (let z in array[i][j]) {
-                
+
                 console.log(" " + array[i][j][z]);
             }
         }
@@ -48,20 +48,20 @@ console.log(print3DArray(arr3d))
 
 
 // you can create also as matrix for 3 dimension as follows
-function matrix3D(array3D){
-    let new3DArray =[]
-for (let i in array3D) {
-    new3DArray[i] = array3D[i]; 
-    for (let j in array3D[i]) {
-        new3DArray[i][j] = array3D[i][j];
+function matrix3D(array3D) {
+    let new3DArray = []
+    for (let i in array3D) {
+        new3DArray[i] = array3D[i];
+        for (let j in array3D[i]) {
+            new3DArray[i][j] = array3D[i][j];
 
-        for (let z in array3D[i][j]) {
-            new3DArray[i][j][z] = array3D[i][j][z];
-            
+            for (let z in array3D[i][j]) {
+                new3DArray[i][j][z] = array3D[i][j][z];
+
+            }
         }
     }
-}
-return new3DArray;
+    return new3DArray;
 }
 
 console.log(matrix3D(arr3d))
