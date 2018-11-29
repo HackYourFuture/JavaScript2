@@ -1,7 +1,6 @@
 'use strict';
 
-const monday = [
-  {
+const monday = [{
     name: 'Write a summary HTML/CSS',
     duration: 180
   },
@@ -19,8 +18,7 @@ const monday = [
   }
 ];
 
-const tuesday = [
-  {
+const tuesday = [{
     name: 'Keep writing summary',
     duration: 240
   },
@@ -43,5 +41,26 @@ const tuesday = [
 ];
 
 const tasks = monday.concat(tuesday);
+console.log(tasks);
 
-// Add your code here
+const durationInHours = tasks.map(tasks => tasks.duration / 60);
+console.log(durationInHours);
+
+const lessThanTwoTasks = durationInHours.filter(hour => hour >= 2);
+console.log(lessThanTwoTasks);
+
+const ratePerHourInEuro = 10;
+
+/* function arraySum(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i] * ratePerHourInEuro;
+  }
+  console.log(sum.toFixed(2));
+}
+arraySum(lessThanTwoTasks); */
+
+const summed = lessThanTwoTasks.reduce((total, item) => total + item);
+console.log(summed.toFixed(2));
+
+

@@ -1,1 +1,9 @@
-/* add your styling here */
+ul {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    list-style-type: none;
+}
+
+img {
+    width: 300px;
+}
