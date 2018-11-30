@@ -23,3 +23,6 @@ console.log(y);
 
 // Add your explanation as a comment here
 
+// in the first example because it is a primitive data type, it passes by value,
+// but in the second example it is an object and, objects pass by reference.
+
