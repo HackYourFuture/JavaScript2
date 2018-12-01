@@ -2,9 +2,25 @@
 
 // use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
-  // add your code here
+  
+    number = str ;
+    
+    
+    if(num>=0){
+    
+    for(let i=0 ; i<num ; i++){
+    
+     number = number + str ;
+    
+    }    
+    }
+    
+      return number;
+    }
+    
+    repeatStringNumTimes("abc", 3);
   return str;
-}
+
 
 console.log('for', repeatStringNumTimesWithFor('abc', 3));
 
