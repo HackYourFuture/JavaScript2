@@ -47,7 +47,7 @@ function repeatStringNumTimesWithDoWhile(str, num) {
     do {
       repeatedString += str;
       i++;
-    } while (i < num)
+    } while (i < num);
     str = repeatedString;
   }
   return str;
