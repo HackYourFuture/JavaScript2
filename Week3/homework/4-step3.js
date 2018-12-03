@@ -9,12 +9,14 @@
 
 // // second part
 
-// function Dog() {
+// function Dog(name, color, legs) {
 //     this.name = "Rupert";
 //     this.color = "brown";
 //     this.numLegs = 4;
 //   }
 //   // Add your code below this line
-  
-//   let hound = new Dog();
-  
+
+// const dog1 = new Dog('Dante', 'black', 4);
+// const dog2 = new Dog('Rupert', 'brown', 4);
+// const dog3
+// const ...

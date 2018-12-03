@@ -14,8 +14,10 @@
 
 // ----------second way to do it with es6-------------
 
-const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
+// const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
-const newValues = [... new Set(values)]
+// const newValues = [... new Set(values)];
+
 // Replace `yourFunction` with the name of the function you just created
 // console.log(newValues);
+
