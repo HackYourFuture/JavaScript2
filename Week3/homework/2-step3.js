@@ -8,7 +8,7 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   }
 
   for (let i = 0; i <= values.length; i++) {
-    if (values[i] % 3 === 0 && values[i] % 5 === 0) {
+    if (values[i] % 15 === 0) {
       console.log(`${values[i]} is ${threeCallback()} and ${fiveCallback()}.`);
     } else if (values[i] % 3 === 0) {
       console.log(`${values[i]} is ${threeCallback()}.`);
