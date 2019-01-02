@@ -1,1 +1,25 @@
 /* add your styling here */
+body {
+  margin: auto;
+  width: 1500px;
+  background-color: #B7C8DC;
+  font-size: 2em;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: auto auto;
+}
+
+li {
+  margin: 10px;
+  padding: 0 0 30px 10px;
+  background-color: #ECEFF5;
+  width: 700px;  
+}
