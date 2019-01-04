@@ -1,5 +1,4 @@
-const { HOMEWORK_FOLDER } = require('../../test-config');
-const hound = require(`../${HOMEWORK_FOLDER}/4-step3`);
+const hound = require('../homework/step2-4');
 
 test('4-step3', () => {
   expect(typeof hound).toBe('object');

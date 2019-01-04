@@ -1,5 +1,4 @@
 'use strict';
-// paste your freeCodeCamp solutions in here
 
 function Dog() {
   // add your code here
@@ -7,5 +6,5 @@ function Dog() {
 
 const hound = new Dog();
 
-// Do not change or remove the next line
+// Do not change or remove anything below this line
 module.exports = hound;

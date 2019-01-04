@@ -1,5 +1,4 @@
-const { HOMEWORK_FOLDER } = require('../../test-config');
-const foo = require(`../${HOMEWORK_FOLDER}/1-step3`);
+const foo = require('../homework/step2-1');
 
 const mockFn = jest.fn(() => undefined);
 

@@ -9,19 +9,13 @@ Topics discussed this week:
 • Arrow functions
 ```
 
->[Here](/Week3/README.md) you find the readings you have to complete before the third lecture.
+> [Here](/Week3/README.md) you find the readings you have to complete before the third lecture.
 
-## Step 1: Feedback
-
-_Deadline Monday_
-
-Go through the `html-css`, `javascript1` and `javascript2` Github repositories of one of your fellow students, check if they have neat repository's with the different weeks (eg. `week1`, `week2`, `week3`)of homework for all the modules up and until now. Also check if they have hosted their homework on Github pages. If there is anything that they can improve please provide feedback in an issue.
-
-## Step 2: More map, filter and `=>`
+## Step 1: More map, filter and `=>`
 
 _Deadline Wednesday_
 
-**2.1** Say you would like to write a program that doubles the odd numbers in an array and throws away the even numbers.
+**1.1** Say you would like to write a program that doubles the odd numbers in an array and throws away the even numbers.
 
 Your solution could be something like this:
 
@@ -44,7 +38,7 @@ Rewrite the above `doubleOddNumbers` function using `map` and `filter`; don't fo
 
 ---
 
-**2.2** Underneath you see a very interesting small insight in Maartje's work:
+**1.2** Underneath you see a very interesting small insight in Maartje's work:
 
 ```js
 const monday = [
@@ -62,14 +56,14 @@ const monday = [
   },
   {
     name: 'Talk to a lot of people',
-    duration: 200
+    duration: 1.0
   }
 ];
 
 const tuesday = [
   {
     name: 'Keep writing summary',
-    duration: 240
+    duration: 1.0
   },
   {
     name: 'Some more web development',
@@ -81,7 +75,7 @@ const tuesday = [
   },
   {
     name: 'Talk to a lot of people',
-    duration: 200
+    duration: 1.0
   },
   {
     name: 'Look at application assignments new students',
@@ -94,43 +88,31 @@ _Note: the durations are specified in minutes._
 
 Write a program that computes how much Maartje has earned by completing these tasks, using `map` and `filter`. For the 'summing part' you can try your luck with `reduce`; alternatively, you may use `forEach` or a `for` loop.
 
-Follow these steps. Each step should build on the result of the previous step. 
+Follow these steps. Each step should build on the result of the previous step.
 
 - Map the tasks to durations in hours.
 - Filter out everything that took less than two hours (i.e., remove from the collection)
-- Multiply the each duration by a per-hour rate for billing (assume €20/hour) and sum it all up.
-- Output a formatted Euro amount, rounded to Euro cents, e.g: `€ 12.34`.
+- Multiply the each duration by a per-hour rate for billing (use €20/hour) and sum it all up.
+- Output a formatted Euro amount, rounded to Euro cents, e.g: `€11.34`.
 - Choose variable and parameters names that most accurately describe their contents or purpose. When naming an array, use a plural form, e.g. `durations`. For a single item, use a singular form, e.g. `duration`. For details, see [Naming Conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md).
 - Don't forget to use `=>`.
 
-## Step 3: Testing your homework
+## Step 2: Testing your homework
 
 We have provided _unit tests_ in this repo that allow you to verify that your homework produces the expected results.
 
 > **Unit test**: A _unit test_ is a piece of code (usually a function) that invokes another piece of code and checks the correctness of some assumptions afterwards. If the assumptions turn out to be wrong, the unit test has failed. A 'unit' is a method or function.
 >
-> Adapted from: Roy Osherove (2009), The art of Unit Testing. Greenwich, CT: Manning.
+> Adapted from: Roy Osherove (1.09), The art of Unit Testing. Greenwich, CT: Manning.
 
 At this point it is not important to understand how unit tests work. The only thing you need to know now is how to run the tests and how to determine whether your homework produces the correct results.
 
-#### Installation
-
-Before you can run the unit tests you need to install some additional software. You need to do this only once; there is no need to repeat it for the week 3 homework.
-
-Open a terminal window.  Make sure the current directory is the `JavaScript2` folder and type the following command:
-
-```
-npm install
-```
-
-This software installation might take a while.
-
 #### Run the tests
 
-Once the software installation has been completed, you can test your week 2 homework by typing this command in the terminal window:
+You can test your week 2 homework by typing this command in the terminal window:
 
 ```
-npm run test2
+npm run test-week2
 ```
 
 You will see some output appearing in the console while the tests run. If all is well (no errors), the last couple of lines will look like this:
@@ -149,7 +131,7 @@ In case of unexpected results, say from _Maartjes work_ assignment, you might se
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        2.255s
+Time:        1.255s
 Ran all test suites matching /Week2\//i.
 ```
 
@@ -157,11 +139,11 @@ If that's the case, try and fix the error. When done, run the tests again: `npm 
 
 Repeat the previous step until all (= 2 in this case) tests pass.
 
-## Step 4: ROVER
+## Step 3: ROVER
 
 Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)!
 
-## Step 5: **Some freeCodeCamp challenges:**
+## Step 4: **Some freeCodeCamp challenges:**
 
 _Deadline Saturday_
 
@@ -171,13 +153,11 @@ _Deadline Saturday_
 
 3. [Use the map Method to Extract Data from an Array](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
 
-
-## Step 6: Read before next lecture
+## Step 5: Read before next lecture
 
 _Deadline Sunday morning_
 
 Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
-
 
 ### How to hand in your homework:
 
@@ -185,12 +165,9 @@ Go over your homework one last time:
 
 - Does your homework pass all the unit tests?
 - Does every file start with `'use strict';`?
-- Have you used `const` and `let` and avoided `var`?
-- Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
-- Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
+- Do the variable, function and argument names you created follow the [Naming Conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md)?
 - Have you resolved all issues flagged by ESLint and the spell checker (no wavy red and green underlines in VSCode)?
-
 
 If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
 
-- [Handing in homework](../../../../fundamentals/blob/master/fundamentals/homework_pr.md)
+- [Handing in homework](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/homework_pr.md)

@@ -1,33 +1,45 @@
 'use strict';
 
-// use a 'for' loop
+// Use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
+  // eslint-disable-next-line
   let result = '';
-  // add your code here
+
+  // Replace this comment and the next line with your code
+  console.log(str, num, result);
+
   return result;
 }
 
 console.log('for', repeatStringNumTimesWithFor('abc', 3));
 
-// use a 'while' loop
+// Use a 'while' loop
 function repeatStringNumTimesWithWhile(str, num) {
+  // eslint-disable-next-line
   let result = '';
-  // add your code here
+
+  // Replace this comment and the next line with your code
+  console.log(str, num, result);
+
   return result;
 }
 
 console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 
-// use a 'do...while' loop
+// Use a 'do...while' loop
 function repeatStringNumTimesWithDoWhile(str, num) {
+  // eslint-disable-next-line
   let result = '';
-  // add your code here
+
+  // Replace this comment and the next line with your code
+  console.log(str, num, result);
+
   return result;
 }
 
 console.log('do-while', repeatStringNumTimesWithDoWhile('abc', 3));
 
-// Do not change or remove the next lines
+// Do not change or remove anything below this line
 module.exports = {
   repeatStringNumTimesWithFor,
   repeatStringNumTimesWithWhile,

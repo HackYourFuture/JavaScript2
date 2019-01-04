@@ -12,26 +12,46 @@ In week one we will discuss the following topics:
 • Handing in homework via PR
 ```
 
-- Chrome DevTools [Debugging](https://developers.google.com/web/tools/chrome-devtools/) 
+## Software installation for the JavaScript 2 Module
 
-### A Refresher from some previous covered topics:
+**_To save time, please do these preparations at home before coming to the first lecture._**
 
-Links to MDN (Mozilla Developer Network) topics:
+1. Install the following extensions in VSCode (you may have installed some of them already):
 
-- [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+   - Code Spell Checker
+   - ESLint
+   - open in browser
+   - Live Server
+   - Bracket Pair Colorizer
 
-## Review
+2. Install the ESLint tool globally by issuing the following command from the command line:
 
-Review through the topics of JavaScript1:
+   ```
+   npm install -g eslint
+   ```
 
-### JavaScript1 - Week 2
+3. Fork this repository (i.e., **JavaScript2**) and clone your fork to your laptop.
+
+4. Open the `JavaScript2` folder from the cloned repository in VSCode.
+
+5. Open a terminal window in VSCode and type the following command:
+
+   ```
+   npm install
+   ```
+
+## Review of JavaScript1
+
+As a refresher, go through the topics of JavaScript1:
+
+### Week 2
 
 - [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/variables.md)
 - [Basic Data types (Strings, Numbers, Arrays, Booleans)](./../../../../fundamentals/blob/master/fundamentals/values.md)
 - [Operators](./../../../../fundamentals/blob/master/fundamentals/operators.md)
 - [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
 
-### JavaScript1 - Week 3
+### Week 3
 
 - [Advanced data types (objects)](./../../../../fundamentals/blob/master/fundamentals/objects.md)
 - [Conditional execution](./../../../../fundamentals/blob/master/fundamentals/conditional_execution.md) <br>
@@ -40,7 +60,7 @@ Review through the topics of JavaScript1:
 - [Functions](./../../../../fundamentals/blob/master/fundamentals/functions.md)
 - [Scope](./../../../../fundamentals/blob/master/fundamentals/scope.md)
 
-### Required readings
+## Required readings for the first lecture
 
 (No reading material available at this time for the crossed-out topics)
 
@@ -53,6 +73,11 @@ Review through the topics of JavaScript1:
 - [Code formatting](./../../../../fundamentals/blob/master/fundamentals/code_formatting.md)
 - [Handing in homework via PR](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/homework_pr.md)
 
+Extras:
+
+- [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+- [Chrome DevTools Debugging](https://developers.google.com/web/tools/chrome-devtools/)
+
 ### Recommended readings
 
 These chapters from _Eloquent JavaScript_ give in-depth explanations of the topics that will be discussed during the lecture. Highly recommended (if time permits).
@@ -61,20 +86,20 @@ These chapters from _Eloquent JavaScript_ give in-depth explanations of the topi
 
 - Chapter 14: [The Document Object Model](http://eloquentjavascript.net/14_dom.html)
 
-    _You can skip the following sections:_
+  _You can skip the following sections:_
 
-    - Moving through the tree
+  - Moving through the tree
 
 - Chapter 15: [Handling Events](http://eloquentjavascript.net/15_event.html)
 
-    Notes: for the lectures and homework you only need to know about these events: `click`, `change`, `keyup` and `load`.
-    
-    _You can skip the following sections (but come to these sections when doing the React module):_
+  Notes: for the lectures and homework you only need to know about these events: `click`, `change`, `keyup` and `load`.
 
-    - Touch events
-    - Scroll events
-    - Focus events
-    - Events and the Event Loop
-    - Debouncing
+  _You can skip the following sections (but come to these sections when doing the React module):_
+
+  - Touch events
+  - Scroll events
+  - Focus events
+  - Events and the Event Loop
+  - Debouncing
 
 _Please go through the material and come to class prepared!_

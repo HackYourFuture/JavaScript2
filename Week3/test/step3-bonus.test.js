@@ -1,5 +1,4 @@
-const { HOMEWORK_FOLDER } = require('../../test-config');
-const makeUnique = require(`../${HOMEWORK_FOLDER}/step4-bonus`);
+const makeUnique = require(`../homework/step3-bonus`);
 
 test('step4-bonus', () => {
   const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];

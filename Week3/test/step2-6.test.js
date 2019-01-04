@@ -1,15 +1,10 @@
-const { HOMEWORK_FOLDER } = require('../../test-config');
-const {
-  printArray2d,
-  printArray3d
-} = require(`../${HOMEWORK_FOLDER}/6-step3`);
+const { printArray2d, printArray3d } = require('../homework/step2-6');
 
 const arr2d = [[1, 2], [3, 4], [5, 6]];
 const expected2d = [1, 2, 3, 4, 5, 6].join('');
 
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 const expected3d = [1, 2, 3, 4, 5, 6, 7, 8].join('');
-
 
 describe('6-step3.js', () => {
   let outputData;
@@ -29,4 +24,3 @@ describe('6-step3.js', () => {
     expect(outputData).toBe(expected3d);
   });
 });
-

@@ -1,9 +1,8 @@
-const { HOMEWORK_FOLDER } = require('../../test-config');
 const {
   repeatStringNumTimesWithFor,
   repeatStringNumTimesWithWhile,
   repeatStringNumTimesWithDoWhile
-} = require(`../${HOMEWORK_FOLDER}/3-step3`);
+} = require('../homework/step2-3');
 
 describe('1-step3.js', () => {
   test('for-loop', () => {

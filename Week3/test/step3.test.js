@@ -1,5 +1,4 @@
-const { HOMEWORK_FOLDER } = require('../../test-config');
-const createBase = require(`../${HOMEWORK_FOLDER}/step4`);
+const createBase = require(`../homework/step3`);
 
 test('step4.js', () => {
   const addSix = createBase(6);

@@ -10,7 +10,6 @@ f1(x);
 
 console.log(x);
 
-
 const y = { x: 9 };
 function f2(val) {
   val.x = val.x + 1;
