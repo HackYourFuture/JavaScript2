@@ -20,6 +20,7 @@ In week one we will discuss the following topics:
 
    - Code Spell Checker
    - ESLint
+   - Prettier - Code formatter
    - open in browser
    - Live Server
    - Bracket Pair Colorizer
