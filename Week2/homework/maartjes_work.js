@@ -45,3 +45,18 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+// console.log(tasks);
+// let a = tasks[1].duration;
+let durationInHours = tasks.map(minute => minute.duration / 60);
+
+let moreThan2Hours = durationInHours.filter(newArray => newArray >= 2);
+
+// He earns €15.5 for one hour.
+
+const wageForOneHour = 15.5;
+
+let wageForTotalHours = moreThan2Hours.map(wage => wage * wageForOneHour);
+
+let totalWage = Number(wageForTotalHours.reduce((total, num) => total + num).toFixed(2));
+
+console.log("Total wage that Maartjes earn: " + totalWage);

@@ -1,6 +1,8 @@
 'use strict';
 
 {
+  // First part of homework. Getting elements from array.
+
   // const bookTitles = ['animal_farm', 'nineteen_eighty_four', 'burmese_days', 'last_witness',
   //   'les_miserables', 'burning', 'reckoning', 'murder_orient_express',
   //   'man_brown_suit', 'ice_cold'];
@@ -20,54 +22,54 @@
     animal_farm: {
       title: 'Animal Farm',
       language: 'English',
-      author: 'George Orwell'
+      author: 'George Orwell',
     },
     nineteen_eighty_four: {
       title: '1984',
       language: 'English',
-      author: 'George Orwell'
+      author: 'George Orwell',
     },
     burmese_days: {
       title: 'Burmese Days',
       language: 'English',
-      author: 'George Orwell'
+      author: 'George Orwell',
     },
     last_witness: {
       title: 'The Last Witness',
       language: 'English',
-      author: 'Glenn Meade'
+      author: 'Glenn Meade',
     },
     les_miserables: {
       title: 'Les Miserables',
       language: 'French',
-      author: 'Victor Hugo'
+      author: 'Victor Hugo',
     },
     burning: {
       title: 'The Burning',
       language: 'English',
-      author: 'Jane Casey'
+      author: 'Jane Casey',
     },
     reckoning: {
       title: 'The Reckoning',
       language: 'English',
-      author: 'Jane Casey'
+      author: 'Jane Casey',
     },
     murder_orient_express: {
       title: 'Murder on the Orient Express',
       language: 'English',
-      author: 'Agatha Christie'
+      author: 'Agatha Christie',
     },
     man_brown_suit: {
       title: 'The Man in the Brown Suit',
       language: 'English',
-      author: 'Agatha Christie'
+      author: 'Agatha Christie',
     },
     ice_cold: {
-      title: "Ice Cold",
+      title: 'Ice Cold',
       language: 'English',
-      author: 'Glenn Meade'
-    }
-  }
+      author: 'Glenn Meade',
+    },
+  };
 
   const bookCovers = {
     les_miserables: 'images/les_miserables.jpg',
@@ -79,10 +81,10 @@
     ice_cold: 'images/ice_cold.jpg',
     nineteen_eighty_four: 'images/nineteen_eighty_four.jpg',
     burmese_days: 'images/burmese_days.jpg',
-    last_witness: 'images/last_witness.jpg'
-  }
+    last_witness: 'images/last_witness.jpg',
+  };
 
-  var myBookListWithObject = function () {
+  var myBookListWithObject = function() {
     let mainHeadings = document.createElement('h1');
     document.body.appendChild(mainHeadings);
     let mainHeadingsText = document.createTextNode('The Books That I Read');
@@ -128,7 +130,7 @@
 
       for (let j = 0; j < keysOfBookCovers.length; j++) {
         // let compareString = keysOfBookCovers[j].localeCompare(idOfLi);
-        if (idOfLi == keysOfBookCovers[j]) {
+        if (idOfLi === keysOfBookCovers[j]) {
           let imgTag = document.createElement('img');
           imgTag.setAttribute('src', valuesOfBookCovers[j]);
           imgTag.setAttribute('alt', bookInfo[i].title);
@@ -136,12 +138,7 @@
           imgTag.setAttribute('height', '600');
           liTag2.appendChild(imgTag);
         }
-
       }
-
     }
-
-  }
-
+  };
 }
-
