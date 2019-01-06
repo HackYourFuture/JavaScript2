@@ -3,7 +3,8 @@
 {
   const bookTitles = [
     // Replace with your own book titles
-    'harry_potter_chamber_secrets'
+    'harry_potter_chamber_secrets',
+    'week1'
   ];
 
   // Replace with your own code
