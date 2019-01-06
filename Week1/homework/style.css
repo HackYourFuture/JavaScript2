@@ -1,9 +1,9 @@
 /* add your styling here */
 body {
   margin: auto;
-  width: 1500px;
-  background-color: #B7C8DC;
-  font-size: 2em;
+  width: 1200px;
+  background-color: #b7c8dc;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -20,6 +20,6 @@ ul {
 li {
   margin: 10px;
   padding: 0 0 30px 10px;
-  background-color: #ECEFF5;
-  width: 700px;  
+  background-color: #eceff5;
+  width: 500px;
 }

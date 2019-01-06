@@ -84,7 +84,7 @@
     last_witness: 'images/last_witness.jpg',
   };
 
-  var myBookListWithObject = function() {
+  function createHtml() {
     let mainHeadings = document.createElement('h1');
     document.body.appendChild(mainHeadings);
     let mainHeadingsText = document.createTextNode('The Books That I Read');
@@ -92,7 +92,9 @@
 
     let ulTag2 = document.createElement('ul');
     document.body.appendChild(ulTag2);
-    for (let i in bookInfo) {
+
+    let keysOfBookInfo = Object.keys(bookInfo);
+    for (let i of keysOfBookInfo) {
       let liTag2 = document.createElement('li');
       let attribute = document.createAttribute('id');
       attribute.value = i;
@@ -134,11 +136,13 @@
           let imgTag = document.createElement('img');
           imgTag.setAttribute('src', valuesOfBookCovers[j]);
           imgTag.setAttribute('alt', bookInfo[i].title);
-          imgTag.setAttribute('width', '400');
-          imgTag.setAttribute('height', '600');
+          imgTag.setAttribute('width', '300');
+          imgTag.setAttribute('height', '400');
           liTag2.appendChild(imgTag);
         }
       }
     }
-  };
+  }
+
+  window.onload = createHtml;
 }
