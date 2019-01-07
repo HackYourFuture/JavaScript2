@@ -99,8 +99,6 @@
       let attribute = document.createAttribute('id');
       attribute.value = i;
       liTag2.setAttributeNode(attribute);
-      // var liTagText2 = document.createTextNode(i + ":");
-      // liTag2.appendChild(liTagText2);
       let headings = document.createElement('h2');
       let headingsText = document.createTextNode(bookInfo[i].title);
       headings.appendChild(headingsText);
@@ -131,7 +129,6 @@
       let valuesOfBookCovers = Object.values(bookCovers);
 
       for (let j = 0; j < keysOfBookCovers.length; j++) {
-        // let compareString = keysOfBookCovers[j].localeCompare(idOfLi);
         if (idOfLi === keysOfBookCovers[j]) {
           let imgTag = document.createElement('img');
           imgTag.setAttribute('src', valuesOfBookCovers[j]);
