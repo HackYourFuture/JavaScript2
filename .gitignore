@@ -55,7 +55,9 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+.environment
+live
+exercise
 
 .netlify
 dist/
