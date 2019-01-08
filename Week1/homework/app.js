@@ -4,7 +4,7 @@
   const bookTitles = [
     // Replace with your own book titles
     'harry_potter_chamber_secrets',
-    "Today's excercise"
+    "Today's exercise"
   ];
 
   // Replace with your own code
