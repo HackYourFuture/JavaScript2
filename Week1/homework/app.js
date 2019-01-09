@@ -85,38 +85,38 @@
   };
 
   function createHtml() {
-    let mainHeadings = document.createElement('h1');
+    const mainHeadings = document.createElement('h1');
     document.body.appendChild(mainHeadings);
-    let mainHeadingsText = document.createTextNode('The Books That I Read');
+    const mainHeadingsText = document.createTextNode('The Books That I Read');
     mainHeadings.appendChild(mainHeadingsText);
 
-    let ulTag2 = document.createElement('ul');
+    const ulTag2 = document.createElement('ul');
     document.body.appendChild(ulTag2);
 
-    let keysOfBookInfo = Object.keys(bookInfo);
-    for (let i of keysOfBookInfo) {
-      let liTag2 = document.createElement('li');
-      let attribute = document.createAttribute('id');
+    const keysOfBookInfo = Object.keys(bookInfo);
+    for (const i of keysOfBookInfo) {
+      const liTag2 = document.createElement('li');
+      const attribute = document.createAttribute('id');
       attribute.value = i;
       liTag2.setAttributeNode(attribute);
-      let headings = document.createElement('h2');
-      let headingsText = document.createTextNode(bookInfo[i].title);
+      const headings = document.createElement('h2');
+      const headingsText = document.createTextNode(bookInfo[i].title);
       headings.appendChild(headingsText);
 
-      let aboutLanguage = document.createElement('p');
-      let aboutLanguageSpan = document.createElement('span');
-      let aboutLanguageSpanText = document.createTextNode('Language: ');
+      const aboutLanguage = document.createElement('p');
+      const aboutLanguageSpan = document.createElement('span');
+      const aboutLanguageSpanText = document.createTextNode('Language: ');
       aboutLanguageSpan.appendChild(aboutLanguageSpanText);
       aboutLanguage.appendChild(aboutLanguageSpan);
-      let aboutLanguageText = document.createTextNode(bookInfo[i].language);
+      const aboutLanguageText = document.createTextNode(bookInfo[i].language);
       aboutLanguage.appendChild(aboutLanguageText);
 
-      let aboutAuthor = document.createElement('p');
-      let aboutAuthorSpan = document.createElement('span');
-      let aboutAuthorSpanText = document.createTextNode('Author: ');
+      const aboutAuthor = document.createElement('p');
+      const aboutAuthorSpan = document.createElement('span');
+      const aboutAuthorSpanText = document.createTextNode('Author: ');
       aboutAuthorSpan.appendChild(aboutAuthorSpanText);
       aboutAuthor.appendChild(aboutAuthorSpan);
-      let aboutAuthorText = document.createTextNode(bookInfo[i].author);
+      const aboutAuthorText = document.createTextNode(bookInfo[i].author);
       aboutAuthor.appendChild(aboutAuthorText);
 
       liTag2.appendChild(headings);
@@ -124,13 +124,13 @@
       liTag2.appendChild(aboutAuthor);
       ulTag2.appendChild(liTag2);
 
-      let idOfLi = document.getElementsByTagName('li')[i].getAttribute('id');
-      let keysOfBookCovers = Object.keys(bookCovers);
-      let valuesOfBookCovers = Object.values(bookCovers);
+      const idOfLi = document.getElementsByTagName('li')[i].getAttribute('id');
+      const keysOfBookCovers = Object.keys(bookCovers);
+      const valuesOfBookCovers = Object.values(bookCovers);
 
       for (let j = 0; j < keysOfBookCovers.length; j++) {
         if (idOfLi === keysOfBookCovers[j]) {
-          let imgTag = document.createElement('img');
+          const imgTag = document.createElement('img');
           imgTag.setAttribute('src', valuesOfBookCovers[j]);
           imgTag.setAttribute('alt', bookInfo[i].title);
           liTag2.appendChild(imgTag);
