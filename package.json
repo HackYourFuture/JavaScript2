@@ -1,0 +1,46 @@
+{
+  "name": "javascript2",
+  "version": "1.0.0",
+  "description": "HYF JavaScript2 module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/homework",
+    "test": "npm run lint",
+    "test-week1": "eslint Week1/homework",
+    "test-week2": "eslint Week2/homework && jest Week2",
+    "test-week3": "eslint Week3/homework && jest Week3",
+    "test-maartjes-work": "jest maartjes-work",
+    "test-map-filter": "jest map-filter",
+    "test-step2-1": "jest step2-1",
+    "test-step2-2": "jest step2-2",
+    "test-step2-3": "jest step2-3",
+    "test-step2-4": "jest step2-4",
+    "test-step2-5": "jest step2-5",
+    "test-step2-6": "jest step2-6",
+    "test-step3": "jest step3",
+    "test-step3-bonus": "jest step3-bonus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackYourFuture/JavaScript2.git"
+  },
+  "author": "HackYourFuture",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackYourFuture/JavaScript2/issues"
+  },
+  "homepage": "https://github.com/HackYourFuture/JavaScript2#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.26.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2"
+  }
+}

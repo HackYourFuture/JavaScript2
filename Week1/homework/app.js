@@ -22,53 +22,53 @@
     animal_farm: {
       title: 'Animal Farm',
       language: 'English',
-      author: 'George Orwell',
+      author: 'George Orwell'
     },
     nineteen_eighty_four: {
       title: '1984',
       language: 'English',
-      author: 'George Orwell',
+      author: 'George Orwell'
     },
     burmese_days: {
       title: 'Burmese Days',
       language: 'English',
-      author: 'George Orwell',
+      author: 'George Orwell'
     },
     last_witness: {
       title: 'The Last Witness',
       language: 'English',
-      author: 'Glenn Meade',
+      author: 'Glenn Meade'
     },
     les_miserables: {
       title: 'Les Miserables',
       language: 'French',
-      author: 'Victor Hugo',
+      author: 'Victor Hugo'
     },
     burning: {
       title: 'The Burning',
       language: 'English',
-      author: 'Jane Casey',
+      author: 'Jane Casey'
     },
     reckoning: {
       title: 'The Reckoning',
       language: 'English',
-      author: 'Jane Casey',
+      author: 'Jane Casey'
     },
     murder_orient_express: {
       title: 'Murder on the Orient Express',
       language: 'English',
-      author: 'Agatha Christie',
+      author: 'Agatha Christie'
     },
     man_brown_suit: {
       title: 'The Man in the Brown Suit',
       language: 'English',
-      author: 'Agatha Christie',
+      author: 'Agatha Christie'
     },
     ice_cold: {
       title: 'Ice Cold',
       language: 'English',
-      author: 'Glenn Meade',
-    },
+      author: 'Glenn Meade'
+    }
   };
 
   const bookCovers = {
@@ -81,7 +81,7 @@
     ice_cold: 'images/ice_cold.jpg',
     nineteen_eighty_four: 'images/nineteen_eighty_four.jpg',
     burmese_days: 'images/burmese_days.jpg',
-    last_witness: 'images/last_witness.jpg',
+    last_witness: 'images/last_witness.jpg'
   };
 
   function createHtml() {
