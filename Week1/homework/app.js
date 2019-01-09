@@ -133,8 +133,6 @@
           let imgTag = document.createElement('img');
           imgTag.setAttribute('src', valuesOfBookCovers[j]);
           imgTag.setAttribute('alt', bookInfo[i].title);
-          imgTag.setAttribute('width', '300');
-          imgTag.setAttribute('height', '400');
           liTag2.appendChild(imgTag);
         }
       }

@@ -1,12 +1,19 @@
-/* add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: auto;
-  width: 1200px;
   background-color: #b7c8dc;
-  font-size: 1.5em;
   text-align: center;
 }
 
+h1,
+h2,
+p {
+  margin: 5px 0 10px 0;
+}
 span {
   font-weight: bold;
 }
@@ -14,12 +21,95 @@ span {
 ul {
   display: grid;
   list-style-type: none;
-  grid-template-columns: auto auto;
 }
 
 li {
-  margin: 10px;
-  padding: 0 0 30px 10px;
   background-color: #eceff5;
-  width: 500px;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    width: 90%;
+    font-size: 1.3em;
+  }
+
+  ul {
+    grid-template-columns: auto auto;
+  }
+
+  li {
+    margin: 10px;
+    width: 90%;
+    padding: 0 0 30px 10px;
+  }
+
+  img {
+    width: 280px;
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 80%;
+    font-size: 1.1em;
+  }
+
+  ul {
+    grid-template-columns: auto auto;
+  }
+
+  li {
+    margin: 5px;
+    width: 90%;
+    padding: 0 0 30px 10px;
+  }
+
+  img {
+    width: 250px;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    width: 75%;
+    font-size: 1em;
+  }
+
+  ul {
+    grid-template-columns: auto;
+  }
+
+  li {
+    margin: 0 0 10px 0;
+    width: 95%;
+    padding: 0 0 30px 10px;
+  }
+
+  img {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: 90%;
+    font-size: 0.9em;
+  }
+
+  ul {
+    grid-template-columns: auto;
+  }
+
+  li {
+    margin: 5px;
+    min-width: 50%;
+    padding: 0 10px 30px 10px;
+  }
+
+  img {
+    width: 200px;
+    height: 300px;
+  }
 }
