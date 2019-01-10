@@ -15,18 +15,6 @@
     'little_women'
   ];
 
-  // Step 1.3
-  // function generateUlAndLiWithIds() {
-  //   const ul = document.createElement('ul');
-  //   for (let i = 0; i < bookTitles.length; i++) {
-  //     const li = document.createElement('li');
-  //     ul.appendChild(li);
-  //     li.setAttribute('id', bookTitles[i]);
-  //     console.log(li);
-  //   }
-  // }
-  // console.log(generateUlAndLiWithIds());
-
   // Step 1.4
   const books = {
     to_kill_a_mockingbird: {
@@ -115,8 +103,8 @@
     little_women: './img/little_women.jpg'
   };
 
-  // Step 1.5
-  function getActualInfo() {
+  // Step 1.3 - 1.5
+  function htmlForBooks() {
     const ol = document.createElement('ol');
     for (let i = 0; i < bookTitles.length; i++) {
       const div1 = document.createElement('div');
@@ -128,29 +116,28 @@
       const div4 = document.createElement('div');
       div4.setAttribute('class', 'flip-card-back');
 
+      const bookTitle = bookTitles[i];
+      const book = books[bookTitle];
+
       const li = document.createElement('li');
-      li.setAttribute('id', bookTitles[i]);
-      console.log(li);
+      li.setAttribute('id', bookTitle);
 
       const h1 = document.createElement('h1');
-      h1.setAttribute('id', bookTitles[i]);
       h1.setAttribute('class', 'book-titles');
-      h1.innerText = books[`${bookTitles[i]}`].title;
+      h1.textContent = book.title;
 
       const h2 = document.createElement('h2');
-      h2.setAttribute('id', bookTitles[i]);
       h2.setAttribute('class', 'authors');
-      h2.innerText = books[`${bookTitles[i]}`].author;
+      h2.textContent = book.author;
 
       const p = document.createElement('p');
-      p.setAttribute('id', bookTitles[i]);
       p.setAttribute('class', 'about');
-      p.innerText = books[`${bookTitles[i]}`].about;
+      p.textContent = book.about;
 
       // Step 1.8
       const img = document.createElement('img');
-      img.setAttribute('src', bookCoversLocation[`${bookTitles[i]}`]);
-      img.setAttribute('alt', books[`${bookTitles[i]}`].title);
+      img.setAttribute('src', bookCoversLocation[bookTitle]);
+      img.setAttribute('alt', book.title);
 
       div4.appendChild(h1);
       div4.appendChild(h2);
@@ -165,5 +152,5 @@
     }
   }
 
-  window.addEventListener('load', getActualInfo);
+  window.addEventListener('load', htmlForBooks);
 }
