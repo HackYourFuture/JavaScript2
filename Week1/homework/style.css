@@ -1,1 +1,40 @@
-/* add your styling here */
+h1 {
+  font-size: 30px;
+  font-family: 'Cardo', serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-family: 'EB Garamond', serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+img {
+  width: 290px;
+  display: block;
+  margin: 20px auto 10px auto;
+  box-shadow: 3px 4px 15px grey;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+
+img:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+  width: 320px;
+}
+
+p {
+  margin: 0 0 60px 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+}
