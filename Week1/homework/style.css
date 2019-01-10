@@ -1,1 +1,37 @@
 /* add your styling here */
+body {
+  background-color: rgba(255, 247, 230, 0.3);
+}
+
+.books {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.book {
+  margin: 2%;
+  padding: 1%;
+  border: 0.5px solid;
+  border-color: rgb(204, 230, 255);
+}
+
+img {
+  width: 250px;
+}
+
+h3 {
+  text-align: center;
+  font: 25px black;
+}
+
+p {
+  float: right;
+  margin-right: 10%;
+  font-style: italic;
+}
+
+.description {
+  margin-top: 5%;
+  margin-right: 0;
+  font-style: initial;
+}
