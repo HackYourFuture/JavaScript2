@@ -12,7 +12,7 @@
     "import/no-dynamic-require": "off",
     "no-console": "off",
     "no-param-reassign": "off",
-    "no-plusplus": "off",
+    "no-plus": "off",
     "no-restricted-syntax": "off",
     "object-shorthand": "off",
     "operator-assignment": "off",

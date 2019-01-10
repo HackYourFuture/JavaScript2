@@ -1,1 +1,66 @@
 /* add your styling here */
+* {
+    box-sizing: border-box;
+}
+#container {
+    width: 100%;
+    margin: 40px auto;
+}
+
+#container ul {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#container ul li {
+    flex: 0 0 30.3%;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: #528CE0;
+}
+
+#container ul li h1,
+#container ul li span,
+#container ul li p {
+    color: #FFF;
+}
+
+#container ul li span,
+#container ul li p {
+    font-size: 22px;
+}
+
+#app_container {
+    width: 100%;
+    margin: 40px auto;
+
+}
+
+#app_container ul {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#app_container ul li {
+    flex: 0 0 30.3%;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: #528CE0;
+    text-align: center;
+}
+
+#app_container ul li img {
+    width: 200px !important;
+    height: 230px !important;
+}
+#app_container ul li h1 {
+    color: #FFF;
+}
+
+

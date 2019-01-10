@@ -1,11 +1,152 @@
 'use strict';
 
 {
-  const bookTitles = [
+  // 1.1
+  let bookTitles = [
     // Replace with your own book titles
-    'harry_potter_chamber_secrets'
+    'things_fall_apart',
+    'fairy_tales',
+    'the_divine_comedy',
+    'the_epic_of_gilgamesh',
+    'the_book_of_job',
+    'one_thousand_and_one_nights',
+    'pride_and_prejudice',
+    'the_wonder',
+    'god_father',
+    'the_stranger',
   ];
 
   // Replace with your own code
-  console.log(bookTitles);
+  // console.log(bookTitles);
+
+  // 1.3
+  let ul = document.createElement('ul');
+
+  function renderTitleBook(ulList) {
+    for (let title of bookTitles) {
+      let liElement = document.createElement('li');
+      liElement.innerText = title;
+      ulList.appendChild(liElement);
+    }
+  }
+
+  // console.log(ul)
+  renderTitleBook(ul);
+
+  // 1.4
+  const titleProperties = {
+    things_fall_apart: {
+      title: 'Things Fall Apart',
+      language: 'English',
+      author: 'Geoffrey Chaucer',
+    },
+    fairy_tales: {
+      title: 'Fairy tales',
+      language: 'Denmark',
+      author: 'Hans Christian Andersen',
+    },
+    the_divine_comedy: {
+      title: 'The Divine Comedy',
+      language: 'Italy',
+      author: 'Dante Alighieri',
+    },
+    the_epic_of_gilgamesh: {
+      title: 'The Epic Of Gilgamesh',
+      language: 'English',
+      author: 'Unknown',
+    },
+    the_book_of_job: {
+      title: 'The Book Of Job',
+      language: 'Hebrew',
+      author: 'George Eliot',
+    },
+    one_thousand_and_one_nights: {
+      title: 'One Thousand and One Nights',
+      language: 'Arabic',
+      author: 'Samuel Beckett',
+    },
+    pride_and_prejudice: {
+      title: 'Pride and Prejudice',
+      language: 'English',
+      author: 'Jane Austen',
+    },
+    invisible_man: {
+      title: 'Invisible Man',
+      language: 'Italian',
+      author: 'Giovanni Boccaccio',
+    },
+    the_sound_and_the_fury: {
+      title: 'The Sound and the Fury',
+      language: 'Spanish',
+      author: 'Jorge Luis Borges',
+    },
+    the_stranger: {
+      title: 'The Stranger',
+      language: 'French',
+      author: 'Albert Camus',
+    },
+  };
+
+  // 1.5
+  function renderTitleProps() {
+    Object.keys(titleProperties).forEach(item => {
+      let liElement = document.createElement('li');
+      let headerElement = document.createElement('h1');
+      let spanElement = document.createElement('span');
+      let paraElement = document.createElement('p');
+
+      headerElement.innerText = titleProperties[item].title;
+      spanElement.innerText = titleProperties[item].language;
+      paraElement.innerText = titleProperties[item].author;
+
+      liElement.appendChild(headerElement);
+      liElement.appendChild(spanElement);
+      liElement.appendChild(paraElement);
+      ulList.appendChild(liElement);
+    });
+  }
+
+  let ulList = document.createElement('ul');
+  let container = document.getElementById('container');
+  container.appendChild(ulList);
+  // console.log(ulList)
+  renderTitleProps();
+
+  // 1.7
+  const objectBookPhoto = {
+    things_fall_apart: './img/ThingsFallApart.jpg',
+    fairy_tales: './img/Hans_Christian_Andersen.jpg',
+    the_divine_comedy: './img/DanteAndHisPoem.jpg',
+    the_epic_of_gilgamesh: './img/British_Museum_Flood_Tablet.jpg',
+    the_book_of_job: './img/220px-Aleppo_Codex_Joshua_1_1.jpg',
+    one_thousand_and_one_nights: './img/Ali_Baba.jpg',
+    pride_and_prejudice: './img/220px-PrideAndPrejudiceTitlePage.jpg',
+    invisible_man: './img/Boccaccio.jpg',
+    figure: './img/Figure.jpg',
+    the_stranger: './img/The_Strange.jpg',
+  };
+
+  // 1.8
+  function coverPhoto(container) {
+    const keysBookPhoto = Object.keys(objectBookPhoto);
+
+    let ul = document.createElement('ul');
+    Object.keys(objectBookPhoto).forEach(img => {
+      let imageElement = document.createElement('img');
+      imageElement.setAttribute('src', objectBookPhoto[img]);
+
+      let liElement = document.createElement('li');
+      liElement.setAttribute('id', img);
+      let header = document.createElement('h1');
+      header.innerText = img;
+
+      liElement.appendChild(header);
+      liElement.appendChild(imageElement);
+      ul.appendChild(liElement);
+
+      document.getElementById('app_container').appendChild(ul);
+      // console.log(ul)
+    });
+  }
+  coverPhoto();
 }
