@@ -1,1 +1,34 @@
 /* add your styling here */
+body {
+  background-color: aqua;
+}
+ul {
+  list-style: none;
+
+  padding: 50;
+
+  overflow: hidden;
+}
+li {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 10 px;
+
+  text-align: center;
+
+  padding: 30px;
+
+  font-size: 1.5em;
+
+  margin: 9px;
+
+  text-decoration: none;
+
+  background-color: rgb(163, 160, 151);
+}
+h1 {
+  text-align: center;
+  color: palevioletred;
+  font-size: 5em;
+}
