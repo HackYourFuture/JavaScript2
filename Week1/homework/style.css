@@ -1,1 +1,41 @@
-/* add your styling here */
+body {
+  margin: auto;
+  padding: 5%;
+  background-color: #333;
+  color: gray;
+  text-align: center;
+}
+
+h2 {
+  width: 40%;
+  margin: auto;
+  color: blue;
+  text-shadow: 1px 1px yellow;
+  background: lightgray;
+  line-height: 2em;
+  border: 1px inset maroon;
+}
+
+h3 {
+  color: mediumvioletred;
+  text-decoration: underline;
+}
+
+hr {
+  width: 40%;
+  margin: 12% auto 0;
+}
+
+img {
+  width: 30%;
+  border: 1px ridge maroon;
+  margin: auto auto 10%;
+}
+
+li {
+  list-style-type: none;
+  font-size: 300%;
+  font-weight: bold;
+  margin: 3%;
+  color: beige;
+}
