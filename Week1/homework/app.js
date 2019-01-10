@@ -104,9 +104,12 @@
   };
 
   // Step 1.3 - 1.5
-  function htmlForBooks() {
+  function generateHtmlForBooks() {
     const ol = document.createElement('ol');
-    for (let i = 0; i < bookTitles.length; i++) {
+
+    for (const bookTitle of bookTitles) {
+      const book = books[bookTitle];
+
       const div1 = document.createElement('div');
       div1.setAttribute('class', 'flip-card');
       const div2 = document.createElement('div');
@@ -115,9 +118,6 @@
       div3.setAttribute('class', 'flip-card-front');
       const div4 = document.createElement('div');
       div4.setAttribute('class', 'flip-card-back');
-
-      const bookTitle = bookTitles[i];
-      const book = books[bookTitle];
 
       const li = document.createElement('li');
       li.setAttribute('id', bookTitle);
@@ -152,5 +152,5 @@
     }
   }
 
-  window.addEventListener('load', htmlForBooks);
+  window.addEventListener('load', generateHtmlForBooks);
 }
