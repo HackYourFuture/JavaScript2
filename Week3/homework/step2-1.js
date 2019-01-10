@@ -1,9 +1,10 @@
 'use strict';
-
+// document.body.style.backgroundColor = "sky blue";
 function foo(func) {
   // What to do here?
+  func();
   // Replace this comment and the next line with your code
-  console.log(func);
+  console.log('thank you');
 }
 
 function bar() {
