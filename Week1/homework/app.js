@@ -1,86 +1,87 @@
 'use strict';
 
 {
-  const book1 = {
-    ID: 'Peaks_and_Valleys_Making_Good_and_Bad_Times_Work_for_You',
-    Title: 'Peaks and Valleys: Making Good and Bad Times Work for You',
-    Author: 'Spencer Johnson M.D',
-    language: 'English',
-    Picture: 'Pictures/9200000035483858.jpg'
-  };
-  const book2 = {
-    ID: 'The_7_Habits_of_Highly_Effective_People',
-    Title: 'The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change',
-    Author: 'Stephen R. Covey',
-    language: 'English',
-    Picture: 'Pictures/9200000041207941.jpg'
-  };
-  const book3 = {
-    ID: 'Who_Moved_My_Cheese',
-    Title: 'Who Moved My Cheese',
-    Author: 'Spencer Johnson M.D',
-    language: 'English',
-    Picture: 'Pictures/1001004000772743.jpg'
-  };
-  const book4 = {
-    ID: 'The_8th_Habit',
-    Title: 'The 8th Habit',
-    Author: 'Stephen R. Covey',
-    language: 'English',
-    Picture: 'Pictures/1001004002668308.jpg'
-  };
-  const book5 = {
-    ID: 'Everyday_Bias_Identifying_and_Navigating_Unconscious_Judgments_in_Our_Daily_Lives',
-    Title: 'Everyday Bias Identifying and Navigating Unconscious Judgments in Our Daily Lives',
-    Author: 'Howard J. Ross',
-    language: 'English',
-    Picture: 'Pictures/9200000026286353.jpg'
+  const books = {
+    Peaks_and_Valleys_Making_Good_and_Bad_Times_Work_for_You: {
+      title: 'Peaks and Valleys: Making Good and Bad Times Work for You',
+      author: 'Spencer Johnson M.D',
+      language: 'English',
+      picture: 'Pictures/9200000035483858.jpg'
+    },
+
+    The_7_Habits_of_Highly_Effective_People: {
+      title: 'The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change',
+      author: 'Stephen R. Covey',
+      language: 'English',
+      picture: 'Pictures/9200000041207941.jpg'
+    },
+
+    Who_Moved_My_Cheese: {
+      title: 'Who Moved My Cheese',
+      author: 'Spencer Johnson M.D',
+      language: 'English',
+      picture: 'Pictures/1001004000772743.jpg'
+    },
+
+    The_8th_Habit: {
+      title: 'The 8th Habit',
+      author: 'Stephen R. Covey',
+      language: 'English',
+      picture: 'Pictures/1001004002668308.jpg'
+    },
+
+    Everyday_Bias_identifying_and_Navigating_Unconscious_Judgments_in_Our_Daily_Lives: {
+      title: 'Everyday Bias identifying and Navigating Unconscious Judgments in Our Daily Lives',
+      author: 'Howard J. Ross',
+      language: 'English',
+      picture: 'Pictures/9200000026286353.jpg'
+    },
+
+    Thinking_Strategically: {
+      title: 'Thinking Strategically',
+      author: 'Harvard Business Review',
+      language: 'English',
+      picture: 'Pictures/9200000102594764.jpg'
+    },
+
+    Harvard_Business_Review_on_Winning_Negotiations: {
+      title: 'Harvard Business Review on Winning Negotiations',
+      author: 'Harvard Business Review',
+      language: 'English',
+      picture: 'Pictures/9200000002699149.jpg'
+    },
+
+    A_guide_to_the_Project_Management_Body_of_Knowledge: {
+      title: 'A guide to the Project Management Body of Knowledge',
+      author: 'Project Management Institute',
+      language: 'English',
+      picture: 'Pictures/9200000075545497.jpg'
+    },
+
+    Five_Minds_for_the_Future: {
+      title: 'Five Minds for the Future',
+      author: 'Howard Gardner',
+      language: 'English',
+      picture: 'Pictures/1001004006312039.jpg'
+    },
+
+    Blue_Ocean_Strategy: {
+      title: 'Blue Ocean Strategy',
+      author: 'W. Chan Kim',
+      language: 'English',
+      picture: 'Pictures/9200000025961603.jpg'
+    }
   };
 
-  const book6 = {
-    ID: 'Thinking_Strategically  ',
-    Title: 'Thinking Strategically',
-    Author: 'Harvard Business Review',
-    language: 'English',
-    Picture: 'Pictures/9200000102594764.jpg'
-  };
-  const book7 = {
-    ID: 'Harvard_Business_Review_on_Winning_Negotiations ',
-    Title: 'Harvard Business Review on Winning Negotiations',
-    Author: 'Harvard Business Review',
-    language: 'English',
-    Picture: 'Pictures/9200000002699149.jpg'
-  };
-  const book8 = {
-    ID: 'A_guide_to_the_Project_Management_Body_of_Knowledge',
-    Title: 'A guide to the Project Management Body of Knowledge',
-    Author: 'Project Management Institute',
-    language: 'English',
-    Picture: 'Pictures/9200000075545497.jpg'
-  };
-  const book9 = {
-    ID: 'Five_Minds_for_the_Future',
-    Title: 'Five Minds for the Future',
-    Author: 'Howard Gardner',
-    language: 'English',
-    Picture: 'Pictures/1001004006312039.jpg'
-  };
-  const book10 = {
-    ID: 'Blue_Ocean_Strategy',
-    Title: 'Blue Ocean Strategy',
-    Author: 'W. Chan Kim',
-    language: 'English',
-    Picture: 'Pictures/9200000025961603.jpg'
-  };
-  function ConvertBookToCard(newMainDev) {
-    const bookCollection = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10];
+  function convertBookToCard(newMainDev) {
+    const bookCollection = Object.values(books);
     for (let i = 0; i < bookCollection.length; i++) {
       const bookDiv = document.createElement('div');
       // creates a main container for the image and the data
 
-      bookDiv.setAttribute('ID', bookCollection[i].ID.trim());
+      bookDiv.setAttribute('id', bookCollection[i].id);
       bookDiv.setAttribute('class', 'book');
-      bookDiv.style.backgroundImage = 'url(' + bookCollection[i].Picture.concat();
+      bookDiv.style.backgroundImage = 'url(' + bookCollection[i].picture.trim() + ')';
       bookDiv.style.backgroundSize = '100%';
       bookDiv.style.backgroundRepeat = 'no-repeat';
 
@@ -89,12 +90,12 @@
 
       const author = document.createElement('span');
       author.setAttribute('class', 'author');
-      author.innerText = bookCollection[i].Author.concat();
+      author.innerText = bookCollection[i].author.trim();
       dataDiv.appendChild(author);
 
       const title = document.createElement('h1');
       title.setAttribute('class', 'title');
-      title.innerText = bookCollection[i].Title.concat();
+      title.innerText = bookCollection[i].title.trim();
       dataDiv.appendChild(title);
 
       const language = document.createElement('p');
@@ -115,7 +116,7 @@
     const newMainDev = document.createElement('Div');
     newMainDev.setAttribute('class', 'bookCollection');
     mainDiv.appendChild(newMainDev);
-    ConvertBookToCard(newMainDev);
+    convertBookToCard(newMainDev);
     document.body.appendChild(mainDiv);
   }
 
