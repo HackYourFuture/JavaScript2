@@ -1,33 +1,31 @@
 body {
-  background-color: aqua;
+  background-image: url('http://celb.lu/wp-content/uploads/2014/04/Gray-plain-website-background.jpg');
+  width: 100%;
 }
 ul {
-  list-style: none;
-
-  padding: 50;
-
-  overflow: hidden;
+  text-decoration-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 li {
-  float: left;
+  list-style: none;
+  margin-top: 0px;
   width: 300px;
-  height: 300px;
-  margin: 10 px;
-
-  text-align: center;
-
-  padding: 30px;
-
-  font-size: 1.5em;
-
-  margin: 9px;
-
-  text-decoration: none;
-
-  background-color: rgb(163, 160, 151);
+  height: 400px;
+  vertical-align: middle;
 }
 h1 {
   text-align: center;
-  color: palevioletred;
+  color: rgb(29, 124, 168);
   font-size: 5em;
+}
+img {
+  width: 150px;
+  height: 200px;
+  border-radius: 30px;
+}
+.book {
+  margin: 30px 10px 5px 20px;
 }

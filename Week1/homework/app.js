@@ -61,7 +61,7 @@
       id_book_eight: {
         author: 'James Hawes',
         language: 'english',
-        name: 'Title: Why You Should Read Kafka Before You Waste Your Life',
+        name: 'You Should Read',
         Artist: 'Steve Snider'
       },
       id_book_nine: {
@@ -77,75 +77,46 @@
         Artist: 'Unknown'
       }
     };
-
     const image = {
-      id_book_one: './imag/id_book_one.jpg',
-      id_book_two: './imag/id_book_two.jpg',
-      id_book_three: './imag/id_book_three.jpg',
-      id_book_four: './imag/id_book_four.jpg',
-      id_book_five: './imag/id_book_five.jpg',
-      id_book_six: './imag/id_book_six.jpg',
-      id_book_seven: './imag/id_book_seven.jpg',
-      id_book_eight: './imag/id_book_eight.jpg',
-      id_book_nine: './imag/id_book_nine.jpg',
-      id_book_ten: './imag/id_book_ten.jpg'
+      id_book_one: './image/id_book_one.jpg',
+      id_book_two: './image/id_book_two.jpg',
+      id_book_three: './image/id_book_three.jpg',
+      id_book_four: './image/id_book_four.jpg',
+      id_book_five: './image/id_book_five.jpg',
+      id_book_six: './image/id_book_six.jpg',
+      id_book_seven: './image/id_book_seven.jpg',
+      id_book_eight: './image/id_book_eight.jpg',
+      id_book_nine: './image/id_book_nine.jpg',
+      id_book_ten: './image/id_book_ten.jpg'
     };
+    const div = document.getElementById('container');
 
-    let div = document.getElementById('container');
-
-    let h1Tag = document.createElement('h1');
+    const h1Tag = document.createElement('h1');
     h1Tag.innerHTML = 'My Favourite Books';
     div.appendChild(h1Tag);
     h1Tag.className = 'h1Tag';
 
-    let divTag = document.createElement('div');
+    const divTag = document.createElement('div');
     divTag.className = 'myBooks';
 
-    let ultag = document.createElement('ul');
-    ultag.className = 'books';
-
-    const body = document.body;
-    body.appendChild(createList(listBooks));
-
-    function createList(books) {
-      const listBooks = document.createElement('ul');
-
-      for (let i = 0; i < books.length; i++) {
-        const item = document.createElement('li');
-        item.id = books[i];
-        item.appendChild(createChild('h2', 'Title', information[books[i]].name));
-        item.appendChild(
-          createChild('p', 'Author: By ', createChild('em', information[books[i]].author))
-        );
-        item.appendChild(
-          createChild('div', 'Language: By ', createChild('em', information[books[i]].language))
-        );
-        item.appendChild(
-          createChild('div', 'Cover Artist: By ', createChild('em', information[books[i]].Artist))
-        );
-
-        listBooks.appendChild(item);
-      }
-      return listBooks;
-    }
-
-    function createChild(type, ...children) {
-      const node = document.createElement(type);
-
-      for (const child of children) {
-        if (typeof child === 'string') {
-          node.appendChild(document.createTextNode(child));
-        } else {
-          node.appendChild(child);
-        }
-      }
-
-      return node;
-    }
-
-    function capitalizeFirstLetter(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1);
-    }
+    const ulTag = document.createElement('ul');
+    ulTag.className = 'books';
+    listBooks.forEach(function(id) {
+      const img = document.createElement('img');
+      img.src = image[id];
+      img.className = 'cover';
+      const title = document.createElement('h2');
+      title.innerHTML = information[id].name;
+      title.className = 'title';
+      const liTag = document.createElement('li');
+      liTag.innerHTML = information[id].author;
+      liTag.className = 'book';
+      liTag.appendChild(title);
+      liTag.appendChild(img);
+      ulTag.appendChild(liTag);
+      div.appendChild(divTag);
+      divTag.appendChild(ulTag);
+    });
   }
 
   window.addEventListener('load', main);
