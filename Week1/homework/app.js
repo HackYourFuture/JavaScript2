@@ -53,7 +53,7 @@
         Artist: 'Nick Lowndes'
       },
       id_book_seven: {
-        author: 'Jim Thompson',
+        author: 'Jim Th',
         language: 'english',
         name: 'Heed The Thunder',
         Artist: 'Unknown'
