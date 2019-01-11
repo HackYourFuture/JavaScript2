@@ -1,1 +1,52 @@
-/* add your styling here */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+}
+h1 {
+  color: #336699;
+  text-align: center;
+}
+h2 {
+  margin: 5px auto;
+  color: #cc0000;
+}
+h3 {
+  color: #a45209;
+  margin-top: 0;
+}
+ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: auto;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  width: 600px;
+  margin: 50px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #f5f1de;
+}
+img {
+  float: left;
+  width: 50%;
+  margin-right: 10px;
+}
+p {
+  text-align: justify;
+  margin-right: 10px;
+}
+.align-right {
+  text-align: right;
+}
+.bold {
+  font-weight: bold;
+}
