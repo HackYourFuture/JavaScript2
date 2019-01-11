@@ -78,16 +78,16 @@
       }
     };
     const image = {
-      id_book_one: './image/id_book_one.jpg',
-      id_book_two: './image/id_book_two.jpg',
-      id_book_three: './image/id_book_three.jpg',
-      id_book_four: './image/id_book_four.jpg',
-      id_book_five: './image/id_book_five.jpg',
-      id_book_six: './image/id_book_six.jpg',
-      id_book_seven: './image/id_book_seven.jpg',
-      id_book_eight: './image/id_book_eight.jpg',
-      id_book_nine: './image/id_book_nine.jpg',
-      id_book_ten: './image/id_book_ten.jpg'
+      id_book_one: './imag/id_book_one.jpg',
+      id_book_two: './imag/id_book_two.jpg',
+      id_book_three: './imag/id_book_three.jpg',
+      id_book_four: './imag/id_book_four.jpg',
+      id_book_five: './imag/id_book_five.jpg',
+      id_book_six: './imag/id_book_six.jpg',
+      id_book_seven: './imag/id_book_seven.jpg',
+      id_book_eight: './imag/id_book_eight.jpg',
+      id_book_nine: './imag/id_book_nine.jpg',
+      id_book_ten: './imag/id_book_ten.jpg'
     };
     const div = document.getElementById('container');
 
@@ -103,7 +103,7 @@
     ulTag.className = 'books';
     listBooks.forEach(function(id) {
       const img = document.createElement('img');
-      img.src = image[id];
+      img.src = imag[id];
       img.className = 'cover';
       const title = document.createElement('h2');
       title.innerHTML = information[id].name;
