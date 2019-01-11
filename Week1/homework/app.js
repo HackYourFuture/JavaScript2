@@ -103,7 +103,7 @@
     ulTag.className = 'books';
     listBooks.forEach(function(id) {
       const img = document.createElement('img');
-      img.src = imag[id];
+      img.src = image[id];
       img.className = 'cover';
       const title = document.createElement('h2');
       title.innerHTML = information[id].name;
