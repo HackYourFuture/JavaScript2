@@ -3,9 +3,18 @@
 {
   // First part of homework. Getting elements from array.
 
-  const bookIds = ['animal_farm', 'nineteen_eighty_four', 'burmese_days', 'last_witness',
-    'les_miserables', 'burning', 'reckoning', 'murder_orient_express',
-    'man_brown_suit', 'ice_cold'];
+  const bookIds = [
+    'animal_farm',
+    'nineteen_eighty_four',
+    'burmese_days',
+    'last_witness',
+    'les_miserables',
+    'burning',
+    'reckoning',
+    'murder_orient_express',
+    'man_brown_suit',
+    'ice_cold'
+  ];
 
   // function createBookList() {
   //   var ulTag = document.createElement('ul');
@@ -137,19 +146,17 @@
   }
 
   function addImage() {
-
     const keysOfBookCovers = Object.keys(bookCovers);
 
-    for (let keys of keysOfBookCovers) {
+    for (const keys of keysOfBookCovers) {
       const book = bookCovers[keys];
       const bookAlt = bookInfo[keys].alt;
-      let liTag2 = document.getElementsByTagName('li')[keys];
+      const liTags = document.getElementsByTagName('li')[keys];
 
       const imgTag = document.createElement('img');
       imgTag.setAttribute('src', book);
       imgTag.setAttribute('alt', bookAlt);
-      liTag2.appendChild(imgTag);
-
+      liTags.appendChild(imgTag);
     }
   }
 
