@@ -2,7 +2,7 @@ body {
   margin: auto;
   padding: 5%;
   background-color: #333;
-  color: gray;
+  color: lightgray;
   text-align: center;
 }
 
@@ -10,15 +10,16 @@ h2 {
   width: 40%;
   margin: auto;
   color: blue;
-  text-shadow: 1px 1px yellow;
-  background: lightgray;
-  line-height: 2em;
-  border: 1px inset maroon;
+  background: silver;
+  line-height: 300%;
+  border: 3px inset white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h3 {
-  color: mediumvioletred;
+  color: white;
   text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 hr {
@@ -27,8 +28,8 @@ hr {
 }
 
 img {
-  width: 30%;
-  border: 1px ridge maroon;
+  width: 33%;
+  border: 3px ridge lightgray;
   margin: auto auto 10%;
 }
 
