@@ -88,6 +88,7 @@
       id_book_nine: './imag/id_book_nine.jpg',
       id_book_ten: './imag/id_book_ten.jpg'
     };
+
      function main() {
     const div = document.getElementById('container');
 
