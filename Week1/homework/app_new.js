@@ -110,9 +110,14 @@
     the_alchemist: 'img/the_alchemist.jpg'
   };
 
-  function createAndAppend(tag, parent) {
+  function createAndAppend(tag, parent, options) {
+    if (options === undefined) {
+      options = {};
+    }
     const element = document.createElement(tag);
     parent.appendChild(element);
+    for(){}
+    
     return element;
   }
 
@@ -138,7 +143,8 @@
   function getActualBookInfo() {
     const bookList = Object.keys(Books);
     for (const key of bookList) {
-      const bookTitle = document.createElement('h2');
+      const bookTitle = createAndAppend('h2');
+
       bookTitle.innerText = Books[key].title;
       const author = document.createElement('h3');
       author.innerText = Books[key].author;
