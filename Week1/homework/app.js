@@ -1,8 +1,7 @@
 'use strict';
 
-{
-  function main() {
-    const listBooks = [
+   
+  const listBooks = [
       'id_book_one',
       'id_book_two',
       'id_book_three',
@@ -15,7 +14,7 @@
       'id_book_ten'
     ];
 
-    const information = {
+    const bookInformation = {
       id_book_one: {
         author: 'Kevin Brockmeier',
         language: 'english',
@@ -77,7 +76,7 @@
         Artist: 'Unknown'
       }
     };
-    const image = {
+    const bookImage = {
       id_book_one: './imag/id_book_one.jpg',
       id_book_two: './imag/id_book_two.jpg',
       id_book_three: './imag/id_book_three.jpg',
@@ -89,6 +88,7 @@
       id_book_nine: './imag/id_book_nine.jpg',
       id_book_ten: './imag/id_book_ten.jpg'
     };
+     function main() {
     const div = document.getElementById('container');
 
     const h1Tag = document.createElement('h1');
@@ -97,19 +97,19 @@
     h1Tag.className = 'h1Tag';
 
     const divTag = document.createElement('div');
-    divTag.className = 'myBooks';
+    divTag.className = 'my-books';
 
     const ulTag = document.createElement('ul');
     ulTag.className = 'books';
     listBooks.forEach(function(id) {
       const img = document.createElement('img');
-      img.src = image[id];
+      img.src = bookImage[id];
       img.className = 'cover';
       const title = document.createElement('h2');
-      title.innerHTML = information[id].name;
+      title.innerHTML = bookInformation[id].name;
       title.className = 'title';
       const liTag = document.createElement('li');
-      liTag.innerHTML = information[id].author;
+      liTag.innerHTML = bookInformation[id].author;
       liTag.className = 'book';
       liTag.appendChild(title);
       liTag.appendChild(img);
@@ -120,4 +120,4 @@
   }
 
   window.addEventListener('load', main);
-}
+
