@@ -19,61 +19,95 @@
       title: 'To Kill a Mockingbird',
       language: 'English',
       author: 'Harper Lee',
-      about: `Published in 1960, this timeless classic explores human behaviour and the collective conscience of The Deep South in the early 20th century. Humour entwines the delicate strands of prejudice, hatred, hypocrisy, love and innocence to create one of the best novels ever written.`
+      about: `Published in 1960, this timeless classic 
+      explores human behaviour and the collective
+      conscience of The Deep South in the early 20th century. 
+      Humour entwines the delicate strands of
+      prejudice, hatred, hypocrisy, love and innocence to 
+      create one of the best novels ever written.`
     },
     1984: {
       title: '1984',
       language: 'English',
       author: 'George Orwell',
-      about: `Although 1984 has passed us by, George Orwell’s dystopian, totalitarian world of control, fear and lies has never been more relevant. Delve into the life of Winston Smith as he struggles with his developing human nature in a world where individuality, freewill and love are forbidden.`
+      about: `Although 1984 has passed us by, George Orwell’s dystopian, 
+      totalitarian world of control, fear and lies has never been more
+      relevant. Delve into the life of Winston Smith as he struggles
+      with his developing human nature in a world where individuality,
+      freewill and love are forbidden.`
     },
     harry_potter_and_the_philosophers_stone: {
       title: 'Harry Potter and the Philosopher’s Stone',
       language: 'English',
       author: 'J.K. Rowling',
-      about: `I’m willing to bet you’ve heard of Harry Potter, but have you read the books? Join Harry Potter as he begins his journey into the world of magic, where he is the celebrated Boy Who Lived. Visit Hogwarts, meet your favourite characters and watch Harry grow into the one of the most famous literary characters in the world.`
+      about: `I’m willing to bet you’ve heard of Harry Potter, but have
+      you read the books? Join HarryPotter as he begins his journey into 
+      the world of magic, where he is the celebrated Boy Who Lived. Visit 
+      Hogwarts, meet your favourite characters and watch Harry grow into
+      the one of the most famous literary characters in the world.`
     },
     the_lord_of_the_rings: {
       title: 'The Lord of the Rings',
       language: 'English',
       author: 'J.R.R. Tolkien',
-      about: `Middle Earth is a wonderful, expansive fantasy world filled with turmoil, heroes, evil and innocence. Although our protagonist Frodo Baggins’ quest seems impossible to complete, this trilogy is a tale of triumph in the most impossible circumstances.`
+      about: `Middle Earth is a wonderful, expansive fantasy world
+      filled with turmoil, heroes, evil and innocence. Although our
+      protagonist Frodo Baggins’ quest seems impossible to complete, this
+      trilogy is a tale of triumph in the most impossible circumstances.`
     },
     the_great_gatsby: {
       title: 'The Great Gatsby',
       language: 'English',
       author: 'F. Scott Fitzgerald',
-      about: `Published in 1925, Fitzgerald’s The Great Gatsby explores the decadence of the Jazz Age, and one man’s introduction into a world where even those with the most indulgent lives cannot earn love.`
+      about: `Published in 1925, Fitzgerald’s The Great Gatsby explores
+      the decadence of the Jazz Age, and one man’s introduction into a
+      world where even those with the most indulgent lives cannot earn love.`
     },
     pride_and_prejudice: {
       title: 'Pride and Prejudice',
       language: 'English',
       author: 'Jane Austen',
-      about: `One of the most famous novels of all time, Pride And Prejudice details the courtship of two opposed characters in a world where manners and courtesy are of the utmost importance.`
+      about: `One of the most famous novels of all time, Pride And
+      Prejudice details the courtship oftwo opposed characters in a
+      world where manners and courtesy are of the utmost importance.`
     },
     the_diary_of_a_young_girl: {
       title: 'The Diary Of A Young Girl',
       language: 'English',
       author: 'Anne Frank',
-      about: `Unforgettable and deeply influential, Anne Frank’s diary is a raw account of a young girl’s life as she hides from the Nazis. Despite her circumstances, Anne believes that people are still good at heart and that the world is full of beauty: she will change your life.`
+      about: `Unforgettable and deeply influential, Anne Frank’s diary
+      is a raw account of a young girl’s life as she hides from the Nazis.
+      Despite her circumstances, Anne believes that people arestill good
+      at heart and that the world is full of beauty: she will change your life.`
     },
     the_book_thief: {
       title: 'The Book Thief',
       language: 'English',
       author: 'Markus Zusak',
-      about: `Set in Germany during 1939, The Book Thief follows Liesel as she rescues books from the tyranny of Nazi rule. Meanwhile, her family has hidden a Jewish fighter in their basement and death looks down on the family, narrating our tale. Experience bravery that is rarely found in the world, and friendship that is formed in the most unlikely of situations.`
+      about: `Set in Germany during 1939, The Book Thief follows
+      Liesel as she rescues books from the tyranny of Nazi rule.
+      Meanwhile, her family has hidden a Jewish fighter in their
+      basement and death looks down on the family, narrating our tale.
+      Experience bravery that is rarely found in the world, and
+      friendship that is formed in the most unlikely of situations.`
     },
     the_hobbit: {
       title: 'The Hobbit',
       language: 'English',
       author: 'J.R.R. Tolkien',
-      about: `Although the movies are inexplicably long, The Hobbit was originally written as a short children’s book. Meet your favourite characters for the first time as the unforgettable Bilbo Baggins traverses the harsh landscapes of Middle Earth to challenge a dragon.`
+      about: `Although the movies are inexplicably long, The Hobbit
+      was originally written as a short children’s book. Meet your
+      favourite characters for the first time as the unforgettable Bilbo
+      Baggins traverses the harsh landscapes of Middle Earth to challenge a dragon.`
     },
     little_women: {
       title: 'Little Women',
       language: 'English',
       author: 'Louisa May Alcott',
-      about: `Join four sisters, each with their own prominent personality, as they come of age in charming 19th Century New England. Experience their struggles and revel in their flaws, as these girls become strong women.`
+      about: `Join four sisters, each with their own prominent
+      personality, as they come of age in charming 19th Century
+      New England. Experience their struggles and revel in their
+      flaws, as these girls become strong women.`
     }
   };
 
