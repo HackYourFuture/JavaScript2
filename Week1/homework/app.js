@@ -1,7 +1,6 @@
 'use strict';
 
 {
-  // Step 1.1
   const bookTitles = [
     'to_kill_a_mockingbird',
     '1984',
@@ -15,7 +14,6 @@
     'little_women'
   ];
 
-  // Step 1.4
   const books = {
     to_kill_a_mockingbird: {
       title: 'To Kill a Mockingbird',
@@ -89,7 +87,6 @@
     }
   };
 
-  // Step 1.7
   const bookCoversLocation = {
     to_kill_a_mockingbird: './img/to_kill_a_mockingbird.jpg',
     1984: './img/1984.jpg',
@@ -103,52 +100,34 @@
     little_women: './img/little_women.jpg'
   };
 
-  // Step 1.3 - 1.5
+  function createAndAppend(tagName, parent, options = {}) {
+    const elem = document.createElement(tagName);
+    parent.appendChild(elem);
+    for (const key of Object.keys(options)) {
+      const value = options[key];
+      if (key === 'text') {
+        elem.textContent = value;
+      } else {
+        elem.setAttribute(key, value);
+      }
+    }
+    return elem;
+  }
+
   function generateHtmlForBooks() {
-    const ol = document.createElement('ol');
+    const ol = createAndAppend('ol', document.body);
 
     for (const bookTitle of bookTitles) {
       const book = books[bookTitle];
-
-      const div1 = document.createElement('div');
-      div1.setAttribute('class', 'flip-card');
-      const div2 = document.createElement('div');
-      div2.setAttribute('class', 'flip-card-inner');
-      const div3 = document.createElement('div');
-      div3.setAttribute('class', 'flip-card-front');
-      const div4 = document.createElement('div');
-      div4.setAttribute('class', 'flip-card-back');
-
-      const li = document.createElement('li');
-      li.setAttribute('id', bookTitle);
-
-      const h1 = document.createElement('h1');
-      h1.setAttribute('class', 'book-titles');
-      h1.textContent = book.title;
-
-      const h2 = document.createElement('h2');
-      h2.setAttribute('class', 'authors');
-      h2.textContent = book.author;
-
-      const p = document.createElement('p');
-      p.setAttribute('class', 'about');
-      p.textContent = book.about;
-
-      // Step 1.8
-      const img = document.createElement('img');
-      img.setAttribute('src', bookCoversLocation[bookTitle]);
-      img.setAttribute('alt', book.title);
-
-      div4.appendChild(h1);
-      div4.appendChild(h2);
-      div4.appendChild(p);
-      div3.appendChild(img);
-      div2.appendChild(div3);
-      div2.appendChild(div4);
-      div1.appendChild(div2);
-      li.appendChild(div1);
-      ol.appendChild(li);
-      document.body.appendChild(ol);
+      const li = createAndAppend('li', ol, { id: bookTitle });
+      const div1 = createAndAppend('div', li, { class: 'flip-card' });
+      const div2 = createAndAppend('div', div1, { class: 'flip-card-inner' });
+      const div3 = createAndAppend('div', div2, { class: 'flip-card-front' });
+      const div4 = createAndAppend('div', div2, { class: 'flip-card-back' });
+      createAndAppend('img', div3, { src: bookCoversLocation[bookTitle], alt: book.title });
+      createAndAppend('h1', div4, { text: book.title, class: 'book-titles' });
+      createAndAppend('h2', div4, { text: book.author, class: 'authors' });
+      createAndAppend('p', div4, { text: book.about, class: 'about' });
     }
   }
 
