@@ -135,7 +135,7 @@ Time:        1.255s
 Ran all test suites matching /Week2\//i.
 ```
 
-If that's the case, try and fix the error. When done, run the tests again: `npm run test2`
+If that's the case, try and fix the error. When done, run the tests again: `npm run test-week2`
 
 Repeat the previous step until all (= 2 in this case) tests pass.
 
