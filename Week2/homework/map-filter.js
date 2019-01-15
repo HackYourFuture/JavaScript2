@@ -2,6 +2,10 @@
 
 function doubleOddNumbers(numbers) {
   // Replace this comment and the next line with your code
+<<<<<<< HEAD
+=======
+  console.log(numbers);
+>>>>>>> ca605506f2a087f5a332e32698a4dc129925aee8
   return numbers.filter(number => number % 2 !== 0).map(number => number * 2);
 }
 
