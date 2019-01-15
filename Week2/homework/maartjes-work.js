@@ -48,7 +48,7 @@ const maartjesHourlyRate = 20;
 function computeEarnings(tasks, hourlyRate) {
   const totalEarnings = tasks
     .map(x => x.duration / 60)
-    .filter(x => x > 2)
+    .filter(x => x >= 2)
     .map(x => x * hourlyRate)
     .reduce((accumulator, number) => accumulator + number);
   return totalEarnings;
@@ -56,6 +56,7 @@ function computeEarnings(tasks, hourlyRate) {
 
 // eslint-disable-next-line no-unused-vars
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
+
 console.log(`Maartje has earned €${earnings.toFixed(2)}`);
 
 // Do not change or remove anything below this line
