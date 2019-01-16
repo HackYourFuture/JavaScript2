@@ -97,7 +97,7 @@
         'Paulo Coelhos masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure.His quest will lead him to riches far different—and far more satisfying—than he ever imagined.Santiagos journey teaches us about the essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along lifes path, and, most importantly, to follow our dreams.'
     }
   };
-  const BookCovers = {
+  const bookCovers = {
     moby_dick: 'img/moby_dick.jpg',
     the_adventures_of_huckleberry_finn: 'img/the_adventures_of_huckleberry_finn.jpg',
     alices_adventures_in_wonderland: 'img/alices_adventures_in_wonderland.jpg',
@@ -110,10 +110,15 @@
     the_alchemist: 'img/the_alchemist.jpg'
   };
 
-  function createAndAppendElement(tag, parent, elementInnerText) {
+  function createAndAppendElement(tag, parent, options = {}) {
     const element = document.createElement(tag);
-    if (elementInnerText) {
-      element.innerText = elementInnerText;
+    for (const key of Object.keys(options)) {
+      const value = options[key];
+      if (key === 'text') {
+        element.textContent = value;
+      } else {
+        element.setAttribute(key, value);
+      }
     }
     parent.appendChild(element);
     return element;
@@ -121,18 +126,15 @@
 
   function generateBookCards(container) {
     for (let i = 0; i < bookTitles.length; i++) {
-      const bookCard = createAndAppendElement('li', container);
-      bookCard.setAttribute('id', bookTitles[i]);
+      createAndAppendElement('li', container, { id: bookTitles[i] });
     }
   }
 
   function insertBookCovers() {
-    const bookList = Object.keys(BookCovers);
+    const bookList = Object.keys(bookCovers);
     for (const key of bookList) {
       const li = document.getElementById(key);
-      const img = createAndAppendElement('img', li);
-      img.src = BookCovers[key];
-      img.alt = key;
+      createAndAppendElement('img', li, { src: bookCovers[key], alt: key });
     }
   }
 
@@ -140,17 +142,22 @@
     const bookList = Object.keys(books);
     for (const key of bookList) {
       const bookCard = document.getElementById(key);
-      createAndAppendElement('h2', bookCard, books[key].title);
-      createAndAppendElement('h3', bookCard, books[key].author);
-      createAndAppendElement('p', bookCard, books[key].info);
-      const pages = createAndAppendElement('p', bookCard, books[key].length + ' pages');
-      pages.className = 'align-right bold';
+      const book = books[key];
+      createAndAppendElement('h2', bookCard, { text: book.title });
+      createAndAppendElement('h3', bookCard, { text: book.author });
+      createAndAppendElement('p', bookCard, { text: book.info });
+      createAndAppendElement('p', bookCard, {
+        text: book.length + ' pages',
+        class: 'align-right bold'
+      });
     }
   }
 
   function main() {
-    createAndAppendElement('h1', document.body, '10 Books That I Read');
-    const booksContainer = createAndAppendElement('ul', document.body);
+    createAndAppendElement('h1', document.body, { text: '10 Books That I Read' });
+    const booksContainer = createAndAppendElement('ul', document.body, {
+      id: 'bookCardsContainer'
+    });
     generateBookCards(booksContainer);
     insertBookCovers();
     insertBookDetails();
