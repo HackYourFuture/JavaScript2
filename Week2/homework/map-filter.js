@@ -2,8 +2,7 @@
 
 function doubleOddNumbers(numbers) {
   // Replace this comment and the next line with your code
-  const newNumber = myNumbers.filter(number => (number % 2 === 0 ? number : false));
-
+  const newNumber = numbers.filter(number => (number % 2 === 1 ? number : false)).map(x => x + x);
   return newNumber;
 }
 
