@@ -1,8 +1,7 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  // Replace this comment and the next line with your code
-  console.log(numbers);
+  return numbers.filter(oddNumber => oddNumber % 2).map(doubled => doubled * 2);
 }
 
 const myNumbers = [1, 2, 3, 4];
