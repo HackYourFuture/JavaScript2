@@ -1,1 +1,24 @@
-/* add your styling here */
+body {
+  background-color: #8fbc8f;
+  width: auto;
+  padding: 10%;
+}
+
+img {
+  width: 35%;
+  border-radius: 15%;
+}
+
+ul {
+  text-decoration-style: none;
+}
+
+li {
+  list-style: none;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+}
