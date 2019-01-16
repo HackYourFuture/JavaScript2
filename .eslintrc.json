@@ -19,6 +19,7 @@
     "prefer-arrow-callback": "off",
     "prefer-destructuring": "off",
     "prefer-template": "off",
-    "trailing-comma": "off"
+    "trailing-comma": "off",
+    "linebreak-style":"off"
   }
 }

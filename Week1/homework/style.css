@@ -1,1 +1,63 @@
 /* add your styling here */
+* {
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  margin: 40px auto;
+}
+
+#root ul {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#root ul li {
+  flex: 0 0 30.3%;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  background-color: #528ce0;
+}
+
+#root ul li h1,
+#root ul li span,
+#root ul li p {
+  color: #fff;
+}
+
+#root ul li span,
+#root ul li p {
+  font-size: 22px;
+}
+
+#root {
+  width: 100%;
+  margin: 40px auto;
+}
+
+#root ul {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#root ul li {
+  flex: 0 0 30.3%;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  background-color: #528ce0;
+  text-align: center;
+}
+
+#root ul li img {
+  width: 200px !important;
+  height: 230px !important;
+}
+#root ul li h1 {
+  color: #fff;
+}
