@@ -15,7 +15,7 @@
     'the_alchemist'
   ];
 
-  const Books = {
+  const books = {
     moby_dick: {
       title: 'Moby-Dick',
       author: 'Herman Melville',
@@ -110,67 +110,50 @@
     the_alchemist: 'img/the_alchemist.jpg'
   };
 
-  function createAndAppend(tag, parent, options) {
-    if (options === undefined) {
-      options = {};
-    }
+  function createAndAppendElement(tag, parent, elementInnerText) {
     const element = document.createElement(tag);
+    if (elementInnerText) {
+      element.innerText = elementInnerText;
+    }
     parent.appendChild(element);
-    for(){}
-    
     return element;
   }
 
   function generateBookCards(container) {
-    for (let i = 0; i < bookTitles.length + 1; i++) {
-      const bookCard = document.createElement('li');
+    for (let i = 0; i < bookTitles.length; i++) {
+      const bookCard = createAndAppendElement('li', container);
       bookCard.setAttribute('id', bookTitles[i]);
-      container.appendChild(bookCard);
     }
   }
 
   function insertBookCovers() {
     const bookList = Object.keys(BookCovers);
     for (const key of bookList) {
-      const img = document.createElement('img');
+      const li = document.getElementById(key);
+      const img = createAndAppendElement('img', li);
       img.src = BookCovers[key];
       img.alt = key;
-      const li = document.getElementById(key);
-      li.appendChild(img);
     }
   }
 
-  function getActualBookInfo() {
-    const bookList = Object.keys(Books);
+  function insertBookDetails() {
+    const bookList = Object.keys(books);
     for (const key of bookList) {
-      const bookTitle = createAndAppend('h2');
-
-      bookTitle.innerText = Books[key].title;
-      const author = document.createElement('h3');
-      author.innerText = Books[key].author;
-      const bookInfo = document.createElement('p');
-      bookInfo.innerText = Books[key].info;
-      const pages = document.createElement('p');
-      pages.innerText = Books[key].length + ' pages';
       const bookCard = document.getElementById(key);
+      createAndAppendElement('h2', bookCard, books[key].title);
+      createAndAppendElement('h3', bookCard, books[key].author);
+      createAndAppendElement('p', bookCard, books[key].info);
+      const pages = createAndAppendElement('p', bookCard, books[key].length + ' pages');
       pages.className = 'align-right bold';
-      bookCard.appendChild(bookTitle);
-      bookCard.appendChild(author);
-      bookCard.appendChild(bookInfo);
-      bookCard.appendChild(pages);
     }
   }
 
   function main() {
-    const mainHeading = document.createElement('h1');
-    mainHeading.innerHTML = '10 Books That I Read';
-    const booksContainer = document.createElement('ul');
-    document.body.appendChild(mainHeading);
-    document.body.appendChild(booksContainer);
+    createAndAppendElement('h1', document.body, '10 Books That I Read');
+    const booksContainer = createAndAppendElement('ul', document.body);
     generateBookCards(booksContainer);
     insertBookCovers();
-    getActualBookInfo();
+    insertBookDetails();
   }
-
   window.addEventListener('load', main);
 }
