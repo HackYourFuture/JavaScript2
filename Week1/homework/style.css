@@ -14,7 +14,10 @@ h2,
 p {
   margin: 15px 0 10px 0;
 }
-span {
+/* span {
+  font-weight: bold;
+} */
+.bold {
   font-weight: bold;
 }
 

@@ -103,60 +103,45 @@
     last_witness: 'images/last_witness.jpg'
   };
 
+  function addNewTag(tagName, parent, options = {}) {
+    const elem = document.createElement(tagName);
+    parent.appendChild(elem);
+    for (const key of Object.keys(options)) {
+      const value = options[key];
+      if (key === 'text') {
+        elem.textContent = value;
+      } else {
+        elem.setAttribute(key, value);
+      }
+    }
+    return elem;
+  }
+
+  function addLabel(label, value, parent) {
+    const pTag = addNewTag('p', parent);
+    addNewTag('span', pTag, { text: `${label}: `, class: 'bold' });
+    addNewTag('span', pTag, { text: value });
+  }
+
   function createHtml() {
-    const mainHeadings = document.createElement('h1');
-    document.body.appendChild(mainHeadings);
-    const mainHeadingsText = document.createTextNode('The Books That I Read');
-    mainHeadings.appendChild(mainHeadingsText);
-
-    const ulTag2 = document.createElement('ul');
-    document.body.appendChild(ulTag2);
-
-    for (const keys of bookIds) {
-      const book = bookInfo[keys];
-      const liTag2 = document.createElement('li');
-      const attribute = document.createAttribute('id');
-      attribute.value = keys;
-      liTag2.setAttributeNode(attribute);
-      const headings = document.createElement('h2');
-      const headingsText = document.createTextNode(book.title);
-      headings.appendChild(headingsText);
-
-      const aboutLanguage = document.createElement('p');
-      const aboutLanguageSpan = document.createElement('span');
-      const aboutLanguageSpanText = document.createTextNode('Language: ');
-      aboutLanguageSpan.appendChild(aboutLanguageSpanText);
-      aboutLanguage.appendChild(aboutLanguageSpan);
-      const aboutLanguageText = document.createTextNode(book.language);
-      aboutLanguage.appendChild(aboutLanguageText);
-
-      const aboutAuthor = document.createElement('p');
-      const aboutAuthorSpan = document.createElement('span');
-      const aboutAuthorSpanText = document.createTextNode('Author: ');
-      aboutAuthorSpan.appendChild(aboutAuthorSpanText);
-      aboutAuthor.appendChild(aboutAuthorSpan);
-      const aboutAuthorText = document.createTextNode(book.author);
-      aboutAuthor.appendChild(aboutAuthorText);
-
-      liTag2.appendChild(headings);
-      liTag2.appendChild(aboutLanguage);
-      liTag2.appendChild(aboutAuthor);
-      ulTag2.appendChild(liTag2);
+    addNewTag('h1', document.body, { text: 'The Books That I Read' });
+    const ulTag2 = addNewTag('ul', document.body);
+    for (const bookId of bookIds) {
+      const book = bookInfo[bookId];
+      const liTag2 = addNewTag('li', ulTag2, { id: bookId });
+      addNewTag('h2', liTag2, { text: book.title });
+      addLabel('Language', book.language, liTag2);
+      addLabel('Author', book.author, liTag2);
     }
   }
 
   function addImage() {
     const keysOfBookCovers = Object.keys(bookCovers);
-
     for (const keys of keysOfBookCovers) {
       const book = bookCovers[keys];
       const bookAlt = bookInfo[keys].alt;
       const liTags = document.getElementsByTagName('li')[keys];
-
-      const imgTag = document.createElement('img');
-      imgTag.setAttribute('src', book);
-      imgTag.setAttribute('alt', bookAlt);
-      liTags.appendChild(imgTag);
+      addNewTag('img', liTags, { src: book, alt: bookAlt });
     }
   }
 
