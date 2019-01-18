@@ -136,12 +136,11 @@
   }
 
   function addImage() {
-    const keysOfBookCovers = Object.keys(bookCovers);
-    for (const keys of keysOfBookCovers) {
-      const book = bookCovers[keys];
-      const bookAlt = bookInfo[keys].alt;
-      const liTags = document.getElementsByTagName('li')[keys];
-      addNewTag('img', liTags, { src: book, alt: bookAlt });
+    for (const bookId of bookIds) {
+      const bookCover = bookCovers[bookId];
+      const bookAlt = bookInfo[bookId].alt;
+      const liTags = document.getElementsByTagName('li')[bookId];
+      addNewTag('img', liTags, { src: bookCover, alt: bookAlt });
     }
   }
 
