@@ -2,7 +2,7 @@
 
 function doubleOddNumbers(numbers) {
   // step 1.1
-  return numbers.filter(x => x % 2 !== 0).map(x => x * 2);
+  return numbers.filter(number => number % 2 !== 0).map(oddNumber => oddNumber * 2);
 }
 
 const myNumbers = [1, 2, 3, 4];
