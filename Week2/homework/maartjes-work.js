@@ -46,12 +46,10 @@ const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
-  const durationHours = tasks.map(x => x.duration / 60);
-  const filterHours = durationHours.filter(x => x >= 2);
-  for (let i = 0; i < filterHours.length; i++) {
-    filterHours[i] = filterHours[i] * hourlyRate;
-  }
-  const sumEarn = filterHours.reduce((total, amount) => total + amount);
+  const durationHours = tasks.map(task => task.duration / 60);
+  const filterHours = durationHours.filter(hour => hour >= 2);
+  const hoursMultiplied = filterHours.map(hour => hour * hourlyRate);
+  const sumEarn = hoursMultiplied.reduce((totalHour, hourPerTask) => totalHour + hourPerTask);
   const sumEarnRounded = Math.round(sumEarn * 100) / 100;
   return sumEarnRounded;
 }
