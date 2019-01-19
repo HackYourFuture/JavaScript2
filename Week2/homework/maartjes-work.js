@@ -58,9 +58,7 @@ const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
 // add code to convert `earnings` to a string rounded to two decimals (euro cents)
 
-console.log(
-  `Maartje has earned €${earnings.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-);
+console.log(`Maartje has earned €${earnings.toFixed(2)}`);
 
 // Do not change or remove anything below this line
 module.exports = {
