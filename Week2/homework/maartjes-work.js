@@ -54,7 +54,7 @@ function computeEarnings(tasks, hourlyRate) {
 
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
-console.log(`Maartje has earned €${earnings.toPrecision(5)}`);
+console.log(`Maartje has earned €${earnings.toFixed(2)}`);
 
 // Do not change or remove anything below this line
 module.exports = {
