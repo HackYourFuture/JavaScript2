@@ -20,4 +20,4 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// in both examples, the actual value of x changes. Because both of the functions use the arguments which are passed as reference, not as value.
