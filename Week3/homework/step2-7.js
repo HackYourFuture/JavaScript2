@@ -20,4 +20,8 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// Pass by value rule: if you use a variable inside a function and change its value
+// it doesn't affect variable's value which is outside of the function.
+
+// Pass by reference rule: if you use a variable's address or reference inside a function
+// and change them it affects variable's value which is outside of the function.
