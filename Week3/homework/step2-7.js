@@ -21,3 +21,5 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+// in the first example :number passed to function by value so change the argument inside the function.
+// in the second example :objects passed by reference and changing the argument inside the function affect the variable passed from outside the function.
