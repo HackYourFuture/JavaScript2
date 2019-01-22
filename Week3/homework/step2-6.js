@@ -4,13 +4,19 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function printArray2d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  if (Array.isArray(arr)) {
+    arr.forEach(elem => printArray2d(elem));
+  } else {
+    console.log(arr);
+  }
 }
 
 function printArray3d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  if (Array.isArray(arr)) {
+    arr.forEach(elem => printArray3d(elem));
+  } else {
+    console.log(arr);
+  }
 }
 
 printArray2d(arr2d);

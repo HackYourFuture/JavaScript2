@@ -21,3 +21,5 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+// In the first function the value of x does not change because x passed by Value.
+// while in the second function the value of y.x changes because y passed by Reference.
