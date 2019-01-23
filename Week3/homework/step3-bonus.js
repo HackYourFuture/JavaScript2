@@ -3,8 +3,7 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  return arr.filter((x, y, z) => z.indexOf(x) === y);
 }
 
 const uniqueValues = makeUnique(values);
