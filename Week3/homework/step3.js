@@ -2,8 +2,7 @@
 
 function createBase(base) {
   return function addSix(num) {
-    const sum = base + num;
-    return sum;
+    return base + num;
   };
 }
 
