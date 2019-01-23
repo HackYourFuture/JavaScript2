@@ -4,9 +4,9 @@ const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
   // E5:
-  // console.log(arr.filter((value, index, array) => array.indexOf(value) === index));
+  return arr.filter((value, index, array) => array.indexOf(value) === index);
   // E6:
-  console.log([...new Set(arr)]);
+  // console.log([...new Set(arr)]);
 }
 
 const uniqueValues = makeUnique(values);
