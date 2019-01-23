@@ -3,14 +3,23 @@
 const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
+function printArrayNd(arr) {
+  let i = 0;
+  for (; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      printArrayNd(arr[i]);
+    } else {
+      console.log(arr[i]);
+    }
+  }
+}
+
 function printArray2d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  printArrayNd(arr);
 }
 
 function printArray3d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  printArrayNd(arr);
 }
 
 printArray2d(arr2d);

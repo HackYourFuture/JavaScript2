@@ -20,4 +20,7 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+/*  While dealing with primitives(strings, numbers etc.) Javascript always passes by value,
+that we can see in the first example original variable value (const x = 9) did not change.
+On the other hand while dealing with objects (objects, arrays) Javascript passes by reference.
+Therefore changing the object changes the original one. */
