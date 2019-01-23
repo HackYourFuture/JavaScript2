@@ -30,14 +30,15 @@ console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 function repeatStringNumTimesWithDoWhile(str, num) {
   // eslint-disable-next-line
   let result = '';
-  let i = 0;
-  do {
-    result += str;
-    i++;
-  } while (i < num);
+  if (num > 0) {
+    let i = 0;
+    do {
+      result += str;
+      i++;
+    } while (i < num);
+  }
   return result;
 }
-
 console.log('do-while', repeatStringNumTimesWithDoWhile('abc', 3));
 
 // Do not change or remove anything below this line
