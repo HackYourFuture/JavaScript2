@@ -4,21 +4,17 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function printArray2d(arr) {
-  let value = '';
   for (let i = 0; i < arr.length; i++) {
-    value += arr[i];
+    console.log(arr[i].join(''));
   }
-  return console.log(value);
 }
 
 function printArray3d(arr) {
-  let value = '';
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
-      value += arr[i][j];
+      console.log(arr[i][j].join(''));
     }
   }
-  return console.log(value);
 }
 
 printArray2d(arr2d);
