@@ -1,12 +1,12 @@
 'use strict';
 
 function multiplyAll(arr) {
-  // eslint-disable-next-line
   let product = 1;
-
-  // Replace this comment and the next line with your code
-  console.log(arr, product);
-
+  for (let i = 0; i < arr.length; i++) {
+    for (let b = 0; b < arr[b].length; b++) {
+      product = product * arr[i][b];
+    }
+  }
   return product;
 }
 
