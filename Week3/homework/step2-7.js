@@ -20,4 +20,8 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// when we pass a variable in a function and that variable holds a number, javascript will take a copy of mentioned
+// variable and it passes the copy in that function. that means: the value of x in the first example doesn't change
+// because we passes a copy of x....
+// While in the second example we pass a variable that holds an object and here is the difference. WHen we pass an
+// object in a function, javascript takes that object a REFERENCE and modifies it.
