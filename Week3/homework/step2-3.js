@@ -36,12 +36,12 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   let result = '';
 
   let i = 0;
-  do {
-    if (num > 0) {
+  if (num > 0) {
+    do {
       result += str;
       i++;
-    }
-  } while (i < num);
+    } while (i < num);
+  }
 
   return result;
 }
