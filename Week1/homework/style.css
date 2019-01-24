@@ -18,7 +18,7 @@ body {
   flex-flow: row wrap;
 }
 
-.favoriteBooks {
+h1 {
   color: #dcf0f7;
   width: 40%;
   margin: 5rem auto;
