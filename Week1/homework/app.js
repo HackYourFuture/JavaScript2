@@ -135,22 +135,22 @@
     return elem;
   }
 
-  let mainDiv = createAndAppend('div', document.body);
+  const mainDiv = createAndAppend('div', document.body);
 
   createAndAppend('h1', mainDiv, { text: 'My Favourite Books' });
   
-  let ulTag = createAndAppend('ul', mainDiv, { class: 'books' });
+  const ulTag = createAndAppend('ul', mainDiv, { class: 'books' });
 
   booksList.forEach(function (id) {
 
-    let liTag = createAndAppend('li', ulTag, { class: 'book' });
+    const liTag = createAndAppend('li', ulTag, { class: 'book' });
 
-    let section = createAndAppend('div', liTag, { class: 'section' });
+    const section = createAndAppend('div', liTag, { class: 'section' });
 
-    let bookInfo = createAndAppend('p', section);
+    const bookInfo = createAndAppend('p', section);
     bookInfo.innerHTML = information[id].description;
 
-    let img = createAndAppend('img', liTag);
+    const img = createAndAppend('img', liTag);
     img.src = images[id];
 
   });
