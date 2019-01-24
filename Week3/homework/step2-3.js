@@ -33,10 +33,12 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   // eslint-disable-next-line
   let result = '';
 
-  do {
-    result += str;
-    num--;
-  } while (num > 0);
+  if (num > 0) {
+    do {
+      result += str;
+      num--;
+    } while (num > 0);
+  }
 
   return result;
 }

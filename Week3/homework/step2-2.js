@@ -6,7 +6,7 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   while (startIndex <= stopIndex) {
     numbers.push(startIndex++);
   }
-  console.log(numbers);
+
   for (const number of numbers) {
     if (number % 3 === 0) {
       threeCallback(number);
