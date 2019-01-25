@@ -25,17 +25,42 @@ In week one we will discuss the following topics:
    - Live Server
    - Bracket Pair Colorizer
 
-2. Install the ESLint tool globally by issuing the following command from the command line:
+2. Modify the VSCode User Settings to include the settings listed below. If a particular setting is already present in your User Settings, make sure that the setting value listed below is used and change it if necessary.
+
+   To open your user and workspace settings, use the following VS Code menu command:
+
+   - On Windows/Linux - **File** > **Preferences** > **Settings**
+   - On macOS - **Code** > **Preferences** > **Settings**
+
+   Then, click on the `{ }` button in the top-right corner of the settings screen to access the settings in JSON format.
+
+   ```json
+   /// Place your settings in this file to overwrite the default settings
+   {
+     "editor.detectIndentation": false,
+     "editor.formatOnSave": true,
+     "editor.formatOnType": true,
+     "editor.minimap.enabled": false,
+     "editor.renderIndentGuides": true,
+     "editor.tabSize": 2,
+     "files.autoSave": "onFocusChange",
+     "prettier.printWidth": 100,
+     "prettier.singleQuote": true,
+     "prettier.trailingComma": "es5"
+   }
+   ```
+
+3. Install the ESLint CLI tool globally by issuing the following command from the command line:
 
    ```
-   npm install -g eslint
+   npm install -g eslint-cli
    ```
 
-3. Fork this repository (i.e., **JavaScript2**) and clone your fork to your laptop.
+4. Fork this repository (i.e., **JavaScript2**) and clone your fork to your laptop.
 
-4. Open the `JavaScript2` folder from the cloned repository in VSCode.
+5. Open the `JavaScript2` folder from the cloned repository in VSCode.
 
-5. Open a terminal window in VSCode and type the following command:
+6. Open a terminal window in VSCode and type the following command:
 
    ```
    npm install
