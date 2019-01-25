@@ -129,7 +129,7 @@
     adventures_of_huckleberry_finn: './images/adventures_of_huckleberry_finn.jpeg',
     oliver_twist: './images/oliver_twist.jpeg',
     frankenstein: './images/frankenstein.jpeg',
-    return_of_native: './images/return_of_native.jpeg',
+    return_of_native: './images/return_of_native.jpeg'
   };
 
   function createAndAppend(tagName, parent, options = {}) {
