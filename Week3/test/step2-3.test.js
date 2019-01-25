@@ -4,37 +4,68 @@ const {
   repeatStringNumTimesWithDoWhile
 } = require('../homework/step2-3');
 
-describe('1-step3.js', () => {
-  test('for-loop', () => {
-    let result = repeatStringNumTimesWithFor('abc', 3);
+describe('step2-3 with for-loop', () => {
+  test('num = 3', () => {
+    const result = repeatStringNumTimesWithFor('abc', 3);
     expect(result).toBe('abcabcabc');
+  });
 
-    result = repeatStringNumTimesWithFor('abc', 1);
+  test('num = 1', () => {
+    const result = repeatStringNumTimesWithFor('abc', 1);
     expect(result).toBe('abc');
+  });
 
-    result = repeatStringNumTimesWithFor('abc', -2);
+  test('num = -2', () => {
+    const result = repeatStringNumTimesWithFor('abc', -2);
     expect(result).toBe('');
   });
 
-  test('while-loop', () => {
-    let result = repeatStringNumTimesWithWhile('abc', 3);
+  test('num = 0', () => {
+    const result = repeatStringNumTimesWithFor('abc', 0);
+    expect(result).toBe('');
+  });
+});
+
+describe('step2-3 with while-loop', () => {
+  test('num = 3', () => {
+    const result = repeatStringNumTimesWithWhile('abc', 3);
     expect(result).toBe('abcabcabc');
+  });
 
-    result = repeatStringNumTimesWithFor('abc', 1);
+  test('num = 1', () => {
+    const result = repeatStringNumTimesWithWhile('abc', 1);
     expect(result).toBe('abc');
+  });
 
-    result = repeatStringNumTimesWithFor('abc', -2);
+  test('num = 0', () => {
+    const result = repeatStringNumTimesWithWhile('abc', 0);
     expect(result).toBe('');
   });
 
-  test('do-while-loop', () => {
-    let result = repeatStringNumTimesWithDoWhile('abc', 3);
+  test('num = -2', () => {
+    const result = repeatStringNumTimesWithWhile('abc', -2);
+    expect(result).toBe('');
+  });
+});
+
+describe('step2-3 with do-while-loop', () => {
+  test('num = 3', () => {
+    const result = repeatStringNumTimesWithDoWhile('abc', 3);
     expect(result).toBe('abcabcabc');
+  });
 
-    result = repeatStringNumTimesWithFor('abc', 1);
+  test('num = 1', () => {
+    const result = repeatStringNumTimesWithDoWhile('abc', 1);
     expect(result).toBe('abc');
+  });
 
-    result = repeatStringNumTimesWithFor('abc', -2);
+  test('num = 0', () => {
+    const result = repeatStringNumTimesWithDoWhile('abc', 0);
+    expect(result).toBe('');
+  });
+
+  test('num = -2', () => {
+    const result = repeatStringNumTimesWithDoWhile('abc', -2);
     expect(result).toBe('');
   });
 });
