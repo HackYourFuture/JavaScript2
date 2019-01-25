@@ -4,7 +4,7 @@
   "description": "HYF JavaScript2 module",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/homework",
+    "lint": "eslint \"**/homework/**/*.js\"",
     "test": "npm run lint",
     "test-week1": "eslint Week1/homework",
     "test-week2": "eslint Week2/homework && jest Week2",
