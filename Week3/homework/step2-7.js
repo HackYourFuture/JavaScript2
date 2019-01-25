@@ -20,4 +20,5 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// E.g.1 :the number passed to function so that change the argument inside the function only (function's local scope).
+// E.g.2 : changing the argument inside the function affect the property of the object that passed in outside the function so object is deferent.
