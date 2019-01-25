@@ -1,13 +1,11 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  const newNumbers = myNumbers.filter(myNumbers => myNumbers % 2 !==0 );
-  
-  
-   const doublenewNumbers = newNumbers.map(newNumbers => newNumbers * 2)
-   return doublenewNumbers;
-}  
-  
+  const newNumbers = numbers.filter(number => number % 2 !== 0);
+
+  const doubleNewNumbers = newNumbers.map(number => number * 2);
+  return doubleNewNumbers;
+}
 
 const myNumbers = [1, 2, 3, 4];
 console.log(doubleOddNumbers(myNumbers));
