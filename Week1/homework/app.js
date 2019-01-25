@@ -1,8 +1,7 @@
 'use strict';
 
-(function () {
-
-  const booksList = [
+(function() {
+  const bookTitles = [
     'home_and_world',
     'the_rescue',
     'heart_of_darkness',
@@ -14,7 +13,7 @@
     'adventures_of_huckleberry_finn',
     'oliver_twist',
     'frankenstein',
-    'return_of_native',
+    'return_of_native'
   ];
 
   /*
@@ -36,74 +35,86 @@
       author: 'Rabindranath Tagore',
       title: 'The Home and the World',
       alt: 'This is the cover of the book called The Home and the World',
-      description: 'Originally written in Bengali and published in 1916, The Home and the World is the vision of Rabindranath Tagore, Asia\'s first Nobel laureate.'
+      description:
+        'Originally written in Bengali and published in 1916, The Home and the World is the vision of Rabindranath Tagore, Asias first Nobel laureate.'
     },
     the_rescue: {
       author: 'Joseph Conrad',
       title: 'The Rescue',
       alt: 'This is the cover of the book called The Rescue',
-      description: 'This powerfully intense novel provides atmospheric seafaring glimpses of the Malay Archipelago along with a suspenseful plot that builds to an explosive climax.'
+      description:
+        'This powerfully intense novel provides atmospheric seafaring glimpses of the Malay Archipelago along with a suspenseful plot that builds to an explosive climax.'
     },
     heart_of_darkness: {
       author: 'Joseph Conrad',
       title: 'Heart of Darkness',
       alt: 'This is the cover of the book called Heart of Darkness',
-      description: 'Heart of Darkness centers around Marlow, an introspective sailor, and his journey up the Congo River to meet Kurtz, reputed to be an idealistic man of great abilities. '
+      description:
+        'Heart of Darkness centers around Marlow, an introspective sailor, and his journey up the Congo River to meet Kurtz, reputed to be an idealistic man of great abilities. '
     },
     country_of_pointed_fires: {
       author: 'Sarah Orne Jewett',
       title: 'The Country of the Pointed Firs',
       alt: 'This is the cover of the book called The Country of the Pointed Firs',
-      description: 'The Maine-born author recorded what she felt were the rapidly disappearing traditions, manners, and dialect of Maine coast natives at the turn of the twentieth century.'
+      description:
+        'The Maine-born author recorded what she felt were the rapidly disappearing traditions, manners, and dialect of Maine coast natives at the turn of the twentieth century.'
     },
     howards_end: {
       author: 'E. M. Forster',
       title: 'Howards End',
       alt: 'This is the cover of the book called Howards End.',
-      description: 'The self-interested disregard of a dying woman\'s bequest, an impulsive girl\'s attempt to help an impoverished clerk, and the marriage between an idealist and a materialist'
+      description:
+        'The self-interested disregard of a dying womans bequest, an impulsive girls attempt to help an impoverished clerk, and the marriage between an idealist and a materialist'
     },
     robinson_crusoe: {
       author: 'Daniel Defoe',
       title: 'Robinson Crusoe',
       alt: 'This is the cover of the book called Robinson Crusoe',
-      description: 'Robinson Crusoe tells the story of the sole survivor of a shipwreck, stranded on a Caribbean island, who prevails against all odds. '
+      description:
+        'Robinson Crusoe tells the story of the sole survivor of a shipwreck, stranded on a Caribbean island, who prevails against all odds. '
     },
     the_odyssey: {
       author: 'Homer',
       title: 'The Odyssey',
       alt: 'This is the cover of the book of Verlag Der called The Odyssey',
-      description: 'The Odyssey narrates the path of a fascinatingly complex hero through a world of wonders and danger-filled adventure.'
+      description:
+        'The Odyssey narrates the path of a fascinatingly complex hero through a world of wonders and danger-filled adventure.'
     },
     death_in_venice: {
       author: 'Thomas Mann',
       title: 'Death in Venice',
       alt: 'This is the cover of the book called Death in Venice',
-      description: 'One of the most famous literary works of the 20th century, the novella "Death in Venice" embodies themes that preoccupied Thomas Mann (1875–1955) in much of his work.'
+      description:
+        'One of the most famous literary works of the 20th century, the novella "Death in Venice" embodies themes that preoccupied Thomas Mann (1875–1955) in much of his work.'
     },
     adventures_of_huckleberry_finn: {
       author: 'Mark Twain',
       title: 'Adventures of Huckleberry Finn',
       alt: 'This is the cover of the book called Adventures of Huckleberry Finn',
-      description: 'The novel\'s preeminence derives from its wonderfully imaginative re-creation of boyhood adventures along the Mississippi River.'
+      description:
+        'The novels preeminence derives from its wonderfully imaginative re-creation of boyhood adventures along the Mississippi River.'
     },
     oliver_twist: {
       author: 'Charles Dickens',
       title: 'Oliver Twist',
       alt: 'This is the cover of the book called Oliver Twist',
-      description: 'A profound social critic, Dickens introduced genteel readers to the problems of the poor in a way that had rarely been attempted before.'
+      description:
+        'A profound social critic, Dickens introduced genteel readers to the problems of the poor in a way that had rarely been attempted before.'
     },
     frankenstein: {
       author: 'Mary Shelley',
       title: 'Frankenstein',
       alt: 'This is the cover of the book called Frankenstein',
-      description: 'The story of Victor Frankenstein\'s terrible creation and the havoc it caused has enthralled generations of readers and inspired countless writers of horror and suspense. '
+      description:
+        'The story of Victor Frankensteins terrible creation and the havoc it caused has enthralled generations of readers and inspired countless writers of horror and suspense. '
     },
     return_of_native: {
       author: 'Thomas Hardy',
       title: 'The Return of the Native',
       alt: 'This is the cover of the book called The Return of the Native',
-      description: 'It first appeared in the magazine Belgravia, a publication known for its sensationalism, and was presented in twelve monthly installments from January to December 1878.'
-    },
+      description:
+        'It first appeared in the magazine Belgravia, a publication known for its sensationalism, and was presented in twelve monthly installments from January to December 1878.'
+    }
   };
 
   const images = {
@@ -138,21 +149,15 @@
   const mainDiv = createAndAppend('div', document.body);
 
   createAndAppend('h1', mainDiv, { text: 'My Favourite Books' });
-  
+
   const ulTag = createAndAppend('ul', mainDiv, { class: 'books' });
 
-  booksList.forEach(function (id) {
-
+  bookTitles.forEach(function(id) {
     const liTag = createAndAppend('li', ulTag, { class: 'book' });
-
     const section = createAndAppend('div', liTag, { class: 'section' });
-
     const bookInfo = createAndAppend('p', section);
     bookInfo.innerHTML = information[id].description;
-
     const img = createAndAppend('img', liTag);
     img.src = images[id];
-
   });
-
 })();
