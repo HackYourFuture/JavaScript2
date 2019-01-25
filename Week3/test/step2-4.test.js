@@ -1,8 +1,19 @@
 const hound = require('../homework/step2-4');
 
-test('4-step3', () => {
-  expect(typeof hound).toBe('object');
-  expect(typeof hound.name).toBe('string');
-  expect(typeof hound.color).toBe('string');
-  expect(typeof hound.numLegs).toBe('number');
+describe('step2-4', () => {
+  test('hound to be an object', () => {
+    expect(typeof hound).toBe('object');
+  });
+
+  test('hound.name to be a string', () => {
+    expect(typeof hound.name).toBe('string');
+  });
+
+  test('hound.color to be a string', () => {
+    expect(typeof hound.color).toBe('string');
+  });
+
+  test('hound.numLegs to be a number', () => {
+    expect(typeof hound.numLegs).toBe('number');
+  });
 });
