@@ -6,7 +6,6 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": ["error"],
     "strict": "off",
     "func-names": "off",
     "import/no-dynamic-require": "off",
@@ -19,6 +18,7 @@
     "prefer-arrow-callback": "off",
     "prefer-destructuring": "off",
     "prefer-template": "off",
-    "trailing-comma": "off"
+    "trailing-comma": "off",
+    "linebreak-style": 0
   }
 }
