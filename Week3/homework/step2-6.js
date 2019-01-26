@@ -27,5 +27,5 @@ printArray3d(arr3d);
 // Do not change or remove anything below this line
 module.exports = {
   printArray2d,
-  printArray3d,
+  printArray3d
 };
