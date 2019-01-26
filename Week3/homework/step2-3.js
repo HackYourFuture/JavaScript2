@@ -5,8 +5,15 @@ function repeatStringNumTimesWithFor(str, num) {
   // eslint-disable-next-line
   let result = '';
 
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  if (num > 0) {
+    // eslint-disable-next-line for-direction
+    for (let i = 0; i < num; i++) {
+      result += str;
+    }
+  }
+
+  // // Replace this comment and the next line with your code
+  // console.log(str, num, result);
 
   return result;
 }
@@ -18,8 +25,17 @@ function repeatStringNumTimesWithWhile(str, num) {
   // eslint-disable-next-line
   let result = '';
 
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  if (num > 0) {
+    let i = 0;
+    // eslint-disable-next-line for-direction
+    while (i < num) {
+      result += str;
+      i++;
+    }
+  }
+
+  // // Replace this comment and the next line with your code
+  // console.log(str, num, result);
 
   return result;
 }
@@ -31,8 +47,16 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   // eslint-disable-next-line
   let result = '';
 
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  if (num > 0) {
+    let i = 0;
+    do {
+      result += str;
+      i++;
+    } while (i < num);
+  }
+
+  // // Replace this comment and the next line with your code
+  // console.log(str, num, result);
 
   return result;
 }

@@ -21,3 +21,6 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+// in the first fucntion f1 it pass by reference but inside when we replace it, it create a new variable in the new scope of function
+// in the second function f2 we did pass by reference and we reassign the property x for y
+//

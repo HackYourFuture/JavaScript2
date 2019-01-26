@@ -5,16 +5,24 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
   // Replace this comment and the next line with your code
   console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
+  for (let i = startIndex; i <= stopIndex; i++) {
+    numbers.push(i);
+  }
+  console.log(numbers);
+  numbers.forEach(function(number) {
+    if (number % 3 === 0) threeCallback(number);
+    if (number % 5 === 0) fiveCallback(number);
+  });
 }
 
 function sayThree(number) {
   // Replace this comment and the next line with your code
-  console.log(number);
+  console.log('Say Three Function ' + number);
 }
 
 function sayFive(number) {
   // Replace this comment and the next line with your code
-  console.log(number);
+  console.log('Say Five Function ' + number);
 }
 
 threeFive(10, 15, sayThree, sayFive);

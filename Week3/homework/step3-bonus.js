@@ -3,8 +3,11 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const uniqueArray = [];
+  arr.forEach(function(element) {
+    if (!uniqueArray.includes(element)) uniqueArray.push(element);
+  });
+  return uniqueArray;
 }
 
 const uniqueValues = makeUnique(values);
