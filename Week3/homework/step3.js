@@ -1,15 +1,13 @@
 'use strict';
 
 function createBase(base) {
-  return number => number + base;
+	return (number) => number + base;
 }
 
-function makeUnique(arr) {
-  return arr.filter((item, index, array) => array.indexOf(item) === index);
-}
+const addSix = createBase(6);
 
-const uniqueValues = makeUnique(values);
-console.log(uniqueValues);
+console.log(addSix(10)); // returns 16
+console.log(addSix(21)); // returns 27
 
 // Do not change or remove anything below this line
-module.exports = makeUnique;
+module.exports = createBase;
