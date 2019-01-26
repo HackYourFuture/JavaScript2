@@ -1,7 +1,7 @@
 const {
   repeatStringNumTimesWithFor,
   repeatStringNumTimesWithWhile,
-  repeatStringNumTimesWithDoWhile
+  repeatStringNumTimesWithDoWhile,
 } = require('../homework/step2-3');
 
 describe('step2-3 with for-loop', () => {

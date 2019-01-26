@@ -43,5 +43,5 @@ console.log('do-while', repeatStringNumTimesWithDoWhile('abc', 3));
 module.exports = {
   repeatStringNumTimesWithFor,
   repeatStringNumTimesWithWhile,
-  repeatStringNumTimesWithDoWhile
+  repeatStringNumTimesWithDoWhile,
 };
