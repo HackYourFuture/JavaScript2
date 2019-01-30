@@ -29,9 +29,6 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     }
   });
 
-  //let divby3 = numbers.map(number => sayThree(number)).filter(number => number !== 0);
-  //let divby5 = numbers.map(number => sayFive(number)).filter(number => number !== 0);
-
   console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
 }
 
