@@ -9,7 +9,8 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   for (let i = startIndex; i <= stopIndex; i++) {
     if (i % 3 === 0) {
       threeCallback(i);
-    } else if (i % 5 === 0) {
+    }
+    if (i % 5 === 0) {
       fiveCallback(i);
     }
   }
