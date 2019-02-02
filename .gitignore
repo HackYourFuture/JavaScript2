@@ -59,3 +59,7 @@ typings/
 
 .netlify
 dist/
+live
+ exercise
+ live2
+ 

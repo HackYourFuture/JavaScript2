@@ -1,1 +1,26 @@
-/* add your styling here */
+body {
+  background-color: #8fbc8f;
+  width: auto;
+  padding: 10%;
+  display: flex;
+}
+
+img {
+  width: 45%;
+  border-radius: 10%;
+}
+
+ul {
+  text-decoration-style: none;
+}
+
+li {
+  list-style: none;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+p {
+  font-style: italic;
+  color: grey;
+}
