@@ -1,1 +1,23 @@
 /* add your styling here */
+
+h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(8, 7, 7);
+    padding: 1px;
+    margin: 1px;
+    padding-top: 30px;
+}
+
+ul {
+    padding: 0;
+    margin: 10px;
+}
+
+li {
+    font-family: sans-serif;
+    color: rgb(68, 0, 255);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}

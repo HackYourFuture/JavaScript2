@@ -16,6 +16,8 @@
         'the_longest_ride',
         'ready_player_one'
     ];
+    // Replace with your own code
+    //console.log(bookTitles);
 
     let ourBookTitles = {
         "the_age_of_the_five": {
@@ -71,31 +73,73 @@
     };
 
 
-    // Replace with your own code
-    //console.log(bookTitles);
 
-    function makeUL(array) {
-        // Create the list element:
-        let list = document.createElement('ul');
+    //const types = Object.keys(ourBookTitles);
+    //console.log(types);
+    // types will be equal to 
+    // Array ["the_age_of_the_five", "the-magicians_guild", "game_of_thrones", "shibumi", "pedro_paramo", "norse_mythology", "cosmos", "shantaram", "the_longest_ride", "ready_player_one"]
 
-        for (let i = 0; i < array.length; i++) {
-            let book = array[i];
 
-            // Create the list item:
-            let item = document.createElement('li');
 
-            item.appendChild(document.createTextNode(book));
+    // we get the same result with:
+    //console.log(Object.getOwnPropertyNames(ourBookTitles));
+    // expected output: Array ["the_age_of_the_five", "the-magicians_guild", "game_of_thrones", "shibumi", "pedro_paramo", "norse_mythology", "cosmos", "shantaram", "the_longest_ride", "ready_player_one"]
 
-            // Add it to the list:
-            list.appendChild(item);
-        }
 
-        // Finally, return the constructed list:
-        return list;
+
+
+    let str = '<ul>';
+    Object.keys(ourBookTitles).forEach(function(key) {
+        let title = "Title: " + ourBookTitles[key].title;
+        let language = "Language: " + ourBookTitles[key].language;
+        let author = "Author: " + ourBookTitles[key].author;
+        str += '<h3>' + title + '</h3>' + '<li>' + language + '</li>' + '<li>' + author + '</li>';
+    });
+
+    str += '</ul>';
+    document.getElementById("booksContainer").innerHTML = str;
+
+
+    let coverBook = {
+        "the_age_of_the_five": "./images/ageoffive.jpg",
+        "the-magicians_guild": "./images/magiciansguild.jpeg",
+        "game_of_thrones": "./images/gameofthrones.jpeg",
+        "shibumi": "./images/shibumi.jpg",
+        "pedro_paramo": "./images/pedroparamo.jpg",
+        "norse_mythology": "./images/norsemythology.jpeg",
+        "cosmos": "./images/cosmos.jpeg",
+        "shantaram": "./images/shantaram.jpg",
+        "the_longest_ride": "./images/thelongestride.jpg",
+        "ready_player_one": "./images/readyplayerone.jpeg",
     }
 
-    // Add the contents of options[0] to #bookContainer in HTML file:
-    document.getElementById('bookContainer').appendChild(makeUL(bookTitles));
+
+
+
+
+
+    /* function makeUL(array) {
+         // Create the list element:
+         let list = document.createElement('ul');
+
+         for (let i = 0; i < array.length; i++) {
+             let book = array[i];
+
+             // Create the list item:
+             let item = document.createElement('li');
+
+             item.appendChild(document.createTextNode(book));
+
+             // Add it to the list:
+             list.appendChild(item);
+         }
+
+         // Finally, return the constructed list:
+         return list;
+     }
+
+     // Add the contents of options[0] to #bookContainer in HTML file:
+     document.getElementById('bookContainer').appendChild(makeUL(bookTitles));*/
 
 
     // This is a more elegant way but less intuitive:
