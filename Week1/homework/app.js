@@ -10,14 +10,66 @@
         'game_of_thrones',
         'shibumi',
         'pedro_paramo',
-        'nordic_myths',
+        'norse_mythology',
         'cosmos',
         'shantaram',
         'the_longest_ride',
         'ready_player_one'
     ];
 
-    let books = { title: 'John', language: 24, author: '' };
+    let ourBookTitles = {
+        "the_age_of_the_five": {
+            "title": "The age of the five",
+            "language": "English",
+            "author": "Trudi Canavan"
+        },
+        "the-magicians_guild": {
+            "title": "The magicians guild",
+            "language": "English",
+            "author": "Trudi Canavan"
+        },
+        "game_of_thrones": {
+            "title": "Game of thrones",
+            "language": "English",
+            "author": "George R. R. Martin"
+        },
+        "shibumi": {
+            "title": "Shibumi",
+            "language": "English",
+            "author": "Trevanian"
+        },
+        "pedro_paramo": {
+            "title": "Pedro Paramo",
+            "language": "Spanish",
+            "author": "Juan Rulfo"
+        },
+        "norse_mythology": {
+            "title": "Norse mythology",
+            "language": "English",
+            "author": "Neil Gaiman"
+        },
+        "cosmos": {
+            "title": "Cosmos",
+            "language": "English",
+            "author": "Carl Sagan"
+        },
+        "shantaram": {
+            "title": "Shantaram",
+            "language": "English",
+            "author": "Gregory David Roberts"
+        },
+        "the_longest_ride": {
+            "title": "The longest ride",
+            "language": "English",
+            "author": "Nicholas Sparks"
+        },
+        "ready_player_one": {
+            "title": "Ready player one",
+            "language": "English",
+            "author": "Ernest Cline"
+        },
+    };
+
 
     // Replace with your own code
     //console.log(bookTitles);
