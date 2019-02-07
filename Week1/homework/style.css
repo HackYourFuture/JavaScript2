@@ -1,22 +1,33 @@
 /* add your styling here */
-img {
-    width: 100px;
-    height: auto;
+.bookCovers {
+  border: 2px solid black;
+  width: 4em;
+  height: auto;
+  margin: 0;
+  float: right;
 }
 h1 {
-/*    text-align: center; */
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(153, 153, 238);
+  padding: 1em;
+}
+#root {
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 2em;
+  background-color: rgb(153, 153, 238);
 }
 ul {
-    padding-left: 0.5em;
-    list-style-type: none;
+  padding-left: 0.5em;
+  list-style-type: none;
 }
 
 body {
-    width: 100%;
-    max-width: 900px;
-    margin: 2em auto;
-}
-
-#bookTitles {
-    background-color: blue;
+  width: 100%;
+  max-width: 900px;
+  margin: 2em auto;
 }
