@@ -46,7 +46,7 @@ In week one we will discuss the following topics:
      "files.autoSave": "onFocusChange",
      "prettier.printWidth": 100,
      "prettier.singleQuote": true,
-     "prettier.trailingComma": "es5"
+     "prettier.trailingComma": "all"
    }
    ```
 
