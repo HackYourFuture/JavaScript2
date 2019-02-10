@@ -5,8 +5,8 @@ const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function printArray2d(arr) {
   for (let i = 0; i < arr.length; i++) {
-    for (let b = 0; b < arr[i].length; b++) {
-      console.log(arr[i][b]);
+    for (let j = 0; j < arr[i].length; j++) {
+      console.log(arr[i][j]);
     }
   }
 }

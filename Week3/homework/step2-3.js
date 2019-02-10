@@ -29,8 +29,8 @@ console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 function repeatStringNumTimesWithDoWhile(str, num) {
   let result = '';
   do {
-    result += str;
     num--;
+    result += str;
   } while (num > 0);
 
   return result;
