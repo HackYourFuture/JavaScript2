@@ -1,17 +1,40 @@
 /* add your styling here */
 
+body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-image: url('images/book.jpg');
+}
+
+.container {
+    border-radius: 10px;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: rgb(8, 7, 7);
+    padding: 1px;
+    margin: 1px;
+    padding-top: 30px;
+    text-align: center;
+}
+
 h3 {
     font-family: sans-serif;
     font-size: 18px;
     color: rgb(8, 7, 7);
     padding: 1px;
     margin: 1px;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
 ul {
     padding: 0;
-    margin: 10px;
+    margin: 40px;
 }
 
 li {
@@ -20,4 +43,10 @@ li {
     padding: 5px;
     margin: 10px;
     border-radius: 5px;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    text-align: center;
 }
