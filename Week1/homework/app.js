@@ -115,7 +115,7 @@
     document.getElementById("booksContainer").innerHTML = str;
 
 
-
+    // this part adds the cover to the books by comparing keys and adding the image to the tag id
     for (let key2 in ourBookTitles) {
         for (let key in coverBook) {
             // console.log(key2 + key);
