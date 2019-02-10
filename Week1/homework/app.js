@@ -95,7 +95,7 @@
     Macbeth: './images/Macbeth.jpeg',
     Julius_Caesar: './images/Julius_Caesar.jpeg',
     Silas_Marner: './images/Silas_Marner.jpeg',
-    The_Gods_Are_Not_To_Blame: './images/The_Gods_Are _Not _To _Blame.jpeg',
+    The_Gods_Are_Not_To_Blame: './images/The_Gods_Are_Not_To_Blame.jpeg',
     Things_Fall_Apart: './images/Things_Fall_Apart.jpeg',
     Database_Processing: './images/Database_Processing.jpg',
     JavaScript_For_Web_Developers: './images/JavaScript_For_Web_Developers.jpeg',
@@ -110,6 +110,7 @@
       const img = document.createElement('img');
       li.appendChild(img);
       img.setAttribute('src', `${bookCovers[key]}`);
+      img.setAttribute('alt', `${bookCovers[key]}`);
     }
   }
 
