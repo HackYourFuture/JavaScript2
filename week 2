@@ -1,0 +1,7 @@
+Step 1:
+
+const numbers = [1, 2, 3, 4];
+const oddnumbers = numbers.filter(item => Math.abs(item) % 2 === 1)
+const doubleOddNumbers = oddnumbers.map(item => item * 2)
+
+console.log(doubleOddNumbers)
