@@ -1,7 +1,7 @@
 > Please help us improve and share your feedback! If you find better tutorials
-or links, please share them by [opening a pull request](https://github.com/HackYourFuture/JavaScript2/pulls).
+or links, please share them by [opening a pull request](https://github.com/FooCoding/JavaScript2/pulls).
 
-# HackYourFuture - JavaScript 2
+# JavaScript 2
 
 Here you can find course content and homework for the JavaScript2 module
 
@@ -18,7 +18,7 @@ Why on paper, you might ask? Fundamental understanding should become intuitive. 
 
 Also important to note: this test is done for 2 reasons only.
 
-(1) **HackYourFuture wants to know** what skill level you are at. 
+(1) **We want to know** what skill level you are at. 
 
 (2) The test will **give you an indication** of what skill level you are at.
 
@@ -26,6 +26,7 @@ Also important to note: this test is done for 2 reasons only.
 ### Overall
 A good understanding of all the above mentioned topics. Want to check your Knowledge? Go through the [JavaScript Fundamentals README](../../../fundamentals/blob/master/fundamentals/README.md) and research/ ask for help (Slack!) with the concepts that are not entirely clear.
 
-*The HackYourFuture curriculum is subject to CC BY copyright. This means you can freely use our materials, but just make sure to give us credit for it :)*
+---
+Credit goes to [HackYourFuture](https://github.com/HackYourFuture) which this is based upon.
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
