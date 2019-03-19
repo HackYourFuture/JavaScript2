@@ -109,7 +109,6 @@
       const h2 = document.createElement('h2');
       const p = document.createElement('p');
       const img = document.createElement('img');
-      const alt = document.createElement('alt');
 
       li.textContent = listOfBooks;
       h2.textContent = listOfAuthors;
