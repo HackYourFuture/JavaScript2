@@ -1,0 +1,74 @@
+/* add your styling here */
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  margin:50px;
+  background-image:url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-attachment: fixed;
+}
+
+
+img {
+  max-width: 100%;
+  position:block;
+  width:250px;
+  height: 80%;
+  box-shadow: -2px -2px 6px white;
+}
+
+ul {
+  display:flex;
+  flex-wrap: wrap;
+  color:black;
+}
+
+li {
+  margin: 40px 10px;
+  width:calc(25% - 20px);
+  border-radius: 5%;
+
+}
+
+h2, p {
+  background-color: rgb(236, 240, 248);
+  margin:auto;
+  border-radius: 3%; 
+  opacity: 0.9;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: cursive;
+  
+}
+
+
+@media (max-width:1200px) and (min-width:800px) {
+  li {
+    width:calc(100% / 3 - 20px);
+  }
+}
+
+@media (max-width:800px) and (min-width:400px) {
+  li {
+    width:calc(100% / 2 - 20px);
+  }
+  body {
+    margin:50px 10px;
+  }
+}
+
+@media (max-width:400px) {
+  li {
+    width:calc(100% - 20px);
+  }
+  body {
+    margin:50px 10px;
+  }
+}
