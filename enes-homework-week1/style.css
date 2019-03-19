@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 50%;
+  text-align: center;
+  height: 200px;
+}
+
+#bookcovers li {
+  width: calc(100% / 4);
+}
