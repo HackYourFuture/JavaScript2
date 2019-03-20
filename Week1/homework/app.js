@@ -14,10 +14,10 @@ const bookTitles = [
 ];
 
 function generateList() {
-  let createUl = document.createElement('ul');
+  const createUl = document.createElement('ul');
   document.body.appendChild(createUl);
   for (let i = 0; i < bookTitles.length; i++) {
-    let createLi = document.createElement('li');
+    const createLi = document.createElement('li');
     createUl.appendChild(createLi);
     createLi.setAttribute('id', `${bookTitles[i]}`);
   }
@@ -91,24 +91,24 @@ const bookCovers = {
 
 function generateCover() {
   for (const cover of Object.keys(bookCovers)) {
-    let createImg = document.createElement('img');
-    let list = document.getElementById(cover);
+    const createImg = document.createElement('img');
+    const list = document.getElementById(cover);
     list.appendChild(createImg);
     createImg.setAttribute('src', `${bookCovers[cover]}`);
     createImg.setAttribute('alt', `${cover}`);
   }
 
   for (let i = 0; i < bookTitles.length; i++) {
-    let createHeading = document.createElement('h2');
+    const createHeading = document.createElement('h2');
     document.getElementById(`${bookTitles[i]}`).appendChild(createHeading);
-    let arrBookInfo = Object.keys(bookInfo);
+    const arrBookInfo = Object.keys(bookInfo);
     createHeading.innerText = bookInfo[arrBookInfo[i]].title;
     // Adds p for language
-    let createp1 = document.createElement('p');
+    const createp1 = document.createElement('p');
     document.getElementById(`${bookTitles[i]}`).appendChild(createp1);
     createp1.innerText = bookInfo[arrBookInfo[i]].language;
     // Adds p for author
-    let createp2 = document.createElement('p');
+    const createp2 = document.createElement('p');
     document.getElementById(`${bookTitles[i]}`).appendChild(createp2);
     createp2.innerText = bookInfo[arrBookInfo[i]].author;
   }
