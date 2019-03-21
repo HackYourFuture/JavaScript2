@@ -1,11 +1,170 @@
 'use strict';
 
 {
+  // 1.1 declaring an array that contains 10 strings
   const bookTitles = [
-    // Replace with your own book titles
-    'harry_potter_chamber_secrets',
+    'maze_runner_death_cure',
+    'fifty_shades_freed',
+    'annihilation',
+    'war_with_grandpa',
+    'ready_player_one',
+    'darkest_minds',
+    'boy_erased',
+    'first_man',
+    'little_women',
+    'ophelia',
   ];
 
-  // Replace with your own code
-  console.log(bookTitles);
+  // 1.2 creating index.html to load app.js
+
+  // 1.3 Make a function (or functions) that generate a ul with li elements for each book ID in the array using a for loop.
+  // Make sure that the function names you choose are an accurate reflection of what they do.
+  function ListOfBookId(ul) {
+    for (let i = 0; i < bookTitles.length; i++) {
+      const li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerText = bookTitles[i];
+    }
+  }
+
+  // 1.4 Make an object (not an array!) containing information for each book.
+  // Each property of this object should be another(i.e., nested) object with the book ID you thought up in step 1.1
+  // as a key, and at least the following properties: title, language and author.
+  const bookInformation = {
+    maze_runner_death_cure: {
+      title: 'Maze Runner: The Death Cure',
+      language: 'English',
+      author: 'James Dashner',
+      published: 2018,
+    },
+    fifty_shades_freed: {
+      title: 'Fifty Shades Freed',
+      language: 'English',
+      author: 'E L James',
+      published: 2018,
+    },
+    annihilation: {
+      title: 'Annihilation',
+      language: 'English',
+      author: 'Jeff VanderMeer',
+      published: 2018,
+    },
+    war_with_grandpa: {
+      title: 'The War with Grandpa',
+      language: 'English',
+      author: 'Robert Kimmel Smith',
+      published: 2018,
+    },
+    ready_player_one: {
+      title: 'Ready Player One',
+      language: 'English',
+      author: 'Ernest Cline',
+      published: 2018,
+    },
+    darkest_minds: {
+      title: 'The Darkest Minds',
+      language: 'English',
+      author: 'Alexandra Bracken',
+      published: 2018,
+    },
+    boy_erased: {
+      title: 'Boy Erased',
+      language: 'English',
+      author: 'Garrard Conley',
+      published: 2018,
+    },
+    first_man: {
+      title: 'First Man',
+      language: 'English',
+      author: 'James R. Hansen',
+      published: 2016,
+    },
+    little_women: {
+      title: 'Little Women',
+      language: 'English',
+      author: 'Louisa May Alcott',
+      published: 2018,
+    },
+    ophelia: {
+      title: 'Ophelia',
+      language: 'English',
+      author: 'Lisa Klein',
+      published: 2018,
+    },
+  };
+
+  // 1.6 Beautify your html page with css (use the style.css file for that), add sources and alts to each of the images.
+
+  // 1.7 Find and download book covers for each book and construct a new object which has as keys the book IDs again,
+  //  and as value the path to the image source(e.g. { harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }).
+  const bookImages = {
+    maze_runner_death_cure: 'images/maze_runner_death_cure.jpg',
+    fifty_shades_freed: 'images/fifty_shades_freed.jpg',
+    annihilation: 'images/annihilation.jpg',
+    war_with_grandpa: 'images/war_with_grandpa.jpg',
+    ready_player_one: 'images/ready_player_one.jpg',
+    darkest_minds: 'images/darkest_minds.jpg',
+    boy_erased: 'images/boy_erased.jpg',
+    first_man: 'images/first_man.jpg',
+    little_women: 'images/little_women.jpg',
+    ophelia: 'images/ophelia.jpg',
+  };
+
+  // 1.8 Loop over these entries(hint: Object.keys(objectName) gives you an array containing the keys).
+  // Then write a function which places an image at the corresponding li element.
+  // Remember that objects are not ordered, so you cannot guarantee that the first key is the first li element.
+  // (Hint: you could give each li item an id tag by modifying the function you made before.)
+
+  // 1.5 Now change the function from step 1.3 that you used to display the book ID's
+  // in a list to take the actual information about the book from the object and display that.
+  // Make sure you choose the correct HTML elements for each piece of info, for instance, a heading for the title.
+  function bookDetails(booksList) {
+    for (let i = 0; i < bookTitles.length; i++) {
+      const listItem = document.createElement('li');
+      const bookInfo = Object.keys(bookInformation);
+      // 1.8 giving each li item an id tag
+      listItem.setAttribute('id', bookTitles[i]);
+      listItem.className = 'list-item';
+      booksList.appendChild(listItem);
+      const titles = document.createElement('h3');
+      titles.innerText = bookInformation[bookInfo[i]].title;
+      listItem.appendChild(titles);
+      const authors = document.createElement('p');
+      authors.innerText = bookInformation[bookInfo[i]].author;
+      listItem.appendChild(authors);
+      const languages = document.createElement('p');
+      languages.innerText = bookInformation[bookInfo[i]].language;
+      listItem.appendChild(languages);
+      const publishing = document.createElement('p');
+      publishing.innerText = bookInformation[bookInfo[i]].published;
+      listItem.appendChild(publishing);
+      const images = document.createElement('img');
+      images.setAttribute('src', bookImages[bookInfo[i]]);
+      images.setAttribute('alt', bookTitles[i]);
+      listItem.appendChild(images);
+    }
+  }
+
+  function main() {
+    const root = document.getElementById('root');
+    const h1 = document.createElement('h1');
+    h1.innerText = 'JS2 Homework Week 1';
+    root.appendChild(h1);
+    h1.className = 'header';
+    const h2 = document.createElement('h2');
+    h2.innerText = 'List of Books';
+    root.appendChild(h2);
+    h2.className = 'title';
+    const booksList = document.createElement('ul');
+    root.appendChild(booksList);
+    booksList.className = 'books-list';
+    // ListOfBookId(ul);
+    bookDetails(booksList);
+    const p = document.createElement('p');
+    p.innerText = '© Wadeea Kiwan 2019';
+    p.className = 'footer';
+    root.appendChild(p);
+  }
+
+  window.addEventListener('load', main);
 }
