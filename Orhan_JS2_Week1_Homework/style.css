@@ -1,0 +1,30 @@
+
+.book_list ul {
+  padding: 0px;
+}
+.book_list li {
+  float: left;
+  position: relative;
+  list-style: none;
+  color: blue;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 400px;;
+  min-width: 300px;
+  height: 650px;
+  background-color: ghostwhite;
+}
+
+.book_list h1, h2, h3{
+  text-align: center;  
+}
+
+.book_list img{
+  min-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 400px;
+}
