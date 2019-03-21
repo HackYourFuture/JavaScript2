@@ -1,1 +1,100 @@
-/* add your styling here */
+*{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+body{
+  background-color: #272727;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+ul{
+  list-style: none;
+  width:25%;
+  margin: 0 auto;
+  transition:all 1s ease-in-out;
+  /* display: flex;
+    align-content: stretch;
+    justify-content: center;
+    flex-flow: row wrap; */
+}
+li{
+  position: relative;
+  margin-bottom: 5%;
+  border-radius: 5px;
+}
+img{
+  height:100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left:0;
+  z-index: 30;
+  text-align: left;
+}
+img:hover{
+  cursor: pointer;
+}
+h3{
+  padding: 20px;
+  border:1px solid white;
+  font-size: 27px;
+  width: 63%; 
+  margin: 2px auto;
+  position: absolute;
+  top:-2px;
+  left:41px;
+  background-color: rgba(red, green, blue, 0.4);
+  z-index: 25;
+  border-radius: 0px 2px 37px 0px;
+  transition:all .3s ease-in-out;
+}
+p{
+  padding: 20px;
+  border:1px solid white;
+  width: 50%; 
+  margin: 2px auto;
+  font-size: 20px;
+  z-index: 26;
+  border-radius: 0px 2px 37px 0px;
+    
+}
+p,h3{
+  color: white
+}
+p:nth-child(3){
+  position: absolute;
+  top:83px;
+  left:41px;
+  transition:all .6s ease-in-out;
+}
+p:nth-child(4){
+  position: absolute;
+  top:150px;
+  left:41px;
+  transition:all 1s ease-in-out;
+}
+p:nth-child(5){
+  position: absolute;
+  top:217px;
+  left:41px;
+  transition:all 1.5s ease-in-out;
+}
+p:nth-child(6){
+  position: absolute;
+  top:283px;
+  left:41px;
+  transition:all 1.8s ease-in-out;
+}
+.show{
+  left: 23vw  !important ;
+  transition:all .8s ease-in-out;
+}
+h3:hover,
+p:hover{
+ background-color: red; 
+ cursor: pointer;
+ transition:all .1s ease-in-out;
+}
