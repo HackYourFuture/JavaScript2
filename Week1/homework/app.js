@@ -15,19 +15,18 @@
     'ophelia',
   ];
 
-  // 1.2 creating index.html to load app.js
-  // It's created and connected with the file app.js
+  // 1.2 HTML is created and connected with the file app.js
 
-  // 1.3 Make a function (or functions) that generate a ul with li elements for each book ID in the array using a for loop.
-  // Make sure that the function names you choose are an accurate reflection of what they do.
-  // This function works well, but I didn't use it as we had to change it to a more detailed function.
-  function ListOfBookId(ul) {
-    for (let i = 0; i < bookTitles.length; i++) {
-      const li = document.createElement('li');
-      ul.appendChild(li);
-      li.innerText = bookTitles[i];
-    }
-  }
+  // 1.3 This function works well, but it's commented because we had to make a more detailed function in the question 1.5 instead of this one.
+  // function ListOfBookId(ul) {
+  //   for (let i = 0; i < bookTitles.length; i++) {
+  //     const li = document.createElement('li');
+  //     ul.appendChild(li);
+  //     li.innerText = bookTitles[i];
+  //   }
+  // }
+
+  /* cSpell:disable */
 
   // 1.4 Make an object (not an array!) containing information for each book.
   // Each property of this object should be another(i.e., nested) object with the book ID you thought up in step 1.1
@@ -95,8 +94,10 @@
     },
   };
 
+  /* cSpell:enable */
+
   // 1.7 Find and download book covers for each book and construct a new object which has as keys the book IDs again,
-  //  and as value the path to the image source(e.g. { harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }).
+  //  and as value the path to the image source.
   const bookImages = {
     maze_runner_death_cure: 'images/maze_runner_death_cure.jpg',
     fifty_shades_freed: 'images/fifty_shades_freed.jpg',
@@ -112,14 +113,7 @@
 
   // 1.6 Beautify your html page with css (use the style.css file for that), add sources and alts to each of the images.
 
-  // 1.8 Loop over these entries(hint: Object.keys(objectName) gives you an array containing the keys).
-  // Then write a function which places an image at the corresponding li element.
-  // Remember that objects are not ordered, so you cannot guarantee that the first key is the first li element.
-  // (Hint: you could give each li item an id tag by modifying the function you made before.)
-
-  // 1.5 Now change the function from step 1.3 that you used to display the book ID's
-  // in a list to take the actual information about the book from the object and display that.
-  // Make sure you choose the correct HTML elements for each piece of info, for instance, a heading for the title.
+  // 1.5 - 1.8
   function bookDetails(booksList) {
     for (let i = 0; i < bookTitles.length; i++) {
       const listItem = document.createElement('li');
@@ -165,7 +159,9 @@
     // ListOfBookId(ul);
     bookDetails(booksList);
     const p = document.createElement('p');
+    /* cSpell:disable */
     p.innerText = '© Wadeea Kiwan 2019';
+    /* cSpell:enable */
     p.className = 'footer';
     root.appendChild(p);
   }
