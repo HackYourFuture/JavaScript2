@@ -16,9 +16,11 @@
   ];
 
   // 1.2 creating index.html to load app.js
+  // It's created and connected with the file app.js
 
   // 1.3 Make a function (or functions) that generate a ul with li elements for each book ID in the array using a for loop.
   // Make sure that the function names you choose are an accurate reflection of what they do.
+  // This function works well, but I didn't use it as we had to change it to a more detailed function.
   function ListOfBookId(ul) {
     for (let i = 0; i < bookTitles.length; i++) {
       const li = document.createElement('li');
@@ -93,8 +95,6 @@
     },
   };
 
-  // 1.6 Beautify your html page with css (use the style.css file for that), add sources and alts to each of the images.
-
   // 1.7 Find and download book covers for each book and construct a new object which has as keys the book IDs again,
   //  and as value the path to the image source(e.g. { harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }).
   const bookImages = {
@@ -109,6 +109,8 @@
     little_women: 'images/little_women.jpg',
     ophelia: 'images/ophelia.jpg',
   };
+
+  // 1.6 Beautify your html page with css (use the style.css file for that), add sources and alts to each of the images.
 
   // 1.8 Loop over these entries(hint: Object.keys(objectName) gives you an array containing the keys).
   // Then write a function which places an image at the corresponding li element.
@@ -139,7 +141,9 @@
       publishing.innerText = bookInformation[bookInfo[i]].published;
       listItem.appendChild(publishing);
       const images = document.createElement('img');
+      // 1.6 sources to each of the images are added
       images.setAttribute('src', bookImages[bookInfo[i]]);
+      // 1.6 alts to each of the images are added
       images.setAttribute('alt', bookTitles[i]);
       listItem.appendChild(images);
     }
