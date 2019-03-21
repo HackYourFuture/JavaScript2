@@ -1,1 +1,58 @@
 /* add your styling here */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('http://www.lecre.umontreal.ca/wp-content/uploads/2018/10/abstrait.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+h2,
+p {
+  padding-bottom: 5px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+
+li {
+  width: calc(100% / 3 - 40px);
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.image_container {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
