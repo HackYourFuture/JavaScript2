@@ -31,6 +31,7 @@ body {
   flex-wrap: wrap;
   padding-left: 0px;
   margin: 15px;
+  justify-content: space-between;
 }
 
 .list-item {

@@ -17,7 +17,7 @@
 
   // 1.2 HTML is created and connected with the file app.js
 
-  // 1.3 This function works well, but it's commented because we had to make a more detailed function in the question 1.5 instead of this one.
+  // 1.3 This function works well, but it's commented because we had to make a more detailed function in the question 1.5 instead of this
   // function ListOfBookId(ul) {
   //   for (let i = 0; i < bookTitles.length; i++) {
   //     const li = document.createElement('li');
