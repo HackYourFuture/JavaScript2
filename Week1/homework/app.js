@@ -1,6 +1,7 @@
 ('use strict');
 
 {
+  /* cSpell:disable */
   const bookTitles = [
     // Replace with your own book titles
     'the_subtle_art_of_not_giving_a_fuck',
