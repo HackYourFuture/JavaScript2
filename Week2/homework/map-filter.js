@@ -11,5 +11,5 @@ console.log(doubleOddNumbers(myNumbers));
 // Do not change or remove anything below this line
 module.exports = {
   myNumbers,
-  doubleOddNumbers
+  doubleOddNumbers,
 };

@@ -34,19 +34,23 @@ In week one we will discuss the following topics:
 
    Then, click on the `{ }` button in the top-right corner of the settings screen to access the settings in JSON format.
 
+ 
    ```json
    /// Place your settings in this file to overwrite the default settings
    {
      "editor.detectIndentation": false,
      "editor.formatOnSave": true,
-     "editor.formatOnType": true,
      "editor.minimap.enabled": false,
      "editor.renderIndentGuides": true,
      "editor.tabSize": 2,
+     "editor.codeActionsOnSave": {
+       "source.fixAll": true
+     },
+     "eslint.autoFixOnSave": true,
      "files.autoSave": "onFocusChange",
      "prettier.printWidth": 100,
      "prettier.singleQuote": true,
-     "prettier.trailingComma": "es5"
+     "prettier.trailingComma": "all"
    }
    ```
 

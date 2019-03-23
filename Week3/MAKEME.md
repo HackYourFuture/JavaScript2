@@ -112,8 +112,13 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 
 (for math people you can think of this as a matrix)
 
-How would you print all the items of an array with 3 dimensions?
-How about with _K_ dimensions?
+How would you flatten out all the items of an array with 2 dimensions into a one-dimensional array? Flattening out the `arr2d` array above would result in:
+
+```js
+const flattenedArr = [1, 2, 3, 4, 5, 6];
+```
+
+How about 3 dimensions? How about with _K_ dimensions?
 What if you didn't know how deep the array was nested? (You don't have to write code for this but think about it.)
 
 **2.7** Here are two functions that look like they do the something similar but they print different results. Please explain what's going on here.

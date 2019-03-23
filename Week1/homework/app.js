@@ -2,6 +2,7 @@
 
 // 1.1 & 1.2 Display array of book titles
 {
+
   let booktitle = [
     'The_History_of_Tom_Jones',
     'Pride_and_Prejudice',
