@@ -1,11 +1,14 @@
 'use strict';
 
-{
-  const bookTitles = [
-    // Replace with your own book titles
-    'harry_potter_chamber_secrets',
-  ];
-
-  // Replace with your own code
-  console.log(bookTitles);
-}
+const bookTitles = [
+  'where_the_crawdads_sing',
+  'wolf_pack',
+  'the_first_lady',
+  'the_woman_in_the_window',
+  'toxic_game',
+  'the_tattooist_of_auschwitz',
+  'cemetery_road',
+  'the_silent_patient',
+  'the_lost_girls_of_paris',
+  'daisy_jones_&_the_six',
+];
