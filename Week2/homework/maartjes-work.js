@@ -58,8 +58,8 @@ function computeEarnings(tasks, hourlyRate) {
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
 // add code to convert `earnings` to a string rounded to two decimals (euro cents)
-
-console.log(`Maartje has earned €${earnings}`);
+const maartjesTotalEarnings = earnings.toFixed(2);
+console.log(`Maartje has earned €${maartjesTotalEarnings}`);
 
 // Do not change or remove anything below this line
 module.exports = {
