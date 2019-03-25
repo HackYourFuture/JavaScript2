@@ -55,11 +55,11 @@ function computeEarnings(tasks, hourlyRate) {
 }
 
 // eslint-disable-next-line no-unused-vars
-const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
+const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate).toFixed(2);
 
 // add code to convert `earnings` to a string rounded to two decimals (euro cents)
-const maartjesTotalEarnings = earnings.toFixed(2);
-console.log(`Maartje has earned €${maartjesTotalEarnings}`);
+
+console.log(`Maartje has earned €${earnings}`);
 
 // Do not change or remove anything below this line
 module.exports = {
