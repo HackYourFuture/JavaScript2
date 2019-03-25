@@ -1,1 +1,20 @@
-/* add your styling here */
+#root ul {
+  display:flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+ul li {
+  width: calc(25% - 20px);
+  padding: 10px;
+  height: 300px;
+}
+
+ul li:first-child {
+  width: calc(50% - 20px);
+}
+
+li img {
+  width:100%;
+}
