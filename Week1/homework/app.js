@@ -1,4 +1,5 @@
 'use strict';
+
 {
   const bookTitles = [
     'deep_work',
@@ -12,10 +13,9 @@
     'bed_hopper',
     'game_of_thrones',
   ];
-  console.log(bookTitles);
+  //console.log(bookTitles);
 
-  //3
-
+  const listElement = document.createElement('ul');
   function listElements(ul, itemsArray) {
     const root = document.getElementById('root');
     root.appendChild(ul);
@@ -26,8 +26,7 @@
       ul.appendChild(li);
     }
   }
-  const listElement = document.createElement('ul');
-  // listElements(listElement, bookTitles);
+  //listElements(listElement, bookTitles);
 }
 
 {
@@ -58,6 +57,12 @@
   }
   // elements();
 }
+// const load = () => {
+//   console.log('load event detected!');
+//   elements();
+// };
+// window.onload = load;
+
 const books = {
   deep_work: {
     title: 'Deep Work',
@@ -145,10 +150,13 @@ function elements() {
   root.appendChild(headerTitle);
   const ul = document.createElement('ul');
   root.appendChild(ul);
+
   for (const key of Object.keys(books)) {
     const liElem = books[key];
     const li = document.createElement('li');
     ul.appendChild(li);
+    li.setAttribute('id', key); §§§§§§§§§§
+    
     const div = document.createElement('div');
     li.appendChild(div);
     div.setAttribute('class', 'item-container');

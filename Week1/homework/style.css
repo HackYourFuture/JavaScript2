@@ -13,6 +13,7 @@ body {
 h1 {
   text-align: center;
   padding: 20px;
+  font-style: oblique;
 }
 
 h2,
@@ -35,7 +36,9 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
+  transform: scale(1.1);
+  transition: 2s;
 }
 
 .image_container {
@@ -43,6 +46,7 @@ li {
   height: 350px;
   margin-bottom: 10px;
   overflow: hidden;
+  border-radius: 30px;
 }
 
 .content_container {
