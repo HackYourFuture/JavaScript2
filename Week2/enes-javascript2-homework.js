@@ -4,7 +4,7 @@
 
 const myNumbers = [1, 2, 3, 4];
 
-const doubleOddNumberss = myNumbers.filter(number => number % 2 === 1).map(number => number * 2);
+const doubleOddNumbers = myNumbers.filter(number => number % 2 === 1).map(number => number * 2);
 
 console.log(doubleOddNumbers);
 
