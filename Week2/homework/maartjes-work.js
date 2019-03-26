@@ -55,11 +55,21 @@ function computeEarnings(tasks, hourlyRate) {
 }
 
 // eslint-disable-next-line no-unused-vars
-const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate).toFixed(2);
+const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
 // add code to convert `earnings` to a string rounded to two decimals (euro cents)
 
-console.log(`Maartje has earned €${earnings}`);
+console.log(`Maartje has earned €${earnings.toFixed(2)}`);
+
+// Or it can this way (made with the euro sign assigned to the number)
+const formattedNumber = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'EUR',
+  minimumFractionDigits: 2,
+});
+
+const maartjesTotalEarnings = formattedNumber.format(earnings);
+console.log(`Maartje has earned ${maartjesTotalEarnings}`);
 
 // Do not change or remove anything below this line
 module.exports = {
