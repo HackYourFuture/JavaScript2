@@ -53,7 +53,10 @@ function computeEarnings(tasks, hourlyRate) {
 
   const lessThanTwoHour = duration.filter(elem => elem.duration >= 2);
 
-  return lessThanTwoHour.reduce((acc, elem) => (acc += elem.duration * hourlyRate), 0);
+  return lessThanTwoHour.reduce((acc, elem) => {
+    acc += elem.duration * hourlyRate;
+    return acc;
+  }, 0);
 }
 console.log(computeEarnings(maartjesTasks, maartjesHourlyRate));
 
