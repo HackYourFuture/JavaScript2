@@ -19,7 +19,7 @@ function generateList() {
   for (let i = 0; i < bookTitles.length; i++) {
     const createLi = document.createElement('li');
     createUl.appendChild(createLi);
-    createLi.setAttribute('id', `${bookTitles[i]}`);
+    createLi.setAttribute('id', bookTitles[i]);
   }
 }
 
@@ -94,22 +94,22 @@ function generateCover() {
     const createImg = document.createElement('img');
     const list = document.getElementById(cover);
     list.appendChild(createImg);
-    createImg.setAttribute('src', `${bookCovers[cover]}`);
-    createImg.setAttribute('alt', `${cover}`);
+    createImg.setAttribute('src', bookCovers[cover]);
+    createImg.setAttribute('alt', cover);
   }
 
   for (let i = 0; i < bookTitles.length; i++) {
     const createHeading = document.createElement('h2');
-    document.getElementById(`${bookTitles[i]}`).appendChild(createHeading);
+    document.getElementById(bookTitles[i]).appendChild(createHeading);
     const arrBookInfo = Object.keys(bookInfo);
     createHeading.innerText = bookInfo[arrBookInfo[i]].title;
     // Adds p for language
     const createp1 = document.createElement('p');
-    document.getElementById(`${bookTitles[i]}`).appendChild(createp1);
+    document.getElementById(bookTitles[i]).appendChild(createp1);
     createp1.innerText = bookInfo[arrBookInfo[i]].language;
     // Adds p for author
     const createp2 = document.createElement('p');
-    document.getElementById(`${bookTitles[i]}`).appendChild(createp2);
+    document.getElementById(bookTitles[i]).appendChild(createp2);
     createp2.innerText = bookInfo[arrBookInfo[i]].author;
   }
 }
