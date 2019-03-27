@@ -41,10 +41,10 @@ const tuesday = [
     duration: 40,
   },
 ];
-
+/* cSpell:disable */
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
-
+/* cSpell:enable */
 function computeEarnings(tasks, hourlyRate) {
   const totalEarnings = tasks
     .map(task => task.duration / 60)
@@ -52,7 +52,7 @@ function computeEarnings(tasks, hourlyRate) {
     .reduce((earnings, taskHour) => earnings + taskHour * hourlyRate, 0);
   return totalEarnings;
 }
-
+/* cSpell:disable */
 // eslint-disable-next-line no-unused-vars
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
@@ -69,7 +69,7 @@ const formattedNumber = new Intl.NumberFormat('en-US', {
 
 const maartjesTotalEarnings = formattedNumber.format(earnings);
 console.log(`Maartje has earned ${maartjesTotalEarnings}`);
-
+/* cSpell:enable */
 // Do not change or remove anything below this line
 module.exports = {
   maartjesTasks,
