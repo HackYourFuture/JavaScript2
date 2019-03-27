@@ -1,9 +1,11 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  // Replace this comment and the next line with your code
-  console.log(numbers);
+  var filteredNumbered = numbers.filter(elem => elem % 2);
+  var doubledNumber = filteredNumbered.map(elem => elem * 2);
+  return doubledNumber;
 }
+// console.log(numbers);
 
 const myNumbers = [1, 2, 3, 4];
 console.log(doubleOddNumbers(myNumbers));
