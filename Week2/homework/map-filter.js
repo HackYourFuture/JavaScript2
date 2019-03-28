@@ -1,7 +1,7 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  var filteredNumbered = numbers.filter(elem => elem % 2);
+  var filteredNumbered = numbers.filter(elem => elem % 2 !== 0);
   var doubledNumber = filteredNumbered.map(elem => elem * 2);
   return doubledNumber;
 }
