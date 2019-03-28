@@ -61,7 +61,11 @@ const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate).toFixed(2);
 
 // add code to convert `earnings` to a string rounded to two decimals (euro cents).
 
-console.log(`Maartje has earned €${earnings}`);
+const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(
+  earnings,
+);
+
+console.log(`Maartje has earned ${formatter}`);
 
 // Do not change or remove anything below this line.
 module.exports = {
