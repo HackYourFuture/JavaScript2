@@ -1,27 +1,13 @@
-// ----------map & filter ------------
+function doubleOddNumbers(numbers) {
+  const newNumbers = numbers.filter(number => number % 2 !== 0);
+  const doubleNumbers = newNumbers.map(number => number * 2);
+  return doubleNumbers;
+}
+
 const myNumbers = [1, 2, 3, 4];
-
-// double all the elements using map
-const newNumbers = myNumbers.map(elem => elem * 2);
-
-console.log(newNumbers); // (4)[2, 4, 6, 8]
-
-//  choose the odd numbers using filter
-const numbers = myNumbers.filter(elem => elem % 2 !== 0);
-const doubleOddNumbers = numbers.map(elem => elem * 2);
-
-console.log(doubleOddNumbers); // (2)[2, 6]
 console.log(doubleOddNumbers(myNumbers));
-
-// or choose the odd numbers using filter this way
-
-// const numbers = myNumbers.filter(elem => elem % 2 !== 0);
-// const doubleOddNumbers = numbers.map(elem => elem * 2);
-
-console.log(doubleOddNumbers); // (2)[2, 6]
-console.log(doubleOddNumbers(myNumbers));
-
 // ----------------------------
+
 const monday = [
   {
     name: 'Write a summary HTML/CSS',
@@ -63,26 +49,34 @@ const tuesday = [
     duration: 40,
   },
 ];
-
-// ----------
 /* cSpell: disable */
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
-// Map the tasks to durations in hours
-const allTasks = maartjesTasks.map(elem => ({ ...elem, duration: elem.duration / 60 }));
+function computeEarnings(tasks, hourlyRate) {
+  const duration = tasks.map(task => {
+    const hours = task.duration / 60;
+    return { ...task, duration: hours };
+  });
 
-// Filter out everything that took less than two hours
-const filteredTasks = allTasks.filter(elem => elem.duration >= 2);
+  const filteredHour = duration.filter(elem => elem.duration >= 2);
 
-// Multiply the each duration by a per-hour rate for billing (use €20/hour) and sum it all up.
-const sumEarning = filteredTasks.reduce((acc, elem) => {
-  const earning = elem.duration * maartjesHourlyRate;
-  return acc + earning;
-}, 0);
+  return filteredHour.reduce((acc, elem) => {
+    acc += elem.duration * hourlyRate;
+    return acc;
+  }, 0);
+}
+console.log(computeEarnings(maartjesTasks, maartjesHourlyRate));
+
+const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
+
+const roundEuros = earnings.toFixed(2);
+
+console.log(`Maartje has earned €${roundEuros}`);
+
+module.exports = {
+  maartjesTasks,
+  maartjesHourlyRate,
+  computeEarnings,
+};
 /* cSpell: enable */
-console.log(sumEarning);
-
-// Output a formatted Euro amount, rounded to Euro cents
-const roundEuros = sumEarning.toFixed(2);
-console.log(roundEuros);
