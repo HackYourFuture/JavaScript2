@@ -1,4 +1,5 @@
 'use strict';
+
 /* cSpell:disable */
 
 const monday = [
