@@ -10,6 +10,7 @@ function doubleOddNumbers(numbers) {
 const myNumbers = [1, 2, 3, 4];
 console.log(doubleOddNumbers(myNumbers));
 
+/* cSpell:disable */
 
 module.exports = {
   myNumbers,
