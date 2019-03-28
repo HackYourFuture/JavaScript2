@@ -1,11 +1,11 @@
 function doubleOddNumbers(numbers) {
-  const newNumbers = numbers.filter(number => number % 2 !== 0);
-  const doubleNumbers = newNumbers.map(number => number * 2);
+  const newNumbers = numbers.filter(number => number % 2 !== 0); // filter the odd nrs
+  const doubleNumbers = newNumbers.map(number => number * 2); // double the odd nrs
   return doubleNumbers;
 }
 
 const myNumbers = [1, 2, 3, 4];
-console.log(doubleOddNumbers(myNumbers));
+console.log(doubleOddNumbers(myNumbers)); // [2, 6] the double of [1,3]
 // ----------------------------
 
 const monday = [
@@ -55,12 +55,14 @@ const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
   const duration = tasks.map(task => {
+    // turn mins to hours
     const hours = task.duration / 60;
     return { ...task, duration: hours };
   });
 
+  // remove less than 2 hours
   const filteredHour = duration.filter(elem => elem.duration >= 2);
-
+  // earnings for the duration less than 2 hours
   return filteredHour.reduce((acc, elem) => {
     acc += elem.duration * hourlyRate;
     return acc;
@@ -70,9 +72,11 @@ console.log(computeEarnings(maartjesTasks, maartjesHourlyRate));
 
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
-const roundEuros = earnings.toFixed(2);
+// set the decimal nrs to have only two values
+const roundEuros = earnings.toFixed(2); // 373.33333333333337
 
-console.log(`Maartje has earned €${roundEuros}`);
+// call the value of toFixed(2)
+console.log(`Maartje has earned €${roundEuros}`); // Maartje has earned €373.33
 
 module.exports = {
   maartjesTasks,
