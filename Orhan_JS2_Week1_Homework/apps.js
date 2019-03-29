@@ -101,21 +101,41 @@
     root.appendChild(ul);
     const values = Object.keys(bookInfo);
 
-    for (let i = 0; i < values.length; i++) {
+    function addContent(x) {
       const li = document.createElement("li");
-      li.setAttribute("id", values[i]);
+      li.setAttribute("id", x);
       ul.appendChild(li);
       const h1 = document.createElement("h1");
-      h1.innerText = bookInfo[values[i]].title;
+      h1.innerText = bookInfo[x].title;
       li.appendChild(h1);
 
       const h2 = document.createElement("h2");
-      h2.innerText = bookInfo[values[i]].author;
+      h2.innerText = bookInfo[x].author;
       li.appendChild(h2);
 
       const h3 = document.createElement("h3");
-      h3.innerText = bookInfo[values[i]].language;
+      h3.innerText = bookInfo[x].language;
       li.appendChild(h3);
+
+    }
+
+    for (let i = 0; i < values.length; i++) {
+      addContent(values[i]);
+
+      //   const li = document.createElement("li");
+      //   li.setAttribute("id", values[i]);
+      //   ul.appendChild(li);
+      //   const h1 = document.createElement("h1");
+      //   h1.innerText = bookInfo[values[i]].title;
+      //   li.appendChild(h1);
+
+      //   const h2 = document.createElement("h2");
+      //   h2.innerText = bookInfo[values[i]].author;
+      //   li.appendChild(h2);
+
+      //   const h3 = document.createElement("h3");
+      //   h3.innerText = bookInfo[values[i]].language;
+      //   li.appendChild(h3);
     }
   }
 
@@ -126,9 +146,6 @@
       imageElem.setAttribute("src", bookCovers[values[i]]);
       const liNewId = document.getElementById(values[i]);
       liNewId.appendChild(imageElem);
-
-      console.log(imageElem);
-      console.log(liNewId);
     }
   }
 
