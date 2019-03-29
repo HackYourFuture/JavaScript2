@@ -130,7 +130,7 @@ window.addEventListener('load', main);
 // Question 1.7
 
 const images = {
-  booknumber0: './img/1.jpg',
+  booknumber0: './img/0.jpg',
   booknumber1: './img/1.jpg',
   booknumber2: './img/2.jpg',
   booknumber3: './img/3.jpg',
@@ -151,8 +151,8 @@ function createUl(ul) {
     const authorText = bookSpecified[key].author;
     const titleElem = document.createElement('h1');
     const imageElem = document.createElement('img');
-    imageElem.setAttribute('src', `${images.key}`);
-    imageElem.setAttribute('alt', `${key}`);
+    imageElem.setAttribute('src', images[key]);
+    imageElem.setAttribute('alt', key);
     imageElem.setAttribute('width', '100px');
     const languageElem = document.createElement('p');
     const authorElem = document.createElement('p');
