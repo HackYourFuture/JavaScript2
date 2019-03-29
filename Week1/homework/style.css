@@ -1,20 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
 #root ul {
-  display:flex;
+  display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  padding-inline-start: 0px;
 }
 
 ul li {
-  width: calc(25% - 20px);
-  padding: 10px;
-  height: 300px;
+  width: calc(25% - 40px);
+  margin: 20px;
 }
 
 ul li:first-child {
-  width: calc(50% - 20px);
+  width: calc(50% - 40px);
 }
 
 li img {
-  width:100%;
+  width: 100%;
+}
+
+li:first-child img {
+  width: 50%;
 }
