@@ -41,21 +41,26 @@ const tuesday = [
     duration: 40,
   },
 ];
-
+/* cSpell:disable */
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
-  // Replace this comment and the next line with your code
-  console.log(tasks, hourlyRate);
+  tasks = tasks
+    .map(durations => durations.duration / 60)
+    .filter(durations => durations >= 2)
+    .map(durations => durations * hourlyRate)
+    .reduce((taskEarnings, taskEarning) => taskEarnings + taskEarning);
+  return tasks;
 }
-
 // eslint-disable-next-line no-unused-vars
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
-
-// add code to convert `earnings` to a string rounded to two decimals (euro cents)
-
-console.log(`Maartje has earned €${'replace this string with the earnings rounded to euro cents'}`);
+// earnings.toFixed(2);
+const formattedEarnings = Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'EUR',
+}).format(earnings);
+console.log(`Maartje has earned ${formattedEarnings}`);
 
 // Do not change or remove anything below this line
 module.exports = {
