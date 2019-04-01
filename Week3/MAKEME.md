@@ -74,7 +74,7 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
 threeFive(10, 15, sayThree, sayFive);
 
-// Should create an array [10,11,12,12.14,15]
+// Should create an array [10,11,12,13,14,15]
 // and call sayFive, sayThree, sayThree, sayFive
 // please make sure you see why these calls are made before you start coding
 ```
