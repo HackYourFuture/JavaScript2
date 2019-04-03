@@ -2,8 +2,6 @@
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
-  //const result = [];
-
   for (startIndex; startIndex <= stopIndex; startIndex++) {
     numbers.push(startIndex);
   }
