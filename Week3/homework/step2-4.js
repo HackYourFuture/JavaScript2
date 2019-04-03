@@ -2,6 +2,9 @@
 
 function Dog() {
   // add your code here
+  this.name = 'Rex';
+  this.color = 'black';
+  this.numLegs = 4;
 }
 
 const hound = new Dog();
