@@ -1,7 +1,7 @@
 'use strict';
 
-function foo(sync) {
-  return sync();
+function foo(func) {
+  return func();
 }
 
 function bar() {

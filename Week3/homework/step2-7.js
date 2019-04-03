@@ -20,4 +20,4 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// The short answer is primitives are data types, while references are pointers, which do not hold their values but point to their values and are used on/with objects. Java has eight primitive type: int, double, float, long, short, byte, char, boolean. ... Primitive types require between one and eight bytes of memory.

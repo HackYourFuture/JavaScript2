@@ -7,7 +7,6 @@ function Dog() {
 }
 
 const hound = new Dog();
-console.log(hound); // for check
 
 // Do not change or remove anything below this line
 module.exports = hound;
