@@ -21,8 +21,7 @@ console.log(f2(y));
 console.log(y);
 
 // Add your explanation as a comment here
-/* in the first function we calling the function on (x)...so we do not changing the value of x and 
-we can not change it because we use const so if we console.log x ...it will be always 9.
-
-in the second function we do not changing the value of y ...we are changing the value of the key in the object
-and that is possible in javascript even if we used const. */
+/* Primitive type variable like string,number are always pass as pass by value.
+Array and Object is passed as pass by reference or pass by value based on these two condition.
+if you are changing value of that Object or array with new Object or Array then it is pass by Value.
+if you are changing a property value of an object or array then it is pass by Reference.*/
