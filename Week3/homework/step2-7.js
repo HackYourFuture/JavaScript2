@@ -22,6 +22,7 @@ console.log(y);
 
 // Add your explanation as a comment here
 // f1(x) is a function returns a number but f2(y) is function returns an object.
-// in f1(x) x is constant and it van not change and the result will remain always same x plus 1 which is 10.
-// in f1(y) y is also constant but it is an object then content can be change and
-// when we run the function each time it will add one to the previous result.
+// in f1(x) x is constant and it can not change and the result will remain always same x plus 1 which is 10.
+// f2(y) use the value of f1(x).
+//in pass value function value in the initial value will remain same and f2(y) will use the initial value and 
+//update the value for the each execution with this will value for f2(y) will change but not for f1(x).
