@@ -1,1 +1,57 @@
-/* add your styling here */
+* {
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+h4 {
+  color: brown;
+  font-style: oblique;
+}
+
+#pride_and_prejudice img {
+  content: url('https://images.penguinrandomhouse.com/cover/9780307950901');
+}
+
+#robinson_crusoe img {
+  content: url('https://images.gr-assets.com/books/1505055646l/832554.jpg');
+}
+
+#the_old_man_and_the_sea img {
+  content: url('https://images-na.ssl-images-amazon.com/images/I/411pakPjvdL._SX326_BO1,204,203,200_.jpg');
+}
+
+#thirteen_short_stories img {
+  content: url('https://images-na.ssl-images-amazon.com/images/I/51uCL6Yc%2BGL._SX333_BO1,204,203,200_.jpg');
+}
+
+#narnia img {
+  content: url('https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1449868701i/11127._UY500_SS500_.jpg');
+}
+
+#as_you_like_it img {
+  content: url('https://i.pinimg.com/236x/3b/1a/de/3b1adec055539160278d0bd1658cd733--as-you-like-it-shakespeare-festival.jpg');
+}
+
+#hamlet img {
+  content: url('https://images-na.ssl-images-amazon.com/images/I/51VQaOw9dKL._SX331_BO1,204,203,200_.jpg');
+}
+
+#pinocchio img {
+  content: url('https://pictures.abebooks.com/isbn/9781402745812-us.jpg');
+}
+
+#julius_caesar img {
+  content: url('https://images-eu.ssl-images-amazon.com/images/I/51cgd89I9qL.jpg');
+}
+
+#romeo_and_juliet img {
+  content: url('https://images-na.ssl-images-amazon.com/images/I/51dWHaLM2yL._SX331_BO1,204,203,200_.jpg');
+}
+img {
+  max-width: 200px;
+  display: inline;
+  margin: 1.5em;
+}

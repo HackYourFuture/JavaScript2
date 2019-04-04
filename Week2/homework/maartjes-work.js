@@ -41,25 +41,38 @@ const tuesday = [
     duration: 40,
   },
 ];
-
+/* cSpell: disable */
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
-  // Replace this comment and the next line with your code
-  console.log(tasks, hourlyRate);
-}
+  const duration = tasks.map(task => {
+    // turn mins to hours
+    const hours = task.duration / 60;
+    return { ...task, duration: hours };
+  });
 
-// eslint-disable-next-line no-unused-vars
+  // remove less than 2 hours
+  const filteredHour = duration.filter(elem => elem.duration >= 2);
+  // earnings for the duration less than 2 hours
+  return filteredHour.reduce((acc, elem) => {
+    acc += elem.duration * hourlyRate;
+    return acc;
+  }, 0);
+}
+console.log(computeEarnings(maartjesTasks, maartjesHourlyRate));
+
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
-// add code to convert `earnings` to a string rounded to two decimals (euro cents)
+// set the decimal nrs to have only two values
+const roundEuros = earnings.toFixed(2); // 373.33333333333337
 
-console.log(`Maartje has earned €${'replace this string with the earnings rounded to euro cents'}`);
+// call the value of toFixed(2)
+console.log(`Maartje has earned €${roundEuros}`); // Maartje has earned €373.33
 
-// Do not change or remove anything below this line
 module.exports = {
   maartjesTasks,
   maartjesHourlyRate,
   computeEarnings,
 };
+/* cSpell: enable */
