@@ -3,38 +3,40 @@
 // Use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
   // eslint-disable-next-line prefer-const
-  let result = '';
-
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
-
-  return result;
+  let final = '';
+  if (num <= 0) return '';
+  for (let i = 0; i < num; i++) {
+    final += str;
+  }
+  return final;
 }
-
 console.log('for', repeatStringNumTimesWithFor('abc', 3));
 
-// Use a 'while' loop
 function repeatStringNumTimesWithWhile(str, num) {
   // eslint-disable-next-line prefer-const
-  let result = '';
-
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
-
-  return result;
+  let final = '';
+  if (num <= 0) return '';
+  let i = 0;
+  while (i < num) {
+    final += str;
+    i++;
+  }
+  return final;
 }
 
 console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 
-// Use a 'do...while' loop
 function repeatStringNumTimesWithDoWhile(str, num) {
   // eslint-disable-next-line prefer-const
-  let result = '';
+  let final = '';
+  if (num <= 0) return '';
+  let i = 0;
 
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
-
-  return result;
+  do {
+    i++;
+    final += str;
+  } while (i < num);
+  return final;
 }
 
 console.log('do-while', repeatStringNumTimesWithDoWhile('abc', 3));
