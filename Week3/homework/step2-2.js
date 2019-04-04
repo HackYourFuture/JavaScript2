@@ -3,18 +3,25 @@
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
 
-  // Replace this comment and the next line with your code
-  console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
+  for (let number = startIndex; number < stopIndex + 1; number++) {
+    numbers[number - startIndex] = number;
+    if (number % 3 === 0 && number % 5 === 0) {
+      threeCallback(number);
+      fiveCallback(number);
+    } else if (number % 3 === 0) {
+      threeCallback(number);
+    } else if (number % 5 === 0) {
+      fiveCallback(number);
+    }
+  }
 }
 
-function sayThree(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+function sayThree(arr) {
+  console.log(`${arr} divisible by 3`);
 }
 
-function sayFive(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+function sayFive(arr) {
+  console.log(`${arr} divisible by 5`);
 }
 
 threeFive(10, 15, sayThree, sayFive);
