@@ -22,8 +22,4 @@ f2(y);
 console.log(y.x);
 
 console.log(y);
-
-// Add your explanation as a comment here
-/* In the first function it is a const variable so it can not be changed
-while in the second function we are changing the value of a  key inside an
-object */
+// in the first function it is passed by copy value while in the secsond function it is pssed by referenc.
