@@ -1,10 +1,7 @@
 'use strict';
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const numbers = [];
-
   for (let number = startIndex; number < stopIndex + 1; number++) {
-    numbers[number - startIndex] = number;
     if (number % 3 === 0 && number % 5 === 0) {
       threeCallback(number);
       fiveCallback(number);
