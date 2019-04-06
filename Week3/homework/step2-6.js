@@ -4,15 +4,19 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function flattenArray2d(arr) {
-  return arr.flat(); // it removes the [] from the array elements
+  return arr.reduce(function(a, b) {
+    return a.concat(b);
+  }, []);
 }
 
 function flattenArray3d(arr) {
-  return arr.flat(2); // it removes the [] from the array elements and from the inside elements
+  return arr.reduce(function(a, b) {
+    return a.concat(Array.isArray(b) ? flattenArray3d(b) : b);
+  }, []);
 }
 
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
-console.log(flattenArray3d(arr3d)); // -> [1, 2, 3, 4, 5, 6, 7, 8]
+console.log(flattenArray3d(arr3d)); // -> [1, 2, 3, 4, 5, 6, 7,
 
 // Do not change or remove anything below this line
 module.exports = {
