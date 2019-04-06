@@ -10,7 +10,8 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     if (numbers[i] % 3 === 0) {
       // apply a condition to check if the [i] is divided by 3
       threeCallback(numbers[i]);
-    } else if (numbers[i] % 5 === 0) {
+    }
+    if (numbers[i] % 5 === 0) {
       // apply a condition to check if the [i] is divided by 3
       fiveCallback(numbers[i]);
     }
