@@ -10,14 +10,12 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     if (numbers[i] % 3 === 0) {
       // apply a condition to check if the [i] is divided by 3
       threeCallback(numbers[i]);
-    }
-  }
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 5 === 0) {
+    } else if (numbers[i] % 5 === 0) {
       // apply a condition to check if the [i] is divided by 3
       fiveCallback(numbers[i]);
     }
   }
+    
   return numbers; // returns all the nrs between the startIndex & the stopIndex
 }
 
