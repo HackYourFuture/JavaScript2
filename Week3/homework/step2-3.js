@@ -6,11 +6,9 @@ function repeatStringNumTimesWithFor(str, num) {
   let result = '';
 
   for (let i = 0; i < str.length; i++) {
-    result = str.repeat(num); // the new value of result is the repeated string (num) times
+  result += str;
+    num--; // the new value of result is the repeated string (num) times
   }
-  // another way to do it
-  // result += str;
-  //   num--;
 
   return result;
 }
