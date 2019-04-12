@@ -8,8 +8,6 @@ function repeatStringNumTimesWithFor(str, num) {
     for (let i = 0; i < num; i++) {
       result += str;
     }
-  } else {
-    return '';
   }
   return result;
 }
