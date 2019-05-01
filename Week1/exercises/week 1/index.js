@@ -1,3 +1,4 @@
+'use strict';
 // EXERCISE:
 const selectButtonChangeImage = document.getElementById('btn-changeImage');
 
