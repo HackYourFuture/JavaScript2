@@ -1,6 +1,7 @@
 1.1 Say you would like to write a program that doubles the odd numbers in an array and throws away the even numbers.
 /*'use strict';
 
+
 function doubleOddNumbers(numbers) {
   // Replace this comment and the next line with your code
   console.log(numbers);
