@@ -105,6 +105,7 @@ _Deadline Friday_
 - Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX’.
 
 #####BONUS
+
 Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8.
 
 ### Step 3: JSON exercises
@@ -113,14 +114,15 @@ _Deadline Friday_
 - Write a JavaScript program to get the length (amount of keys) of a JavaScript object.
 
 #####BONUS
+
 Write a JavaScript program to create a Clock.
 Console, every second :”14:37:42”,”14:37:43", “14:37:44”, "14:37:45" 
 
-### Step 4 (bonus): ROVER
+### Step 4: ROVER (bonus)
 
 Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)!
 
-### Step 5 (bonus): **Some freeCodeCamp challenges:**
+### Step 5: **Some FreeCodeCamp challenges:** (bonus)
 
 
 1. [Comparisons with the Logical And Operator](https://www.freecodecamp.com/challenges/comparisons-with-the-logical-and-operator)
