@@ -104,7 +104,7 @@ _Deadline Friday_
 - Write a JavaScript program to find the most frequent item of an array.
 - Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX’.
 
-#####BONUS
+##### BONUS
 
 Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8.
 
@@ -113,7 +113,7 @@ _Deadline Friday_
 - Write a JavaScript function to check if an object contains given property.
 - Write a JavaScript program to get the length (amount of keys) of a JavaScript object.
 
-#####BONUS
+##### BONUS
 
 Write a JavaScript program to create a Clock.
 Console, every second :”14:37:42”,”14:37:43", “14:37:44”, "14:37:45" 
