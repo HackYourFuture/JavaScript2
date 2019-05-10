@@ -22,7 +22,7 @@ Your solution could be something like this:
 ```js
 
 const doubleOddNumbers = (numbers) => {
-    
+
 }
 
 const myNumbers = [1, 2, 3, 4];
