@@ -1,10 +1,15 @@
 'use strict';
 
-function doubleOddNumbers(numbers) {
-  // Replace this comment and the next line with your code
-  console.log(numbers);
-}
+const doubleOddNumbers = (numbers) => {
+const oddNumbers = myNumbers.filter(num => {
+  return num % 2 !== 0 
+});
+const newNumbers = oddNumbers.map((value) => {
+  return value * 2;
+});
 
+console.log(newNumbers);
+}
 const myNumbers = [1, 2, 3, 4];
 console.log(doubleOddNumbers(myNumbers));
 
