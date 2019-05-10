@@ -9,7 +9,7 @@ _Deadline Friday_
 
 ```js
 
-var firstElement =  (array, n) => {
+const firstElement =  (array, n) => {
       if (array == null) 
       return void 0;
     if (n == null) 
@@ -90,19 +90,19 @@ console.log(person({ name: "John", age: 31, city: "New York" }, "age"));
 ```js
 
 Object.objsize = function(Myobj) {
-    var osize = 0, key;
+    let osize = 0, key;
     for (key in Myobj) {
         if (Myobj.hasOwnProperty(key)) osize++;
     }
     return osize;
 };
 
-var person = { 
+const person = { 
 name : "John", 
 age: 31, 
 city: "New York" };
 
-var objsize = Object.objsize(person);
+const objsize = Object.objsize(person);
 console.log('The length of an object : '+objsize);
 
 ```
