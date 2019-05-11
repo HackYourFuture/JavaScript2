@@ -93,6 +93,7 @@
       // list items
       const liItem = document.createElement('li');
       ul.appendChild(liItem);
+      liItem.setAttribute('class', 'liItem');
 
       // book title
       const titling = document.createElement('h3');
@@ -129,9 +130,9 @@
     // create a list
     const ul = document.createElement('ul');
     root.appendChild(ul);
+    ul.setAttribute('class', 'flex_list');
     render(ul);
   }
 
   window.addEventListener('load', main);
 }
-
