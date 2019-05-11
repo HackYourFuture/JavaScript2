@@ -1,9 +1,10 @@
 * {
   background-color: bisque;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 5px grey;
   font-style: italic;
 }
 h4 {
@@ -15,4 +16,26 @@ img {
   max-width: 200px;
   display: inline;
   margin: 1.5em;
+}
+
+.flex_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.liItem {
+  list-style: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 2px dashed brown;
+  box-shadow: 5px 5px 3px sandybrown;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 1%;
+  width: calc(100% / 3 - 10px);
+}
+@media (max-width: 900px) {
+  .liItem {
+    width: calc(100%);
+  }
 }
