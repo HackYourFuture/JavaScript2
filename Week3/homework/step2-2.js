@@ -1,40 +1,29 @@
-('use strict');
+'use strict';
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
-  for (let i = startIndex; i <= stopIndex; i++) {
-    numbers.push(i); // push all nrs between the startIndex & the stopIndex
-  }
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 3 === 0) {
-      // apply a condition to check if the [i] is divided by 3
-      threeCallback(numbers[i]);
-    }
-    if (numbers[i] % 5 === 0) {
-      // apply a condition to check if the [i] is divided by 3
-      fiveCallback(numbers[i]);
+  for (let i = startIndex; i <= stopIndex; i++) {
+    numbers.push(i);
+    if (i % 3 === 0 && i % 5 === 0) {
+      threeCallback(i), fiveCallback(i);
+    } else if (i % 3 === 0) {
+      threeCallback(i);
+    } else if (i % 5 === 0) {
+      fiveCallback(i);
     }
   }
-    
-  return numbers; // returns all the nrs between the startIndex & the stopIndex
+  return numbers;
 }
 
 function sayThree(number) {
-  console.log(number + ' can be divided by 3.'); // adds some text to show how the threeCallback func works
+  // Replace this comment and the next line with your code
+  console.log(number + ' can be divided by 3');
 }
 
 function sayFive(number) {
-  console.log(number + ' can be divided by 5.'); // adds some text to show how the fiveCallback func works
+  // Replace this comment and the next line with your code
+  console.log(number + ' can be divided by 5');
 }
 
 threeFive(10, 15, sayThree, sayFive);
-// it applies first the threeCallback func then the fiveCallback func
-// 12 is divisible by 3.
-// 15 is divisible by 3.
-// 10 is divisible by 5.
-// 15 is divisible by 5.
-// [10, 11, 12, 13, 14, 15]
-
-// Do not change or remove anything below this line
-module.exports = threeFive;
