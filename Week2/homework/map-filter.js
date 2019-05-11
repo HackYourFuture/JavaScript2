@@ -11,3 +11,4 @@ const newNumbers = oddNumbers.map(x => x * 2);
 console.log(newNumbers); // => [2, 6]
 
 
+
