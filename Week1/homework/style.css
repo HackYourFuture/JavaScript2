@@ -1,1 +1,42 @@
-/* add your styling here */
+body {
+  margin: 0;
+  padding: 1rem;
+  background-color: #eeeeee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+li {
+  padding: 30px 0;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+li:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  margin-top: -30px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  max-height: 250px;
+}
+
+span {
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: #ffffff;
+}
