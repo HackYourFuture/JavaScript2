@@ -123,16 +123,16 @@
 
   // an object containing book covers
   const bookCovers = {
-    harry_potter_philosophers_stone: './images/philosopher.jpg',
-    harry_potter_chamber_secrets: './images/chamber.jpg',
-    harry_potter_prisoner_azkaban: './images/prisoner.jpg',
-    harry_potter_goblet_fire: './images/goblet.jpg',
-    harry_potter_order_phoenix: './images/order.jpg',
-    harry_potter_halfblood_prince: './images/half-blood.jpg',
-    harry_potter_deathly_hallows: './images/deathly.jpg',
-    tales_beedle_bard: './images/tales.jpg',
-    fantastic_beasts: './images/fantastic.jpg',
-    quidditch_through_ages: './images/quidditch.jpg',
+    harry_potter_philosophers_stone: './images/harry_potter_philosophers_stone.jpg',
+    harry_potter_chamber_secrets: './images/harry_potter_chamber_secrets.jpg',
+    harry_potter_prisoner_azkaban: './images/harry_potter_prisoner_azkaban.jpg',
+    harry_potter_goblet_fire: './images/harry_potter_goblet_fire.jpg',
+    harry_potter_order_phoenix: './images/harry_potter_order_phoenix.jpg',
+    harry_potter_halfblood_prince: './images/harry_potter_halfblood_prince.jpg',
+    harry_potter_deathly_hallows: './images/harry_potter_deathly_hallows.jpg',
+    tales_beedle_bard: './images/tales_beedle_bard.jpg',
+    fantastic_beasts: './images/fantastic_beasts.jpg',
+    quidditch_through_ages: './images/quidditch_through_ages.jpg',
   };
 
   // add covers to the existing list of books
