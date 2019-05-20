@@ -1,1 +1,25 @@
 /* add your styling here */
+div{
+    float: left;
+    width: 40%;
+    min-height: 500px;;
+}
+
+ul{
+    color:red;
+    font-size: 30px;
+    margin: 3px;
+
+}
+
+li{
+    color: black;
+    font-size: 18px;
+    width: 100%;
+}
+
+img{
+    margin:20 20 20 20;
+    
+}
+
