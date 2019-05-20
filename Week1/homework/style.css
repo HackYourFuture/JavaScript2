@@ -1,1 +1,157 @@
-/* add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ccc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  min-height: 10rem;
+  background-color: blue;
+  padding: 3.5rem;
+  box-shadow: 0 4px 5px #aaa;
+}
+
+.page-title {
+  font-size: 3rem;
+  letter-spacing: 1.1rem;
+  margin: auto auto;
+  color: #eee;
+  text-shadow: 0px 0px 3px #ccc;
+}
+
+.navigator {
+  float: left;
+  margin: 4rem 1.5rem;
+  max-width: 25%;
+  text-align: right;
+  line-height: 1.5rem;
+}
+
+.navigator li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.main {
+  max-width: 70%;
+  margin-top: 4rem;
+  margin-left: 25%;
+  padding-left: 2.5rem;
+  border-left: 2px solid black;
+}
+
+.main li {
+  line-height: 2rem;
+  margin-bottom: 6rem;
+  min-height: 30rem;
+  position: relative;
+  list-style-image: url('./images/list-image.png');
+}
+
+.main li:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.main h1 {
+  margin-bottom: 8rem;
+}
+
+.main img {
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  max-width: 30%;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  min-height: 6rem;
+  background-color: blue;
+  padding: 2rem;
+}
+
+.footer h3 {
+  font-size: 2rem;
+  margin: auto auto;
+  color: #eee;
+  text-shadow: 0px 0px 3px #ccc;
+}
+
+@media (max-width: 1069px) and (min-width: 940px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 939px) {
+  .header {
+    min-height: 8rem;
+    padding: 2.5rem;
+  }
+
+  .navigator {
+    float: none;
+    margin: 4rem auto;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+
+  .navigator ul {
+    width: 20rem;
+    margin-left: calc(50% - 10rem);
+  }
+
+  .main {
+    max-width: 70%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    text-align: center;
+  }
+
+  .main li {
+    position: inherit;
+    list-style: none;
+  }
+
+  .main h1 {
+    margin-bottom: 2rem;
+  }
+
+  .main img {
+    position: inherit;
+    max-width: 50%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    min-height: 6rem;
+    background-color: blue;
+    padding: 2rem;
+  }
+
+  .footer h3 {
+    font-size: 2rem;
+    margin: auto auto;
+    color: #eee;
+    text-shadow: 0px 0px 3px #ccc;
+  }
+}
