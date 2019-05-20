@@ -29,7 +29,7 @@
       ul.appendChild(li);
 
       li.addEventListener('click', function() {
-        window.location.href = '#list-item-' + i;
+        window.location.href = '#list-item-' + (i + 1);
       });
     }
     return ul;
