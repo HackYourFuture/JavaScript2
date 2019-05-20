@@ -1,3 +1,7 @@
+/**
+ * https://7alip.github.io/JavaScript2/Week1/homework/
+ */
+
 'use strict';
 
 {
