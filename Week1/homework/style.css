@@ -1,8 +1,29 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 1rem;
   background-color: #eeeeee;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #eeeeee;
+}
+
+body.dark ul li {
+  background-color: #2e2e2e;
+  border-color: #4e4e4e;
 }
 
 ul {
@@ -39,4 +60,50 @@ span {
   border-radius: 5px;
   background-color: crimson;
   color: #ffffff;
+}
+
+.switch-wrap {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  display: block;
+  background: #1e1e1e;
+  padding: 3.5px;
+  width: 60px;
+  height: 33px;
+  border-radius: 17.5px;
+}
+
+.switch-wrap.light {
+  background-color: #eeeeee;
+}
+
+.switch-wrap input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0fr 1fr 1fr;
+  transition: 0.2s;
+}
+
+.switch::after {
+  content: '';
+  border-radius: 50%;
+  background: #ccc;
+  grid-column: 2;
+  transition: background 0.2s;
+}
+
+input:checked + .switch {
+  grid-template-columns: 1fr 1fr 0fr;
+}
+input:checked + .switch::after {
+  background-color: #f3cf00;
 }

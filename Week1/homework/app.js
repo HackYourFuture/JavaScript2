@@ -5,6 +5,22 @@
 'use strict';
 
 {
+  const theme = document.getElementById('theme');
+  const body = document.getElementById('body');
+  const wrap = document.getElementById('switch-wrap');
+
+  theme.addEventListener('click', function() {
+    if (this.checked && !body.classList.contains('dark')) {
+      body.classList.add('dark');
+      wrap.classList.add('light');
+    } else {
+      body.classList.remove('dark');
+      wrap.classList.remove('light');
+    }
+  });
+}
+
+{
   const bookTitles = [
     'in_search_of_lost_time',
     'don_quixote',
