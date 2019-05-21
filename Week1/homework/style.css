@@ -1,1 +1,54 @@
 /* add your styling here */
+div {
+  color: rgb(33, 212, 153);
+}
+h1 {
+  color: brown;
+}
+body {
+  margin: 0;
+  padding: 1rem;
+  background-color: azure;
+  font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+  color: rgb(235, 235, 114);
+}
+.languageItems {
+  font-size: 40px;
+  background-color: tomato;
+  display: inline;
+}
+img {
+  margin-top: 0px;
+  width: auto;
+
+  object-position: top;
+  max-height: 250px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+
+li {
+  padding: 10px 0;
+  margin: 5px;
+  width: calc(50% - 20px);
+  color: white;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  background-color: rgb(7, 109, 109);
+  text-align: center;
+  box-shadow: 10 10 20px rgba(4, 241, 36, 0.767);
+  transition: all 0.5s;
+}
+
+li:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
