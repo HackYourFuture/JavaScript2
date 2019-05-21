@@ -1,1 +1,29 @@
 /* add your styling here */
+html {
+  background-color: brown;
+}
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 46px;
+  text-shadow: 2px 2px #f8c7c7;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  list-style-type: none;
+}
+li {
+  min-width: 350px;
+  margin-top: 30px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-image: linear-gradient(cornsilk, brown, brown);
+}
+footer {
+  margin-top: 40px;
+}
