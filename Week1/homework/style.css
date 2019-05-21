@@ -1,1 +1,15 @@
 /* add your styling here */
+.cover {
+  height: 300px;
+  float: left;
+}
+
+.details {
+  margin-left: 250px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+span {
+  background-color: cadetblue;
+}
