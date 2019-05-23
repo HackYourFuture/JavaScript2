@@ -1,1 +1,28 @@
 /* add your styling here */
+body {
+  background: #f4f4f4;
+}
+ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  background: #f4f4f4;
+}
+li {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: center;
+  margin: 0.5%;
+  background: #dcd0c0;
+  width: 23%;
+  font-size: 100%;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+img {
+  width: 80%;
+  height: 80%;
+  padding-bottom: 5%;
+}
