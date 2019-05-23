@@ -1,1 +1,39 @@
-/* add your styling here */
+/************
+* Step 1.6 **
+************/
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  background-color: #2f4f4f;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  color: #e0ffff;
+  margin: 0px 18px 20px 0px;
+}
+
+#author {
+  color: #fff8dc;
+  margin-top: 7px;
+}
+#language {
+  color: #87ceeb;
+  margin-bottom: 5px;
+}
+
+#title {
+  margin-bottom: 0px;
+}
+
+img {
+  width: 270px;
+  height: 450px;
+  border-radius: 13%;
+}
