@@ -9,6 +9,11 @@
   /////////////////
 */
 
+// Create HTML Element
+function UI(tag) {
+  return document.createElement(tag);
+}
+
 // Appends all items in an array to the parent element
 function addChildrenToParent(parent, childrens) {
   for (let i = 0; i < childrens.length; i++) {
@@ -29,13 +34,8 @@ function $(selector) {
   if (selector[0] !== '.' || selector[0] !== '#') {
     return document.querySelector(selector);
   } else {
-    document.getElementsByTagName(selector);
+    return document.getElementsByTagName(selector);
   }
-}
-
-// Create HTML Element
-function UI(tag) {
-  return document.createElement(tag);
 }
 
 /*
