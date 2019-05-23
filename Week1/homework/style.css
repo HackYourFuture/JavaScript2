@@ -1,1 +1,50 @@
-/* add your styling here */
+body {
+  font-family: cursive;
+  text-align: center;
+}
+
+ul {
+  box-sizing: border-box;
+  width: 100%;
+  list-style: none;
+  padding: 1%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  box-sizing: border-box;
+  float: left;
+  width: 48%;
+  height: 500px;
+  border: 1px solid rgb(187, 175, 175);
+  margin: 1%;
+  box-shadow: 10px 10px 10px #aaaaaa;
+  border-radius: 3%;
+  background-color: powderblue;
+}
+
+img {
+  box-shadow: 10px 10px 10px #949090;
+  width: 180px;
+}
+
+li:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+h3 {
+  padding: 2%;
+  color: #e45641;
+  box-shadow: 10px 10px 10px #aaaaaa;
+}
+
+@media only screen and (min-width: 1000px) {
+  li {
+    width: 31.3%;
+    height: 500px;
+  }
+}
