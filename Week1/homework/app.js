@@ -31,11 +31,13 @@ function createElementWithValue(tag, value) {
 
 // Query selector function
 function $(selector) {
+  let element;
   if (selector[0] !== '.' || selector[0] !== '#') {
-    return document.querySelector(selector);
+    element = document.querySelector(selector);
   } else {
-    return document.getElementsByTagName(selector);
+    element = document.getElementsByTagName(selector);
   }
+  return element;
 }
 
 /*
