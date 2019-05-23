@@ -4,10 +4,48 @@
 
 'use strict';
 
+/*  //////////////////
+    HELPER FUNCTIONS
+  /////////////////
+*/
+
+// Appends all items in an array to the parent element
+function addChildrenToParent(parent, childrens) {
+  for (let i = 0; i < childrens.length; i++) {
+    const child = childrens[i];
+    parent.appendChild(child);
+  }
+}
+
+// Insert value to the HTML of the specified tag
+function createElementWithValue(tag, value) {
+  const el = UI(tag);
+  el.innerHTML = value;
+  return el;
+}
+
+// Query selector function
+function $(selector) {
+  if (selector[0] !== '.' || selector[0] !== '#') {
+    return document.querySelector(selector);
+  } else {
+    document.getElementsByTagName(selector);
+  }
+}
+
+// Create HTML Element
+function UI(tag) {
+  return document.createElement(tag);
+}
+
+/*
+//////////////////////////////////////
+*/
+
 {
-  const theme = document.getElementById('theme');
-  const body = document.getElementById('body');
-  const wrap = document.getElementById('switch-wrap');
+  const theme = $('#theme');
+  const body = $('#body');
+  const wrap = $('#switch-wrap');
 
   theme.addEventListener('click', function() {
     if (this.checked && !body.classList.contains('dark')) {
@@ -34,24 +72,22 @@
     'the_brothers_karamazov',
   ];
 
-  function createBookList(arr, title) {
-    const h2 = document.createElement('h2');
-    h2.innerText = title;
-    const ul = document.createElement('ul');
+  function createBookLinksUI(books, title) {
+    const h2 = createElementWithValue('h2', title);
+    const ul = UI('ul');
 
-    for (let i = 0; i < arr.length; i++) {
-      const book = arr[i];
+    for (let i = 0; i < books.length; i++) {
+      const book = books[i];
 
-      const li = document.createElement('li');
+      const li = createElementWithValue('li', book);
       ul.appendChild(li);
-      li.innerText = book;
     }
-    const list = document.getElementById('book-list');
-    list.appendChild(h2);
-    list.appendChild(ul);
+
+    const list = $('#book-list');
+    addChildrenToParent(list, [h2, ul]);
   }
 
-  createBookList(bookTitles, "My Books' Ids");
+  createBookLinksUI(bookTitles, "My Books' Ids");
 }
 
 {
@@ -108,45 +144,46 @@
     },
   };
 
-  // Appends all items in an array to the parent element
-  function ADD_CHILD(parent, childrens) {
-    for (let i = 0; i < childrens.length; i++) {
-      const child = childrens[i];
-      parent.appendChild(child);
+  function createBookLinksUI(obj, title) {
+    const h2 = createElementWithValue('h2', title);
+    const ul = UI('ul');
+
+    const entries = Object.entries(obj);
+
+    for (const [key, value] of entries) {
+      const li = UI('li');
+      const img = UI('img');
+      const h3 = createElementWithValue('h3', value.title);
+      const p = createElementWithValue('p', value.author);
+      const span = createElementWithValue('span', value.language);
+      img.src = `img/${key}.jpg`;
+      img.alt = value.title;
+
+      addChildrenToParent(li, [img, h3, p, span]);
+      ul.appendChild(li);
     }
-  }
 
-  // Insert value to the HTML of the specified tag
-  function CREATE_ELEMENT(tag, value) {
-    const el = document.createElement(tag);
-    el.innerHTML = value;
-    return el;
-  }
-
-  function createBookList(obj, title) {
-    const h2 = document.createElement('h2');
-    h2.innerText = title;
-    const ul = document.createElement('ul');
-
+    /*
     const bookIds = Object.keys(obj);
 
     for (let i = 0; i < bookIds.length; i++) {
       const book = bookIds[i];
 
-      const li = document.createElement('li');
-      const img = document.createElement('img');
+      const li = UI('li');
+      const img = UI('img');
 
-      const h3 = CREATE_ELEMENT('h3', obj[book].title);
-      const p = CREATE_ELEMENT('p', obj[book].author);
-      const span = CREATE_ELEMENT('span', obj[book].language);
-      img.src = 'img/' + book + '.jpg';
+      const h3 = createElementWithValue('h3', obj[book].title);
+      const p = createElementWithValue('p', obj[book].author);
+      const span = createElementWithValue('span', obj[book].language);
+      img.src = `img/${book}.jpg`;
 
-      ADD_CHILD(li, [img, h3, p, span]);
+      addChildrenToParent(li, [img, h3, p, span]);
       ul.appendChild(li);
     }
+    */
 
-    const list = document.getElementById('book-list');
-    ADD_CHILD(list, [h2, ul]);
+    const list = $('#book-list');
+    addChildrenToParent(list, [h2, ul]);
   }
-  createBookList(books, 'My Books');
+  createBookLinksUI(books, 'My Books');
 }
