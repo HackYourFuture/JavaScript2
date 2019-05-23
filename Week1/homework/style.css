@@ -30,11 +30,10 @@ h1 {
   list-style-type: none;
 }
 
-#booklist li {
-  width: 100%;
+#booklist li {float: left;
+  width: 50%;
   margin: auto;
   padding: 0px 20px 20px 20px;
-  border: solid 2px;
 }
 
 #booklist li p {
@@ -50,7 +49,8 @@ h3 {
 }
 
 img {
-  width: 10%;
+  width: 30%;
+  height: 300px;
   padding: 50px 20px 0px 20px;
   float: left;
 }

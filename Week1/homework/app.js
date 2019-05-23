@@ -116,10 +116,10 @@ function bookListObject(object) {
   const ul = document.createElement('ul');
   document.body.appendChild(ul);
   ul.id = 'booklist';
-  const li = document.createElement('li');
 
   for (let i = 0; i < Object.keys(booksInformation).length; i++) {
     const bookId = Object.keys(object);
+    const li = document.createElement('li');
     const h2 = document.createElement('h2');
     h2.innerText = object[bookId[i]].title;
     const img = document.createElement('img');
