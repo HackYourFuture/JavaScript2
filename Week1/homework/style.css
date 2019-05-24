@@ -1,1 +1,37 @@
-/* add your styling here */
+h2 {
+  color: navy;
+  text-align: center;
+  text-decoration: underline;
+}
+h3 {
+  color: rgb(6, 71, 39);
+}
+img {
+  width: 250px;
+  height: 250px;
+}
+#books_collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+}
+.css_class {
+  border: 2px dotted gray;
+  margin-top: 2%;
+  background-color: rgb(138, 130, 130);
+}
+#main {
+  color: white;
+  background-color: rgb(63, 9, 31);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: square;
+}
+body {
+  background-color: black;
+}
