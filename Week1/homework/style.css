@@ -34,19 +34,20 @@ body {
   float: left;
   margin: 4rem 1.5rem;
   max-width: 25%;
-  text-align: right;
-  line-height: 1.5rem;
+  text-align: center;
+  line-height: 1.2rem;
 }
 
 .navigator li {
   list-style: none;
   cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 .main {
   max-width: 70%;
   margin-top: 4rem;
-  margin-left: 25%;
+  margin-left: 28%;
   padding-left: 2.5rem;
   border-left: 2px solid black;
 }
@@ -105,8 +106,6 @@ body {
     float: none;
     margin: 4rem auto;
     width: 70%;
-    text-align: center;
-    line-height: 1.5rem;
   }
 
   .navigator ul {
@@ -121,6 +120,7 @@ body {
     margin-right: auto;
     border: none;
     text-align: center;
+    padding-left: 0;
   }
 
   .main li {

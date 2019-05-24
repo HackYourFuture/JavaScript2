@@ -2,8 +2,8 @@
 
 {
   // create places where lists will be added into
-  const navigator = document.getElementsByClassName('navigator');
-  const mainSection = document.getElementsByClassName('main');
+  const navigator = document.getElementsByClassName('navigator')[0];
+  const mainSection = document.getElementsByClassName('main')[0];
 
   // an array containing book ids
   const bookTitles = [
@@ -37,7 +37,7 @@
 
   // put the list created from array into navigator section
   let newList = makeListFromArray(bookTitles);
-  navigator[0].appendChild(newList);
+  navigator.appendChild(newList);
 
   // an array containing detailed info about books
   const bookDetailed = {
@@ -82,7 +82,7 @@
       author: 'J.K. Rowling',
     },
     fantastic_beasts: {
-      title: 'Fantastic Beast and Where to Find Them',
+      title: 'Fantastic Beasts and Where to Find Them',
       language: 'English',
       author: 'J.K. Rowling',
     },
@@ -119,7 +119,7 @@
 
   // put the list created from object into main section of the webpage
   newList = makeListFromObject(bookDetailed);
-  mainSection[0].appendChild(newList);
+  mainSection.appendChild(newList);
 
   // an object containing book covers
   const bookCovers = {
@@ -150,6 +150,23 @@
     }
   }
 
-  // called the fuction to add covers to the list
+  // called the function to add covers to the list
   addBookCovers(bookCovers);
+
+  // take list items of navigator
+  const listItemsOfNavigator = navigator.getElementsByTagName('li');
+
+  // function for changing given list items with corresponding parameters of given object
+  function changeBookIdsWithTitles(listItems, object) {
+    const keys = Object.keys(object);
+
+    for (const item of listItems) {
+      if (keys.indexOf(item.innerText) !== -1) {
+        item.innerText = object[keys[keys.indexOf(item.innerText)]].title;
+      }
+    }
+  }
+
+  // called the function to change book ids with titles
+  changeBookIdsWithTitles(listItemsOfNavigator, bookDetailed);
 }
