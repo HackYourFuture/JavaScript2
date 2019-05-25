@@ -39,62 +39,62 @@
 let objecBbookTitles = {
   '11':{
     title : 'harry_potter_chamber_secrets',
-    autor : 'Bertrand Russell',
-    language : "Enghlis",
+    author : 'Bertrand Russell',
+    language : "English",
     url : 'https://images-na.ssl-images-amazon.com/images/I/71e0pu5UN9L._SY445_.jpg'
    },
   12:{
     title : 'a_history_of_western_philosophy',
-    autor : 'Bertrand Russell',
-    language : "Enghlis",
+    author : 'Bertrand Russell',
+    language : "English",
     url : 'https://taylorpearson.me/wp-content/uploads/2017/08/243685.jpg'
    },
   13:{
     title : 'sophie’s_world',
-    autor : 'Jostein Gaarder',
-    language : "Enghlis",
+    author : 'Jostein Gaarder',
+    language : "English",
     url : 'https://taylorpearson.me/wp-content/uploads/2017/08/796e94d6d2ac3bf48327be846c9c034d-w204@1x.jpg'
   },
   14:{
     title : 'meditations',
-    autor : 'Marcus Aurelius',
-    language : "Enghlis",
+    author : 'Marcus Aurelius',
+    language : "English",
     url : "https://taylorpearson.me/wp-content/uploads/2017/08/9780141395869.jpg"
    },
   15:{
     title : 'zen_and_the_art_of_motorcycle_maintenance',
-    autor : 'Robert M. Pirsig',
-    language : "Enghlis",
+    author : 'Robert M. Pirsig',
+    language : "English",
     url: "https://taylorpearson.me/wp-content/uploads/2017/08/md11588828249.jpg" 
    },
   16:{
     title : 'man’s_search_for_meaning',
-    autor : 'Viktor Frankl',
-    language : "Enghlis",
+    author : 'Viktor Frankl',
+    language : "English",
     url : 'https://taylorpearson.me/wp-content/uploads/2017/08/11201237ba21276d57e6cb0fc7cc9422-mans-search-for-meaning-free-ebooks.jpg'
    },
   17:{
     title : 'the_essential',
-    autor : 'Epicurus',
-    language : "Enghlis",
+    author : 'Epicurus',
+    language : "English",
     url : 'https://taylorpearson.me/wp-content/uploads/2017/08/41fCmU3HBJL._SX320_BO1204203200_.jpg'
    },
   18:{
     title : 'meditations_on_first_philosophy',
-    autor : 'René Descartes',
-    language : "Enghlis",
+    author : 'René Descartes',
+    language : "English",
      url :'https://taylorpearson.me/wp-content/uploads/2017/08/41K4E2xLSEL._SL500_SY344_BO1204203200_.jpg'
    },
   19:{
     title : 'critique_of_pure_peason',
-    autor : 'Emmanuel Kant',
-    language : "Enghlis",
+    author : 'Emmanuel Kant',
+    language : "English",
     url : 'https://images-na.ssl-images-amazon.com/images/I/41TPNFIgwGL._SX324_BO1,204,203,200_.jpg'
    },
   20:{
     title : 'beyond_good_and_evil',
-    autor : 'Nietszche',
-    language : "Enghlis",
+    author : 'Nietszche',
+    language : "English",
     url : 'https://taylorpearson.me/wp-content/uploads/2017/08/81-kbdDkFTL.jpg'
    },
 }
