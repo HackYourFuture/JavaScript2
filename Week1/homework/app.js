@@ -19,9 +19,9 @@ const bookTitles = [
 //--------1.3------
 function createUl(ul) {
   for (let i = 0; i < bookTitles.length; i++) {
-    const listTitels = bookTitles[i];
+    const listTitles = bookTitles[i];
     const listItems = document.createElement('li');
-    listItems.innerText = listTitels;
+    listItems.innerText = listTitles;
     ul.appendChild(listItems);
   }
 }
@@ -56,8 +56,8 @@ const bookDetails = {
     language: 'english',
     author: 'Erich Gamma',
   },
-  Refracting: {
-    title: 'Refracting',
+  refactoring: {
+    title: 'refactoring',
     language: 'english',
     author: 'Martin Fowler',
   },
