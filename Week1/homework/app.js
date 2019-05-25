@@ -1,6 +1,5 @@
 'use strict';
-
-// ------------1.1-----
+//------------1.1-----
 const bookTitles = [
   'pragmatic_programmer',
   'clean_code',
@@ -14,10 +13,10 @@ const bookTitles = [
   'head_first_design',
 ];
 
-// --------1.2-------
+//--------1.2-------
 // console.log(bookTitles);
 
-// --------1.3------
+//--------1.3------
 function createUl(ul) {
   for (let i = 0; i < bookTitles.length; i++) {
     const listTitels = bookTitles[i];
@@ -34,7 +33,7 @@ function main() {
 }
 window.addEventListener('load', main);
 
-// -------1.4-------------
+//-------1.4-------------
 const bookDetails = {
   pragmatic_programmer: {
     title: 'pragmatic programmer',
@@ -90,10 +89,10 @@ const bookDetails = {
 };
 console.log(bookDetails);
 
-// ----------1.5----------
+//----------1.5----------
 
 function createUiForObject(ul) {
-  for (const key in bookDetails) {
+  for (let key in bookDetails) {
     const bookTitle = bookDetails[key].title;
     const bookLanguage = bookDetails[key].language;
     const bookAuthor = bookDetails[key].author;
@@ -109,7 +108,7 @@ function createUiForObject(ul) {
     li.appendChild(authorItems);
     ul.appendChild(li);
   }
-
+}
 
 function mainObject() {
   const rootObject = document.getElementById('rootObject');
@@ -119,10 +118,10 @@ function mainObject() {
 }
 window.addEventListener('load', mainObject);
 
-// --------1.6------
+//--------1.6------
 // style.css
 
-// ----------1.7--------
+//----------1.7--------
 const images = {
   // pragmatic_programmer: './img/pragmatic_programmer.jpg',
   pragmatic_programmer: 'https://images.gr-assets.com/books/1401432508l/4099.jpg',
@@ -148,7 +147,7 @@ const images = {
 };
 
 function createUlForObjectWithImages(ul) {
-  for (const key in bookDetails) {
+  for (let key in bookDetails) {
     const bookTitle = bookDetails[key].title;
     const titleItems = document.createElement('h2');
     titleItems.innerText = bookTitle;
@@ -181,3 +180,6 @@ function mainObjectWithImages() {
   createUlForObjectWithImages(ul);
 }
 window.addEventListener('load', mainObjectWithImages);
+
+//---------------------------------------------
+//==================================================
