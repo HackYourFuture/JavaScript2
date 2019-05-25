@@ -2,6 +2,8 @@
 
 function Dog() {
   // add your code here
+  this.name = "Milou";
+  this.numLegs = 4;
 }
 
 const hound = new Dog();
