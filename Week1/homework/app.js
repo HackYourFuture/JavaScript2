@@ -89,22 +89,24 @@ makeUlFromMyBooksArray();
     h1.innerText = 'MY BOOKS';
     document.body.appendChild(h1);
     const ul = document.createElement('ul');
-    for (const book in myBooksInfo) {
-      if (Object.prototype.hasOwnProperty.call(myBooksInfo, book)) {
-        const li = document.createElement('li');
-        const h2 = document.createElement('h2');
-        const authorP = document.createElement('p');
-        const languageP = document.createElement('p');
-        h2.innerHTML = myBooksInfo[book].title;
-        authorP.innerHTML = 'Author: ' + myBooksInfo[book].author;
-        languageP.innerHTML = 'Original Language: ' + myBooksInfo[book].language;
-        li.id = book.slice(0, 6);
-        li.appendChild(h2);
-        li.appendChild(authorP);
-        li.appendChild(languageP);
-        ul.appendChild(li);
-        document.body.appendChild(ul);
-      }
+    for (let book in myBooks) {
+      console.log(book);
+      const myBookInfo = myBooksInfo[myBooks[book]];
+      console.log(myBookInfo);
+      const li = document.createElement('li');
+      const h2 = document.createElement('h2');
+      const authorP = document.createElement('p');
+      const languageP = document.createElement('p');
+      h2.innerHTML = myBookInfo.title;
+      authorP.innerHTML = 'Author: ' + myBookInfo.author;
+      languageP.innerHTML = 'Original Language: ' + myBookInfo.language;
+      li.id = myBooks[book].slice(0, 6);
+      li.appendChild(h2);
+      li.appendChild(authorP);
+      li.appendChild(languageP);
+      ul.appendChild(li);
+      document.body.appendChild(ul);
+      console.log(li);
     }
   }
   copyMyBooksInfoToHtml();
@@ -146,25 +148,13 @@ makeUlFromMyBooksArray();
   // IDs of li elements stored in 'idList'
   // URLs of images stored in 'urlList'
   // 250px height set for images
-  function putCoversToRightLiElem() {
-    const urlList = [];
-    for (const i in myBooksCovers) {
-      if (Object.prototype.hasOwnProperty.call(myBooksCovers, i)) {
-        urlList.push(i + '.jpg');
-      }
-    }
-    const idList = [];
-    for (const i in myBooks) {
-      if (Object.prototype.hasOwnProperty.call(myBooks, i)) {
-        idList.push(myBooks[i].slice(0, 6));
-      }
-    }
 
-    for (let i = 0; i < urlList.length; i++) {
+  function putCoversToRightLiElem() {
+    for (let prop in myBooksCovers) {
       const image = document.createElement('img');
-      image.src = urlList[i];
+      image.src = myBooksCovers[prop].source;
       image.style = 'height: 250px;';
-      document.getElementById(idList[i]).appendChild(image);
+      document.getElementById(prop.slice(0, 6)).appendChild(image);
     }
   }
   putCoversToRightLiElem();
