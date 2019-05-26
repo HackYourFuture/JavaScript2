@@ -3,17 +3,24 @@
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
 
-  // Replace this comment and the next line with your code
+  for (let num = startIndex; num <= stopIndex; num++) {
+    console.log(num);
+
+    if (num % 3 === 0 && num % 5 === 0) {
+      threeCallback(num);
+      fiveCallback(num);
+    } else if (num % 3 === 0) threeCallback(num);
+    else if (num % 5 === 0) fiveCallback(num);
+  }
   console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
+  return numbers;
 }
 
 function sayThree(number) {
-  // Replace this comment and the next line with your code
   console.log(number);
 }
 
 function sayFive(number) {
-  // Replace this comment and the next line with your code
   console.log(number);
 }
 
