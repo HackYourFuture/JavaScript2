@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i < bookTitles.length; i++) {
       const li = document.createElement('li');
       const title = document.createElement('h3');
-      const author = document.createElement('h4');
-      const language = document.createElement('h4');
+      const author = document.createElement('p');
+      const language = document.createElement('p');
       ul.appendChild(li);
       li.appendChild(title);
       li.appendChild(author);
