@@ -1,5 +1,6 @@
 'use strict';
 
+// gonna work on it soon.
 const monday = [
   {
     name: 'Write a summary HTML/CSS',
