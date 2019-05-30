@@ -47,18 +47,22 @@ const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
   // Replace this comment and the next line with your code
-  const totalHourWork = tasks.map(min => min.duration).reduce((hour, min) => hour + min / 60, 0);
+  const hourBiggerThenTow = [];
+  let totalSalary = 0;
+  const totalHourWork = tasks.map(min => min.duration / 60);
+  for (const i in totalHourWork) {
+    if (totalHourWork[i] >= 2) {
+      totalSalary += totalHourWork[i] * hourlyRate;
+      hourBiggerThenTow.push(totalHourWork[i]);
+    }
+  }
 
-  const totalSalary = totalHourWork * hourlyRate;
-  const totalSalaryInDoller = totalSalary.toLocaleString('en-US', {
-    style: 'currency',
-    currency: 'USD',
-  });
+  // eslint-disable-next-line prefer-const
+  let currencyString = totalSalary.toFixed(2);
+  console.log(currencyString);
+  console.log(hourBiggerThenTow);
 
-  console.log(totalHourWork * hourlyRate);
-
-  console.log(totalSalaryInDoller);
-  return totalSalaryInDoller;
+  return totalSalary;
 }
 
 // eslint-disable-next-line no-unused-vars
