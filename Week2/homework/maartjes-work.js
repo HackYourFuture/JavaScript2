@@ -19,7 +19,7 @@
 
 const doubleOddNumbers = [1, 2, 3, 4];
 const OddNumbers = doubleOddNumbers.filter(oddNumber => oddNumber % 2 !== 0);
-console(OddNumbers);
+console.log(OddNumbers);
 const OddNumbers2 = doubleOddNumbers.map(oddNumber => oddNumber * 2);
 console.log(OddNumbers2);
 
