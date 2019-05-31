@@ -1,6 +1,30 @@
 'use strict';
+//1.1 Say you would like to write a program that doubles the odd numbers in an array and throws away the even numbers.
 
-// gonna work on it soon.
+//Your solution could be something like this:
+
+// function doubleOddNumbers(numbers) {
+//   const newNumbers = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 !== 0) {
+//       newNumbers.push(numbers[i] * 2);
+//     }
+//   }
+//   return newNumbers;
+// }
+
+// const myNumbers = [1, 2, 3, 4];
+// console.log(doubleOddNumbers(myNumbers)); // ==> [2, 6]
+//Rewrite the above doubleOddNumbers function using map and filter; don't forget to use =>.
+
+const doubleOddNumbers = [1, 2, 3, 4];
+const OddNumbers = doubleOddNumbers.filter(oddNumber => oddNumber % 2 !== 0);
+console(OddNumbers);
+const OddNumbers2 = doubleOddNumbers.map(oddNumber => oddNumber * 2);
+console.log(OddNumbers2);
+
+//1.2 Underneath you see a very interesting small insight in Maartje's work:
+
 const monday = [
   {
     name: 'Write a summary HTML/CSS',
@@ -43,24 +67,35 @@ const tuesday = [
   },
 ];
 
-const maartjesTasks = monday.concat(tuesday);
-const maartjesHourlyRate = 20;
+const durations = monday.duration.concat(tuesday.duration);
+console.log(durations);
 
-function computeEarnings(tasks, hourlyRate) {
-  // Replace this comment and the next line with your code
-  console.log(tasks, hourlyRate);
+//Map the tasks to durations in hours.
+
+const hours = durations.map(function(duration) {
+  return duration / 60;
+});
+console.log(hours);
+//Underneath, I'm using arrow function.
+//const hours = durations.map(
+// duration => duration / 60;
+//);
+//console.log(hours);
+//Filter out everything that took less than two hours (i.e., remove from the collection)
+const twoHours = durations.filter(function(duration) {
+  return duration < 120;
+});
+console.log(twoHours);
+
+//Multiply the each duration by a per-hour rate for billing (use €20/hour) and sum it all up.
+function multiply(durations) {
+  return 'per-hour rate: €' + (durations / 60) * 20;
 }
+//Underneath, I'm using arrow function.
+//const multiply = durations.forEach(duration => {
+// return 'per-hour rate: €' + (duration / 60) * 20;
+//});
 
-// eslint-disable-next-line no-unused-vars
-const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
+//Output a formatted Euro amount, rounded to Euro cents, e.g: €11.34.
 
-// add code to convert `earnings` to a string rounded to two decimals (euro cents)
-
-console.log(`Maartje has earned €${'replace this string with the earnings rounded to euro cents'}`);
-
-// Do not change or remove anything below this line
-module.exports = {
-  maartjesTasks,
-  maartjesHourlyRate,
-  computeEarnings,
-};
+//not done yet
