@@ -1,5 +1,5 @@
 'use strict';
-//1.git
+//1.
 
 const bookIds = [
   'oliver_twist',
@@ -8,7 +8,7 @@ const bookIds = [
   'macbeth',
   'waiting_for_godot',
   'arms_and_the_man',
-  'the-merchant_of_venice',
+  'merchant_of_venice',
   'crime_and_punishment',
   'romeo_and_juliet',
   'a_tale_of_two_cities',
@@ -17,88 +17,121 @@ const bookIds = [
 
 //3.
 function books(bookIds) {
+  const container1 = document.getElementById('container');
   const ul = document.createElement('ul');
-  document.items.appendChild(ul);
+  container1.appendChild('ul');
   for (let index = 0; index < bookIds.length; index++) {
     const li = document.createElement('li');
-    li.textContent = bookIds[index];
+    (li.textContent = 'List of Books:'), bookIds[index];
     ul.appendChild(li);
   }
 }
+window.addEventListener('load', books);
 
 //4.
-const DifferentBooks = [
-  {
-    title: 'Oliver Twist',
+const DifferentBooks = {
+  oliver_twist: {
+    name: 'Oliver Twist',
     language: 'English',
     author: 'Charles-Dickens',
   },
-  {
-    title: 'Hamlet',
+  hamlet: {
+    name: 'Hamlet',
     language: 'English',
     author: 'Shakespeare',
   },
-  {
-    title: 'Antony and Cleopatra',
+  antony_and_cleopatra: {
+    name: 'Antony and Cleopatra',
     language: 'English',
     author: 'Shakespeare',
   },
-  {
-    title: 'Macbeth',
+  macbeth: {
+    name: 'Macbeth',
     language: 'English',
     author: 'Shakespeare',
   },
-  {
-    title: 'Waiting for Godot',
+  waiting_for_godot: {
+    name: 'Waiting for Godot',
     language: 'English',
     author: 'Samuel Becket',
   },
-  {
-    title: 'Arms and the Man',
+  arms_and_the_man: {
+    name: 'Arms and the Man',
     language: 'English',
     author: 'George Bernard Show',
   },
-  {
-    title: 'The Merchant of Venice',
+  merchant_of_venice: {
+    name: 'The Merchant of Venice',
     language: 'English',
     author: 'Shakespeare',
   },
-  {
-    title: 'Crime and Punishment',
+  crime_and_punishment: {
+    name: 'Crime and Punishment',
     language: 'Russian',
     author: 'Fyodor Dostoevsky',
   },
-  {
-    title: 'Romeo and Juliet',
+  romeo_and_juliet: {
+    name: 'Romeo and Juliet',
     language: 'English',
     author: 'Shakespeare',
   },
-  {
-    title: 'A Tale of Two Cities',
+  a_tale_of_two_cities: {
+    name: 'A Tale of Two Cities',
     language: 'English',
     author: 'Charles Dickens',
   },
-];
+};
 
-//5.
-//Can NOT answer it.
+//5. Working on it.
+// const images = document.createElement('img');
+// images.src =
+//   'https://static01.nyt.com/images/2018/11/05/arts/05godot/05godot-articleLarge.jpg?quality=75&auto=webp&disable=upscale';
+// document.body.appendChild(images);
+// document.write('<br/>This is a great pic of Godot Cover');
 
 //7.
 const newBookIds = {
-  oliver_twist: './img/oliver_twist.jpg',
-  hamlet: './img/hamlet.jpg',
-  antony_and_cleopatra: './img/antony_and_cleopatra.jpg',
-  macbeth: './img/macbeth.jpg',
-  waiting_for_godot: './img/waiting_for-godot.jpg',
-  arms_and_the_man: './img/arms_and_the_man.jpg',
-  the_merchant_of_venice: './img/the_merchant_of_venice.jpg',
-  crime_and_punishment: './img/crime_and_punishment.jpg',
-  romeo_and_juliet: './img/romeo_and_juliet.jpg',
-  a_tale_of_two_cities: './img/a_tale_of_two_cities.jpg',
+  oliver_twist: './img/OLIVER_TWIST-2.jpg',
+  hamlet: './img/Hamlet.jpg',
+  antony_and_cleopatra: './img/AntonyAndCleopatra.jpg',
+  macbeth: './img/Macbeth.jpg',
+  waiting_for_godot: './img/Godot.jpg',
+  arms_and_the_man: './img/ArmsAndTheMan.jpg',
+  the_merchant_of_venice: './img/MerchantOfVenice.jpg',
+  crime_and_punishment: './img/CrimeAndPunishment.jpg',
+  romeo_and_juliet: './img/RomeoAndJuliet.jpg',
+  a_tale_of_two_cities: './img/a-tale-of-two-cities.jpg',
 };
 
 //8.
-const entries = DifferentBooks.length;
-for (let index = 0; index < entries; index++) {
-  console.log(entries.author);
+function covers() {
+  const div = document.getElementById('items');
+  const div2 = document.createElement('h1');
+  div2.innerHTML = 'My Favorite Books';
+  div.appendChild(div2);
+  div2.className = 'moreItems';
+
+  const divTag = document.createElement('div');
+  divTag.className = 'my-books';
+  const ul = document.createElement('ul');
+  ul.className = 'books';
+  bookIds.forEach(function(index) {
+    const img = document.createElement('img');
+    img.src = newBookIds[index];
+    img.style.width = '200px';
+    //img.style.cssFloat = 'left';
+    img.className = 'cover';
+    const title = document.createElement('h2');
+    title.innerHTML = DifferentBooks[index].name;
+    title.className = 'title';
+    const liTag = document.createElement('li');
+    liTag.innerHTML = DifferentBooks[index].author;
+    liTag.className = 'book';
+    liTag.appendChild(title);
+    liTag.appendChild(img);
+    ul.appendChild(liTag);
+    div.appendChild(divTag);
+    divTag.appendChild(ul);
+  });
 }
+window.addEventListener('load', covers);
