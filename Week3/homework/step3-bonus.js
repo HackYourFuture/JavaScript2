@@ -3,8 +3,8 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const set1 = new Set(arr);
+  return [...set1];
 }
 
 const uniqueValues = makeUnique(values);

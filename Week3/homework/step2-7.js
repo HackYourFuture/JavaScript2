@@ -20,4 +20,8 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+/* In first function we only copy the value of our"x" variable to the "val". 
+they do not point to same memory adress. In second function, since our variable 
+is an object, instead of copying its value to "val" variable, it assigns the same 
+memory adress to the "val" variable. so whenever we change the value of an object,
+other objects which points to same adress also changes. */
