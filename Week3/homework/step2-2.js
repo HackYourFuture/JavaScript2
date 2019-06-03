@@ -3,18 +3,31 @@
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
 
-  // Replace this comment and the next line with your code
-  console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
+  let i = startIndex;
+  while (i <= stopIndex) {
+    numbers.push(i);
+    i++;
+  }
+
+  numbers.map(number => {
+    if (!(number % 3) && number % 15) {
+      threeCallback(number);
+    } else if (!(number % 5) && number % 15) {
+      fiveCallback(number);
+    } else if (!(number % 15)) {
+      threeCallback(number);
+      fiveCallback(number);
+    }
+    return number;
+  });
 }
 
 function sayThree(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+  console.log('three', number);
 }
 
 function sayFive(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+  console.log('five', number);
 }
 
 threeFive(10, 15, sayThree, sayFive);
