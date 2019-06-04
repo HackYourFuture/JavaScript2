@@ -4,13 +4,16 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function flattenArray2d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const result = arr.reduce((total, item) => total.concat(item));
+  return result;
 }
 
 function flattenArray3d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const result = arr;
+  for (let i = 0; i < 2; i++) {
+    result.reduce((accu, curr) => accu.concat(curr));
+  }
+  return result;
 }
 
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]

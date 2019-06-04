@@ -21,3 +21,5 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+// f1(x)  --> returen 10 ;
+//  f2(y) --> return undefined
