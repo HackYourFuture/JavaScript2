@@ -20,4 +20,12 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// In the first function, the function is called by directly
+// passing the value of the variable as the argument. Changing
+// the argument inside the function does not affect the variable
+// passed from outside. This is known as Pass by Value.
+
+// On the other hand we have Pass by Reference in the second function.
+// This is where the function is directly called by passing reference or
+// address of the variable as the argument. Changing the argument inside the
+// function affects the variable passed from outside the function.
