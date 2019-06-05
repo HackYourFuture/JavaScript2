@@ -52,6 +52,6 @@ function Dog() {
   this.color = 'yellow-orange';
   this.numLegs = 4;
 }
-console.log(new Dog());
+let hound = new Dog();
 
 // 2.5
