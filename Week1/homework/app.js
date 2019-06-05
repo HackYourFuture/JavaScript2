@@ -70,10 +70,10 @@
   };
 
   // Task 1.3 - 1.5
-  function actualBooksInfo() {
+  function renderBookLIst() {
     const root = document.createElement('div');
-    const ul = document.createElement('ul');
     document.body.appendChild(root);
+    const ul = document.createElement('ul');
     root.appendChild(ul);
 
     for (const bookTitle of bookTitles) {
@@ -116,7 +116,8 @@
 
   // 1.7 - 1.8
   function displayBooks() {
-    for (const key of Object.keys(bookCovers)) {
+    const bookCoversKeys = Object.keys(bookCovers);
+    for (const key of bookCoversKeys) {
       const li = document.getElementById(key);
       const img = document.createElement('img');
       li.appendChild(img);
@@ -125,7 +126,7 @@
   }
 
   function main() {
-    actualBooksInfo();
+    renderBookLIst();
     displayBooks();
   }
 
