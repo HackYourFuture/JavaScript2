@@ -21,3 +21,6 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+
+// Javascript always passes by value.if you pass an object to a function, the value is a reference to that object,
+// so the function can modify that object's properties but not cause the variable outside the function.
