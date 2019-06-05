@@ -4,9 +4,15 @@
 function repeatStringNumTimesWithFor(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
-
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  const repeatArr = [];
+  if (num <= 0) {
+    result = '';
+  } else {
+    for (let i = 0; i < num; i++) {
+      repeatArr.push(str);
+    }
+    result = repeatArr.join('');
+  }
 
   return result;
 }
@@ -17,8 +23,17 @@ console.log('for', repeatStringNumTimesWithFor('abc', 3));
 function repeatStringNumTimesWithWhile(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
-
-  // Replace this comment and the next line with your code
+  const repeatArr = [];
+  if (num <= 0) {
+    result = '';
+  } else {
+    let i = 0;
+    while (i < num) {
+      repeatArr.push(str);
+      i++;
+    }
+    result = repeatArr.join('');
+  }
   console.log(str, num, result);
 
   return result;
@@ -30,8 +45,17 @@ console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 function repeatStringNumTimesWithDoWhile(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
-
-  // Replace this comment and the next line with your code
+  const repeatArr = [];
+  if (num <= 0) {
+    result = '';
+  } else {
+    let i = 0;
+    do {
+      repeatArr.push(str);
+      i++;
+    } while (i < num);
+    result = repeatArr.join('');
+  }
   console.log(str, num, result);
 
   return result;

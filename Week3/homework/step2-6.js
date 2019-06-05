@@ -4,13 +4,26 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function flattenArray2d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const flattenArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      flattenArr.push(arr[i][j]);
+    }
+  }
+  return flattenArr;
 }
 
 function flattenArray3d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const flattenArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      for (let k = 0; k < arr[i][j].length; k++) {
+        flattenArr.push(arr[i][j][k]);
+      }
+    }
+  }
+  console.log(flattenArr);
+  return flattenArr;
 }
 
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]

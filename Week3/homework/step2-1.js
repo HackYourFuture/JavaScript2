@@ -1,9 +1,8 @@
 'use strict';
 
 function foo(func) {
-  // What to do here?
-  // Replace this comment and the next line with your code
-  console.log(func);
+  console.log('and a voice heard from deep:    ');
+  func();
 }
 
 function bar() {
