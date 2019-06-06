@@ -1,8 +1,10 @@
 'use strict';
 
 function createBase(base) {
-  // Replace this comment and the next line with your code
-  console.log(base);
+  function sumUp(val) {
+    return base + val;
+  }
+  return sumUp;
 }
 
 const addSix = createBase(6);

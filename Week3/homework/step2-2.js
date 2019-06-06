@@ -2,19 +2,32 @@
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
+  const len = Math.abs(stopIndex - startIndex);
 
-  // Replace this comment and the next line with your code
-  console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
+  for (let i = 0; i <= len; i++) {
+    numbers.push(i + startIndex);
+    if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
+      threeCallback(numbers[i]);
+      fiveCallback(numbers[i]);
+      // console.log('\n' + numbers[i] + ' is divisible by both 3 and 5\n');
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+    if (numbers[i] % 3 === 0) {
+      threeCallback(numbers[i]);
+    }
+    if (numbers[i] % 5 === 0) {
+      fiveCallback(numbers[i]);
+    }
+  }
 }
 
 function sayThree(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+  console.log(number + ' is divisible by 3');
 }
 
 function sayFive(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+  console.log(number + ' is divisible by 5');
 }
 
 threeFive(10, 15, sayThree, sayFive);
