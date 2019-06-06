@@ -167,7 +167,7 @@ To run the unit test for the week 3 homework, open a terminal window in the `Jav
 npm run test-week3
 ```
 
-In case of errors, try and fix them. When done, run the tests again: `npm run test3`
+In case of errors, try and fix them. When done, run the tests again.
 
 Repeat the previous step until all tests pass.
 
