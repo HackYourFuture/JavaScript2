@@ -20,4 +20,11 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// in the f1 function we use (const x = 9); The variable equals to a primitive value(undefined, null, boolean, string, and numbers). In Pass by Value,
+// Function is called by directly passing the value of the variable as the argument. Changing the argument inside the function
+// doesn’t affect the variable passed from outside the function. So changing the value of the variable with a function never
+// changes the underlying primitive (String or number).
+
+// in the f2 function we use (const y = { x: 9 }); it equals to an object. In Pass by Reference, Function is called by directly
+// passing the reference/address of the variable as the argument. Changing the argument inside the function affect the variable
+// passed from outside the function. The reference/address of the objects and arrays same but the values at that addresses changed.
