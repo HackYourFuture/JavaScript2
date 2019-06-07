@@ -1,0 +1,15 @@
+{
+  "name": "Week3",
+  "version": "1.0.0",
+  "description": "```\r In week three we will discuss the following topics:\r • Closures\r • Scope\r • Callbacks\r ```",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

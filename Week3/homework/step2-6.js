@@ -8,11 +8,19 @@ function flattenArray2d(arr) {
   return result;
 }
 
-function flattenArray3d(arr) {
-  const result = arr;
-  for (let i = 0; i < 2; i++) {
-    result.reduce((accu, curr) => accu.concat(curr));
-  }
+function flattenArray3d(arr, result = []) {
+  // const result = arr;
+  // for (let i = 0; i < 2; i++) {
+  //   result.reduce((accu, curr) => accu.concat(curr));
+  // }
+  arr.forEach(i => {
+    if (Array.isArray(i)) {
+      flattenArray3d(i, result);
+      // if it is _K_ dimensions we call i k times .
+    } else {
+      result.push(i);
+    }
+  });
   return result;
 }
 

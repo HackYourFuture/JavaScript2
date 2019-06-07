@@ -7,7 +7,7 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     numbers.push(i);
   }
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 3 === 0 && numbers[i % 5 === 0]) {
+    if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
       threeCallback(numbers[i]);
       fiveCallback(numbers[i]);
       console.log(`numbers divided by 3 and 5 : ${numbers[i]}`);
