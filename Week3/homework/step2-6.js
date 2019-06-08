@@ -22,7 +22,6 @@ function flattenArray3d(arr) {
       }
     }
   }
-  console.log(flattenArr);
   return flattenArr;
 }
 

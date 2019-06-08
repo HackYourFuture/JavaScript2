@@ -1,7 +1,6 @@
 'use strict';
 
 function foo(func) {
-  console.log('and a voice heard from deep:    ');
   func();
 }
 

@@ -5,18 +5,14 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   for (let i = startIndex; i < stopIndex + 1; i++) {
     numbers.push(i);
   }
-  for (const value of numbers) {
-    if (value % 3 === 0) {
-      threeCallback(value);
-      if (value % 5 === 0) {
-        fiveCallback(value);
-      }
+  for (const number of numbers) {
+    if (number % 3 === 0) {
+      threeCallback(number);
     }
-    if (value % 5 === 0 && !(value % 3 === 0)) {
-      fiveCallback(value);
+    if (number % 5 === 0) {
+      fiveCallback(number);
     }
   }
-  console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
 }
 
 function sayThree(number) {

@@ -23,14 +23,14 @@ const values3 = [
   '54',
 ];
 function makeUnique(arr) {
+  const uniqueValuesArr = [];
   for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] === arr[j]) {
-        arr.splice(j, 1);
-      }
+    if (uniqueValuesArr.indexOf(arr[i]) === -1) {
+      uniqueValuesArr.push(arr[i]);
     }
   }
-  return arr;
+  console.log(uniqueValuesArr);
+  return uniqueValuesArr;
 }
 
 const uniqueValues = makeUnique(values);

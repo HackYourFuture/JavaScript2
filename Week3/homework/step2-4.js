@@ -7,7 +7,7 @@ function Dog(name, color) {
   this.color = color;
 }
 
-const hound = new Dog('Jimmy', 'black');
+const hound = new Dog('Max', 'black');
 
 // Do not change or remove anything below this line
 module.exports = hound;

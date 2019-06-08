@@ -5,14 +5,10 @@ function repeatStringNumTimesWithFor(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
   const repeatArr = [];
-  if (num <= 0) {
-    result = '';
-  } else {
-    for (let i = 0; i < num; i++) {
-      repeatArr.push(str);
-    }
-    result = repeatArr.join('');
+  for (let i = 0; i < num; i++) {
+    repeatArr.push(str);
   }
+  result = repeatArr.join('');
 
   return result;
 }
@@ -24,17 +20,12 @@ function repeatStringNumTimesWithWhile(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
   const repeatArr = [];
-  if (num <= 0) {
-    result = '';
-  } else {
-    let i = 0;
-    while (i < num) {
-      repeatArr.push(str);
-      i++;
-    }
-    result = repeatArr.join('');
+  let i = 0;
+  while (i < num) {
+    repeatArr.push(str);
+    i++;
   }
-  console.log(str, num, result);
+  result = repeatArr.join('');
 
   return result;
 }
@@ -46,17 +37,15 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
   const repeatArr = [];
+  let i = 0;
+  do {
+    repeatArr.push(str);
+    i++;
+  } while (i < num);
+  result = repeatArr.join('');
   if (num <= 0) {
     result = '';
-  } else {
-    let i = 0;
-    do {
-      repeatArr.push(str);
-      i++;
-    } while (i < num);
-    result = repeatArr.join('');
   }
-  console.log(str, num, result);
 
   return result;
 }
