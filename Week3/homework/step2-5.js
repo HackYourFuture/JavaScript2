@@ -1,13 +1,16 @@
 'use strict';
 
-// sorry I just studied for tge test.
 function multiplyAll(arr) {
   // eslint-disable-next-line
   let product = 1;
 
   // Replace this comment and the next line with your code
-  console.log(arr, product);
-
+  // console.log(arr, product);
+  for (let index = 0; index < arr.length; index++) {
+    for (let j = 0; j < arr[index].length; j++) {
+      product = product * arr[index][j];
+    }
+  }
   return product;
 }
 
