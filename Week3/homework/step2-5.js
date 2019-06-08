@@ -1,5 +1,6 @@
 'use strict';
 
+// sorry I just studied for tge test.
 function multiplyAll(arr) {
   // eslint-disable-next-line
   let product = 1;

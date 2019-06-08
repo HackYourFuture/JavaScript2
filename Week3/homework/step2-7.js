@@ -1,5 +1,6 @@
 'use strict';
 
+// sorry I just studied for tge test.
 const x = 9;
 function f1(val) {
   val = val + 1;
