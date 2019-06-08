@@ -1,14 +1,15 @@
 'use strict';
 
-// sorry I just studied for tge test.
-// sorry I just studied for tge test.
 // Use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
 
   // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  for (let index = 0; index < num; index++) {
+    result = result + str;
+  }
+  // console.log(str, num, result);
 
   return result;
 }
@@ -21,7 +22,12 @@ function repeatStringNumTimesWithWhile(str, num) {
   let result = '';
 
   // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  let index = 0;
+  while (index < num) {
+    result = result + str;
+    index += 1;
+  }
+  // console.log(str, num, result);
 
   return result;
 }
@@ -34,7 +40,13 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   let result = '';
 
   // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  const index = 0;
+  do {
+    result = result + str;
+     index += 1;
+  } while (index < num);
+
+  // console.log(str, num, result);
 
   return result;
 }
@@ -47,3 +59,4 @@ module.exports = {
   repeatStringNumTimesWithWhile,
   repeatStringNumTimesWithDoWhile,
 };
+
