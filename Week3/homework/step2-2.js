@@ -5,25 +5,28 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
   for (let i = startIndex; i <= stopIndex; i++) {
     numbers.push(i);
-
-    if (i % 3 === 0) {
-      threeCallback(i);
+  }
+  for (let i = 0; i < numbers.length; i++) {
+    const number = numbers[i];
+    if (number % 3 === 0) {
+      threeCallback(number);
     }
-    if (i % 5 === 0) {
-      fiveCallback(i);
+    if (number % 5 === 0) {
+      fiveCallback(number);
     }
   }
-}
+};
 
-function sayThree(number) {
-  return number;
-}
+  function sayThree(number) {
+  return `The number ${number} is divisible by 3.`;
+};
 
 function sayFive(number) {
-  return number;
-}
+  return `The number ${number} is divisible by 5.`;
+};
 
 threeFive(10, 15, sayThree, sayFive);
 
 // Do not change or remove anything below this line
 module.exports = threeFive;
+
