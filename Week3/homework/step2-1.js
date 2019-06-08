@@ -2,7 +2,6 @@
 
 function foo(func) {
   func();
-  console.log(func);
 }
 
 function bar() {

@@ -8,8 +8,6 @@ function multiplyAll(arr) {
     }
   }
 
-  console.log(arr, product);
-
   return product;
 }
 
