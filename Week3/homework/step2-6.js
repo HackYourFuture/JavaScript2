@@ -26,16 +26,16 @@ function flattenArray3d(arr) {
 }
 // under this line i added my (in my mind) function.
 // it doesn't work but it is what i can think for now.
+const flattenArr2 = [];
 function flattenArrayKd(arr) {
-  const flattenArr = [];
   arr.forEach(element => {
     if (Array.isArray(element)) {
       flattenArrayKd(element);
     } else {
-      flattenArr.push(element);
+      flattenArr2.push(element);
     }
   });
-  return flattenArr;
+  return flattenArr2;
 }
 
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
