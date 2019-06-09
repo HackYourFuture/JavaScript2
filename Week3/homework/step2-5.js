@@ -5,11 +5,9 @@ function multiplyAll(arr) {
   let product = 1;
 
   for (let x = 0; x < arr.length; x++) {
-    let innerProduct = 1;
     for (let y = 0; y < arr[x].length; y++) {
-      innerProduct = innerProduct * arr[x][y];
+      product *= arr[x][y];
     }
-    product = product * innerProduct;
   }
 
   return product;

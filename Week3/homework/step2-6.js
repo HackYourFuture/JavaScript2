@@ -1,11 +1,11 @@
 'use strict';
 
 const arr2d = [[1, 2], [3, 4], [5, 6]];
-const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+let arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]], [[9, 10], [11, 12]]];
 
 function flattenArray2d(arr) {
-  const result = arr.reduce((acc, x) => acc.concat(x));
-  return result;
+  return arr.reduce((acc, x) => acc.concat(x));
 }
 
 function flattenArray3d(arr) {

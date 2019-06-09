@@ -3,7 +3,6 @@
 function foo(func) {
   // What to do here?
   func();
-  console.log(func);
 }
 
 function bar() {
