@@ -1,14 +1,15 @@
 'use strict';
 
 function foo(func) {
-  console.log(func());
+  // What to do here?
+  func();
 }
 
-function hello() {
-  return 'Hello';
+function bar() {
+  console.log('Hello, I am bar!');
 }
 
-foo(hello);
+foo(bar);
 
 // Do not change or remove anything below this line
 module.exports = foo;

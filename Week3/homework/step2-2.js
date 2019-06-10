@@ -6,20 +6,16 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
   for (let i = 0; i <= len; i++) {
     numbers.push(i + startIndex);
-    if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
-      threeCallback(numbers[i]);
-      fiveCallback(numbers[i]);
-      // console.log('\n' + numbers[i] + ' is divisible by both 3 and 5\n');
-      // eslint-disable-next-line no-continue
-      continue;
-    }
-    if (numbers[i] % 3 === 0) {
-      threeCallback(numbers[i]);
-    }
-    if (numbers[i] % 5 === 0) {
-      fiveCallback(numbers[i]);
-    }
   }
+
+  numbers.forEach(function(element) {
+    if (element % 3 === 0) {
+      threeCallback(element);
+    }
+    if (element % 5 === 0) {
+      fiveCallback(element);
+    }
+  });
 }
 
 function sayThree(number) {
