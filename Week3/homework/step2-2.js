@@ -9,13 +9,11 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     i++;
   }
 
-  numbers.map(number => {
-    if (!(number % 3) && number % 15) {
+  numbers.forEach(number => {
+    if (number % 3 === 0) {
       threeCallback(number);
-    } else if (!(number % 5) && number % 15) {
-      fiveCallback(number);
-    } else if (!(number % 15)) {
-      threeCallback(number);
+    }
+    if (number % 5 === 0) {
       fiveCallback(number);
     }
     return number;

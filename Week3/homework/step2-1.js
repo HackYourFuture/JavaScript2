@@ -2,7 +2,7 @@
 
 function foo(func) {
   // What to do here?
-  return func();
+  func();
 }
 
 function bar() {

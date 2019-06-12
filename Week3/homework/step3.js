@@ -1,8 +1,12 @@
 'use strict';
 
-function createBase(base) {
-  return addition => base + addition;
-}
+// ES5
+// function createBase(base) {
+//   return addition => base + addition;
+// }
+
+// ES6
+const createBase = base => addition => base + addition;
 
 const addSix = createBase(6);
 
