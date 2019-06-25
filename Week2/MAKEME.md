@@ -11,6 +11,13 @@ Topics discussed this week:
 
 > [Here](/Week3/README.md) you find the readings you have to complete before the third lecture.
 
+## Step 0: JSON parsing
+1. Create an HTML file
+2. Insert a script tag that points to squirtle-sprites.js
+3. In squirtle-sprites.js, convert pokemonDataJSONString to a javascript object so you can access its properties
+4. Display the sprite images (located in the parsed object) in the HTML page. You'll need to do some DOM manipulation kinda of stuff (maybe element.appendChild?)
+*Bonus Challenge*: Can you use an array method to loop over all sprites so you don't have to manually type each?
+
 ## Step 1: More map, filter and `=>`
 
 _Deadline Wednesday_
