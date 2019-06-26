@@ -23,20 +23,29 @@ Cover individual topics that students may still be stuck on from previous lectur
     * protobufs
     * XML
     * GRPC?!
+* Cover homework question #3
 
-
-
-## Functions + JSON
-
-## Higher order functions
-## Arrow functions
-
-
-
+## Functions advanced (12-12:30pm)
+* Different ways functions can be made:
+  * function declaration vs expression
+  * arrow function 
+    * Omitting return, parameter parenthesis
+* What's a method?
+* Pure function? or side effects?
+* Example: how does a program run this? (example w/ a function, call of that function, and a console log)
+  * Call stack (stack overflow)
+* Params
+  * Extra params
+  * Default params
+* Recursion (basic example)
+* Example function 
+  * pigs example?
+  * countChar("kakkerlak", "k")? With DOM manipulation?
+* Simplicity of functions
+  * while loop from [Chapter 5](http://eloquentjavascript.net/05_higher_order.html)
+* Higher order functions
+  * repeat(n, action)
+  * greaterThan10
 
 ## Array Manipulations
-## Map and filter
-## Reduce (every?)
-
-## Discuss Homework (20mins)
-
+## Map, Filter, Reduce (others? every, some, etc)

@@ -2,21 +2,13 @@
 
 ```
 Topics discussed this week:
-• Functions + JSON/Arrays
-• Array Manipulations
 • JSON
-• Map and filter
-• Arrow functions
+• Functions advanced
+• Array Manipulations
+• Map, filter, & reduce
 ```
 
 > [Here](/Week3/README.md) you find the readings you have to complete before the third lecture.
-
-## Step 0: JSON parsing
-1. Create an HTML file
-2. Insert a script tag that points to squirtle-sprites.js
-3. In squirtle-sprites.js, convert pokemonDataJSONString to a javascript object so you can access its properties
-4. Display the sprite images (located in the parsed object) in the HTML page. You'll need to do some DOM manipulation kinda of stuff (maybe element.appendChild?)
-*Bonus Challenge*: Can you use an array method to loop over all sprites so you don't have to manually type each?
 
 ## Step 1: More map, filter and `=>`
 
@@ -146,7 +138,13 @@ If that's the case, try and fix the error. When done, run the tests again: `npm 
 
 Repeat the previous step until all (= 2 in this case) tests pass.
 
-## Step 3: ROVER
+## Step 3: JSON parsing
+
+1. Create an HTML file
+2. Insert a script tag that points to squirtle-sprites.js
+3. In squirtle-sprites.js, call fetchPokemonData() and convert the JSON string it returns to a javascript object so you can access its properties
+4. Display the sprite images (located in the parsed object) in the HTML page. You'll need to do some DOM manipulation kinda of stuff (maybe element.appendChild?)
+*Bonus Challenge*: Can you use an array method to loop over all sprites so you don't have to manually type each?
 
 Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)!
 
@@ -178,3 +176,6 @@ Go over your homework one last time:
 If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
 
 - [Handing in homework](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/homework_pr.md)
+
+### Do you have even more time?
+Read the _Eloquent Javascript_ chapters in the [Week 2 Readme](./README.md)
