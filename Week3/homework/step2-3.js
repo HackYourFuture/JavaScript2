@@ -35,7 +35,7 @@ console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 // Use a 'do...while' loop
 function repeatStringNumTimesWithDoWhile(str, num) {
   // eslint-disable-next-line prefer-const
-  let result = '';
+  let result;
   const repeatArr = [];
   let i = 0;
   do {
