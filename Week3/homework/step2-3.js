@@ -38,13 +38,15 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   let result;
   const repeatArr = [];
   let i = 0;
-  do {
-    repeatArr.push(str);
-    i++;
-  } while (i < num);
-  result = repeatArr.join('');
-  if (num <= 0) {
-    result = '';
+  if (i >= 0) {
+    do {
+      repeatArr.push(str);
+      i++;
+    } while (i < num);
+    result = repeatArr.join('');
+    if (num <= 0) {
+      result = '';
+    }
   }
 
   return result;
