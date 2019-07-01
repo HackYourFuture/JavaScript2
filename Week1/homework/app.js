@@ -14,6 +14,7 @@
   //   'lord_of_the_flies',
   // ];
 
+  // Book details object
   const bookDetails = {
     a_tale_of_two_cities: {
       title: 'A Tale of Two Cities',
@@ -77,6 +78,7 @@
     },
   };
 
+  // Book images object
   const bookImages = {
     a_tale_of_two_cities: './img/a_tale_of_two_cities.jpg',
     rogue_lawyer: './img/rogue_lawyer.jpg',
@@ -90,42 +92,44 @@
     lord_of_the_flies: './img/lord_of_the_flies.jpg',
   };
 
+  // Create img element sourcing from Book images object, returns element
   const createImgSrc = (obj, id) => {
     const imgEl = document.createElement('img');
     imgEl.setAttribute('src', obj[id]);
     return imgEl;
   };
 
+  // Create Book List
   const createBookList = obj => {
     const ul = document.createElement('ul');
     Object.keys(obj).forEach(item => {
       const li = document.createElement('li');
       li.setAttribute('id', item);
-
+      // Create and append book name heading
       const bookName = document.createElement('h3');
       bookName.classList.add('book-name');
       li.appendChild(bookName);
       bookName.innerText = obj[item].title;
-
+      // Create and append author name span element
       const authorName = document.createElement('span');
       authorName.classList.add('author-name');
       li.appendChild(authorName);
       authorName.innerText = obj[item].author;
-
+      // Create and append published span element
       const published = document.createElement('span');
       published.classList.add('published');
       li.appendChild(published);
       published.innerText = `(${obj[item].published})`;
-
+      // Create and append img element and set alt attribute
       const bookImage = createImgSrc(bookImages, item);
       bookImage.setAttribute('alt', obj[item].title);
       li.insertBefore(bookImage, bookName);
-
+      // Add child li to parent ul
       ul.appendChild(li);
     });
 
     const bookListContainer = document.getElementById('bookList');
-    bookListContainer.prepend(ul);
+    bookListContainer.appendChild(ul);
   };
 
   createBookList(bookDetails);
