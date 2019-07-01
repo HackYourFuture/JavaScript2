@@ -92,6 +92,8 @@
     lord_of_the_flies: './img/lord_of_the_flies.jpg',
   };
 
+  const getBookListContainer = () => document.getElementById('bookList');
+
   // Create img element sourcing from Book images object, returns element
   const createImgSrc = (obj, id) => {
     const imgEl = document.createElement('img');
@@ -128,7 +130,7 @@
       ul.appendChild(li);
     });
 
-    const bookListContainer = document.getElementById('bookList');
+    const bookListContainer = getBookListContainer();
     bookListContainer.appendChild(ul);
   };
 
