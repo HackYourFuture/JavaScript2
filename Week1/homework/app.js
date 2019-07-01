@@ -1,6 +1,7 @@
 'use strict';
 
 {
+  // Commented out because never used
   // const bookTitles = [
   //   'a_tale_of_two_cities',
   //   'rogue_lawyer',
@@ -94,33 +95,38 @@
 
   const getBookListContainer = () => document.getElementById('bookList');
 
-  // Create img element sourcing from Book images object, returns element
+  // Creates img element sourcing from Book images object, returns element
   const createImgSrc = (obj, id) => {
     const imgEl = document.createElement('img');
     imgEl.setAttribute('src', obj[id]);
     return imgEl;
   };
 
-  // Create Book List
+  // Creates and appends element(string) to a specific parent(Node)
+  const createAppendElement = (element, parent) => {
+    const el = document.createElement(element);
+    parent.appendChild(el);
+    return el;
+  };
+
+  // Creates Book List UL
   const createBookList = obj => {
     const ul = document.createElement('ul');
+
     Object.keys(obj).forEach(item => {
       const li = document.createElement('li');
       li.setAttribute('id', item);
       // Create and append book name heading
-      const bookName = document.createElement('h3');
+      const bookName = createAppendElement('h3', li);
       bookName.classList.add('book-name');
-      li.appendChild(bookName);
       bookName.innerText = obj[item].title;
       // Create and append author name span element
-      const authorName = document.createElement('span');
+      const authorName = createAppendElement('span', li);
       authorName.classList.add('author-name');
-      li.appendChild(authorName);
       authorName.innerText = obj[item].author;
       // Create and append published span element
-      const published = document.createElement('span');
+      const published = createAppendElement('span', li);
       published.classList.add('published');
-      li.appendChild(published);
       published.innerText = `(${obj[item].published})`;
       // Create and append img element and set alt attribute
       const bookImage = createImgSrc(bookImages, item);
