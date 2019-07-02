@@ -2,7 +2,6 @@
 
 
 const booksTitles = [
-    // I keep this array here as a reference
     'still_me',
     'the_outsider',
     'the_great_alone',
@@ -20,7 +19,7 @@ const booksFullInfo = {
     the_great_alone: { title: "The Great Alone", writer: "Kristin Hannah", category: "HISTORICAL FICTION", price: 15.83 },
     circe: { title: "Circe", writer: "Madeline Miller", category: "FANTASY", price: 14.82 },
     the_hate_u_give: { title: "The Hate U Give", writer: "Angie Thomas", category: "ROMANCE", price: 10.43 },
-    the_kiss_quotient: { title: "The Kiss Quotient", writer: "Helen Hoang", category: "ROMANCE", price: 0.20 },
+    the_kiss_quotient: { title: "The Kiss Quotient", writer: "Helen Hoang", category: "ROMANCE", price: 10.20 },
     vengeful: { title: "Vengeful", writer: "V.E. Schwab", category: "SCIENCE FICTION", price: 14.27 },
     elevation: { title: "Elevation", writer: "Stephen King, Mark Edward Geyer ", category: "HORROR", price: 13.96 },
     the_last_black_unicorn: { title: "The Last Black Unicorn", writer: "Tiffany Haddish", category: "HUMOR", price: 14.86 },
@@ -68,15 +67,19 @@ const injectListBooksFullInfo = () => {
     let listContainer = document.getElementById('books_object');
     let ul = document.createElement('ul');
     listContainer.appendChild(ul);
+    ul.setAttribute("class", "books_container");
     booksTitles.forEach(element => {
         let li = document.createElement('li');
         ul.appendChild(li);
+        li.setAttribute("class", "single_book_item");
         let bookTitle = booksFullInfo[element].title;
         let bookWriter = booksFullInfo[element].writer;
         let bookCategory = booksFullInfo[element].category;
         let bookPrice = booksFullInfo[element].price;
         let bookCover = booksCovers[element];
-        li.innerHTML = `<h3>${bookTitle}</h3> <p>By: ${bookWriter}.<br />Category: ${bookCategory}<br /> Price: $${bookPrice}</p> <img src="${bookCover}" alt="cover photo of the book: ${bookTitle}">`;
+        li.innerHTML = `<h3>${bookTitle}</h3> \ 
+        <img src="${bookCover}" alt="cover photo of the book: ${bookTitle}"> \
+         <p><span class="orange_text">By: </span>${bookWriter}.<br /><span class="orange_text">Category: </span>${bookCategory}<br /> <span class="orange_text">Price:</span> $ ${bookPrice}</p> `;
     });
 };
 window.addEventListener("load", injectListBooksFullInfo);

@@ -1,1 +1,137 @@
-/* add your styling here */
+/*Styling step 1: general styling and sittings*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #feb236;
+}
+
+section {
+    background-color: #e6cbad;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+p {
+    padding: 12px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    padding: 2px;
+}
+
+h1 {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #ff7b25;
+    animation-name: colored-underline;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    color: #ff7b25;
+}
+
+h3 {
+    background-color: #feb236;
+}
+
+.orange_text {
+    color: #feb236;
+    font-weight: bold;
+}
+
+
+/*----*****Finished: step 1 *****----*/
+
+
+/*Styling step 2: girds layout basic styling and sittings*/
+
+.books_container {
+    padding: 5px;
+    background-color: #e6cbad;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single_book_item {
+    background-color: white;
+    border: 5px solid #e6cbad;
+    border-radius: 15px;
+}
+
+.single_book_item>p {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-top: 1px solid #feb236;
+    border-bottom: 1px solid #feb236;
+}
+
+
+/*----*****Finished: step 2 *****----*/
+
+
+/*Styling step 3: making the style and layout complete 
+depending on media queries*/
+
+
+/*For mobile phones: 2 columns layout.*/
+
+@media only screen and (max-width: 600px) {
+    /*To make a kind of row and 
+  divide the place in it equally on 2 elements*/
+    .books_container>.single_book_item {
+        width: calc(100% / 2);
+    }
+}
+
+
+/*For tablets:  3 columns layout.*/
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /*To make a kind of row and 
+  divide the place in it equally on 3 elements*/
+    .books_container>.single_book_item {
+        width: calc(100% / 3);
+    }
+}
+
+
+/*For desktop: 4 columns layout.*/
+
+@media only screen and (min-width: 769px) {
+    /*To make a kind of row and 
+  divide the place in it equally on 4 elements*/
+    .books_container>.single_book_item {
+        width: calc(100% / 4);
+    }
+}
+
+
+/*----*****Finished: step 3*****----*/
+
+
+/*The format of the CSS code in this file is made automatically by: Visual Studio Code extension.
+so please let me know if it is not good to use such a kind of extension*/
