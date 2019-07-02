@@ -44,9 +44,10 @@ const booksCovers = {
 // Replace with your own code
 // console.log(bookTitles.length + " books Titles: \n" + bookTitles);
 const injectListBooksTitles = () => {
-    let lisContainer = document.getElementById('books_array');
+    let listContainer = document.getElementById('books_array');
+    listContainer.style.display = "none";
     let ul = document.createElement('ul');
-    lisContainer.appendChild(ul);
+    listContainer.appendChild(ul);
     booksTitles.forEach(element => {
         let li = document.createElement('li');
         ul.appendChild(li);
@@ -55,10 +56,18 @@ const injectListBooksTitles = () => {
         li.textContent = titleFirstCapital;
     });
 };
+const hideListBooksTitles = () => {
+    document.getElementById('books_array').style.display = "none";
+
+};
+const showListBooksTitles = () => {
+    document.getElementById('books_array').style.display = "block";
+
+};
 const injectListBooksFullInfo = () => {
-    let lisContainer = document.getElementById('books_object');
+    let listContainer = document.getElementById('books_object');
     let ul = document.createElement('ul');
-    lisContainer.appendChild(ul);
+    listContainer.appendChild(ul);
     booksTitles.forEach(element => {
         let li = document.createElement('li');
         ul.appendChild(li);
@@ -70,3 +79,7 @@ const injectListBooksFullInfo = () => {
         li.innerHTML = `<h3>${bookTitle}</h3> <p>By: ${bookWriter}.<br />Category: ${bookCategory}<br /> Price: $${bookPrice}</p> <img src="${bookCover}" alt="cover photo of the book: ${bookTitle}">`;
     });
 };
+window.addEventListener("load", injectListBooksFullInfo);
+window.addEventListener("load", injectListBooksTitles);
+document.getElementById("show_books_array").addEventListener("click", showListBooksTitles);
+document.getElementById("hide_books_array").addEventListener("click", hideListBooksTitles);
