@@ -1,1 +1,175 @@
-/* add your styling here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4f3a65;
+  background-image: url('https://www.transparenttextures.com/patterns/sandpaper.png');
+  background-attachment: fixed;
+}
+
+.book-list {
+  display: flex;
+  align-items: center;
+  margin: 2rem 5rem;
+  padding: 2rem 5rem;
+  border: 5px solid #4f3a65;
+  background-color: #dff0ea83;
+  height: 25rem;
+  -webkit-box-shadow: 0px 0px 50px 0px #000000;
+  box-shadow: 0px 0px 50px 0px #00000070;
+  border-radius: 9px 92px 92px 9px;
+  -moz-border-radius: 9px 92px 92px 9px;
+  -webkit-border-radius: 9px 92px 92px 9px;
+  transition: 0.25s all;
+}
+
+.book-list:hover {
+  background-color: #614ad385;
+  border: 5px solid #f1f0d1;
+}
+
+.book-list:hover .book {
+  background-color: #f2f4f6;
+}
+
+.book-list:hover .cover {
+  background-color: #f1f0d1d3;
+  transform: scale(1) translateX(50%);
+  border-radius: 1rem;
+}
+
+.book-list:hover .title,
+.book-list:hover .author {
+  text-transform: uppercase;
+}
+
+.book {
+  margin: 1rem;
+  margin-left: 8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 70%;
+  height: 100%;
+  justify-content: space-around;
+  color: #4f3a65;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  transition: 0.25s all;
+}
+
+.list {
+  list-style-type: none;
+  font-family: Verdana, sans-serif;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  background-color: #ffffff;
+}
+
+.author {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.language {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #e42c64;
+}
+
+.cover {
+  border: 2px solid #17223b;
+  height: 20rem;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+  -webkit-box-shadow: 0px 0px 50px 0px #000000;
+  box-shadow: 0px 0px 50px 0px #00000070;
+}
+
+@media (max-width: 1120px) {
+  .book-list {
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 2rem;
+    height: 20rem;
+  }
+
+  .book,
+  .book-cover {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .book {
+    padding-left: 5rem;
+    flex-basis: 50%;
+  }
+
+  .cover {
+    height: 19.6rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .book-list:hover .cover {
+    transform: scale(1) translateX(30%);
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 715px) {
+  .book-list {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 2rem;
+    height: 33rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  .language {
+    font-size: 1rem;
+  }
+
+  .book {
+    margin: 0;
+    padding: 0;
+    flex-basis: 25%;
+    width: 14.8rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .book-list:hover .cover {
+    transform: scale(1) translateY(12%);
+    border-radius: 1rem;
+    z-index: -1;
+  }
+
+  .book-list:hover .book {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 2px solid #17223b;
+  }
+}
