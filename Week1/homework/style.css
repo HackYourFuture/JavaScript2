@@ -1,1 +1,68 @@
 /* add your styling here */
+
+* {
+    box-sizing: border-box;
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    padding: 8px 0;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 30px;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+
+
+.main-book {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0;
+}
+
+.book-info {
+    flex-grow: 3;
+    flex-basis: 400px;
+    position: relative;
+    height: 400;
+    padding: 20px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.book-info:nth-child(even) {
+    background-color: #000;
+    color: #fff;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    opacity: 0;
+    transition: opacity .25s;
+}
+p, h1 {
+    opacity: 1;
+    transition: opacity .24s;
+}
+
+.book-info:hover img {
+    opacity: 1;
+}
+
+.book-info:hover p,.book-info:hover h1 {
+    opacity: 0;
+}
+
+
+.book-info:nth-last-child(1) {
+    flex-grow: inherit;
+    flex-basis: calc(100% / 3);
+}
