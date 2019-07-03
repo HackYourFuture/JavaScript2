@@ -145,7 +145,8 @@ const addCovers = bookCovers => {
     //creating img element and set its attributes and append
     const imgCoverEl = document.createElement('img');
     imgCoverEl.setAttribute('src', coverPath);
-    imgCoverEl.setAttribute('alt', coverID.replace(/_/g, ' ') + ' book cover');
+    imgCoverEl.setAttribute('alt', books[coverID].title);
+    // imgCoverEl.setAttribute('alt', coverID.replace(/_/g, ' ') + ' book cover');
     imgCoverEl.classList.add('cover');
     ul.append(imgCoverEl);
   });
