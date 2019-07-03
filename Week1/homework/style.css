@@ -54,11 +54,6 @@ h3 {
     background-color: #feb236;
 }
 
-.orange_text {
-    color: #feb236;
-    font-weight: bold;
-}
-
 
 /*----*****Finished: step 1 *****----*/
 
@@ -87,6 +82,11 @@ h3 {
     margin-bottom: 10px;
     border-top: 1px solid #feb236;
     border-bottom: 1px solid #feb236;
+}
+
+.single_book_item>p>span {
+    color: #feb236;
+    font-weight: bold;
 }
 
 
@@ -131,7 +131,3 @@ depending on media queries*/
 
 
 /*----*****Finished: step 3*****----*/
-
-
-/*The format of the CSS code in this file is made automatically by: Visual Studio Code extension.
-so please let me know if it is not good to use such a kind of extension*/

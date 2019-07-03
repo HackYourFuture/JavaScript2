@@ -1,6 +1,5 @@
 'use strict';
 
-
 const booksTitles = [
     'still_me',
     'the_outsider',
@@ -14,64 +13,111 @@ const booksTitles = [
     'i_will_be_gone_in_the_dark',
 ];
 const booksFullInfo = {
-    still_me: { title: "Still Me", writer: "Jojo Moyes", category: "FICTION", price: 11.40 },
-    the_outsider: { title: "The Outsider", writer: "Stephen King", category: "MYSTERY, THRILLER", price: 17.17 },
-    the_great_alone: { title: "The Great Alone", writer: "Kristin Hannah", category: "HISTORICAL FICTION", price: 15.83 },
-    circe: { title: "Circe", writer: "Madeline Miller", category: "FANTASY", price: 14.82 },
-    the_hate_u_give: { title: "The Hate U Give", writer: "Angie Thomas", category: "ROMANCE", price: 10.43 },
-    the_kiss_quotient: { title: "The Kiss Quotient", writer: "Helen Hoang", category: "ROMANCE", price: 10.20 },
-    vengeful: { title: "Vengeful", writer: "V.E. Schwab", category: "SCIENCE FICTION", price: 14.27 },
-    elevation: { title: "Elevation", writer: "Stephen King, Mark Edward Geyer ", category: "HORROR", price: 13.96 },
-    the_last_black_unicorn: { title: "The Last Black Unicorn", writer: "Tiffany Haddish", category: "HUMOR", price: 14.86 },
-    i_will_be_gone_in_the_dark: { title: "I'll Be Gone in the Dark: One Woman's Obsessive Search for the Golden State Killer", writer: "Michelle McNamara,  Gillian Flynn, Patton Oswalt", category: "NONFICTION", price: 10.21 },
+    still_me: {
+        title: 'Still Me',
+        writer: 'Jojo Moyes',
+        category: 'FICTION',
+        price: 11.4
+    },
+    the_outsider: {
+        title: 'The Outsider',
+        writer: 'Stephen King',
+        category: 'MYSTERY, THRILLER',
+        price: 17.17,
+    },
+    the_great_alone: {
+        title: 'The Great Alone',
+        writer: 'Kristin Hannah',
+        category: 'HISTORICAL FICTION',
+        price: 15.83,
+    },
+    circe: {
+        title: 'Circe',
+        writer: 'Madeline Miller',
+        category: 'FANTASY',
+        price: 14.82
+    },
+    the_hate_u_give: {
+        title: 'The Hate U Give',
+        writer: 'Angie Thomas',
+        category: 'ROMANCE',
+        price: 10.43,
+    },
+    the_kiss_quotient: {
+        title: 'The Kiss Quotient',
+        writer: 'Helen Hoang',
+        category: 'ROMANCE',
+        price: 10.2,
+    },
+    vengeful: {
+        title: 'Vengeful',
+        writer: 'V.E. Schwab',
+        category: 'SCIENCE FICTION',
+        price: 14.27
+    },
+    elevation: {
+        title: 'Elevation',
+        writer: 'Stephen King, Mark Edward Geyer ',
+        category: 'HORROR',
+        price: 13.96,
+    },
+    the_last_black_unicorn: {
+        title: 'The Last Black Unicorn',
+        writer: 'Tiffany Haddish',
+        category: 'HUMOR',
+        price: 14.86,
+    },
+    i_will_be_gone_in_the_dark: {
+        title: "I'll Be Gone in the Dark: One Woman's Obsessive Search for the Golden State Killer",
+        writer: 'Michelle McNamara,  Gillian Flynn, Patton Oswalt',
+        category: 'NONFICTION',
+        price: 10.21,
+    },
 };
 
 const booksCovers = {
-    still_me: "images/still_me.jpg",
-    the_outsider: "images/the_outsider.jpg",
-    the_great_alone: "images/the_great_alone.jpg",
-    circe: "images/circe.jpg",
-    the_hate_u_give: "images/the_hate_u_give.jpg",
-    the_kiss_quotient: "images/the_kiss_quotient.jpg",
-    vengeful: "images/vengeful.jpg",
-    elevation: "images/elevation.jpg",
-    the_last_black_unicorn: "images/the_last_black_unicorn.jpg",
-    i_will_be_gone_in_the_dark: "images/i_will_be_gone_in_the_dark.jpg",
+    still_me: 'images/still_me.jpg',
+    the_outsider: 'images/the_outsider.jpg',
+    the_great_alone: 'images/the_great_alone.jpg',
+    circe: 'images/circe.jpg',
+    the_hate_u_give: 'images/the_hate_u_give.jpg',
+    the_kiss_quotient: 'images/the_kiss_quotient.jpg',
+    vengeful: 'images/vengeful.jpg',
+    elevation: 'images/elevation.jpg',
+    the_last_black_unicorn: 'images/the_last_black_unicorn.jpg',
+    i_will_be_gone_in_the_dark: 'images/i_will_be_gone_in_the_dark.jpg',
 };
 
-
-// Replace with your own code
 // console.log(bookTitles.length + " books Titles: \n" + bookTitles);
 const injectListBooksTitles = () => {
     let listContainer = document.getElementById('books_array');
-    listContainer.style.display = "none";
+    listContainer.style.display = 'none';
     let ul = document.createElement('ul');
     listContainer.appendChild(ul);
     booksTitles.forEach(element => {
         let li = document.createElement('li');
         ul.appendChild(li);
-        let titleNoUnderScore = element.replace(/_/g, " ");
-        let titleFirstCapital = titleNoUnderScore.charAt(0).toUpperCase() + titleNoUnderScore.slice(1);
+        let titleNoUnderScore = element.replace(/_/g, ' ');
+        let titleFirstCapital =
+            titleNoUnderScore.charAt(0).toUpperCase() + titleNoUnderScore.slice(1);
         li.textContent = titleFirstCapital;
     });
 };
-const hideListBooksTitles = () => {
-    document.getElementById('books_array').style.display = "none";
-
-};
 const showListBooksTitles = () => {
-    document.getElementById('books_array').style.display = "block";
-
+    document.getElementById('books_array').style.display = 'block';
+};
+const hideListBooksTitles = () => {
+    document.getElementById('books_array').style.display = 'none';
 };
 const injectListBooksFullInfo = () => {
     let listContainer = document.getElementById('books_object');
     let ul = document.createElement('ul');
     listContainer.appendChild(ul);
-    ul.setAttribute("class", "books_container");
+    ul.setAttribute('class', 'books_container');
     booksTitles.forEach(element => {
         let li = document.createElement('li');
         ul.appendChild(li);
-        li.setAttribute("class", "single_book_item");
+        li.setAttribute('class', 'single_book_item');
         let bookTitle = booksFullInfo[element].title;
         let bookWriter = booksFullInfo[element].writer;
         let bookCategory = booksFullInfo[element].category;
@@ -79,10 +125,10 @@ const injectListBooksFullInfo = () => {
         let bookCover = booksCovers[element];
         li.innerHTML = `<h3>${bookTitle}</h3> \ 
         <img src="${bookCover}" alt="cover photo of the book: ${bookTitle}"> \
-         <p><span class="orange_text">By: </span>${bookWriter}.<br /><span class="orange_text">Category: </span>${bookCategory}<br /> <span class="orange_text">Price:</span> $ ${bookPrice}</p> `;
+         <p><span>By: </span>${bookWriter}.<br /><span>Category: </span>${bookCategory}<br /><span>Price:</span> $ ${bookPrice}</p> `;
     });
 };
-window.addEventListener("load", injectListBooksFullInfo);
-window.addEventListener("load", injectListBooksTitles);
-document.getElementById("show_books_array").addEventListener("click", showListBooksTitles);
-document.getElementById("hide_books_array").addEventListener("click", hideListBooksTitles);
+window.addEventListener('load', injectListBooksFullInfo);
+window.addEventListener('load', injectListBooksTitles);
+document.getElementById('show_books_array').addEventListener('click', showListBooksTitles);
+document.getElementById('hide_books_array').addEventListener('click', hideListBooksTitles);
