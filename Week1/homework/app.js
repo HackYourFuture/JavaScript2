@@ -103,8 +103,15 @@ const injectListBooksTitles = () => {
         li.textContent = titleFirstCapital;
     });
 };
-const showListBooksTitles = () => {
-    document.getElementById('books_array').style.display = 'block';
+const ListBooksTitles = () => {
+    let checkButton = document.getElementById('books_array').style.display;
+    if (checkButton == 'block') {
+        document.getElementById('books_array').style.display = 'none';
+        document.getElementById('btn_books_array').textContent = "Show Array list";
+    } else {
+        document.getElementById('books_array').style.display = 'block';
+        document.getElementById('btn_books_array').textContent = "Hide Array list";
+    }
 };
 const hideListBooksTitles = () => {
     document.getElementById('books_array').style.display = 'none';
@@ -130,5 +137,4 @@ const injectListBooksFullInfo = () => {
 };
 window.addEventListener('load', injectListBooksFullInfo);
 window.addEventListener('load', injectListBooksTitles);
-document.getElementById('show_books_array').addEventListener('click', showListBooksTitles);
-document.getElementById('hide_books_array').addEventListener('click', hideListBooksTitles);
+document.getElementById('btn_books_array').addEventListener('click', ListBooksTitles);
