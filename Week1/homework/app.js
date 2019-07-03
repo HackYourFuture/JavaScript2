@@ -134,7 +134,7 @@ const listBooksInDetail = bookList => {
   });
 };
 ///create an image element for the book
-const addCovers = bookCovers => {
+const addCovers = (bookCovers, bookObj) => {
   Object.entries(bookCovers).forEach(cover => {
     const coverID = cover[0];
     const coverPath = cover[1];
@@ -145,7 +145,7 @@ const addCovers = bookCovers => {
     //creating img element and set its attributes and append
     const imgCoverEl = document.createElement('img');
     imgCoverEl.setAttribute('src', coverPath);
-    imgCoverEl.setAttribute('alt', books[coverID].title);
+    imgCoverEl.setAttribute('alt', bookObj[coverID].title);
     // imgCoverEl.setAttribute('alt', coverID.replace(/_/g, ' ') + ' book cover');
     imgCoverEl.classList.add('cover');
     ul.append(imgCoverEl);
@@ -153,4 +153,4 @@ const addCovers = bookCovers => {
 };
 
 listBooksInDetail(books);
-addCovers(covers);
+addCovers(covers, books);
