@@ -1,0 +1,27 @@
+body {
+  background-image: url(img/background/background-paper.jpg);
+  background-repeat: repeat-y;
+  font-family: 'Crete Round', serif;
+  margin: 0px 90px;
+}
+
+ul li {
+  font-size: 64px;
+  list-style-type: none;
+}
+
+ul li:hover {
+  text-decoration: underline;
+}
+
+a {
+  display: block;
+}
+
+.images {
+  width: 200px;
+  height: 300px;
+  border: 1px solid rgb(121, 69, 10);
+  margin: 5px;
+  display: block;
+}
