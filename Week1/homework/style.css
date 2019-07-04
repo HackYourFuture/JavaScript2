@@ -1,1 +1,118 @@
-/* add your styling here */
+body {
+  font-family: 'Trebuchet MS', Trebuchet, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0 50px;
+}
+
+@font-face {
+  font-family: 'Marriage moment';
+  src: url('fonts/marriage_moment/MarriageMomentPersonalUse.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Genghis khan';
+  src: url('fonts/genghis-khan/GenghisKhan.otf');
+  letter-spacing: 1em;
+}
+
+@font-face {
+  font-family: 'Schaeffer';
+  src: url('fonts/Schaeffer.ttf');
+}
+
+div {
+  background-color: rgba(255, 192, 203, 0.212);
+  padding: 0.5em 2.5em;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 25px;
+  border-radius: 7%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(43, 42, 42);
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-family: 'Schaeffer';
+  text-align: center;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-family: 'Genghis khan';
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h3.authorname {
+  font-size: 1.9rem;
+  font-family: 'Marriage moment';
+  float: left;
+  display: block;
+  padding: 30px 40px;
+  min-width: 200px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h3 {
+  font-family: 'Genghis khan';
+  padding-top: 10px;
+}
+
+p {
+  text-align: justify;
+  text-align-last: left;
+  font-size: 18px;
+  padding-top: 10px;
+  font-style: italic;
+}
+
+#coverList ul {
+  background-color: rgb(255, 255, 255);
+  display: block;
+}
+
+#coverList li {
+  background-color: rgb(43, 42, 42);
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Genghis khan';
+  font-size: 20px;
+  padding: 10px;
+}
