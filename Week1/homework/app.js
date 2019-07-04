@@ -107,7 +107,6 @@
     lust_life:
       'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348532272i/79834.jpg',
   };
-
   function makeList() {
     const body = window.document.getElementById('body');
     const ul = window.document.createElement('ul');
@@ -116,6 +115,7 @@
     // console.log(bookCover[item]);
 
     for (const item in bookInfo) {
+      if ({}.hasOwnProperty.call(bookInfo, item)){
       const li = window.document.createElement('li');
       const image = window.document.createElement('img');
       image.setAttribute('src', bookCover[item]);
@@ -144,8 +144,9 @@
       // h4Language.innerHTML = "Language:" + bookInfo[item].language;
       // li.appendChild(h4Language);
     }
+    
     body.appendChild(ul);
   }
-
+}
   window.onload = () => makeList();
 }
