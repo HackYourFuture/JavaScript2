@@ -1,1 +1,39 @@
 /* add your styling here */
+body {
+  font-family: Serif, Helvetica;
+  width: 100%;
+  background-color: rgb(211, 212, 211);
+}
+
+h4,
+h3 {
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  text-shadow: 5px 5px 5px rgba(41, 3, 3, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(5, 9, 100);
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+
+}
+
+img {
+  display: block;
+  width: 25%;
+  height: auto;
+  background-color: rgb(165, 168, 166, 0.7);
+  margin: 5% auto 5px auto;
+  padding: 3%;
+  box-shadow: 3px 4px 3px rgba(43, 10, 33, 0.2);
+}
