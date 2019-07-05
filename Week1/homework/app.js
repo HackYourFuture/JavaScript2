@@ -1,11 +1,11 @@
 'use strict';
 
-// 1.1 Open the apps.js and start by declaring an array that contains 10 strings. 
+// 1-1 Open the apps.js and start by declaring an array that contains 10 strings 
 // These strings should be of book titles you have read (or made up) and be lowercase 
-// without spaces so that you can use these later as HTML id attributes. 
-// (Example: Harry Potter's - The Chamber of Secrets -> harry_potter_chamber_secrets). 
-// Add a console.log statement to output this array to console. 
-// (This is for debugging and making sure everything is in order.
+// without spaces so that you can use these later as HTML id attributes
+// (Example: Harry Potter's - The Chamber of Secrets -> harry_potter_chamber_secrets)
+// Add a console.log statement to output this array to console 
+// (This is for debugging and making sure everything is in order
 // Delete it later when you're done :))
 
 {
@@ -29,7 +29,7 @@
   // I set the array elements which are string as a text content for li element using textContent property.
   // I append all li elements to the ul by using append method to add a node to the given parent node parent.appendChild(child).
   // For loop will loop as long as the condition is true.
-  const createList = (ul) => {
+  const createList = (ul => {
     for (let i = 0; i < bookTitles.length; i++) {
      const list = document.createElement('li');
       list.textContent = bookTitles[i]; 
@@ -46,9 +46,6 @@
 
   generateUl();
 
-
-
-
   // I created books object which, includes 10 properties, and each property's value is 
   //another object nested inside books object, inside that object I have four keys and values:
   // Here I wanted to create a constructor function! But I didn't want to get out of question context.  
@@ -56,6 +53,7 @@
   // title of the book.
   // the name of the author.
   // book's language.
+  
   const books = {
     'the-da-vinci-code': {
       title: 'The Da Vinci Code',
