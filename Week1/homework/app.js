@@ -1,3 +1,10 @@
+/* eslint-disable strict */
+/* eslint-disable quote-props */
+/* eslint-disable guard-for-in */
+/* eslint-disable no-lone-blocks */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-undef */
+
 'use strict';
 
 {
@@ -28,8 +35,6 @@
   //   }
   // };
   // document.getElementById('renderList').appendChild(ul);
-
-
 
   // 1.4
 
@@ -188,7 +193,6 @@
     },
   };
 
-
   const ul1 = document.createElement('ul');
 
   // 1.5
@@ -213,14 +217,13 @@
       const authorGender = myBooks[key].author.gender;
 
       // if gender is female then return she
-      const genderFinder = person => {
+      const genderFinder = (person) => {
         if (person === 'female') {
           return 'she';
         } {
           return 'he';
         }
       };
-
 
       author.innerHTML = `by ${authorName}`;
       li.appendChild(author);
@@ -259,7 +262,7 @@
     'Great Expectations': './images/great_expectations.jpg',
     'Crime and Punishment': './images/crime_and_punishment.jpeg',
     'Moby Dick': './images/moby_dick.jpg',
-    "Hamlet": './images/hamlet.jpg',
+    'Hamlet': './images/hamlet.jpg',
     'Madame Bovary': './images/madame_bovary.jpg',
     'Jane Eyre': './images/jane_eyre.jpg',
     'Pride and Prejudice': './images/pride_and_prejudice.jpg',
@@ -284,13 +287,11 @@
       ul2.appendChild(image);
       // Add button
       const btn = document.createElement('button');
-      btn.innerHTML = `Add to cart`;
+      btn.innerHTML = 'Add to cart';
       ul2.appendChild(btn);
     }
     document.getElementById('coverList').appendChild(ul2);
   };
-
-
 
   const main = () => {
     // createList();
