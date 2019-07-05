@@ -29,7 +29,7 @@
   // I set the array elements which are string as a text content for li element using textContent property.
   // I append all li elements to the ul by using append method to add a node to the given parent node parent.appendChild(child).
   // For loop will loop as long as the condition is true.
-  const createList = (ul => {
+  const createList = ul => {
     for (let i = 0; i < bookTitles.length; i++) {
      const list = document.createElement('li');
       list.textContent = bookTitles[i]; 
