@@ -8,6 +8,14 @@ body {
     background-color: #feb236;
 }
 
+header {
+    margin: 10px;
+}
+
+header ul {
+    margin-top: 8px;
+}
+
 section {
     background-color: #e6cbad;
     padding: 5px;

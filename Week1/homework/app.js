@@ -92,7 +92,6 @@ const booksCovers = {
 const injectListBooksTitles = () => {
     const listContainer = document.getElementById('books_array');
     listContainer.style.display = 'none';
-    listContainer.innerHTML = '<br />';
     const ul = document.createElement('ul');
     listContainer.appendChild(ul);
     booksTitles.forEach(element => {
@@ -103,8 +102,6 @@ const injectListBooksTitles = () => {
             titleNoUnderScore.charAt(0).toUpperCase() + titleNoUnderScore.slice(1);
         li.textContent = titleFirstCapital;
     });
-    const breakLine = document.createElement('BR');
-    listContainer.appendChild(breakLine);
 };
 const ListBooksTitles = () => {
     const checkButton = document.getElementById('books_array').style.display;
