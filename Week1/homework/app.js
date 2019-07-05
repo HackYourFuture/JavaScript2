@@ -37,7 +37,7 @@
     }
     
     console.log(ul);
-  };
+  }
 // This function will generate ul element
   const generateUl = () =>{
     const ul = document.createElement('ul');
