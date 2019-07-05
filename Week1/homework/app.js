@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-undef */
 
-// 'use strict';
+'use strict';
 
 // 1.1
 // const bookTitles = [
