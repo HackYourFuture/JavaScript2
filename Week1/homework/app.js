@@ -34,7 +34,7 @@
      const list = document.createElement('li');
       list.textContent = bookTitles[i]; 
       ul.appendChild(list);
-    } 
+    }
     console.log(ul);
   };
 // This function will generate ul element
@@ -163,4 +163,3 @@
 
  listOfBooks(books);
 }
-
