@@ -1,10 +1,10 @@
 'use strict';
 
-// 1-1 Open the apps.js and start by declaring an array that contains 10 strings 
+// 1-1 Open the appsjs and start by declaring an array that contains 10 strings 
 // These strings should be of book titles you have read (or made up) and be lowercase 
 // without spaces so that you can use these later as HTML id attributes
 // (Example: Harry Potter's - The Chamber of Secrets -> harry_potter_chamber_secrets)
-// Add a console.log statement to output this array to console 
+// Add a console log statement to output this array to console 
 // (This is for debugging and making sure everything is in order
 // Delete it later when you're done :))
 
@@ -20,11 +20,11 @@
     'harry-potter-and-the-goblet-of-fire',
     'the-book-thief',
     'angels-and-demons',
-    'harry-potter-and-the-order-of-the-phoenix'
+    'harry-potter-and-the-order-of-the-phoenix',
   ];
 
   // I have two functions, one to create a li items, and the second is to create ul element which is the parent of li
-  // I used for loop to loop through the array items, inside for loop I generate a list item  
+  // I used for loop to loop through the array items inside for loop I generate a list item  
   // I used document.createElement() method to create the HTML element,  which takes one parameter (tagName).
   // I set the array elements which are string as a text content for li element using textContent property.
   // I append all li elements to the ul by using append method to add a node to the given parent node parent.appendChild(child).
@@ -46,7 +46,7 @@
   generateUl();
 
   // I created books object which, includes 10 properties, and each property's value is 
-  //another object nested inside books object, inside that object I have four keys and values:
+  // another object nested inside books object, inside that object I have four keys and values
   // Here I wanted to create a constructor function! But I didn't want to get out of question context.  
   // cover: link to the photo alls sources from wikipedia.
   // title of the book.
@@ -76,7 +76,7 @@
       title: 'The Lord of the Rings',
       cover: 'https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif',
       language: 'English',
-      author: 'By J. R. R. Tolkien'
+      author: 'By J. R. R. Tolkien',
     },
     'the-hobbit': {
       title: 'The Hobbit',
