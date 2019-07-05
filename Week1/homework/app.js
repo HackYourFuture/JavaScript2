@@ -90,21 +90,24 @@ const booksCovers = {
 
 // console.log(bookTitles.length + " books Titles: \n" + bookTitles);
 const injectListBooksTitles = () => {
-    let listContainer = document.getElementById('books_array');
+    const listContainer = document.getElementById('books_array');
     listContainer.style.display = 'none';
-    let ul = document.createElement('ul');
+    listContainer.innerHTML = '<br />';
+    const ul = document.createElement('ul');
     listContainer.appendChild(ul);
     booksTitles.forEach(element => {
-        let li = document.createElement('li');
+        const li = document.createElement('li');
         ul.appendChild(li);
-        let titleNoUnderScore = element.replace(/_/g, ' ');
-        let titleFirstCapital =
+        const titleNoUnderScore = element.replace(/_/g, ' ');
+        const titleFirstCapital =
             titleNoUnderScore.charAt(0).toUpperCase() + titleNoUnderScore.slice(1);
         li.textContent = titleFirstCapital;
     });
+    const breakLine = document.createElement('BR');
+    listContainer.appendChild(breakLine);
 };
 const ListBooksTitles = () => {
-    let checkButton = document.getElementById('books_array').style.display;
+    const checkButton = document.getElementById('books_array').style.display;
     if (checkButton == 'block') {
         document.getElementById('books_array').style.display = 'none';
         document.getElementById('btn_books_array').textContent = "Show Array list";
@@ -113,23 +116,24 @@ const ListBooksTitles = () => {
         document.getElementById('btn_books_array').textContent = "Hide Array list";
     }
 };
-const hideListBooksTitles = () => {
-    document.getElementById('books_array').style.display = 'none';
-};
+
 const injectListBooksFullInfo = () => {
-    let listContainer = document.getElementById('books_object');
-    let ul = document.createElement('ul');
+    const listContainer = document.getElementById('books_object');
+    const pageTitle = document.createElement('h2');
+    pageTitle.textContent = "The 10 best books of 2018";
+    listContainer.appendChild(pageTitle);
+    const ul = document.createElement('ul');
     listContainer.appendChild(ul);
     ul.setAttribute('class', 'books_container');
     booksTitles.forEach(element => {
-        let li = document.createElement('li');
+        const li = document.createElement('li');
         ul.appendChild(li);
         li.setAttribute('class', 'single_book_item');
-        let bookTitle = booksFullInfo[element].title;
-        let bookWriter = booksFullInfo[element].writer;
-        let bookCategory = booksFullInfo[element].category;
-        let bookPrice = booksFullInfo[element].price;
-        let bookCover = booksCovers[element];
+        const bookTitle = booksFullInfo[element].title;
+        const bookWriter = booksFullInfo[element].writer;
+        const bookCategory = booksFullInfo[element].category;
+        const bookPrice = booksFullInfo[element].price;
+        const bookCover = booksCovers[element];
         li.innerHTML = `<h3>${bookTitle}</h3> \ 
         <img src="${bookCover}" alt="cover photo of the book: ${bookTitle}"> \
          <p><span>By: </span>${bookWriter}.<br /><span>Category: </span>${bookCategory}<br /><span>Price:</span> $ ${bookPrice}</p> `;
