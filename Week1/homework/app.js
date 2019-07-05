@@ -10,7 +10,7 @@ const booksTitles = [
     'vengeful',
     'elevation',
     'the_last_black_unicorn',
-    'i_will_be_gone_in_the_dark',
+    'i_will_be_gone_in_the_dark'
 ];
 const booksFullInfo = {
     still_me: {
@@ -23,13 +23,13 @@ const booksFullInfo = {
         title: 'The Outsider',
         writer: 'Stephen King',
         category: 'MYSTERY, THRILLER',
-        price: 17.17,
+        price: 17.17
     },
     the_great_alone: {
         title: 'The Great Alone',
         writer: 'Kristin Hannah',
         category: 'HISTORICAL FICTION',
-        price: 15.83,
+        price: 15.83
     },
     circe: {
         title: 'Circe',
@@ -41,13 +41,13 @@ const booksFullInfo = {
         title: 'The Hate U Give',
         writer: 'Angie Thomas',
         category: 'ROMANCE',
-        price: 10.43,
+        price: 10.43
     },
     the_kiss_quotient: {
         title: 'The Kiss Quotient',
         writer: 'Helen Hoang',
         category: 'ROMANCE',
-        price: 10.2,
+        price: 10.2
     },
     vengeful: {
         title: 'Vengeful',
@@ -59,19 +59,19 @@ const booksFullInfo = {
         title: 'Elevation',
         writer: 'Stephen King, Mark Edward Geyer ',
         category: 'HORROR',
-        price: 13.96,
+        price: 13.96
     },
     the_last_black_unicorn: {
         title: 'The Last Black Unicorn',
         writer: 'Tiffany Haddish',
         category: 'HUMOR',
-        price: 14.86,
+        price: 14.86
     },
     i_will_be_gone_in_the_dark: {
         title: "I'll Be Gone in the Dark: One Woman's Obsessive Search for the Golden State Killer",
         writer: 'Michelle McNamara,  Gillian Flynn, Patton Oswalt',
         category: 'NONFICTION',
-        price: 10.21,
+        price: 10.21
     },
 };
 
@@ -85,7 +85,7 @@ const booksCovers = {
     vengeful: 'images/vengeful.jpg',
     elevation: 'images/elevation.jpg',
     the_last_black_unicorn: 'images/the_last_black_unicorn.jpg',
-    i_will_be_gone_in_the_dark: 'images/i_will_be_gone_in_the_dark.jpg',
+    i_will_be_gone_in_the_dark: 'images/i_will_be_gone_in_the_dark.jpg'
 };
 
 // console.log(bookTitles.length + " books Titles: \n" + bookTitles);
