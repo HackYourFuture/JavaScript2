@@ -1,1 +1,84 @@
-/* add your styling here */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  padding: 2%;
+}
+
+h1 {
+  display: inline-flex;
+  font-size: 8em;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  color: rgb(151, 53, 53);
+  text-shadow: 5px 5px 9px rgba(212, 137, 119, 0.671);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+  margin: 0.5em 1em 0.5em 1em;
+  font-weight: bold;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p.gamePlatform {
+  font-size: 1.2em;
+  color: rgb(55, 55, 145);
+  font-weight: bold;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+p.gameDeveloper {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(201, 52, 41);
+  margin: 0em 0.5em 0.1em 0.5em;
+}
+
+.game_container {
+  float: left;
+  width: 23%;
+  height: 30em;
+  display: block;
+  margin: 1em 1em 1em 0em;
+  border: 4px ridge #ffffffd3;
+  border-radius: 4px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.555);
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.2s;
+}
+
+.game_container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 1em rgba(30, 65, 180, 0.904);
+}
+
+.game_container::before, .game_container::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+img {
+  max-height: 60%;
+  display: block;
+  margin: 0em auto 0em auto;
+}
