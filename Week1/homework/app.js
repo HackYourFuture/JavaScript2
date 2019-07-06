@@ -1,6 +1,7 @@
 'use strict';
 
 {
+  /*
   const bookTitles = [
     'animal_farm', 
     'hunchback_of_notre_dame', 
@@ -13,10 +14,9 @@
     'romeo_and_juliet', 
     'moby_dick',
   ];
+  */
 
-  //console.log(bookTitles.length);
-
-
+  // console.log(bookTitles.length);
 
   const bookInfo = {
     book_1: {
@@ -80,14 +80,14 @@
     },
 
   };
-
   function main() {
 
     // create a new  h1 
     const h1Element = document.createElement('h1');
     // and give it some content 
+
     const newContent = document.createTextNode('Top 10 Books');
-    // add the text node to the newly created h1
+   
     h1Element.appendChild(newContent);
     // add the newly created element and its content into the DOM 
     const newElement = document.getElementById('books');
