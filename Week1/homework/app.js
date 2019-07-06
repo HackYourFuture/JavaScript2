@@ -2,7 +2,7 @@
 
 {
   const bookTitles = [
-    'animal_farm', 'hunchback_of_notre_dame', 'les_miserables', 'the_great_escape', 'sapiens_a_brief_history_of_humankind', 'het_meijse_in_de_trein', 'the_da_vinci_code', 'curiosity_shop', 'romeo_and_juliet', 'moby_dick'
+    `⏎····'hunchback_of_notre_dame',⏎····'les_miserables',⏎····'the_great_escape',⏎····'sapiens_a_brief_history_of_humankind',⏎····'het_meijse_in_de_trein',⏎····'the_da_vinci_code',⏎····'curiosity_shop',⏎····'romeo_and_juliet',⏎····'moby_dick',`  prettier/prettier
   ];
 
   //console.log(bookTitles.length);
