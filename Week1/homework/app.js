@@ -22,7 +22,7 @@
     book_1: {
       title: 'animal farm',
       language: 'english',
-      author: 'George Orwell',,
+      author: 'George Orwell',
     },
 
     book_2: {
