@@ -2,7 +2,16 @@
 
 {
   const bookTitles = [
-    'animal_farm', 'hunchback_of_notre_dame', 'les_miserables', 'the_great_escape', 'sapiens_a_brief_history_of_humankind', 'het_meijse_in_de_trein', 'the_da_vinci_code', 'curiosity_shop', 'romeo_and_juliet', 'moby_dick'
+    'animal_farm', 
+    'hunchback_of_notre_dame', 
+    'les_miserables', 
+    'the_great_escape', 
+    'sapiens_a_brief_history_of_humankind', 
+    'het_meijse_in_de_trein', 
+    'the_da_vinci_code', 
+    'curiosity_shop', 
+    'romeo_and_juliet', 
+    'moby_dick',
   ];
 
   //console.log(bookTitles.length);
@@ -120,8 +129,11 @@
 
 
       // create a new  h4 
+
       const author = document.createElement('h4');
-      // and give it some content 
+
+      // and give it some content
+
       const newContent2 = document.createTextNode('author: ' + bookInfo[x].author);
       // add the text node to the newly created h3
       author.appendChild(newContent2);
