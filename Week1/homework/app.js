@@ -78,73 +78,68 @@
       language: 'english',
       author: 'Herman Melville',
     },
-
   };
   function main() {
 
-    // create a new   
     const h1Element = document.createElement('h1');
-    // and give it some conten 
 
     const newContent = document.createTextNode('Top 10 Books');
 
     h1Element.appendChild(newContent);
-    // add the newly created element and its content into the DO
-    const newElement = document.getElementById('books');
-    newElement.appendChild(h1Element);
+   
+    const newElement1 = document.getElementById('books');
+    newElement1.appendChild(h1Element);
 
     for (const x in bookInfo) {
-      // create a new  div and assign a className
+     
       const newDiv1 = document.createElement('div');
       newDiv1.setAttribute("class", "xyz");
-      // create a second  di
+     
       const newDiv = document.createElement('div');
-      // create a new  h
+     
       const title = document.createElement('h2');
-      // and give it some conten
+     
       const newContent = document.createTextNode('title: ' + bookInfo[x].title);
-      // add the text node to the newly created h
+     
       title.appendChild(newContent);
       newDiv.appendChild(title);
-      //add newDiv to nevDev1  in order to wrap iterative element to use in CS
+      
       newDiv1.appendChild(newDiv);
-      // add the newly created element and its content into the DO
+     
       const newElement = document.getElementById('books');
-      //wrap the iterative element of loop with newDev
+     
       newElement.appendChild(newDiv1);
       newDiv.setAttribute('id', [x]);
 
-
-      // create a new  h3
       const language = document.createElement('h3');
-      // and give it some conten 
+      
       const newContent1 = document.createTextNode('language: ' + bookInfo[x].language);
-      // add the text node to the newly created h3
+     
       language.appendChild(newContent1);
       newDiv1.appendChild(language);
-      // add the newly created element and its content into the DOM 
+      
       const newElement1 = document.getElementById('books');
       newElement1.appendChild(newDiv1);
 
 
 
-      // create a new  h4 
+     
 
       const author = document.createElement('h4');
 
-      // and give it some content
+      
 
       const newContent2 = document.createTextNode('author: ' + bookInfo[x].author);
-      // add the text node to the newly created h3
+      
       author.appendChild(newContent2);
       newDiv1.appendChild(author);
-      // add the newly created element and its content into the DOM 
+      
       const newElement2 = document.getElementById('books');
       newElement2.appendChild(newDiv1);
 
     }
 
-    //define images object seperately
+    
     const images = {
       book_1: './img/animal_farm.jpg',
       book_2: './img/hunchback_of_notre_dame.jpg',
@@ -159,7 +154,7 @@
     };
 
     for (const y in images) {
-      // create a new  h2 
+      
       const image = document.createElement('img');
       image.setAttribute('src', images[y]);
       image.src = images[y];
