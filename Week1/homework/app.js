@@ -82,42 +82,42 @@
   };
   function main() {
 
-    // create a new  h1 
+    // create a new   
     const h1Element = document.createElement('h1');
-    // and give it some content 
+    // and give it some conten 
 
     const newContent = document.createTextNode('Top 10 Books');
-   
+
     h1Element.appendChild(newContent);
-    // add the newly created element and its content into the DOM 
+    // add the newly created element and its content into the DO
     const newElement = document.getElementById('books');
     newElement.appendChild(h1Element);
 
     for (const x in bookInfo) {
-      // create a new  div and assign a className 
+      // create a new  div and assign a className
       const newDiv1 = document.createElement('div');
       newDiv1.setAttribute("class", "xyz");
-      // create a second  div
+      // create a second  di
       const newDiv = document.createElement('div');
-      // create a new  h2 
+      // create a new  h
       const title = document.createElement('h2');
-      // and give it some content 
+      // and give it some conten
       const newContent = document.createTextNode('title: ' + bookInfo[x].title);
-      // add the text node to the newly created h2
+      // add the text node to the newly created h
       title.appendChild(newContent);
       newDiv.appendChild(title);
-      //add newDiv to nevDev1  in order to wrap iterative element to use in CSS
+      //add newDiv to nevDev1  in order to wrap iterative element to use in CS
       newDiv1.appendChild(newDiv);
-      // add the newly created element and its content into the DOM 
+      // add the newly created element and its content into the DO
       const newElement = document.getElementById('books');
-      //wrap the iterative element of loop with newDev1
+      //wrap the iterative element of loop with newDev
       newElement.appendChild(newDiv1);
       newDiv.setAttribute('id', [x]);
 
 
-      // create a new  h3 
+      // create a new  h3
       const language = document.createElement('h3');
-      // and give it some content 
+      // and give it some conten 
       const newContent1 = document.createTextNode('language: ' + bookInfo[x].language);
       // add the text node to the newly created h3
       language.appendChild(newContent1);
@@ -168,7 +168,7 @@
 
     }
   }
-  window.addEventListener("load", main);
+  window.addEventListener('load', main);
 }
 
 
