@@ -12,7 +12,7 @@
     'curiosity_shop',
     'romeo_and_juliet',
     'moby_dick',
-    ,
+
   ];
 
   // console.log(bookTitles.length);
@@ -124,7 +124,6 @@
       const newElement1 = document.getElementById('books');
       newElement1.appendChild(newDiv1);
 
-
       // create a new  h4
       const author = document.createElement('h4');
       // and give it some content
@@ -148,8 +147,8 @@
       book_7: './img/the_da_vinci_code.jpg',
       book_8: './img/curiosity_shop.jpg',
       book_9: './img/romeo_and_juliet.jpg',
-      book_10: './img/moby_dick.jpg',,
-    }
+      book_10:  './img/moby_dick.jpg',
+    };
 
     for (const y in images) {
       // create a new  h2
