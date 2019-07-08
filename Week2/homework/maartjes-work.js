@@ -46,7 +46,7 @@ const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 // Adham's code
-const maartjesDurationsHours = []; /* an array to collect our data */
+const maartjesDurationsHours = []; /* Collect our data in one array */
 maartjesTasks.forEach(element => {
   const durationMinutes = element.duration;
   const durationHours = durationMinutes / 60;
@@ -58,18 +58,21 @@ maartjesTasks.forEach(element => {
 const reducingProcess = (totalToLeft, right) => totalToLeft + right;
 const maartjesTotalDuration = maartjesDurationsHours.reduce(reducingProcess);
 // console.log(maartjesTotalDuration); /* One Number: the total of durations in hours */
+
 const maartjesEarnings = maartjesTotalDuration * maartjesHourlyRate;
-// console.log(maartjesEarnings); /* One Number: The exactly earnings with lots of decimals */
-const computeEarnings = maartjesEarnings.toFixed(2);
-// console.log(computeEarnings); /* Number with 2 decimals as string */
-const ComputeEarningsNumber = parseFloat(computeEarnings);
-// console.log(ComputeEarningsNumber);
-console.log(`Maartje has earned € ${computeEarnings}`);
-console.log(`Maartje has earned € ${ComputeEarningsNumber}`);
+// console.log(earnings); /* One Number: The exactly earnings with lots of decimals */
+// add code to convert `earnings` to a string rounded to two decimals (euro cents)
+const earnings2decimals = maartjesEarnings.toFixed(2);
+// console.log(Earnings2decimals); /* Number with 2 decimals as string */
+const earningsNumber = parseFloat(earnings2decimals);
+// console.log(earningsNumber);
+
+console.log(`Maartje has earned € ${maartjesEarnings}`);
+console.log(`Maartje has earned € ${earningsNumber}`);
 
 // Do not change or remove anything below this line
 module.exports = {
   maartjesTasks,
   maartjesHourlyRate,
-  computeEarnings,
+  maartjesEarnings,
 };
