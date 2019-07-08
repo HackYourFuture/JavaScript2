@@ -45,17 +45,27 @@ const tuesday = [
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
-function computeEarnings(tasks, hourlyRate) {
-  // Replace this comment and the next line with your code
-  console.log(tasks, hourlyRate);
-}
-
-// eslint-disable-next-line no-unused-vars
-const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
-
-// add code to convert `earnings` to a string rounded to two decimals (euro cents)
-
-console.log(`Maartje has earned €${'replace this string with the earnings rounded to euro cents'}`);
+// Adham's code
+const maartjesDurationsHours = []; /* an array to collect our data */
+maartjesTasks.forEach(element => {
+  const durationMinutes = element.duration;
+  const durationHours = durationMinutes / 60;
+  if (durationHours >= 2) {
+    maartjesDurationsHours.push(durationHours);
+  }
+});
+// console.log(maartjesDurationsHours); /* Array of durations in hours, just if the duration is more than 2 hours */
+const reducingProcess = (totalToLeft, right) => totalToLeft + right;
+const maartjesTotalDuration = maartjesDurationsHours.reduce(reducingProcess);
+// console.log(maartjesTotalDuration); /* One Number: the total of durations in hours */
+const maartjesEarnings = maartjesTotalDuration * maartjesHourlyRate;
+// console.log(maartjesEarnings); /* One Number: The exactly earnings with lots of decimals */
+const computeEarnings = maartjesEarnings.toFixed(2);
+// console.log(computeEarnings); /* Number with 2 decimals as string */
+const ComputeEarningsNumber = parseFloat(computeEarnings);
+// console.log(ComputeEarningsNumber);
+console.log(`Maartje has earned € ${computeEarnings}`);
+console.log(`Maartje has earned € ${ComputeEarningsNumber}`);
 
 // Do not change or remove anything below this line
 module.exports = {
