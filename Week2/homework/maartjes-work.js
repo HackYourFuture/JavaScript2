@@ -49,7 +49,7 @@ const workDurationArray = maartjesTasks.map(key => key.duration);
 //  console.log(workDurationArray);
 
 const tasksMoreThanTwoHour = workDurationArray.filter(i => i >= 120);
-//  console.log(tasksMoreThanTwoHour);
+//  console.log(tasksMoreThanTwoHours);
 
 const computeEarnings = tasksMoreThanTwoHour.reduce((acc, cur) => acc + (cur / 60) * 20);
 //  console.log(computeEarnings);
@@ -64,4 +64,3 @@ module.exports = {
   maartjesHourlyRate,
   computeEarnings,
 };
-
