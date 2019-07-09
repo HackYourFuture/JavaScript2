@@ -1,4 +1,5 @@
 'use strict';
+
 const monday = [
   {
     name: 'Write a summary HTML/CSS',
@@ -45,7 +46,7 @@ function computeEarnings(tasks, hourlyRate) {
   // Replace this comment and the next line with your code
   return tasks
     .map(task => task.duration / 60)
-    .filter(duration => duration > 2)
+    .filter(duration => duration >= 2)
     .reduce((acc, number) => acc + number * hourlyRate, 0);
 }
 // eslint-disable-next-line no-unused-vars
