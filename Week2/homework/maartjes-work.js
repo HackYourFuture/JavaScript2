@@ -45,7 +45,7 @@ const tuesday = [
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
-// Adham's code
+// Start: Adham's code
 const maartjesDurationsHours = []; /* Collect our data in one array */
 maartjesTasks.forEach(element => {
   const durationMinutes = element.duration;
@@ -67,7 +67,7 @@ const earningsNumber = parseFloat(earnings2decimals);
 // console.log(earningsNumber);
 console.log(`Maartje has earned € ${maartjesEarnings}`);
 console.log(`Maartje has earned € ${earningsNumber}`);
-
+// Finish: Adham's code
 // Do not change or remove anything below this line
 module.exports = {
   maartjesTasks,
