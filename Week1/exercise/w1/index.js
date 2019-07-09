@@ -47,8 +47,6 @@ document.getElementById("btn-changeImage").addEventListener("click", changeImage
 
 // ====================================== //
 
-document.getElementById("btn-addTodo").addEventListener
-
 // Exercise 3:
 
 // 3a: select "add todo" button & add click event listener to execute addTodo() function on click event
@@ -65,9 +63,21 @@ document.getElementById("btn-addTodo").addEventListener
 
 // 3g: add <li> element to todoList
 
-document.getElementById("todoInput").addEventListener("click",  addtodo())
-function addTodo(){
-    document.getElementById("todoList");
-    console.log(document.getElementById("todoInput").value);
-    
+document.getElementById("btn-addTodo").addEventListener("click", addTodo);
+
+function addTodo() {
+    let TodoList = document.getElementById("todoList");
+    //    console.log(TodoList);
+
+    let TodoInputVal = document.getElementById("todoInput").value;
+    console.log(TodoInputVal);
+
+    let liElement = document.createElement("li");
+    //    console.log(liElement);
+
+    liElement.innerHTML = TodoInputVal;
+    //    console.log(liElement.innerHTML);
+
+    TodoList.appendChild(liElement);
+    //    console.log(TodoList);
 }
