@@ -96,41 +96,41 @@
   const getBookListContainer = () => document.getElementById('bookList');
 
   // Creates img element sourcing from Book images object, returns element
-  const createImgSrc = (obj, id) => {
+  const createImgSrc = (book, id) => {
     const imgEl = document.createElement('img');
-    imgEl.setAttribute('src', obj[id]);
+    imgEl.setAttribute('src', book[id]);
     return imgEl;
   };
 
   // Creates and appends element(string) to a specific parent(Node)
-  const createAppendElement = (element, parent) => {
+  const createAndAppendElement = (element, parent) => {
     const el = document.createElement(element);
     parent.appendChild(el);
     return el;
   };
 
   // Creates Book List UL
-  const createBookList = obj => {
+  const createBookList = book => {
     const ul = document.createElement('ul');
 
-    Object.keys(obj).forEach(item => {
+    Object.keys(book).forEach(item => {
       const li = document.createElement('li');
       li.setAttribute('id', item);
       // Create and append book name heading
-      const bookName = createAppendElement('h3', li);
+      const bookName = createAndAppendElement('h3', li);
       bookName.classList.add('book-name');
-      bookName.innerText = obj[item].title;
+      bookName.innerText = book[item].title;
       // Create and append author name span element
-      const authorName = createAppendElement('span', li);
+      const authorName = createAndAppendElement('span', li);
       authorName.classList.add('author-name');
-      authorName.innerText = obj[item].author;
+      authorName.innerText = book[item].author;
       // Create and append published span element
-      const published = createAppendElement('span', li);
+      const published = createAndAppendElement('span', li);
       published.classList.add('published');
-      published.innerText = `(${obj[item].published})`;
+      published.innerText = `(${book[item].published})`;
       // Create and append img element and set alt attribute
       const bookImage = createImgSrc(bookImages, item);
-      bookImage.setAttribute('alt', obj[item].title);
+      bookImage.setAttribute('alt', book[item].title);
       li.insertBefore(bookImage, bookName);
       // Add child li to parent ul
       ul.appendChild(li);
