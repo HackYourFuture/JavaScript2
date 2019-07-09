@@ -44,11 +44,21 @@ const tuesday = [
 
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
+const timeThreshold = 120;
+
+// function computeEarnings(tasks, hourlyRate) {
+//   return tasks
+//     .filter(task => task.duration >= timeThreshold)
+//     .reduce((acc, current) => acc + (current.duration / 60) * hourlyRate, 0);
+// }
 
 function computeEarnings(tasks, hourlyRate) {
-  return tasks
-    .filter(task => task.duration >= 120)
-    .reduce((a, b) => a + (b.duration / 60) * hourlyRate, 0);
+  return tasks.reduce((acc, current) => {
+    if (current.duration >= timeThreshold) {
+      acc += (current.duration / 60) * hourlyRate;
+    }
+    return acc;
+  }, 0);
 }
 
 // eslint-disable-next-line no-unused-vars

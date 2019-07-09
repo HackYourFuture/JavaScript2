@@ -2,11 +2,13 @@
 
 function doubleOddNumbers(numbers) {
   // the best practice
-  return numbers.filter(n => n % 2 !== 0).map(n => n * 2);
+  return numbers
+    .filter(number => Number.isInteger(number) && number % 2 !== 0)
+    .map(number => number * 2);
 
-  // another solution with reduce instead og filter and map chaining
+  // another solution with reduce instead of filter and map chaining
   // return numbers.reduce((acc, current) => {
-  //   if (current % 2 !== 0) acc.push(current * 2);
+  //   if (Number.isInteger(current) && current % 2 !== 0) acc.push(current * 2);
   //   return acc;
   // }, []);
 }
