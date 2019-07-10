@@ -1,1 +1,36 @@
-/* add your styling here */
+html {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+h1 {
+  font-family: Courier;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: center;
+  color: yellow;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  width: calc((100% - 6rem) / 2);
+  height: 650px;
+  margin: 1rem;
+  list-style-type: none;
+  background-color: gray;
+}
+p {
+  font-weight: bolder;
+  padding-left: 1rem;
+  color: yellow;
+}
+img {
+  width: 60%;
+  height: 500px;
+  margin-left: 7rem;
+}
