@@ -35,12 +35,12 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
 function sayThree(number) {
   // Replace this comment and the next line with your code
-  console.log(`I can be divided on 3 `);
+  console.log(`Because I am ${number}I can be divided on 3 `);
 }
 
 function sayFive(number) {
   // Replace this comment and the next line with your code
-  console.log(`I can be divided on 5 `);
+  console.log(`Because I am ${number} I can be divided on 5 `);
 }
 
 threeFive(10, 15, sayThree, sayFive);
