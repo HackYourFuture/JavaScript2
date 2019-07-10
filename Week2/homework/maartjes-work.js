@@ -47,10 +47,12 @@ const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
   // Replace this comment and the next line with your code
-  return tasks
-    .map(task => task.duration / 60)
-    .filter(duration => duration >= 2)
-    .reduce((total, earning) => total + earning)* hourlyRate
+  return (
+    tasks
+      .map(task => task.duration / 60)
+      .filter(duration => duration >= 2)
+      .reduce((total, earning) => total + earning) * hourlyRate
+  );
 }
 
 // eslint-disable-next-line no-unused-vars
