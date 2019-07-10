@@ -27,7 +27,7 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
       console.log(
         `Hi: I am ${numbers[ii]}\n my index is ${numbers.indexOf(
           numbers[ii],
-        )} . \n I can not be divided on 3 neither on 5 \n Bye.`,
+        )} . \n I can NOT be divided on 3 neither on 5 \n Bye.`,
       );
     }
   }
