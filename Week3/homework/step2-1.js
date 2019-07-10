@@ -2,8 +2,8 @@
 
 function foo(func) {
   // What to do here?
-  // Replace this comment and the next line with your code
-  console.log(func);
+  func();
+  console.log(`Actually I am a function, but I am also an argument in another function.`);
 }
 
 function bar() {
