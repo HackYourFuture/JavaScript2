@@ -51,7 +51,7 @@ const workDurationArray = maartjesTasks.map(key => key.duration);
 const tasksMoreThanTwoHour = workDurationArray.filter(i => i >= 120);
 //  console.log(tasksMoreThanTwoHours);
 
-const computeEarnings = tasksMoreThanTwoHour.reduce((acc, cur) => acc + (cur / 60) * 20);
+const computeEarnings = tasksMoreThanTwoHour.reduce((acc, cur) => acc + (cur / 60) * 20, 0);
 //  console.log(computeEarnings);
 
 // add code to convert `earnings` to a string rounded to two decimals (euro cents)
