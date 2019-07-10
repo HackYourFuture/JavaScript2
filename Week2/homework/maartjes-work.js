@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+// eslint-disable-next-line lines-around-directive
 'use strict';
 
 const monday = [
