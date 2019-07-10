@@ -90,7 +90,7 @@
 
     for (const x in bookInfo) {
       if (Object.prototype.hasOwnProperty.call(bookInfo, x)) {
-        // create a new  div and assign a className
+        // create a new  div and assign a className.
         const newDiv1 = document.createElement('div');
         newDiv1.setAttribute('class', 'xyz');
         // create a second  div
