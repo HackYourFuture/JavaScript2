@@ -18,8 +18,15 @@ function repeatStringNumTimesWithWhile(str, num) {
   // eslint-disable-next-line prefer-const
   let result = '';
 
-  // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  if (num < 0) {
+    str = ' ';
+  } else {
+    let i;
+    for (i = 1; i < num; i++) {
+      str += str;
+    }
+  }
+  return str;
 
   return result;
 }
