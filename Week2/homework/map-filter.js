@@ -1,8 +1,12 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  // Replace this comment and the next line with your code
+  const oddNumbers = numbers.filter(elem => elem % 2);
+  const doubledNumbers = oddNumbers.map((elem, index, arr) =>
+    elem % 2 !== 0 ? arr[index] * 2 : elem,
+  );
   console.log(numbers);
+  return doubledNumbers;
 }
 
 const myNumbers = [1, 2, 3, 4];
