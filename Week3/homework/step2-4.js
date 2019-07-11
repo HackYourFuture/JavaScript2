@@ -1,5 +1,6 @@
 'use strict';
 
+// Test PASS
 function Dog(name, color, numLegs) {
   this.name = name;
   this.color = color;

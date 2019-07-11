@@ -1,5 +1,6 @@
 'use strict';
 
+// Test PASS
 function multiplyAll(arr) {
   // eslint-disable-next-line
     let product = 1;
