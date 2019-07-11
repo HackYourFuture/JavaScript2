@@ -1,5 +1,6 @@
 'use strict';
 
+// Test PASS
 function foo(func) {
   // What to do here?
   func();

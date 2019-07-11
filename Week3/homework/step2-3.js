@@ -1,5 +1,6 @@
 'use strict';
 
+// Test PASS
 // Use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
   // eslint-disable-next-line prefer-const

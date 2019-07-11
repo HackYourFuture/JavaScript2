@@ -1,5 +1,6 @@
 'use strict';
 
+// Test PASS
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
