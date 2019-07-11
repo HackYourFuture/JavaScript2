@@ -104,33 +104,32 @@
     the_red_and_the_black: 'books_cover/red_and_black.jpg',
   };
 
-  const listBooksInDetail = bookList => {
+  const createElement = (tag, content, ...cssClass) => {
+    const elem = document.createElement(tag);
+    elem.textContent = content;
+    cssClass.forEach(className => {
+      elem.classList.add(className);
+    });
+    return elem;
+  };
+
+  const generateListOfBooks = bookList => {
     Object.entries(bookList).forEach(book => {
       //
       const bookID = book[0];
       const bookDetails = book[1];
       // create a div element for each book and write them to body
-      const div = document.createElement('div');
+      const div = createElement('div', undefined, ['book-list']);
       div.setAttribute('id', bookID);
-      div.classList.add('book-list');
       document.body.prepend(div);
       // create a ul element
-      const ul = document.createElement('ul');
-      ul.classList.add('book');
+      const ul = createElement('ul', undefined, ['book']);
       div.prepend(ul);
-      // create a li element for each book properties
-      const liTitleEl = document.createElement('li');
-      liTitleEl.textContent = bookDetails.title;
-      liTitleEl.classList.add('list', 'title');
-
-      const liAuthorEl = document.createElement('li');
-      liAuthorEl.textContent = bookDetails.author;
-      liAuthorEl.classList.add('list', 'author');
-
-      const liLangEl = document.createElement('li');
-      liLangEl.textContent = bookDetails.language;
-      liLangEl.classList.add('list', 'language');
-      // append list elements inside ul element
+      // create list items // add text content //  add multiple classes
+      const liTitleEl = createElement('li', bookDetails.title, ['list'], ['title']);
+      const liAuthorEl = createElement('li', bookDetails.author, ['list'], ['author']);
+      const liLangEl = createElement('li', bookDetails.language, ['list'], ['author']);
+      // append them into ul
       ul.append(liTitleEl, liAuthorEl, liLangEl);
     });
   };
@@ -140,19 +139,19 @@
       const coverID = cover[0];
       const coverPath = cover[1];
       // creating books image element and append them inside the new ul which is sibling of other uls
-      const ul = document.createElement('ul');
-      ul.classList.add('book-cover');
+      const ul = createElement('ul', undefined, ['book-cover']);
       document.getElementById(coverID).prepend(ul);
+      // create a li element for each book properties
+      const liCover = createElement('li', undefined, ['list']);
+      ul.append(liCover);
       // creating img element and set its attributes and append
-      const imgCoverEl = document.createElement('img');
+      const imgCoverEl = createElement('img', undefined, ['cover']);
       imgCoverEl.setAttribute('src', coverPath);
       imgCoverEl.setAttribute('alt', bookObj[coverID].title);
-      // imgCoverEl.setAttribute('alt', coverID.replace(/_/g, ' ') + ' book cover');
-      imgCoverEl.classList.add('cover');
-      ul.append(imgCoverEl);
+      liCover.append(imgCoverEl);
     });
   };
 
-  listBooksInDetail(books);
+  generateListOfBooks(books);
   addCovers(covers, books);
 }
