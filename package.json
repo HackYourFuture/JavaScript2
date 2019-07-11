@@ -42,5 +42,8 @@
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "prettier": "^1.15.2"
+  },
+  "dependencies": {
+    "uri-js": "^4.2.2"
   }
 }
