@@ -1,5 +1,6 @@
 'use strict';
 
+// Test PASS
 function createBase(base) {
   return function(add) {
     return base + add;
