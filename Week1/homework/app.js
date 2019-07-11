@@ -1,13 +1,5 @@
 'use strict';
 
-// 1-1 Open the apps.js and start by declaring an array that contains 10 strings
-// These strings should be of book titles you have read (or made up) and be lowercase
-// without spaces so that you can use these later as HTML id attributes
-// (Example: Harry Potter's - The Chamber of Secrets -> harry_potter_chamber_secrets)
-// Add a console.log statement to output this array to console
-// (This is for debugging and making sure everything is in order
-// Delete it later when you're done :))
-
 {
   const bookTitles = [
     // Replace with your own book titles
@@ -36,8 +28,8 @@
       list.textContent = bookTitles[i];
       ul.appendChild(list);
     }
-    console.log(ul);
   };
+
   // This function will generate ul element
   const generateUl = () => {
     const ul = document.createElement('ul');
@@ -46,9 +38,7 @@
 
   generateUl();
 
-  // I created books object which, includes 10 properties, and each property's value is
-  // another object nested inside books object, inside that object I have four keys and values:
-  // Here I wanted to create a constructor function! But I didn't want to get out of question context.
+  // I created books object which, includes 10 properties:
   // cover: link to the photo alls sources from wikipedia.
   // title of the book.
   // the name of the author.
@@ -121,7 +111,7 @@
     },
   };
 
-  // I created another function, which takes books object as a parameter  Object.keys() method returns an array of a given object's own property names
+  // Object.keys() method returns an array of a given object's own property names
   // in the same order as we get with a normal loop. After getting array of object names, I used forEach method which is
   // an array method to iterate through the names in the array.
   // Inside forEach method, I used The Document method getElementById()
@@ -134,12 +124,18 @@
   // For how to use bracket notation:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors
 
+  const ulElement = document.createElement('ul');
+  ulElement.setAttribute('class', 'main-book');
+
   const listOfBooks = obj =>
     Object.keys(obj).forEach(item => {
       const booksContainer = document.getElementById('books-container');
+      const booksList = document.createElement('li');
+      booksList.setAttribute('class', 'book-info');
 
-      const bookDiv = document.createElement('div');
-      bookDiv.setAttribute('class', 'book-info');
+      const appendChild = (parent, child) => {
+        parent.appendChild(child);
+      };
 
       const createElementAndSetAttr = (elementName, name, value, altName, altValue) => {
         const element = document.createElement(elementName);
@@ -147,22 +143,22 @@
         if (elementName === 'img') {
           element.setAttribute(altName, altValue);
         }
-        bookDiv.appendChild(element);
+        appendChild(booksList, element);
       };
 
-      const createElementAndAppend = (elementName, property, text) => {
+      const createElement = (elementName, property, text) => {
         const element = document.createElement(elementName);
         element[property] = text;
-        bookDiv.appendChild(element);
+        appendChild(booksList, element);
       };
 
-      createElementAndAppend('h1', 'textContent', obj[item].title);
+      createElement('h1', 'textContent', obj[item].title);
       createElementAndSetAttr('img', 'src', obj[item].cover, 'alt', obj[item].title);
-      createElementAndAppend('p', 'textContent', obj[item].author);
-      createElementAndAppend('p', 'textContent', obj[item].language);
-      console.log(bookDiv);
-
-      booksContainer.appendChild(bookDiv);
+      createElement('p', 'textContent', obj[item].author);
+      createElement('p', 'textContent', obj[item].language);
+      console.log(booksList);
+      ulElement.appendChild(booksList);
+      booksContainer.appendChild(ulElement);
     });
 
   listOfBooks(books);
