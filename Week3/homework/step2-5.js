@@ -2,10 +2,14 @@
 
 function multiplyAll(arr) {
   // eslint-disable-next-line
-  let product = 1;
+    let product = 1;
 
-  // Replace this comment and the next line with your code
-  console.log(arr, product);
+  function oneTime(element) {
+    product = product * element;
+    return product;
+  }
+  const secondTime = element => element.forEach(oneTime);
+  arr.forEach(secondTime);
 
   return product;
 }
