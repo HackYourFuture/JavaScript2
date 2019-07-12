@@ -42,7 +42,7 @@ h1 {
   overflow: hidden;
   box-shadow: black 3px 3px 4px;
 }
-.book-information h1 {
+.book-title {
   font-size: 1.5rem;
   background-color: #976094;
 }
