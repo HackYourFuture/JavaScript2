@@ -1,6 +1,6 @@
 'use strict';
 
-// No test required
+// No test required (done)
 const x = 9;
 
 function f1(val) {
