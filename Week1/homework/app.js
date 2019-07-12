@@ -83,7 +83,7 @@
     },
   };
   // 1.5
-  function DisplayBookInformation(element) {
+  function displayBookInformation(element) {
     const ul = document.createElement('ul');
     ul.setAttribute('id', 'bookInformationList');
     ul.setAttribute('class', 'bookInformationList');
@@ -97,7 +97,7 @@
       h1.setAttribute('class', 'book-title');
       const p = document.createElement('p');
       p.setAttribute('class', 'book-language-author');
-      h1.innerHTML = element[book].title.toUpperCase();
+      h1.innerText = element[book].title.toUpperCase();
       p.innerHTML = 'Language: ' + element[book].language + '<br> Author: ' + element[book].author;
       li.appendChild(h1);
       li.appendChild(p);
@@ -132,7 +132,7 @@
 
   const main = () => {
     createUlList(bookTitles);
-    DisplayBookInformation(bookInformationObject);
+    displayBookInformation(bookInformationObject);
     addPicture(bookTitlesArray);
   };
   main();
