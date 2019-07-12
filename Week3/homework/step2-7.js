@@ -24,3 +24,10 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+/** ******
+ * The answer in this link:
+https://www.w3schools.com/js/js_function_parameters.asp
+Exactly in these 2 titles:
+**Arguments are Passed by Value
+**Objects are Passed by Reference
+ */
