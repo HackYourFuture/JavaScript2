@@ -4,9 +4,10 @@ body{
 }
 
 h2 {
-    background-color: antiquewhite
+    background-color: antiquewhite;
+    margin-right: 50%;
 }
 
 img {
-    width: 5ch;
+    width: 10%;
 }

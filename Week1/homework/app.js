@@ -54,28 +54,20 @@ let bookTitles = {
 }
 
 let imgList = {
-  "the_vegetarian": "./img/vegetarian.jpg",
-  "watership_down": "./img/watership.jpg",
-  "adventures_sherlock_holmes": "./img/holmes.jpg",
-  "alchemist": "./img/alchemist.jpg",
-  "frankenstein": "./img/frankenstein.jpg",
-  "city_of_thieves": "./img/thieves.jpg",
-  "gone_with_the_wind": "./img/wind.jpg",
-  "to_kill_mocking_bird": "./img/mocking_bird.jpg",
-  "war_and_peace": "./img/warandpeace.jpg",
-  "things_fall_apart": "./img/things_fall_apart.jpg"
+  "book1": "./img/vegetarian.jpg",
+  "book2": "./img/watership.jpg",
+  "book3": "./img/holmes.jpg",
+  "book4": "./img/alchemist.jpg",
+  "book5": "./img/frankenstein.jpg",
+  "book6": "./img/thieves.jpg",
+  "book7": "./img/wind.jpg",
+  "book8": "./img/mocking_bird.jpg",
+  "book9": "./img/warandpeace.jpg",
+  "book10": "./img/things_fall_apart.jpg"
 }
-
-let arrayOfKeys = Object.keys(imgList);
 
 // iterating and making lists with the objects
 function makeList() {
-
-  // getting img keys
-  for (let key in arrayOfKeys) {
-    var x = arrayOfKeys[key];
-    console.log(imgList[x])
-  }
 
   //iterating thru books, creating h2/ul/li's
   for (let id in bookTitles) {
@@ -83,9 +75,8 @@ function makeList() {
     let bookNumber = document.createTextNode(id);
     let newList = document.createElement('ul');
     let image = document.createElement("img");
-    image.setAttribute("src", imgList[x]);
+    image.setAttribute("src", imgList[id]);
     
-
     // li
     for (let data in bookTitles[id]) {
       let listItem = document.createElement("li");
@@ -93,12 +84,10 @@ function makeList() {
       listItem.appendChild(itemText);
       newList.appendChild(listItem)
     }
-
     header.appendChild(bookNumber);
     document.body.appendChild(header);
     document.body.appendChild(newList);
     newList.appendChild(image);
-
   }
 }
 makeList();
