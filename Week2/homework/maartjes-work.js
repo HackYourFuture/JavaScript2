@@ -50,7 +50,7 @@ const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
   const sumEarnings = tasks
-    .map(task => task.duration / 60) // mapping the durations in seconds to hours
+    .map(task => task.duration / 60) // mapping the duration values in seconds to hours
     .filter(timeElapsed => timeElapsed >= 2) // eliminating stuff that took less than 2 hours
     .reduce((income, timeElapsed) => income + timeElapsed * hourlyRate, 0); // ending the chain with a nice reduce
   return sumEarnings;
