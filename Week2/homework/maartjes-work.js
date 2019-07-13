@@ -44,22 +44,22 @@ const tuesday = [
 
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
-const timeThreshold = 120;
-
-// function computeEarnings(tasks, hourlyRate) {
-//   return tasks
-//     .filter(task => task.duration >= timeThreshold)
-//     .reduce((acc, current) => acc + (current.duration / 60) * hourlyRate, 0);
-// }
 
 function computeEarnings(tasks, hourlyRate) {
-  return tasks.reduce((acc, current) => {
-    if (current.duration >= timeThreshold) {
-      acc += (current.duration / 60) * hourlyRate;
-    }
-    return acc;
-  }, 0);
+  return tasks
+    .map(task => task.duration / 60)
+    .filter(task => task >= 2)
+    .reduce((total, task) => total + task * hourlyRate, 0);
 }
+
+// function computeEarnings(tasks, hourlyRate) {
+//   return tasks.reduce((acc, task) => {
+//     if (task.duration / 60 >= 2) {
+//       acc += (task.duration / 60) * hourlyRate;
+//     }
+//     return acc;
+//   }, 0);
+// }
 
 // eslint-disable-next-line no-unused-vars
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
