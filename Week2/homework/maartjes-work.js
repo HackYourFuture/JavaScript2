@@ -68,9 +68,27 @@ const earningsNumber = parseFloat(earnings2decimals);
 console.log(`Maartje has earned € ${maartjesEarnings}`);
 console.log(`Maartje has earned € ${earningsNumber}`);
 // Finish: Adham's code
+// original is :
+function computeEarnings(a, b) {
+  // Replace this comment and the next line with your code
+  a = 'Me Me';
+  b += b;
+  console.log(
+    `I am an argument, my value now is: ${b}. I am unnecessarily here.\nI am an argument in the function computeEarnings.\nMy mission is to avoid errors in ESLint while it is reading the code.\nAfter that the code can go to the next step (unit test).\nBut without me the ESLint will report errors and then the test will not be abel to run at all.\nSo I am unnecessarily to execute the code.\nBut important to take the code to the next step "Unit test" and then make the test able to run.`,
+  );
+  return maartjesEarnings;
+}
+
+// eslint-disable-next-line no-unused-vars
+const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
+
+// add code to convert `earnings` to a string rounded to two decimals (euro cents)
+const euroCents = maartjesEarnings.toFixed(2);
+console.log(`Maartje has earned €${euroCents}`);
+
 // Do not change or remove anything below this line
 module.exports = {
   maartjesTasks,
   maartjesHourlyRate,
-  maartjesEarnings,
+  computeEarnings,
 };
