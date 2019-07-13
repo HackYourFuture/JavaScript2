@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: none;
+      }
+
+      #box {
+        transition: height 1s, width 1s, background-color 1s;
+        background-color: lightseagreen;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="coordinates"></div>
+    <div id="box"></div>
+    <script>
+      const boxEl = document.getElementById('box');
+      boxEl.addEventListener('mousedown', () => {
+        boxEl.style.width = '500px';
+        boxEl.style.height = '500px';
+        boxEl.style.backgroundColor = 'coral';
+      });
+
+      boxEl.addEventListener('mouseup', () => {
+        boxEl.style.width = '100px';
+        boxEl.style.height = '100px';
+        boxEl.style.backgroundColor = 'lightseagreen';
+      });
+
+      document.body.addEventListener('mousemove', event => {
+        const coordEl = document.getElementById('coordinates');
+        coordEl.innerText = `X: ${event.pageX}, Y: ${event.pageY}`;
+
+        boxEl.style.left = `${event.pageX}px`;
+        boxEl.style.top = `${event.pageY}px`;
+      });
+    </script>
+  </body>
+</html>
