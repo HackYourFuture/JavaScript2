@@ -1,1 +1,56 @@
-/* add your styling here */
+body {
+  background: linear-gradient(#9198e5,#e66465 );
+}
+
+img {
+  width: 60%;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+  opacity: 1;
+}
+img:hover {
+  transform: scale(1.01);
+  opacity: 0.8;
+}
+
+p {
+  text-align: justify;
+  font-weight: bold;
+  color: rgb(8, 7, 27);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 0.5cm;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 2.5cm;
+  margin-bottom: 1cm;
+}
+
+ul li:nth-of-type(5) {
+  margin-left: 2.7cm;
+}
+ul li:nth-of-type(6) {
+  margin-left: 2.3cm;
+}
+ul li:nth-of-type(9) {
+  margin-left: 3.1cm;
+}
+h1 {
+  color: rgb(8, 7, 27);
+  font-family: Gill Sans Extrabold, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(241, 203, 171);
+  height: 75px;
+  position: relative;
+  border-radius: 15px;
+  padding-top: 0.5cm;
+  
+}
+
+
+
+ 
