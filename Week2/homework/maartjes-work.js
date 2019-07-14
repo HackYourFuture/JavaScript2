@@ -1,6 +1,7 @@
 'use strict';
 
-const monday = [{
+const monday = [
+  {
     name: 'Write a summary HTML/CSS',
     duration: 180,
   },
@@ -18,7 +19,8 @@ const monday = [{
   },
 ];
 
-const tuesday = [{
+const tuesday = [
+  {
     name: 'Keep writing summary',
     duration: 240,
   },
@@ -43,10 +45,11 @@ const tuesday = [{
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
-const convertDurationsToHour = duties => duties.map(item => ({
-  name: item.name,
-  duration: item.duration / 60,
-}));
+const convertDurationsToHour = duties =>
+  duties.map(item => ({
+    name: item.name,
+    duration: item.duration / 60,
+  }));
 const filterTasks = (tasks = []) => tasks.filter(item => item.duration >= 2);
 
 console.log(convertDurationsToHour(maartjesTasks));
@@ -66,4 +69,4 @@ console.log(`Maartje has earned €${result}`);
 module.exports = {
   maartjesTasks,
   maartjesHourlyRate,
-}
+};
