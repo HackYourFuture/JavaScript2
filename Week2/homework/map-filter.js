@@ -2,9 +2,7 @@
 
 function doubleOddNumbers(numbers) {
   const oddNumbers = numbers.filter(elem => elem % 2);
-  const doubledNumbers = oddNumbers.map((elem, index, arr) =>
-    elem % 2 !== 0 ? arr[index] * 2 : elem,
-  );
+  const doubledNumbers = oddNumbers.map(elem => elem * 2);
   console.log(numbers);
   return doubledNumbers;
 }
