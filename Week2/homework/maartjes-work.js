@@ -1,7 +1,6 @@
 'use strict';
 
-const monday = [
-  {
+const monday = [{
     name: 'Write a summary HTML/CSS',
     duration: 180,
   },
@@ -19,8 +18,7 @@ const monday = [
   },
 ];
 
-const tuesday = [
-  {
+const tuesday = [{
     name: 'Keep writing summary',
     duration: 240,
   },
@@ -45,21 +43,27 @@ const tuesday = [
 const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
+const convertDurationsToHour = duties => duties.map(item => ({
+  name: item.name,
+  duration: item.duration / 60,
+}));
+const filterTasks = (tasks = []) => tasks.filter(item => item.duration >= 2);
+
+console.log(convertDurationsToHour(maartjesTasks));
+console.log(filterTasks(convertDurationsToHour(maartjesTasks)));
+
 function computeEarnings(tasks, hourlyRate) {
-  // Replace this comment and the next line with your code
-  console.log(tasks, hourlyRate);
+  return tasks.reduce((acc, elem) => acc + hourlyRate * elem.duration, 0);
 }
 
-// eslint-disable-next-line no-unused-vars
-const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
-
-// add code to convert `earnings` to a string rounded to two decimals (euro cents)
-
-console.log(`Maartje has earned €${'replace this string with the earnings rounded to euro cents'}`);
-
+const earnings = computeEarnings(
+  filterTasks(convertDurationsToHour(maartjesTasks)),
+  maartjesHourlyRate,
+);
+const result = earnings.toFixed(2);
+console.log(`Maartje has earned €${result}`);
 // Do not change or remove anything below this line
 module.exports = {
   maartjesTasks,
   maartjesHourlyRate,
-  computeEarnings,
-};
+}
