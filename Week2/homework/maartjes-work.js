@@ -1,5 +1,5 @@
 'use strict';
-
+// Test Passed
 const monday = [
   {
     name: 'Write a summary HTML/CSS',
