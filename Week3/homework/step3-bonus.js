@@ -1,12 +1,10 @@
 'use strict';
 
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
-
 function makeUnique(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const uniqValArr = arr.filter((el, i, array) => array.indexOf(el) === i);
+  return uniqValArr;
 }
-
 const uniqueValues = makeUnique(values);
 console.log(uniqueValues);
 
