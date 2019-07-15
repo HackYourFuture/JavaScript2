@@ -1,13 +1,14 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  // Replace this comment and the next line with your code
-  console.log(numbers);
+  const oddNumbers = numbers.filter(number => number % 2 !== 0);
+  const numbersDuplicate = oddNumbers.map(number => number * 2);
+  return numbersDuplicate;
 }
 
 const myNumbers = [1, 2, 3, 4];
-console.log(doubleOddNumbers(myNumbers));
-
+const myNewNumbers = doubleOddNumbers(myNumbers);
+console.log(`The new array is: [${myNewNumbers}]`);
 // Do not change or remove anything below this line
 module.exports = {
   myNumbers,
