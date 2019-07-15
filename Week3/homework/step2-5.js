@@ -3,10 +3,11 @@
 function multiplyAll(arr) {
   // eslint-disable-next-line
   let product = 1;
-
-  // Replace this comment and the next line with your code
-  console.log(arr, product);
-
+  arr.forEach(element => {
+    element.forEach(item => {
+      product *= item;
+    });
+  });
   return product;
 }
 
