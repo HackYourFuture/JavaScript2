@@ -49,7 +49,7 @@ const maartjesHourlyRate = 20;
 function computeEarnings(tasks, hourlyRate) {
   const moreThanOrEqualTo2Hours = tasks.filter(element => element.duration >= 120);
   const totalDuration = moreThanOrEqualTo2Hours.reduce(
-    (total, currentValue) => total + currentValue.duration,
+    (total, currentElement) => total + currentElement.duration,
     0,
   );
   const exactToEarn = (totalDuration / 60) * hourlyRate;
