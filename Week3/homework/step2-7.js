@@ -21,3 +21,5 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+// JavaScript is call by value.
+// However, in case if object, the value being passed is the reference.
