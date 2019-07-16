@@ -37,14 +37,14 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   let i = 0;
   do {
     i++;
-    result = result.concat(str);
+    result += str;
   } while (i < num);
   console.log(str, num, result);
 
   return result;
 }
 
-console.log('do-while', repeatStringNumTimesWithDoWhile('abc', 3));
+console.log('do-while', repeatStringNumTimesWithDoWhile('abc', -2));
 
 // Do not change or remove anything below this line
 module.exports = {
