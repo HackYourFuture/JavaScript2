@@ -1,9 +1,11 @@
 'use strict';
 
-function createBase(base) {
-  // Replace this comment and the next line with your code
-  console.log(base);
-}
+// function createBase(baseNumber) {
+//   return function(addNumber) {
+//     return addNumber + baseNumber;
+//   };
+// }
+const createBase = baseNumber => addNumber => baseNumber + addNumber; // Currying
 
 const addSix = createBase(6);
 
