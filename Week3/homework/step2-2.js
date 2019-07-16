@@ -1,20 +1,28 @@
 'use strict';
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const numbers = [];
-
-  // Replace this comment and the next line with your code
-  console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
+  // Array from with map method
+  const numbers = Array.from(Array(stopIndex - startIndex + 1)).map(
+    (num, index) => startIndex + index,
+  );
+  numbers.forEach(num => {
+    if (num % 15 === 0) {
+      threeCallback(num);
+      fiveCallback(num);
+    } else if (num % 3 === 0) {
+      threeCallback(num);
+    } else if (num % 5 === 0) {
+      fiveCallback(num);
+    }
+  });
 }
 
 function sayThree(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+  console.log(`sayThree() is called because of ${number} is multiple of three`);
 }
 
 function sayFive(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+  console.log(`sayFive() is called because of ${number} is multiple of five`);
 }
 
 threeFive(10, 15, sayThree, sayFive);
