@@ -2,7 +2,7 @@
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
-  for (let i = startIndex; i < stopIndex + 1; i++) {
+  for (let i = startIndex; i <= stopIndex; i++) {
     numbers.push(i);
   }
   numbers.forEach(num => {
