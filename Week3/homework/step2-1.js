@@ -1,9 +1,8 @@
 'use strict';
 
 function foo(func) {
-  // What to do here?
-  // Replace this comment and the next line with your code
-  console.log(func);
+  // What to do here? calling the 'callback function'
+  func();
 }
 
 function bar() {
@@ -13,4 +12,5 @@ function bar() {
 foo(bar);
 
 // Do not change or remove anything below this line
+// eslint-disable-next-line prettier/prettier
 module.exports = foo;
