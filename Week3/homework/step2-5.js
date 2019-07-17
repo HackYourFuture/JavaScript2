@@ -3,10 +3,11 @@
 function multiplyAll(arr) {
   // eslint-disable-next-line
   let product = 1;
-
-  // Replace this comment and the next line with your code
-  console.log(arr, product);
-
+  for (let x = 0; x < arr.length; x++) {
+    for (let y = 0; y < arr[x].length; y++) {
+      product *= arr[x][y];
+    }
+  }
   return product;
 }
 
