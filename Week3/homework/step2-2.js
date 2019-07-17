@@ -6,25 +6,21 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     numbers.push(i);
   }
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 3 === 0) {
-      threeCallback([i]);
-    } else if (numbers[i] % 5 === 0) {
-      fiveCallback(numbers[i]);
-    } else if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
-      threeCallback(numbers[i]);
-      fiveCallback(numbers[i]);
+  numbers.forEach(function(number) {
+    if (number % 3 === 0) {
+      threeCallback(number);
     }
-  }
-  console.log(startIndex, stopIndex, threeCallback(numbers), fiveCallback(numbers), numbers);
+    if (number % 5 === 0) {
+      fiveCallback(number);
+    }
+  });
 }
-
 function sayThree(number) {
-  return `${number} is divisible by three!`;
+  console.log(`The number ${number} is divisible by 3!`);
 }
 
 function sayFive(number) {
-  return `${number} is divisible by five!`;
+  console.log(`The number ${number} is divisible by 5!`);
 }
 
 threeFive(10, 15, sayThree, sayFive);
