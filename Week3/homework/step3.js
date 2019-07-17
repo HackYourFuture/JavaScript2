@@ -3,6 +3,10 @@
 function createBase(base) {
   // Replace this comment and the next line with your code
   console.log(base);
+  return function addSix(number) {
+    const result = base + number;
+    return result;
+  };
 }
 
 const addSix = createBase(6);
