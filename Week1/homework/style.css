@@ -1,1 +1,56 @@
 /* add your styling here */
+body {
+  margin: 0px;
+  background-color: rgb(254, 255, 254);
+}
+
+img {
+  max-width: 100%;
+  max-height: 250px;
+  margin: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: brown;
+}
+
+.grid-item {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  width: calc(50% - 2 * 10px);
+  min-height: 500px;
+  background-color: rgb(238, 238, 252);
+  transition: box-shadow 0.2s;
+}
+
+.grid-item:hover {
+  box-shadow: 0px 0px 5px 5px rgba(73, 73, 73, 0.2);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#grid-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media (min-width: 760px) {
+  .grid-item {
+    width: calc((100% / 3) - 2 * 10px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-item {
+    width: calc(25% - 2 * 10px);
+  }
+}
