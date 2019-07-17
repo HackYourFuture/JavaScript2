@@ -1,94 +1,39 @@
-# Reading material for the first lecture:
+# Reading Material JavaScript2 Week 1
 
-```
-In week one we will discuss the following topics:
-• Capturing user input
-• Basic DOM manipulations[img src, innerHTML]
-• Code debugging using the browser
-• Events
-• Code commenting
-• Structuring code files
-• Code formatting
-• Handing in homework via PR
-```
+## Agenda
 
-## Software installation for the JavaScript 2 Module
+These are the topics for week 1:
 
-**_To save time, please do these preparations at home before coming to the first lecture._**
+1. What is a browser?
+   - How a browser works
+   - Different browsers
+2. What is the Document-Object Model (DOM)?
+   - The DOM tree
+   - JavaScript and the browser
+   - Traversing the DOM
+3. What is DOM Manipulation?
+   - Browser events
+   - Event handlers
 
-1. Install the following extensions in VSCode (you may have installed some of them already):
+[DOM Crash Course](https://www.youtube.com/playlist?list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s)
 
-   - Code Spell Checker
-   - ESLint
-   - Prettier - Code formatter
-   - open in browser
-   - Live Server
-   - Bracket Pair Colorizer
+## 1. What is a browser?
 
-2. Modify the VSCode User Settings to include the settings listed below. If a particular setting is already present in your User Settings, make sure that the setting value listed below is used and change it if necessary.
+A browser is software that allows you to access websites.
 
-   To open your user and workspace settings, use the following VS Code menu command:
+### How a browser works
 
-   - On Windows/Linux - **File** > **Preferences** > **Settings**
-   - On macOS - **Code** > **Preferences** > **Settings**
+[How a web browser functions](https://www.youtube.com/watch?v=z0HN-fG6oT4)
 
-   Then, click on the `{ }` button in the top-right corner of the settings screen to access the settings in JSON format.
+## 2. What is the Document-Object Model (DOM)?
 
- 
-   ```json
-   /// Place your settings in this file to overwrite the default settings
-   {
-     "editor.detectIndentation": false,
-     "editor.formatOnSave": true,
-     "editor.minimap.enabled": false,
-     "editor.renderIndentGuides": true,
-     "editor.tabSize": 2,
-     "editor.codeActionsOnSave": {
-       "source.fixAll": true
-     },
-     "eslint.autoFixOnSave": true,
-     "files.autoSave": "onFocusChange",
-     "prettier.printWidth": 100,
-     "prettier.singleQuote": true,
-     "prettier.trailingComma": "all"
-   }
-   ```
+### JavaScript and the browser
 
-3. Install the ESLint CLI tool globally by issuing the following command from the command line:
+### Traversing the DOM
 
-   ```
-   npm install -g eslint-cli
-   ```
+- [Traversing the DOM with JavaScript](https://zellwk.com/blog/dom-traversals/)
 
-4. Fork this repository (i.e., **JavaScript2**) and clone your fork to your laptop.
-
-5. Open the `JavaScript2` folder from the cloned repository in VSCode.
-
-6. Open a terminal window in VSCode and type the following command:
-
-   ```
-   npm install
-   ```
-
-## Review of JavaScript1
-
-As a refresher, go through the topics of JavaScript1:
-
-### Week 2
-
-- [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/variables.md)
-- [Basic Data types (Strings, Numbers, Arrays, Booleans)](./../../../../fundamentals/blob/master/fundamentals/values.md)
-- [Operators](./../../../../fundamentals/blob/master/fundamentals/operators.md)
-- [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
-
-### Week 3
-
-- [Advanced data types (objects)](./../../../../fundamentals/blob/master/fundamentals/objects.md)
-- [Conditional execution](./../../../../fundamentals/blob/master/fundamentals/conditional_execution.md) <br>
-- [Statements vs Expressions](./../../../../fundamentals/blob/master/fundamentals/statements_expressions.md)<br>
-- [Loops (for/while)](./../../../../fundamentals/blob/master/fundamentals/loops.md)
-- [Functions](./../../../../fundamentals/blob/master/fundamentals/functions.md)
-- [Scope](./../../../../fundamentals/blob/master/fundamentals/scope.md)
+## 3. What is DOM Manipulation?
 
 ## Required readings for the first lecture
 
@@ -108,28 +53,18 @@ Extras:
 - [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [Chrome DevTools Debugging](https://developers.google.com/web/tools/chrome-devtools/)
 
-### Recommended readings
+* Chapter 13: [JavaScript and the Browser](http://eloquentjavascript.net/13_browser.html)
 
-These chapters from _Eloquent JavaScript_ give in-depth explanations of the topics that will be discussed during the lecture. Highly recommended (if time permits).
-
-- Chapter 13: [JavaScript and the Browser](http://eloquentjavascript.net/13_browser.html)
-
-- Chapter 14: [The Document Object Model](http://eloquentjavascript.net/14_dom.html)
+* Chapter 14: [The Document Object Model](http://eloquentjavascript.net/14_dom.html)
 
   _You can skip the following sections:_
 
   - Moving through the tree
 
-- Chapter 15: [Handling Events](http://eloquentjavascript.net/15_event.html)
+* Chapter 15: [Handling Events](http://eloquentjavascript.net/15_event.html)
 
   Notes: for the lectures and homework you only need to know about these events: `click`, `change`, `keyup` and `load`.
 
-  _You can skip the following sections (but come to these sections when doing the React module):_
+## Finished?
 
-  - Touch events
-  - Scroll events
-  - Focus events
-  - Events and the Event Loop
-  - Debouncing
-
-_Please go through the material and come to class prepared!_
+Are you finished with going through the materials? High five! If you feel ready to get practical, click [here](./MAKEME.md).

@@ -1,21 +1,21 @@
-# Reading material for the third lecture:
+# Reading Material JavaScript2 Week 2
 
-```
-In week three we will discuss the following topics:
-• Closures
-• Scope
-• Callbacks
-```
+## Agenda
 
-## Here are resources that we like you to read as a preparation for the coming lecture:
+These are the topics for week 2:
 
-### Closures
+1. Callbacks
+   - sfsdf
+   - sdf
+2. Scope
+   - sdfsd
+   - asdas
+3. Closures
 
-- [Closures](http://javascriptissexy.com/understand-javascript-closures-with-ease/)
-- [MDN Closures](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures)
+## 1. What is a library?
 
-### Design patterns
+## 2. What is jQuery?
 
--  [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailnamespacing) up to and including chapter 3
+## Finished?
 
-_Please go through the material and come to class prepared!_
+Are you finished with going through the materials? High five! If you feel ready to get practical, click [here](./MAKEME.md).

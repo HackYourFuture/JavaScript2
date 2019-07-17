@@ -1,34 +1,45 @@
-### Reading Week 2
+# Reading Material JavaScript2 Week 3
 
-# Reading material for the second lecture:
+## Agenda
 
-```
-In week two we will discuss the following topics:
-• Functions + JSON/Arrays
-• Array Manipulations
-• JSON
-• Map and filter
-• Arrow functions
-```
+These are the topics for week 3:
 
-## Here are resources that we like you to read as a preparation for the coming lecture. 
+1. What is a library?
+   - Popular libraries
+   - Library versus framework
+2. What is jQuery?
+   - Difference between 'vanilla' JavaScript and jQuery
+   - How jQuery works
+
+## 1. What is a library?
+
+## 2. What is jQuery?
+
+## Finished?
+
+Are you finished with going through the materials? High five! If you feel ready to get practical, click [here](./MAKEME.md).
+
+## Here are resources that we like you to read as a preparation for the coming lecture.
 
 ### JSON
+
 - [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) (MDN)
 
 ### Map and Filter
+
 - :dizzy: [Fun fun functional](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) :dizzy: Check the first 3-4 videos.
 
 ### Code conventions
+
 - Code conventions: http://crockford.com/javascript/code.html
 
 ### Array cardio
+
 - Wes Bos' awesome free tutorials. Just make a free account and do Array Cardio #1 [here](https://javascript30.com/)
 
 ### From _Eloquent JavaScript_
 
 - Objects continued: http://eloquentjavascript.net/06_object.html
-
 
 ## Recommended readings
 
