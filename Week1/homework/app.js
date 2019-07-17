@@ -135,6 +135,10 @@ const injectListBooksFullInfo = () => {
          <p><span>By: </span>${bookWriter}.<br /><span>Category: </span>${bookCategory}<br /><span>Price:</span> $ ${bookPrice}</p> `;
   });
 };
-window.addEventListener('load', injectListBooksFullInfo);
-window.addEventListener('load', injectListBooksTitles);
+
+window.addEventListener('load', () => {
+  injectListBooksFullInfo();
+  injectListBooksTitles();
+});
+
 document.getElementById('btn_books_array').addEventListener('click', ListBooksTitles);
