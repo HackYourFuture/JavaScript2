@@ -2,17 +2,16 @@
 
 // never-used so I commented out
 // const bookTitles = [
-//   // Replace with your own book titles
-//   'The_Lord_the_Rings',
-//   'The_Little_Prince',
-//   'Harry_Potter_Philosopher_Stone',
-//   'The_Hobbit',
-//   'And_Then_There_Were_None',
-//   'Dream_the_Red_Chamber',
-//   'The_Lion_the_Witch_the_Wardrobe',
-//   'She_A_History_Adventure',
-//   'The_Adventures_Pinocchio',
-//   'Vardi_Wala_Gunda',
+//   'the_lord_the_rings',
+//   'the_little_prince',
+//   'harry_potter_philosopher_stone',
+//   'the_hobbit',
+//   'and_then_there_were_none',
+//   'dream_the_red_chamber',
+//   'the_lion_the_witch_the_wardrobe',
+//   'she_a_history_adventure',
+//   'the_adventures_pinocchio',
+//   'vardi_wala_gunda',
 // ];
 
 const bookDetails = {
@@ -69,16 +68,16 @@ const bookDetails = {
 };
 
 const bookCovers = {
-  The_Lord_the_Rings: '../images/The_Lord_the_Rings.jpg',
-  The_Little_Prince: '../images/The_Little_Prince.jpg',
-  Harry_Potter_Philosopher_Stone: '../images/Harry_Potter_Philosopher_Stone.jpg',
-  The_Hobbit: '../images/The_Hobbit.jpg',
-  And_Then_There_Were_None: '../images/And_Then_There_Were_None.jpg',
-  Dream_the_Red_Chamber: '../images/Dream_the_Red_Chamber.jpg',
-  The_Lion_the_Witch_the_Wardrobe: '../images/The_Lion_the_Witch_the_Wardrobe.jpg',
-  She_A_History_Adventure: '../images/She_A_History_Adventure.jpg',
-  The_Adventures_Pinocchio: '../images/The_Adventures_Pinocchio.jpg',
-  Vardi_Wala_Gunda: '../images/Vardi_Wala_Gunda.jpg',
+  the_lord_the_rings: '../images/The_Lord_the_Rings.jpg',
+  the_little_prince: '../images/The_Little_Prince.jpg',
+  harry_potter_philosopher_stone: '../images/Harry_Potter_Philosopher_Stone.jpg',
+  the_hobbit: '../images/The_Hobbit.jpg',
+  and_then_there_were_none: '../images/And_Then_There_Were_None.jpg',
+  dream_the_red_chamber: '../images/Dream_the_Red_Chamber.jpg',
+  the_lion_the_witch_the_wardrobe: '../images/The_Lion_the_Witch_the_Wardrobe.jpg',
+  she_a_history_adventure: '../images/She_A_History_Adventure.jpg',
+  the_adventures_pinocchio: '../images/The_Adventures_Pinocchio.jpg',
+  vardi_wala_gunda: '../images/Vardi_Wala_Gunda.jpg',
 };
 
 const bookCoverKeys = Object.keys(bookCovers);
@@ -93,14 +92,14 @@ function addMain() {
     li.id = bookCoverKeys[i];
     ul.appendChild(li);
     const title = document.createElement('h1');
-    title.textContent = 'Title: ' + bookInfo[i][1].title; // const bookInfo = Object.entries(bookDetails);
+    title.textContent = 'Title: ' + bookInfo[i][1].title;
     li.appendChild(title);
-    const para1 = document.createElement('p');
-    para1.textContent = 'Language: ' + bookInfo[i][1].language;
-    li.appendChild(para1);
-    const para2 = document.createElement('p');
-    para2.textContent = 'Author: ' + bookInfo[i][1].author;
-    li.appendChild(para2);
+    const languagePara = document.createElement('p');
+    languagePara.textContent = 'Language: ' + bookInfo[i][1].language;
+    li.appendChild(languagePara);
+    const authorPara = document.createElement('p');
+    authorPara.textContent = 'Author: ' + bookInfo[i][1].author;
+    li.appendChild(authorPara);
 
     const images = document.createElement('img');
     images.setAttribute('src', bookCoverValues[i]);
@@ -110,5 +109,4 @@ function addMain() {
   body.appendChild(ul);
 }
 
-// window.onload = () => main();
 window.onload = () => addMain();

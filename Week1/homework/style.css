@@ -44,12 +44,32 @@ p {
 
 img {
   width: 50%;
-  height: auto;
-  margin-left: 7rem;
+  height: 300px;
 }
 
 img:hover {
-  transform: scale(1.02);
   border: 1px solid black;
   cursor: pointer;
+}
+
+@media screen and (min-width: 426px) {
+  li {
+    width: calc((100% - 3rem) / 2);
+    margin: auto;
+  }
+  img {
+    margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  li {
+    width: calc((100% - 4rem));
+    margin: auto;
+  }
+  img {
+    margin-left: 4rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
 }
