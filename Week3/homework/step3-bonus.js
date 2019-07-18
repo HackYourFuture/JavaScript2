@@ -10,5 +10,5 @@ function makeUnique() {
 const uniqueValues = makeUnique(values);
 console.log(uniqueValues);
 
-// Do not change or remove anything below this line
+// Do not change or remove anything below this line.
 module.exports = makeUnique;
