@@ -3,18 +3,9 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique() {
-  values.filter(function(item, pos) {
- return values.indexOf(item) == pos;
-})
-};
-
-function makeUnique(values) {
-  let seen = {};
-  return values.filter(function(item) {
-      return seen.hasOwnProperty(item) ? false : (seen[item] = true);
-  });
+  const unique = values.filter((v, i, a) => a.indexOf(v) === i);
+  return unique;
 }
-
 
 const uniqueValues = makeUnique(values);
 console.log(uniqueValues);
