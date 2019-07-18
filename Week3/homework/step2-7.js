@@ -21,3 +21,9 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+/*
+---pass by value 
+the parameter of "val" has nothing to do with argument "x". Const x is beyond the function scope.
+---pass by reference
+here the code "val.x" is directly addressing the object by targeting object value.
+*/

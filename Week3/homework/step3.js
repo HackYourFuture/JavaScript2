@@ -1,8 +1,9 @@
 'use strict';
 
-function createBase(base) {
-  // Replace this comment and the next line with your code
-  console.log(base);
+function createBase(a) {
+  return function(y) {
+    console.log(y + a);
+  };
 }
 
 const addSix = createBase(6);

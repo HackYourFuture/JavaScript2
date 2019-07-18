@@ -1,22 +1,21 @@
 'use strict';
 
-const arr2d = [[1, 2], [3, 4], [5, 6]];
-const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+const flattenArray2d = [[1, 2], [3, 4], [5, 6]];
+const flattenArray3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
-function flattenArray2d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+for (let i = 0; i < flattenArray2d.length; i++) {
+  for (let z = 0; z < flattenArray2d[i].length; z++) {
+    console.log(flattenArray2d[i][z]);
+  }
 }
 
-function flattenArray3d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+for (let i = 0; i < flattenArray3d.length; i++) {
+  for (let z = 0; z < flattenArray3d[i].length; z++) {
+    for (let j = 0; j < flattenArray3d[i].length; j++) {
+      console.log(flattenArray3d[i][z][j]);
+    }
+  }
 }
-
-console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
-console.log(flattenArray3d(arr3d)); // -> [1, 2, 3, 4, 5, 6, 7, 8]
-
-// Do not change or remove anything below this line
 module.exports = {
   flattenArray2d,
   flattenArray3d,
