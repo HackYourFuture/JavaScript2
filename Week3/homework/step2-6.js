@@ -10,7 +10,7 @@ function flattenArray2d(arr) {
 }
 
 function flattenArray3d(arr) {
-  return flatten(flatten(arr));
+  return flatten(arr.map(el => (Array.isArray(el) ? flattenArray3d(el) : el)));
 }
 
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
