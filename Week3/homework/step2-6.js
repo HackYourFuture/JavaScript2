@@ -8,7 +8,7 @@ const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 function flattenArray2d(arr) {
   return flatten(arr);
 }
-
+// flatten any arr
 function flattenArray3d(arr) {
   return flatten(arr.map(el => (Array.isArray(el) ? flattenArray3d(el) : el)));
 }
