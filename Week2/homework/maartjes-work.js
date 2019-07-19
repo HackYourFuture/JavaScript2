@@ -74,25 +74,38 @@ const maartjesHourlyRate = 20;
 // Third solution is to get the hours in decimals. I will be using this solution for the next steps.
 // This time I will change the original array.
 
-console.log('\nThis is Maartjes Tasks with durations transformed into hours: \n');
+// console.log('\nThis is Maartjes Tasks with durations transformed into hours: \n');
 
-maartjesTasks = maartjesTasks.map(task => ({
-  name: task.name,
-  duration: task.duration / 60,
-}));
+// maartjesTasks = maartjesTasks.map(task => ({
+//   name: task.name,
+//   duration: task.duration / 60,
+// }));
 
-console.table(maartjesTasks);
+// console.table(maartjesTasks);
 
 // Filter out every task that took less than two hours (remove from the collection)
 
-console.log('\nTasks that take more than two hours: \n');
-maartjesTasks = maartjesTasks.filter(task => task.duration >= 2);
-console.table(maartjesTasks);
+// console.log('\nTasks that take more than two hours: \n');
+// maartjesTasks = maartjesTasks.filter(task => task.duration >= 2);
+// console.table(maartjesTasks);
 
 // Multiply each duration by a per-hour rate for billing (use €20/hour) and sum it all up.
 // Output a formatted Euro amount, rounded to Euro cents, e.g: €11.34.
 
 function computeEarnings(tasks, hourlyRate) {
+  // This is Maartjes Tasks with durations transformed into hours
+
+  maartjesTasks = maartjesTasks.map(task => ({
+    name: task.name,
+    duration: task.duration / 60,
+  }));
+  console.table(maartjesTasks);
+
+  // Tasks that take more than two hours
+
+  maartjesTasks = maartjesTasks.filter(task => task.duration >= 2);
+  console.table(maartjesTasks);
+
   const totalEarnings = tasks.reduce(
     (accumulator, currentValue) => accumulator + currentValue.duration * hourlyRate,
     0,
@@ -102,7 +115,7 @@ function computeEarnings(tasks, hourlyRate) {
 
 // eslint-disable-next-line no-unused-vars
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
-
+console.log(earnings);
 // add code to convert `earnings` to a string rounded to two decimals (euro cents)
 const result = earnings.toFixed(2);
 
