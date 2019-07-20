@@ -27,6 +27,36 @@ function numberFilter(num) {
 
   return numOutPutDigits;
 }
-numberFilter(userNumber);
+//numberFilter(userNumber);
 
 //Quesion Number #3
+const arr1 = [
+  'Dell',
+  'Huawei',
+  'HP',
+  'Apple',
+  'Huawei',
+  'Asus',
+  'Dell',
+  'Asus',
+  'Asus',
+  'Apple',
+  'Dell',
+  'Dell',
+];
+
+let numFrequency = 1;
+let count = 0;
+let mostFrequentlyUsed;
+arr1.forEach(function(val, i) {
+  arr1.forEach(function(val, j = i) {
+    if (arr1[i] == arr1[j]) count++;
+    if (numFrequency < count) {
+      numFrequency = count;
+      mostFrequentlyUsed = arr1[i];
+    }
+  });
+  count = 0;
+});
+console.log('mostFrequentlyUsed:' + mostFrequentlyUsed + '-' + numFrequency);
+//Quesion Number #4
