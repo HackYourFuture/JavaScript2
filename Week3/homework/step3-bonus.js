@@ -10,5 +10,9 @@ function makeUnique(arr) {
 const uniqueValues = makeUnique(values);
 console.log(uniqueValues);
 
+// Using set
+const uniqueArray = [...new Set(values)];
+console.log(`Using Set:`, uniqueArray);
+
 // Do not change or remove anything below this line
 module.exports = makeUnique;

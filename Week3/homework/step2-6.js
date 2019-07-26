@@ -13,6 +13,8 @@ function flattenArray2d(arr) {
   return newArr;
 }
 
+console.log(`Using for loop: `, flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
+
 function flattenArray3d(arr) {
   const newArr = [];
   arr.forEach(element => {
@@ -25,10 +27,30 @@ function flattenArray3d(arr) {
   return newArr;
 }
 
-console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
 console.log(flattenArray3d(arr3d)); // -> [1, 2, 3, 4, 5, 6, 7, 8]
 
-// shorter solution
+// Using reduce
+
+function flattenArr(arr) {
+  const newArr = arr.reduce((a, b) => a.concat(b), []);
+  return newArr;
+}
+
+console.log(`Using reduce:`, flattenArr(arr2d)); // flattens down 1 dimension
+
+// Using recursion
+
+function flatten(arr) {
+  if (Array.isArray(arr)) {
+    return arr.reduce(function(a, b) {
+      return a.concat(flatten(b));
+    }, []);
+  }
+  return arr;
+}
+
+console.log(`Using recursion:`, flatten(arr3d));
+// Shorter solution
 
 function flattenAllDimensions(arr, dimension) {
   return arr.flat(dimension);

@@ -4,17 +4,18 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
   for (let i = startIndex; i <= stopIndex; i++) {
     numbers.push(i);
+    if (i % 5 === 0 && i % 3 === 0) {
+      threeCallback(i);
+      fiveCallback(i);
+      return;
+    }
+    if (i % 3 === 0) {
+      threeCallback(i);
+    }
+    if (i % 5 === 0) {
+      fiveCallback(i);
+    }
   }
-  numbers.forEach(number => {
-    const isNumberDivisibleBy5 = number % 5 === 0;
-    const isNumberDivisibleBy3 = number % 3 === 0;
-    if (isNumberDivisibleBy3) {
-      threeCallback(number);
-    }
-    if (isNumberDivisibleBy5) {
-      fiveCallback(number);
-    }
-  });
 }
 
 function sayThree(number) {
