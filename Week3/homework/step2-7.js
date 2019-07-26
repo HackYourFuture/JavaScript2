@@ -20,4 +20,5 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// First function, x and val have different memories, so that also f1 returns 10, we log actually 9(which is x original value).
+// Second function, y influenced by x, but y and val have same memories, so that we log 10 now.
