@@ -4,12 +4,9 @@
 
 These are the topics for week 3:
 
-1. What is a library?
-   - Popular libraries
-   - Library versus framework
-2. What is jQuery?
-   - Difference between 'vanilla' JavaScript and jQuery
-   - How jQuery works
+1. Web Storage
+2. Event Loop
+3. Callbacks
 
 ## 1. What is a library?
 

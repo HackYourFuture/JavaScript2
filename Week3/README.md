@@ -4,7 +4,7 @@
 
 These are the topics for week 2:
 
-1. Callbacks
+1. SPA vs. MPA
    - sfsdf
    - sdf
 2. Scope

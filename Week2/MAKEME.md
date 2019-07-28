@@ -1,4 +1,21 @@
-## Homework Week 2
+# Homework JavaScript2 Week 2
+
+## **Todo list**
+
+1. Practice the concepts
+2. JavaScript exercises
+3. Code along
+4. PROJECT:
+
+## **1. Practice the concepts**
+
+## **2. JavaScript exercises**
+
+## **3. Code along**
+
+- [Building a Real-World Application](https://www.youtube.com/watch?v=NYq9J-Eur9U)
+
+## **4. PROJECT:**
 
 ```
 Topics discussed this week:
@@ -159,15 +176,14 @@ _Deadline Sunday morning_
 
 Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
 
-### How to hand in your homework:
+## **SUBMIT YOUR HOMEWORK!**
 
-Go over your homework one last time:
+After you've finished your todo list it's time to show us what you got! Starting from this week you'll be submitting all your homework through GitHub. What you'll be doing is upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript1](https://www.github.com/HackYourFuture/JavaScript1) repository) using GIT.
 
-- Does your homework pass all the unit tests?
-- Does every file start with `'use strict';`?
-- Do the variable, function and argument names you created follow the [Naming Conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md)?
-- Have you resolved all issues flagged by ESLint and the spell checker (no wavy red and green underlines in VSCode)?
+Take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.
 
-If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
+The homework that needs to be submitted is the following:
 
-- [Handing in homework](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/homework_pr.md)
+1. JavaScript exercises
+
+_Deadline Saturday 23.59 CET_

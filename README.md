@@ -8,7 +8,7 @@
 
 If you were to ask a random person on the street the question "What is a browser?", you'll most likely get a variety of (incorrect) answers. For proof, check [this](https://www.youtube.com/watch?v=o4MwTvtyrUQ) out.
 
-You might be one of those people right now, but after this module no more.
+You might be one of those people right now, but after this module no more. In **JavaScript2**
 
 ## Learning goals
 
@@ -32,11 +32,11 @@ If you have any questions or if something is not entirely clear ¯\\\_(ツ)\_/¯
 
 ## Planning
 
-| Week | Topic                                         | Reading Materials              | Homework                        | Lesson Plan                        |
-| ---- | --------------------------------------------- | ------------------------------ | ------------------------------- | ---------------------------------- |
-| 1.   | Document-Object Model (DOM), DOM manipulation | [Reading W1](/Week1/README.md) | [Homework W1](/Week1/MAKEME.md) | [Lesson Plan W1](/Week1/MAKEME.md) |
-| 2.   | , Cookies & Sessions                          | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) | [Lesson Plan W2](/Week1/MAKEME.md) |
-| 3.   | Callbacks, Closures & Scope                   | [Reading W3](/Week3/README.md) | [Homework W3](/Week3/MAKEME.md) | [Lesson Plan W3](/Week1/MAKEME.md) |
+| Week | Topic                                         | Reading Materials              | Homework                        | Lesson Plan                            |
+| ---- | --------------------------------------------- | ------------------------------ | ------------------------------- | -------------------------------------- |
+| 1.   | Document-Object Model (DOM), DOM manipulation | [Reading W1](/Week1/README.md) | [Homework W1](/Week1/MAKEME.md) | [Lesson Plan W1](/Week1/LESSONPLAN.md) |
+| 2.   | Developer tools, Event Loop, Callbacks        | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) | [Lesson Plan W2](/Week1/LESSONPLAN.md) |
+| 3.   | SPA vs. MPA, Scope, Closures                  | [Reading W3](/Week3/README.md) | [Homework W3](/Week3/MAKEME.md) | [Lesson Plan W3](/Week1/LESSONPLAN.md) |
 
 ## Test
 
