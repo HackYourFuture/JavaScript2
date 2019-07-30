@@ -11,24 +11,7 @@
 
 ## **2. JavaScript exercises**
 
-## **3. Code along**
-
-- [Building a Real-World Application](https://www.youtube.com/watch?v=NYq9J-Eur9U)
-
-## **4. PROJECT:**
-
-```
-Topics discussed this week:
-• Functions + JSON/Arrays
-• Array Manipulations
-• JSON
-• Map and filter
-• Arrow functions
-```
-
-> [Here](/Week3/README.md) you find the readings you have to complete before the third lecture.
-
-## Step 1: More map, filter and `=>`
+# Step 1: More map, filter and `=>`
 
 _Deadline Wednesday_
 
@@ -113,6 +96,14 @@ Follow these steps. Each step should build on the result of the previous step.
 - Output a formatted Euro amount, rounded to Euro cents, e.g: `€11.34`.
 - Choose variable and parameters names that most accurately describe their contents or purpose. When naming an array, use a plural form, e.g. `durations`. For a single item, use a singular form, e.g. `duration`. For details, see [Naming Conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md).
 - Don't forget to use `=>`.
+
+## **3. Code along**
+
+- [Building a Real-World Application](https://www.youtube.com/watch?v=NYq9J-Eur9U)
+
+## **4. PROJECT:**
+
+#
 
 ## Step 2: Testing your homework
 

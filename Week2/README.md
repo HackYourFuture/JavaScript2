@@ -4,13 +4,25 @@
 
 These are the topics for week 3:
 
-1. Web Storage
+1. Callbacks
 2. Event Loop
-3. Callbacks
+3. Developer Tools
+4. Web Storage
 
-## 1. What is a library?
+## 1. Callbacks
 
-## 2. What is jQuery?
+## 2. Event Loop
+
+How does the browser know what to do first? This is where the Event Loop comes in.
+
+For further study, check out the following resources
+
+- [What the heck is an event loop?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+- [JavaScript Event Loop](https://www.youtube.com/watch?v=XzXIMZMN9k4)
+
+## 3. Developer Tools
+
+- [Google Chrome Developer Tools Crash Course](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 ## Finished?
 

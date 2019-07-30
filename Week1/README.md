@@ -4,27 +4,59 @@
 
 These are the topics for week 1:
 
-1. What is a browser?
+1. What is a web browser?
    - How a browser works
-   - Different browsers
+   - Different browsers work differently
 2. What is the Document-Object Model (DOM)?
    - JavaScript and the browser
    - The DOM
    - The Critical Rendering Path
    - Traversing the DOM
 3. What is DOM Manipulation?
+   - Manipulating elements
    - Browser events
    - Event listeners and handlers
 
 [DOM Crash Course](https://www.youtube.com/playlist?list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s)
 
-## 1. What is a browser?
+## 1. What is a web browser?
 
-A browser is software that allows you to access websites.
+A web browser is software that allows you to access websites.
 
 ### How a browser works
 
-[How a web browser functions](https://www.youtube.com/watch?v=z0HN-fG6oT4)
+In your journey into becomeing a web developer it's important to know the tools you'll be using intimately. One such is the browser, which will be used to display your websites. In the following resources you'll learn about the many parts any web browser consists of and what their use is:
+
+- [How a web browser functions](https://www.youtube.com/watch?v=z0HN-fG6oT4)
+- [How do web browsers work?](https://medium.com/@monica1109/how-does-web-browsers-work-c95ad628a509)
+
+### Different browsers work differently
+
+A website, ultimately is a set of instructions describing how a series of webpages should look. It's up to the browser to render it by reading the code from your HTML/CSS and JavaScript files. There are, however, differences in the code interpretation of the different browsers, thus making the output look differently.
+
+That's why you should check the way your website looks on different browsers during the development of your website. This is called making it **cross browser compatible**>
+
+You can use the following online tool in order see how your pages look on multiple browsers:
+
+- [Browsershots](http://browsershots.org)
+
+A good website should look and function the same in any browser.
+
+Unfortunately, there is no easy solution for that. You should check the specificities of each browser that fails to display your website correctly and make the necessary adjustments to your code. Such compatibility issues may occur not only in different browsers but because of an old browser version which does not support completely the latest standards.
+
+This is because browser development doesn't go at the same speed as programming language development. More often than not, the web technologies you're using will have more features you as a developer can make use of than the browser can currently handle. This is important to keep in mind.
+
+When you do your styling, especially, it's important to know if a certain browser (and browser version) is even able to understand it. A helpful tool in identifying this is a website called **caniuse.com**:
+
+- [caniuse](https://caniuse.com/)
+- [Check HTML5/CSS3 Support with CANIUSE.COM](https://www.youtube.com/watch?v=el7McMP8CB8)
+
+Generally speaking, you want to support as many browsers (and browser versions) with your code as possible.
+
+For more research, check out the following resources:
+
+- [Dealing with Cross Browser Compatibility](https://www.youtube.com/watch?v=9tEixRJ3GeI)
+- [Understanding The Stacking Context for Cross Browser Compatibility](https://medium.com/@mattcroak718/understanding-the-stacking-context-for-cross-browser-compatibility-2b21db1cf621)
 
 ## 2. What is the Document-Object Model (DOM)?
 
@@ -42,51 +74,97 @@ For our purposes, it's only important to understand that the browser looks at Ja
 
 - [JavaScript, the Browser, and the DOM](https://www.youtube.com/watch?v=31ViueuIXGE)
 
-## The DOM
+### The DOM
+
+The Document-Object Model (DOM) is a tree-like representation of the structure of a webpage. The following is a simple example:
+
+![Simple DOM](./../assets/simple-dom.png)
 
 JavaScript is made accessible to the DOM by embedding it into an HTML file. You might've seen the <script></script> before; well, this is how the browser becomes aware of JavaScript.
 
 - [What exactly is the DOM](https://bitsofco.de/what-exactly-is-the-dom/)
 - [JavaScript and the browser](https://eloquentjavascript.net/13_browser.html)
 
-## The Critical Rendering Path
+### The Critical Rendering Path
 
 The actual process of transforming HTML, CSS and JavaScript into a user-viewable version of a webpage is called **the Critical Rendering Path**.
 
 - [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/)
 
-### Traversing the DOM
+## 3. What is DOM Manipulation?
 
-Traversing the DOM essential means: using JavaScript to select certain elements within the DOM in order to modify them (change color, size or make them disappear, for example). The modification of elements is also known as **DOM manipulation**.
+**DOM manipulation** refers to the activity of selecting and modifying DOM elements. The main reason why this is done is that **you want to show the user different things depending their activity**, for example:
 
-Learning how to write JavaScript that targets the DOM is an essential part of being a web developer. In the following resources
+- You click on a [hamburger menu icon](https://bit.ly/2Yr4O7Z) and a navigation menu slides in
+- You scroll down and the elements of
+
+Finding the right elements is called **traversing the DOM**. Traversing the DOM essential means: using JavaScript to select certain elements within the DOM in order to modify them (change color, size or make them disappear, for example).
+
+### Manipulating elements
+
+Look at the following code sample:
+
+```js
+const body = document.querySelector('body'); // you can also use 'document.body'
+const newParagraph = document.createElement('p');
+newParagraph.innerText = 'This paragraph will be added to the body!';
+newParagraph.style.background = 'red';
+body.appendChild(newParagraph);
+```
+
+In this example we're executing the following steps:
+
+1. We're first selecting the body: this is always necessary, as we can only add or remove elements from the body of the document
+2. Secondly, we're creating a new DOM element: a <p> element
+3. Thirdly, we're injecting content into the element
+4. Fourthly, we give our element a background color
+5. Finally, we add the <p> element in the body
+
+Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return key you will find your new <p> at the end of the page!
+
+Learning how to write JavaScript that targets the DOM is an essential part of being a web developer. In the following resources you'll more about how to do that:
 
 - [Traversing the DOM with JavaScript](https://zellwk.com/blog/dom-traversals/)
 - [JavaScript DOM Crash Course - Part 2](https://www.youtube.com/watch?v=mPd2aJXCZ2g)
 
-## 3. What is DOM Manipulation?
-
 ### Browser events
 
-Browser events are very much like real-life events: they are important things that happen. In real-life this could be getting a job, graduating from school or receiving a birthday gift. In terms of the browser, this is much more small scale: user actions like `clicking`, `scrolling` or `typing` are all considered events.
+Browser events (also known as DOM events) are very much like real-life events: they are important things that happen. In real-life this could be getting a job, graduating from school or receiving a birthday gift. In terms of the browser, this is much more small scale: user actions like `clicking`, `scrolling` or `typing` are all considered events.
 
-These events are important to know about, because based on those we manipulate the DOM. It's cause and effect: user clicks on an image and as a result it, for example, increases in size.
+These events are important to know about, because based on those we manipulate the DOM. For example, user clicks on an image and as a result it increases in size.
+
+Effectively it's cause and effect.
+
+Check out the following resources to learn more about what events there are, and what you can do to manipulate elements after an event has happened:
 
 - [What are browser events?](https://www.youtube.com/watch?v=LeKKU3a4AQo)
+- [Introduction to browser events](https://javascript.info/introduction-browser-events)
 - [JavaScript DOM Crash Course - Part 3](https://www.youtube.com/watch?v=wK2cBMcDTss)
 
 ### Event listeners and handlers
 
-The process of DOM manipulation happens in three steps:
+Take a look at this code:
 
-(1) an event happens ("User clicks on a button")
-(2) JavaScript is aware and looking for this specific user action
-(3) JavaScript modifies the DOM as a result ("The button disappears and is replaced by an image")
+```js
+const body = document.querySelector('body');
+body.addEventListener('click', function() {
+  body.style.background = 'black';
+});
+```
 
-The second step is called **listening for the event**. We do this by using a by the browser predefined function called `addEventListener()`, which we get from the `document` object.
+Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return click the website. You should see the whole <body> becoming black!
+
+This is DOM manipulation in its simplest form. It goes in three essential steps:
+
+(1) An event happens ("User clicks on the page")
+(2) JavaScript is aware and looks for this specific user action (The browser is listening for the event*), in this case a `click` event)
+(3) JavaScript modifies the DOM as a result (\_A function that makes the body background color black is executed*)
+
+The second step is called **listening for the event**. We do this by using a by the browser predefined function called `addEventListener()`, which we get from the `document` object in the browser. The browser needs to listen to the event in order to know what it should do ("make the body background color black") in case a certain event (`click`) happens to a certain element (`body`).
 
 The third and final step is called **handling the event**. The term "handler" effectively means "taking care of" the event; the response to the event. The handler itself is nothing more than a function that executes more JavaScript code in order to manipulate a particular part of the page (either the element that experienced the event or a totally different part of the page).
 
+- [Events in JavaScript](https://www.youtube.com/watch?v=7UstS0hsHgI)
 - [JavaScript Events Tutorial](https://www.youtube.com/watch?v=e57ReoUn6kM)
 
 ## Finished?
