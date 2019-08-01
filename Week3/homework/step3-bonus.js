@@ -3,16 +3,10 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-  arr.sort(function(letter1, letter2) {
-    return letter1 > letter2;
-  });
-  const unique = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== arr[i + 1]) {
-      unique.push(arr[i]);
-    }
-  }
-  return unique;
+  const set1 = new Set(arr);
+  const setArray = [];
+  set1.forEach(i => setArray.push(i));
+  return setArray;
 }
 
 const uniqueValues = makeUnique(values);
