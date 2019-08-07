@@ -124,8 +124,7 @@ Start with this webpage, which has a single img tag of an animated GIF of a cat 
 
 ## **3. Code along**
 
-- [Item Lister](https://www.youtube.com/watch?v=wK2cBMcDTss)
-- [Building a Real-World Application](https://www.youtube.com/watch?v=NYq9J-Eur9U)
+- [Build an Issue Tracker](https://www.youtube.com/watch?v=NYq9J-Eur9U)
 
 ## **4. PROJECT: **
 
@@ -133,7 +132,7 @@ Start with this webpage, which has a single img tag of an animated GIF of a cat 
 
 After you've finished your todo list it's time to show us what you got! Upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript2](https://www.github.com/HackYourFuture/JavaScript2) repository) using GIT. Then make a pull request to the original.
 
-If you need a refresher, take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.§
+If you need a refresher, take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.
 
 The homework that needs to be submitted is the following:
 

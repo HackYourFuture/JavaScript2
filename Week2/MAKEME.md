@@ -99,7 +99,7 @@ Follow these steps. Each step should build on the result of the previous step.
 
 ## **3. Code along**
 
-- [Building a Real-World Application](https://www.youtube.com/watch?v=NYq9J-Eur9U)
+- [Build a Rock, Paper, Scissors Game](https://www.youtube.com/watch?v=WR_pWXJZiRY)
 
 ## **4. PROJECT:**
 
