@@ -4,17 +4,15 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
   for (let i = startIndex; i <= stopIndex; i++) {
     numbers.push(i);
-  }
-  numbers.forEach(num => {
-    if (num % 15 === 0) {
-      threeCallback(num);
-      fiveCallback(num);
-    } else if (num % 3 === 0) {
-      threeCallback(num);
-    } else if (num % 5 === 0) {
-      fiveCallback(num);
+    if (i % 15 === 0) {
+      threeCallback(i);
+      fiveCallback(i);
+    } else if (i % 3 === 0) {
+      threeCallback(i);
+    } else if (i % 5 === 0) {
+      fiveCallback(i);
     }
-  });
+  }
 }
 
 function sayThree(number) {

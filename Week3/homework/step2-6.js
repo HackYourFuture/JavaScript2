@@ -11,6 +11,19 @@ function flattenArray3d(arr) {
   return [].concat(...arr).reduce((acc, curr) => [...acc, ...curr]);
 }
 
+function flattenArray(arr) {
+  let flatArray = [];
+  arr.forEach(element => {
+    if (Array.isArray(element)) {
+      flatArray = flatArray.concat(flattenArray(element));
+    } else {
+      flatArray.push(element);
+    }
+  });
+  return flatArray;
+}
+
+console.log(flattenArray(arr3d)); // -> [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
 console.log(flattenArray3d(arr3d)); // -> [1, 2, 3, 4, 5, 6, 7, 8]
 
