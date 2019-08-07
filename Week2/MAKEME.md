@@ -11,7 +11,7 @@
 
 ## **2. JavaScript exercises**
 
-# Step 1: More map, filter and `=>`
+Step 1: More map, filter and
 
 _Deadline Wednesday_
 
@@ -103,70 +103,6 @@ Follow these steps. Each step should build on the result of the previous step.
 
 ## **4. PROJECT:**
 
-#
-
-## Step 2: Testing your homework
-
-We have provided _unit tests_ in this repo that allow you to verify that your homework produces the expected results.
-
-> **Unit test**: A _unit test_ is a piece of code (usually a function) that invokes another piece of code and checks the correctness of some assumptions afterwards. If the assumptions turn out to be wrong, the unit test has failed. A 'unit' is a method or function.
->
-> Adapted from: Roy Osherove (1.09), The art of Unit Testing. Greenwich, CT: Manning.
-
-At this point it is not important to understand how unit tests work. The only thing you need to know now is how to run the tests and how to determine whether your homework produces the correct results.
-
-#### Run the tests
-
-You can test your week 2 homework by typing this command in the terminal window:
-
-```
-npm run test-week2
-```
-
-You will see some output appearing in the console while the tests run. If all is well (no errors), the last couple of lines will look like this:
-
-```
-Test Suites: 2 passed, 2 total
-Tests:       2 passed, 2 total
-Snapshots:   0 total
-Time:        1.849s
-Ran all test suites matching /Week2\//i.
-```
-
-In case of unexpected results, say from _Maartjes work_ assignment, you might see something like this (you may need to scroll up a bit):
-
-```
-Test Suites: 1 failed, 1 passed, 2 total
-Tests:       1 failed, 1 passed, 2 total
-Snapshots:   0 total
-Time:        1.255s
-Ran all test suites matching /Week2\//i.
-```
-
-If that's the case, try and fix the error. When done, run the tests again: `npm run test-week2`
-
-Repeat the previous step until all (= 2 in this case) tests pass.
-
-## Step 3: ROVER
-
-Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)!
-
-## Step 4: **Some freeCodeCamp challenges:**
-
-_Deadline Saturday_
-
-1. [Comparisons with the Logical And Operator](https://www.freecodecamp.com/challenges/comparisons-with-the-logical-and-operator)
-
-2. [Record Collection](https://www.freecodecamp.com/challenges/record-collection)
-
-3. [Use the map Method to Extract Data from an Array](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
-
-## Step 5: Read before next lecture
-
-_Deadline Sunday morning_
-
-Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
-
 ## **SUBMIT YOUR HOMEWORK!**
 
 After you've finished your todo list it's time to show us what you got! Starting from this week you'll be submitting all your homework through GitHub. What you'll be doing is upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript1](https://www.github.com/HackYourFuture/JavaScript1) repository) using GIT.
@@ -176,5 +112,6 @@ Take a look at the following [guide](../hand-in-homework-guide.md) to see how it
 The homework that needs to be submitted is the following:
 
 1. JavaScript exercises
+2. PROJECT:
 
 _Deadline Saturday 23.59 CET_

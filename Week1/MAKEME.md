@@ -9,6 +9,8 @@
 
 ## **1. Practice the concepts**
 
+- [Making webpages interactive](https://www.khanacademy.org/computing/computer-programming/html-css-js)
+
 ## **2. JavaScript exercises**
 
 ### 1. The book list
@@ -129,9 +131,9 @@ Start with this webpage, which has a single img tag of an animated GIF of a cat 
 
 ## **SUBMIT YOUR HOMEWORK!**
 
-After you've finished your todo list it's time to show us what you got! Starting from this week you'll be submitting all your homework through GitHub. What you'll be doing is upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript1](https://www.github.com/HackYourFuture/JavaScript1) repository) using GIT.
+After you've finished your todo list it's time to show us what you got! Upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript2](https://www.github.com/HackYourFuture/JavaScript2) repository) using GIT. Then make a pull request to the original.
 
-Take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.
+If you need a refresher, take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.§
 
 The homework that needs to be submitted is the following:
 

@@ -17,8 +17,6 @@ These are the topics for week 1:
    - Browser events
    - Event listeners and handlers
 
-[DOM Crash Course](https://www.youtube.com/playlist?list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s)
-
 ## 1. What is a web browser?
 
 A web browser is software that allows you to access websites.
@@ -84,6 +82,7 @@ JavaScript is made accessible to the DOM by embedding it into an HTML file. You 
 
 - [What exactly is the DOM](https://bitsofco.de/what-exactly-is-the-dom/)
 - [JavaScript and the browser](https://eloquentjavascript.net/13_browser.html)
+- [JavaScript DOM Crash Course - Part 1](https://www.youtube.com/watch?v=0ik6X4DJKCc)
 
 ### The Critical Rendering Path
 
