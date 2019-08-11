@@ -34,15 +34,15 @@
   "homepage": "https://github.com/HackYourFuture/JavaScript2#readme",
   "devDependencies": {
     "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.26.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
-    "jest": "^23.6.0",
+    "jest": "^24.8.0",
     "prettier": "^1.15.2"
   }
 }
