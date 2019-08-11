@@ -104,7 +104,7 @@ We have provided _unit tests_ in this repo that allow you to verify that your ho
 >
 > Adapted from: Roy Osherove (1.09), The art of Unit Testing. Greenwich, CT: Manning.
 
-At this point it is not important to understand how unit tests work. The only thing you need to know now is how to run the tests and how to determine whether your homework produces the correct results.
+At this point it is not important to understand how unit tests work. The only thing you need to know now is how to run the tests and how to determine whether your homework produces the correct results. If you want to understand more about unittesting in JavaScript using Jest (as is done in the homework) you can read [A quick introduction to test driven development with Jest](https://www.freecodecamp.org/news/a-quick-introduction-to-test-driven-development-with-jest-cac71cb94e50/).
 
 #### Run the tests
 
