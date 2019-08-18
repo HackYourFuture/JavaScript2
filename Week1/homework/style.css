@@ -1,1 +1,37 @@
-/* add your styling here */
+li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.listItem {
+  height: 100px;
+  position: relative;
+  border: solid navy 1px;
+  border-radius: 2px;
+}
+
+.listItem img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 90px;
+  width: 90px;
+  border-radius: 45px;
+  border: solid whitesmoke 1px;
+}
+
+.listItem h3 {
+  position: relative;
+  top: 10px;
+  left: 100px;
+  color: midnightblue;
+  margin: 2px;
+}
+
+.listItem h4 {
+  position: relative;
+  top: 10px;
+  left: 100px;
+  color: lightslategray;
+  margin: 2px;
+}
