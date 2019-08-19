@@ -1,6 +1,7 @@
 'use strict';
 
 {
+  /*
   const myBookTitles = [
     // Replace with your own book titles
     'Siddhartha',
@@ -16,7 +17,7 @@
   ];
 
   // Replace with your own code
-  /*
+ 
   function generateList() {
     const ul = document.createElement('ul');
 
