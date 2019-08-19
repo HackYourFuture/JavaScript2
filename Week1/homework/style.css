@@ -24,6 +24,7 @@ li {
   position: relative;
   top: 10px;
   left: 100px;
+  width: calc(100% - 110px);
   color: midnightblue;
   margin: 2px;
 }
