@@ -36,7 +36,7 @@
     siddhartha: {
       title: 'Siddhartha',
       language: 'English',
-      author: 'hermann_hesse',
+      author: 'Hermann Hesse',
     },
     cities_of_salt: {
       title: 'Cities of Salt',
