@@ -1,1 +1,81 @@
-/* add your styling here */
+  body {
+    background-color:  #212b37;
+    padding: 0px 0px 10px 0;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+    font-family: Georgia, serif;
+    
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+  
+  p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left:20px;
+    font-weight: bolder;
+    }
+  
+.item {
+    float: left;
+    width: 23%;
+    height: 20em;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    }
+  li.item{
+      display: inline;
+      margin: 10px 12px 0 0;
+      padding: 0;
+    
+    }
+  
+  img {
+    max-height: 50%;
+    margin: auto;
+    display: block;
+    }
+  @media (min-width: 768px) and (max-width: 1024px) {      
+    .item{
+      width: 45%;
+    }
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+        color: antiquewhite;
+        margin: calc(12% / 2);
+    }
+    
+  }
+  @media (max-width: 414px) {       
+    .item{
+      width: 90%;
+      margin: 0 auto;
+      padding-left:-40px;
+      
+    }
+    li.item{
+        display: inline;;
+        margin: 10px 12px 0 0;
+        padding: 0;
+    }
+    
+    
+    h1 {
+        font-size: 1.75em;
+        font-weight: bold;
+        color: antiquewhite;
+        margin: calc(12% / 2);
+    }
+}
