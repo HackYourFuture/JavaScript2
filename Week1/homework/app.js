@@ -31,6 +31,7 @@
   }
   document.body.append(generateList());
 */
+
   const myBooks = {
     siddhartha: {
       title: 'Siddhartha',
@@ -87,29 +88,38 @@
   function booksInfo() {
     const ul = document.createElement('ul');
 
+    // Use "for in" loop with objects
     for (const book in myBooks) {
       const listItem = document.createElement('li');
       listItem.setAttribute('id', book);
-      const bookTitle = document.createElement('h3');
+
+      // create book title and link it to listItem. + add some styling.
+      const bookTitle = document.createElement('h2');
       bookTitle.textContent = myBooks[book].title;
       listItem.style.listStyle = 'none';
       listItem.appendChild(bookTitle);
 
+      // create book author and link it to listItem.
       const booksAuthor = document.createElement('p');
       booksAuthor.textContent = 'Author: ' + myBooks[book].author;
       listItem.appendChild(booksAuthor);
 
+      // create book language and link it to listItem.
       const Bookslanguage = document.createElement('p');
       Bookslanguage.textContent = 'Language: ' + myBooks[book].language;
       listItem.appendChild(Bookslanguage);
 
       ul.appendChild(listItem);
     }
+    // link the ul to the index file
     document.body.appendChild(ul);
   }
   booksInfo();
 
-  const booksCoverList = {
+  /* Create new object for the book covers. 
+  Used the same key names that been used in the nested objects in myBooks. 
+  That will place each image under the right book title */
+  const booksCoverObject = {
     siddhartha:
       'https://upload.wikimedia.org/wikipedia/commons/3/3e/Vorzugsausgabe_der_Erstauflage_von_1922%2C_Originalverlagseinband.JPG',
     cities_of_salt: 'https://images-na.ssl-images-amazon.com/images/I/51-o%2BeOPJBL.jpg',
@@ -127,12 +137,15 @@
 
   function bookCovers() {
     for (const book in myBooks) {
+      // Create an image tage for the covers and link it to book key in myBooks object. +  styling the image width.
       const cover = document.createElement('img');
       cover.style.width = '350px';
-      cover.setAttribute('src', booksCoverList[book]);
-      const list0fBookCovers = document.getElementById(book);
+      cover.setAttribute('src', booksCoverObject[book]);
 
-      list0fBookCovers.appendChild(cover);
+      const bookCoverslist = document.getElementById(book);
+
+      // link the covers to the book
+      bookCoverslist.appendChild(cover);
     }
   }
   bookCovers();
