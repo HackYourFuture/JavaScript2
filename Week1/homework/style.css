@@ -1,1 +1,33 @@
-/* add your styling here */
+button {
+  font-size: 2em;
+  color: brown;
+  padding: 2rem;
+  margin: 3rem;
+}
+button:hover {
+  background-color: darkgreen;
+  color: antiquewhite;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+li h1 {
+  font-size: 1.2em;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  margin: 3px;
+}
+
+.imageDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
