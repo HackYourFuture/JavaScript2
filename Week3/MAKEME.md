@@ -11,38 +11,76 @@
 
 ## **2. JavaScript exercises**
 
-## **3. Code along**
+### Scope/closure exercises
 
-- [Building a Real-World Application](https://www.youtube.com/watch?v=NYq9J-Eur9U)
+**Exercise 1: Add six**
 
-## **4. PROJECT:**
+Write a function that would allow you to do this:
 
-# Homework Week 3
-
-```
-Topics discussed this week:
-• Closures
-• Scope
-• Callbacks
+```js
+const addSix = createBase(6);
+addSix(10); // returns 16
+addSix(21); // returns 27
 ```
 
-> [Here](https://github.com/HackYourFuture/JavaScript3/tree/master/Week1) you find the readings you have to complete before the first JavaScript3 lecture.
+**Exercise 2: asds**
 
-## Step 1: Read
+Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c']` and returns an array which only has unique values in it (so it removes the duplicate ones). Make it a 'smart' algorithm that could do it for every array (only strings/number).
 
-> Read:
+**Exercise 3: Guess the output**
 
-- JavaScript : [Closures](http://conceptf1.blogspot.com/2013/11/javascript-closures.html)
-- Everything you wanted to know about [JavaScript scope](https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/)
-- JavaScript [Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
-- 5 JavaScript [“Bad” Parts That Are Fixed In ES6](https://medium.freecodecamp.com/5-javascript-bad-parts-that-are-fixed-in-es6-c7c45d44fd81)
+In this exercise you'll be presented with 3 code snippets. Your task to is guess the output and write out your reasoning, for each single one, in 50 words or less.
 
-- More about [closures](https://www.reddit.com/r/learnjavascript/comments/1v6n8p/closure_explain_likei_am_in_high_school/?st=ixsp0mbe&sh=5526d150)
-- A VERY popular [StackOverflow article](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work)
+```js
+let a = 10;
+const x = (function() {
+  a = 12;
+  return function() {
+    alert(a);
+  };
+})();
 
-## Step 2: JavaScript
+x();
+```
 
-_Deadline Wednesday_
+```js
+const x = 9;
+function f1(val) {
+  val = val + 1;
+  return val;
+}
+f1(x);
+console.log(x);
+
+const y = { x: 9 };
+function f2(val) {
+  val.x = val.x + 1;
+  return val;
+}
+f2(y);
+console.log(y);
+```
+
+**Exercise 4: Make the sandwich**
+
+Mrs Potts the school dinner lady is tired of all the global sandwich variables getting under her feet and tripping her up all the time. She needs help cleaning her kitchen. Will you help her?
+
+She would like it very much if you would build a sandwich machine for her, but wrap it in a closure so as to keep everything neat.
+
+1. Create a self executing function
+2. Within the closure, create three little functions to add the bread, spread the soya margarine and add the jam. These little methods should use console.log to write a string representing their action to the DOM, e.g. "Now spreading the jam!"
+3. Assign makeSandwich to the global window object, thus smuggling it out of the closure.
+4. Call makeSandwich from outside the closure
+
+It should log to the console the following message:
+
+```markdown
+Adding bread
+Now spreading the soya magarine
+Spreading jam
+```
+
+**Exercise 5**
 
 We learned a little bit about callbacks in JS. A callback is simply a function passed to another function that gets executed (run) after a potentially long running operation has completed. There is another function called `setTimeout` that will wait a specified period of time and then execute a function. For example:
 
@@ -100,18 +138,6 @@ threeFive(10, 15, sayThree, sayFive);
 
 > Note: The following assignments include some problems from _freeCodeCamp_. Note that some _freeCodeCamp_ examples still mention `var`. However you can safely replace them with `let` and `const` as appropriate.
 
-**2.3** Please solve this problem:
-
-> [Basic Algorithm Scripting: Repeat a String Repeat a String](https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string)
-
-_2.3.1_: with a `for` loop.  
-_2.3.2_: with a `while` loop.  
-_2.3.3_: with a `do...while` loop.
-
-**2.4** Some practice with objects:
-
-> [Object Oriented Programming: Define a Constructor Function](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function)<br> > [Object Oriented Programming: Use a Constructor to Create Objects](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/use-a-constructor-to-create-objects)
-
 **2.5** Nested loops
 
 > [Basic JavaScript: Nesting For Loops
@@ -137,9 +163,6 @@ How would you flatten out all the items of an array with 2 dimensions into a one
 const flattenedArr = [1, 2, 3, 4, 5, 6];
 ```
 
-How about 3 dimensions? How about with _K_ dimensions?
-What if you didn't know how deep the array was nested? (You don't have to write code for this but think about it.)
-
 **2.7** Here are two functions that look like they do the something similar but they print different results. Please explain what's going on here.
 
 ```js
@@ -160,50 +183,21 @@ f2(y);
 console.log(y);
 ```
 
-If you are confused please run the code and then consult the Google for "javascript pass by value pass by reference"
+## **3. Code along**
 
-## Step 3: Scope and Closures
+- [Build a Booklist App](https://www.youtube.com/watch?v=JaMCxVWtW58)
 
-_Deadline Saturday_
-
-> Let's continue to learn a little more about scope and Closures.
-
-Write a function that would allow you to do this:
-
-```js
-const addSix = createBase(6);
-addSix(10); // returns 16
-addSix(21); // returns 27
-```
-
-**Bonus**: Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c']` and returns an array which only has unique values in it (so it removes the duplicate ones). Make it a 'smart' algorithm that could do it for every array (only strings/number). Try to make it as fast as possible!
-
-## Step 4: Run the unit tests
-
-To run the unit test for the week 3 homework, open a terminal window in the `JavaScript2` folder and type
-
-```
-npm run test-week3
-```
-
-In case of errors, try and fix them. When done, run the tests again.
-
-Repeat the previous step until all tests pass.
-
-## Step 5: Read before next lecture
-
-_Deadline Sunday morning_
-
-Go through the reading material in the [README.md](https://github.com/HackYourFuture/JavaScript3/tree/master/Week1) to prepare for your next class
+## **4. PROJECT:**
 
 ## **SUBMIT YOUR HOMEWORK!**
 
-After you've finished your todo list it's time to show us what you got! Starting from this week you'll be submitting all your homework through GitHub. What you'll be doing is upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript1](https://www.github.com/HackYourFuture/JavaScript1) repository) using GIT.
-
-Take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.
-
-The homework that needs to be submitted is the following:
+Finished? Good on you! The homework that needs to be submitted is the following:
 
 1. JavaScript exercises
+2. PROJECT:
+
+Upload both to your forked JavaScript2 repository in GitHub. Make a pull request to the original repository.
+
+> Forgotten how to upload your homework? Go through the [guide](../hand-in-homework-guide.md) to learn how to do this again.
 
 _Deadline Saturday 23.59 CET_

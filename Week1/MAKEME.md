@@ -5,9 +5,11 @@
 1. Practice the concepts
 2. JavaScript exercises
 3. Code along
-4. PROJECT:
+4. PROJECT: Random Quote Generator
 
 ## **1. Practice the concepts**
+
+Before we head into the exercises, it might be nice to do some interactive exercises first! In the following resource you'll find some exercises that'll teach you the basics of the interaction between JavaScript and the DOM
 
 - [Making webpages interactive](https://www.khanacademy.org/computing/computer-programming/html-css-js)
 
@@ -20,7 +22,7 @@ I'd like to display my three favorite books inside a nice webpage!
 ```js
 const books = [
   {
-    title: 'The Design of EveryDay Things',
+    title: 'The Design of Everyday Things',
     author: 'Don Norman',
     alreadyRead: false,
   },
@@ -36,7 +38,7 @@ const books = [
 2. For each book, create a p element with the book title and author and append it to the page.
 3. Use an <ul> and <li> to display the books.
 4. Add an <img> to each book that links to a URL of the book cover.
-5. Change the style of the book depending on whether you have read it or not.
+5. Change the style of the book depending on whether you have read it (green) or not (red).
 
 ### 2. About me
 
@@ -61,39 +63,31 @@ Start with this HTML and save it as "about_me.html":
 </html>
 ```
 
-Add a script tag to the bottom of the HTML body.
-(In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
-(In the JavaScript) Replace each of the spans (nickname, fav-food, hometown) with your own information.
-Iterate through each li and change the class to "list-item".
-(In the HTML head) Add a style tag that sets a rule for .list-item to make the color red.
-Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+1. Add a script tag to the bottom of the HTML body.
+2. (In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
+3. (In the JavaScript) Replace each of the spans (nickname, fav-food, hometown) with your own information.
+4. Iterate through each li and change the class to "list-item".
+5. (In the HTML head) Add a style tag that sets a rule for .list-item to make the color red.
+6. Create a new img element and set its src attribute to a picture of you. Append that element to the page.
 
-### 3. The Logo Hijack
+### 3. The logo hijack
 
-No homepage is safe from the logo bandit!
+No homepage is safe from the logo bandit! Everytime he sees a Google Logo he replaces it with a logo from HackYourfuture instead: https://www.hackyourfuture.dk/static/logo-dark.svg.
 
-Open up www.google.com in Chrome or Firefox, and open up the console.
-Find the Google logo and store it in a variable.
-Modify the source of the logo IMG so that it's a Yahoo logo instead.
-Find the Google search button and store it in a variable.
-Modify the text of the button so that it says "Yahooo!" instead.
+In this exercise you're expected to write a JavaScript function that can be executed in the console of the [Google website](https://www.google.com).
 
-### 4.
+1. Inside a JavaScript file, called `hijackGoogleLogo.js`, create a function called hijackGoogleLogo
+2. Find out how to select the element that contains the Google logo, and store it in a variable
+3. Modify the source and sourceset of the logo so that it's replaced by the HackYourFuture logo instead
 
-Write the code necessary to do the following:
+### 4. What's the time?
 
-Select the section with an id of container without using querySelector.
-Select the section with an id of container using querySelector.
-Select all of the list items with a class of "second".
-Select a list item with a class of third, but only the list item inside of the ol tag.
-Give the section with an id of container the text "Hello!".
-Add the class main to the div with a class of footer.
-Remove the class main on the div with a class of footer.
-Create a new li element.
-Give the li the text "four".
-Append the li to the ul element.
-Loop over all of the lis inside the ol tag and give them a background color of "green".
-Remove the div with a class of footer.
+Why wear a watch when you can check the time, live in your webpage?
+
+1. Create an empty HTML file, called `time.html`
+2. Create a JavaScript file called `showCurrentTime.js` and include it in the HTML file
+3. Inside the JS file, write a function that adds the current time to the webpage. Make sure it's written in the HH:MM:SS notation (hour, minute, second). Hint: use `setInterval()` to make sure the time stays current
+4. Have the function execute when it's loading in the browser
 
 ### 5. The cat walk
 
@@ -117,16 +111,33 @@ Start with this webpage, which has a single img tag of an animated GIF of a cat 
 3. Change the style of the img to have a "left" of "0px", so that it starts at the left hand of the screens.
 4. Create a function called catWalk() that moves the cat 10 pixels to the right of where it started, by changing the "left" style property.
 5. Call that function every 50 milliseconds. Your cat should now be moving across the screen from left to right. Hurrah!
-
 6. When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to right across the screen, forever and ever.
-
 7. When the cat reaches the middle of the screen, replace the img with an image of a cat dancing (use this URL: https://tenor.com/StFI.gif), keep it dancing for 10 seconds, and then replace the img with the original image and have it continue the walk.
 
 ## **3. Code along**
 
+In the following tutorial you'll learn how to make a small web application that allows a user to add new issues to a board. Included is practice with [Bootstrap](https://getbootstrap.com/).
+
 - [Build an Issue Tracker](https://www.youtube.com/watch?v=NYq9J-Eur9U)
 
-## **4. PROJECT: **
+## **4. PROJECT: Random quote Generator**
+
+> Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
+
+In this week's project you'll be making a Random Quote Generator! It includes a text box and a simple button that, when clicked, take a random quote out of a set amount of quotes and show it in the page. Here's how it may look like:
+
+![Random Quote Generator](../assets/randomquotegenerator.png)
+
+Here are the requirements:
+
+- Include at least 1 JavaScript, CSS and HTML file
+- The design should look similar to the one in the picture above
+- No frameworks allowed
+- Each time the button is clicked it should show a random quote
+- Create a function that fires after the button click
+- Collect 6 of your favorite quotes (quote and author) and store them in the right data structure
+
+Good luck!
 
 ## **SUBMIT YOUR HOMEWORK!**
 
@@ -137,6 +148,6 @@ If you need a refresher, take a look at the following [guide](../hand-in-homewor
 The homework that needs to be submitted is the following:
 
 1. JavaScript exercises
-2. Project:
+2. Project: Random quote generator
 
 _Deadline Saturday 23.59 CET_

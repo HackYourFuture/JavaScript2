@@ -101,17 +101,17 @@ Follow these steps. Each step should build on the result of the previous step.
 
 - [Build a Rock, Paper, Scissors Game](https://www.youtube.com/watch?v=WR_pWXJZiRY)
 
-## **4. PROJECT:**
+## **4. PROJECT: **
 
 ## **SUBMIT YOUR HOMEWORK!**
 
-After you've finished your todo list it's time to show us what you got! Starting from this week you'll be submitting all your homework through GitHub. What you'll be doing is upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript1](https://www.github.com/HackYourFuture/JavaScript1) repository) using GIT.
-
-Take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.
-
-The homework that needs to be submitted is the following:
+After you've finished your todo list it's time to show us what you got! The homework that needs to be submitted is the following:
 
 1. JavaScript exercises
 2. PROJECT:
+
+Upload both to your forked JavaScript2 repository in GitHub. Make a pull request to the original repository.
+
+> Forgotten how to upload your homework? Go through the [guide](../hand-in-homework-guide.md) to learn how to do this again.
 
 _Deadline Saturday 23.59 CET_
