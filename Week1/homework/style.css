@@ -1,1 +1,71 @@
 /* add your styling here */
+
+.classList {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #e25d33;
+  width: 60%;
+  border: solid 0.3em grey;
+  text-align: center;
+}
+
+.images {
+  width: 60%;
+  margin-top: 6%;
+  border: solid pink 1em;
+}
+
+.ulClass {
+  list-style-type: none;
+}
+
+.h1Class {
+  text-align: center;
+  font-size: 5em;
+  background-color: #494949;
+  color: white;
+}
+
+.h2Class {
+  font-size: 3em;
+}
+.h3Class {
+  font-size: 2.6em;
+}
+
+.paragraph {
+  font-size: 1.8em;
+}
+
+/* On screens that are 360px or less */
+@media screen and (max-width: 360px) {
+  .h1Class {
+    background-color: rgb(54, 54, 5);
+    font-size: 2em;
+  }
+
+  .classList {
+    width: 90%;
+  }
+
+  .h2Class {
+    font-size: 1.9em;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 700px) {
+  .classList {
+    width: 90%;
+  }
+
+  .h1Class {
+    background-color: #8c3c64;
+    font-size: 2.3em;
+    color: black;
+  }
+  .h2Class {
+    font-size: 2em;
+  }
+}
