@@ -20,62 +20,64 @@
       title: "Harry Potter's - The Chamber of Secrets",
       language: 'English',
       author: 'J. K. Rowling',
-      img: 'https://s.s-bol.com/imgbase0/imagebase3/large/FC/1/7/4/5/9200000011395471.jpg',
     },
     currency_wars: {
       title: 'Currency Wars',
       language: 'English',
       author: 'James Richards',
-      img: 'https://s.s-bol.com/imgbase0/imagebase3/large/FC/6/6/4/1/9200000002301466.jpg',
     },
     brief_history_time: {
       title: 'A Brief History Of Time',
       language: 'English',
       author: 'Stephen Hawking',
-      img: 'https://s.s-bol.com/imgbase0/imagebase3/regular/FC/4/6/1/5/1001004011695164.jpg',
     },
     code_book: {
       title: 'The Code Book',
       language: 'English',
       author: 'Simon Singh',
-      img: 'https://s.s-bol.com/imgbase0/imagebase3/regular/FC/6/3/3/2/1001004000572336.jpg',
     },
     how_analyze_people: {
       title: 'How to Analyze People',
       language: 'English',
       author: 'Emma Jones Zach Raymond',
-      img: 'https://s.s-bol.com/imgbase0/imagebase3/regular/FC/0/4/2/5/9200000054225240.jpg',
     },
     ana_yurt: {
       title: 'Ana Yurt',
       language: 'Uyghur',
       author: 'Zordun Sabir',
-      img: 'https://elkitab.org/wp-content/uploads/2017/05/anayurt-2.png',
     },
     oyghanghan_zimin: {
       title: 'Oyghanghan Zimin',
       language: 'Uyghur',
       author: 'Abdurehim Otkur',
-      img: 'https://elkitab.org/wp-content/uploads/2017/05/abdurehim-otkur-oyghanghan-zimin-e1496141273584.jpeg',
     },
     iz: {
       title: 'Iz',
       language: 'Uyghur',
       author: 'Abdurehim Otkur',
-      img: 'https://elkitab.org/wp-content/uploads/2017/05/abdurehim-otkur-iz-1-190x290.png',
     },
     brain_rules_baby: {
       title: 'Brain Rules for Baby',
       language: 'English',
       author: 'John Medina',
-      img: 'https://s.s-bol.com/imgbase0/imagebase3/regular/FC/4/1/1/7/1001004010617114.jpg',
     },
     baby_minds: {
       title: 'Baby Minds',
       language: 'English',
       author: 'Linda Acredolo Susan Goodwin',
-      img: 'https://s.s-bol.com/imgbase0/imagebase3/regular/FC/5/3/5/8/1001004001348535.jpg',
     },
+  };
+  const booksCover = {
+    harry_potter_chamber_secrets: './img/harry_potter_chamber_secrets.jpg',
+    currency_wars: './img/Currency wars.jpg',
+    brief_history_time: './img/A Brief History Of Time.jpg',
+    code_book: './img/The Code Book.jpg',
+    how_analyze_people: './img/How to Analyze People.jpg',
+    ana_yurt: './img/ana yurt.png',
+    oyghanghan_zimin: './img/oyghanghan zimin.jpeg',
+    iz: './img/iz.png',
+    brain_rules_baby: './img/BrainRulesforBaby.jpg',
+    baby_minds: './img/Baby Minds.jpg',
   };
 
   function bookList() {
@@ -84,14 +86,11 @@
     for (let i = 0; i < bookTitles.length; i++) {
       // Create li teg
       const bookLi = document.createElement('li');
+      bookLi.id = 'list';
       // Div Of  Book's Image
       const imgDiv = document.createElement('div');
-      imgDiv.setAttribute('id', 'bookImg');
-      // Book's Image
-      const img = document.createElement('img');
-      img.src = myBooks[bookTitles[i]].img;
-      imgDiv.appendChild(img);
-      // Div Of  Book's Info
+      imgDiv.setAttribute('id', bookTitles[i]);
+      imgDiv.setAttribute('class', 'booksImg');
       const infoDiv = document.createElement('div');
       infoDiv.setAttribute('id', 'bookInfo');
       // Book Name
@@ -113,8 +112,17 @@
     }
     return bookUl;
   }
+  const bookCovers = () => {
+    for (const book of Object.keys(booksCover)) {
+      const cover = document.createElement('img');
+      cover.setAttribute('src', booksCover[book]);
+      const bookCoversList = document.getElementById(book);
+      bookCoversList.appendChild(cover);
+    }
+  };
   const headTitle = document.createElement('h1');
   headTitle.textContent = 'My Books';
   document.body.appendChild(headTitle);
   document.body.appendChild(bookList());
+  bookCovers();
 }
