@@ -1,1 +1,63 @@
-/* add your styling here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  color: rgb(6, 66, 129);
+}
+
+h4 {
+  line-height: 1em;
+  color: cornflowerblue;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+
+.mainHeading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: indigo;
+}
+
+.bookItem {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px;
+  background-color: azure;
+}
+
+.bookCover {
+  height: 200px;
+  margin: 10px 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .bookItem {
+    width: calc(100% - 10px * 2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bookItem {
+    width: calc(50% - 10px * 2);
+  }
+}
+
+@media (min-width: 1025px) {
+  .bookItem {
+    width: calc(100% / 3 - 10px * 2);
+  }
+}
