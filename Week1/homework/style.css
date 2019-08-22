@@ -1,1 +1,66 @@
 /* add your styling here */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: 5px dashed black;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+  margin: 50px;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px pink;
+  animation-name: title;
+  animation-duration: 5s;
+  text-transform: lowercase;
+}
+
+@keyframes title {
+  from {
+    font-size: 1px;
+  }
+  to {
+    padding: 0px;
+  }
+}
+
+h2 {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+h3 {
+  font-size: 20px;
+  color: gray;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: monospace;
+}
+
+img {
+  display: block;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  /*margin-left: 50px;
+  margin-right: 50px;*/
+}
