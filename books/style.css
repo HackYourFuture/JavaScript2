@@ -1,0 +1,28 @@
+img {
+  width: 60vw;
+  border: 1px solid black;
+}
+li {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid rgba(226, 130, 130, 0.5);
+}
+
+h1 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 3em;
+}
+h2 {
+  font-family: monospace;
+  font-size: 2em;
+}
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-style: italic;
+}
