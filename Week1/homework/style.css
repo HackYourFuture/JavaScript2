@@ -25,6 +25,7 @@ ul li {
   border-radius: 10px;
   padding: 30px 0;
   text-align: center;
+  list-style: none;
 }
 
 img {

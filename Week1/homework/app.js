@@ -1,36 +1,17 @@
 'use strict';
-
 {
-  /*
-  const myBookTitles = [
-    // Replace with your own book titles
-    'Siddhartha',
-    'one_hundred_years_of_solitude',
+  const bookTitles = [
+    'siddhartha',
+    'cities_of_salt',
     'the_metamorphosis',
     'hamlet',
     'heidi',
     'frankenstein',
     'lolita',
     'ulysses',
-    'deception',
-    'scandal',
+    'my_name_is_red',
+    'sarmada',
   ];
-
-  // Replace with your own code
- 
-  function generateList() {
-    const ul = document.createElement('ul');
-
-    for (let i = 0; i < myBookTitles.length; i++) {
-      const book = myBookTitles[i];
-      const listItem = document.createElement('li');
-      listItem.innerHTML = book;
-      ul.appendChild(listItem);
-    }
-    return ul;
-  }
-  document.body.append(generateList());
-*/
 
   const myBooks = {
     siddhartha: {
@@ -85,41 +66,7 @@
     },
   };
 
-  function booksInfo() {
-    const ul = document.createElement('ul');
-
-    // Use "for in" loop with objects
-    for (const book in myBooks) {
-      const listItem = document.createElement('li');
-      listItem.setAttribute('id', book);
-
-      // create book title and link it to listItem. + add some styling.
-      const bookTitle = document.createElement('h2');
-      bookTitle.textContent = myBooks[book].title;
-      listItem.style.listStyle = 'none';
-      listItem.appendChild(bookTitle);
-
-      // create book author and link it to listItem.
-      const booksAuthor = document.createElement('p');
-      booksAuthor.textContent = 'Author: ' + myBooks[book].author;
-      listItem.appendChild(booksAuthor);
-
-      // create book language and link it to listItem.
-      const Bookslanguage = document.createElement('p');
-      Bookslanguage.textContent = 'Language: ' + myBooks[book].language;
-      listItem.appendChild(Bookslanguage);
-
-      ul.appendChild(listItem);
-    }
-    // link the ul to the index file
-    document.body.appendChild(ul);
-  }
-  booksInfo();
-
-  /* Create new object for the book covers. 
-  Used the same key names that been used in the nested objects in myBooks. 
-  That will place each image under the right book title */
-  const booksCoverObject = {
+  const bookCovers = {
     siddhartha:
       'https://upload.wikimedia.org/wikipedia/commons/3/3e/Vorzugsausgabe_der_Erstauflage_von_1922%2C_Originalverlagseinband.JPG',
     cities_of_salt: 'https://images-na.ssl-images-amazon.com/images/I/51-o%2BeOPJBL.jpg',
@@ -135,20 +82,48 @@
       'https://media.newyorker.com/photos/590953e42179605b11ad3bbc/master/w_1298,c_limit/sarmadaimage.jpg',
   };
 
-  function bookCovers() {
-    for (const book in myBooks) {
-      // Create an image tage for the covers and link it to book key in myBooks object. +  styling the image width.
-      const cover = document.createElement('img');
-      cover.style.width = '350px';
-      cover.setAttribute('src', booksCoverObject[book]);
+  // Create and append unorderd ul & li
+  function generateList() {
+    const createUl = document.createElement('ul');
+    document.body.appendChild(createUl);
 
-      const bookCoverslist = document.getElementById(book);
-
-      // link the covers to the book
-      bookCoverslist.appendChild(cover);
+    for (let i = 0; i < bookTitles.length; i++) {
+      const createLi = document.createElement('li');
+      createLi.setAttribute('id', bookTitles[i]);
+      createUl.appendChild(createLi);
     }
   }
-  bookCovers();
 
-  //
+  function generateBookCards() {
+    // Add Title
+    for (let i = 0; i < bookTitles.length; i++) {
+      const createHeading = document.createElement('h3');
+      document.getElementById(bookTitles[i]).appendChild(createHeading);
+      const bookInfo = Object.keys(myBooks);
+      createHeading.innerText = myBooks[bookInfo[i]].title;
+
+      // Add Language
+      const createLanguage = document.createElement('p');
+      document.getElementById(bookTitles[i]).appendChild(createLanguage);
+      createLanguage.innerText = 'Language: ' + myBooks[bookInfo[i]].language;
+
+      // Add Author
+      const createAuthor = document.createElement('p');
+      document.getElementById(bookTitles[i]).appendChild(createAuthor);
+      createAuthor.innerText = 'Author: ' + myBooks[bookInfo[i]].author;
+    }
+    // Add Covers
+    for (const cover of Object.keys(bookCovers)) {
+      const createImg = document.createElement('img');
+      const list = document.getElementById(cover);
+      list.appendChild(createImg);
+      createImg.setAttribute('src', bookCovers[cover]);
+    }
+  }
+
+  function main() {
+    generateList();
+    generateBookCards();
+  }
+  window.onload = main();
 }
