@@ -116,22 +116,22 @@
     const li = document.createElement('li');
     li.setAttribute('id', bookID);
     ul.appendChild(li);
-
+  // I'm going to do create title element
     const title = document.createElement('h1');
     title.textContent = bookList[bookID].title;
     li.appendChild(title);
-
+  // I'm going to do create author element
     const author = document.createElement('p');
     author.setAttribute('class', 'aut');
     author.textContent = 'Author: ' + bookList[bookID].author;
     li.appendChild(author);
-
+  // I'm going to do create language element
     const language = document.createElement('p');
     language.setAttribute('class', 'lang');
     language.textContent = 'Language: ' + bookList[bookID].language;
     li.appendChild(language);
   });
-
+  // I'm going to do create image element and I will add to bookID 
   Object.keys(covers).forEach(bookID => {
     const li = document.getElementById(bookID);
     const bookIMG = document.createElement('img');
