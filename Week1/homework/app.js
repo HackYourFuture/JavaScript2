@@ -2,7 +2,6 @@
 //1.1
 
 const bookTitles = [
-  // Replace with your own book titles
   'harry_potter_chamber_secrets',
   'the_selfish_gene',
   'thinking_fast_slow',
@@ -15,52 +14,22 @@ const bookTitles = [
   'list_book',
 ];
 
-console.log(bookTitles);
-
 //1.2
-
-console.log(bookTitles[2]);
 
 //1.3
 let button = document.getElementById('clickButton');
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function pickBookTitle() {
   const divElement = document.createElement('div');
-
   document.getElementsByClassName('flexbox1')[0].appendChild(divElement);
-  let list = document.createElement('ul');
-  divElement.appendChild(list);
-  let line = document.createElement('li');
-  line.innerText = 'harry_potter_chamber_secrets';
-  list.appendChild(line);
 
-  let line1 = document.createElement('li');
-  line1.innerText = 'the_selfish_gene';
-  list.appendChild(line1);
-
-  let line2 = document.createElement('li');
-  line2.innerText = 'thinking_fast_slow';
-  list.appendChild(line2);
-
-  let line3 = document.createElement('li');
-  line3.innerText = 'the_idiot_brain';
-  list.appendChild(line3);
-
-  let line4 = document.createElement('li');
-  line4.innerText = 'the_laws_of_human_nature';
-  list.appendChild(line4);
-
-  let line5 = document.createElement('li');
-  line5.innerText = 'how_to_win_friends';
-  list.appendChild(line5);
-
-  let line6 = document.createElement('li');
-  line6.innerText = 'how to analyze people';
-  list.appendChild(line6);
-
-  let line7 = document.createElement('li');
-  line7.innerText = 'think_data_structure';
-  list.appendChild(line7);
+  for (let i = 0; i < bookTitles.length; i++) {
+    let unorderedList = document.createElement('ul');
+    let line = document.createElement('li');
+    line.textContent = bookTitles[i];
+    divElement.appendChild(unorderedList);
+    unorderedList.appendChild(line);
+  }
 });
 
 //1.4
@@ -89,6 +58,8 @@ const bookDetails = {
 
 //1.5
 const buttonTry = document.getElementById('tryMeButton');
+const bookInfo = Object.entries(bookDetails);
+console.log(bookInfo);
 
 buttonTry.addEventListener('click', function getBookDetails() {
   const bookInfo = Object.entries(bookDetails);
@@ -98,6 +69,7 @@ buttonTry.addEventListener('click', function getBookDetails() {
     const divBook = document.createElement('div');
     const li = document.createElement('li');
     const ul = document.createElement('ul');
+    document.getElementsByClassName('flexbox2')[0].appendChild(divBook);
     divBook.appendChild(ul);
     ul.appendChild(li);
     const title = document.createElement('h1');
@@ -109,7 +81,6 @@ buttonTry.addEventListener('click', function getBookDetails() {
     const authorPara = document.createElement('p');
     authorPara.textContent = 'Author: ' + bookInfo[i][1].author;
     li.appendChild(authorPara);
-    document.getElementsByClassName('flexbox2')[0].appendChild(divBook);
   }
 });
 
@@ -122,20 +93,31 @@ const objbookCover = {
   idiotImage: 'https://images-eu.ssl-images-amazon.com/images/I/51Orxc8w68L.jpg',
 };
 
+//1.8
+
 const bookCover = Object.values(objbookCover);
 
+console.log(objbookCover);
 console.log(bookCover);
 
 let bookImage = document.getElementById('imageButton');
 
-bookImage.addEventListener('click', function() {
+bookImage.addEventListener('click', function pickBookCover() {
   const bookCoverDiv = document.createElement('div');
   bookCoverDiv.setAttribute('class', 'imageDiv');
   document.getElementsByClassName('flexbox3')[0].appendChild(bookCoverDiv);
 
   for (let i = 0; i < bookCover.length; i++) {
+    const li = document.createElement('li');
+    const ul = document.createElement('ul');
+    bookCoverDiv.appendChild(ul);
+    ul.appendChild(li);
+    const title = document.createElement('h1');
+    title.textContent = bookInfo[i][1].title;
+    li.appendChild(title);
     const bookCoverImage = document.createElement('img');
     bookCoverImage.src = bookCover[i];
-    bookCoverDiv.appendChild(bookCoverImage);
+    li.appendChild(bookCoverImage);
+    bookCoverDiv.appendChild(li);
   }
 });
