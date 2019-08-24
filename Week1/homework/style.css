@@ -1,1 +1,41 @@
 /* add your styling here */
+/* add your styling here */
+* {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:lightcoral;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color:orangered;
+}
+
+p {
+  font-size: 18px;
+  color:black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+img {
+  max-width:150px;
+  border: 1px solid white;  
+  padding: 5px;
+  background-color: black;
+}
+
+li {
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+  background-color:whitesmoke;
+}
