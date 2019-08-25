@@ -103,7 +103,7 @@
 
     const coverBookList = {
       notes_from_underground:
-        'https://images-na.ssl-images-amazon.com/images/I/410ZirPKXKL._SX331_BO1,204,203,200_.jpg',
+        https://s.s-bol.com/imgbase0/imagebase3/large/FC/0/1/3/2/9200000024772310.jpg',
       brave_new_world: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/62/BraveNewWorld_FirstEdition.jpg/220px-BraveNewWorld_FirstEdition.jpg',
       nineteen_eighty_four: 'https://www.studystore.nl/images/9780141036144/3/1',
       animal_farm: 'https://s.s-bol.com/imgbase0/imagebase3/large/FC/6/2/8/8/1001004005988826.jpg',
