@@ -77,9 +77,8 @@
       'https://upload.wikimedia.org/wikipedia/commons/3/35/Frankenstein_1818_edition_title_page.jpg',
     lolita: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Lolita_1955.JPG',
     ulysses: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/JoyceUlysses2.jpg',
-    my_name_is_red: 'https://upload.wikimedia.org/wikipedia/en/a/a4/MyNameIsRed.jpg',
-    sarmada:
-      'https://media.newyorker.com/photos/590953e42179605b11ad3bbc/master/w_1298,c_limit/sarmadaimage.jpg',
+    my_name_is_red: 'http://prosecraft.io/library/orhan-pamuk/my-name-is-red/cover-art.572x900.jpg',
+    sarmada: 'https://www.interlinkbooks.com/wp-content/uploads/2018/11/9781566568722.jpg',
   };
 
   // Create and append unorderd ul & li
@@ -99,18 +98,17 @@
     for (let i = 0; i < bookTitles.length; i++) {
       const createHeading = document.createElement('h3');
       document.getElementById(bookTitles[i]).appendChild(createHeading);
-      const bookInfo = Object.keys(myBooks);
-      createHeading.innerText = myBooks[bookInfo[i]].title;
+      createHeading.innerText = myBooks[bookTitles[i]].title;
 
       // Add Language
       const createLanguage = document.createElement('p');
       document.getElementById(bookTitles[i]).appendChild(createLanguage);
-      createLanguage.innerText = 'Language: ' + myBooks[bookInfo[i]].language;
+      createLanguage.innerText = 'Language: ' + myBooks[bookTitles[i]].language;
 
       // Add Author
       const createAuthor = document.createElement('p');
       document.getElementById(bookTitles[i]).appendChild(createAuthor);
-      createAuthor.innerText = 'Author: ' + myBooks[bookInfo[i]].author;
+      createAuthor.innerText = 'Author: ' + myBooks[bookTitles[i]].author;
     }
     // Add Covers
     for (const cover of Object.keys(bookCovers)) {
