@@ -30,11 +30,11 @@ This is also how JavaScript by default operates. Only one operation can happen a
 
 ### Asynchronous
 
-Sometimes we want to do multiple things, without them being dependent on each other. Consider the following analogy:
+Sometimes we want to do multiple things, without each action to be dependent on each other. Consider the following analogy:
 
-> Wouter is feeling hungry so he decides to go to a restaurant. He arrives there and gets into the line to order food. After ordering he takes a seat and, while he waits, reads a book. Occassionally he looks around and sees different things happening: new people enter the restaurant, some people get their food served and others are just talking. After a short while Wouter's food arrives and it's time to dig in!
+> Wouter is feeling hungry, so he decides to go to a restaurant. He arrives there and gets into the line to order food. After ordering he takes a seat and, while he waits, reads a book. Occassionally he looks around and sees different things happening: new people enter the restaurant, some people get their food served and others are just talking. After a short while Wouter's food arrives and it's time to dig in!
 
-In this example Wouter reads a book, but that doesn't affect his meal from being prepared. Other
+In this example Wouter reads a book, but that doesn't affect his meal from being prepared. [TO BE CONTINUED]
 
 Take a look at the following diagram:
 
@@ -54,7 +54,7 @@ second();
 
 In this example, only after `first()` has been executed will `second()` be executed. Only one thing happens at a time, and the next thing will ONLY happen after the previous thing has finished. This synchronous execution happens predictably and sequentially, without exception.
 
-On the other hand we have
+On the other hand we have [TO BE CONTINUED]
 
 Executing each block of code (whether it's a line or a loop/function/etc.) after each other is called
 
@@ -66,9 +66,19 @@ Asynchronous execution avoids this bottleneck. You are essentially saying, “I 
 
 Imagine the following situation:
 
-> It's 15.00 and you studying at home for an exam on the next day. Suddenly, your phone rings. You pick up and find it's your best friend! They ask if you'd like to hang out later. What do you do? On the one hand, you'd love to hang out have fun. On the other hand, you really should study some more. You don't know so tell your friend that you're going to call back later with your answer. You end the conversation and go back to studying. Maybe you take a short break and
+> It's 15.00 and you're studying at home for an exam on the next day. Suddenly, your phone rings. You pick up and find it's your best friend! They ask if you'd like to hang out later. What do you do? On the one hand, you'd love to hang out have fun. On the other hand, you really should study some more. You don't know so you tell your friend that you're going to _call back_ later with your answer. You end the conversation and go back to studying. Maybe you take a break or have a snack as well. On the other line your friend hangs up the phone and continues along with their day: they go out grocery shopping, cleaning the house and cooking dinner. After finishing your studies you call your friend and makes plans to go out together.
 
-By default JavaScript works **synchronously**, as we've learned in the previous section.
+In this example there is one process: life. In technical terms you could call it the program. Life contains many things, but in this example it only contains two things: you and your friend. Let's call them mini programs, or `functions`. The function called "You" does various things: studying,
+
+This example illustrates the concept of **asynchronicity**: there are multiple processes happening simultaneously, without any single thing being dependent upon another thing. Your friend is not waiting by the phone until you have the answer. Or in technical terms: until the callback (which is you) has the return value (the asnwer to your friend's request to hang out).
+
+As we've learned in the previous section, by default JavaScript works **synchronously**. In short this means that only one command gets executed (and finishes) until the next command gets executed.
+
+Take this insight to heart: **Synchronicity is the process, callbacks are the implementation**. Let's clarify that:
+
+- Saying that the proces is synchronous, is saying that there can only be an execution of commands in a single sequence. But this process can be changed to be asynchronous, which means that the process can handle
+
+to initiate that process change from synchronous to asynchronous.
 
 This is why callbacks are important: it allows us to introduce asynchronicity in the control flow of a program.
 

@@ -18,11 +18,19 @@ These are the topics for week 3:
 
 On of the central concepts in programming is the idea of `context`: the meaning of any particular thing is only determined in relation to its direct surroundings. Let's take language for example. If I say the following sentence:
 
-> asdas
+> I never said she stole my money.
 
-Reading this it's not obvious how to interpret what's said. It depends on `context` for me to know how to look at it correctly.
+Reading this it's not obvious how to interpret what the situation is about. Depending on the emphasis of the words it could mean any of the following:
 
-In JavaScript, scope refers to the current context of your code.
+- _I_ never said she stole my money.
+- I _never_ said she stole my money.
+- I never _said_ she stole my money.
+- I never said _she_ stole my money.
+- I never said she _stole_ my money.
+- I never said she stole _my_ money.
+- I never said she stole my _money_.
+
+It depends on `context` for me to know what really happened. In programming, the term `scope` refers to the relevant variables that are involved in
 
 ### Global vs. local (function and block)
 
@@ -30,6 +38,15 @@ In JavaScript, scope refers to the current context of your code.
 - [Everything you wanted to know about JavaScript scope](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope)
 
 ### Const and let
+
+Quick refresher: Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
+
+In JavaScript we define them using the keyword `var`:
+
+```js
+var
+
+```
 
 ## 2. Hoisting
 
@@ -55,10 +72,13 @@ Hoisting happens during `compile-time`.
 
 ## 3. Closures
 
+Simply put, a closure is a function that is defined inside another function.
+
 For further study please check the following resources:
 
 - [The Ultimate Guide to Execution Contexts, Hoisting, Scoping and Closures in JavaScript](https://www.youtube.com/watch?v=Nt-qa_LlUH0)
 - [Understanding Closures](https://www.youtube.com/watch?v=rBBwrBRoOOY)
+- [Let's Learn JavaScript Closures](https://www.freecodecamp.org/news/lets-learn-javascript-closures-66feb44f6a44/)
 
 ## 4. Thinking like a programmer II
 

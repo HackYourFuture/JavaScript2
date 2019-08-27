@@ -120,7 +120,7 @@ In the following tutorial you'll learn how to make a small web application that 
 
 - [Build an Issue Tracker](https://www.youtube.com/watch?v=NYq9J-Eur9U)
 
-## **4. PROJECT: Random quote Generator**
+## **4. PROJECT: Random Quote Generator**
 
 > Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
 

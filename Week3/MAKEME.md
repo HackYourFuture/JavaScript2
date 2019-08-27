@@ -9,23 +9,48 @@
 
 ## **1. Practice the concepts**
 
-## **2. JavaScript exercises**
+Let's get familiar with basic Javascript concepts, with interactive exercises! Check out the following resources:
 
-### Scope/closure exercises
+- [Introduction to JavaScript: Scope (Codecademy)](https://www.codecademy.com/courses/introduction-to-javascript/lessons/scope/exercises/scope)
+
+## **2. JavaScript exercises**
 
 **Exercise 1: Add six**
 
-Write a function that would allow you to do this:
+Declare a function called `createBase`. It should return a closure, that adds a number to the base number argument.
+
+Call the function three times. The return values should be:
+
+1. 15
+2. 24
+3. 36
+
+It should look a little like this:
 
 ```js
+function createBase() {
+  // Put here your logic...
+}
+
 const addSix = createBase(6);
-addSix(10); // returns 16
-addSix(21); // returns 27
+
+// Put here your function calls...
+addSix();
 ```
 
-**Exercise 2: asds**
+**Exercise 2: Take out the duplicates**
 
-Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c']` and returns an array which only has unique values in it (so it removes the duplicate ones). Make it a 'smart' algorithm that could do it for every array (only strings/number).
+Write a function called `removeDuplicates`, that takes in an array as an argument:
+
+```js
+const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+```
+
+The function should remove duplicate letters. So the result should be:
+
+```js
+letters === ['a', 'b', 'c', 'd', 'e', 'f'];
+```
 
 **Exercise 3: Guess the output**
 
@@ -80,39 +105,16 @@ Now spreading the soya magarine
 Spreading jam
 ```
 
-**Exercise 5**
+**Exercise 5: The lottery machine**
 
-We learned a little bit about callbacks in JS. A callback is simply a function passed to another function that gets executed (run) after a potentially long running operation has completed. There is another function called `setTimeout` that will wait a specified period of time and then execute a function. For example:
+Don't you just love the thrill of the lottery? What if I told you we can make our own lottery machine? Let's get started!
 
-```js
-function doIt() {
-  console.log('I am done');
-}
-setTimeout(doIt, 5000);
-```
-
-> If you run the above code it will wait 5 seconds and then print `I am done`. Please read something about setTimeout on MDN. The first argument to the `setTimeout` call is the callback (`doIt`).
-
-**2.1** We saw that we can pass functions as arguments to other functions. Your task is to write a function that takes another function as an argument and runs it.
-
-```js
-function foo(func) {
-  // What to do here?
-}
-
-function bar() {
-  console.log('Hello, I am bar!');
-}
-
-foo(bar);
-```
-
-**2.2** You must write a function that takes 4 arguments.
+Write a function that takes 4 arguments.
 
 - A start value
 - An end value
-- A callback to call if the number is divisible by 3
-- A callback to use if the number is divisible by 5
+- A callback that executes if the number is divisible by 3
+- A callback that executes if the number is divisible by 5
 
 The function should first generate an array containing values from start value to end value (inclusive).
 
@@ -133,8 +135,18 @@ threeFive(10, 15, sayThree, sayFive);
 
 // Should create an array [10,11,12,13,14,15]
 // and call sayFive, sayThree, sayThree, sayFive
-// please make sure you see why these calls are made before you start coding
 ```
+
+We learned a little bit about callbacks in JS. A callback is simply a function passed to another function that gets executed (run) after a potentially long running operation has completed. There is another function called `setTimeout` that will wait a specified period of time and then execute a function. For example:
+
+```js
+function doIt() {
+  console.log('I am done');
+}
+setTimeout(doIt, 5000);
+```
+
+**2.2**
 
 > Note: The following assignments include some problems from _freeCodeCamp_. Note that some _freeCodeCamp_ examples still mention `var`. However you can safely replace them with `let` and `const` as appropriate.
 
