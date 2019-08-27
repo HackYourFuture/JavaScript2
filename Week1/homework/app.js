@@ -25,8 +25,7 @@
     this.author = author;
   }
 
-  // eslint-disable-next-line no-new-object
-  const favoriteBooks = new Object();
+  const favoriteBooks = {};
 
   favoriteBooks[bookTitles[0]] = new FavoriteBook(`The Road`, `English`, `Cormac McCarthy`);
   favoriteBooks[bookTitles[1]] = new FavoriteBook(
@@ -59,8 +58,7 @@
     this.coverImage = coverImage;
   }
 
-  // eslint-disable-next-line no-new-object
-  const favoriteBooksCovers = new Object();
+  const favoriteBooksCovers = {};
 
   favoriteBooksCovers[bookTitles[0]] = new BookCover(`images/the_road.jpg`);
   favoriteBooksCovers[bookTitles[1]] = new BookCover(`images/one_hundred_years_of_solitude.jpg`);
@@ -79,7 +77,8 @@
   function createBookList() {
     const bookList = document.createElement('ul');
 
-    for (const key of Object.keys(favoriteBooks)) {
+    //  for (const key of Object.keys(favoriteBooks)) {
+    for (let i = 0; i < bookTitles.length; i++) {
       bookItem = document.createElement('li');
       bookDiv = document.createElement(`div`);
       const bookTitle = document.createElement('h2');
@@ -87,13 +86,12 @@
       const bookLang = document.createElement('h4');
 
       bookItem.className = 'bookItem';
-      bookItem.id = key;
 
-      bookDiv.id = key + `_div`;
+      bookDiv.id = `${bookTitles[i]}_div`;
       // addBookCover(bookItem, key);
-      bookTitle.innerText = favoriteBooks[key].title;
-      bookAuthor.innerText = `written by ${favoriteBooks[key].author}`;
-      bookLang.innerText = `available in ${favoriteBooks[key].language}`;
+      bookTitle.innerText = favoriteBooks[bookTitles[i]].title;
+      bookAuthor.innerText = `written by ${favoriteBooks[bookTitles[i]].author}`;
+      bookLang.innerText = `available in ${favoriteBooks[bookTitles[i]].language}`;
 
       bookDiv.appendChild(bookTitle);
       bookDiv.appendChild(bookAuthor);
@@ -112,7 +110,7 @@
   the book images before the book info, I used a method called insertBefore. It really makes difference to add images later on, 
   thanks to that I learned a lot ^^ */
 
-  function addBookCover(book, keyVal) {
+  function addBookCover(keyVal) {
     for (const key of Object.keys(favoriteBooksCovers)) {
       if (keyVal === key) {
         const bookCover = document.createElement('img');
@@ -131,7 +129,7 @@
     }
   }
 
-  for (const key of Object.keys(favoriteBooks)) {
-    addBookCover(bookItem, key);
+  for (let i = 0; i < bookTitles.length; i++) {
+    addBookCover(bookTitles[i]);
   }
 }
