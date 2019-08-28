@@ -1,20 +1,19 @@
-img{
-  width:100px;
+img {
+  width: 100px;
   border: groove navy 4px;
   border-top-left-radius: 8px;
   float: left;
   margin-right: 25px;
-  
 }
-.ul{
-clear:right;
-}
-div{
+dd {
+  font-weight: bold;
   margin: 12px;
   padding: 6px;
-  clear: both;
   border: solid 1px brown;
   height: 160px;
   background-color: rgb(222, 216, 232);
   border-bottom-right-radius: 30%;
+}
+dt {
+  font-weight: normal;
 }

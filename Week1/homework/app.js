@@ -79,19 +79,19 @@
     },
   };
   function writeBookNamesInObject() {
+    const wholeList = document.createElement('dl');
+    document.body.appendChild(wholeList);
     for (const title of bookTitles) {
-      const container = document.createElement('div');
-      document.body.appendChild(container);
+      const container = document.createElement('dd');
+      container.textContent = allBooks[title].Name;
+      wholeList.appendChild(container);
       const coverImage = document.createElement('img');
       coverImage.src = 'img/' + title + '.jpg';
       container.appendChild(coverImage);
-      const ulElement = document.createElement('ul');
-      container.appendChild(ulElement);
       for (const property of Object.keys(allBooks[title])) {
-        console.log(property);
-        const liElement = document.createElement('li');
-        liElement.textContent = property + '  :  ' + allBooks[title][property];
-        ulElement.appendChild(liElement);
+        const propertyElement = document.createElement('dt');
+        propertyElement.textContent = property + '  :  ' + allBooks[title][property];
+        container.appendChild(propertyElement);
       }
     }
   }
