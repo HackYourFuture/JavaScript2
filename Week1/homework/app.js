@@ -120,7 +120,7 @@
 
 
 
-    for (let i in obj) {
+        for (let i in BooksDetails) {
       const li = document.createElement('li');
       ul.appendChild(li);
       //li.setAttribute('id', [i]);
