@@ -1,4 +1,6 @@
 'use strict';
+
+// 1.1
 {
   const bookTitles = [
     // Replace with your own book titles
@@ -13,7 +15,7 @@
     'to_kill_a_mockingbird',
     'the_adventures_of_huckleberry_finn',
   ];
-  // Replace with your own code
+
   const infoForEachBook = {
     harry_potter_and_the_chamber_of_secrets: {
       title: 'Harry Potter and the Chamber of Secrets',
@@ -71,13 +73,6 @@
       language: 'English',
       country: 'United States',
     },
-    to_kill_a_mockingbird: {
-      title: 'To Kill a Mockingbird',
-      author: 'Harper Lee',
-      genre: ' Southern Gothic, Bildungsroman',
-      language: 'English',
-      country: 'United States',
-    },
     the_adventures_of_huckleberry_finn: {
       title: 'The Adventures of Huckleberry Finn',
       author: 'Mark Twain',
@@ -85,10 +80,17 @@
       language: 'English',
       country: 'United States',
     },
+    to_kill_a_mockingbird: {
+      title: 'To Kill a Mockingbird',
+      author: 'Harper Lee',
+      genre: ' Southern Gothic, Bildungsroman',
+      language: 'English',
+      country: 'United States',
+    },
   };
 
-  
-  const bookCovers = {    
+  const bookCovers = {
+    the_adventures_of_huckleberry_finn: ' ./img/the_adventures_of_huckleberry_finn.jpg',
     harry_potter_and_the_chamber_of_secrets: './img/harry_potter_and_the_chamber_of_secrets.jpg',
     the_art_of_war: ' ./img/the_art_of_war.jpg',
     the_rise_and_fall_of_the_great_powers: ' ./img/the_rise_and_fall_of_the_great_powers.jpg',
@@ -98,64 +100,63 @@
     war_and_peace: ' ./img/war_and_peace.jpg',
     the_great_gatsby: ' ./img/the_great_gatsby.jpg',
     to_kill_a_mockingbird: ' ./img/to_kill_a_mockingbird.jpg',
-    the_adventures_of_huckleberry_finn: ' ./img/the_adventures_of_huckleberry_finn.jpg',
   };
 
+  const container = document.createElement('section');
+  document.body.appendChild(container);
+  const headingH1 = document.createElement('h1');
 
-  const newDiv = document.createElement('div');
-  console.log(newDiv);
-  document.getElementsByTagName('body')[0].appendChild(newDiv);
-  const newH1 = document.createElement('h1');
-  console.log(newH1);
-
-  newDiv.appendChild(newH1);
-  newH1.innerText = "THE BEST 10 HIGH RANKED BOOKS EVER "
-
+  container.appendChild(headingH1);
+  headingH1.innerText = 'THE BEST 10 HIGH RANKED BOOKS EVER';
 
   function generateMyFavoriteBookList() {
+    const unOrderedListUl = document.createElement('ul');
 
-    const newUl = document.createElement('ul');
-    console.log(newUl);
-    newDiv.appendChild(newUl);
+    container.appendChild(unOrderedListUl);
 
     const detailsOfBooks = Object.values(infoForEachBook);
-    console.log(detailsOfBooks);
-
+    const bookInfos = Object.keys(infoForEachBook);
     for (let i = 0; i < detailsOfBooks.length; i++) {
-      const newLi = document.createElement('li');
-      newUl.appendChild(newLi);
-      const newImg = document.createElement('img');
-      newLi.appendChild(newImg);
-      newImg.src = Object.values(bookCovers)[i];
-      const newHeadingH2 = document.createElement('h2');
-      const newHeadingH3 = document.createElement('h3');
-      newLi.appendChild(newHeadingH2);
-      newLi.appendChild(newHeadingH3);
-      const paraGenre = document.createElement('p');
-      newLi.appendChild(paraGenre);
-      const paraLanguage = document.createElement('p');
-      newLi.appendChild(paraLanguage);
-      const paraCountry = document.createElement('p');
-      newLi.appendChild(paraCountry);
+      // create elements
+
+      const listLi = document.createElement('li');
+      const images = document.createElement('img');
+      const headingH2 = document.createElement('h2');
+      const headingH3 = document.createElement('h3');
+      const paragraphOfGenre = document.createElement('p');
+      const paragraphOfLanguage = document.createElement('p');
+      const paragraphOfCountry = document.createElement('p');
+
+      // append elements
+      listLi.appendChild(images);
+      listLi.appendChild(headingH2);
+      listLi.appendChild(headingH3);
+      listLi.appendChild(paragraphOfGenre);
+      unOrderedListUl.appendChild(listLi);
+      listLi.appendChild(paragraphOfLanguage);
+      listLi.appendChild(paragraphOfCountry);
+
+      images.src = bookCovers[bookInfos[i]];
       const detailsOfBooksItem = detailsOfBooks[i];
-      newHeadingH2.innerText = detailsOfBooksItem.title;
-      newHeadingH3.innerText = detailsOfBooksItem.author;
-      paraGenre.innerText = detailsOfBooksItem.genre;
-      paraLanguage.innerText = detailsOfBooksItem.language;
-      paraCountry.innerText = detailsOfBooksItem.country;
-      console.log(newHeadingH2.innerText);
-      newImg.className = 'images';
-      newUl.className = 'ulClass';
-      newHeadingH2.className = 'h2Class';
-      newHeadingH3.className = 'h3Class';
-      paraGenre.className = 'paragraph';
-      paraLanguage.className = 'paragraph';
-      paraCountry.className = 'paragraph';
-      newLi.className = 'classList';
-      newH1.className = 'h1Class';
-    
+
+      // add texts
+      headingH2.innerText = detailsOfBooksItem.title;
+      headingH3.innerText = detailsOfBooksItem.author;
+      paragraphOfGenre.innerText = detailsOfBooksItem.genre;
+      paragraphOfLanguage.innerText = detailsOfBooksItem.language;
+      paragraphOfCountry.innerText = detailsOfBooksItem.country;
+
+      // add class names
+      images.className = 'images';
+      unOrderedListUl.className = 'ulClass';
+      headingH2.className = 'h2Class';
+      headingH3.className = 'h3Class';
+      paragraphOfGenre.className = 'paragraph';
+      paragraphOfLanguage.className = 'paragraph';
+      paragraphOfCountry.className = 'paragraph';
+      listLi.className = 'classList';
+      headingH1.className = 'h1Class';
     }
   }
   generateMyFavoriteBookList();
-
 }
