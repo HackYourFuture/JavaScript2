@@ -105,47 +105,24 @@ function oldBookInfo() {
 // creates a function which shows book details.
 function newBookInfo() {
   // creates elements
-  for (let i = 0; i < bookTitles.length; i++) {
+  for (let keys of bookTitles) {
     const listItem = document.createElement('li');
     listElement.appendChild(listItem);
-    const divElement = document.createElement('div');
-    listItem.appendChild(divElement);
-    divElement.className = 'mainDiv';
     const bookCover = document.createElement('img');
-    divElement.appendChild(bookCover);
+    listItem.appendChild(bookCover);
+    bookCover.setAttribute('src', bookCoverList[keys]);
     const divElementForInfo = document.createElement('div');
-    divElement.appendChild(divElementForInfo);
-    divElementForInfo.className = 'secondDiv';
-    const title = document.createElement('h2');
-    divElementForInfo.appendChild(title);
+    listItem.appendChild(divElementForInfo);
+    divElementForInfo.className = 'details';
+    const bookName = document.createElement('h2');
+    divElementForInfo.appendChild(bookName);
+    bookName.innerHTML = bookDetails[keys]['title'];
     const writer = document.createElement('h3');
     divElementForInfo.appendChild(writer);
+    writer.innerHTML = bookDetails[keys]['author'];
     const lang = document.createElement('p');
     divElementForInfo.appendChild(lang);
-  }
-  // creates a method which takes information from bookDetails object.
-  const objectValue = Object.values(bookDetails);
-
-  // creates a for loop which takes information from bookDetails object and sends to elements.
-  for (let i = 0; i < objectValue.length; i++) {
-    document.getElementsByTagName('h2')[i].innerHTML = objectValue[i].title;
-    document.getElementsByTagName('h3')[i].innerHTML = objectValue[i].language;
-    document.getElementsByTagName('p')[i].innerHTML = objectValue[i].author;
-  }
-
-  // creates a method which takes information from bookCoverList object.
-  const srcObjectValue = Object.values(bookCoverList);
-
-  // creates a for loop which creates source for img elements.
-  for (let i = 0; i < srcObjectValue.length; i++) {
-    document.getElementsByTagName('img')[i].setAttribute('src', srcObjectValue[i]);
-  }
-
-  // creates a for loop which creates alt for img elements.
-  // creates a for loop which creates id for li elements.
-  for (let i = 0; i < bookTitles.length; i++) {
-    document.getElementsByTagName('img')[i].setAttribute('alt', bookTitles[i]);
-    document.getElementsByTagName('li')[i].setAttribute('id', bookTitles[i]);
+    lang.innerHTML = bookDetails[keys]['language'];
   }
 }
 

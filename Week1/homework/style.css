@@ -2,22 +2,13 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-right: 5%;
 }
 
 li {
   list-style: none;
   margin: 10px;
-}
-
-img {
-  width: 100px;
-  margin-right: 50px;
-  border: 10px solid rgb(146, 206, 221);
-}
-
-.mainDiv {
   border: 2px solid rgb(146, 206, 221);
   padding: 10px;
   margin-bottom: 5px;
@@ -26,7 +17,13 @@ img {
   width: 800px;
 }
 
-.secondDiv {
+img {
+  width: 100px;
+  margin-right: 50px;
+  border: 10px solid rgb(146, 206, 221);
+}
+
+.details {
   background-color: rgb(211, 247, 247);
   width: 100%;
   color: rgb(68, 162, 240);
