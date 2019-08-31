@@ -1,1 +1,41 @@
-/* add your styling here */
+body {
+    text-align: center;
+    line-height: .65rem;
+}
+
+ul {
+    list-style:none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+img {
+    max-height: 400px;
+    max-width: calc(270px - 2 * 10px - 5px);
+    box-shadow: 10px 10px 5px grey;
+}
+
+li {
+    width: 270px;
+    overflow: hidden;
+    margin: 30px 45px;
+}
+
+h3 {
+    font-size: 1.65rem;
+    line-height: 1.65rem;
+    margin: 45px 0;
+}
+
+p {
+    text-align: left;
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+.author {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
