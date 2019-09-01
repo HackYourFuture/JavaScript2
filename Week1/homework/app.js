@@ -98,7 +98,7 @@ for (let i = 0; i < bookTitles.length; i++) {
   const info = myBooks[bookTitles[i]];
   const li = document.createElement('li');
   ul.appendChild(li);
-  li.id = 'item';
+  li.id = bookTitles[i];
 
   // add the name
   const h2 = document.createElement('h2');
@@ -121,8 +121,8 @@ for (let i = 0; i < bookTitles.length; i++) {
 }
 
 // for loop to add the covers
-for (const title of bookTitles) {
-  const li = document.getElementById('item');
+for (const title of Object.keys(bookCover)) {
+  const li = document.getElementById(title);
   const img = document.createElement('img');
   li.appendChild(img);
   img.setAttribute('src', bookCover[title]);

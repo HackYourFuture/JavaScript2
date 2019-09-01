@@ -20,7 +20,7 @@ p {
   font-family: Impact, Charcoal, sans-serif;
   margin-left:20px;
 }
-#item {
+li {
   float: left;
   width: 24%;
   height: 20em;
