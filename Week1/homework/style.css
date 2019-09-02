@@ -1,1 +1,40 @@
-/* add your styling here */
+#root {
+
+  display: table-cell;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+img {
+  width: 300px;
+  height: 450px;
+}
+
+ul {
+  width: 90%;
+  margin: auto;
+
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.p-author {
+  color: blue;
+}
+
+.p-language {
+  color: red;
+}
+
+.h2-bookName {
+  color: green;
+}
+
+.li-bookTitle {
+  width: 600px;
+  float: left;
+  padding-bottom: 50px;
+}
