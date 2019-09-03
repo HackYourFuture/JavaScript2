@@ -15,6 +15,8 @@ Let's get familiar with basic Javascript concepts, with interactive exercises! C
 
 ## **2. JavaScript exercises**
 
+> Inside of your `JavaScript2` fork, create a folder called `week3`. Inside of that folder, create a folder called `js-exercises`. For all the following exercises create a new `.js` file in that folder (5 files in total). Make sure the name of each file reflects its content: for example, the filename for exercise one could be `addSix.js`.
+
 **Exercise 1: Add six**
 
 Declare a function called `createBase`. It should return a closure, that adds a number to the base number argument.
@@ -54,7 +56,7 @@ letters === ['a', 'b', 'c', 'd', 'e', 'f'];
 
 **Exercise 3: Guess the output**
 
-In this exercise you'll be presented with 3 code snippets. Your task to is guess the output and write out your reasoning, for each single one, in 50 words or less.
+In this exercise you'll be presented with 2 code snippets. Your task is to guess the output and write out your reasoning, for each single one, in 50 words or less.
 
 ```js
 let a = 10;
@@ -93,7 +95,7 @@ Mrs Potts the school dinner lady is tired of all the global sandwich variables g
 She would like it very much if you would build a sandwich machine for her, but wrap it in a closure so as to keep everything neat.
 
 1. Create a self executing function
-2. Within the closure, create three little functions to add the bread, spread the soya margarine and add the jam. These little methods should use console.log to write a string representing their action to the DOM, e.g. "Now spreading the jam!"
+2. Within the closure, create three little functions to add the bread, spread the butter and add the jam. These little methods should use console.log to write a string representing their action to the DOM, e.g. "Now spreading the jam!"
 3. Assign makeSandwich to the global window object, thus smuggling it out of the closure.
 4. Call makeSandwich from outside the closure
 
@@ -101,7 +103,7 @@ It should log to the console the following message:
 
 ```markdown
 Adding bread
-Now spreading the soya magarine
+Now spreading the butter
 Spreading jam
 ```
 
@@ -137,76 +139,53 @@ threeFive(10, 15, sayThree, sayFive);
 // and call sayFive, sayThree, sayThree, sayFive
 ```
 
-We learned a little bit about callbacks in JS. A callback is simply a function passed to another function that gets executed (run) after a potentially long running operation has completed. There is another function called `setTimeout` that will wait a specified period of time and then execute a function. For example:
-
-```js
-function doIt() {
-  console.log('I am done');
-}
-setTimeout(doIt, 5000);
-```
-
-**2.2**
-
-> Note: The following assignments include some problems from _freeCodeCamp_. Note that some _freeCodeCamp_ examples still mention `var`. However you can safely replace them with `let` and `const` as appropriate.
-
-**2.5** Nested loops
-
-> [Basic JavaScript: Nesting For Loops
-> ](https://www.freecodecamp.com/challenges/nesting-for-loops)
-
-**2.6** We did some work with arrays:
-
-```js
-const arr = [1, 2, 3];
-```
-
-We can also nest arrays inside arrays like this:
-
-```js
-const arr2d = [[1, 2], [3, 4], [5, 6]];
-```
-
-(for math people you can think of this as a matrix)
-
-How would you flatten out all the items of an array with 2 dimensions into a one-dimensional array? Flattening out the `arr2d` array above would result in:
-
-```js
-const flattenedArr = [1, 2, 3, 4, 5, 6];
-```
-
-**2.7** Here are two functions that look like they do the something similar but they print different results. Please explain what's going on here.
-
-```js
-const x = 9;
-function f1(val) {
-  val = val + 1;
-  return val;
-}
-f1(x);
-console.log(x);
-
-const y = { x: 9 };
-function f2(val) {
-  val.x = val.x + 1;
-  return val;
-}
-f2(y);
-console.log(y);
-```
-
 ## **3. Code along**
+
+In the following "code along" you'll be making a Booklist App. A user will be able to add books to a list by filling in a form, and also delete each book entry in the list.
+
+You'll make the app using vanilla JavaScript and CSS framework [Bootstrap](https://www.getbootstrap.com).
+
+Happy learning!
 
 - [Build a Booklist App](https://www.youtube.com/watch?v=JaMCxVWtW58)
 
-## **4. PROJECT:**
+## **4. PROJECT: The Tip Calculator**
+
+> Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
+
+> Before you start, create a new folder called `project` that includes the files for the following app you'll be building.
+
+In this week's project you'll be making a Tip Calculator! A user can fill in 3 things:
+
+1. The amount of the bill
+2. How good the service was
+3. How many people will share the bill
+
+When the button is clicked a calculation is made and the user can read the tip amount underneath.
+
+It should look like this:
+
+![The Tip Calculator](../assets/tipcalculator.png)
+
+Here are the requirements:
+
+- No frameworks allowed
+- Use a form, that has 3 input fields (the first and last can only take numbers)
+- The second field should have the following options:
+
+![Service Quality](../assets/servicequality.png)
+
+- If there's only 1 person who shares the bill, output only the tip amount (omit the "each")
+- If any of the input fields are empty when the button is clicked, call an alert that says: "You need to fill in all the fields!"
+
+Good luck!
 
 ## **SUBMIT YOUR HOMEWORK!**
 
 Finished? Good on you! The homework that needs to be submitted is the following:
 
 1. JavaScript exercises
-2. PROJECT:
+2. PROJECT: The Tip Calculator
 
 Upload both to your forked JavaScript2 repository in GitHub. Make a pull request to the original repository.
 

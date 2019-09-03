@@ -30,7 +30,15 @@ Reading this it's not obvious how to interpret what the situation is about. Depe
 - I never said she stole _my_ money.
 - I never said she stole my _money_.
 
-It depends on `context` for me to know what really happened. In programming, the term `scope` refers to the relevant variables that are involved in
+It depends on `context` for me to know what really happened.
+
+Let's draw the line to programming. Within any program there is a lot happening. But not everything is related to each other; some functions don't depend on other functions or variables
+
+`scope` has to do with "where we can access variables from"
+
+For further research, check out the following:
+
+- [Variable Scope & Context](https://www.youtube.com/watch?v=WPcW83BMT3Y)
 
 ### Global vs. local (function and block)
 

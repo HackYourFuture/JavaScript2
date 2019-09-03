@@ -7,8 +7,12 @@ These are the topics for week 2:
 1. Synchronous vs. asynchronous
    - Synchronous
    - Asynchronous
-2. Callbacks
-3. Event Loop
+   - Why do we need asynchronicity?
+2. Introducing asynchronicity using callbacks
+   - Higher order functions
+   - Functions as arguments to other functions
+3. Array Functions
+4. Event Loop
 
 ## 1. Synchronous vs. asynchronous
 
@@ -16,87 +20,130 @@ These are the topics for week 2:
 
 In the previous module you've learned about **control flow**. In short: it's the order in which the computer executes statements in a script. In JavaScript this goes from left to right, top to bottom.
 
-Let's look at code execution from another angle. The program that executes your code can do it in two basic ways: synchronous or asynchronous. Whenever code blocks are executed line after line (from top to bottom) we call this **synchronous execution**.
-
-Imagine the following scenario:
-
-> Noer wants to have breakfast but he doesn't have any food at home. He decides he want to eat oatmeal. The ingredients (oats and milk) can be bought at the supermarket. How to do this? First Noer takes a shower. Then he puts on some clothes. Then some shoes. Then he opens the door and goes outside. Then he jumps on the bike and goes to the closest supermarket. After looking for some time he finds the ingredients. Then Noer buys the ingredients. Then he jump back on the bike and go home. Then he mixes the ingredients and makes oatmeal. Then Noer eats and feels amazing!
-
-In this example, each action could only happen after the previous has been completed. Noer can't put on his shoes and then take a shower. Or, he can't eat oatmeal before he has bought the ingredients.
-
-As you can see, each action is executed in a **synchronous** manner. This is to say: in a logical order sequentially and only one action at a time.
-
-This is also how JavaScript by default operates. Only one operation can happen at a time. If something else wants to start, it has to wait until the current action has finished.
-
-### Asynchronous
-
-Sometimes we want to do multiple things, without each action to be dependent on each other. Consider the following analogy:
-
-> Wouter is feeling hungry, so he decides to go to a restaurant. He arrives there and gets into the line to order food. After ordering he takes a seat and, while he waits, reads a book. Occassionally he looks around and sees different things happening: new people enter the restaurant, some people get their food served and others are just talking. After a short while Wouter's food arrives and it's time to dig in!
-
-In this example Wouter reads a book, but that doesn't affect his meal from being prepared. [TO BE CONTINUED]
-
-Take a look at the following diagram:
+Let's look at code execution from another angle. The program that executes your code can do it in two basic ways: synchronous or asynchronous. Whenever code blocks are executed line after line (from top to bottom) we call this **synchronous execution**. However, when code blocks can be executed **without having to wait until a command ends**, we call this **asynchronous execution**. This is illustrated in the following diagram:
 
 ![Sync vs. Async](../assets/javascript-sync-vs-async.png)
 
-```js
-function first() {
-  console.log('this finishes first');
-}
-function second() {
-  console.log('this finishes second');
-}
+Now imagine the following scenario:
 
-first();
-second();
-```
+> Noer wants to have breakfast but he doesn't have any food at home. He decides he want to eat oatmeal. The ingredients (oats and milk) can be bought at the supermarket. How to do this? First Noer takes a shower. Then he puts on some clothes. Then some shoes. Then he opens the door and goes outside. Then he jumps on the bike and goes to the closest supermarket. After looking for some time he finds the ingredients. Then Noer buys the ingredients. Then he jump back on the bike and go home. Then he mixes the ingredients and makes oatmeal. Then Noer eats and feels amazing!
 
-In this example, only after `first()` has been executed will `second()` be executed. Only one thing happens at a time, and the next thing will ONLY happen after the previous thing has finished. This synchronous execution happens predictably and sequentially, without exception.
+In this example, each action could only happen after the previous has been completed. Noer can't put on his shoes, while taking a shower. Or, he can't eat oatmeal while he buys the ingredients.
 
-On the other hand we have [TO BE CONTINUED]
+As you can see, each action is executed in a synchronous manner. This is to say: in a logical order sequentially and only one action at a time.
 
-Executing each block of code (whether it's a line or a loop/function/etc.) after each other is called
+**This is also how JavaScript by default operates**. Only one operation can happen at a time. If something else wants to start, it has to wait until the current action has finished.
 
-This method of execution can have undesirable ramifications. Suppose a function is called to start a time consuming process. What if you want to stop the lengthy process? With synchronous execution, your program is “stuck,” waiting for the process to end, with no way out.
+### Asynchronous
+
+Sometimes we want to do multiple things at the same time, without each action to be dependent on each other. Consider the following scenario:
+
+> Wouter is feeling hungry, so he decides to go to a restaurant. He arrives there and gets into the line to order food. After ordering he takes a seat and, while he waits, reads a book. Occassionally he looks around and sees different things happening: new people enter the restaurant, some people get their food served and others are just talking. After a short while Wouter's food arrives and it's time to dig in!
+
+In this example Wouter reads a book, but that doesn't affect his meal from being prepared. While his meal is prepared there are other people walking around, eating or just talking with each other. In short: multiple things are happening simultaneously and every event is not dependent upon another.
+
+This does not happen by default in JavaScript, and needs to be invoked. A way to do that is by using `callbacks`, which you'll be learning about later.
+
+## Why do we need asynchronicity?
+
+In programming
+
+This method of execution can have undesirable consequences. Suppose a function is called to start a time consuming process. What if you want to stop the lengthy process? With synchronous execution, your program is “stuck,” waiting for the process to end, with no way out.
 
 Asynchronous execution avoids this bottleneck. You are essentially saying, “I know this function call is going to take a great deal of time, but my program doesn’t want to wait around while it executes.”
 
-## 2. Callbacks
+## 2. Introducing asynchronicity using callbacks
+
+In this example there is one process: life. In technical terms you could call it the program. Life contains many things, but in this example it only contains two things: you and your friend. Let's call them mini programs, or `functions`. The function called "You" does various things: studying, taking a break and having a snack.
+
+This example illustrates the concept of **asynchronicity**: there are multiple processes happening simultaneously, without any single thing being dependent upon another. Your friend is not waiting by the phone until you have the answer. Or in technical terms: until the callback (which is you) has the return value (the asnwer to your friend's request to hang out).
+
+### Higher order functions
+
+### Functions as arguments to other functions
 
 Imagine the following situation:
 
 > It's 15.00 and you're studying at home for an exam on the next day. Suddenly, your phone rings. You pick up and find it's your best friend! They ask if you'd like to hang out later. What do you do? On the one hand, you'd love to hang out have fun. On the other hand, you really should study some more. You don't know so you tell your friend that you're going to _call back_ later with your answer. You end the conversation and go back to studying. Maybe you take a break or have a snack as well. On the other line your friend hangs up the phone and continues along with their day: they go out grocery shopping, cleaning the house and cooking dinner. After finishing your studies you call your friend and makes plans to go out together.
 
-In this example there is one process: life. In technical terms you could call it the program. Life contains many things, but in this example it only contains two things: you and your friend. Let's call them mini programs, or `functions`. The function called "You" does various things: studying,
+**This is why callbacks are important: it allows us to introduce asynchronicity in the control flow of a program.**
 
-This example illustrates the concept of **asynchronicity**: there are multiple processes happening simultaneously, without any single thing being dependent upon another thing. Your friend is not waiting by the phone until you have the answer. Or in technical terms: until the callback (which is you) has the return value (the asnwer to your friend's request to hang out).
-
-As we've learned in the previous section, by default JavaScript works **synchronously**. In short this means that only one command gets executed (and finishes) until the next command gets executed.
-
-Take this insight to heart: **Synchronicity is the process, callbacks are the implementation**. Let's clarify that:
-
-- Saying that the proces is synchronous, is saying that there can only be an execution of commands in a single sequence. But this process can be changed to be asynchronous, which means that the process can handle
-
-to initiate that process change from synchronous to asynchronous.
-
-This is why callbacks are important: it allows us to introduce asynchronicity in the control flow of a program.
-
-A concrete example for why this might be useful is when you want to
+A concrete example for why this might be useful is when you want to [TBC!!!]
 
 Study the following resources to learn more about the importance of callbacks:
 
-- [Asynchronous JavaScript JavaScript](https://www.youtube.com/watch?v=YxWMxJONp7E)
+- [Asynchronous JavaScript](https://www.youtube.com/watch?v=YxWMxJONp7E)
 - [Understanding JavaScript Callbacks](https://www.youtube.com/watch?v=Nau-iEEgEoM)
 - [Callback Functions](https://www.youtube.com/watch?v=QRq2zMHlBz4)
 
-## 3. Event Loop
+## 3. Array Functions
 
-If a webpage contains JavaScript, then the browser knows it has to execute these instructions at some point. But how does the browser know what to do first? This is where the `Event Loop` comes in.
+In programming we're always trying to make things easier on ourselves.
 
-In layman's terms, the `Event Loop` is
+There are different ways of dealing with arrays. The most common way is by using a loop and then writing custom logic inside it in order to manipulate the values. This solution works, but it comes at several disadvantages.
 
-For further study, check out the following resources
+1. The first disadvantage is that using loops requires us to write custom logic for each use case. This can lead to repeated code, which we always want to [avoid](https://www.youtube.com/watch?v=IGH4-ZhfVDk)
+2. The second disadvantage is that a loop isn't descriptive about what it intends to do. If another developer reads that code it wouldn't be obvious what it would do, without spending time on it to decipher it
+
+There are certain functions, `array functions`, that aim to solve these two problems simultaneously.
+
+Let's take an array function as an example: the `map()` function. It takes a function as an argument, and executes that unto each index position of the array, returning at the end a new array with all the "mapped" values.
+
+> Array functions are in general higher order functions, meaning they're functions that take a function as an argument.
+
+Take a look at the following code snippet to see it in action:
+
+```js
+const numbers = [2, 4, 6, 8, 10];
+
+function addTwo(number) {
+  return number + 2;
+}
+
+const numbersPlusTwo = numbers.map(addTwo);
+
+console.log(numbersPlusTwo);
+```
+
+Copy and paste this snippet in the browser console to see how it works. As you can see the function `addTwo` added 2 to each value in the `numbers` array, because that's what the `map()` function does: it "maps" a function unto each array index.
+
+We could've done the same thing with a regular loop, but that would've been (1) much less readable, and (2) much more code:
+
+```js
+const numbers = [2, 4, 6, 8, 10];
+const numbersPlusTwo = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  const number = numbers[i];
+  const addedTwo = number + 2;
+
+  numbersPlusTwo.push(addedTwo);
+}
+
+console.log(numbersPlusTwo);
+```
+
+Can you see why the array function is the better way to go?
+
+Go through the following resources to learn more about the different array functions and their use:
+
+- [JavaScript Higher Order Functions & Arrays](https://www.youtube.com/watch?v=rRgD1yVwIvE)
+- [8 Must Know JavaScript Array Methods](https://www.youtube.com/watch?v=R8rmfD9Y5-c)
+
+## 4. Event Loop
+
+If a webpage contains JavaScript, then the browser knows it has to execute the instructions contained in the script files. But how does the browser know what to do first? This is where the `Event Loop` comes in.
+
+Note: while this mechanism is important to be aware of, keep in mind that you won't be using it actively in development.
+
+In simple terms, the `Event Loop` is a mechanism that operates in the browser. It keeps track of the order of execution of JavaScript commands. consists of 4 parts:
+
+1. Heap. This is where the browser assigns space in memory to each process
+2. Call Stack. This is the amount of JavaScript commands (read: function calls and events) that need to be executed
+3. Web APIs. These are objects (like the document) and functions (like XMLHttpRequest) that can be used within the JavaScript commands found in the Call Stack
+4. Callback Queue. This is the
+
+To see it in action check out the following resources:
 
 - [What the heck is an event loop?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 - [JavaScript Event Loop](https://www.youtube.com/watch?v=XzXIMZMN9k4)

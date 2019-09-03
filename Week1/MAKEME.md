@@ -15,6 +15,8 @@ Before we head into the exercises, it might be nice to do some interactive exerc
 
 ## **2. JavaScript exercises**
 
+> Inside of your `JavaScript2` fork, create a folder called `week1`. Inside of that folder, create a folder called `js-exercises`. For all the following exercises create a new `.js` file in that folder (5 files in total). Make sure the name of each file reflects its content: for example, the filename for exercise one could be `bookList.js`.
+
 ### 1. The book list
 
 I'd like to display my three favorite books inside a nice webpage!
@@ -112,11 +114,13 @@ Start with this webpage, which has a single img tag of an animated GIF of a cat 
 4. Create a function called catWalk() that moves the cat 10 pixels to the right of where it started, by changing the "left" style property.
 5. Call that function every 50 milliseconds. Your cat should now be moving across the screen from left to right. Hurrah!
 6. When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to right across the screen, forever and ever.
-7. When the cat reaches the middle of the screen, replace the img with an image of a cat dancing (use this URL: https://tenor.com/StFI.gif), keep it dancing for 10 seconds, and then replace the img with the original image and have it continue the walk.
+7. When the cat reaches the middle of the screen, replace the img with an image of a cat dancing (use this URL: https://tenor.com/StFI.gif), keep it dancing for 5 seconds, and then replace the img with the original image and have it continue the walk.
 
 ## **3. Code along**
 
 In the following tutorial you'll learn how to make a small web application that allows a user to add new issues to a board. Included is practice with [Bootstrap](https://getbootstrap.com/).
+
+Enjoy!
 
 - [Build an Issue Tracker](https://www.youtube.com/watch?v=NYq9J-Eur9U)
 
@@ -124,7 +128,9 @@ In the following tutorial you'll learn how to make a small web application that 
 
 > Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
 
-In this week's project you'll be making a Random Quote Generator! It includes a text box and a simple button that, when clicked, take a random quote out of a set amount of quotes and show it in the page. Here's how it may look like:
+> Before you start, create a new folder called `project` that includes the files for the following app you'll be building.
+
+In this week's project you'll be making a Random Quote Generator! It includes a text box and a simple button that, when clicked, take a random quote out of a set amount of quotes and show it in the page. Here's how it should look:
 
 ![Random Quote Generator](../assets/randomquotegenerator.png)
 
@@ -132,7 +138,7 @@ Here are the requirements:
 
 - Include at least 1 JavaScript, CSS and HTML file
 - The design should look similar to the one in the picture above
-- No frameworks allowed
+- No CSS frameworks allowed
 - Each time the button is clicked it should show a random quote
 - Create a function that fires after the button click
 - Collect 6 of your favorite quotes (quote and author) and store them in the right data structure
@@ -148,6 +154,6 @@ If you need a refresher, take a look at the following [guide](../hand-in-homewor
 The homework that needs to be submitted is the following:
 
 1. JavaScript exercises
-2. Project: Random quote generator
+2. Project: Random Quote Generator
 
 _Deadline Saturday 23.59 CET_
