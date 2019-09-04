@@ -51,7 +51,7 @@ function computeEarnings(tasks, hourlyRate) {
   return tasks
     .map(task => task.duration / 60.0)
     .filter(durationInHour => durationInHour >= 2.0)
-    .reduce((totalEarning, hourlyEarning) => totalEarning + hourlyEarning * hourlyRate, 0);
+    .reduce((totalEarning, durationInHour) => totalEarning + durationInHour * hourlyRate, 0);
 }
 
 // eslint-disable-next-line no-unused-vars
