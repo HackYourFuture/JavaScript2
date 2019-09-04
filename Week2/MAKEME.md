@@ -38,7 +38,9 @@ console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console
 
 The `doubleEvenNumbers` function returns only the even numbers in the array `myNumbers` and doubles them. Like you've learned in the [README](README.md), this block of code isn't easy to decipher.
 
-Let's rewrite it. Using the `map` and `filter` functions, rewrite the `doubleEvenNumbers` function.
+Let's rewrite it.
+
+- Using the `map` and `filter` functions, rewrite the `doubleEvenNumbers` function.
 
 **Exercise 2: What's your Monday worth?**
 
@@ -65,23 +67,65 @@ const mondayTasks = [
 ];
 ```
 
-Write a program that computes how much Maartje has earned by completing these tasks, using `map` and `filter`.
+Let's assume your hourly rate is €25. How much would you earn on that day?
 
-For the 'summing part' you can try your luck with `reduce`; alternatively, you may use `forEach` or a `for` loop.
-
-Follow these steps. Each step should build on the result of the previous step.
-
-- Map the tasks to durations in hours.
-- Filter out everything that took less than two hours (i.e., remove from the collection)
-- Multiply the each duration by a per-hour rate for billing (use €20/hour) and sum it all up.
+- Write a program that computes that:
+- Use the `map` array function to take out the duration time for each task.
+- Multiply each duration by a per-hour rate for billing and sum it all up.
 - Output a formatted Euro amount, rounded to Euro cents, e.g: `€11.34`.
-- Choose variable and parameters names that most accurately describe their contents or purpose. When naming an array, use a plural form, e.g. `durations`. For a single item, use a singular form, e.g. `duration`.
+- Make sure the program can be used on any array of objects that contain a `duration` property with a number value
 
-**Exercise 3**
+**Exercise 3: Lemon allergy**
 
-**Exercise 4**
+Your mom bought you a basket of fruit, because you're doing so well in HackYourFuture. How sweet of her!
 
-**Exercise 5 **
+```js
+const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
+```
+
+However, she forgot that you are allergic to lemons! Let's quickly dispose of them before you get an attack.
+
+- Write a function
+- Use the `filter` array function to take out the lemons
+- Output a string that says: "My mom bought me a fruit basket, containing [array of fruits] !"
+
+**Exercise 4: Collective age**
+
+Have you ever wondered how old the HackYourFuture team members are? Or better yet: what the collective age is? Let's find out!
+
+```js
+const hackYourFutureMembers = [
+  { name: 'Wouter', age: 33 },
+  { name: 'Federico', age: 32 },
+  { name: 'Noer', age: 27 },
+  { name: 'Tjebbe', age: 22 },
+];
+```
+
+- Write a program that calculates the combined age of every member
+- Make use of the `map` function to get the ages
+- It should contain a function that takes a callback
+- The callback adds all the ages together and returns the number
+- The main function should log the string "The collective age of the HYF team is: [number]" to the console, and afterwards return the number
+
+**Exercise 5: My favorite hobbies**
+
+I've got a couple of hobbies that I want to showcase in a webpage.
+
+```js
+const myHobbies = [
+  'Meditation',
+  'Reading',
+  'Programming',
+  'Hanging out with friends',
+  'Going to the gym',
+];
+```
+
+- Write a program that outputs each of these inside an HTML file
+- Create an HTML and JavaScript file, link them together
+- Use the `map` and/or `forEach` function to put each hobby into a <li>
+- Output the list items in an unordered list
 
 ## **3. Code along**
 

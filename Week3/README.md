@@ -12,11 +12,13 @@ These are the topics for week 3:
    - When does it happen
    - Why do we need to know it?
 3. Closures
+   - Execution context
+   - Defining a function within a function
 4. Thinking like a programmer II
 
 ## 1. Scope
 
-On of the central concepts in programming is the idea of `context`: the meaning of any particular thing is only determined in relation to its direct surroundings. Let's take language for example. If I say the following sentence:
+One of the central concepts in programming is the idea of `context`: the meaning of any particular thing is only determined in relation to its direct surroundings. Let's take language for example. If I say the following sentence:
 
 > I never said she stole my money.
 
@@ -32,9 +34,9 @@ Reading this it's not obvious how to interpret what the situation is about. Depe
 
 It depends on `context` for me to know what really happened.
 
-Let's draw the line to programming. Within any program there is a lot happening. But not everything is related to each other; some functions don't depend on other functions or variables
+Let's draw the line to programming. Simply put, just like context gives meaning to a word, `scope` gives meaning to a variable/object.
 
-`scope` has to do with "where we can access variables from"
+The meaning is defined by whether or not the variable is accessible or not. If the variable is not within the scope
 
 For further research, check out the following:
 
@@ -42,19 +44,26 @@ For further research, check out the following:
 
 ### Global vs. local (function and block)
 
+In any given application, there is usually one global scope. But there can be many local scopes
+
 - [Understanding Scope in JavaScript](https://www.youtube.com/watch?v=SBjf9-WpLac)
 - [Everything you wanted to know about JavaScript scope](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope)
 
 ### Const and let
 
-Quick refresher: Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
+> Quick refresher: Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
 
-In JavaScript we define them using the keyword `var`:
+In JavaScript we used to define variables using the keyword `var`:
 
 ```js
-var
-
+var myName = 'Mohammed';
 ```
+
+However
+
+In programming, we generally want to keep things as simple as they can be. We even have a name for that: [KISS](https://thevaluable.dev/kiss-principle-explained/) (Keep it Simple, Stupid!)
+
+- [How let and const are scoped in JavaScript](https://wesbos.com/javascript-scoping/)
 
 ## 2. Hoisting
 
@@ -81,6 +90,14 @@ Hoisting happens during `compile-time`.
 ## 3. Closures
 
 Simply put, a closure is a function that is defined inside another function.
+
+### Execution context
+
+In your programming journey you'll learn that many concepts overlap one another.
+
+An execution context is
+
+### Defining a function within a function
 
 For further study please check the following resources:
 

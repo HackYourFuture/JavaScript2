@@ -7,7 +7,6 @@ These are the topics for week 2:
 1. Synchronous vs. asynchronous
    - Synchronous
    - Asynchronous
-   - Why do we need asynchronicity?
 2. Introducing asynchronicity using callbacks
    - Higher order functions
    - Functions as arguments to other functions
@@ -36,29 +35,40 @@ As you can see, each action is executed in a synchronous manner. This is to say:
 
 ### Asynchronous
 
-Sometimes we want to do multiple things at the same time, without each action to be dependent on each other. Consider the following scenario:
+Sometimes we want to do multiple things at the same time, without each action to be dependent on each other. Asynchronous execution avoids this bottleneck. You are essentially saying, “I know this function call is going to take a great deal of time, but my program doesn’t want to wait around while it executes.” Consider the following scenario:
 
 > Wouter is feeling hungry, so he decides to go to a restaurant. He arrives there and gets into the line to order food. After ordering he takes a seat and, while he waits, reads a book. Occassionally he looks around and sees different things happening: new people enter the restaurant, some people get their food served and others are just talking. After a short while Wouter's food arrives and it's time to dig in!
 
 In this example Wouter reads a book, but that doesn't affect his meal from being prepared. While his meal is prepared there are other people walking around, eating or just talking with each other. In short: multiple things are happening simultaneously and every event is not dependent upon another.
 
-This does not happen by default in JavaScript, and needs to be invoked. A way to do that is by using `callbacks`, which you'll be learning about later.
-
-## Why do we need asynchronicity?
-
-In programming
-
-This method of execution can have undesirable consequences. Suppose a function is called to start a time consuming process. What if you want to stop the lengthy process? With synchronous execution, your program is “stuck,” waiting for the process to end, with no way out.
-
-Asynchronous execution avoids this bottleneck. You are essentially saying, “I know this function call is going to take a great deal of time, but my program doesn’t want to wait around while it executes.”
+This does not happen by default in JavaScript, and needs to be invoked. A way to do that is by using `callbacks`, which you'll be learning about in the next section.
 
 ## 2. Introducing asynchronicity using callbacks
 
-In this example there is one process: life. In technical terms you could call it the program. Life contains many things, but in this example it only contains two things: you and your friend. Let's call them mini programs, or `functions`. The function called "You" does various things: studying, taking a break and having a snack.
-
-This example illustrates the concept of **asynchronicity**: there are multiple processes happening simultaneously, without any single thing being dependent upon another. Your friend is not waiting by the phone until you have the answer. Or in technical terms: until the callback (which is you) has the return value (the asnwer to your friend's request to hang out).
+Before we dive into what a `callback` is we have to understand a little about `higher order functions`.
 
 ### Higher order functions
+
+Let's start with a simple, practical definition: a higher order function is any function that can take another function as an argument or returns a function.
+
+```js
+// Example 1
+function higherOrderFunction(anotherFunction) {
+  anotherFunction();
+  return;
+}
+
+// Example 2
+function anotherHigherOrderFunction() {
+  return function() {
+    return;
+  };
+}
+```
+
+Why do we need them? A higher order function integrates multiple functions, which each have a singular operational purpose. This will allow us to reuse code much more than if we had to write everything out.
+
+> Higher order functions are a core concept within a programming paradigm called "functional programming". It's not relevant at all for you to know or care about this, but it's important to be exposed to it.
 
 ### Functions as arguments to other functions
 
@@ -66,9 +76,11 @@ Imagine the following situation:
 
 > It's 15.00 and you're studying at home for an exam on the next day. Suddenly, your phone rings. You pick up and find it's your best friend! They ask if you'd like to hang out later. What do you do? On the one hand, you'd love to hang out have fun. On the other hand, you really should study some more. You don't know so you tell your friend that you're going to _call back_ later with your answer. You end the conversation and go back to studying. Maybe you take a break or have a snack as well. On the other line your friend hangs up the phone and continues along with their day: they go out grocery shopping, cleaning the house and cooking dinner. After finishing your studies you call your friend and makes plans to go out together.
 
-**This is why callbacks are important: it allows us to introduce asynchronicity in the control flow of a program.**
+This example illustrates the concept of **asynchronicity**: there are multiple processes happening simultaneously, without any single thing being dependent upon another. Your friend is not waiting by the phone until you have the answer. Or in technical terms: until the callback (which is you) has the return value (the answer to your friend's request to hang out).
 
-A concrete example for why this might be useful is when you want to [TBC!!!]
+This is the utility of `callbacks`: they allow us to introduce asynchronicity into the control flow of an application.
+
+Let's put this into the context of a webpage.
 
 Study the following resources to learn more about the importance of callbacks:
 
@@ -85,11 +97,9 @@ There are different ways of dealing with arrays. The most common way is by using
 1. The first disadvantage is that using loops requires us to write custom logic for each use case. This can lead to repeated code, which we always want to [avoid](https://www.youtube.com/watch?v=IGH4-ZhfVDk)
 2. The second disadvantage is that a loop isn't descriptive about what it intends to do. If another developer reads that code it wouldn't be obvious what it would do, without spending time on it to decipher it
 
-There are certain functions, `array functions`, that aim to solve these two problems simultaneously.
+There are certain functions, `array functions`, that aim to solve these two problems simultaneously. Array functions are higher order functions, because they take a function as an argument.
 
-Let's take an array function as an example: the `map()` function. It takes a function as an argument, and executes that unto each index position of the array, returning at the end a new array with all the "mapped" values.
-
-> Array functions are in general higher order functions, meaning they're functions that take a function as an argument.
+Let's take an example: the `map()` function. It takes a function as an argument, and executes that unto each index position of the array, returning at the end a new array with all the "mapped" values.
 
 Take a look at the following code snippet to see it in action:
 
@@ -141,7 +151,7 @@ In simple terms, the `Event Loop` is a mechanism that operates in the browser. I
 1. Heap. This is where the browser assigns space in memory to each process
 2. Call Stack. This is the amount of JavaScript commands (read: function calls and events) that need to be executed
 3. Web APIs. These are objects (like the document) and functions (like XMLHttpRequest) that can be used within the JavaScript commands found in the Call Stack
-4. Callback Queue. This is the
+4. Callback Queue. This is the "waiting line" [ajksdbjkasbdjkasbnjkdbajksbdkj]
 
 To see it in action check out the following resources:
 

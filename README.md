@@ -39,12 +39,7 @@ If you have any questions or if something is not entirely clear ¯\\\_(ツ)\_/¯
 | 1.   | Document-Object Model (DOM), DOM manipulation                        | [Reading W1](/Week1/README.md) | [Homework W1](/Week1/MAKEME.md) | [Lesson Plan W1](/Week1/LESSONPLAN.md) |
 | 2.   | Synchronous vs. asynchronous, Event Loop, Callbacks, Array Functions | [Reading W2](/Week2/README.md) | [Homework W2](/Week2/MAKEME.md) | [Lesson Plan W2](/Week1/LESSONPLAN.md) |
 | 3.   | Scope, Hoisting, Closures, Thinking like a programmer II             | [Reading W3](/Week3/README.md) | [Homework W3](/Week3/MAKEME.md) | [Lesson Plan W3](/Week1/LESSONPLAN.md) |
-
-## Test
-
-At the end of this module you'll be doing a formative test. It will be done on **paper** and will consist of **4 exercises** that will test your JavaScript1 and JavaScript2 knowledge.
-
-Why on paper? Fundamental understanding should become intuitive. Only after having learned and mastered a concept deeply will you be able to use it creatively. If you rely too much on others, on Google or your code editor to do your thinking you'll make it very hard to cultivate the habit to think for yourself.
+| 4.   | Test                                                                 | [Details](/test/README.md)     | -                               | -                                      |
 
 ## Finished?
 

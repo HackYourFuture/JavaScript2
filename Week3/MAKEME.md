@@ -5,13 +5,13 @@
 1. Practice the concepts
 2. JavaScript exercises
 3. Code along
-4. PROJECT:
+4. PROJECT: The Tip Calculator
 
 ## **1. Practice the concepts**
 
 Let's get familiar with basic Javascript concepts, with interactive exercises! Check out the following resources:
 
-- [Introduction to JavaScript: Scope (Codecademy)](https://www.codecademy.com/courses/introduction-to-javascript/lessons/scope/exercises/scope)
+- [Introduction to JavaScript: Scope](https://www.codecademy.com/courses/introduction-to-javascript/lessons/scope/exercises/scope)
 
 ## **2. JavaScript exercises**
 
