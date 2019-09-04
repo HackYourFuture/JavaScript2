@@ -46,11 +46,11 @@ const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
-  let result = tasks.map(toHours => toHours.duration / 60);
+  let result = tasks.map(task => task.duration / 60);
   console.log(result); // [3, 2, 0.33, 3.35, 4, 3, 0.16, 3.35, 0.66]
-  result = result.filter(twoHoursOrMore => twoHoursOrMore >= 2);
+  result = result.filter(durationInHours => durationInHours >= 2);
   console.log(result); // [3, 2, 3.35, 4, 3, 3.35]
-  result = result.reduce((sum, twoHoursOrMore) => sum + twoHoursOrMore * hourlyRate, 0);
+  result = result.reduce((sum, durationInHours) => sum + durationInHours * hourlyRate, 0);
   return result;
 }
 
