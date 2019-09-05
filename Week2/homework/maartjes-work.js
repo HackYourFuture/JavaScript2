@@ -51,7 +51,7 @@ function computeEarnings(tasks, hourlyRate) {
     .filter(hour => hour >= 2)
     .reduce((accumulator, hour) => accumulator + hour * hourlyRate, 0);
 }
-console.log(computeEarnings(monday));
+
 // eslint-disable-next-line no-unused-vars
 const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
 
