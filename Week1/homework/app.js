@@ -14,7 +14,7 @@
     'brain_rules_baby',
     'baby_minds',
   ];
-
+  // create collection books information
   const myBooks = {
     harry_potter_chamber_secrets: {
       title: "Harry Potter's - The Chamber of Secrets",
@@ -80,38 +80,35 @@
     baby_minds: './img/Baby Minds.jpg',
   };
 
+  // i will be creat a list over de book with image
   function bookList() {
-    // Create ul element
     const bookUl = document.createElement('ul');
     for (let i = 0; i < bookTitles.length; i++) {
-      // Create li teg
       const bookLi = document.createElement('li');
       bookLi.id = 'list';
-      // Div Of  Book's Image
       const imgDiv = document.createElement('div');
       imgDiv.setAttribute('id', bookTitles[i]);
       imgDiv.setAttribute('class', 'booksImg');
       const infoDiv = document.createElement('div');
       infoDiv.setAttribute('id', 'bookInfo');
-      // Book Name
       const bookName = document.createElement('h3');
       bookName.textContent = 'Title : ' + myBooks[bookTitles[i]].title;
       infoDiv.appendChild(bookName);
-      // Book Language
+      // set language and Author
       const bookLanguage = document.createElement('h4');
       bookLanguage.textContent = 'Language : ' + myBooks[bookTitles[i]].language;
       infoDiv.appendChild(bookLanguage);
-      // Book Author
       const bookAuthor = document.createElement('h4');
       bookAuthor.textContent = 'Author : ' + myBooks[bookTitles[i]].author;
       infoDiv.appendChild(bookAuthor);
-      // Add div to li & add li to ul
+      // complete all list
       bookLi.appendChild(imgDiv);
       bookLi.appendChild(infoDiv);
       bookUl.appendChild(bookLi);
     }
     return bookUl;
   }
+  // set all books cover
   const bookCovers = () => {
     for (const book of Object.keys(booksCover)) {
       const cover = document.createElement('img');
@@ -120,6 +117,7 @@
       bookCoversList.appendChild(cover);
     }
   };
+  // all information about the books display in web page
   const headTitle = document.createElement('h1');
   headTitle.textContent = 'My Books';
   document.body.appendChild(headTitle);
