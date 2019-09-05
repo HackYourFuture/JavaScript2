@@ -8,12 +8,10 @@ These are the topics for week 3:
    - Global vs. local (function and block)
    - Const and let
 2. Hoisting
-   - What is it
-   - When does it happen
-   - Why do we need to know it?
+   - When does hoisting happen?
 3. Closures
    - Execution context
-   - Defining a function within a function
+   - Why do we need closures?
 4. Thinking like a programmer II
 
 ## 1. Scope
@@ -36,7 +34,7 @@ It depends on `context` for me to know what really happened.
 
 Let's draw the line to programming. Simply put, just like context gives meaning to a word, `scope` gives meaning to a variable/object.
 
-The meaning is defined by whether or not the variable is accessible or not. If the variable is not within the scope
+That meaning is defined by whether or not the variable is accessible. If the variable is not within the "scope" (you could also call it "reach") of any given code block, it can't access it.
 
 For further research, check out the following:
 
@@ -44,26 +42,61 @@ For further research, check out the following:
 
 ### Global vs. local (function and block)
 
-In any given application, there is usually one global scope. But there can be many local scopes
+Scope can be divided into two basic types: global and local scope. In any given application, there is one global scope. But there can be many local scopes. Any variable declared outside of a function belongs to the global scope and is therefore accessible from anywhere in the code. Variables declared within a local scope are only accessible within that scope.
 
+Local scope can be further divided into two categories: function and block. Let's look at **function scope** first.
+
+A unique local scope gets created whenever a function is declared. The variables declared within will only be accessible within that scope, nowhere else. This makes it possible to declare variables within the same name in each different local scope. This also means that it's not possible to refer to a variable declared in one local scope, within another local scope.
+
+```js
+function createLocalScope() {
+  const localVariable = 'this variable can only be accessed within this function';
+  console.log(localVariable);
+
+  const localOnlyHere = 'This variable can only be accessed here, nowhere else';
+}
+
+function createAnotherLocalScope() {
+  const localVariable =
+    "Even though this variable has the same name, it has nothing to do with the other localVariable, because it doesn't exist outside of that function";
+  console.log(localVariable);
+  console.log(localOnlyHere);
+}
+
+createLocalScope();
+createAnotherLocalScope();
+```
+
+However, variables declared within the global scope can be accessed anywhere! Actually, that's the very purpose of global scope. In the context of functions this means that you don't have to pass it as an argument, but that you can directly refer to it within the function.
+
+```js
+const globalVariable = 'This variable can be accessed wherever in the code';
+
+function accessGlobalVariable() {
+  console.log(globalVariable);
+}
+console.log(globalVariable);
+accessGlobalVariable();
+```
+
+The second type of local scope is called **block scope**. A block, generally speaking, is any code wrapped within `{ }`. This includes conditional statements (`if` and `switch`) and loops (`for`, `while` and `do/while`).
+
+Go through the following resources to learn more about `scope`:
+
+- [JavaScript: Introduction to Scope (function scope, block scope)](https://dev.to/sandy8111112004/javascript-introduction-to-scope-function-scope-block-scope-d11)
 - [Understanding Scope in JavaScript](https://www.youtube.com/watch?v=SBjf9-WpLac)
 - [Everything you wanted to know about JavaScript scope](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope)
 
 ### Const and let
 
-> Quick refresher: Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
+As mentioned in the previous module, we prefer to declare variables using `const` and `let`. This is because the keywords are more descriptive and restrictive. This makes them easier to work with.
 
-In JavaScript we used to define variables using the keyword `var`:
+In relation to scope both also behave differently: they are block scoped. This means that they can be accessed from outside a `{ }`.
 
-```js
-var myName = 'Mohammed';
-```
-
-However
-
-In programming, we generally want to keep things as simple as they can be. We even have a name for that: [KISS](https://thevaluable.dev/kiss-principle-explained/) (Keep it Simple, Stupid!)
+Go through the following resources to learn more about this:
 
 - [How let and const are scoped in JavaScript](https://wesbos.com/javascript-scoping/)
+- [Should you truly never use var?](https://dev.to/johnwolfe820/should-you-never-truly-use-var-bdi)
 
 ## 2. Hoisting
 
@@ -73,45 +106,62 @@ If you look up the term "hoisting" in any dictionary, you'll find something like
 
 A simple example of hoisting is the hoisting of a flag on a pole. You pull on the rope and slowly but surely the flag gets raised up.
 
-### What is it
+In JavaScript, hoisting refers to the mechanism of the browser's JavaScript compiler to bring every function and variable declaration to the top of their `scope`, before it starts executing anything. This can be either global or local scope, depending on where it is defined.
 
-In JavaScript, hoisting refers to
+However, this does NOT mean that the actual value given to the variable or function will also be hoisted. It's just the declaration: that there are variables/functions that exist with that name.
 
-### When does it happen
+### When does hoisting happen?
 
-### Why do we need to know it?
+Hoisting happens during `compile-time`.
 
 When you execute your JavaScript code, the interpreter goes through the code twice. The first time is called the `compile-time`, which is when your code is made ready to be executed: there will be safety checks, small optimizations and making sure the syntax is written correctly.
 
 The second time is called `run-time`, which is where it actually executes your code by going through it line by line, doing the assignments, calling the functions, etc.
 
-Hoisting happens during `compile-time`.
+For more research, check out the following:
+
+- [What is Hoisting in JavaScript?](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1h)
 
 ## 3. Closures
 
-Simply put, a closure is a function that is defined inside another function.
+Simply put, a closure is a function that is defined inside another function. This special function has access to the outer scope (and thus its variables), the scope that's created by the function that contains the closure function.
+
+That's nice and all, but in order to really understand what it is and why we need it we need to take a look at another concept.
 
 ### Execution context
 
-In your programming journey you'll learn that many concepts overlap one another.
+The execution context roughly equates to the 'environment' a function executes in. This consists of the following:
 
-An execution context is
+- The variable scopes
+- Function arguments
+- The value of the `this` object (more on that in JavaScript3)
 
-### Defining a function within a function
+Checkout the following to learn more about why this is important:
+
+- [What is the Execution Context & Stack in JavaScript?](http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/)
+
+### Why do we need closures?
+
+Closures are commonly used to give objects data privacy. We don't want certain data to be available globally. Think of it as "keeping something a secret. Take, for example, the following situation:
+
+> You want to log in to your email account, so you need a password. Usually you have that password in your head, or somewhere written down in a place that can only be accessed in a certain way. It's not out there in public, able to be accessed by anyone.
+
+In this example your password is the data you want to keep locally scoped. Your act of logging in is the inner function. The outer function could be your act of being on the computer, where your password is stored in a file somewhere.
 
 For further study please check the following resources:
 
 - [The Ultimate Guide to Execution Contexts, Hoisting, Scoping and Closures in JavaScript](https://www.youtube.com/watch?v=Nt-qa_LlUH0)
 - [Understanding Closures](https://www.youtube.com/watch?v=rBBwrBRoOOY)
-- [Let's Learn JavaScript Closures](https://www.freecodecamp.org/news/lets-learn-javascript-closures-66feb44f6a44/)
+- [Master the JavaScript interview: what is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
+- [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
 
 ## 4. Thinking like a programmer II
 
 Becoming a good developer doesn't mean being good at any particular programming language: as a matter of fact, the language doesn't matter much.
 
-There are only a handful of core concepts
+This is the secret behind being a good developer: if you understand the concept, structure and principles of what makes a software program work, it doesn't matter in what way (the syntax) it's written.
 
-This is the secret behind being a good developer: if you understand the concept, structure and principles of what makes a software program work, it doesn't matter in what way (syntax) it's written.
+This is also the reason why most developers, once they've mastered the fundamentals, are able to pick up another language quite easily. It's not because they have good memory; it's because they can recognize the patterns within the language.
 
 - [How To Think Like a Programmer](https://www.youtube.com/watch?v=azcrPFhaY9k)
 - [Computer Language Fundamentals: Five Core Concepts](https://blog.upperlinecode.com/computer-language-fundamentals-five-core-concepts-1aa43e929f40)

@@ -9,7 +9,7 @@
 
 ## **1. Practice the concepts**
 
-Before we head into the exercises, it might be nice to do some interactive exercises first! In the following resource you'll find some exercises that'll teach you the basics of the interaction between JavaScript and the DOM
+Before we head into the exercises, it might be nice to do some interactive exercises first! In the following resource you'll find some exercises that'll teach you the basics of the interaction between JavaScript and the DOM:
 
 - [Making webpages interactive](https://www.khanacademy.org/computing/computer-programming/html-css-js)
 
@@ -17,7 +17,7 @@ Before we head into the exercises, it might be nice to do some interactive exerc
 
 > Inside of your `JavaScript2` fork, create a folder called `week1`. Inside of that folder, create a folder called `js-exercises`. For all the following exercises create a new `.js` file in that folder (5 files in total). Make sure the name of each file reflects its content: for example, the filename for exercise one could be `bookList.js`.
 
-### 1. The book list
+**Exercise 1: The book list**
 
 I'd like to display my three favorite books inside a nice webpage!
 
@@ -42,7 +42,7 @@ const books = [
 4. Add an <img> to each book that links to a URL of the book cover.
 5. Change the style of the book depending on whether you have read it (green) or not (red).
 
-### 2. About me
+**Exercise 2: About me**
 
 Start with this HTML and save it as "about_me.html":
 
@@ -72,7 +72,7 @@ Start with this HTML and save it as "about_me.html":
 5. (In the HTML head) Add a style tag that sets a rule for .list-item to make the color red.
 6. Create a new img element and set its src attribute to a picture of you. Append that element to the page.
 
-### 3. The logo hijack
+**Exercise 3: The logo hijack**
 
 No homepage is safe from the logo bandit! Everytime he sees a Google Logo he replaces it with a logo from HackYourfuture instead: https://www.hackyourfuture.dk/static/logo-dark.svg.
 
@@ -82,7 +82,7 @@ In this exercise you're expected to write a JavaScript function that can be exec
 2. Find out how to select the element that contains the Google logo, and store it in a variable
 3. Modify the source and sourceset of the logo so that it's replaced by the HackYourFuture logo instead
 
-### 4. What's the time?
+**Exercise 4: What's the time?**
 
 Why wear a watch when you can check the time, live in your webpage?
 
@@ -91,7 +91,7 @@ Why wear a watch when you can check the time, live in your webpage?
 3. Inside the JS file, write a function that adds the current time to the webpage. Make sure it's written in the HH:MM:SS notation (hour, minute, second). Hint: use `setInterval()` to make sure the time stays current
 4. Have the function execute when it's loading in the browser
 
-### 5. The cat walk
+**Exercise 5: The cat walk**
 
 Start with this webpage, which has a single img tag of an animated GIF of a cat walking.
 

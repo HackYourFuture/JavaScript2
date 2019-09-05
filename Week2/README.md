@@ -80,8 +80,6 @@ This example illustrates the concept of **asynchronicity**: there are multiple p
 
 This is the utility of `callbacks`: they allow us to introduce asynchronicity into the control flow of an application.
 
-Let's put this into the context of a webpage.
-
 Study the following resources to learn more about the importance of callbacks:
 
 - [Asynchronous JavaScript](https://www.youtube.com/watch?v=YxWMxJONp7E)
@@ -89,8 +87,6 @@ Study the following resources to learn more about the importance of callbacks:
 - [Callback Functions](https://www.youtube.com/watch?v=QRq2zMHlBz4)
 
 ## 3. Array Functions
-
-In programming we're always trying to make things easier on ourselves.
 
 There are different ways of dealing with arrays. The most common way is by using a loop and then writing custom logic inside it in order to manipulate the values. This solution works, but it comes at several disadvantages.
 
@@ -151,7 +147,7 @@ In simple terms, the `Event Loop` is a mechanism that operates in the browser. I
 1. Heap. This is where the browser assigns space in memory to each process
 2. Call Stack. This is the amount of JavaScript commands (read: function calls and events) that need to be executed
 3. Web APIs. These are objects (like the document) and functions (like XMLHttpRequest) that can be used within the JavaScript commands found in the Call Stack
-4. Callback Queue. This is the "waiting line" [ajksdbjkasbdjkasbnjkdbajksbdkj]
+4. Callback Queue. This is the "waiting line" for asynchronous function calls
 
 To see it in action check out the following resources:
 

@@ -56,9 +56,10 @@ letters === ['a', 'b', 'c', 'd', 'e', 'f'];
 
 **Exercise 3: Guess the output**
 
-In this exercise you'll be presented with 2 code snippets. Your task is to guess the output and write out your reasoning, for each single one, in 50 words or less.
+In this exercise you'll be presented with a code snippet. Your task is to guess the output and write out your reasoning in 50 words or less.
 
 ```js
+// Snippet
 let a = 10;
 const x = (function() {
   a = 12;
@@ -70,7 +71,12 @@ const x = (function() {
 x();
 ```
 
+**Exercise 4: Guess more**
+
+In this exercise you'll be presented with another code snippet. Guess the output and write out your reasoning in 50 words or less.
+
 ```js
+// Snippet
 const x = 9;
 function f1(val) {
   val = val + 1;
@@ -86,25 +92,6 @@ function f2(val) {
 }
 f2(y);
 console.log(y);
-```
-
-**Exercise 4: Make the sandwich**
-
-Mrs Potts the school dinner lady is tired of all the global sandwich variables getting under her feet and tripping her up all the time. She needs help cleaning her kitchen. Will you help her?
-
-She would like it very much if you would build a sandwich machine for her, but wrap it in a closure so as to keep everything neat.
-
-1. Create a self executing function
-2. Within the closure, create three little functions to add the bread, spread the butter and add the jam. These little methods should use console.log to write a string representing their action to the DOM, e.g. "Now spreading the jam!"
-3. Assign makeSandwich to the global window object, thus smuggling it out of the closure.
-4. Call makeSandwich from outside the closure
-
-It should log to the console the following message:
-
-```markdown
-Adding bread
-Now spreading the butter
-Spreading jam
 ```
 
 **Exercise 5: The lottery machine**
@@ -125,6 +112,8 @@ Then the function should take the newly created array and iterate over it, and c
 The function should call the second callback if the array value is divisible by 5.
 
 Both functions should be called if the array value is divisible by both 3 and 5.
+
+Here is a starter template:
 
 ```js
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {

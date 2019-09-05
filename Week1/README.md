@@ -92,10 +92,7 @@ The actual process of transforming HTML, CSS and JavaScript into a user-viewable
 
 ## 3. What is DOM Manipulation?
 
-**DOM manipulation** refers to the activity of selecting and modifying DOM elements. The main reason why this is done is that **you want to show the user different things depending their activity**, for example:
-
-- You click on a [hamburger menu icon](https://bit.ly/2Yr4O7Z) and a navigation menu slides in
-- You scroll down and the elements of
+**DOM manipulation** refers to the activity of selecting and modifying DOM elements. The main reason why this is done is that **you want to show the user different things depending their activity**, for example if you click on a [hamburger menu icon](https://bit.ly/2Yr4O7Z) and a navigation menu slides in.
 
 Finding the right elements is called **traversing the DOM**. Traversing the DOM essential means: using JavaScript to select certain elements within the DOM in order to modify them (change color, size or make them disappear, for example).
 
@@ -156,8 +153,8 @@ Test this code out by copying and pasting it in the Developer Console of your br
 This is DOM manipulation in its simplest form. It goes in three essential steps:
 
 (1) An event happens ("User clicks on the page")
-(2) JavaScript is aware and looks for this specific user action (The browser is listening for the event*), in this case a `click` event)
-(3) JavaScript modifies the DOM as a result (\_A function that makes the body background color black is executed*)
+(2) JavaScript is aware and looks for this specific user action (The browser is listening for the event, in this case a `click` event)
+(3) JavaScript modifies the DOM as a result (A function that makes the body background color black is executed)
 
 The second step is called **listening for the event**. We do this by using a by the browser predefined function called `addEventListener()`, which we get from the `document` object in the browser. The browser needs to listen to the event in order to know what it should do ("make the body background color black") in case a certain event (`click`) happens to a certain element (`body`).
 
