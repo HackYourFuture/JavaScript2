@@ -47,9 +47,9 @@ const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
   return tasks
-    .map(taskToDurations => taskToDurations.duration / 60)
-    .filter(lessThanTwoHours => lessThanTwoHours >= 2)
-    .map(durationPerHour => durationPerHour * hourlyRate)
+    .map(task => task.duration / 60)
+    .filter(durationInHours => durationInHours >= 2)
+    .map(durationInHours => durationInHours * hourlyRate)
     .reduce((totalAmount, amount) => totalAmount + amount, 0);
 }
 
