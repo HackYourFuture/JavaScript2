@@ -46,16 +46,23 @@ const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
-  // Replace this comment and the next line with your code
-  console.log(tasks, hourlyRate);
+  const durations = [];
+  for (const obj of tasks) {
+    durations.push(obj.duration);
+  }
+
+  const hourlyDurations = durations.map(minutes => minutes / 60);
+
+  const consideringDurations = hourlyDurations.filter(hours => hours >= 2);
+
+  const earnings = consideringDurations.reduce((amount, hours) => amount + hours * hourlyRate, 0);
+
+  return earnings;
 }
 
-// eslint-disable-next-line no-unused-vars
-const earnings = computeEarnings(maartjesTasks, maartjesHourlyRate);
+const maartjesEarnings = computeEarnings(maartjesTasks, maartjesHourlyRate).toFixed(2);
 
-// add code to convert `earnings` to a string rounded to two decimals (euro cents)
-
-console.log(`Maartje has earned €${'replace this string with the earnings rounded to euro cents'}`);
+console.log(`Maartje has earned €${maartjesEarnings}`);
 
 // Do not change or remove anything below this line
 module.exports = {
