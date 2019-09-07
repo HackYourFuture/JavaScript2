@@ -30,68 +30,59 @@
   // }
   // getBooks(bookTitles); it is for question 1.3
 
-  const completeBookList = [
-    {
+  const completeBookList = {
+    harry_potter_chamber_secrets: {
       id: 'harry_potter_chamber_secrets',
       title: 'Harry Potter Chamber Secrets',
       language: 'English',
       author: 'J.K. Rowling',
     },
-    {
-      id: 'sufisim',
+    sufisim: {
       title: 'Sufism',
       language: 'English',
       author: 'F. Gulen',
     },
-    {
-      id: 'the_statue_of_our_souls',
+    the_statue_of_our_souls: {
       title: 'The Statue Of Our Souls',
       language: 'English',
       author: 'F. Gulen',
     },
-    {
-      id: 'the_words',
+    the_words: {
       title: 'The Words',
       language: 'English',
       author: 'S. Nursi',
     },
-    {
-      id: 'safahat',
+    safahat: {
       title: 'Safahat',
       language: 'Turkish',
       author: 'M.A. Ersoy',
     },
-    {
-      id: 'towards_the_lost_paradise',
+    towards_the_lost_paradise: {
       title: 'Towards The Lost Paradise',
       language: 'English',
       author: 'F. Gulen',
     },
-    {
-      id: 'sapiens',
+    sapiens: {
       title: 'Sapiens',
       language: 'English',
       author: 'Yufal Noah Harari',
     },
-    {
-      id: 'facade',
+    facade: {
       title: 'Facade',
       language: 'English',
       author: 'Esther Verhoef',
     },
-    {
-      id: 'love_and_tolerance',
+    love_and_tolerance: {
       title: 'LOve And Tolarance',
       language: 'English',
       author: 'F. Gulen',
     },
-    {
-      id: 'from_seed_to_cedar',
+    from_seed_to_cedar: {
       title: 'From Seed To Cedar',
       language: 'Turkish',
       author: 'F.Gulen',
     },
-  ];
+  };
 
   const imageLink = {
     harry_potter_chamber_secrets: {
@@ -139,32 +130,35 @@
   function getBookInfo(obj, img) {
     const bookList = document.createElement('ul');
     rootDiv.appendChild(bookList);
+    const arrBook = Object.keys(obj);
 
-    for (let i = 0; i < obj.length; i++) {
+    for (let i = 0; i < arrBook.length; i++) {
       const bookTitle = document.createElement('li');
       bookTitle.setAttribute('class', 'li-bookTitle');
+      bookTitle.setAttribute('id', arrBook[i]);
 
       bookList.appendChild(bookTitle);
       const bookName = document.createElement('h2');
       bookTitle.appendChild(bookName);
-      bookName.innerHTML = obj[i].title;
+      bookName.innerHTML = obj[arrBook[i]].title;
       bookName.setAttribute('class', 'h2-bookName');
 
       const author = document.createElement('p');
       bookTitle.appendChild(author);
-      author.innerHTML = obj[i].author;
+      author.innerHTML = obj[arrBook[i]].author;
       author.setAttribute('class', 'p-author');
 
       const language = document.createElement('p');
       bookTitle.appendChild(language);
-      language.innerHTML = obj[i].language;
+      language.innerHTML = obj[arrBook[i]].language;
       language.setAttribute('class', 'p-language');
-
+    }
+    for (let i = 0; i < arrBook.length; i++) {
+      const imgId = document.getElementById(arrBook[i]);
       const coverImage = document.createElement('img');
-      bookTitle.appendChild(coverImage);
-      const imgTarget = obj[i].id;
-      coverImage.src = img[imgTarget].link;
-      coverImage.alt = img[imgTarget].alt;
+      imgId.appendChild(coverImage);
+      coverImage.src = img[arrBook[i]].link;
+      coverImage.alt = img[arrBook[i]].alt;
     }
   }
   getBookInfo(completeBookList, imageLink);
