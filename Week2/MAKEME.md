@@ -124,7 +124,7 @@ const myHobbies = [
 
 - Write a program that outputs each of these inside an HTML file
 - Create an HTML and JavaScript file, link them together
-- Use the `map` and/or `forEach` function to put each hobby into a <li>
+- Use the `map` and/or `forEach` function to put each hobby into a list item
 - Output the list items in an unordered list
 
 ## **3. Code along**
