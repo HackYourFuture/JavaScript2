@@ -3,8 +3,14 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (arr[i] === arr[j]) {
+        arr.splice(i, 1);
+      }
+    }
+  }
+  return arr;
 }
 
 const uniqueValues = makeUnique(values);
