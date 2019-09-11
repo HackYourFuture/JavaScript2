@@ -2,15 +2,15 @@
 
 const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
-
+let newArr = '';
 function flattenArray2d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  newArr = arr.flat(1);
+  return newArr;
 }
 
 function flattenArray3d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  newArr = arr.flat(Infinity);
+  return newArr;
 }
 
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
