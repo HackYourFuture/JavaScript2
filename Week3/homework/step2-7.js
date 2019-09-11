@@ -8,7 +8,7 @@ function f1(val) {
 
 f1(x);
 
-console.log(x);
+console.log(x); // 9
 
 const y = { x: 9 };
 function f2(val) {
@@ -18,6 +18,7 @@ function f2(val) {
 
 f2(y);
 
-console.log(y);
+console.log(y); // {x: 10}
 
-// Add your explanation as a comment here
+// x is a constant number. Function creates a block scoped x variable. X can chance in block scope.
+// y is an object. Function can change x key value. Object keys and values mutable.
