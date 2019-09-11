@@ -5,6 +5,11 @@ function multiplyAll(arr) {
   let product = 1;
 
   // Replace this comment and the next line with your code
+  for (let i = 0; i < arr.length; i++) {
+    for (let a = 0; a < arr[i].length; a++) {
+      product *= arr[i][a];
+    }
+  }
   console.log(arr, product);
 
   return product;
