@@ -4,13 +4,15 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function flattenArray2d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  return arr.reduce((acc, value) => acc.concat(value), []);
+  // another solution (spread): return arr.reduce((acc, value) => [...acc, ...value], [])
 }
 
 function flattenArray3d(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  // eslint-disable-next-line arrow-body-style
+  return arr.reduce((acc, value) => {
+    return acc.concat(Array.isArray(value) ? flattenArray3d(value) : value);
+  }, []);
 }
 
 console.log(flattenArray2d(arr2d)); // -> [1, 2, 3, 4, 5, 6]
