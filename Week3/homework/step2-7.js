@@ -20,4 +20,4 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// in the first part, the defined variable is primitive and can't be mutated. reassignment, on line 5, works but its effect is limited to  block scope, thus not effecting value. it is not the same in the second part. here, on line 15, it is mutating, not reassigning. it's being passed by reference and mutating is reflected in 'y'.
