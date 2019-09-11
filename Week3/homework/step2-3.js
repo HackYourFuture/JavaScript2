@@ -6,8 +6,10 @@ function repeatStringNumTimesWithFor(str, num) {
   let result = '';
 
   // Replace this comment and the next line with your code
-  console.log(str, num, result);
-
+  // console.log(str, num, result);
+  for (let i = 0; i < num; i++) {
+    result += str;
+  }
   return result;
 }
 
@@ -19,7 +21,11 @@ function repeatStringNumTimesWithWhile(str, num) {
   let result = '';
 
   // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  // console.log(str, num, result);
+  while (num > 0) {
+    result += str;
+    num--;
+  }
 
   return result;
 }
@@ -32,7 +38,12 @@ function repeatStringNumTimesWithDoWhile(str, num) {
   let result = '';
 
   // Replace this comment and the next line with your code
-  console.log(str, num, result);
+  // console.log(str, num, result);
+
+  do {
+    result += str;
+    num--;
+  } while (num > 0);
 
   return result;
 }

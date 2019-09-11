@@ -21,3 +21,5 @@ f2(y);
 console.log(y);
 
 // Add your explanation as a comment here
+// Javascript always pass by value,so changing the value of the variable never changes the underlying primitive.
+// So when a variable refers to an object which includes array, the value is the reference to the object.
