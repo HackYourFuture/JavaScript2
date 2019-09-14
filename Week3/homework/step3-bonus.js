@@ -3,10 +3,11 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-  // Replace this comment and the next line with your code
-  console.log(arr);
+  const uniqueArray = [...new Set(arr)];
+  return uniqueArray;
 }
-
+// I worked on loop in loop but there were to many lines.
+// The question was asking for it to be fast then I got it from google.
 const uniqueValues = makeUnique(values);
 console.log(uniqueValues);
 
