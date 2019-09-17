@@ -5,10 +5,13 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
   for (let number = startIndex; number <= stopIndex; number++) {
     numbers.push(number); // This create an array [10,11,12,13,14,15]
-  }
-  // Set the conditions of the callback for threeCallback, fiveCallback.
-  for (let i = 0; i < numbers.length; i++) {
-    const number = numbers[i];
+
+    if (number % 5 === 0 && number % 3 === 0) {
+      threeCallback(number);
+      fiveCallback(number);
+      return; // to stop repeating the log later on.
+    }
+
     if (number % 3 === 0) {
       threeCallback(number);
     }
