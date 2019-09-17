@@ -3,9 +3,9 @@
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
 
-  for (let i = 0; i <= stopIndex - startIndex; i++) {
+  for (let i = startIndex; i <= stopIndex; i++) {
     numbers.push(startIndex + i);
-    if ((startIndex + i) % 3 === 0 && (startIndex + i) % 5 === 0) {
+    if ((startIndex + i) % 15 === 0) {
       numbers.push(threeCallback(startIndex + i));
       numbers.push(fiveCallback(startIndex + i));
     } else if ((startIndex + i) % 3 === 0) {

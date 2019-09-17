@@ -20,5 +20,5 @@ f2(y);
 
 console.log(y); // {x: 10}
 
-// x is a constant number. Function creates a block scoped x variable. X can chance in block scope.
-// y is an object. Function can change x key value. Object keys and values mutable.
+// Pass by Value, Function is called by directly passing the value 9 of the variable x as the argument
+// Pass by Reference, Function is called by directly passing the reference (const y = {x:9}) of variable y as the argument
