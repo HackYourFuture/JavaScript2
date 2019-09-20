@@ -8,11 +8,6 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     numbers.push(number);
     if (number % 3 === 0) threeCallback(number); // Will be called when number is divisible by 15 also
     if (number % 5 === 0) fiveCallback(number); // Will be called when number is divisible by 15 also
-    if (number % 15 === 0) {
-      // This will print extra
-      threeCallback(number);
-      fiveCallback(number);
-    }
   }
 }
 
