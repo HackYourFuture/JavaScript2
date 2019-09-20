@@ -3,11 +3,7 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-  return arr.reduce(
-    (uniquesArr, currentElm) =>
-      uniquesArr.includes(currentElm) ? uniquesArr : [...uniquesArr, currentElm],
-    [],
-  );
+  return Array.from(new Set(arr));
 }
 
 const uniqueValues = makeUnique(values);
