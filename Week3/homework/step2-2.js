@@ -8,10 +8,12 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   }
 
   numbers.forEach(number => {
-    if (number % 3 === 0) {
+    if (number % 15 === 0) {
       threeCallback(number);
-    }
-    if (number % 5 === 0) {
+      fiveCallback(number);
+    } else if (number % 3 === 0) {
+      threeCallback(number);
+    } else if (number % 5 === 0) {
       fiveCallback(number);
     }
   });
