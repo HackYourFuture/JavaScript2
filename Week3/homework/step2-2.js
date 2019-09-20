@@ -4,14 +4,16 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
 
   // Make array
-  for (let i = startIndex; i <= stopIndex; ++i) {
-    numbers.push(i);
+  for (let number = startIndex; number <= stopIndex; ++number) {
+    numbers.push(number);
+    if (number % 3 === 0) threeCallback(number); // Will be called when number is divisible by 15 also
+    if (number % 5 === 0) fiveCallback(number); // Will be called when number is divisible by 15 also
+    if (number % 15 === 0) {
+      // This will print extra
+      threeCallback(number);
+      fiveCallback(number);
+    }
   }
-
-  numbers.forEach(number => {
-    if (number % 3 === 0) threeCallback(number);
-    if (number % 5 === 0) fiveCallback(number);
-  });
 }
 
 function sayThree(number) {
