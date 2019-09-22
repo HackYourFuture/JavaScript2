@@ -10,9 +10,6 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
       threeCallback(elem);
     } else if (elem % 5 === 0) {
       fiveCallback(elem);
-    } else if (elem % 5 === 0 && elem % 3 === 0) {
-      fiveCallback(elem);
-      threeCallback(elem);
     }
   });
 }

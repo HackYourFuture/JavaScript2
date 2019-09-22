@@ -2,7 +2,7 @@
 
 function foo(func) {
   // What to do here?
-  // since we aim to pass bar as argument to foo then foo should return its parameter.
+  // since we aim to pass bar as argument to foo then foo should call its parameter.
   return func();
 }
 
