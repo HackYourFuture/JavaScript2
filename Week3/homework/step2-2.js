@@ -8,7 +8,8 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   numbers.forEach(elem => {
     if (elem % 3 === 0) {
       threeCallback(elem);
-    } else if (elem % 5 === 0) {
+    }
+    if (elem % 5 === 0) {
       fiveCallback(elem);
     }
   });
