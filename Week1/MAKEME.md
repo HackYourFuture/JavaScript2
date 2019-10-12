@@ -37,9 +37,9 @@ const books = [
 ```
 
 1. Iterate through the array of books.
-2. For each book, create a p element with the book title and author and append it to the page.
-3. Use an <ul> and <li> to display the books.
-4. Add an <img> to each book that links to a URL of the book cover.
+2. For each book, create a `<p>` element with the book title and author and append it to the page.
+3. Use a `<ul>` and `<li>` to display the books.
+4. Add an `<img>` to each book that links to a URL of the book cover.
 5. Change the style of the book depending on whether you have read it (green) or not (red).
 
 **Exercise 2: About me**
