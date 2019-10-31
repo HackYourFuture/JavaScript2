@@ -34,7 +34,9 @@ It depends on `context` for me to know what really happened.
 
 Let's draw the line to programming. Simply put, just like context gives meaning to a word, `scope` gives meaning to a variable/object.
 
-That meaning is defined by whether or not the variable is accessible. If the variable is not within the "scope" (you could also call it "reach") of any given code block, it can't access it.
+That meaning is defined by whether or not the variable is accessible. If the variable is not within the "scope" of any given code block, it can't access it. Which means it doesn't exist from the perspective of that code block.
+
+This is actually a good thing: we want to make sure that parts of our data have limited accessibility. Imagine that the password to your email account would be available everywhere, and you could easily get access to it by writing some code in the console of your browser. Do you know how easily it would be to hack into your account?
 
 For further research, check out the following:
 
