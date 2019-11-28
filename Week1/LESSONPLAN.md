@@ -23,9 +23,9 @@ FIRST HALF (12.00 - 13.30)
 ### Explanation
 The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) is an _object-oriented representation_ of a web page(HTML document) which the web browsers make available to JavaScript for manipulation. Inside a JavaScript file, we can access the DOM through a global object called `document` or `window.document`.
 
-    **It is not a programming language but without it JavaScript would not have any knowledge of our web page/HTML document.**
+ **It is not a programming language but without it JavaScript would not have any knowledge of our web page/HTML document.**
 ### Example
-    ```HTML
+```HTML
     <!DOCTYPE html>
     <html>
     <head>
@@ -39,7 +39,7 @@ The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/A
     </html>
     ```
 
-    ![Pictorial Representation of DOM](https://www.w3schools.com/js/pic_htmltree.gif)
+   ![Pictorial Representation of DOM](https://www.w3schools.com/js/pic_htmltree.gif)
 ### Exercise
 ### Essence
 
