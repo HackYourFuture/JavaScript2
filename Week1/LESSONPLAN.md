@@ -25,7 +25,7 @@ The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/A
 
  **It is not a programming language but without it JavaScript would not have any knowledge of our web page/HTML document.**
 ### Example
-```HTML
+   ```HTML
     <!DOCTYPE html>
     <html>
     <head>
@@ -37,9 +37,9 @@ The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/A
       <a href="https://www.w3schools.com/js/pic_htmltree.gif">My link</a>
     </body>
     </html>
-    ```
+   ```
 
-   ![Pictorial Representation of DOM](https://www.w3schools.com/js/pic_htmltree.gif)
+  ![Pictorial Representation of DOM](https://www.w3schools.com/js/pic_htmltree.gif)
 ### Exercise
 ### Essence
 
@@ -47,20 +47,18 @@ The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/A
 ## 2. DOM manipulation
 ### Explanation
 ### Example
-1. Finding DOM elements in HTML page
 
+1. Finding DOM elements in HTML page
     - `document.getElementById(id)` - Find an element by element id
     - `document.getElementsByTagName(name)` - Find elements by tag name
     - `document.getElementsByClassName(name)` - Find elements by class name
 
 2. Adding and Deleting elements in HTML page
-
     - `document.createElement(element)` - Create a new HTML element
     - `document.removeChild(element)` - Remove an HTML element
     - `document.appendChild(element)` - Add an HTML element
-
+    
 3. Changing existing HTML elements
-
     - `element.innerHTML` - Change the content/layout of the element
     - `element.innerText` - Change just the text of the element
     - `element.setAttribute(attribute, value)` - Set/Change attribute of an element
