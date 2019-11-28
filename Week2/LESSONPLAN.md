@@ -10,42 +10,51 @@ The purpose of this class is to introduce to the student:
 - Show 3 commonly used array functions (filter, reduce, map)
 
 ## Core concepts
-
 FIRST HALF (12.00 - 13.30)
+## 1. Q&A about last week's concepts & homework
 
-1. What synchronous vs. asynchronous processes are
-
+## 2. What synchronous vs. asynchronous processes are
+### Explanation
+### Example
+### Exercise
+### Essence
 Notes:
 
 - Synchronous refers to a linear execution process: one step at a time
 - Asynchronous helps us do multiple things in parallel
 
-_Show examples_
 
-2. What callbacks are and how to write your own
-
+## 3. What callbacks are and how to write your own
+### Explanation
+### Example
+### Exercise
+### Essence
 Notes:
 
 - Callbacks are a way to introduce asynchronocity
 
-**Do exercise**
 
 SECOND HALF (14.00 - 16.00)
 
-3. How the event loop works
+## 4. How the event loop works
 
+### Explanation
+### Example
+### Exercise
+### Essence
 Notes:
 
 - The event loop is part of the browser
 - It determines when any given function is executed
 
-_Show examples_
 
-4. Show 3 commonly used array functions (filter, reduce, map)
-
+## 5. Show 3 commonly used array functions (filter, reduce, map)
+### Explanation
+### Example
+### Exercise
+### Essence
 Notes:
 
 - Array functions are predefined functions that come from the Array object
 - Each function serves to manipulate arrays in a specific way
 
-**Do exercise**
