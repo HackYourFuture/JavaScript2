@@ -13,6 +13,11 @@ The purpose of this class is to introduce to the student:
 FIRST HALF (12.00 - 13.30)
 ## 1. Q&A about last week's concepts & homework
 
+- DOM 
+- DOM manipulation
+- browser defined functions
+
+Note: You can ask students to explain a concept or summerise the last lecture themselves
 ## 2. What synchronous vs. asynchronous processes are
 ### Explanation
 ### Example
