@@ -80,6 +80,7 @@ function myFunction() {
 
 myFunction();
 ```
+Made by Yash: https://github.com/yash-kapila/HYF-JS2-Week3/blob/master/src/scope.js
 ### Essence
 Same link as Explanation
 
@@ -87,6 +88,7 @@ Same link as Explanation
 ### Explanation
 ### Example
 ### Exercise
+Made by Yash: https://github.com/yash-kapila/HYF-JS2-Week3/blob/master/src/hoisting.js
 ### Essence
 Notes:
 
@@ -98,13 +100,29 @@ SECOND HALF (14.00 - 16.00)
 
 ## 4. The use and purpose of closures
 ### Explanation
+
 ### Example
+
+Credits to Yash:
+``` Javascript
+{
+  'use strict';
+
+  const printName = () => {
+    const message = 'My name is ';
+
+    const displayName = name => {
+      console.log(`${message}${name}`);
+    }
+
+    return displayName;
+  };
+  
+  const name = printName();
+  name('Yash Kapila');
+}
+```
 ### Exercise
 ### Essence
-Notes:
-
-- Used for data privacy
-- Access to the environment of the outer function
-
 
 
