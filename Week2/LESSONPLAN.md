@@ -98,7 +98,7 @@ baz
 ```
 
 Call stack
-![Call Stack](assets/call_stack_example.png)
+![Call Stack](../assets/call_stack_example.png)
 
 ### Exercise
 
