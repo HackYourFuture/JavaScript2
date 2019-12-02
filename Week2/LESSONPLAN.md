@@ -72,24 +72,101 @@ you can’t just call one function after another and hope they execute in the ri
 SECOND HALF (14.00 - 16.00)
 
 ## 4. Event loops
-
 ### Explanation
+https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/event_loop.md
 ### Example
-### Exercise
-### Essence
-Notes:
 
-- The event loop is part of the browser
-- It determines when any given function is executed
+``` Javascript
+const bar = () => console.log('bar')
+
+const baz = () => console.log('baz')
+
+const foo = () => {
+  console.log('foo')
+  bar()
+  baz()
+}
+
+
+foo()
+```
+Output:
+``` Javascript
+foo
+bar
+baz
+```
+
+Call stack
+![Call Stack](assets/call_stack_example.png)
+
+### Exercise
+
+### Essence
+
 
 
 ## 5. 3 commonly used array functions (filter, reduce, map)
-### Explanation
-### Example
-### Exercise
-### Essence
-Notes:
 
-- Array functions are predefined functions that come from the Array object
-- Each function serves to manipulate arrays in a specific way
+### Explanation
+**map**, **filter** and **reduce** are three array methods that iterate (loop!) over the whole array and preform a computation or a transformation. 
+They have in common that they return a new array based on the transformations/calculations.
+
+> [MDN definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map): The **map()** method creates a new array with the results of calling a provided function on every element in the calling array.
+
+> [MDN definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter): The **filter()** method creates a new array with all elements that pass the test implemented by the provided function
+
+> [MDN definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce): The **reduce()** method executes a **reducer** function (that you provide) on each member of the array resulting in a single output value†.
+
+Writing the functions yourself: https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/map_filter.md
+
+### Example
+```Javascript
+const numbers = [1, 2, 3, 4];
+const square = x => x * x;
+const squaredNumbers = numbers.map(square);
+
+console.log(squaredNumbers); // -> [ 1, 4, 9, 16 ]
+```
+
+```Javascript
+const numbers = [1, 2, 3, 2];
+const isTwo = x => x === 2;
+const Twos = numbers.filter(isTwo);
+
+console.log(Twos); // -> [ 2, 4 ]
+```
+```Javascript
+const numbers = [1, 2, 3, 4];
+
+const sum = (a, b) => a + b;
+const total = numbers.xxx(sum, 0);
+
+console.log(total); // -> 10
+```
+
+
+### Exercise
+Fill in the xxx with map, filter or reduce:
+
+``` Javascript
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.xxx(item => item * 2);
+console.log(doubled); // [2, 4, 6, 8]
+```
+```Javascript
+const numbers = [1, 2, 3, 4];
+
+const times = (a, b) => a * b;
+const total = numbers.xxx(times, 0);
+
+console.log(total); // -> 10
+```
+``` Javascript
+const numbers = [1, 2, 3, 4];
+const evens = numbers.xxx(item => item % 2 === 0);
+console.log(evens); // [2, 4]
+```
+
+### Essence
 
