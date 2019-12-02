@@ -170,3 +170,5 @@ console.log(evens); // [2, 4]
 
 ### Essence
 
+Easy methodes to transform arrays, wich you'll have to do quite often, while keeping the original array intact.
+You can see it as a shortcut. Of course you can write these methodes yourself many times, but 'they' already did it for you 
