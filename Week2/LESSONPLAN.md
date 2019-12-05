@@ -50,7 +50,7 @@ function alertFinished(){
 }
 doHomework('math', alertFinished);
 ```
-
+more examples (made by Yash): https://github.com/HackYourFuture/JavaScript2/blob/master/assets/callbacks.js
 ### Exercise
 
 #### 1. What will happen? 
@@ -111,7 +111,7 @@ Call stack
 
 
 
-## 5. 3 commonly used array functions (filter, reduce, map)
+## 5. filter, reduce, map
 
 ### Explanation
 **map**, **filter** and **reduce** are three array methods that iterate (loop!) over the whole array and preform a computation or a transformation. 
