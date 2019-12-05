@@ -98,12 +98,38 @@ Notes:
 
 SECOND HALF (14.00 - 16.00)
 
-## 4. The use and purpose of closures
+## 4. Closures
 ### Explanation
-
-### Example
-
 Credits to Yash:
+A closure is when inner function remembers the environment in which it was created even after the outer function has returned.
+
+One powerful use of closures is to use the outer function as a factory for creating functions that are somehow related.
+
+In the code snippet underneath we can see that the `carColor` function has still got access to the outer function's properties like `wheels`, `seats` and `brand` even after the function `manufactureCar` has returned. We can then use the `carColor` as a factory to create multiple cards of the same type but with a different color.
+### Example
+```JavaScript
+function manufactureCar() {
+  const wheels = 4;
+  const seats = 5;
+  const brand = 'Some Brand';
+
+  return function carColor(color) {
+    return {
+      wheels,
+      seats,
+      brand,
+      color,
+    }
+  };
+}
+
+const basicCar = manufactureCar();
+
+const redCar = basicCar('red');
+const blueCar = basicCar('blue');
+const greenCar = basicCar('green');
+```
+
 ``` Javascript
 {
   'use strict';
@@ -122,7 +148,9 @@ Credits to Yash:
   name('Yash Kapila');
 }
 ```
+
 ### Exercise
+
 ### Essence
 
 
