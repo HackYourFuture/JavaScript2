@@ -29,20 +29,41 @@
 
     for (let i = 0; i < books.length; i++) {
       const element = books[i];
-      const paragraph = document.createElement('li');
+
+      const bulletPoint = document.createElement('li');
+      // adds the text
       let node = document.createTextNode(
         `The name of the book is ${element.title} written by ${element.author}`,
       );
-      paragraph.appendChild(node);
-      list.appendChild(paragraph);
+      bulletPoint.appendChild(node);
+      list.appendChild(bulletPoint);
 
+      // changes to the color of already read books
       if (element.alreadyRead) {
-        paragraph.style.color = 'green';
-        paragraph.innerText = `The name of the book is ${element.title} written by ${element.author} (already Read)`;
+        bulletPoint.style.color = 'green';
+        bulletPoint.innerText = `The name of the book is ${element.title} written by ${element.author} (already Read)`;
       } else {
-        paragraph.style.color = 'red';
-        paragraph.innerText = `The name of the book is ${element.title} written by ${element.author} (To read)`;
+        bulletPoint.style.color = 'red';
+        bulletPoint.innerText = `The name of the book is ${element.title} written by ${element.author} (To read)`;
       }
+      //adds photos of the book
+      let images = [];
+      const image1 = document.createElement('img');
+      image1.setAttribute(
+        'src',
+        'https://productdork.com/uploads/default/original/1X/ddbda1150301e89cdf0119d84f2a7fb8930beffb.png',
+      );
+      image1.setAttribute('height', '500px');
+      images.push(image1);
+
+      const image2 = document.createElement('img');
+      image2.setAttribute(
+        'src',
+        'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1295465264l/8884400.jpg',
+      );
+
+      images.push(image2);
+      list.appendChild(images[i]);
     }
   </script>
 </html>
