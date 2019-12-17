@@ -14,11 +14,11 @@ You might be one of those people right now, but after this module no more. In **
 
 In order to successfully complete this module you will need to master the following:
 
-- Understand what the DOM is
-- Use the basics of DOM Manipulation
-- Differentiate between synchronous and asynchronous operations
+- Understand what the `DOM` is
+- Use the basics of `DOM Manipulation`
+- Differentiate between `synchronous` and `asynchronous` operations
 - Gain awareness of the inner workings of JavaScript
-- Learn to think based on principles, instead of libraries and frameworks
+- Learn to think based on `principles`, instead of libraries and frameworks
 
 ## How to use this repository
 

@@ -10,24 +10,31 @@ The purpose of this class is to introduce to the student:
 - Show 3 commonly used array functions (filter, reduce, map)
 
 ## Core concepts
+
 FIRST HALF (12.00 - 13.30)
+
 ## 1. Q&A about last week's concepts & homework
 
-- DOM 
+- DOM
 - DOM manipulation
 - browser defined functions
 
 Note: You can ask students to explain a concept or summerise the last lecture themselves
+
 ## 2. What synchronous vs. asynchronous processes are
+
 ### Explanation
+
 ### Example
+
 ### Exercise
+
 ### Essence
+
 Notes:
 
 - Synchronous refers to a linear execution process: one step at a time
 - Asynchronous helps us do multiple things in parallel
-
 
 ## 3. Callbacks
 
@@ -35,34 +42,40 @@ Notes:
 
 A callback in JavaScript is basically a function(callback) being passed as a parameter to another function which after some point of time would execute the function passed or invoke the callback.
 
-Callbacks were primarily introduced in JavaScript to achieve asynchronous behaviour 
+Callbacks were primarily introduced in JavaScript to achieve asynchronous behaviour
 (https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
-### Example
-Consider a situation where person A wishes to go out for a movie with a friend person B one evening. Person A finds out the time and place and now needs to share it with B. A picks up the phone and tries to call B. Let's say that B is currently busy with some work and can't answer the phone. Person A has now got two options. One option is to stay on the line until B picks up the phone and then share the movie details. Or A could drop a voicemail and ask B to __callback__ once free.
 
-``` javascript
+### Example
+
+Consider a situation where person A wishes to go out for a movie with a friend person B one evening. Person A finds out the time and place and now needs to share it with B. A picks up the phone and tries to call B. Let's say that B is currently busy with some work and can't answer the phone. Person A has now got two options. One option is to stay on the line until B picks up the phone and then share the movie details. Or A could drop a voicemail and ask B to **callback** once free.
+
+```javascript
 function doHomework(subject, callback) {
   alert(`Starting my ${subject} homework.`);
   callback();
 }
-function alertFinished(){
+function alertFinished() {
   alert('Finished my homework');
 }
 doHomework('math', alertFinished);
 ```
+
 more examples (made by Yash): https://github.com/HackYourFuture/JavaScript2/blob/master/assets/callbacks.js
+
 ### Exercise
 
-#### 1. What will happen? 
+#### 1. What will happen?
+
 #### 2. How to turn the output order around?
-``` javascript
-function first(){
+
+```javascript
+function first() {
   // Simulate a code delay
-  setTimeout( function(){
+  setTimeout(function() {
     console.log(1);
-  }, 500 );
+  }, 500);
 }
-function second(){
+function second() {
   console.log(2);
 }
 
@@ -70,18 +83,21 @@ first();
 second();
 ```
 
-
 ### Essence
+
 you can’t just call one function after another and hope they execute in the right order. Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution.
 
 SECOND HALF (14.00 - 16.00)
 
 ## 4. Event loops
+
 ### Explanation
+
 https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/event_loop.md
+
 ### Example
 
-``` Javascript
+```Javascript
 const bar = () => console.log('bar')
 
 const baz = () => console.log('baz')
@@ -95,8 +111,10 @@ const foo = () => {
 
 foo()
 ```
+
 Output:
-``` Javascript
+
+```Javascript
 foo
 bar
 baz
@@ -109,12 +127,11 @@ Call stack
 
 ### Essence
 
-
-
 ## 5. filter, reduce, map
 
 ### Explanation
-**map**, **filter** and **reduce** are three array methods that iterate (loop!) over the whole array and preform a computation or a transformation. 
+
+**map**, **filter** and **reduce** are three array methods that iterate (loop!) over the whole array and preform a computation or a transformation.
 They have in common that they return a new array based on the transformations/calculations.
 
 > [MDN definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map): The **map()** method creates a new array with the results of calling a provided function on every element in the calling array.
@@ -126,6 +143,7 @@ They have in common that they return a new array based on the transformations/ca
 Writing the functions yourself: https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/map_filter.md
 
 ### Example
+
 ```Javascript
 const numbers = [1, 2, 3, 4];
 const square = x => x * x;
@@ -141,6 +159,7 @@ const Twos = numbers.filter(isTwo);
 
 console.log(Twos); // -> [ 2, 4 ]
 ```
+
 ```Javascript
 const numbers = [1, 2, 3, 4];
 
@@ -150,15 +169,16 @@ const total = numbers.xxx(sum, 0);
 console.log(total); // -> 10
 ```
 
-
 ### Exercise
+
 Fill in the xxx with map, filter or reduce:
 
-``` Javascript
+```Javascript
 const numbers = [1, 2, 3, 4];
 const doubled = numbers.xxx(item => item * 2);
 console.log(doubled); // [2, 4, 6, 8]
 ```
+
 ```Javascript
 const numbers = [1, 2, 3, 4];
 
@@ -167,15 +187,17 @@ const total = numbers.xxx(times, 0);
 
 console.log(total); // -> 10
 ```
-``` Javascript
+
+```Javascript
 const numbers = [1, 2, 3, 4];
 const evens = numbers.xxx(item => item % 2 === 0);
 console.log(evens); // [2, 4]
 ```
+
 Yash made a very nice exercise (with answers):
 https://github.com/yash-kapila/HYF-JS2-Week2/tree/master/src
 
 ### Essence
 
 Easy methodes to transform arrays, wich you'll have to do quite often, while keeping the original array intact.
-You can see it as a shortcut. Of course you can write these methodes yourself many times, but 'they' already did it for you 
+You can see it as a shortcut. Of course you can write these methodes yourself many times, but 'they' already did it for you
