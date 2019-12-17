@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book list</title>
+  </head>
+  <body></body>
+  <script>
+    'use strict';
+    const books = [
+      {
+        title: 'The Design of Everyday Things',
+        author: 'Don Norman',
+        alreadyRead: false,
+      },
+      {
+        title: 'The Most Human Human',
+        author: 'Brian Christian',
+        alreadyRead: true,
+      },
+    ];
+
+    const list = document.createElement('ul');
+    const para = document.createTextNode('Book list');
+    list.appendChild(para);
+
+    document.body.appendChild(list);
+
+    for (let i = 0; i < books.length; i++) {
+      const element = books[i];
+      const paragraph = document.createElement('li');
+      let node = document.createTextNode(
+        `The name of the book is ${element.title} written by ${element.author}`,
+      );
+      paragraph.appendChild(node);
+      list.appendChild(paragraph);
+
+      if (element.alreadyRead) {
+        paragraph.style.color = 'green';
+        paragraph.innerText = `The name of the book is ${element.title} written by ${element.author} (already Read)`;
+      } else {
+        paragraph.style.color = 'red';
+        paragraph.innerText = `The name of the book is ${element.title} written by ${element.author} (To read)`;
+      }
+    }
+  </script>
+</html>
