@@ -52,6 +52,8 @@ The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/A
     - `document.getElementById(id)` - Find an element by element id
     - `document.getElementsByTagName(name)` - Find elements by tag name
     - `document.getElementsByClassName(name)` - Find elements by class name
+    - `document.querySelector(selector)` - Find a single element that matches a css-like selector
+    - `document.querySelectorAll(selector)` - Find all elements  that matche a css-like selector
 
 2. Adding and Deleting elements in HTML page
     - `document.createElement(element)` - Create a new HTML element
@@ -65,11 +67,12 @@ The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/A
 
 * Note: `getElementsByTagName` and `getElementsByClassName` returns a list of all matched elements. However, this is not the usual JavaScript array but an HTMLCollection List. A detailed list of APIs available on the DOM can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/Document).
 ### Exercise
+
+**Exercise Option 1**
 1. Create an HTML form element
-2. Create an HTML input(type text) element and set its placeholder as "First Name"
-3. Create another HTML input(type text) element and set its placeholder as "Last Name"
-4. Add both these elements to the form element
-5. Create a button element and add these properties to it:
+2. Create an HTML input(type text) element and set its placeholder as "Name"
+3. Add both these elements to the form element
+4. Create a button element and add these properties to it:
 
     a. Set its text to "Click Me"
 
@@ -77,11 +80,102 @@ The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/A
 
     c. Set its type to "button"
 
-6. Add button element to the form
-7. Add the form element to main element
+5. Add button element to the form
+6. Add the form element to the body element
+
+**Exercise Option 2**
+Given the following HTML
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container" class="main-section extra">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+</body>
+</html>
+```
+Write the code necessary to do the following:
+
+1. Select the section with an id of container using querySelector.  
+2. Select all of the list items with a class of "second".  
+3. Select a list item with a class of third, but only the list item inside of the ol tag.  
+4. Give the section with an id of container the text "Hello!".  
+5. Add the class main to the div with a class of footer.  
+6. Remove the class extra on the div  with id container.  
+7. Create a new li element.  
+8. Give the li the text "four".  
+9. Append the li to the ul element.  
+10. Loop over all of the lis inside the ol tag and give them a background color of "green".  
+11. Remove the div with a class of footer.  
+
 ### Essence
 
 SECOND HALF (14.00 - 16.00)
+
+## 3. Event listeners
+
+### Explanation
+
+Give analogy.
+
+
+### Example
+Start with the following javascript:
+
+```
+let h1 = document.createElement('h1');
+h1.innerText = 'Oscar nominations';
+let form = document.createElement('form');
+let name = document.createElement('input');
+nameTxt.setAttribute('type','text');
+nameTxt.setAttribute('value','movie name');
+let btn = document.createElement('input');
+btn.setAttribute("type","button");
+btn.setAttribute('value','Click Me');
+form.appendChild(nameTxt);
+form.appendChild(btn);
+let ol = document.createElement('ol');
+let mainDiv = document.createElement('div');
+mainDiv.appendChild(h1);
+mainDiv.appendChild(form);
+mainDiv.appendChild(ol);
+document.body.appendChild(mainDiv);
+```
+Briefly explain what the javascript does.
+Add an event listener to button that creates and appends the name to the list.
+```
+btn.addEventListener('click', () => {
+  let li = document.createElement('li');
+  list.innerText = nameTxt.value;
+  ol.appendChild(li);
+});
+```
+Demonstrate what it does. Show where to see event listeners in dev tools.
+
+
+### Exercise
+
+Students should add a button for each `li` that can be used to remove that name from the list.
+
+The goal is for students to learn about the click event handler arguments.
 
 ## 3. Show a list of commonly used browser defined functions
 ### Explanation
