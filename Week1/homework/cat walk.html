@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+</head>
+
+<body>
+  <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+
+
+  <script>
+    //this is the only way I could accheive what was asked and I made it using percentage so that it's more responsive 
+    const catPic = document.getElementsByTagName('img')[0];
+    catPic.style.left = '0%';
+    let goLeft = 0;
+
+    setInterval(catWalk, 50);
+
+    function catWalk() {
+
+      if (goLeft == 80) {
+        goLeft = 0;
+      } else {
+        if (goLeft == 30) {
+          function dancingCat() {
+            catPic.setAttribute(
+              'src',
+              'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424',
+            );
+          }
+          dancingCat();
+        } else if (goLeft == 50) {
+          function walkingCat() {
+            catPic.setAttribute(
+              'src',
+              'http://www.anniemation.com/clip_art/images/cat-walk.gif',
+            );
+          }
+          walkingCat();
+        }
+        goLeft += 1;
+        catPic.style.left = goLeft + '%';
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>
