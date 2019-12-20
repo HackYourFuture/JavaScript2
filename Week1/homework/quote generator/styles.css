@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+#main {
+  background-color: lightcoral;
+  height: 100%;
+  width: 100%;
+}
+#mid-box {
+  position: relative;
+  margin: auto;
+  top: 20%;
+  width: 50vw;
+  height: 60%;
+  background-color: white ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#quote-box {
+  background-color: lightcoral;
+  width: 80%;
+  height: 80%;
+  padding: 1em;
+}
+
+#quote-text {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  height: 20%;
+  display: flex;
+  justify-items: stretch;
+  justify-content: space-around;
+  
+}
+.btn-wrapper {
+  position: relative;
+  top: 50%;  
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#btn {
+  position: relative;
+  border: solid black 1px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: transparent;
+}
+#btn:hover {
+   box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.281) inset;
+}
+.fab {
+  position: relative;
+  height: 50px;
+  padding: 4px;
+}
+.fab:hover {
+   transform: scale(1.1);
+}
+.fas {
+  opacity: 0.7;
+}
+.fas:first-child{
+  transform: rotate(180deg);
+}
+p {
+  font-size: 3em;
+}
+.text-wrapper {
+  padding: 20px;
+}
+#name {
+  right: 0px;
+  text-align: end;
+  font-family: 'Lobster', cursive;
+  
+}
