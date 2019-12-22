@@ -1,0 +1,51 @@
+
+body{
+    background-color: orange;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#wrap{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman';
+    background-color: white;
+    width: 800px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+
+#randomWisdom{
+    color: orange;
+    font-size: large;
+}
+
+#quoteSayer{
+    color: orange;
+    font-size: small;
+    font-weight: bold;
+}
+
+#button{
+    background-color: orange;
+    color: white;
+    width: 140px;
+    height: 45px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
