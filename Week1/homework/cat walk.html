@@ -8,44 +8,34 @@
 
 <body>
   <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
-
-
   <script>
-    //this is the only way I could accheive what was asked and I made it using percentage so that it's more responsive 
-    const catPic = document.getElementsByTagName('img')[0];
-    catPic.style.left = '0%';
-    let goLeft = 0;
-
-    setInterval(catWalk, 50);
+    const img = document.querySelector('img');
+    const srcCatWalking = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+    const srcCatDancIng = 'https://media2.giphy.com/media/3mXcJgVhPxWZa/giphy.gif';
+    let left = 0
 
     function catWalk() {
 
-      if (goLeft == 80) {
-        goLeft = 0;
-      } else {
-        if (goLeft == 30) {
-          function dancingCat() {
-            catPic.setAttribute(
-              'src',
-              'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424',
-            );
+      setInterval(frame, 50)
+      function frame() {
+
+        left = left > 100 ? 0 : left;
+        img.style.left = left + '%';
+
+        if (left === 50) {
+          if (img.src != srcCatDancIng) {
+
+            setTimeout(function () { img.src = srcCatWalking; left += 1 }, 5000)
+            img.src = srcCatDancIng;
+
           }
-          dancingCat();
-        } else if (goLeft == 50) {
-          function walkingCat() {
-            catPic.setAttribute(
-              'src',
-              'http://www.anniemation.com/clip_art/images/cat-walk.gif',
-            );
-          }
-          walkingCat();
+        } else {
+          img.style.left;
+          left += 1;
         }
-        goLeft += 1;
-        catPic.style.left = goLeft + '%';
       }
-
     }
-
+    catWalk(); 
   </script>
 </body>
 
