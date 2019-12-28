@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+  </head>
+  <body>
+    <div>
+    <img id='cat' style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+  </div>
+  
+
+    
+  <script>
+
+let img = document.getElementById('cat');
+let srcCat1 ="http://www.anniemation.com/clip_art/images/cat-walk.gif"
+let srcCat2 ='https://media2.giphy.com/media/3mXcJgVhPxWZa/giphy.gif';
+let left=0;
+    
+function catWalk() {
+  
+setInterval(frame, 50)
+function frame() {
+    left = left > 1500 ? 0 : left;
+    img.style.left = left + 'px';
+
+    if (left === 750) {
+        if (img.src != srcCat2) {
+
+            setTimeout(function() { img.src = srcCat1; left += 10 }, 5000) //5 seconds
+            img.src = srcCat2;
+
+        }
+    } else {
+        img.style.left;
+        left += 10;
+    }
+}
+}
+catWalk() 
+
+     
+  </script>
+
+    </body>
+</html>

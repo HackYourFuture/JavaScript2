@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <style>
+        .list-item{ color: red;}
+    </style>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <ul>
+      <li>Nickname: <span id="nickname"></span></li>
+      <li>Favorite food: <span id="fav-food"></span></li>
+      <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+    <script> 
+    //(In the JavaScript) Change the body tag's style 
+    //so it has a font-family of "Arial, sans-serif".
+    document.querySelector('body').style.fontFamily="Arial, sans-serif"
+
+    // (In the JavaScript) Replace each of the spans (nickname, fav-food, hometown) with your own information.
+    document.getElementById('nickname').innerText ='mahmoud'
+    document.getElementById('fav-food').innerText ='apple'
+    document.getElementById('hometown').innerText ='Syria'
+
+    //Iterate through each li and change the class to "list-item".
+    let list = document.querySelectorAll('li');
+    for(let i of list) {
+      i.className ='list-item'
+    }
+    
+    //(In the HTML head) Add a style tag that sets a rule for .list-item to make the color red. done 
+
+    //Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+
+
+     const img = document.createElement("img");
+         img.src = "DSC-3.jpg";
+         img.width = '150';
+      document.body.appendChild(img)
+
+    
+
+    </script>
+  </body>
+</html>

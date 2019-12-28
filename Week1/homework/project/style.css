@@ -1,0 +1,48 @@
+body {
+	font-family: 'Acme', sans-serif;
+	background: #34495e;
+	color: #fff;
+}
+cite {
+	float: right;
+	font-size: 20px;
+	font-weight: 600;
+	padding-right: 15px;
+}
+#container {
+	margin: auto;
+	margin-top: 50px;
+	width: 70%;
+	padding-top: 40px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.quoteArea {
+	padding: 30px;
+	font-size: 40px;
+
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+button {
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #34495e;
+	color: #fff;
+	padding: 5px;
+}
+.icon {
+	text-align: left;
+	cursor: pointer;
+}
+
+.empty {
+	position: relative;
+	width: 40%;
+	height: 60px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: -35px;
+}

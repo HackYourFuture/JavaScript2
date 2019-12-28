@@ -1,0 +1,65 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The book list</title>
+	<style>
+		body{
+			background-color: #f4f4f4;
+			font-size: 25px;
+			font-weight: 500;
+			font-family:sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+
+
+    
+    <script>
+   const books = [
+	{
+		title: 'The Design of Everyday Things',
+		author: 'Don Norman',
+		alreadyRead: false,
+		cover: 'https://qph.fs.quoracdn.net/main-qimg-7d4758e04c4bd6b1d5340607540d8b9b-c'
+	},
+	{
+		title: 'The Most Human Human',
+		author: 'Brian Christian',
+		alreadyRead: true,
+		cover:
+			'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmDMZRadXIWMhSt64WCOqTY_DYijVHm2ZmJ_tZuxWnda3b9B1'
+	}
+];
+
+let title = document.createElement('h1');
+title.textContent = 'Book List';
+document.body.appendChild(title).style.textAlign = 'center';
+
+let list = document.createElement('ul');
+document.body.appendChild(list);
+
+for (let i of books) {
+	let li = document.createElement('li');
+	list.appendChild(li).style.fontSize = '25px';
+	let para = document.createElement('p');
+	para.innerText = `${i.title} by "${i.author}"`;
+	li.appendChild(para);
+	let img = document.createElement('img');
+	img.src = i.cover;
+	li.insertBefore(img, para).style.width = '175px';
+	list.appendChild(li);
+	if (i.alreadyRead === false) {
+		para.style.backgroundColor = 'red';
+	} else {
+		para.style.backgroundColor = 'green';
+	}
+} 
+    </script>
+</body>
+
+</html>
+
+
