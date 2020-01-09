@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Challenge: Create a solar system</title>
-    <style>
-      body {
-        background-color: black;
-        padding: 10px;
-      }
-      .planet {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        text-align: center;
-        padding: 10px;
-        position: relative;
-      }
-      .moon {
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: rgb(237, 237, 237);
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      //create div
-      var newDiv = document.createElement('div');
-      document.body.appendChild(newDiv);
-      newDiv.classList.add('planet');
-      newDiv.style.backgroundColor = 'white';
 
-      var newDiv1 = document.createElement('div');
-      document.div.appendChild(newDiv1);
-      newDiv1.classList.add('moon');
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Challenge: Stopwatch</title>
+</head>
+
+<body>
+
+  <button id="stop-button" type="button">Stop</button>
+  <p>
+    <span id="seconds">0</span> seconds have gone by!
+  </p>
+  <script>
+    // Make it count up on a timer, calling this function
+    var seconds = document.getElementById("seconds").textContent;
+    var secondsNum = parseFloat(seconds);
+    console.log(secondsNum);
+
+    window.setInterval(countUp, 1000);
+    var countUp = function () {
+      secondsNum++
+
+    };
+
+    // How can you make it stop counting?
+    var stopCountUp = function () {
+    };
+    var stopButton = document.getElementById("stop-button");
+    stopButton.addEventListener("click", stopCountUp);
+
+  </script>
+</body>
+
 </html>

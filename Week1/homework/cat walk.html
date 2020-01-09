@@ -19,19 +19,19 @@
       setInterval(frame, 50)
       function frame() {
 
-        left = left > 100 ? 0 : left;
-        img.style.left = left + '%';
+        left = left > 1500 ? 0 : left;
+        img.style.left = left + 'px';
 
-        if (left === 50) {
+        if (left === 500) {
           if (img.src != srcCatDancIng) {
 
-            setTimeout(function () { img.src = srcCatWalking; left += 1 }, 5000)
+            setTimeout(function () { img.src = srcCatWalking; left += 10 }, 5000)
             img.src = srcCatDancIng;
 
           }
         } else {
           img.style.left;
-          left += 1;
+          left += 10;
         }
       }
     }
