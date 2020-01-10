@@ -19,6 +19,7 @@ function incNum() {
     num++
     setTime.innerText = num;
     document.getElementsByClassName('clockNum')[0].style.color = 'red';
+    timeDisplay.innerText = '00:00';
   }
 }
 function decNum() {
@@ -26,17 +27,19 @@ function decNum() {
     num--
     setTime.innerText = num;
     document.getElementsByClassName('clockNum')[0].style.color = 'red';
+    timeDisplay.innerText = '00:00';
   }
 }
 
 //starts the timer after play
 start.addEventListener('click', startTimer)
-let counter = 0;
+
 let interval;
 function startTimer() {
   let timeFromUser = setTime.innerText;
   if (timeFromUser > 0) {
-    interval = setInterval(timeIt, 100);
+    interval = setInterval(timeIt, 1000);
+    let counter = 0;
     function timeIt() {
       let timerTime = (timeFromUser * 60) - counter;
       if (timerTime >= 0) {
@@ -68,21 +71,23 @@ function disableBtns() {
   plusIcon.removeEventListener('click', incNum, false);
   minIcon.removeEventListener('click', decNum, false);
 }
-console.log(interval);
-
 // Stop the timer when stop is clicked
 stop.addEventListener('click', stopTimer)
 function stopTimer() {
-  //timeDisplay.innerText = '00:00';
   clearInterval(interval);
   plusIcon.addEventListener('click', incNum);
   minIcon.addEventListener('click', decNum);
-  start.addEventListener('click', startTimer)
+  start.addEventListener('click', startTimer);
+  document.querySelectorAll('.clockNum')[0].style.color = 'white';
+  document.querySelectorAll('.clockNum')[1].style.color = 'white';
 }
-
+//Modal 
 function clearModal(e) {
   if (e.target == modal) {
     modal.style.display = 'none';
+    document.querySelectorAll('.clockNum')[0].style.color = 'white';
+    document.querySelectorAll('.clockNum')[1].style.color = 'white';
+
   }
 }
 window.addEventListener('click', clearModal);
