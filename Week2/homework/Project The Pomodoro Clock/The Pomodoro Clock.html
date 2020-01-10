@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/9a7d3402c6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>The Promodoro Clock</title>
+</head>
+
+<body>
+  <section class='container'>
+    <h1>Pomodoro Clock</h1>
+    <div class="session-container">
+      <h2>Session Length </h2>
+      <div class="set-time">
+        <i class="  fas fa-plus fa-3x"></i>
+        <p class='clockNum set'>0</p>
+        <i class="  fas fa-minus fa-3x"></i>
+      </div>
+    </div>
+    <div class="clock">
+      <h3>Session</h3>
+      <p class='clockNum timeDown'>00:00</p>
+    </div>
+
+    <div class="controlers">
+      <i class="fas fa-play fa-4x"></i>
+      <i class="fas fa-stop fa-4x"></i>
+    </div>
+    <!-- modal -->
+    <div class="modal">
+      <div id="timeUp" class="modal-content">
+        <p> Time is up! </p>
+        <i class="far fa-bell fa-8x"></i>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"> </script>
+</body>
+
+</html>
