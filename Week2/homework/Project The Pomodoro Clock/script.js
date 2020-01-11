@@ -40,6 +40,7 @@ function startTimer() {
   if (timeFromUser > 0) {
     interval = setInterval(timeIt, 1000);
     let counter = 0;
+    //times down until the time provided by the user
     function timeIt() {
       let timerTime = (timeFromUser * 60) - counter;
       if (timerTime >= 0) {
@@ -52,6 +53,7 @@ function startTimer() {
         document.getElementById('alarmSound').play();
       }
     }
+    //changes the time down to hour format 
     function convertToSeconds(s) {
       let min = Math.floor(s / 60);
       let min0 = min.toLocaleString(undefined, { minimumIntegerDigits: 2 });
@@ -63,6 +65,7 @@ function startTimer() {
     disableBtns();
   }
 }
+
 function disableBtns() {
   start.removeEventListener('click', startTimer, false);
   plusIcon.removeEventListener('click', incNum, false);
