@@ -3,54 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="1-books.css">
   <title>Book list</title>
 </head>
-
 <body>
   <h1>My book list</h1>
 
-  <script>
-    const books = [
-    {
-    title : 'An Artist of the Floating World',
-    author : 'Kazuo Ishiguro',
-    alreadyRead :false  
-    },
-    {
-    title : 'Underworld',
-    author : 'Don DeLillo',
-    alreadyRead :true   
-    }
-];
-
-    const ul = document.createElement('ul');
-    // 1
-    for (let obj of books) {
-// 2
-      const p = document.createElement('p');
-      p.innerText = `${obj.title} was written by ${obj.author.toUpperCase()}`;
-// 5
-      
-      if (obj.alreadyRead === true) {
-        p.style.color = 'green';
-      } else {
-        p.style.color = 'red';
-      }
-    
-// 3
-      const li = document.createElement('li');
-      li.appendChild(p);
-      ul.appendChild(li);
-      document.body.appendChild(ul);
-    }
-    // 4
-    let img1 = document.createElement('img');
-    let img2 = document.createElement('img');
-    img1.src = 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/ArtistOfTheFloatingWorld.jpg/220px-ArtistOfTheFloatingWorld.jpg';
-    img2.src = 'http://xoxoafterdark.com/wp-content/uploads/2014/10/Delillo-Underworld.jpg';
-    let lis = document.querySelectorAll('li');
-    lis[0].appendChild(img1).style.width = '350px';
-    lis[1].appendChild(img2).style.width = '350px';
+  <script src="1-books.js">
+   
   </script>
 </body>
 

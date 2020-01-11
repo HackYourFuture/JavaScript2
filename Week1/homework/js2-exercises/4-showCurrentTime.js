@@ -1,3 +1,4 @@
+
 function eenklok() {
     const datum = new Date();
     const tijd = datum.toLocaleTimeString();

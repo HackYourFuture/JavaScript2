@@ -5,3 +5,12 @@ function hijackGoogleLogo () {
 
 }
 hijackGoogleLogo ();
+
+// or like this way 
+/*
+function hijackGoogleLogo() {
+  const logo = document.querySelector('#hplogo');
+  logo.setAttribute('srcset', 'https://www.hackyourfuture.dk/static/logo-dark.svg');
+}
+
+hijackGoogleLogo();*/
