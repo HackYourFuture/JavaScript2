@@ -49,6 +49,7 @@ function startTimer() {
         clearInterval(interval);
         stopTimer();
         modal.style.display = 'inline-block';
+        document.getElementById('alarmSound').play();
       }
     }
     function convertToSeconds(s) {
@@ -60,10 +61,6 @@ function startTimer() {
     }
     document.getElementsByClassName('clockNum')[1].style.color = 'red';
     disableBtns();
-
-    if ((timeFromUser * 60) - counter === 0) {
-      clearInterval(interval);
-    }
   }
 }
 function disableBtns() {
@@ -87,7 +84,6 @@ function clearModal(e) {
     modal.style.display = 'none';
     document.querySelectorAll('.clockNum')[0].style.color = 'white';
     document.querySelectorAll('.clockNum')[1].style.color = 'white';
-
   }
 }
 window.addEventListener('click', clearModal);
