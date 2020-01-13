@@ -30,7 +30,7 @@ const books = [
         p.innerText = `${obj.title} was written by ${obj.author}`;
 
         const img = document.createElement('img');
-        img.innerHTML = obj.imgSrc;
+        img.src = obj.imgSrc;
         
     // 5
 
