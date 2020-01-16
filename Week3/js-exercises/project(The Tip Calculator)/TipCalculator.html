@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="TipCalculator.css">
+    <title>The Tip Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <h2> TIP CALCULATOR</h2>
+        <form >
+            <div id="first">
+                <p>How much was your bill ?</p><br>
+                <span>$ <input id="amount" type="number" value=""></span>
+            </div>
+            <div id="second" >
+                <p>How was your service ?</p><br>
+                <select id="discount" >
+                    <option value="0" >-- Choose an option --</option>
+                    <option value="30">30 % Outstanding</option>
+                    <option value="20">20 % Good</option>
+                    <option value="15">15 % It was OK</option>
+                    <option value="10">10 % Bad</option>
+                    <option value="5">5 % Terrible</option>
+                </select>
+            </div>
+            <div id="third">
+                <p>How many people are sharing the bill ?</p><br>
+               <input id="people" type="number" value=""> people
+            </div>
+            <div id="result">
+                <button id="calc" ">CALCULATE!</button>
+                <br><br>
+                <p>TIP AMOUNT</p>
+                <p>$ <span id="each">0.00</span></p>
+                <p id="makeHidden">each</p>
+
+            </div>
+        </form>
+    </div>
+<script type="text/javascript" src="TipCalculator.js"  ></script>
+<script>
+
+// // document.getElementById('calc').addEventListener('click',calculator);
+
+// function calculator(){
+   
+//     let amount = document.getElementById('amount').value;
+//     let discount = document.getElementById('discount').value;
+//     let people = document.getElementById('people').value;
+   
+    
+//     if(amount === "" ||discount === 0 || people === ""){
+
+//     alert( "You need to fill in all the fields!");
+//     return;
+
+//     }
+
+//     if( people <= 1){
+//     document.getElementById('hid').style.display="none";
+//     }else{
+//     document.getElementById('hid').style.display="block";
+//     }
+
+
+//     let  percent = amount -(amount*discount /100);
+//     let total = percent / people;
+//     total = total.toFixed(2);
+//     document.getElementById('each').innerHTML= total;
+//     document.getElementById('hid').style.display="block";
+
+
+
+// }
+// document.getElementById('hid').style.display="none";
+</script>
+</body>
+
+</html>

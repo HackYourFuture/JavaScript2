@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #5C0000;
+}
+#container{
+    width: 500px;
+    height: 600px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 40px;
+    background-color: white;
+
+}
+h2 {
+    width: 500px;
+    padding: 15px;
+    color: whitesmoke;
+    background-color:#876F0C ;
+    border-radius: 40px 40px 0px 0px;
+
+}
+form{
+    text-align: left;
+    font-size: 20px;
+}
+#first {
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+#amount{
+     font-size: 20px;
+     padding: 5px;
+}
+#second{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#discount{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 7px;
+    width: 370px;
+    font-weight: 600;
+    margin-left: 50px;
+    
+}
+#third{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#people{
+    font-size: 20px;
+    padding: 5px;
+}
+#result{
+    text-align: center;
+}
+#calc{
+    width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #7C5232;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+#result p{
+    font-weight: 600;
+    font-size: 25px;
+ 
+}
+#each{
+    font-size: 25px;
+    
+}
+#makeHidden{
+    display: block;
+}
