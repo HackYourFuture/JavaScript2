@@ -9,7 +9,6 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
        console.log(numbers);
       threeCallback(numbers);
       fiveCallback(numbers);
-       
 
 }
 
