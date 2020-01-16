@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Tip Calculator</title>
+    <link rel="stylesheet" href="tipCavulator.css">
+</head>
+
+<body>
+    <div class="contenar">
+
+        <div class="top">
+            <h1>Tip Calculator</h1>
+        </div>
+
+        <div class="showScreen">
+            <h2>How Much Was Your Bill?</h2>
+            $<input id="bill" type="text">
+            <h2>How Was Your Service?</h2>
+            <select class="fontSize" name="service" id="service">
+                <option class="fontSize" value="30">30%-Oustanding</option>
+                <option class="fontSize" value="20">20%-Good</option>
+                <option class="fontSize" value="15">15%-It was OK</option>
+                <option class="fontSize" value="10">10%-Bad</option>
+                <option class="fontSize" value="5">5%-Terible</option>
+            </select>
+            <h2>How Many People Sharing the Table</h2>
+            <input id="person" type="text">People
+        </div>
+
+        <button class="fontSize" id="calc">
+            CALCULTE!
+        </button>
+
+        <div class="fontSize" id="tipResult">
+            <p>TIP AMOUNT</p>
+            <p id="result">$</p>
+            <p id="each">EACH</p>
+        </div>
+
+    </div>
+    <!-- script -->
+    <script src="tipCavulator.js"></script>
+</body>
+
+</html>
