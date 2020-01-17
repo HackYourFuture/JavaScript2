@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="tips.css">
+  <title>Tip Calculator</title>
+</head>
+<section>
+  <div class="container">
+    <header>
+      <h1>Tip Calculator</h1>
+    </header>
+    <form class="form">
+      <label for="bill" class="input">How much was your bill?</label>
+      <input type="number" min='0' id='bill' name="bill" placeholder="How much is the bill in euros?">
+      <label for="rate-service" class="rate-service input">How was your service?</label>
+      <select id='rate-service' name="rate-service">
+        <option value=30>30% - Outstanding</option>
+        <option value=20>20% - Good</option>
+        <option value=15>15% - it was ok</option>
+        <option value=10>10% bad</option>
+        <option value=5>5% - Terrible</option>
+      </select>
+      <label for="pplNum" class="pplNum input">How many people are sharing the
+        bill?</label>
+      <input type="number" min='1' id='pplNum' placeholder='How many people are you?' name="pplNum">
+    </form>
+    <button id=btn> CALCULATE!</button>
+    <div class="result">
+      <h3>TIP AMOUNT</h3>
+      <p><span id='result'>0.00</span> €</p>
+      <p id='each'>each</p>
+    </div>
+  </div>
+</section>
+<script src='tips.js'></script>
+
+
+<body>
+
+</body>
+
+</html>
