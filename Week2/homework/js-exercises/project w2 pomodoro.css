@@ -1,0 +1,113 @@
+
+body {
+	text-align: center;
+	transition: 2s;
+	font-family: Schoolbell, cursive;
+  }
+  h1 {
+	color: #e70202;
+	font-size: 3.6rem;
+	margin: 0;
+  }
+  #settings {
+	max-width: 50%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+  }
+  .lozenge {
+	background: #28b815;
+	padding: 10px 50px;
+	margin: 10px 30px;
+	border: 4px solid #050801;
+	border-radius: 30px;
+  }
+  .lozenge h2 {
+	margin: 0;
+	color: #8a4f47;
+	white-space: nowrap;
+  }
+  .timings {
+	display: flex;
+	justify-content: center;
+	font-family: Inconsolata, monospace;
+  }
+  #wtime,
+  #btime {
+	width: 3rem;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #e60000b6;
+  }
+  .timings button {
+	width: 2rem;
+	padding: 0;
+	border: 0;
+	font-size: 2rem;
+	background: #c5e22c;
+	border-radius: 2rem;
+	line-height: 2rem;
+	color: #2e8a1b;
+  }
+  #avocado {
+	margin: auto;
+	position: relative;
+	left: 25px;
+	width: 520px;
+	height: 700px;
+	background: url("./thWXHTUS1S.jpg") no-repeat;
+  }
+  #clock  span {
+	padding: 0 55px;
+	text-align: center;
+  }
+  #clock {
+	position: relative;
+	left: 122px;
+	top: 370px;
+	border-radius: 168px;
+	width: 169px;
+	height: 169px;
+	line-height: 168px;
+	vertical-align: middle;
+	color: #fff;
+	font-family: Inconsolata, monospace;
+	font-weight: bold;
+	font-size: 40px;
+	cursor: pointer;
+  }
+  #stop {
+	display: none;
+  }
+  
+  
+  /* animation for avocado pit at end of timer */
+  @keyframes clockbg {
+	from {
+	  background: none;
+	}
+	to {
+	  background: rgba(226, 18, 153, 0.6);
+	}
+  }
+  /* mobile fix */
+  @media only screen and (max-width: 500px) {
+	h1 {
+	  font-size: 2.2rem;
+	}
+	#settings {
+	  margin-bottom: 0;
+	}
+	.lozenge {
+	  margin: 0 5px;
+	  padding: 8px;
+	}
+	.lozenge .units {
+	  display: none;
+	}
+	#avocado {
+	  transform: scale(0.7);
+	  transform-origin: top;
+	  left: -25px;
+	}
+  }

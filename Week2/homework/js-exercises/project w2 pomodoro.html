@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/9a7d3402c6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="project w2 pomodoro.css">
+  <title>The Promodoro Clock</title>
+</head>
+
+<body>
+  <h1>Pomodoro</h1>
+  <div id="settings">
+    <div class="lozenge">
+      <h2>Work <span class="units">minutes:</span></h2>
+      <div class="timings">
+  
+        <button onClick="clickBtn('wtime', 'dec')">&minus;</button>
+        <div id="wtime">&nbsp;</div>
+        <button onClick="clickBtn('wtime', 'inc')">&plus;</button>
+      </div>
+    </div>
+    <div class="lozenge">
+      <h2>Break <span class="units">minutes:<span></h2>
+      <div class="timings">
+        <button onClick="clickBtn('btime', 'dec')">&minus;</button>
+        <div id="btime">&nbsp;</div>
+        <button onClick="clickBtn('btime', 'inc')">&plus;</button></div>
+    </div>
+  </div>
+  <div id="avocado">
+    <div id="clock" onClick="clickTimer()"><span aria-label="Start timer">Start</span></div>
+  </div>
+</body>
+<script src="project w2 pomodoro.js"></script>
+</html> 
