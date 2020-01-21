@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    background-color:red;
+}
+
+#txt {
+    display:inline-block;
+    margin-left: 50vw;
+    margin-top: 50vh;
+    font-size:x-large;
+   
+    border:darkred;
+    border-style: double;
+    background-color: white;
+    
+}
+
+
