@@ -7,7 +7,7 @@ function showCurrentTime() {
     s = checkTime(s);
     document.getElementById('txt').innerHTML =
     h + ":" + m + ":" + s;
-    var t = setInterval(showCurrentTime, 500);
+     setInterval(showCurrentTime, 500);
   }
   function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
