@@ -53,12 +53,6 @@ function mondayTotalPay() {
     return `Your Monday total pay check would be equal to ${totalPay} dollars`
 
 
-
-
-
-
-
-
 }
 
 console.log(mondayTotalPay())
