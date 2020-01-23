@@ -21,4 +21,3 @@ function sumAll(total, number) {
 
 let combinedAgesArr = agesArr.reduce(sumAll)
 
-console.log(combinedAgesArr)
