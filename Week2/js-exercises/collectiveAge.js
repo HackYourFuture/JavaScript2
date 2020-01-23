@@ -5,19 +5,27 @@ const hackYourFutureMembers = [
     { name: 'Tjebbe', age: 22 },
 ];
 
-let total = 0;
+function combinedAgesArr(arrayOfObjects) {
 
-//for this stage i used a callback function with an arrow form
+    let total = 0;
 
-let agesArr = hackYourFutureMembers.map((object) => {
-    return object["age"]
-})
+    //for this stage i used a callback function with an arrow form
 
-//here i used the classic function structure
+    let agesArr = arrayOfObjects.map((object) => {
+        return object["age"]
+    })
 
-function sumAll(total, number) {
-    return total + number
+    //here i used the classic function structure
+
+    function sumAll(total, number) {
+        return total + number
+    }
+
+    let combinedAgesArr = agesArr.reduce(sumAll)
+
+    return `The total age of all the members is ${combinedAgesArr} years.`
+
 }
 
-let combinedAgesArr = agesArr.reduce(sumAll)
 
+console.log(combinedAgesArr(hackYourFutureMembers))
