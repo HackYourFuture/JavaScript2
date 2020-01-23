@@ -7,10 +7,18 @@ const hackYourFutureMembers = [
 
 let total = 0;
 
-
+//for this stage i used a callback function with an arrow form
 
 let agesArr = hackYourFutureMembers.map((object) => {
     return object["age"]
 })
 
-console.log(agesArr)
+//here i used the classic function structure
+
+function sumAll(total, number) {
+    return total + number
+}
+
+let combinedAgesArr = agesArr.reduce(sumAll)
+
+console.log(combinedAgesArr)
