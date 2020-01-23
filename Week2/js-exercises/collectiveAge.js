@@ -9,7 +9,7 @@ function combinedAgesArr(arrayOfObjects) {
 
     let total = 0;
 
-    //for this stage i used a callback function with an arrow form
+    //for this stage i used a callback function with an arrow function form
 
     let agesArr = arrayOfObjects.map((object) => {
         return object["age"]
