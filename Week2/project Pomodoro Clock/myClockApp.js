@@ -1,12 +1,8 @@
-
-
-
-
-
 let displayTimer = document.getElementById('displayTimer')
-//console.log(displayTimer)
+console.log(displayTimer)
 
-function pomodoro(minutes) {
+document.getElementById("startBtn").addEventListener("click", () => {
+    let minutes = 0.1;
     let interval;
     var seconds = minutes * 60
     interval = setInterval(() => {
@@ -22,12 +18,4 @@ function pomodoro(minutes) {
         }
     }, 1000)
 
-
-
-}
-
-//pomodoro(0.1);
-
-
-
-document.getElementById("startBtn").addEventListener("click", pomodoro(0.2))
+})
