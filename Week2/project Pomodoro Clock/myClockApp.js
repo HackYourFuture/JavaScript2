@@ -11,7 +11,7 @@ document.getElementById("startBtn").addEventListener("click", () => {
 
         console.log(seconds)
         if (seconds == 0) {
-            console.log("yimes up")
+            console.log("times up")
             displayTimer.innerHTML = "Times Up"
 
             clearInterval(interval)
