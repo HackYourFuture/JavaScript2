@@ -38,6 +38,10 @@ body {
     justify-content: center;
   }
 
+  #displayTimer {
+    background-color: white;
+  }
+
   .placeholder {
       background-color: blueviolet;
       text-align: center;

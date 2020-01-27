@@ -1,5 +1,7 @@
 
+let displayTimer = document.getElementById('displayTimer')
 
+displayTimer.innerHTML = "fahkbfksabk"
 
 function pomodoro(minutes) {
     let interval;
