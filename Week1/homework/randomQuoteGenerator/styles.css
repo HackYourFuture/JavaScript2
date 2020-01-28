@@ -1,0 +1,11 @@
+.quote {
+    background-color: rgb(124, 184, 184)
+}
+
+body {
+    text-align: center;
+}
+
+#author {
+    font-style: italic;
+}
