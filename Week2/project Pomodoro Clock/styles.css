@@ -40,6 +40,9 @@ body {
 
   #displayTimer {
     background-color: white;
+    display:flex;
+    justify-content: center;
+    font-size: 100px;
   }
 
   .placeholder {
