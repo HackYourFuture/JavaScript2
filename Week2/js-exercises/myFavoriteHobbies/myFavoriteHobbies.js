@@ -1,11 +1,11 @@
 
 
 const myHobbies = [
-    "Meditation",
-    "Reading",
-    "Programming",
-    "Hanging out with friends",
-    "Going to the gym"
+  "Meditation",
+  "Reading",
+  "Programming",
+  "Hanging out with friends",
+  "Going to the gym"
 ];
 
 
@@ -29,14 +29,20 @@ const myHobbies = [
 //made WITH array.map()
 
 function convertItemsToLi(array) {
-    let unorderedList = document.createElement("UL");
+  let unorderedList =
 
-    array.map(item => {
-        let listItem = document.createElement("LI");
-        listItem.innerHTML = item;
-        unorderedList.appendChild(listItem);
-    });
-    document.body.appendChild(unorderedList);
+
+    document.createElement("UL");
+
+  array.map(item => {
+    let listItem = document.createElement("LI");
+    listItem.innerHTML =
+
+
+      item;
+    unorderedList.appendChild(listItem);
+  });
+  document.body.appendChild(unorderedList);
 }
 
 convertItemsToLi(myHobbies);
