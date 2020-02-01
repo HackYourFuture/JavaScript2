@@ -11,7 +11,7 @@ jobs:
       - uses: nelonoel/branch-name@v1
       - name: Run a one-line script
         run: echo Hello, world!
-      - run: echo ${BRANCH_NAME} | sed  's/w(?:eek)?[-_]?(\d{1})/'
+      - run: echo ${BRANCH_NAME} sed -E 's/.*w(eek)?[-_]?([0-9]).*/Week\2/gi'
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
