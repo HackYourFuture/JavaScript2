@@ -13,3 +13,6 @@ jobs:
         run: |
           export WEEK_FOLDER=$(echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/Week\2/gi')
           echo ${WEEK_FOLDER}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
