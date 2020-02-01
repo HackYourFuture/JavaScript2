@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a one-line script
         run: echo Hello, world!
-      - name: Current Branch
-        uses: ryolambert/current-branch@v1.0
+      - uses: nelonoel/branch-name@v1
+      - run: echo ${BRANCH_NAME}
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
