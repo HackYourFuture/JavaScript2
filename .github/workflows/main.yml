@@ -15,7 +15,8 @@ jobs:
       - run: npm install
       - name: Echo week folder and run tests
         run: |
-          echo ${{github.base_ref}}
-          export WEEK=$(echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
+          echo ${{github.repository}}
+          echo ${{github.ref}}
+          export WEEK=$(echo ${{github.ref}} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
           echo Week: ${WEEK}
           npm run test-${WEEK}
