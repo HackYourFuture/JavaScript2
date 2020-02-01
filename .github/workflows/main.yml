@@ -1,11 +1,11 @@
 name: CheckHomework
 
-on: [push]
+on: [pull_request]
 
 jobs:
   check:
+    if: contains(github.base_ref,'HackYourHomework')
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - uses: nelonoel/branch-name@v1
