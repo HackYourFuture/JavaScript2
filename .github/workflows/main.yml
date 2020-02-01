@@ -16,5 +16,5 @@ jobs:
       - name: Echo week folder and run tests
         run: |
           export WEEK_FOLDER=$(echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
-          echo ${WEEK_FOLDER}\
+          echo ${WEEK_FOLDER}
           npm run test-${WEEK_FOLDER}
