@@ -11,7 +11,7 @@ jobs:
       - uses: nelonoel/branch-name@v1
       - name: Echo week folder
         run: |
-          export WEEK_FOLDER=$(echo ${BRANCH_NAME} | sed -E 's/.*w(?:eek)?[-_]?([0-9]).*/Week\1/gi')
+          export WEEK_FOLDER=$(echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/Week\2/gi')
           echo ${WEEK_FOLDER}
       - uses: actions/setup-node@v1
         with:
