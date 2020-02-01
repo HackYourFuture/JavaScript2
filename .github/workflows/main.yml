@@ -16,7 +16,7 @@ jobs:
       - name: Echo week folder and run tests
         run: |
           echo ${{github.repository}}
-          echo ${{github.ref}}
-          export WEEK=$(echo ${{github.ref}} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
+          echo ${{github.head_ref}}
+          export WEEK=$(echo ${{github.head_ref}} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
           echo Week: ${WEEK}
           npm run test-${WEEK}
