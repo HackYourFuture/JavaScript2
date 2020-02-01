@@ -10,8 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: nelonoel/branch-name@v1
       - name: Echo week folder
-        run: echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/Week\2/gi'
-      - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          export WEEK_FOLDER=$(echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/Week\2/gi')
+          echo ${WEEK_FOLDER}
