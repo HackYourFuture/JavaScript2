@@ -9,12 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: nelonoel/branch-name@v1
-      - name: Echo week folder
-        run: |
-          export WEEK_FOLDER=$(echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
-          echo ${WEEK_FOLDER}
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
       - run: npm install
-      - run: npm run test-$WEEK_FOLDER
+      - name: Echo week folder and run tests
+        run: |
+          export WEEK_FOLDER=$(echo ${BRANCH_NAME} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
+          echo ${WEEK_FOLDER}\
+          npm run test-${WEEK_FOLDER}
