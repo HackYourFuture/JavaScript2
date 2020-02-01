@@ -3,7 +3,7 @@ name: CheckHomework
 on: [push]
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
 
     steps:
