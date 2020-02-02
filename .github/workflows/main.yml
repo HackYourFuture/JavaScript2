@@ -17,6 +17,7 @@ jobs:
         run: |
           echo ${{github.repository}}
           echo ${{github.head_ref}}
-          export WEEK=$(echo ${{github.head_ref}} | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
-          echo Week: ${WEEK}
-          npm run test-${WEEK}
+          declare WEEK
+          WEEK=$(echo "${{github.head_ref}}" | sed -E 's/.*w(eek)?[-_]?([0-9]).*/week\2/gi')
+          echo Week: "${WEEK}"
+          npm run test-"${WEEK}"
