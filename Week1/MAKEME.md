@@ -26,13 +26,18 @@ const books = [
   {
     title: 'The Design of Everyday Things',
     author: 'Don Norman',
-    alreadyRead: false,
+    alreadyRead: false
   },
   {
     title: 'The Most Human Human',
     author: 'Brian Christian',
-    alreadyRead: true,
+    alreadyRead: true
   },
+  {
+    title: 'The Pragmatic Programmer',
+    author: 'Andrew Hunt',
+    alreadyRead: true
+  }
 ];
 ```
 
@@ -41,6 +46,9 @@ const books = [
 3. Use a `<ul>` and `<li>` to display the books.
 4. Add an `<img>` to each book that links to a URL of the book cover.
 5. Change the style of the book depending on whether you have read it (green) or not (red).
+
+The end result should look something like this:
+https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 **Exercise 2: About me**
 
