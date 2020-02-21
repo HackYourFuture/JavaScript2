@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>the book list</title>
+    </head>
+
+<body> 
+  
+    <script>
+        
+    const books = [
+        {
+          title: 'The Design of Everyday Things',
+          author: 'Don Norman',
+          alreadyRead: false
+        },
+        {
+          title: 'The Most Human Human',
+          author: 'Brian Christian',
+          alreadyRead: true
+        },
+        {
+          title: 'The Pragmatic Programmer',
+          author: 'Andrew Hunt',
+          alreadyRead: true
+        }
+      ];
+
+      // creat h1
+      const head=document.createElement("h1");
+      head.innerText="The Book List";
+      const body=document.querySelector("body");
+      body.appendChild(head);
+      body.style.cssText="color:purple";
+
+ // creat ul
+        const uList = document.createElement('ul')
+        document.body.appendChild(uList);
+        uList.style.listStyle = 'none'
+        uList.style.display = 'flex'
+        uList.style.justifyContent = 'space-around';
+
+        const imgBooks = ['0.jpg', '1.jpg', '2.jpg']; 
+
+        for (let i = 0; i < books.length; ++i) {
+            const parag = document.createElement('p');
+            const image = document.createElement('img');
+            const list = document.createElement('li');
+
+           uList.appendChild(list);
+           list.appendChild(parag);
+           list.appendChild(image);
+
+            parag.innerHTML = books[i].title + ' wirtten by' + books[i].author;
+            image.src = imgBooks[i];
+
+
+            if (books[i].alreadyRead) {
+                list.style.backgroundColor = 'green'
+            } else {
+                list.style.backgroundColor = 'red'
+            }
+
+            image.style.width = '80%';
+            list.style.width = '25%';
+           
+        }
+
+        document.querySelector('body').style.textAlign = 'center';
+        document.querySelector('body').style.fontSize = '1.4rem';
+    </script>
+
+</body>
+
+</html> 

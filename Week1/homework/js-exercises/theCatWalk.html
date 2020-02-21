@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+  </head>
+  <body>
+    <img id = cat style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+    <script>
+
+        let img = document.querySelector('img');
+        img.style.left = 0;
+
+        function catWalk() {
+            let pos = parseFloat(img.style.left);
+            const secondImageWidth = 360;
+            const midPoint = (window.innerWidth - secondImageWidth) / 2;
+            if (pos > window.innerWidth - img.width) {
+            img.style.left = 0;
+            }
+            if (pos < midPoint - 2 || pos > midPoint + 2) {
+
+            img.style.left = parseFloat(img.style.left) + 2 + 'px';
+            } else {
+
+                if (!img.src.includes('https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424')) {
+                    img.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
+                    setTimeout(function() {
+                        img.style.left = parseFloat(img.style.left) + 2 + 'px';
+                        img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+                    }, 5000);
+                }
+            }
+        requestAnimationFrame(catWalk);
+        }
+
+      catWalk();
+    </script>
+  </body>
+</html> 

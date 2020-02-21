@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Quote Generator</title>
+  <style>
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family : Helvetica, sans-serif, serif;
+      }
+    
+      body {
+        background-color: #fba62f;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .main-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 50vh;
+      }
+      .main-box h1 span{
+        font-size: 36px;
+      }
+      .color{
+        color: #fba62f;
+      }
+      .main-box h1
+      {
+        font-size: 48px;
+        text-align: center;
+        margin: 40px 20px 0 20px;
+      }
+      h3 {
+        font-size: 1.5vw;
+        align-self: flex-end;
+        margin: 20px 40px 20px 20px;
+    
+      }
+      main {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        background-color: #fba62f;
+        height: 40px;
+        width: 130px;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px;
+        border: none;
+        font-size: 12px;
+      }
+     
+    
+      .bottom{
+        margin: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .fab{
+        margin-left: 20px;
+        color: #fff;
+        background-color: #fba62f;
+      }
+      .fa-tumblr{
+        width: 30px;
+      }
+      .fa-tumblr,
+      .fa-twitter{
+        padding: 5px;
+      }
+      .sec-rect{
+        background-color: #fff;
+        width: 30 vw;
+        height: 50px;
+        margin: 6px auto;
+      } 
+    </style>
+    
+</head>
+<body>
+  <main>
+    <div class="main-box">
+        <h1 class="quotes color"><i class="fas fa-quote-left"></i>
+            <span id="quote"> Quotes are here!</span>
+        </h1>
+        <h3 class="color">
+            <span id="author">Author is here!</span></h3>
+      <div class="bottom">
+        <div class="icons left">
+          <a href=""><i class="fab fa-twitter color fa-2x"></i></a>
+          <a href=""><i class="fab fa-tumblr color fa-2x"></i></a>
+        </div>
+        <button>New Quote</button>
+      </div>
+    </div>
+
+    <div class="sec-rect"></div>
+
+  </main>
+  <script>
+    'use strict';
+    
+    const quotes = [
+        {
+          quote:"Knowing yourself is the beginning of all wisdom.",
+          author:"Aristotle"
+        },
+        {
+          quote:"The only true wisdom is in knowing you know nothing.",
+          author: "Socrates"
+        },
+        {
+          quote:"Count your age by friends, not years. Count your life by smiles, not tears.",
+          author:"John Lennon"
+        },
+        {
+          quote:"The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.",
+          author: "Isaac Asimov"
+        },
+        {
+          quote:"May you live every day of your life.",
+          author: " Jonathan Swift"
+        },
+        {
+          quote:"The secret of life, though, is to fall seven times and to get up eight times.",
+          author:"Paulo Coelho"
+        }
+    ]
+    
+    const quoteHold = document.querySelector('#quote');
+    const authorHold = document.querySelector('#author');
+    const button = document.querySelector('button');
+    
+    
+    button.addEventListener('click', randomQuote);
+    
+    function randomQuote() {
+      const random = Math.floor(Math.random() * quotes.length)
+      quoteHold.innerText = quotes[random].quote;
+      authorHold.innerText = quotes[random].author;
+    }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
