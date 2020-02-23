@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <style>
+        .list-items {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About Me</h1>
+
+    <ul>
+        <li>Nickname: <span id="nickname"></span></li>
+        <li>Favorite food: <span id="fav-food"></span></li>
+        <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+    <script>
+        //changing the font-family
+        document.body.style.fontFamily = "Ariel,sans-serif";
+        //replace the spans with my information
+        document.getElementById("nickname").innerHTML = "Panther";
+        document.getElementById("fav-food").innerHTML = "Banana";
+        document.getElementById("hometown").innerHTML = "New York";
+        //Iterate through each li and change the class to "list-item".
+        const lis = document.querySelectorAll("li");
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].setAttribute("class", "list-items");
+        }
+        //Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+        const image = document.createElement("img");
+        image.src = "about-me.jpg";
+        document.body.appendChild(image);
+    </script>
+</body>
+
+</html>

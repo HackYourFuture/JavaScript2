@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+</head>
+
+<body>
+    <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+    <script>
+        //Create a variable to store a reference to the img.
+        let img = document.querySelector("img");
+        //Change the style of the img to have a "left" of "0px", so that it starts at the left hand of the screens.
+        //Create a function called catWalk() that moves the cat 10 pixels to the right of where it started, by changing the "left" style property.
+        let artansayi = 10;
+        let resminPozisyonu;
+
+        img.setAttribute("id", "myImg");
+        img.style.left = artansayi + "px";
+
+        function catWalk() {
+            artansayi = artansayi + 10;
+
+            img.style.left = artansayi + "px";
+
+            if (artansayi >= window.screen.width) {
+                artansayi = -296; // 😏
+
+            }
+        }
+
+        setInterval(catWalk, 50);
+
+
+
+
+        // artansayi degiskenimiz olsun
+        // 0dan baslasin sonsuza gitsin
+        // position degiskeni olsun esittir artansayi
+
+        // artansayi degeri ekranin yarisina gelince position degeri = ekrangenisligi/2
+        // artansayi degeri (ekran genisligi)/2 + 1000px degerine ulastiginda position degerimizi artansayi degerine esitle
+
+        // artansayi ekran genisligine ulasinca position degerini sifirlasin
+        // position da gitsin img.style.left'e deger versin
+        //
+    </script>
+</body>
+
+</html>
