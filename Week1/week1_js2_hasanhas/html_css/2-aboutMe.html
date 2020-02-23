@@ -1,0 +1,56 @@
+<!-- Add a script tag to the bottom of the HTML body.
+(In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
+(In the JavaScript) Replace each of the spans (nickname, fav-food, hometown) with your own information.
+Iterate through each li and change the class to "list-item".
+(In the HTML head) Add a style tag that sets a rule for .list-item to make the color red.
+Create a new img element and set its src attribute to a picture of you. Append that element to the page. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>About Me</title>
+  <style>
+    .list-item {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li> Nickname: <span id="nickname"></span></li>
+    <li> Favorite food: <span id="fav-food"></span></li>
+    <li> Hometown: <span id="hometown"></span></li>
+  </ul>
+
+  <script>
+    document.body.style.fontFamily = 'Arial, sans-serif';
+
+    const nickName = document.getElementById('nickname');
+    const favFood = document.getElementById('fav-food');
+    const homeTown = document.getElementById('hometown');
+    nickName.innerText = 'Has';
+    favFood.innerText = 'Sutlac';
+    homeTown.innerText = 'Tokat';
+
+
+    let liElem = document.getElementsByTagName('li');
+    for (let li of liElem) {
+      li.className = 'list-item';
+
+    }
+
+    const img = document.createElement('img');
+
+    img.src = 'https://avatars1.githubusercontent.com/u/57805746?s=460&v=4';
+
+    document.body.appendChild(img);
+  </script>
+</body>
+
+</html>

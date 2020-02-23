@@ -1,0 +1,27 @@
+
+
+    body {
+      background-color: rgb(250, 245, 245);
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: rgb(51, 162, 196);
+      font-weight: bold;
+    }
+
+    div {
+      margin: 5px;
+      background-color: rgb(20, 16, 16);
+      padding: 5px;
+    }
+
+    .clock {
+      font-size: 100px;
+      width: 40vw;
+      text-align: center;
+    }
+
+   
+
