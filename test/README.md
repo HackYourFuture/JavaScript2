@@ -3,6 +3,7 @@
 You’ll be doing a comprehension test on paper. It will be about the most important JavaScript concepts you’ve learned about so far (JavaScript1 and JavaScript2). 
 
 ## Practical information
+-  The test will start at **10.30 until 11.30**. The door will open at 10.15. **Be on time!**
 -  It will be done on paper so please bring a pencil and eraser.
 - There will be 5 questions
 
