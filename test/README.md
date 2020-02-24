@@ -46,13 +46,14 @@ Advise on how to make a test:
 1. Write and call a function that creates and appends a <p> tag to the <body> of an HTML file. Make use of the already predefined DOM methods createElement() and appendChild(). The innerText of the <p> should be “hello HackYourFuture!”.
 
 2. Correct the code to make it work, by filling in the grey boxes:
-`…………… multiplyNumbers( …….. , …….. ) {
+```
+…………… multiplyNumbers( …….. , …….. ) {
 	const	……………  = …….. *  ……..  ;
 	return	 ……………  ;
 	….
 	multiplyNumbers( 6 , ……………
-// Return value should be 30`
-
+// Return value should be 30
+```
 3. Transform the given array of strings named letters into a new array with numbers (for example: `numbers = [0, 1, 2, 3 ]` ), by creating a new function called lettersToNumbers. Log the new array to the console. Return the new array. Make use of the map() array function. 
 `const letters = [ ‘a’ , ‘b’ , ‘c’ , ‘d’ ];`
 
