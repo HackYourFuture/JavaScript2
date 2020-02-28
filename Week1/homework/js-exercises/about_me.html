@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <ul>
+      <li>Nickname: <span id="nickname"></span></li>
+      <li>Favorite food: <span id="fav-food"></span></li>
+      <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+    <script>
+        document.body.style.fontFamily="Arial, sans-serif"
+        document.getElementById("nickname").innerText=" Abo Taim";
+        document.getElementById("fav-food").innerText=" Chips";
+        document.getElementById("hometown").innerText=" Damascus";
+
+        
+
+
+let listItems = document.querySelector('ul').children;
+for (let i=0; i<listItems.length; i++){
+    listItems[i].setAttribute("class", "list-item");
+}
+       
+
+const head = document.querySelector('head');
+let style = document.createElement('style');
+style.innerHTML = ".list-item {color: red;}";
+head.appendChild(style);
+
+let image =document.createElement('img');
+image.src="me.png"
+image.style.width="10%"
+image.style.margin="2%"
+document.querySelector("body").appendChild(image);
+
+
+
+    </script>
+  </body>
+</html>
