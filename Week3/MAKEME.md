@@ -15,7 +15,7 @@ Let's get familiar with basic Javascript concepts, with interactive exercises! C
 
 ## **2. JavaScript exercises**
 
-> Inside of your `JavaScript2` fork, navigate to the folder `Week3`. Then to the folder `js-exercises`. For all the following exercises create a new `.js` file in that folder (5 files in total). Make sure the name of each file reflects its content: for example, the filename for exercise one could be `addSix.js`.
+> Inside of your `JavaScript2` fork, navigate to the folder `Week3`. Then to the folder `js-exercises`. In this folder you will find separate files for each exercise. Please put your code in the correct file.
 
 **Exercise 1: Add six**
 
