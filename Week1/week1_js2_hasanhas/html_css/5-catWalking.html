@@ -1,0 +1,57 @@
+<!-- Add a script tag at the bottom of the page, where you'll put all your code.
+Create a variable to store a reference to the img.
+Change the style of the img to have a "left" of "0px", so that it starts at the left hand of the screens.
+Create a function called catWalk() that moves the cat 10 pixels to the right of where it started, by changing the "left" style property.
+Call that function every 50 milliseconds. Your cat should now be moving across the screen from left to right. Hurrah!
+When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to 
+right across the screen, forever and ever.
+When the cat reaches the middle of the screen, replace the img with an image of a cat dancing (use this URL: https://tenor.com/StFI.gif), 
+keep it dancing for 5 seconds, and then replace the img with the original image and have it continue the walk. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+</head>
+
+<body>
+  <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+
+  <script>
+    const img = document.querySelector('img');
+    img.style.left = 0;
+
+    function catWalk() {
+      const beginPoint = parseFloat(img.style.left);
+      const secondImageWidth = 360;
+      const midPoint = (window.innerWidth - secondImageWidth) / 2;
+
+      if (beginPoint > window.innerWidth - img.width) {
+        img.style.left = 0;
+      }
+
+      if (beginPoint < midPoint - 2 || beginPoint > midPoint + 2) {
+        img.style.left = parseFloat(img.style.left) + 2 + 'px';
+      } else {
+        if (!img.src.includes('tenor.gif')) {
+
+          img.src = './img/tenor.gif';
+
+          setTimeout(function () {
+            img.style.left = beginPoint + 2 + 'px';
+            img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+          }, 5000);
+        }
+      }
+
+      requestAnimationFrame(catWalk);
+    }
+
+    catWalk();
+  </script>
+
+</body>
+
+</html>

@@ -18,7 +18,7 @@ const books = [{
   },
 ];
 
-const root = document.getElementById('root');
+const root= document.getElementById('root');
 const ul = document.createElement('ul');
 root.appendChild(ul);
 
@@ -55,6 +55,20 @@ for (index = 0; index < books.length; index++) {
 
 
   ul.appendChild(li);
-
-
+ 
+  
 }
+
+
+
+// document.body.appendChild(ul);
+
+
+// // extra modification !!
+
+// document.querySelector('h1').style.color = '#fff'
+// for (let li of lis) {
+//   li.style.listStyle = 'none';
+// }
+// document.body.style.backgroundColor = '#333'
+// document.body.style.textAlign = 'center';

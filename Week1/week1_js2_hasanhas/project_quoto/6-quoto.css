@@ -1,0 +1,68 @@
+/* <!-- Here are the requirements:
+Include at least 1 JavaScript, CSS and HTML file
+The design should look similar to the one in the picture above
+No CSS frameworks allowed
+Each time the button is clicked it should show a random quote
+Create a function that fires after the button click
+Collect 6 of your favorite quotes (quote and author) and store them in the right data structure
+Good luck! --> */
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  background-color: #fba62f;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 70px;
+}
+
+h3 {
+  font-size: 1.5vw;
+  align-self: flex-end;
+  margin: 5vw;
+}
+
+.firstDiv {
+  width: 70%;
+  color: #fba62f;
+  background-color: #fff;
+}
+
+#firstDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 45vh;
+}
+
+button {
+  color: white;
+  background-color: #fba62f;
+  font-weight: bold;
+  padding: 1%;
+  margin-left: 70%;
+  margin-right: 10%;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+#div2 {
+  margin-bottom: 5px;
+  height: 15%;
+}
+
+#div3 {
+  background-color: #fff;
+  width: 40%;
+  height: 8%;
+}
+
+
