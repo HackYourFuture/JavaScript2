@@ -137,7 +137,7 @@ Programming can be used to not only make websites, but also games! In the follow
 
 > Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
 
-> Write the project code in the folder `Week3 \ project`.
+> Write the project code in the folder `Week2 \ project`.
 
 In this week's project you'll be making a Pomodoro Clock! A user can specify how many minutes the timer should be set, and with a click on the play button it starts counting down! If the user wants to pause the timer, they can do so by clicking the pause button.
 
