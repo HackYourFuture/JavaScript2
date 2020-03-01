@@ -15,7 +15,7 @@ Before we head into the exercises, it might be nice to do some interactive exerc
 
 ## **2. JavaScript exercises**
 
-> Inside of your `JavaScript2` fork, create a folder called `week2`. Inside of that folder, create a folder called `js-exercises`. For all the following exercises create a new `.js` file in that folder (5 files in total). Make sure the name of each file reflects its content: for example, the filename for exercise one could be `oddOnesOut.js`.
+> Inside of your `JavaScript2` fork, find the folder called `Week2`. Inside of that folder, find the folder called `js-exercises`. In this folder you will find five `.js` files, one for each exercise where you need to write your code. Please use the correct file for the respective exercise.
 
 **Exercise 1: The odd ones out**
 
@@ -137,7 +137,7 @@ Programming can be used to not only make websites, but also games! In the follow
 
 > Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
 
-> Before you start, create a new folder called `project` that includes the files for the following app you'll be building.
+> Write the project code in the folder `Week3 \ project`.
 
 In this week's project you'll be making a Pomodoro Clock! A user can specify how many minutes the timer should be set, and with a click on the play button it starts counting down! If the user wants to pause the timer, they can do so by clicking the pause button.
 
