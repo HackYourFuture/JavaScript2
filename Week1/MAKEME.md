@@ -124,6 +124,9 @@ Start with this webpage, which has a single img tag of an animated GIF of a cat 
 6. When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to right across the screen, forever and ever.
 7. When the cat reaches the middle of the screen, replace the img with an image of a cat dancing (use this URL: https://tenor.com/StFI.gif), keep it dancing for 5 seconds, and then replace the img with the original image and have it continue the walk.
 
+
+The end result should look and behave similar to [https://dancingcat-sandbox.mxapps.io](https://dancingcat-sandbox.mxapps.io)
+
 ## **3. Code along**
 
 In the following tutorial you'll learn how to make a small web application that allows a user to add new issues to a board. Included is practice with [Bootstrap](https://getbootstrap.com/).
