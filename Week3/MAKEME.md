@@ -45,13 +45,15 @@ addSix();
 Write a function called `removeDuplicates`, that takes in an array as an argument:
 
 ```js
-const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+const letters = ['a', 'b', 'b', 'c', 'd', 'a', 'e', 'f', 'f', 'c', 'b'];
 ```
 
-The function should remove duplicate letters. So the result should be:
+The function should modifies the original array: it should remove duplicate letters and `return` the result. 
+
+The end result should be:
 
 ```js
-letters === ['a', 'b', 'c', 'd', 'e', 'f'];
+['a', 'b', 'c', 'd', 'e', 'f'];
 ```
 
 **Exercise 3: Guess the output**
