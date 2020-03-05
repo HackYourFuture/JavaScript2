@@ -152,6 +152,8 @@ Here are the requirements:
 - Display minutes and seconds
 - If the timer finishes the timer should be replaced by the message: `Time's up!`
 
+If you are having trouble understanding the functionality check this [demo](https://pomodoroclock-sandbox.mxapps.io).
+
 Good luck!
 
 ## **SUBMIT YOUR HOMEWORK!**
