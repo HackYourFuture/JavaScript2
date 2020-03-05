@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The tip calculator</title>
+    <style>
+      body {
+  text-align: center;
+}
+#continer {
+  background-color: aquamarine;
+  margin: 40px;
+  padding: 10px;
+
+}
+    </style>
+  
+      
+</head>
+<body>
+<div id="outer">
+  <div id="continer">
+  <h1>The Tip calculator</h1>
+  <form>
+    <h3>How much was your bill?</h3>
+    <input type="number"  value ="0" name="billAmount" id = "bill"><br>
+    
+     
+     <h3>How  was your service?</h3>
+     <select id="service" name="service">
+      <option value="30%-outstanding">outstanding</option>
+      <option value="20%-good">good</option>
+      <option value="15%-it was ok">it was ok</option>
+      <option value="10%-bad">bad</option>
+      <option value="5%-terrible">terrible</option>
+    </select>
+    <h3>How many persons are sharing the bill?</h3>
+    <input type="number" value ="0"  name="sharing" id = "sharing"><br>
+
+  </form>
+  <br>
+
+  <input type="button" value="Calculate!" id = "billSubmit" 
+  onClick = "tipCalculator()">
+    <h3>Tip Amount</h3>
+    <h4 id="result"></h4>
+   
+  </div>
+</div>
+
+
+<script>
+
+
+function tipCalculator(){
+  const billValue = document.getElementById('bill').value;
+  const serviceEvaulation = document.getElementById('service').value;
+  const sharing = document.getElementById('sharing').value;
+  if(billValue==0||sharing==0){alert("You need to fill in all the fields!")}
+  
+  else if (serviceEvaulation=="30%-outstanding"&&sharing==1){const tips=((billValue*0.3)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ `
+  }
+  else if (serviceEvaulation=="20%-good"&&sharing==1){const tips=((billValue*0.2)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ `
+  }
+  else if (serviceEvaulation=="15%-it was ok" &&sharing==1){const tips=((billValue*0.15)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ `
+  }
+  else if (serviceEvaulation=="10%-bad" &&sharing==1){const tips=((billValue*0.1)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ `
+  }
+  else if (serviceEvaulation=="5%-terrible" &&sharing==1){const tips=((billValue*0.05)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ `
+  }
+  if (serviceEvaulation=="30%-outstanding"&&sharing!=1){const tips=((billValue*0.3)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $  each`
+  }
+
+  else if (serviceEvaulation=="20%-good"&&sharing!=1){const tips=((billValue*0.2)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ each`
+  }
+  else if (serviceEvaulation=="15%-it was ok"&&sharing!=1){const tips=((billValue*0.15)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ each`
+  }
+  else if (serviceEvaulation=="10%-bad" && sharing!=1){const tips=((billValue*0.1)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ each`
+  }
+  else if (serviceEvaulation=="5%-terrible"&& sharing!=1){const tips=((billValue*0.05)/sharing); 
+  const result=document.getElementById("result");
+  result.innerText=` ${tips} $ each`
+  }
+
+};
+  
+
+
+
+
+</script>
+</body>
+</html>
