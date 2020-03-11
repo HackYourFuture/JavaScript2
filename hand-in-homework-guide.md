@@ -22,7 +22,7 @@ EVERY WEEK
 2. Inside the week folder, create another folder called `homework`. Create your homework files in there, while on the correct branch
 3. Once you're finished, `add` and `commit` everything. Make the commit message meaningful, for example `finished project for homework week1`
 4. Push the branch to your forked repository (`<YOUR_GITHUB_ACCOUNTNAME>/JavaScript2`)
-5. On the GitHub page of this repository, click on the `create pull request` button. Make sure the `base repository` is your teacher's repository, on branch master
+5. On the GitHub page of this repository, click on the `create pull request` button. Make sure the `base repository` is `HackYourHomework/JavaScript2`, on branch master
 6. Give the pull request a title in the following format:
 
 ```markdown
@@ -31,9 +31,5 @@ Homework week 1 <Your name>
 
 7. Submit the pull request from your forked repository branch into the `master` branch of the original repository (`HackYourHomework/JavaScript2`)
 8. Do a little victory dance because you did it! Good job!
-
-For a visual walkthrough the steps please watch the following video one of our teachers, Unmesh Joshi, has made:
-
-- [GitHub Homework flow](https://www.youtube.com/watch?v=2qJPAVTiKPE)
 
 If you have any questions or if something is not entirely clear ¯\\\_(ツ)\_/¯, please ask/comment on Slack!
