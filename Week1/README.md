@@ -78,7 +78,7 @@ The Document-Object Model (DOM) is a tree-like representation of the structure o
 
 ![Simple DOM](./../assets/simple-dom.png)
 
-JavaScript is made accessible to the DOM by embedding it into an HTML file. You might've seen the <script></script> before; well, this is how the browser becomes aware of JavaScript.
+JavaScript is made accessible to the DOM by embedding it into an HTML file. You might've seen the `<script></script>` before; well, this is how the browser becomes aware of JavaScript.
 
 - [What exactly is the DOM](https://bitsofco.de/what-exactly-is-the-dom/)
 - [JavaScript and the browser](https://eloquentjavascript.net/13_browser.html)
@@ -111,12 +111,12 @@ body.appendChild(newParagraph);
 In this example we're executing the following steps:
 
 1. We're first selecting the body: this is always necessary, as we can only add or remove elements from the body of the document
-2. Secondly, we're creating a new DOM element: a <p> element
+2. Secondly, we're creating a new DOM element: a `<p>` element
 3. Thirdly, we're injecting content into the element
 4. Fourthly, we give our element a background color
-5. Finally, we add the <p> element in the body
+5. Finally, we add the `<p>` element in the body
 
-Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return key you will find your new <p> at the end of the page!
+Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return key you will find your new `<p>` at the end of the page!
 
 Learning how to write JavaScript that targets the DOM is an essential part of being a web developer. In the following resources you'll more about how to do that:
 
@@ -148,7 +148,7 @@ body.addEventListener('click', function() {
 });
 ```
 
-Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return click the website. You should see the whole <body> becoming black!
+Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return click the website. You should see the whole `<body>` becoming black!
 
 This is DOM manipulation in its simplest form. It goes in three essential steps:
 
