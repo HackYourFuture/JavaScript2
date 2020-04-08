@@ -30,6 +30,16 @@ This repository consists of 3 essential parts:
 
 After your first class you should start off with checking the `reading materials` for that week. At the beginning that would be the [Week 1 Reading](/Week1/README.md). Study all the concepts and try to get the gist of everything. After, you can get started with the `homework` for that week.
 
+Before you start with the homework, make sure you've made a `fork` of the right repository: [HackYourHomework/JavaScript2](https://www.github.com/hackyourhomework/javascript2). Once you've cloned it to your computer you can proceed by making `GIT` branches for each week. Start at the `master` branch and execute the following (note that they're 3 different commands):
+
+```console
+foo@bar:~$ git branch week1-YOURNAME
+foo@bar:~$ git branch week2-YOURNAME
+foo@bar:~$ git branch week3-YOURNAME
+```
+
+Then execute `git checkout week1-YOURNAME` and you can get started!
+
 If you have any questions or if something is not entirely clear ¯\\\_(ツ)\_/¯, please ask/comment on Slack!
 
 ## Planning

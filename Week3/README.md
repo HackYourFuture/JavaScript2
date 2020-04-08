@@ -81,7 +81,7 @@ console.log(globalVariable);
 accessGlobalVariable();
 ```
 
-The second type of local scope is called **block scope**. A block, generally speaking, is any code wrapped within `{ }`. This includes conditional statements (`if` and `switch`) and loops (`for`, `while` and `do/while`).
+The second type of local scope is called **block scope**. A block, generally speaking, is any series of statements or expressions wrapped within `{ }`. This includes conditional statements (`if` and `switch`), loops (`for`, `while` and `do/while`) and functions.
 
 Go through the following resources to learn more about `scope`:
 
@@ -93,9 +93,26 @@ Go through the following resources to learn more about `scope`:
 
 As mentioned in the previous module, we prefer to declare variables using `const` and `let`. This is because the keywords are more descriptive and restrictive. This makes them easier to work with.
 
-In relation to scope both also behave differently: they are block scoped. This means that they can be accessed from outside a `{ }`.
+In relation to scope both also behave differently: they are block scoped relative to the place where they are defined. This means that they can only be accessed from a `{ }`.
 
-Go through the following resources to learn more about this:
+Look at the following:
+
+```js
+function someFunc() {
+  const blockScopedVar = 'this variable can only be accessed within this function';
+  console.log(blockScopedVar);
+}
+
+someFunc();
+
+console.log(blockScopedVar);
+```
+
+Try it out in your browser console and see what you get. You'll see that you the variable is only defined within the function, but not outside.
+
+Block scoping variables doesn't seem important now, but they will be later. The biggest reason why you'd want to do so is this: **You don't know want to access certain data from everywhere**. What if you could access your password to your email account, from the console? What if a hacker could?
+
+Go through the following resources to learn more about block scoped variables:
 
 - [How let and const are scoped in JavaScript](https://wesbos.com/javascript-scoping/)
 - [Should you truly never use var?](https://dev.to/johnwolfe820/should-you-never-truly-use-var-bdi)
@@ -116,13 +133,15 @@ However, this does NOT mean that the actual value given to the variable or funct
 
 Hoisting happens during `compile-time`.
 
-When you execute your JavaScript code, the interpreter goes through the code twice. The first time is called the `compile-time`, which is when your code is made ready to be executed: there will be safety checks, small optimizations and making sure the syntax is written correctly.
+When you execute your JavaScript code, the interpreter goes through the code twice. The first time is called the `compile-time`, which is when your code is made ready to be executed: there will be safety checks, small performance optimizations and making sure the syntax is written correctly.
 
 The second time is called `run-time`, which is where it actually executes your code by going through it line by line, doing the assignments, calling the functions, etc.
 
+Hoisting is a specific feature of how JavaScript works. Knowing about it allows you to better organize your variables and functions.
+
 For more research, check out the following:
 
-- [What is Hoisting in JavaScript?](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1h)
+- [What is Hoisting in JavaScript?](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
 
 ## 3. Closures
 
@@ -132,7 +151,7 @@ That's nice and all, but in order to really understand what it is and why we nee
 
 ### Execution context
 
-The execution context roughly equates to the 'environment' a function executes in. This consists of the following:
+The `execution context` roughly equates to the 'environment' a function executes in. This consists of the following:
 
 - The variable scopes
 - Function arguments
@@ -144,7 +163,7 @@ Checkout the following to learn more about why this is important:
 
 ### Why do we need closures?
 
-Closures are commonly used to give objects data privacy. We don't want certain data to be available globally. Think of it as "keeping something a secret. Take, for example, the following situation:
+Closures are commonly used to give objects `data privacy`: we don't want certain data to be available globally, but only accessible in the scope it was defined in. Think of it as "keeping something a secret". Take, for example, the following situation:
 
 > You want to log in to your email account, so you need a password. Usually you have that password in your head, or somewhere written down in a place that can only be accessed in a certain way. It's not out there in public, able to be accessed by anyone.
 
@@ -161,7 +180,7 @@ For further study please check the following resources:
 
 Becoming a good developer doesn't mean being good at any particular programming language: as a matter of fact, the language doesn't matter much.
 
-This is the secret behind being a good developer: if you understand the concept, structure and principles of what makes a software program work, it doesn't matter in what way (the syntax) it's written.
+This is the secret behind being a good developer: if you understand the concept, structure and principles of what makes an application work, it doesn't matter in what way (the syntax) it's written.
 
 This is also the reason why most developers, once they've mastered the fundamentals, are able to pick up another language quite easily. It's not because they have good memory; it's because they can recognize the patterns within the language.
 

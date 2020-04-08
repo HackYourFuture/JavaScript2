@@ -26,20 +26,22 @@ const books = [
   {
     title: 'The Design of Everyday Things',
     author: 'Don Norman',
-    alreadyRead: false
+    alreadyRead: false,
   },
   {
     title: 'The Most Human Human',
     author: 'Brian Christian',
-    alreadyRead: true
+    alreadyRead: true,
   },
   {
     title: 'The Pragmatic Programmer',
     author: 'Andrew Hunt',
-    alreadyRead: true
-  }
+    alreadyRead: true,
+  },
 ];
 ```
+
+Follow the steps:
 
 1. Iterate through the array of books.
 2. For each book, create a `<p>` element with the book title and author and append it to the page.
@@ -47,7 +49,7 @@ const books = [
 4. Add an `<img>` to each book that links to a URL of the book cover.
 5. Change the style of the book depending on whether you have read it (green) or not (red).
 
-The end result should look something like this:
+Expected output:
 https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 **Exercise 2: About me**
@@ -73,6 +75,8 @@ Given this HTML:
 </html>
 ```
 
+Follow the steps:
+
 1. Add a script tag to the bottom of the HTML body.
 2. (In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
 3. (In the JavaScript) Replace each of the spans (nickname, fav-food, hometown) with your own information.
@@ -82,20 +86,22 @@ Given this HTML:
 
 **Exercise 3: The logo hijack**
 
-No homepage is safe from the logo bandit! Everytime he sees a Google Logo he replaces it with a logo from HackYourfuture instead: https://www.hackyourfuture.dk/static/logo-dark.svg.
+No homepage is safe from the logo bandit! Every time he sees a Google Logo he replaces it with a logo from HackYourFuture instead: https://www.hackyourfuture.dk/static/logo-dark.svg.
 
-In this exercise you're expected to write a JavaScript function that can be executed in the console of the [Google website](https://www.google.com).
+In this exercise you're expected to write a JavaScript `function` that can be executed in the console of the [Google website](https://www.google.com).
 
-1. Find out how to select the element that contains the Google logo, and store it in a variable
-2. Modify the source and sourceset of the logo so that it's replaced by the HackYourFuture logo instead
+1. Find out how to `select` the element that contains the Google logo, and store it in a `variable`
+2. Modify the `source` and `sourceset` of the logo so that it's replaced by the HackYourFuture logo instead
 
 **Exercise 4: What's the time?**
 
 Why wear a watch when you can check the time, live in your webpage?
 
+Follow the steps:
+
 1. Create a basic HTML file
 2. Include a script tag and link the JavaScript file
-3. Inside the JS file, write a function that adds the current time to the webpage. Make sure it's written in the HH:MM:SS notation (hour, minute, second). Hint: use `setInterval()` to make sure the time stays current
+3. Inside the JS file, write a function that adds the current time to the webpage. You have to find out how to access the time first. Once you've done so, make sure it's written in the HH:MM:SS notation (hour, minute, second). Hint: use `setInterval()` to make sure the time stays current
 4. Have the function execute when it's loading in the browser
 
 **Exercise 5: The cat walk**
@@ -115,17 +121,18 @@ Start with this webpage, which has a single img tag of an animated GIF of a cat 
 </html>
 ```
 
-1. Create a variable to store a reference to the img.
-2. Change the style of the img to have a "left" of "0px", so that it starts at the left hand of the screens.
+1. Create a variable to store a reference to the `<img>`.
+2. Change the style of the `<img>` to have a "left" of "0px", so that it starts at the left hand of the screens.
 3. Create a function called catWalk() that moves the cat 10 pixels to the right of where it started, by changing the "left" style property.
-4. Call that function every 50 milliseconds. Your cat should now be moving across the screen from left to right. Hurrah!
+4. Call that function every 50 milliseconds. Your cat should now be moving across the screen from left to right.
 5. When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to right across the screen, forever and ever.
-6. When the cat reaches the middle of the screen, replace the img with an image of a cat dancing (use this URL: https://tenor.com/StFI.gif), keep it dancing for 5 seconds, and then replace the img with the original image and have it continue the walk.
+6. When the cat reaches the middle of the screen, replace the `<img>` with an image of a cat dancing (use this URL: https://tenor.com/StFI.gif), keep it dancing for 5 seconds, and then replace the `<img>` with the original image and have it continue the walk.
 
-
-The end result should look and behave similar to [https://dancingcat-sandbox.mxapps.io](https://dancingcat-sandbox.mxapps.io)
+Expected result should look and behave similar to [https://dancingcat-sandbox.mxapps.io](https://dancingcat-sandbox.mxapps.io)
 
 ## **3. Code along**
+
+> Create a new GitHub repository for this project. You can add it to your portfolio!
 
 In the following tutorial you'll learn how to make a small web application that allows a user to add new issues to a board. Included is practice with [Bootstrap](https://getbootstrap.com/).
 
@@ -156,7 +163,7 @@ Good luck!
 
 ## **SUBMIT YOUR HOMEWORK!**
 
-After you've finished your todo list it's time to show us what you got! Upload all your files to a forked repository (a copy from the original, which in this case is the [JavaScript2](https://www.github.com/HackYourFuture/JavaScript2) repository) using GIT. Then make a pull request to the original.
+After you've finished your todo list it's time to show us what you got! Upload both to your JavaScript2 repository forked to your personal account in GitHub. Make a pull request to the [HackYourHomework/JavaScript2](https://www.github.com/hackyourhomework/javascript2).
 
 If you need a refresher, take a look at the following [guide](../hand-in-homework-guide.md) to see how it's done.
 

@@ -19,46 +19,47 @@ Let's get familiar with basic Javascript concepts, with interactive exercises! C
 
 **Exercise 1: Add six**
 
-Declare a function called `createBase`. The function takes a number as a parameter and return a closure, that adds a number to the base number argument.
+In this exercise you'll work with closures.
 
-Call the function three times. The return values should be:
+1. Declare a function called `createBase`.
+   - It takes 1 argument: a number
+   - Returns a closure, that adds a number to the number argument.
+2. Call the function three times. The return values should be:
+   a) 15
+   b) 24
+   c) 36
 
-1. 15
-2. 24
-3. 36
-
-It should look a little like this:
+Expected output:
 
 ```js
-function createBase() {
-  // Put here your logic...
-}
-
 const addSix = createBase(6);
 
-// Put here your function calls...
-addSix();
+addSix(4); // Returns the number 10
 ```
 
 **Exercise 2: Take out the duplicates**
 
-Write a function called `removeDuplicates`, that takes in an array as an argument:
+We don't like repetition in our array of letters. Let's remove them!
+
+1. Write a function called `removeDuplicates`
+2. It takes one argument: the following array:
 
 ```js
 const letters = ['a', 'b', 'b', 'c', 'd', 'a', 'e', 'f', 'f', 'c', 'b'];
 ```
 
-The function should modifies the original array: it should remove duplicate letters and `return` the result. 
+3. Write logic that looks into the array and removes duplicates
+4. Return the modified array without the duplicates
 
-The end result should be:
+Expected output:
 
 ```js
-['a', 'b', 'c', 'd', 'e', 'f'];
+removeDuplicates(letters); // Returns ['a', 'b', 'c', 'd', 'e', 'f'];
 ```
 
 **Exercise 3: Guess the output**
 
-In this exercise you'll be presented with a code snippet. Your task is to guess the output and write out your reasoning in 50 words or less.
+In this exercise you'll be presented with a code snippet. Your task is to guess the output and write out your reasoning in 100 words or less.
 
 ```js
 // Snippet
@@ -75,7 +76,7 @@ x();
 
 **Exercise 4: Guess more**
 
-In this exercise you'll be presented with another code snippet. Guess the output and write out your reasoning in 50 words or less.
+In this exercise you'll be presented with another code snippet. Guess the output and write out your reasoning in 100 words or less.
 
 ```js
 // Snippet
@@ -98,14 +99,13 @@ console.log(y);
 
 **Exercise 5: The lottery machine**
 
-Don't you just love the thrill of the lottery? What if I told you we can make our own lottery machine? Let's get started!
+Don't you just love the thrill of the lottery? What if I told you we can make our own lottery machine?
 
-Write a function that takes 4 arguments.
-
-- A start value
-- An end value
-- A callback that executes if the number is divisible by 3
-- A callback that executes if the number is divisible by 5
+1. Write a function that takes 4 arguments.
+   - A start value
+   - An end value
+   - A callback that executes if the number is divisible by 3
+   - A callback that executes if the number is divisible by 5
 
 The function should first generate an array containing values from start value to end value (inclusive).
 
@@ -131,6 +131,8 @@ threeFive(10, 15, sayThree, sayFive);
 ```
 
 ## **3. Code along**
+
+> Create a new GitHub repository for this project. You can add it to your portfolio!
 
 In the following "code along" you'll be making a Booklist App. A user will be able to add books to a list by filling in a form, and also delete each book entry in the list.
 
@@ -180,7 +182,7 @@ Finished? Good on you! The homework that needs to be submitted is the following:
 1. JavaScript exercises
 2. PROJECT: The Tip Calculator
 
-Upload both to your forked JavaScript2 repository in GitHub. Make a pull request to the original repository.
+Upload both to your JavaScript2 repository forked to your personal account in GitHub. Make a pull request to the [HackYourHomework/JavaScript2](https://www.github.com/hackyourhomework/javascript2).
 
 > Forgotten how to upload your homework? Go through the [guide](../hand-in-homework-guide.md) to learn how to do this again.
 

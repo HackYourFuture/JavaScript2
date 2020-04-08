@@ -2,7 +2,7 @@
 
 In this module you'll submit your homework only using GIT and GitHub.
 
-1. [GitHub](https://www.github.com/HackYourFuture/JavaScript2)
+1. [GitHub](https://www.github.com/HackYourHomework/JavaScript2)
 
 ## 1. GitHub homework guide
 
@@ -26,7 +26,7 @@ EVERY WEEK
 6. Give the pull request a title in the following format:
 
 ```markdown
-Homework week 1 <Your name>
+Homework week 1 <YOUR_NAME>
 ```
 
 7. Submit the pull request from your forked repository branch into the `master` branch of the original repository (`HackYourHomework/JavaScript2`)

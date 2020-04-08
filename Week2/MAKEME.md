@@ -38,9 +38,10 @@ console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console
 
 The `doubleEvenNumbers` function returns only the even numbers in the array `myNumbers` and doubles them. Like you've learned in the [README](README.md), this block of code isn't easy to decipher.
 
-Let's rewrite it.
+Let's rewrite it. Follow the steps:
 
-- Using the `map` and `filter` functions, rewrite the `doubleEvenNumbers` function.
+1. Research the [filter function](https://www.w3schools.com/jsref/jsref_filter.asp)
+2. Rewrite the `doubleEvenNumbers` function, replacing the `for-loop` with `filter`
 
 **Exercise 2: What's your Monday worth?**
 
@@ -69,11 +70,11 @@ const mondayTasks = [
 
 Let's assume your hourly rate is €25. How much would you earn on that day?
 
-- Write a program that finds out what your hourly rate on a Monday would be
-- Use the `map` array function to take out the duration time for each task.
-- Multiply each duration by a per-hour rate for billing and sum it all up.
-- Output a formatted Euro amount, rounded to Euro cents, e.g: `€11.34`.
-- Make sure the program can be used on any array of objects that contain a `duration` property with a number value
+1. Write a `function` that finds out what your hourly rate on a Monday would be
+2. Use the `map` array function to take out the duration time for each task.
+3. Multiply each duration by a per-hour rate for billing and sum it all up.
+4. Return a string value: a formatted Euro amount, rounded to Euro cents, e.g: `€11.34`.
+5. Make sure the `function` can be used on any array of objects that contain a `duration` property with a number value
 
 **Exercise 3: Lemon allergy**
 
@@ -85,9 +86,15 @@ const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Waterme
 
 However, she forgot that you are allergic to lemons! Let's quickly dispose of them before you get an attack.
 
-- Write a function
-- Use the `filter` array function to take out the lemons
-- Output a string that says: "My mom bought me a fruit basket, containing [array of fruits] !"
+1. Write a function, called `removeLemons`
+2. Use the `filter` array function to take out the lemons
+3. Return a string with all the fruits in the fruitBasket
+
+Expected output:
+
+```js
+removeLemons(fruitBasket); // Returns "My mom bought me a fruit basket, containing Apple, Grapefruit, Banana, Watermelon!"
+```
 
 **Exercise 4: Collective age**
 
@@ -97,16 +104,27 @@ Have you ever wondered how old the HackYourFuture team members are? Or better ye
 const hackYourFutureMembers = [
   { name: 'Wouter', age: 33 },
   { name: 'Federico', age: 32 },
-  { name: 'Noer', age: 27 },
+  { name: 'Noer', age: 28 },
   { name: 'Tjebbe', age: 22 },
 ];
 ```
 
-- Write a program that calculates the combined age of every member
-- Make use of the `map` function to get the ages
-- It should contain a function that takes a callback
-- The callback adds all the ages together and returns the number
-- The main function should log the string "The collective age of the HYF team is: [number]" to the console, and afterwards return the number
+1. Write a `function`, called `calculateAges` that calculates the combined age of every member
+2. It takes 2 arguments: an object and a callback
+3. Make use of the `map` function to get the ages
+4. Declare another `function` (outside of `calculateAges`) that adds all the ages
+5. Return a string that contains the sum of all the ages
+
+Expected output:
+
+```js
+function addAges(...) {
+  ...
+}
+
+calculateAges(hackYourFutureMembers, addAges); // Returns "The collective age of the HYF team is: 115"
+
+```
 
 **Exercise 5: My favorite hobbies**
 
@@ -122,12 +140,14 @@ const myHobbies = [
 ];
 ```
 
-- Write a program that outputs each of these inside an HTML file
-- Create an HTML and JavaScript file, link them together
-- Use the `map` and/or `forEach` function to put each hobby into a list item
-- Output the list items in an unordered list
+1. Create an HTML (with a basic structure) and JavaScript file, link them together
+2. Inside the JS file write a `function` that outputs each of these inside an HTML file:
+   - Use the `map` or `forEach` array function to put each hobby into a list item
+   - Output the list items in an unordered list
 
 ## **3. Code along**
+
+> Create a new GitHub repository for this project. You can add it to your portfolio!
 
 Programming can be used to not only make websites, but also games! In the following tutorial you're going to apply your DOM manipulation skills in order to make a classic game: Rock, Paper, Scissors! Enjoy!
 
@@ -150,9 +170,9 @@ Here are the requirements:
 - If the timer is running, the user can't change the session length anymore
 - Use at least 3 functions
 - Display minutes and seconds
-- If the timer finishes the timer should be replaced by the message: `Time's up!`
+- If the time is up the Pomodoro clock should be replaced by the message: `Time's up!`
 
-If you are having trouble understanding the functionality check this [demo](https://pomodoroclock-sandbox.mxapps.io).
+If you are having trouble understanding the functionality here's a [demo](https://pomodoroclock-sandbox.mxapps.io) for how it should work!
 
 Good luck!
 
@@ -163,7 +183,7 @@ After you've finished your todo list it's time to show us what you got! The home
 1. JavaScript exercises
 2. PROJECT: The Pomodoro Clock
 
-Upload both to your forked JavaScript2 repository in GitHub. Make a pull request to the original repository.
+Upload both to your JavaScript2 repository forked to your personal account in GitHub. Make a pull request to the [HackYourHomework/JavaScript2](https://www.github.com/hackyourhomework/javascript2).
 
 > Forgotten how to upload your homework? Go through the [guide](../hand-in-homework-guide.md) to learn how to do this again.
 

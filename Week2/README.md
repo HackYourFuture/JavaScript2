@@ -25,7 +25,7 @@ Let's look at code execution from another angle. The program that executes your 
 
 Now imagine the following scenario:
 
-> Noer wants to have breakfast but he doesn't have any food at home. He decides he want to eat oatmeal. The ingredients (oats and milk) can be bought at the supermarket. How to do this? First Noer takes a shower. Then he puts on some clothes. Then some shoes. Then he opens the door and goes outside. Then he jumps on the bike and goes to the closest supermarket. After looking for some time he finds the ingredients. Then Noer buys the ingredients. Then he jump back on the bike and go home. Then he mixes the ingredients and makes oatmeal. Then Noer eats and feels amazing!
+> Noer wants to have breakfast but he doesn't have any food at home. He decides he wants to eat oatmeal. The ingredients (oats and milk) can be bought at the supermarket. How to do this? First Noer takes a shower. Then he puts on some clothes. Then some shoes. Then he opens the door and goes outside. Then he jumps on the bike and goes to the closest supermarket. After looking for some time he finds the ingredients. Then Noer buys the ingredients. Then he jump back on the bike and go home. Then he mixes the ingredients and makes oatmeal. Then Noer eats and feels amazing!
 
 In this example, each action could only happen after the previous has been completed. Noer can't put on his shoes, while taking a shower. Or, he can't eat oatmeal while he buys the ingredients.
 
@@ -35,7 +35,7 @@ As you can see, each action is executed in a synchronous manner. This is to say:
 
 ### Asynchronous
 
-Sometimes we want to do multiple things at the same time, without each action to be dependent on each other. Asynchronous execution avoids this bottleneck. You are essentially saying, “I know this function call is going to take a great deal of time, but my program doesn’t want to wait around while it executes.” Consider the following scenario:
+Sometimes we want to do multiple things at the same time, without each action to be dependent on each other. You are essentially saying, “I know this function call is going to take a great deal of time, but my program doesn’t want to wait around while it executes.” The answer to this is called `asynchronous execution`. Consider the following scenario:
 
 > Wouter is feeling hungry, so he decides to go to a restaurant. He arrives there and gets into the line to order food. After ordering he takes a seat and, while he waits, reads a book. Occassionally he looks around and sees different things happening: new people enter the restaurant, some people get their food served and others are just talking. After a short while Wouter's food arrives and it's time to dig in!
 
@@ -60,7 +60,7 @@ function higherOrderFunction(anotherFunction) {
 
 // Example 2
 function anotherHigherOrderFunction() {
-  return function() {
+  return function () {
     return;
   };
 }
@@ -70,6 +70,8 @@ Why do we need them? A higher order function integrates multiple functions, whic
 
 > Higher order functions are a core concept within a programming paradigm called "functional programming". It's not relevant at all for you to know or care about this, but it's important to be exposed to it.
 
+- [How to Understand Callbacks & Higher Order Functions](https://www.youtube.com/watch?v=viQz4nUUnpw)
+
 ### Functions as arguments to other functions
 
 Imagine the following situation:
@@ -78,7 +80,7 @@ Imagine the following situation:
 
 This example illustrates the concept of **asynchronicity**: there are multiple processes happening simultaneously, without any single thing being dependent upon another. Your friend is not waiting by the phone until you have the answer. Or in technical terms: until the callback (which is you) has the return value (the answer to your friend's request to hang out).
 
-This is the utility of `callbacks`: they allow us to introduce asynchronicity into the control flow of an application.
+This is the utility of `callbacks`: they allow us to be able to do multiple things simultaneously. Or in more technical terms, introduce asynchronicity into the control flow of an application.
 
 Study the following resources to learn more about the importance of callbacks:
 
@@ -144,10 +146,10 @@ Note: while this mechanism is important to be aware of, keep in mind that you wo
 
 In simple terms, the `Event Loop` is a mechanism that operates in the browser. It keeps track of the order of execution of JavaScript commands. consists of 4 parts:
 
-1. Heap. This is where the browser assigns space in memory to each process
-2. Call Stack. This is the amount of JavaScript commands (read: function calls and events) that need to be executed
-3. Web APIs. These are objects (like the document) and functions (like XMLHttpRequest) that can be used within the JavaScript commands found in the Call Stack
-4. Callback Queue. This is the "waiting line" for asynchronous function calls
+1. **Heap**. This is where the browser assigns space in memory to each process
+2. **Call Stack**. This is the amount of JavaScript commands (read: function calls and events) that need to be executed
+3. **Web APIs**. These are objects (like the document) and functions (like XMLHttpRequest) that can be used within the JavaScript commands found in the Call Stack
+4. **Callback Queue**. This is the "waiting line" for asynchronous function calls
 
 To see it in action check out the following resources:
 
