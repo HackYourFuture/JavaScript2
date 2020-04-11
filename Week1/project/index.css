@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: orange;
+    font-family: monospace;
+}
+
+.random-quote {
+    margin-top: 30px;
+}
+
+.random-quote .container {
+    background-color: white;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 2px solid black;
+}
+
+.random-quote .container button {
+    padding: 10px;
+    margin-left: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: orange;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    width: 90px;
+    /* margin-right: 95%; */
+}
+
+.random-quote .container p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+    margin: 25px;
+    background-color: white;
+    color: orange;
+}
+
+#random-quote {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2em;
+    background-color: white;
+    color: orange;
+}
+
+#random #author {
+    margin-left: 75px;
+    color: white;
+}

@@ -12,7 +12,10 @@
  */
 
 function displayCurrentTime() {
-  // your code goes in here
+    // your code goes in here
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    document.querySelector('body').innerText = time;
 }
 
 setInterval(displayCurrentTime, 1000);
