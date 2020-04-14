@@ -2,15 +2,17 @@
  
  ** Exercise 1: Add Six **
  
-Declare a function called `createBase`.The function takes a number as a parameter and
-return a closure, that adds a number to the base number argument.
-
-Call the function three times. The return values should be:
- 15, 24,  36
+  1. Declare a function called `createBase`.
+    - It takes 1 argument: a number
+    - Returns a closure, that adds a number to the number argument.
+  2. Call the function three times. The return values should be:
+    a) 15
+    b) 24
+    c) 36
 
  */
 
-function createBase( /* ???? */ ) {
+function createBase(/* ???? */) {
   // Put here your logic...
 }
 

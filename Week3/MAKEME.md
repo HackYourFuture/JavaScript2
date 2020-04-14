@@ -101,24 +101,23 @@ console.log(y);
 
 Don't you just love the thrill of the lottery? What if I told you we can make our own lottery machine?
 
-1. Write a function that takes 4 arguments.
+1. Write a function, called `generateNumbers` that takes 4 arguments.
    - A start value
    - An end value
    - A callback that executes if the number is divisible by 3
    - A callback that executes if the number is divisible by 5
+2. `generateNumbers` generates an array containing values from start value to end value (inclusive).
 
-The function should first generate an array containing values from start value to end value (inclusive).
+Then the function should take the newly created array and iterate over it, and calling the first callback if the array value is divisible by 3. The callback should simply return the string "The number [i] is divisible by 3!"
 
-Then the function should take the newly created array and iterate over it, and calling the first callback if the array value is divisible by 3.
+If the iterated value is divisible by 5, execute the second callback. The callback should simply return the string "The number [i] is divisible by 5!"
 
-The function should call the second callback if the array value is divisible by 5.
-
-Both functions should be called if the array value is divisible by both 3 and 5.
+Both callbacks should be executed if the array value is divisible by both 3 and 5.
 
 Here is a starter template:
 
 ```js
-function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
+function generateNumbers(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
   // make array
   // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
@@ -148,10 +147,10 @@ Happy learning!
 
 > Important! Place your code in the folder `Week3 \ project`.
 
-In this week's project you'll be making a Tip Calculator! A user can fill in 3 things:
+In this week's project you'll be making a Tip Calculator! In the webpage there's a form. A user can fill in the following:
 
 1. The amount of the bill
-2. How good the service was
+2. Rate how good the service was
 3. How many people will share the bill
 
 When the button is clicked a calculation is made and the user can read the tip amount underneath.

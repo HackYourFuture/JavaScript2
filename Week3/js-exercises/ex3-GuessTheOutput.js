@@ -4,18 +4,23 @@
 
 Look at the bellow code snippet.
 Can you guess the output? 
-Write out your reasoning in 50 words or less.
+Write out your reasoning in 100 words or less.
 
 */
 
-
-
 let a = 10;
-const x = (function () {
+const x = (function() {
   a = 12;
-  return function () {
+  return function() {
     alert(a);
   };
 })();
 
 x();
+
+/*
+  Write out your reasoning here (100 words or less):
+
+
+
+*/

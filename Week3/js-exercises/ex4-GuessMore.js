@@ -4,7 +4,7 @@
 
 Look at the bellow code snippet.
 Can you guess the output? 
-Write out your reasoning in 50 words or less.
+Write out your reasoning in 100 words or less.
 
 */
 
@@ -18,7 +18,7 @@ f1(x);
 console.log(x);
 
 const y = {
-  x: 9
+  x: 9,
 };
 
 function f2(val) {
@@ -27,3 +27,10 @@ function f2(val) {
 }
 f2(y);
 console.log(y);
+
+/*
+  Write out your reasoning here (100 words or less):
+
+
+
+*/
