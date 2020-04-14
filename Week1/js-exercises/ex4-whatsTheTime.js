@@ -13,6 +13,10 @@
 
 function displayCurrentTime() {
   // your code goes in here
+  const Time = new Date();
+  const h1 = document.getElementById('date');
+  h1.innerHTML = Time.toLocaleTimeString();
 }
 
-setInterval(displayCurrentTime, 1000);
+// Have the function execute when it 's loading in the browser
+window.onload = setInterval(displayCurrentTime, 1000);
