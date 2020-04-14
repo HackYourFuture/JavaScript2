@@ -19,11 +19,23 @@ FIRST HALF (12.00 - 13.30)
 - DOM manipulation
 - browser defined functions
 
-Note: You can ask students to explain a concept or summerise the last lecture themselves
+Note: You can ask students to explain a concept or summarize the last lecture themselves
 
 ## 2. What synchronous vs. asynchronous processes are
 
 ### Explanation
+Imagine that you are at the shopping center to buy some vegetables, bread, and cheese.
+You first go to the [greengrocer](https://indebuurt.nl/rotterdam/wp-content/uploads/2018/11/dsc_0102-3.jpeg). He has all the the fruits en vegetables you need: some apples, tomatoes and a nice big cauliflower.
+Next stop is the [bakery](https://brands-b.prod.onewp.net/app/uploads/sites/23/2018/08/Bakkerij-Terpstra-Gorssel-LvdP-8776.jpg). You ask for your favorite "fijn volkoren" bread. "I'm sorry" says the lady at the bakery. I'm all out of that bread.
+But you're lucky, it's in the oven right now and if you come back later it will be ready! And you say hey: here is my cellphone number, give me a call when it's ready!
+
+So you go to the [cheese shop](https://s.numrush.nl/wp-content/uploads/2017/09/Kaans-Stream-Store_2_Willem-de-Kam-copyright.jpg) to buy that lovely Dutch cheese. The "kaasboer" (cheese salesman) is happy to cut a good piece for you.
+During some chit-chat at the cheese shop about the price of milk and the variability of the weather lately your phone rings.
+It's the lady from the bakery with some good news: you can come pick up your bread now!
+
+In this story we can recognize two synchronous and one asynchronous process. The greengrocer had everything you need right away so that was synchronous. The "kaasboer" needed to cut your cheese, but because this is a quick operation you were willing to wait on it right there.
+At the bakery however it did not make sense to stay there waiting. You went on to do some other tasks while the baker took your bread out of the oven. This was an asynchronous process.
+
 
 ### Example
 
