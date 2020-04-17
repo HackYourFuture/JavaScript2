@@ -12,7 +12,12 @@
  */
 
 function displayCurrentTime() {
-  // your code goes in here
+  // create a date instance
+  var d = new Date();
+  //call a method in Date class that return the current date and plug it to the body document 
+  var n = d.toLocaleTimeString();
+  document.body.innerHTML  = `<div style="font-size:3rem; padding:10%; text-align: center;">${n}</div>`;
 }
+window.onload = displayCurrentTime();
 
 setInterval(displayCurrentTime, 1000);

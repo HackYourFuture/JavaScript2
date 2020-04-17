@@ -1,0 +1,60 @@
+:root {
+    --main-color: #ff02b7;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    background: var(--main-color);
+  }
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 60%;
+    margin: auto;
+  }
+  .box {
+    background: #ffffff;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 20%;
+    color: var(--main-color);
+  }
+  .block-quote p {
+    text-align: center;
+  }
+  .quote-sign {
+    padding-right: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .quote-text {
+    font-size: 1.2rem;
+  }
+  .quote-author {
+    text-align: right;
+    margin-top: 1rem;
+  }
+  .links-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    background: var(--main-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: small;
+  }
+  
+  @media (max-width: 600px) {
+    :root {
+      font-size: 8px;
+    }
+  }
