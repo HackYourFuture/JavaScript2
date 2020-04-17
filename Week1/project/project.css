@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    float: left;
+    display: inline-flex;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    background-color: blanchedalmond;
+    text-align: center;
+    height: 400px;
+    width: 70%;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+
+
+}
+.infoContainer {
+    padding:10px;
+    padding-bottom: 2rem;
+}
+#author {
+    float:right;
+    margin-right:10px ;
+    padding-right:50px ;
+    margin-bottom: 50px;
+    width: 150px;
+}
+#quoteText {
+ padding: 5PX;
+ height: 80px;
+}
+#quoteImg {
+    float: left;
+}
+#nextBtn {
+    float: right;
+    right: 10px;
+    background-color: blanchedalmond;
+    border: 3px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+
+
+}
+#nextBtn:hover {
+    background-color: cornsilk; 
+    color: black;
+  }

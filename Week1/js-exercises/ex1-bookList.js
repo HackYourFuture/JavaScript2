@@ -17,23 +17,46 @@
   */
 
 function createBookList(books) {
-  // your code goes in here, return the ul element
+  //your code goes in here, return the ul element
+  
+  let myBookList = document.createElement('ul');
+  for (const i of books) 
+    {
+      let bookItem = document.createElement('li');
+      let bookInfo = document.createElement('p');
+      bookInfo.innerText = `${i.title}  -  ${i.author}`;
+      bookItem.appendChild(bookInfo);
+      let bookCover = document.createElement ('img');
+      bookCover.src = i.imgUrl;
+      bookItem.appendChild(bookCover);
+    
+      if (i.alreadyRead === true) bookItem.className = 'red';
+        else
+          bookItem.className = 'green';
+      myBookList.appendChild(bookItem);
+    }
+    return myBookList;
+  
+
 }
 
 const books = [{
     title: 'The Design of Everyday Things',
     author: 'Don Norman',
-    alreadyRead: false
+    alreadyRead: false ,
+    imgUrl : 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442460745l/840._SY475_.jpg'
   },
   {
     title: 'The Most Human Human',
     author: 'Brian Christian',
-    alreadyRead: true
+    alreadyRead: true ,
+    imgUrl : 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1295465264l/8884400.jpg'
   },
   {
     title: 'The Pragmatic Programmer',
     author: 'Andrew Hunt',
-    alreadyRead: true
+    alreadyRead: true ,
+    imgUrl : 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401432508l/4099.jpg'
   }
 ];
 
