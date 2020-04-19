@@ -23,7 +23,7 @@ function pause()
 }
  function catWalk() { 
     rightSide = window.innerWidth - ( leftSide + catImg.width );
-    if ( (leftSide + catImg.width/2 > window.innerWidth/2) && (leftSide + catImg.width/2 < window.innerWidth/2 + 10) ) 
+    if ( (leftSide + catImg.width/2 >= window.innerWidth/2) && (leftSide + catImg.width/2 <= window.innerWidth/2 + 10) ) 
     {
         clearInterval(mainInterval)
         catImg.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
