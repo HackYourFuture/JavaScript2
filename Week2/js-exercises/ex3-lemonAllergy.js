@@ -14,6 +14,10 @@
 
 function takeOutLemons(basket) {
   // your code goes in here. The output is a string 
+  const basketWithoutLemon = basket.filter( fruit => {
+    return fruit.toLowerCase() !== 'lemon';
+  });
+  return basketWithoutLemon;
 }
 
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];

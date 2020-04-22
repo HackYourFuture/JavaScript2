@@ -4,11 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dab7c098a7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
   <title>Pomodoro Clock</title>
 </head>
 
 <body>
   <div id="app">
+    
+    <div>
+      <h1>Pomodoro Clock</h1>
+    </div>
+
+    <div>
+      <h3>Session length</h3>
+    </div>
+
+    <div>
+      <span><a href=""><i class="fas fa-plus"></i></a></span>
+      <span><input class="input-number"  type="text" placeholder="Enter minutes" min="1" ></span>
+      <span><a href=""><i class="fas fa-minus"></i></a></span>
+    </div>
+    
+    <div>
+      <h2 id="timer">10:58</h2>
+    </div>
+
+    <div>
+      <span><a href=""><i class="fas fa-play-circle"></i></a></span>
+      <span><a href=""><i class="fas fa-pause-circle"></i></a></span>
+    </div>
 
   </div>
   <script src="index.js"></script>
