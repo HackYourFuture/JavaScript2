@@ -60,7 +60,7 @@ function higherOrderFunction(anotherFunction) {
 
 // Example 2
 function anotherHigherOrderFunction() {
-  return function () {
+  return function() {
     return;
   };
 }
