@@ -9,7 +9,11 @@
  */
 
 function createHTMLList(arr) {
-  // your code goes in here
+  const list0fHobbies = document.body.appendChild(document.createElement('ul'));
+  console.log(list0fHobbies);
+  arr.map(hobby => {
+    list0fHobbies.innerHTML += `<li>${hobby}</li>`;
+  });
 }
 
 const myHobbies = [
@@ -19,3 +23,4 @@ const myHobbies = [
   'Hanging out with friends',
   'Going to the gym',
 ];
+createHTMLList(myHobbies);

@@ -5,11 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Clock</title>
+  <script src="https://kit.fontawesome.com/974bac5b8a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&family=Roboto:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="app">
-
+    <h1>Pomodoro Clock</h1>
+    <h2>Session Length</h2>
+    <div class="timer">
+      <button id="arrow-down"><i class="fas fa-arrow-down playings"></i></button>
+      <span id="time-to">15</span>
+      <button id="arrow-up"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <div id="showcase">
+      <h2>Session</h2>
+      <p class="clock"><span id="spanM">15</span> : <span id="spanS">00</span></p>
+    </div>
+    <div>
+      <button id="play"><i class="fas fa-play"></i></button>
+      <button id="stop" class="d-none"><i class="fas fa-stop"></i></i></button>
+      <button id="pause"><i class="fas fa-pause"></i></button>
+    </div>
   </div>
   <script src="index.js"></script>
 </body>
