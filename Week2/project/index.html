@@ -7,8 +7,25 @@
   <title>Pomodoro Clock</title>
 </head>
 
-<body>
-  <div id="app">
+<body onload="displayCurrentTimeLeftInSession()">
+  <div id="app" >
+    <div id="pomodoro-container" >
+      
+      <div id="pomodoro-clock" style=" padding: 10%; text-align: center; font-size: 40px;">
+        <div class="time-session" >
+          <h6>Pomodoro Clock</h6>
+          <p id="time-session-display" style="margin-bottom: 0em; padding-bottom: 0em;"></p>
+          <button id="minus">-</button>
+          <button id="plus">+</button>
+        </div>
+
+        <div id="pomodoro-timer"></div>
+        <div id="pomodoro-clock-actions" >
+          <button id="pomodoro-pause" >Start</button>
+          <button id="pomodoro-stop">Stop</button>
+        </div>
+      </div>
+    </div>
 
   </div>
   <script src="index.js"></script>
