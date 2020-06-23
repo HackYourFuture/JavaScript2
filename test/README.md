@@ -1,6 +1,6 @@
 # JavaScript1 and JavaScript2 Test
 
-You’ll be doing a comprehension test on paper. It will be about the most important JavaScript concepts you’ve learned about so far (JavaScript1 and JavaScript2). 
+You’ll be doing a comprehension test **on paper**. It will be about the most important JavaScript concepts you’ve learned about so far (JavaScript1 and JavaScript2). 
 
 ## Practical information
 -  The test will start at **10.30 until 11.30**. The door will open at 10.15. **Be on time!**
@@ -15,33 +15,37 @@ Like the homework you will get feedback and are expected to improve upon your we
 
 ## Test material
 These are the most important concepts that will be tested:
-- Variables
-- Data types (strings, numbers, arrays, objects, booleans)
-- Conditional statements (if/switch statement)
-- Loops
-- Regular and arrow functions
-- How to use JavaScript to do basic DOM manipulations (add, modify and remove DOM elements)
-- Code commenting
-- Array functions (map and filter)
-- Callbacks
+- `Variables`
+- `Data types` (`strings`, `numbers`, `arrays`, `objects`, `booleans`)
+- `Conditional statements` (`if`/`switch` statement)
+- `Loops`
+- `ES5 functions` and `arrow functions`
+- How to use JavaScript to do basic `DOM manipulations` (add, modify and remove DOM elements)
+- `Code commenting`
+- `Array functions` (`map` and `filter`)
+- `Callbacks`
 
 ## Preparation
 Advice on how to optimally prepare:
 - Find out 2 things about each concepts listed above: (1) how does the basic structure look and (2) what is the most common use case.
+
 - Ask questions through Slack to your teachers and/or your classmates
-- Practice coding WITHOUT Google and on paper.
-	this is very important because the test will be on paper. You can practise this by making your old homework again; but than on paper. Make sure that you can write down functions and loops without syntax errors. 
+
+- Practice coding WITHOUT Google and on paper. This is very important because the test will be on paper. You can practise this by making your old homework again; but than on paper. Make sure that you can write down functions and loops without syntax errors. 
+
 - Practice for understanding (why something is the case), NOT just for repetition’s sake (and hoping ‘you will understand it one day’).
+
 - Make a summary of all the study material.
+
 - After you prepared try to make the sample questions that are in this file.
 
 ## During the test
 Advise on how to make a test:
-- Look for low hanging fruit. Which of the assignments is easiest for you to do? Tackle that one first. 
-- Make sure that all syntax is correct when writing code on paper. For instance: don’t forget brackets or semicolons.  
-- If you get stuck in an assignment, move on to the next one. You can always come back later if time permits.
-- After finishing an assignment, read the question again to make sure you actually gave an answer to the question. 
-- Before handing in the test, read it all over again to pick out the small mistakes.
+- **Look for low hanging fruit**. Which of the assignments is easiest for you to do? Tackle that one first. 
+- Make sure that all **syntax is correct** when writing code on paper. For instance: don’t forget brackets or semicolons.  
+- **If you get stuck in an assignment, move on to the next one**. You can always come back later if time permits.
+- After finishing an assignment, read the question again to **make sure you actually gave an answer to the question**. 
+- Before handing in the test, read it all over again to pick out the small mistakes. **Double check your work!**
 
 ## Sample questions
 1. Write and call a function that creates and appends a <p> tag to the <body> of an HTML file. Make use of the already predefined DOM methods createElement() and appendChild(). The innerText of the <p> should be “hello HackYourFuture!”.

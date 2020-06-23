@@ -25,7 +25,7 @@ Call the function three times. The return values should be:
 
 1. 15
 2. 24
-3. 36
+3. 33
 
 It should look a little like this:
 
