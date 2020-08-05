@@ -11,8 +11,19 @@
 
  */
 
+
+let output = document.querySelector('h1');
 function displayCurrentTime() {
   // your code goes in here
+  // let output = document.querySelector('p');
+  let today = new Date();
+  let hours = today.getHours();
+  let minutes = today.getMinutes();
+  let seconds = today.getSeconds();
+  let time = `${hours}:${minutes}:${seconds}`;
+  output.innerHTML = time;
 }
+console.log(displayCurrentTime());
+
 
 setInterval(displayCurrentTime, 1000);
