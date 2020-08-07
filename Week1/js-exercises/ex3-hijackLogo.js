@@ -13,7 +13,8 @@
  */
 
 function hijackGoogleLogo() {
-  // your code goes in here
+  let logo = document.querySelectorAll("img")[1];
+  logo.src = "https://www.hackyourfuture.dk/static/logo-dark.svg";
 }
 
 hijackGoogleLogo();

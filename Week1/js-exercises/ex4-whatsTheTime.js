@@ -11,8 +11,10 @@
 
  */
 
-function displayCurrentTime() {
-  // your code goes in here
-}
+ function displayCurrentTime() {
+  let theDate = new Date();
+  let theTime = `${theDate.getHours()}:${theDate.getMinutes()}:${theDate.getSeconds()}`
+  console.log(theTime);
+} 
 
-setInterval(displayCurrentTime, 1000);
+window.addEventListener("load",setInterval(displayCurrentTime, 1000));
