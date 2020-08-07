@@ -15,10 +15,55 @@
   https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
   */
-
+ 
 function createBookList(books) {
   // your code goes in here, return the ul element
-}
+  let ul = document.createElement('ul');
+  ul.style.cssText = 'list-style: none;display: flex;flex-wrap: wrap; justify-content:center;';
+  let div = document.querySelector('h1');
+  div.appendChild(ul);
+
+  books.forEach(element => {
+    let p = document.createElement('p');
+    p.textContent = `${element.title} ${element.author}`;
+    let image = document.createElement('img');
+    let li = document.createElement('li');
+    li.appendChild(p);
+    li.appendChild(image);
+
+
+    
+    if (element.title == 'The Design of Everyday Things'){
+      image.src = 'https://images-na.ssl-images-amazon.com/images/I/410RTQezHYL._SX326_BO1,204,203,200_.jpg';
+    }
+    else if ( element.title == 'The Most Human Human' ){
+      image.src = 'https://images-na.ssl-images-amazon.com/images/I/418M2053aNL._SX396_BO1,204,203,200_.jpg';
+    }
+    else{
+      image.src = 'https://images-na.ssl-images-amazon.com/images/I/41m1rQjm5tL._SX322_BO1,204,203,200_.jpg';
+    }
+
+      image.style.cssText = 'width: 200px';
+
+    ul.appendChild(li);
+    li.style.cssText = 'margin:20px; max-width:25rem; background: red'
+    
+    if (element.alreadyRead == false){
+      li.style.background= 'red';
+    }
+    else{
+      li.style.background = 'green'; 
+    }
+
+  });
+
+};
+
+
+
+  
+
+  
 
 const books = [{
     title: 'The Design of Everyday Things',
@@ -37,6 +82,5 @@ const books = [{
   }
 ];
 
-let ulElement = createBookList(books);
+createBookList(books);
 
-document.querySelector("#bookList").appendChild(ulElement);
