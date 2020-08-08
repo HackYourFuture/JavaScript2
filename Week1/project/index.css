@@ -1,0 +1,92 @@
+
+
+body{
+    background-color: orange;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.container{
+    background-color: white;
+    max-width: 50rem;
+    height: 18rem;
+    text-align: center;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+}
+#quotes{
+margin: 0 auto;
+max-width: 80%;
+font-size: 1.5em;
+color: orange;
+display: flex;
+justify-content: center;
+margin-top: 5rem;
+
+}
+#author{
+display: flex;
+font-size: 1.1rem;
+color: orange;
+justify-content: flex-end;
+margin-right: 3rem;
+font-weight: bold;
+margin-top: 2rem;
+}
+
+#btn{
+    display: flex;
+    width:7rem;
+    height: 2.5rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: 3rem;
+    margin-top: 10px;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;   
+}
+
+#twitter{
+    display: flex;
+    width:2.5rem;
+    height: 2.6rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-left: 2.8rem;
+    margin-top: -2rem;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;   
+}
+#tumblr{
+    display: flex;
+    width:2rem;
+    height: 2.6rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-left: 5.8rem;
+    margin-top: -2.6rem;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;   
+}
+
+a{
+    color:white;
+}
+#footer{
+    display: flex;
+    margin: 0 auto;
+    margin-top: -4.8rem;
+    background-color: white;
+    max-width: 20rem;
+    height: 3rem;
+    /* margin-top: 300px; */
+}
