@@ -26,7 +26,7 @@ const catWalk = function () {
       img.src = referenceOfImage;
       // run secondWalkCat() function to walk the cat again.
       secondWalkCatID = setInterval(secondWalkCat, 50);
-    }, 2000);
+    }, 5000);
   }
 };
 // ----------------------------------------------------------------------------------------------
