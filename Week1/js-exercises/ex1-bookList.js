@@ -1,20 +1,4 @@
-/**
-  
- ** Exercise 1: The book list **
 
-  I 'd like to display my three favorite books inside a nice webpage!
-
-  1. Iterate through the array of books.
-  2. For each book, create a `<p>`
-  element with the book title and author and append it to the page.
-  3. Use a `<ul>`  and `<li>` to display the books.
-  4. Add an `<img>` to each book that links to a URL of the book cover.
-  5. Change the style of the book depending on whether you have read it(green) or not(red).
-
-  The end result should look something like this:
-  https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
-
-  */
 let images = ['https://miro.medium.com/max/1000/1*Qo27inBKBKY4Q4Pgk5KkbQ.png', 'https://images1.penguinrandomhouse.com/cover/9780307476708','https://www.studystore.nl/images/9780132119177/3/1'];
 function createBookList(books) {
 
