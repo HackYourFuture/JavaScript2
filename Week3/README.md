@@ -122,7 +122,7 @@ The second time is called `run-time`, which is where it actually executes your c
 
 For more research, check out the following:
 
-- [What is Hoisting in JavaScript?](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1h)
+- [What is Hoisting in JavaScript?](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
 
 ## 3. Closures
 
