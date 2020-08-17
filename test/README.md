@@ -1,11 +1,11 @@
 # JavaScript1 and JavaScript2 Test
 
-You’ll be doing a comprehension test **on paper**. It will be about the most important JavaScript concepts you’ve learned about so far (JavaScript1 and JavaScript2). 
+You’ll be doing a comprehension test. It will be about the most important JavaScript concepts you’ve learned about so far (JavaScript1 and JavaScript2). 
 
 ## Practical information
--  The test will start at **10.30 until 11.30**. The door will open at 10.15. **Be on time!**
--  It will be done on paper so please bring a pencil and eraser.
-- There will be 5 questions
+-  The test will start at **10.30 until 11.30**. Please be available from 10.15 to avoid being late!
+-  It will be done online
+-  There will be 3 questions
 
 ## Purpose of the test
 The purpose of this exam is to test your comprehension of JavaScript 1 and JavaScript 2 concepts.
@@ -28,6 +28,8 @@ These are the most important concepts that will be tested:
 ## Preparation
 Advice on how to optimally prepare:
 - Find out 2 things about each concepts listed above: (1) how does the basic structure look and (2) what is the most common use case.
+
+- Be familiar with the homework submission process using Git and GitHub. This is the same procedure you'll undergo when starting and submitting your test!
 
 - Ask questions through Slack to your teachers and/or your classmates
 
@@ -59,10 +61,9 @@ Advise on how to make a test:
 	multiplyNumbers( 6 , ……………
 // Return value should be 30
 ```
+
 3. Transform the given array of strings named letters into a new array with numbers (for example: `numbers = [0, 1, 2, 3 ]` ), by creating a new function called lettersToNumbers. Log the new array to the console. Return the new array. Make use of the map() array function. 
 `const letters = [ ‘a’ , ‘b’ , ‘c’ , ‘d’ ];`
-
-
 
 
 If there’s anything unclear please let us know. Also, if any of you need additional support, now is the moment to let us know as we could pair you up with someone to answer any questions you may have.
