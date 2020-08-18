@@ -15,7 +15,7 @@ does not return anything but removes any duplicate elements from the array.
 
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
 
-removeDuplicates(letter);
+removeDuplicates(letters);
 
 if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
   console.log("Hooray!")
