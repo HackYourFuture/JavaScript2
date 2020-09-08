@@ -13,9 +13,16 @@ These are the topics for week 1:
    - The Critical Rendering Path
    - Traversing the DOM
 3. What is DOM Manipulation?
+
    - Manipulating elements
    - Browser events
    - Event listeners and handlers
+
+## 0. Video Lectures
+
+Your teacher Wilgert has made video lectures for this week's material. You can find them here: [Videos 1 - 10](https://www.youtube.com/watch?v=5qz6S5bkL14&list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n)
+
+<a href="https://www.youtube.com/watch?v=5qz6S5bkL14&list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="../assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
 
 ## 1. What is a web browser?
 
@@ -143,7 +150,7 @@ Take a look at this code:
 
 ```js
 const body = document.querySelector('body');
-body.addEventListener('click', function() {
+body.addEventListener('click', function () {
   body.style.background = 'black';
 });
 ```

@@ -14,6 +14,12 @@ These are the topics for week 3:
    - Why do we need closures?
 4. Thinking like a programmer II
 
+## 0. Video Lectures
+
+Your teacher Wilgert has made video lectures for this week's material. You can find them here: [Videos 22 - 30](https://www.youtube.com/watch?v=5qz6S5bkL14&list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n)
+
+<a href="https://www.youtube.com/watch?v=5qz6S5bkL14&list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="../assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
+
 ## 1. Scope
 
 One of the central concepts in programming is the idea of `context`: the meaning of any particular thing is only determined in relation to its direct surroundings. Let's take language for example. If I say the following sentence:
