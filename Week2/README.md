@@ -13,6 +13,12 @@ These are the topics for week 2:
 3. Array Functions
 4. Event Loop
 
+## 0. Video Lectures
+
+Your teacher Wilgert has made video lectures for this week's material. You can find them here: [Videos 11 - 21](https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n)
+
+<a href="https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="../assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
+
 ## 1. Synchronous vs. asynchronous
 
 ### Synchronous
@@ -60,7 +66,7 @@ function higherOrderFunction(anotherFunction) {
 
 // Example 2
 function anotherHigherOrderFunction() {
-  return function() {
+  return function () {
     return;
   };
 }

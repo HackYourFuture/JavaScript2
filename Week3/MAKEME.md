@@ -15,17 +15,17 @@ Let's get familiar with basic Javascript concepts, with interactive exercises! C
 
 ## **2. JavaScript exercises**
 
-> Inside of your `JavaScript2` fork, create a folder called `week3`. Inside of that folder, create a folder called `js-exercises`. For all the following exercises create a new `.js` file in that folder (5 files in total). Make sure the name of each file reflects its content: for example, the filename for exercise one could be `addSix.js`.
+> Inside of your `JavaScript2` fork, navigate to the folder `Week3`. Then to the folder `js-exercises`. In this folder you will find separate files for each exercise. Please put your code in the correct file.
 
 **Exercise 1: Add six**
 
-Declare a function called `createBase`. It should return a closure, that adds a number to the base number argument.
+Declare a function called `createBase`. The function takes a number as a parameter and return a closure, that adds a number to the base number argument.
 
 Call the function three times. The return values should be:
 
 1. 15
 2. 24
-3. 36
+3. 33
 
 It should look a little like this:
 
@@ -45,13 +45,15 @@ addSix();
 Write a function called `removeDuplicates`, that takes in an array as an argument:
 
 ```js
-const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+const letters = ['a', 'b', 'b', 'c', 'd', 'a', 'e', 'f', 'f', 'c', 'b'];
 ```
 
-The function should remove duplicate letters. So the result should be:
+The function should modifies the original array: it should remove duplicate letters and `return` the result. 
+
+The end result should be:
 
 ```js
-letters === ['a', 'b', 'c', 'd', 'e', 'f'];
+['a', 'b', 'c', 'd', 'e', 'f'];
 ```
 
 **Exercise 3: Guess the output**
@@ -142,7 +144,7 @@ Happy learning!
 
 > Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
 
-> Before you start, create a new folder called `project` that includes the files for the following app you'll be building.
+> Important! Place your code in the folder `Week3 \ project`.
 
 In this week's project you'll be making a Tip Calculator! A user can fill in 3 things:
 
@@ -166,6 +168,8 @@ Here are the requirements:
 
 - If there's only 1 person who shares the bill, output only the tip amount (omit the "each")
 - If any of the input fields are empty when the button is clicked, call an alert that says: "You need to fill in all the fields!"
+
+See it in action [here](https://tipcalculator-sandbox.mxapps.io/).
 
 Good luck!
 

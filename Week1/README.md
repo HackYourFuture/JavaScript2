@@ -13,9 +13,16 @@ These are the topics for week 1:
    - The Critical Rendering Path
    - Traversing the DOM
 3. What is DOM Manipulation?
+
    - Manipulating elements
    - Browser events
    - Event listeners and handlers
+
+## 0. Video Lectures
+
+Your teacher Wilgert has made video lectures for this week's material. You can find them here: [Videos 1 - 10](https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n)
+
+<a href="https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="../assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
 
 ## 1. What is a web browser?
 
@@ -78,7 +85,7 @@ The Document-Object Model (DOM) is a tree-like representation of the structure o
 
 ![Simple DOM](./../assets/simple-dom.png)
 
-JavaScript is made accessible to the DOM by embedding it into an HTML file. You might've seen the <script></script> before; well, this is how the browser becomes aware of JavaScript.
+JavaScript is made accessible to the DOM by embedding it into an HTML file. You might've seen the `<script></script>` before; well, this is how the browser becomes aware of JavaScript.
 
 - [What exactly is the DOM](https://bitsofco.de/what-exactly-is-the-dom/)
 - [JavaScript and the browser](https://eloquentjavascript.net/13_browser.html)
@@ -143,12 +150,12 @@ Take a look at this code:
 
 ```js
 const body = document.querySelector('body');
-body.addEventListener('click', function() {
+body.addEventListener('click', function () {
   body.style.background = 'black';
 });
 ```
 
-Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return click the website. You should see the whole <body> becoming black!
+Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return click the website. You should see the whole `<body>` becoming black!
 
 This is DOM manipulation in its simplest form. It goes in three essential steps:
 
