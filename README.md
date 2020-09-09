@@ -61,7 +61,7 @@ You can find out more about him here:
 
 Learn from Wilgert in the following playlist of videos he has made for you! (Click on the image to open the link)
 
-<a href="https://www.youtube.com/watch?v=5qz6S5bkL14&list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="./assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
+<a href="https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="./assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
 
 ## Planning
 

@@ -16,9 +16,9 @@ These are the topics for week 3:
 
 ## 0. Video Lectures
 
-Your teacher Wilgert has made video lectures for this week's material. You can find them here: [Videos 22 - 30](https://www.youtube.com/watch?v=5qz6S5bkL14&list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n)
+Your teacher Wilgert has made video lectures for this week's material. You can find them here: [Videos 22 - 30](https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n)
 
-<a href="https://www.youtube.com/watch?v=5qz6S5bkL14&list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="../assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
+<a href="https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="../assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
 
 ## 1. Scope
 
