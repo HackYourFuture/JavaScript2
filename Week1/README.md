@@ -13,9 +13,16 @@ These are the topics for week 1:
    - The Critical Rendering Path
    - Traversing the DOM
 3. What is DOM Manipulation?
+
    - Manipulating elements
    - Browser events
    - Event listeners and handlers
+
+## 0. Video Lectures
+
+Your teacher Wilgert has made video lectures for this week's material. You can find them here: [Videos 1 - 10](https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n)
+
+<a href="https://www.youtube.com/playlist?list=PLVYDhqbgYpYU-7_oyPBkUuuis5bL1Dk8n" target="_blank"><img src="../assets/wilgert.png" width="600" height="350" alt="HYF Video" /></a>
 
 ## 1. What is a web browser?
 
@@ -23,7 +30,7 @@ A web browser is software that allows you to access websites.
 
 ### How a browser works
 
-In your journey into becomeing a web developer it's important to know the tools you'll be using intimately. One such is the browser, which will be used to display your websites. In the following resources you'll learn about the many parts any web browser consists of and what their use is:
+In your journey into becoming a web developer it's important to know the tools you'll be using intimately. One such is the browser, which will be used to display your websites. In the following resources you'll learn about the many parts any web browser consists of and what their use is:
 
 - [How a web browser functions](https://www.youtube.com/watch?v=z0HN-fG6oT4)
 - [How do web browsers work?](https://medium.com/@monica1109/how-does-web-browsers-work-c95ad628a509)
@@ -78,7 +85,7 @@ The Document-Object Model (DOM) is a tree-like representation of the structure o
 
 ![Simple DOM](./../assets/simple-dom.png)
 
-JavaScript is made accessible to the DOM by embedding it into an HTML file. You might've seen the <script></script> before; well, this is how the browser becomes aware of JavaScript.
+JavaScript is made accessible to the DOM by embedding it into an HTML file. You might've seen the `<script></script>` before; well, this is how the browser becomes aware of JavaScript.
 
 - [What exactly is the DOM](https://bitsofco.de/what-exactly-is-the-dom/)
 - [JavaScript and the browser](https://eloquentjavascript.net/13_browser.html)
@@ -110,13 +117,13 @@ body.appendChild(newParagraph);
 
 In this example we're executing the following steps:
 
-1. We're first selecting the body: this is always necessary, as we can only add or remove elements from the body of the document
-2. Secondly, we're creating a new DOM element: a <p> element
-3. Thirdly, we're injecting content into the element
-4. Fourthly, we give our element a background color
-5. Finally, we add the <p> element in the body
+1. Selecting the body: this is always necessary, as we can only add or remove elements from the body of the document
+2. Creating a new DOM element: a paragraph i.e. a `<p>` element
+3. Injecting content into the newly create paragraph element
+4. Setting the background color for the newly create paragraph element
+5. Adding the  newly create paragraph element element to the body
 
-Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return key you will find your new <p> at the end of the page!
+Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return key you will find your new `<p>` at the end of the page!
 
 Learning how to write JavaScript that targets the DOM is an essential part of being a web developer. In the following resources you'll more about how to do that:
 
@@ -143,12 +150,12 @@ Take a look at this code:
 
 ```js
 const body = document.querySelector('body');
-body.addEventListener('click', function() {
+body.addEventListener('click', function () {
   body.style.background = 'black';
 });
 ```
 
-Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return click the website. You should see the whole <body> becoming black!
+Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return click the website. You should see the whole `<body>` becoming black!
 
 This is DOM manipulation in its simplest form. It goes in three essential steps:
 
