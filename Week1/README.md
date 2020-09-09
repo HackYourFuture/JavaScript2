@@ -30,7 +30,7 @@ A web browser is software that allows you to access websites.
 
 ### How a browser works
 
-In your journey into becomeing a web developer it's important to know the tools you'll be using intimately. One such is the browser, which will be used to display your websites. In the following resources you'll learn about the many parts any web browser consists of and what their use is:
+In your journey into becoming a web developer it's important to know the tools you'll be using intimately. One such is the browser, which will be used to display your websites. In the following resources you'll learn about the many parts any web browser consists of and what their use is:
 
 - [How a web browser functions](https://www.youtube.com/watch?v=z0HN-fG6oT4)
 - [How do web browsers work?](https://medium.com/@monica1109/how-does-web-browsers-work-c95ad628a509)
@@ -117,11 +117,11 @@ body.appendChild(newParagraph);
 
 In this example we're executing the following steps:
 
-1. We're first selecting the body: this is always necessary, as we can only add or remove elements from the body of the document
-2. Secondly, we're creating a new DOM element: a `<p>` element
-3. Thirdly, we're injecting content into the element
-4. Fourthly, we give our element a background color
-5. Finally, we add the `<p>` element in the body
+1. Selecting the body: this is always necessary, as we can only add or remove elements from the body of the document
+2. Creating a new DOM element: a paragraph i.e. a `<p>` element
+3. Injecting content into the newly create paragraph element
+4. Setting the background color for the newly create paragraph element
+5. Adding the  newly create paragraph element element to the body
 
 Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return key you will find your new `<p>` at the end of the page!
 
