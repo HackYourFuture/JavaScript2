@@ -21,6 +21,8 @@ function createBookList(books) {
   const newUl = document.createElement('ul');
   document.querySelector('#bookList').appendChild(newUl);
   newUl.style.cssText = 'display: flex; flex-wrap: wrap;';
+  const heading = document.querySelector('h1');
+  heading.style.cssText = 'text-align: center; font-size: 2rem;';
 
   books.forEach((element) => {
     //iterate through array
@@ -39,7 +41,7 @@ function createBookList(books) {
     //styles
     newImg.style.cssText = 'height: 350px; max-width: 300px;';
     newList.style.cssText = 'margin: 1rem; list-style: none; padding: 1rem 3rem; flex: 1;';
-    newPar.style.cssText = 'font-family: monospace; text-align: center; font-size: 2rem';
+    newPar.style.cssText = 'font-family: monospace; text-align: center; font-size: 1.4rem';
 
     //adding text to paragraph
     newPar.innerText = `${bookTitle} by ${bookAuthor}`;
