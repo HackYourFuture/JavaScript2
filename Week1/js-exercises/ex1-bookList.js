@@ -25,11 +25,11 @@ function createBookList(books) {
   const heading = document.querySelector('h1');
   heading.style.cssText = 'text-align: center; font-size: 2rem;';
 
-  books.forEach((element) => {
+  books.forEach((book) => {
     //iterate through array
-    const bookTitle = element.title;
-    const bookAuthor = element.author;
-    const read = element.alreadyRead;
+    const bookTitle = book.title;
+    const bookAuthor = book.author;
+    const read = book.alreadyRead;
 
     //create elements and append them
     const newList = document.createElement('li');
