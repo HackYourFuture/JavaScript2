@@ -15,6 +15,7 @@
   https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
   */
+ "use strict"
 
 function createBookList(books) {
   // your code goes in here, return the ul element
