@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20, 73, 75);
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Text styles*/
+
+h1,
+h3,
+p,
+button {
+  color: #fff;
+}
+
+/*Borders*/
+.quote-wrapper,
+button {
+  background: rgba(235, 226, 226, 0.322);
+  border: 3px solid rgba(0, 0, 0, 0.767);
+}
+
+.quote-wrapper {
+  max-width: 70rem;
+  min-height: 15rem;
+  padding: 1.2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+p {
+  text-align: right;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 1.2rem;
+  cursor: pointer;
+  margin: 0.3rem;
+  font-size: 2rem;
+}
+
+button:hover {
+  border-color: #fff;
+  background: rgb(20, 73, 75);
+  transition: all 0.4s ease 0s;
+}
+
+.buttons-flex {
+  display: flex;
+}
+
+.quote-generator {
+  margin-left: auto;
+}
