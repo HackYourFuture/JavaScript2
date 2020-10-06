@@ -1,0 +1,53 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #fba501;
+    display: flex;
+}
+
+.container {
+    color: #fba501;
+    padding: 40px;
+    margin: auto;
+    width: 95%;
+    max-width: 800px;
+    background-color: white;
+}
+
+.quote {
+    font-size: 30px;
+    text-align: center;
+}
+
+.interaction {
+    display: flex;
+}
+
+button {
+    border: 0;
+    margin-left: auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.icon,
+button {
+    color: white;
+    background-color: orange;
+    padding: 15px;
+}
+
+.quote-creator {
+    font-size: 24px;
+    text-align: right;
+}

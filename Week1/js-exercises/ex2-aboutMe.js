@@ -1,11 +1,16 @@
-/**
- 
- ** Exercise 2: About me **
+window.onload = load;
 
- 1. See HTML
- 2. Change the body tag 's style so it has a font-family of "Arial, sans-serif".
- 3. Replace each of the spans(nickname, fav - food, hometown) with your own information.
- 4. Iterate through each li and change the class to "list-item".
- 5. See HTML
- 6. Create a new img element and set its src attribute to a picture of you.Append that element to the page.
- */
+function load() {
+    const body = document.body;
+    body.style.fontFamily = 'Arial, sans-serif';
+    document.getElementById('nickname').innerText = 'Tarook';
+    document.getElementById('fav-food').innerText = 'Pizza';
+    document.getElementById('hometown').innerText = 'Damascus';
+    const listItems = document.getElementsByTagName('li');
+    for (let i = 0; i < listItems.length; i++) {
+        listItems[i].className = 'list-item';
+    }
+    const newImage = document.createElement('img');
+    newImage.src = 'pic.png';
+    body.appendChild(newImage);
+}

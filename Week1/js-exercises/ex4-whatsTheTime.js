@@ -12,7 +12,21 @@
  */
 
 function displayCurrentTime() {
-  // your code goes in here
+    // your code goes in here
+    const clock = new Date();
+    const h = clock.getHours();
+    let m = clock.getMinutes();
+    let s = clock.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('num').innerHTML = h + ':' + m + ':' + s;
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = '0' + i;
+    }
+    return i;
 }
 
 setInterval(displayCurrentTime, 1000);

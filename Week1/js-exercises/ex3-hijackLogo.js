@@ -13,7 +13,10 @@
  */
 
 function hijackGoogleLogo() {
-  // your code goes in here
+    // your code goes in here
+    let googleLogo = document.getElementById('hplogo');
+    googleLogo.srcset = '';
+    googleLogo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
 }
 
 hijackGoogleLogo();

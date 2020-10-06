@@ -17,26 +17,47 @@
   */
 
 function createBookList(books) {
-  // your code goes in here, return the ul element
+    // your code goes in here, return the ul element
+    const ul = document.createElement('ul');
+
+    books.forEach((book) => {
+        const img = document.createElement('img');
+        const p = document.createElement('p');
+        const listItem = document.createElement('li');
+        img.src = book.url;
+        p.innerText = book.title + ' ' + book.author;
+        if (book.alreadyRead) {
+            listItem.style.backgroundColor = 'green';
+        } else {
+            listItem.style.backgroundColor = 'red';
+        }
+        listItem.appendChild(img);
+        listItem.appendChild(p);
+        ul.appendChild(listItem);
+    });
+    return ul;
 }
 
 const books = [{
-    title: 'The Design of Everyday Things',
-    author: 'Don Norman',
-    alreadyRead: false
-  },
-  {
-    title: 'The Most Human Human',
-    author: 'Brian Christian',
-    alreadyRead: true
-  },
-  {
-    title: 'The Pragmatic Programmer',
-    author: 'Andrew Hunt',
-    alreadyRead: true
-  }
+        title: 'The Design of Everyday Things',
+        author: 'Don Norman',
+        alreadyRead: false,
+        url: 'https://media.s-bol.com/7ov383lj3Rr/800x1200.jpg',
+    },
+    {
+        title: 'The Most Human Human',
+        author: 'Brian Christian',
+        alreadyRead: true,
+        url: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1295465264l/8884400.jpg',
+    },
+    {
+        title: 'The Pragmatic Programmer',
+        author: 'Andrew Hunt',
+        alreadyRead: true,
+        url: 'https://servimg.eyrolles.com/static/media/6224/9780201616224_internet_h1400.jpg',
+    },
 ];
 
 let ulElement = createBookList(books);
 
-document.querySelector("#bookList").appendChild(ulElement);
+document.getElementById('bookList').appendChild(ulElement);
