@@ -16,12 +16,12 @@ let myImg = document.querySelector('img');
 
 myImg.style.left = '0px';
 
-function catWalk(){
+//function catWalk(){
 
-    myImg.style.left = '10px';
-}
+//    myImg.style.left = '10px';
+//}
 
-window.requestAnimationFrame(catWalk);
+//window.requestAnimationFrame(catWalk);
 //console.log(myImg.style.left);
 //setInterval(catWalk,50);
 
