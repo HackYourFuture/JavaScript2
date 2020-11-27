@@ -11,8 +11,37 @@
 
  */
 
-function displayCurrentTime() {
-  // your code goes in here
+
+ let viewTime = document.createElement('div');
+
+function displayCurrentTime () {
+
+  let today = new Date();
+
+  let sec = today.getSeconds();
+  let min = today.getMinutes();
+  let hou = today.getHours();
+
+  if( sec<10 ){
+      sec = '0' + sec;
+  };
+
+  if( min<10 ){
+    min = '0' + min;
+  };
+
+  if( hou<10 ){
+    hou = '0' + hou;
+  };
+
+
+
+  
+  viewTime.textContent ="Current Time Is ( " + hou + ":" + min + ":" + sec + " )";
+  
+  document.body.appendChild(viewTime);
 }
 
-setInterval(displayCurrentTime, 1000);
+window.onload = function() {
+  setInterval(displayCurrentTime, 1000);
+}
