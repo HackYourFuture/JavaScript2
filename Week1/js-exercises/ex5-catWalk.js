@@ -12,37 +12,76 @@
  
 */
 // Catch the img element and make sure it start from position 0 let 
+
+
 let myImg = document.querySelector('img');
+
+function wait(ms){    
+        let d = new Date();
+        let d2 = null;
+        do { d2 = new Date(); }
+        while(d2-d < ms);
+    }
+
 myImg.style.left = '0px';
+let pos = 0;
+function movement(){
+
+    myImg.style.transform = "translateX(" + pos +"px)";
+    pos+=10;
+    if(pos === 600){
+        myImg.src = 'pic1.gif';
+        wait(5000);
+    }
+    if(pos > 600) {
+        myImg.src = 'cat-walk.gif';
+      // wait(5000); 
+    }
+    if(pos > window.innerWidth){
+        pos = -300;
+    }
+}
+
+setInterval(movement,50);
+
+
 
 // Creat variable to get the current time in milliseconds 
 //let startTime = new Date().getTime();
 //console.log(startTime);
 
-let pos = 0;
 
-let movement =setInterval( function (){
+
+//let movement =setInterval( function (){
     // Store the moment that this function start every time  
     //let currentTime = new Date().getTime();
     //let secondsElapsed = ((currentTime - startTime)/1000); // every seconds = 1000 milliseconds
     //let newPosition = pos + 10;
-    myImg.style.transform = "translateX(" + pos +"px)";
-    pos+=10;
+//  myImg.style.transform = "translateX(" + pos +"px)";
+//    pos+=10;
     //window.cancelAnimationFrame(movement);
-        if( pos === 700){
-            myImg.src = 'pic1.gif';
+//        if( pos === 700){
+ //          myImg.src = 'pic1.gif';
+          // setTimeout(movement,5000);
+           //se
+//        }
+//      if(pos > 800){
+
+//            myImg.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+//        }
+
            // setTimeout(movement,5000);
-          //  
-           clearInterval(movement);
+        //    
+         //  clearInterval(movement);
            //setTimeout(movement,5000);
           // window.requestAnimationFrame(movement,5000);
             //setInterval(movement,5000);
            // window.requestAnimationFrame(movement,5000);
-        }
-        else if(pos > window.innerWidth){
-            pos = -296;
-        }
-    },50);
+         
+//        if(pos > window.innerWidth){
+//            pos = -296;
+//        }
+//    },50);
         
         //else if(pos == screen.width/2){
            // myImg.src = 'tenor.gif';
