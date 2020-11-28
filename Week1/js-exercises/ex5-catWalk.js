@@ -29,9 +29,22 @@ let movement =setInterval( function (){
     myImg.style.transform = "translateX(" + pos +"px)";
     pos+=10;
     //window.cancelAnimationFrame(movement);
-        if( pos > screen.width ){   
-            pos = -250; 
-        }//else if(pos == screen.width/2){
+        if( pos === 700){
+            myImg.src = 'pic1.gif';
+           // setTimeout(movement,5000);
+          //  
+           clearInterval(movement);
+           //setTimeout(movement,5000);
+          // window.requestAnimationFrame(movement,5000);
+            //setInterval(movement,5000);
+           // window.requestAnimationFrame(movement,5000);
+        }
+        else if(pos > window.innerWidth){
+            pos = -296;
+        }
+    },50);
+        
+        //else if(pos == screen.width/2){
            // myImg.src = 'tenor.gif';
            // clearInterval(movement);
         //}       
@@ -43,7 +56,7 @@ let movement =setInterval( function (){
         //myImg.style.left = '0px';
         //window.cancelAnimationFrame(movement);
     //}    
-},50);
+
 //myImg.src= 'tenor.gif';
 //console.log(myImg.src);
 //console.log(screen.width);
