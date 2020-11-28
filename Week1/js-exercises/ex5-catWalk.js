@@ -11,17 +11,60 @@
  6. When the cat reaches the middle of the screen, replace the img with an image of a cat dancing(use this URL: https: //tenor.com/StFI.gif), keep it dancing for 5 seconds, and then replace the img with the original image and have it continue the walk.
  
 */
-
+// Catch the img element and make sure it start from position 0 let 
 let myImg = document.querySelector('img');
-
 myImg.style.left = '0px';
 
-//function catWalk(){
+// Creat variable to get the current time in milliseconds 
+//let startTime = new Date().getTime();
+//console.log(startTime);
 
-//    myImg.style.left = '10px';
-//}
+let pos = 0;
 
-//window.requestAnimationFrame(catWalk);
-//console.log(myImg.style.left);
+let movement =setInterval( function (){
+    // Store the moment that this function start every time  
+    //let currentTime = new Date().getTime();
+    //let secondsElapsed = ((currentTime - startTime)/1000); // every seconds = 1000 milliseconds
+    //let newPosition = pos + 10;
+    myImg.style.transform = "translateX(" + pos +"px)";
+    pos+=10;
+    //window.cancelAnimationFrame(movement);
+        if( pos > screen.width ){   
+            pos = -250; 
+        }//else if(pos == screen.width/2){
+           // myImg.src = 'tenor.gif';
+           // clearInterval(movement);
+        //}       
+          //  clearInterval(movement);                                 
+        // } //window.cancelAnimationFrame(catWalk)
+     //   }else if (! newPosition == screen.width/2){
+     //       window.cancelAnimationFrame(movement);
+        //else if(pos == screen.width){
+        //myImg.style.left = '0px';
+        //window.cancelAnimationFrame(movement);
+    //}    
+},50);
+//myImg.src= 'tenor.gif';
+//console.log(myImg.src);
+//console.log(screen.width);
+//catWalk();
 //setInterval(catWalk,50);
 
+
+
+
+//myImg.style.left = '10px';
+//window.requestAnimationFrame(catWalk);
+//console.log(myImg.style.left);
+//catWalk();
+//catWalk();
+ // if(newPosition <= ((screen.width/2)-250)){
+    //  window.requestAnimationFrame(catWalk);
+   // }
+   // if(newPosition == ((screen.width/2)-200)){
+   //     myImg.style.visibility = 'none';
+   // }
+    //window.requestAnimationFrame(catWalk);
+    //console.log(window.innerWidth/2);
+   // console.log(screen.width/2);
+   // console.log(window.width)

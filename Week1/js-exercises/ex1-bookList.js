@@ -54,7 +54,10 @@ function createBookList(books) {
 
     //Creat image for each book and assign a source for each image 
     let imgBook = document.createElement('img');
-    imgBook.src = `book${i+1}.jpg`
+    imgBook.src = `book${i+1}.jpg`;
+    //or  imgBook.src = "book"+(i+1)+".jpg"
+
+    
 
     //Append an image to a list item
     bookListItem.appendChild(imgBook);
