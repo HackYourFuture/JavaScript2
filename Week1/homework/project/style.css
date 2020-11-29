@@ -1,0 +1,79 @@
+
+*:focus {outline:none !important}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background: orange;
+  color: orange
+}
+#container {
+  background: white;
+  text-align: right;
+  margin: 8% 15% 0 15%;
+  height: 400px;
+  padding: 4%;
+  }
+#quote {
+  display: flex;
+  flex-direction: row;
+   height: 200px;
+  ;
+}
+#footer {
+  height: 60px;
+  background: white;
+  border: 5px solid orange;
+  margin: 0 30% 0 30%;
+}
+#new-quote-btn {
+  padding: 15px 20px 15px 20px; 
+  background: orange;
+  color: white;  
+  font-size: 20px;
+  border: none;
+  margin-left: auto;
+  border-radius: 8px;
+}
+#buttons {
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  
+
+}
+#thumbler,  #twitter, #new-quote-btn  {
+  height: 100%;
+}
+#twitter {
+  margin-right: 3px;
+}
+input {
+  text-align: right;
+  color: orange;
+  border: none;
+  font-size: 20px;
+}
+#author {
+  padding-bottom: 20px;
+}
+
+#quoteMarks {
+  height: 70px;
+  margin-top: 50px;
+  margin-right: 20px;
+
+}
+#new-quote {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  font-size: 1.7vw;
+  text-align: justify;
+}
