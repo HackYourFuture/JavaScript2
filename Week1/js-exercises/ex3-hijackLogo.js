@@ -12,6 +12,8 @@
 
  */
 
+'use strict'
+
 function hijackGoogleLogo() {
   // your code goes in here
   let googleLogo = document.getElementById('hplogo');

@@ -10,6 +10,7 @@
  6. Create a new img element and set its src attribute to a picture of you.Append that element to the page.
  */
 
+'use strict'
 
 document.body.style.fontFamily = 'Arial, sans-serif';
 

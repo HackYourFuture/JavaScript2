@@ -16,6 +16,9 @@
 
   */
 
+  
+ 'use strict'
+
  const books = [{
   title: 'The Design of Everyday Things',
   author: 'Don Norman',

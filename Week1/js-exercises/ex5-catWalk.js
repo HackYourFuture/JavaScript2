@@ -13,6 +13,7 @@
 */
 // Catch the img element and make sure it start from position 0 let 
 
+'use strict'
 
 let myImg = document.querySelector('img');
 

@@ -11,6 +11,8 @@
 
  */
 
+ 
+'use strict'
 
  let viewTime = document.createElement('div');
 
