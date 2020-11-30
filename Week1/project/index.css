@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Quicksand:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: orange;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.quoteContainer {
+    background: white;
+    width: 60%;
+    padding: 4rem;
+}
+
+.quoteText {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.quoteText::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quoteAuthor {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.quoteBtns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quoteBtns a {
+    text-decoration: none;
+    background: orange;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.quoteBtns .quoteNew {
+    font-weight: 600;
+}
+
+.quoteBtns .quoteShare a {
+    min-width: 52px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
