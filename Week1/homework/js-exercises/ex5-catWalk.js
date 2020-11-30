@@ -1,24 +1,34 @@
-var catEl = document.getElementById("cat");
-var newLeft = -270;
-//catEl.style.left = "0px"
-//var startTime = new Date().getTime();
-var walkTheCat = function () {
-  //var currTime = new Date().getTime();
-  //var secondsElapsed = ((currTime - startTime) / 1000);
-  //var newLeft = secondsElapsed * 500
+let catEl = document.getElementById("cat");
+const catSize = catEl.width
 
-  newLeft += 5;
-  catEl.style.left = newLeft + "px"
-  if (Math.abs(newLeft) >= 1200) {
-    newLeft = -270;
+function startPoint() {
+  catEl.style.left = "0px";
+}
+startPoint();
+
+let walkTheCat = function () {
+  let position = parseFloat(catEl.style.left);
+
+  catEl.style.left = (position + 10).toString().concat("px");
+
+  let screenMiddle = (window.innerWidth - catEl.width) / 2;
+
+  if (position < screenMiddle - 10 || position > screenMiddle + 10) {
+    catEl.style.left = (position + 10).toString().concat("px");
+  } else {
+    clearInterval(interval);
+    catEl.src = "https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424"
+
+    setTimeout(function () {
+      catEl.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif"
+      catEl.style.left = (position + 20).toString().concat("px");
+      interval = setInterval(walkTheCat, 50)
+    }, 5000);
   }
-  // else if (newLeft = 465) {
 
-  //   catEl.src = "https://tenor.com/StFI.gif";
-  // };
+  if (position > window.innerWidth) {
+    startPoint();
+  }
+}
 
-
-
-  window.requestAnimationFrame(walkTheCat);
-};
-walkTheCat()
+let interval = setInterval(walkTheCat, 50);
