@@ -12,7 +12,9 @@
  */
 
 function displayCurrentTime() {
-  // your code goes in here
+  const currentTime = new Date();
+  const n = currentTime.toLocaleTimeString();
+  document.body.innerHTML = '<h1>'+ n + '</h1>';
 }
 
 setInterval(displayCurrentTime, 1000);
