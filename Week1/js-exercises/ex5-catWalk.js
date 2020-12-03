@@ -1,3 +1,40 @@
+//**shamleslsy copied from Yash */
+
+
+const img = document.querySelector('img');
+const dancingCat = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424'
+const originalImgSrc = img.src;
+const originalImgWidth = img.width;
+
+fucntion setCatPositionToStart() {
+    Image.style.left = '0px';
+}
+
+setCatPositionToStart ();
+
+fucntion catWalk() {
+    const.currentPosition = parseFloat(img.style.left);
+    img.style.left = (currentPosition + 10).toString().concat('px');
+
+    const.middlePosition = (window.innerWidth - originalImgSrc) / 2;
+
+    if (currentPosition >= middlePosition - 10 && currentPosition <= middlePosition) {
+       clearInterval(internval);
+       img.src = dancingCat;
+       setTimeout(fucntion() {
+        img.src = originalImgSrc;
+        img.style.left = (currentPosition + 20).toString().concat('px');
+        internval = setInterval(catWalk, 50);
+    }, 5000);
+
+    if (position > window.innerWidth) {
+        setCatPositionToStart();
+    }
+}
+
+let internval = setInterval(catWalk, 50);
+
+
 /**
  
  ** Exercise 5: The cat walk **
