@@ -22,9 +22,10 @@ const objectWithQuotes = [{
   Quote: "Whoever is happy will make others happy too.",
   Author: "- Anne Frank"
 }]
-let newQuoteBtn = document.getElementById("new-quote-btn")
-let chosenQuote = document.querySelector("#new-quote")
-let chosenAuthor = document.querySelector("#author > input")
+
+const newQuoteBtn = document.getElementById("new-quote-btn");
+let chosenQuote = document.querySelector("#new-quote");
+let chosenAuthor = document.querySelector("#author > input");
 function quotePicker() {
   let quoteNum = Math.floor((Math.random()) * 6)
   let newQuote = objectWithQuotes[quoteNum]
