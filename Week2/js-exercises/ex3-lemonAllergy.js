@@ -10,10 +10,10 @@
   Output a string that says: "My mom bought me a fruit basket, containing [array of fruits] !"
 
  */
-
+'use strict';
 
 function takeOutLemons(basket) {
-  // your code goes in here. The output is a string 
+  return basket.filter(fruit => fruit.toLowerCase() !== 'lemon'); // in case that 'lemon' is written in both capital or small letter
 }
 
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];

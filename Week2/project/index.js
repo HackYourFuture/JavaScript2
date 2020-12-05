@@ -8,3 +8,5 @@
   If the timer finishes the timer should be replaced by the message: Time 's up!
  * 
  */
+
+'use strict';
