@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: aqua;
+}
+
+.container {
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.button {
+  padding: 0.25rem 1.5rem;
+  color: white;
+  margin: 1rem;
+  opacity: 0.7;
+}
+
+.button:hover {
+  opacity: 1;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgb(140, 139, 116);
+}
+
+.button--change-value {
+  color: black;
+}
+.button--start {
+  background-color: rgb(172, 0, 0);
+}
+
+.button--pause {
+  background-color: rgb(2, 106, 2);
+}
+
+.button--reset {
+  background-color: rgb(1, 1, 162);
+}
