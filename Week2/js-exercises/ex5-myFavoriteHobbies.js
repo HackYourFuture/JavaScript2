@@ -8,6 +8,8 @@
  Put the list items in an unordered list
  */
 
+'use strict';
+
 function createHTMLList(arr) {
   const unorderedList = document.createElement('ul');
   arr.forEach(item => {

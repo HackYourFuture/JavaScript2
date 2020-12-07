@@ -8,6 +8,8 @@
  Avoid using for loop or forEach.
  */
 
+'use strict';
+
 function collectiveAge(people) {
   return people.map(age => age.age).reduce((total, number) => total + number, 0);
   // return people.reduce((total, age) => total + age.age, 0); // though we could use just this to get the same result
