@@ -9,63 +9,87 @@
  * 
  */
 
-'use strict';
+const startButton = document.getElementById('start');
+const pauseButton = document.getElementById('pause');
+const minutesLeft = document.getElementById('mins-left');
+const secondsLeft = document.getElementById('secs-left');
+const minutesMore = document.getElementById('more');
+const minutesLess = document.getElementById('less');
+const setMinutes = document.getElementById('set-minutes');
+const notification = document.getElementById('notification');
+const clock = document.getElementById('clock');
+const timesUp = new Audio('./assets/times-up.mp3');
 
-const startButton = document.getElementById("start");
-const pauseButton = document.getElementById("pause");
-const minutesLeft = document.getElementById("mins-left");
-const secondsLeft = document.getElementById("secs-left");
-const minutesMore = document.getElementById("more");
-const minutesLess = document.getElementById("less");
-const setMinutes = document.getElementById("set-minutes");
+// by default the pause button doesn't appear
+pauseButton.style.display = 'none';
 
 // a callback function for the setInterval
-const countDown = function () {
+const countDown = () => {
   if (secondsLeft.innerText <= 0) {
     secondsLeft.innerText = 60;
     minutesLeft.innerText--;
-  };
+  }
   secondsLeft.innerText--;
-  // in case both minutes and seconds are zero, then stop countdown
+  // in case both minutes and seconds are zero, then stop countdown and ...
   if (secondsLeft.innerText <= 0 && minutesLeft.innerText <= 0) {
+    // 1) stops the countdown
     clearInterval(window.interval);
-    alert("hehe");
-  };
+    // 2) plays the music
+    timesUp.play();
+    // 3) clock hides
+    clock.style.display = 'none';
+    // 4) notification of time's up appears
+    notification.style.display = 'block'; // how to make the appearance smooth?
+  }
 };
 
-const startTimer = function () {
+const startTimer = () => {
   interval = setInterval(countDown, 1000);
+  startButton.style.display = 'none';
+  pauseButton.style.display = 'block';
   startButton.disabled = true;
   pauseButton.disabled = false;
   minutesMore.disabled = true;
   minutesLess.disabled = true;
 };
 
-const pauseTimer = function () {
+const pauseTimer = () => {
+  startButton.style.display = 'block';
+  pauseButton.style.display = 'none';
   clearInterval(window.interval);
   pauseButton.disabled = true;
   startButton.disabled = false;
-}
+};
 
-const resetTimer = function () {
+const resetTimer = () => {
   clearInterval(window.interval);
-  secondsLeft.innerText = 00;
+  secondsLeft.innerText = 0;
   minutesLeft.innerText = setMinutes.innerText;
   pauseButton.disabled = true;
   startButton.disabled = false;
   minutesMore.disabled = false;
   minutesLess.disabled = false;
-}
+  startButton.style.display = 'block';
+  pauseButton.style.display = 'none';
+  // invoking the function immediately
+  (function stopAudio() {
+    timesUp.pause();
+    timesUp.currentTime = 0;
+  })();
+  // hiding the notification of "time's up" and bringing the clock back
+  notification.style.display = 'none';
+  clock.style.display = 'block';
+};
 
-const more = function () {
+const more = () => {
   setMinutes.innerText++;
   minutesLeft.innerText = setMinutes.innerText;
-}
+};
 
-const less = function () {
+const less = () => {
   setMinutes.innerText--;
   if (setMinutes.innerText <= 1) {
     setMinutes.innerText = 1;
   }
   minutesLeft.innerText = setMinutes.innerText;
-}
+};

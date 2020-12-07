@@ -8,27 +8,71 @@ html {
 }
 
 body {
-  background-color: aqua;
+  background-color: rgb(165, 165, 165);
 }
 
 .container {
+  width: 50%;
+  margin: 10rem auto;
+  border: 0.125rem solid black;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-image: url('./assets/background.jpg');
+  background-position: bottom;
+  background-size: cover;
 }
 
 h1 {
   text-transform: uppercase;
   letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+.manipulation-holder {
+  width: 20rem;
+  margin: 0.5rem auto 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-set {
+  font-size: 2rem;
+}
+
+.times-up-notification {
+  display: none;
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+.times-up-notification p {
+  text-align: center;
+  color: red;
+}
+
+.buttons-holder {
+  display: flex;
+  justify-content: space-between;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+.tick-time {
+  font-size: 5rem;
+  text-align: center;
 }
 
 .button {
   padding: 0.25rem 1.5rem;
   color: white;
-  margin: 1rem;
+  margin: 0.5rem;
   opacity: 0.7;
 }
 
 .button:hover {
   opacity: 1;
-  box-shadow: 0.25rem 0.25rem 0.25rem rgb(140, 139, 116);
+  box-shadow: 0rem 0.25rem 0.2rem rgb(121, 121, 115);
 }
 
 .button--change-value {
