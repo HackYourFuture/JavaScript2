@@ -9,8 +9,11 @@
  * 
  */
 
+'use strict';
+
 const startButton = document.getElementById('start');
 const pauseButton = document.getElementById('pause');
+const resetButton = document.getElementById('reset');
 const minutesLeft = document.getElementById('mins-left');
 const secondsLeft = document.getElementById('secs-left');
 const minutesMore = document.getElementById('more');
@@ -19,6 +22,8 @@ const setMinutes = document.getElementById('set-minutes');
 const notification = document.getElementById('notification');
 const clock = document.getElementById('clock');
 const timesUp = new Audio('./assets/times-up.mp3');
+
+let interval;
 
 // by default the pause button doesn't appear
 pauseButton.style.display = 'none';
@@ -43,7 +48,7 @@ const countDown = () => {
   }
 };
 
-const startTimer = () => {
+startButton.addEventListener('click', () => {
   interval = setInterval(countDown, 1000);
   startButton.style.display = 'none';
   pauseButton.style.display = 'block';
@@ -51,18 +56,18 @@ const startTimer = () => {
   pauseButton.disabled = false;
   minutesMore.disabled = true;
   minutesLess.disabled = true;
-};
+});
 
-const pauseTimer = () => {
+pauseButton.addEventListener('click', () => {
   startButton.style.display = 'block';
   pauseButton.style.display = 'none';
-  clearInterval(window.interval);
+  clearInterval(interval);
   pauseButton.disabled = true;
   startButton.disabled = false;
-};
+});
 
-const resetTimer = () => {
-  clearInterval(window.interval);
+resetButton.addEventListener('click', () => {
+  clearInterval(interval);
   secondsLeft.innerText = 0;
   minutesLeft.innerText = setMinutes.innerText;
   pauseButton.disabled = true;
@@ -71,25 +76,23 @@ const resetTimer = () => {
   minutesLess.disabled = false;
   startButton.style.display = 'block';
   pauseButton.style.display = 'none';
-  // invoking the function immediately
-  (function stopAudio() {
-    timesUp.pause();
-    timesUp.currentTime = 0;
-  })();
+  // reseting the timer completely
+  timesUp.pause();
+  timesUp.currentTime = 0;
   // hiding the notification of "time's up" and bringing the clock back
   notification.style.display = 'none';
   clock.style.display = 'block';
-};
+});
 
-const more = () => {
+minutesMore.addEventListener('click', () => {
   setMinutes.innerText++;
   minutesLeft.innerText = setMinutes.innerText;
-};
+});
 
-const less = () => {
+minutesLess.addEventListener('click', () => {
   setMinutes.innerText--;
   if (setMinutes.innerText <= 1) {
     setMinutes.innerText = 1;
   }
   minutesLeft.innerText = setMinutes.innerText;
-};
+});

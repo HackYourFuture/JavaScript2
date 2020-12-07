@@ -11,20 +11,20 @@
     <div class="container">
       <h1>Pomodoro Timer</h1>
       <div class="manipulation-holder time-set">
-        <button class="button button--change-value" id="more" onclick="more()">+</button>
-        <p><span id="set-minutes">1</span> min</p>
-        <button class="button button--change-value" id="less" onclick="less()">-</button>
+        <button class="button button--change-value" id="more">+</button>
+        <p><span id="set-minutes">25</span> min</p>
+        <button class="button button--change-value" id="less">-</button>
       </div>
       <div>
         <div class="tick-time" id="clock">
-          <span id="mins-left">1</span>m <span id="secs-left">00</span>s
+          <span id="mins-left">25</span>m <span id="secs-left">00</span>s
         </div>
         <div class="times-up-notification" id="notification"><p>Time's up! Take a break!</p></div>
       </div>
       <div class="buttons-holder">
-        <button class="button button--start" id="start" onclick="startTimer()">Start</button>
-        <button class="button button--pause" id="pause" onclick="pauseTimer()">Pause</button>
-        <button class="button button--reset" id="reset" onclick="resetTimer()">Reset</button>
+        <button class="button button--start" id="start">Start</button>
+        <button class="button button--pause" id="pause">Pause</button>
+        <button class="button button--reset" id="reset">Reset</button>
       </div>
     </div>
     <script src="./index.js"></script>

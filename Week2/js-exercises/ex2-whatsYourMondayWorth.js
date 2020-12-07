@@ -13,19 +13,19 @@
 
 'use strict';
 
-// // one way of accomplishing the result
-// function dayWorth(tasks, hourlyRate) {
-//   const reduced = tasks.reduce((total, task) => total + task.duration, 0);
-//   return ((reduced / 60) * hourlyRate).toFixed(2);
-// }
-
-// another way of accomplishing the same result, but strictly following all the requirements (using 'map' in particular)
-function dayWorth(array, hourlyRate) {
-  const newArray = array
-    .map(time => (time.duration / 60) * hourlyRate)
-    .reduce((total, element) => total + element, 0);
-  return newArray.toFixed(2);
+// one way of accomplishing the result, and I like this way, less code
+function dayWorth(tasks, hourlyRate) {
+  const reduced = tasks.reduce((total, task) => total + task.duration, 0);
+  return ((reduced / 60) * hourlyRate).toFixed(2);
 }
+
+// // another way of accomplishing the same result, but strictly following all the requirements (using 'map' in particular)
+// function dayWorth(array, hourlyRate) {
+//   const newArray = array
+//     .map(time => (time.duration / 60) * hourlyRate)
+//     .reduce((total, element) => total + element, 0);
+//   return newArray.toFixed(2);
+// }
 
 const mondayTasks = [
   {
