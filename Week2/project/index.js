@@ -38,7 +38,7 @@ const countDown = () => {
   // in case both minutes and seconds are zero, then stop countdown and ...
   if (secondsLeft.innerText <= 0 && minutesLeft.innerText <= 0) {
     // 1) stops the countdown
-    clearInterval(window.interval);
+    clearInterval(interval);
     // 2) plays the music
     timesUp.play();
     // 3) clock hides
@@ -59,9 +59,9 @@ startButton.addEventListener('click', () => {
 });
 
 pauseButton.addEventListener('click', () => {
+  clearInterval(interval);
   startButton.style.display = 'block';
   pauseButton.style.display = 'none';
-  clearInterval(interval);
   pauseButton.disabled = true;
   startButton.disabled = false;
 });
@@ -76,10 +76,10 @@ resetButton.addEventListener('click', () => {
   minutesLess.disabled = false;
   startButton.style.display = 'block';
   pauseButton.style.display = 'none';
-  // reseting the timer completely
+  // reseting the timer completely;
   timesUp.pause();
   timesUp.currentTime = 0;
-  // hiding the notification of "time's up" and bringing the clock back
+  // hiding the notification of "time's up" and bringing the clock back;
   notification.style.display = 'none';
   clock.style.display = 'block';
 });
@@ -87,12 +87,34 @@ resetButton.addEventListener('click', () => {
 minutesMore.addEventListener('click', () => {
   setMinutes.innerText++;
   minutesLeft.innerText = setMinutes.innerText;
+  // saving the time in localStorage for the next usage;
+  localStorage.setItem('setMinutes', setMinutes.innerText);
 });
 
 minutesLess.addEventListener('click', () => {
   setMinutes.innerText--;
+  // saving the time in localStorage for the next usage;
+  localStorage.setItem('setMinutes', setMinutes.innerText);
+  // the value of the minutes can't go less than one;
   if (setMinutes.innerText <= 1) {
     setMinutes.innerText = 1;
   }
   minutesLeft.innerText = setMinutes.innerText;
 });
+
+// On load getting the time from the local storage;
+const setAndGetTimeFromStorage = () => {
+  // if the key 'setMinutes' exists,
+  if (localStorage.setMinutes) {
+    // then set the minutes equal to the value of the local storage;
+    setMinutes.innerText = localStorage.getItem('setMinutes');
+  }
+  // if the key 'setMinutes' doesn't exist in the local storage,
+  if (!localStorage.setMinutes) {
+    // then a pair of key-value is created in the local storage;
+    localStorage.setItem('setMinutes', setMinutes.innerText);
+  }
+  // onload the time of the clock always equals to the 'setMinutes';
+  minutesLeft.innerText = setMinutes.innerText;
+};
+window.addEventListener('load', setAndGetTimeFromStorage);
