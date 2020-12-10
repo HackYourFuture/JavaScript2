@@ -28,6 +28,7 @@ let interval;
 // by default the pause button doesn't appear
 pauseButton.style.display = 'none';
 
+
 // a callback function for the setInterval
 const countDown = () => {
   if (secondsLeft.innerText <= 0) {
@@ -44,7 +45,9 @@ const countDown = () => {
     // 3) clock hides
     clock.style.display = 'none';
     // 4) notification of time's up appears
-    notification.style.display = 'block'; // how to make the appearance smooth?
+    notification.classList.add('fade-in');
+    notification.style.display = 'block';
+    pauseButton.disabled = true;
   }
 };
 

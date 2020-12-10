@@ -51,6 +51,20 @@ h1 {
   color: red;
 }
 
+.fade-in {
+  display: block;
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .buttons-holder {
   display: flex;
   justify-content: space-between;
