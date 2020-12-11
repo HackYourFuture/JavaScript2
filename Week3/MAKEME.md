@@ -17,7 +17,7 @@ Let's get familiar with basic Javascript concepts, with interactive exercises! C
 
 > Inside of your `JavaScript2` fork, navigate to the folder `Week3`. Then to the folder `js-exercises`. In this folder you will find separate files for each exercise. Please put your code in the correct file.
 
-**Exercise 1: Add six**
+**Exercise 1: Add nine**
 
 Declare a function called `createBase`. The function takes a number as a parameter and return a closure, that adds a number to the base number argument.
 
@@ -34,10 +34,10 @@ function createBase() {
   // Put here your logic...
 }
 
-const addSix = createBase(6);
+const addNine = createBase(6);
 
 // Put here your function calls...
-addSix();
+addNine();
 ```
 
 **Exercise 2: Take out the duplicates**
