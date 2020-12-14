@@ -3,9 +3,7 @@
 You’ll be doing a comprehension test. It will be about the most important JavaScript concepts you’ve learned about so far (JavaScript1 and JavaScript2). 
 
 ## Practical information
--  The test will start at **10.30 until 11.30**. Please be available from 10.15 to avoid being late!
--  It will be done online
--  There will be 3 questions
+Practical information about the test will be shared in the class channel prior to the test. Keep an eye on it!
 
 ## Purpose of the test
 The purpose of this exam is to test your comprehension of JavaScript 1 and JavaScript 2 concepts.
@@ -29,11 +27,9 @@ These are the most important concepts that will be tested:
 Advice on how to optimally prepare:
 - Find out 2 things about each concepts listed above: (1) how does the basic structure look and (2) what is the most common use case.
 
-- Be familiar with the homework submission process using Git and GitHub. This is the same procedure you'll undergo when starting and submitting your test!
+- Be familiar with creating a new project repository in github. For the test you will get some files to edit and they will need to be uploaded to your github.
 
 - Ask questions through Slack to your teachers and/or your classmates
-
-- Practice coding WITHOUT Google and on paper. This is very important because the test will be on paper. You can practise this by making your old homework again; but than on paper. Make sure that you can write down functions and loops without syntax errors. 
 
 - Practice for understanding (why something is the case), NOT just for repetition’s sake (and hoping ‘you will understand it one day’).
 
@@ -44,7 +40,6 @@ Advice on how to optimally prepare:
 ## During the test
 Advise on how to make a test:
 - **Look for low hanging fruit**. Which of the assignments is easiest for you to do? Tackle that one first. 
-- Make sure that all **syntax is correct** when writing code on paper. For instance: don’t forget brackets or semicolons.  
 - **If you get stuck in an assignment, move on to the next one**. You can always come back later if time permits.
 - After finishing an assignment, read the question again to **make sure you actually gave an answer to the question**. 
 - Before handing in the test, read it all over again to pick out the small mistakes. **Double check your work!**
@@ -52,17 +47,7 @@ Advise on how to make a test:
 ## Sample questions
 1. Write and call a function that creates and appends a <p> tag to the <body> of an HTML file. Make use of the already predefined DOM methods createElement() and appendChild(). The innerText of the <p> should be “hello HackYourFuture!”.
 
-2. Correct the code to make it work, by filling in the grey boxes:
-```
-…………… multiplyNumbers( …….. , …….. ) {
-	const	……………  = …….. *  ……..  ;
-	return	 ……………  ;
-	….
-	multiplyNumbers( 6 , ……………
-// Return value should be 30
-```
-
-3. Transform the given array of strings named letters into a new array with numbers (for example: `numbers = [0, 1, 2, 3 ]` ), by creating a new function called lettersToNumbers. Log the new array to the console. Return the new array. Make use of the map() array function. 
+2. Transform the given array of strings named letters into a new array with numbers (for example: `numbers = [0, 1, 2, 3 ]` ), by creating a new function called lettersToNumbers. Log the new array to the console. Return the new array. Make use of the map() array function. 
 `const letters = [ ‘a’ , ‘b’ , ‘c’ , ‘d’ ];`
 
 
