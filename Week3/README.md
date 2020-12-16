@@ -146,7 +146,7 @@ The execution context roughly equates to the 'environment' a function executes i
 
 Checkout the following to learn more about why this is important:
 
-- [What is the Execution Context & Stack in JavaScript?](http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/)
+- [What is the Execution Context & Stack in JavaScript?](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
 
 ### Why do we need closures?
 
