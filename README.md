@@ -1,12 +1,8 @@
-> If you are following the HackYourFuture curriculum we recommend you to start with module 1: [HTML/CSS/GIT](https://github.com/HackYourFuture/HTML-CSS). To get a complete overview of the HackYourFuture curriculum first, click [here](https://github.com/HackYourFuture/curriculum).
+# DEPRECATED - JavaScript 2
+This module has been replace with the Browsers module, find it [here](https://github.com/HackYourFuture/Browsers)
 
-> Please help us improve and share your feedback! If you find better tutorials or links, please share them by [opening a pull request](https://github.com/HackYourFuture/JavaScript2/pulls).
 
-# Module #3 - JavaScript 2: DOM Manipulation (Frontend)
-
-![JavaScript2](./assets/javascript2.png)
-
-If you were to ask a random person on the street the question "What is a browser?", you'll most likely get a variety of (incorrect) answers. For proof, check [this](https://www.youtube.com/watch?v=o4MwTvtyrUQ) out.
+```If you were to ask a random person on the street the question "What is a browser?", you'll most likely get a variety of (incorrect) answers. For proof, check [this](https://www.youtube.com/watch?v=o4MwTvtyrUQ) out.
 
 You might be one of those people right now, but after this module no more. In **JavaScript2** you'll learn all about how to use JavaScript within the browser.
 
@@ -80,4 +76,4 @@ If you feel ready for the next challenge, click [here](https://www.github.com/Ha
 
 _The HackYourFuture curriculum is subject to CC BY copyright. This means you can freely use our materials, but just make sure to give us credit for it :)_
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.```
