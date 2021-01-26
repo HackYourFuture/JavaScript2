@@ -30,7 +30,7 @@ A web browser is software that allows you to access websites.
 
 ### How a browser works
 
-In your journey into becoming a web developer it's important to know the tools you'll be using intimately. One such is the browser, which will be used to display your websites. In the following resources you'll learn about the many parts any web browser consists of and what their use is:
+In your journey into becoming a web developer it's important to know the tools you'll be using intimately. One of <!--one such, change to one of such--> such is the browser, which will be used to display your websites. In the following resources you'll learn about the many parts any web browser consists of and what their use is<!--consists  of and what their uses is, is change to; consist of and what there uses are-->:
 
 - [How a web browser functions](https://www.youtube.com/watch?v=z0HN-fG6oT4)
 - [How do web browsers work?](https://medium.com/@monica1109/how-does-web-browsers-work-c95ad628a509)
@@ -75,7 +75,7 @@ The browser is software that has been build to understand JavaScript ((and HTML/
 
 Every programming language sits at a certain level of abstraction, relative to the only real language a computer understands: machine code (which is only 0's and 1's). For more information on this, check out the following [video](https://www.youtube.com/watch?v=bUWCD45qniA)
 
-For our purposes, it's only important to understand that the browser looks at JavaScript and then does what it's instructed to do: add elements, modify text or media files, etc. That's the purpose of JavaScript in the browser: to add interactivity based off of the user's behavior.
+For our purposes, it's only important to understand that the browser looks at JavaScript and then does what it's instructed to do: add elements, modify text or media files, etc. That's the purpose of JavaScript in the browser: to add interactivity base <!--based off of is change to base on the -->on the user's behavior.
 
 - [JavaScript, the Browser, and the DOM](https://www.youtube.com/watch?v=31ViueuIXGE)
 
@@ -121,11 +121,11 @@ In this example we're executing the following steps:
 2. Creating a new DOM element: a paragraph i.e. a `<p>` element
 3. Injecting content into the newly create paragraph element
 4. Setting the background color for the newly create paragraph element
-5. Adding the  newly create paragraph element element to the body
+5. Adding the  newly created<!--create is changed to created--> paragraph element element to the body
 
 Test this code out by copying and pasting it in the Developer Console of your browser. After you've pressed the Enter/Return key you will find your new `<p>` at the end of the page!
 
-Learning how to write JavaScript that targets the DOM is an essential part of being a web developer. In the following resources you'll more about how to do that:
+Learning how to write JavaScript that targets the DOM is an essential part of being a web developer. In the following resources you'll <!--learn is added and about change to on, here--> learn more on how to do that:
 
 - [Traversing the DOM with JavaScript](https://zellwk.com/blog/dom-traversals/)
 - [JavaScript DOM Crash Course - Part 2](https://www.youtube.com/watch?v=mPd2aJXCZ2g)
@@ -163,7 +163,7 @@ This is DOM manipulation in its simplest form. It goes in three essential steps:
 (2) JavaScript is aware and looks for this specific user action (The browser is listening for the event, in this case a `click` event)
 (3) JavaScript modifies the DOM as a result (A function that makes the body background color black is executed)
 
-The second step is called **listening for the event**. We do this by using a by the browser predefined function called `addEventListener()`, which we get from the `document` object in the browser. The browser needs to listen to the event in order to know what it should do ("make the body background color black") in case a certain event (`click`) happens to a certain element (`body`).
+The second step is called **listening for the event**. We do this by using <!--a by is removed from here--> the browser predefined function called `addEventListener()`, which we get from the `document` object in the browser. The browser needs to listen for <!--to is change to for--> the event in order to know what it should do ("make the body background color black") in case a certain event (`click`) happens to a certain element (`body`).
 
 The third and final step is called **handling the event**. The term "handler" effectively means "taking care of" the event; the response to the event. The handler itself is nothing more than a function that executes more JavaScript code in order to manipulate a particular part of the page (either the element that experienced the event or a totally different part of the page).
 
