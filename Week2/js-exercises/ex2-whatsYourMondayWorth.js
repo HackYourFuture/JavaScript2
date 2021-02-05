@@ -11,12 +11,24 @@
 
  */
 
+'use strict';
 
+// one way of accomplishing the result, and I like this way, less code
 function dayWorth(tasks, hourlyRate) {
-  // put your code in here, the function does returns a euro formatted string
+  const reduced = tasks.reduce((total, task) => total + task.duration, 0);
+  return ((reduced / 60) * hourlyRate).toFixed(2);
 }
 
-const mondayTasks = [{
+// // another way of accomplishing the same result, but strictly following all the requirements (using 'map' in particular)
+// function dayWorth(array, hourlyRate) {
+//   const newArray = array
+//     .map(time => (time.duration / 60) * hourlyRate)
+//     .reduce((total, element) => total + element, 0);
+//   return newArray.toFixed(2);
+// }
+
+const mondayTasks = [
+  {
     name: 'Daily standup',
     duration: 30, // specified in minutes
   },
@@ -34,5 +46,5 @@ const mondayTasks = [{
   },
 ];
 
-console.log(dayWorth(mondayTasks, 25))
-console.log(dayWorth(mondayTasks, 13.37))
+console.log(dayWorth(mondayTasks, 25));
+console.log(dayWorth(mondayTasks, 13.37));

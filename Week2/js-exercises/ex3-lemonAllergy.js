@@ -11,9 +11,11 @@
 
  */
 
+'use strict';
 
 function takeOutLemons(basket) {
-  // your code goes in here. The output is a string 
+  const filteredBasket = basket.filter(fruit => fruit.toLowerCase() !== 'lemon'); // in case that 'lemon' is written in both the capital or small letter
+  return `My mom bought me a fruit basket, containing ${filteredBasket.join(', ').toLowerCase()}!`;
 }
 
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];

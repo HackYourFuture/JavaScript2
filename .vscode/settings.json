@@ -15,5 +15,6 @@
     "roverjs",
     "taalmap",
     "trollface"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
