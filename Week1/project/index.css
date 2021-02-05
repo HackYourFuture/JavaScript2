@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+background-color: orange;
+margin: auto;
+}
+
+h1 {
+margin-bottom: 100px;    
+}
+
+.container {
+    display: block;
+    background-color: whitesmoke;
+    width: 900px;
+    align: center;
+    margin:0px auto;
+    margin-top: 200px;
+    padding: 100px;
+
+}
+
+button {
+    margin-top: 100px;
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+#displayQuote {
+    color: orange;
+    font-size: 20px;
+}
