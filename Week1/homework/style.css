@@ -1,1 +1,11 @@
-/* add your styling here */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: lightyellow;
+}
+#cover{
+  width: 100%;
+}
+img {
+   width: 200px;
+   height: 270px;
+}
