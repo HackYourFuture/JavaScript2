@@ -6,6 +6,16 @@ body {
   width: 100%;
 }
 img {
-   width: 200px;
+   width: 230px;
    height: 270px;
+}
+.book-cover{
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 80px;
+  grid-gap: 0.5rem 2rem;
+}
+.book-info-and-cover{
+  text-align: center;
 }

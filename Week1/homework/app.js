@@ -15,9 +15,11 @@
   ];
   function makeBooksList() {
     const uList = document.createElement('ul');
+    uList.className = 'book-list';
     document.body.appendChild(uList);
     for (let i = 0; i < bookTitles.length; i++) {
       const listElement = document.createElement('li');
+      listElement.className = 'list-element';
       listElement.innerHTML = bookTitles[i];
       uList.appendChild(listElement);
     }
@@ -130,8 +132,10 @@
   console.log(booksCover);
   function addBookCover(bookCover, books) {
     const div = document.createElement('div');
+    div.className = 'book-cover';
     for (const key of Object.keys(bookCover)) {
       const listWithImages = document.createElement('ul');
+      listWithImages.className = 'book-with-cover';
       div.appendChild(listWithImages);
       const source = bookCover[key].image;
       const img = document.createElement('img');
@@ -139,6 +143,7 @@
       listWithImages.appendChild(img);
       for (const Key of Object.keys(books[key])) {
         const listElements = document.createElement('li');
+        listElements.className = 'book-info-and-cover';
         listWithImages.appendChild(listElements);
         listElements.innerText = books[key][Key];
       }
