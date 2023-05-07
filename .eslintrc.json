@@ -6,7 +6,8 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": "off",
+    "no-unused-vars": "error",
     "strict": "off",
     "func-names": "off",
     "import/no-dynamic-require": "off",
